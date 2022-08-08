@@ -1,0 +1,18 @@
+.window{
+    height: 35px;
+    width: 100%;
+
+    position: fixed;
+    left: 0;
+    bottom: 0;
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    z-index: 2000;
+    color: white;
+    background-color: dodgerblue;
+    opacity: 0.8;
+    filter: drop-shadow(5px -3px 5px rgba(0, 0, 0, 0.3));
+}

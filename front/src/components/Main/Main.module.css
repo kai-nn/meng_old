@@ -1,0 +1,9 @@
+.window{
+    display: grid;
+    /*width: 70%;*/
+    grid-template-columns: minmax(10px, 15%) minmax(480px, 70%) minmax(10px, 15%);
+    /*position: relative;*/
+    /*position: absolute;*/
+    top: 60px;
+}
+

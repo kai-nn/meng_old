@@ -1,0 +1,107 @@
+@charset "UTF-8";
+.curtain {
+  height: 100vh;
+  width: 100%;
+  position: fixed;
+  top: 0;
+  left: 0;
+  z-index: 100;
+  backdrop-filter: blur(4px);
+  background-color: rgba(0, 0, 0, 0.2);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.curtain.open {
+  animation-duration: 0.5s;
+  animation-name: open;
+}
+
+@keyframes open {
+  from {
+    opacity: 0;
+  }
+  to {
+    opacity: 1;
+  }
+}
+.curtain.close {
+  opacity: 0;
+  animation-duration: 0.5s;
+  animation-name: close;
+}
+
+@keyframes close {
+  from {
+    opacity: 1;
+  }
+  to {
+    opacity: 0;
+  }
+}
+.modal {
+  position: fixed;
+  top: 120px;
+  padding: 15px;
+  border-radius: 5px;
+  background-color: white;
+  height: 440px;
+  width: 440px;
+  filter: drop-shadow(5px 5px 5px rgba(0, 0, 0, 0.4));
+}
+.modal .modal__body {
+  height: inherit;
+  width: inherit;
+  padding: 5px;
+  z-index: 1000;
+  overflow-y: scroll;
+}
+.modal .modal__header {
+  position: absolute;
+  top: -35px;
+  animation-duration: 0.2s;
+  animation-name: move_header;
+  z-index: 100;
+}
+@keyframes move_header {
+  from {
+    top: 0;
+  }
+  to {
+    top: -35px;
+  }
+}
+.modal .modal__footer {
+  position: absolute;
+  bottom: -45px;
+  animation-duration: 0.2s;
+  animation-name: move_footer;
+  z-index: 100;
+}
+@keyframes move_footer {
+  from {
+    bottom: 0;
+  }
+  to {
+    bottom: -45px;
+  }
+}
+
+/* Ползунки */
+::-webkit-scrollbar {
+  width: 10px;
+  background-color: white;
+}
+
+::-webkit-scrollbar-thumb {
+  background: linear-gradient(180deg, lightgray, gray);
+  border-radius: 4px;
+  height: 30px;
+}
+
+::-webkit-scrollbar-thumb:hover {
+  background: darkgray;
+}
+
+/*# sourceMappingURL=Modal.css.map */

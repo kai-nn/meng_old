@@ -1,0 +1,15 @@
+.str{
+    display: grid;
+    grid-template-columns: minmax(10%, 40%) 10% 40% 10%;
+    grid-gap: 2px;
+}
+
+
+.str div{
+    padding: 2px 5px;
+}
+
+.clickable:hover{
+    color: orange;
+}
+

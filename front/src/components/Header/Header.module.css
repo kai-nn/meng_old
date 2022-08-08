@@ -1,0 +1,50 @@
+.window {
+  position: absolute;
+  min-height: 50px;
+  width: 100%;
+  display: grid;
+  grid-template-columns: 0px min-content auto min-content 0px;
+  gap: 10px;
+  align-items: center;
+  z-index: 2000;
+  background-color: dodgerblue;
+  opacity: 0.8;
+  filter: drop-shadow(5px 5px 5px rgba(0, 0, 0, 0.3));
+  margin: 0 0 10px 0;
+}
+.window a button {
+  padding: 5px;
+  color: white;
+  text-transform: capitalize;
+}
+.window * {
+  align-items: center;
+  text-decoration: none;
+}
+
+.logo {
+  font-size: 22px;
+  font-weight: bold;
+}
+
+.role {
+  justify-content: right;
+  display: grid;
+  grid-template-columns: min-content min-content;
+  grid-gap: 10px;
+}
+.role .role__text {
+  display: grid;
+  text-align: right;
+}
+.role .role__fio {
+  white-space: nowrap;
+  color: white;
+  font-size: 0.7rem;
+}
+.role .role__name {
+  color: midnightblue;
+  font-size: 0.7rem;
+}
+
+/*# sourceMappingURL=Header.module.css.map */

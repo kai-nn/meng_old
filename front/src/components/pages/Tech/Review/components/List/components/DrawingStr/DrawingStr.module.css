@@ -1,0 +1,9 @@
+.str{
+    background-color: #ebebeb;
+    font-weight: bold;
+    padding: 2px 5px;
+    margin: 1px 0;
+
+    border-radius: 3px;
+    box-shadow: 1px 1px 1px lightgray;
+}

@@ -1,0 +1,24 @@
+* {
+    padding: 0;
+    margin: 0;
+    border: 0;
+    font-family: "Roboto";
+    position: relative;
+}
+
+/* набор спецсимволов */
+@font-face {
+    font-family: "T-FLEX Type A";
+    src:    local('T-FLEXA'), url('./fonts/T-FLEXA.TTF')
+}
+
+/* системный шрифт */
+@font-face {
+  font-family: "Roboto";
+  src:    local('Roboto-Regular'), url('./fonts/Roboto-Regular.ttf');
+  /*src:    local('Roboto-Black'), url('./fonts/Roboto-Black.ttf');*/
+  /*src:    local('Roboto-BlackItalic'), url('./fonts/Roboto-BlackItalic.ttf');*/
+  /*src:    local('Roboto-Bold'), url('./fonts/Roboto-Bold.ttf');*/
+  /*src:    local('Roboto-Light'), url('./fonts/Roboto-Light.ttf');*/
+  /*src:    local('Roboto-Medium'), url('./fonts/Roboto-Medium.ttf');*/
+}
