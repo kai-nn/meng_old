@@ -11,6 +11,10 @@ function useAxios(url, method='get', value={}) {
     const dispatch = useDispatch()
 
     const changeData = (value) => {
+
+        // отмена сетевого запроса в случае преднамеренного null
+        if(value === null) return
+
         console.log('%c changeData', 'color: blue;')
         axios({
                 url: url,

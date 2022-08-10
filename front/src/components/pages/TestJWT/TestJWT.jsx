@@ -1,7 +1,6 @@
 import React, {useEffect, useState} from 'react'
-import {useDispatch, useSelector} from "react-redux";
+import {useDispatch} from "react-redux";
 import {showMessage} from "../../../store/message/messageSlice";
-import useToken from "../../../general/useToken";
 import useAxios from "../../../general/useAxios";
 
 const TestJWT = () => {
@@ -14,6 +13,7 @@ const TestJWT = () => {
         'post',
         param
     )
+
 
     useEffect(() => {
         if(data) {
@@ -39,6 +39,8 @@ const TestJWT = () => {
             <br/>
             {data && data.message}
             {err && err.message}
+
+
         </div>
     )
 }

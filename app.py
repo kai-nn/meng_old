@@ -3,6 +3,12 @@ from datetime import datetime, timedelta, timezone
 from flask_marshmallow import pprint
 import os, base64, math
 
+# сервис обратной геолокации
+# https://dadata.ru/api/geolocate/
+from dadata import Dadata
+
+
+
 
 # отправка почты
 import smtplib
@@ -42,7 +48,6 @@ from init import *
 
 
 
-
 ########################################
 #########  М А Р Ш Р У Т Ы   ###########
 ########################################
@@ -55,7 +60,7 @@ def index():
 
 
 @app.route("/test_jwt", methods=["POST"])
-# @jwt_required()
+@jwt_required()
 def test_jwt():
     value = request.get_json()
     print('value:', value)
@@ -737,7 +742,7 @@ def tech():
 
 
 @app.route('/list_tech', methods=['POST'])
-# @jwt_required()
+@jwt_required()
 def list_tech():
 
     value = request.get_json()
@@ -1396,6 +1401,30 @@ def load_pic():
     return jsonify(data)
 
 
+@app.route('/location', methods=['POST'])
+def location():
+    value = request.get_json()
+    print(value)
+
+    if len(value) == 0:
+        print('Геоданные отсутствуют')
+        return jsonify({})
+
+    lat = value['latitude']
+    lon = value['longitude']
+    print(lat, lon)
+
+    dadata = Dadata(DADATA_TOKEN)
+    try:
+        result = dadata.geolocate(name="address", radius_meters=55.601983, lat=lat, lon=lon)
+    except:
+        result = []
+    # result = [{'value': 'Клоака'}]
+    # print(result)
+
+    return jsonify(result)
+
+
 
 
 ########################################
@@ -1562,6 +1591,9 @@ def crash_save_tech(data):
 
 
 
+
+
+
 ##################################
 ## Функции для обслуживания БД ###
 ##################################
@@ -1577,7 +1609,7 @@ def crash_save_tech(data):
 # db.session.commit()
 
 # for t in tech:
-#     t.company = 'НАО "Гидромаш" им. В.И.Лузянина'
+#     t.company = ''
 # db.session.commit()
 
 # for t in tech:
