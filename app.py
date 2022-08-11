@@ -55,7 +55,7 @@ def index():
 
 
 @app.route("/test_jwt", methods=["POST"])
-@jwt_required()
+# @jwt_required()
 def test_jwt():
     value = request.get_json()
     print('value:', value)
@@ -106,7 +106,7 @@ def authorization():
 
 
 @app.route('/list_tech', methods=['POST'])
-@jwt_required()
+# @jwt_required()
 def list_tech():
 
     value = request.get_json()

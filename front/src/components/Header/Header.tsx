@@ -8,6 +8,7 @@ import {
 import {general_style} from "../../general/style";
 import avatar from './images/avatar_1.jpg'
 
+
 interface ILink {
     label: string;
     url: string;
@@ -30,7 +31,9 @@ const Header:FC<ILinks> = ({links}) => {
             <div className={style.logo}>
                 <span style={{color: 'orange'}}>micro</span>
                 <span style={{color: 'midnightblue'}}>erp</span>
+
             </div>
+
 
             <div>
                 {
