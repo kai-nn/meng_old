@@ -4,7 +4,7 @@
 
 Это fullstack проект, разработка которого продолжается в настоящее время. На текущий момент в нем используются технологии и библиотеки:
 
-frontend
+**frontend**
 - React
 - React Router
 - React REDUX/REDUX TOOLKIT
@@ -15,7 +15,7 @@ frontend
 - адаптивность
 
 
-backend
+**backend**
 - Python 
 - Flask (микрофреймворк)
 - SQLAlchemy (ORM для баз данных)
@@ -26,7 +26,7 @@ backend
 - пагинация средствами сервера
 
 
-DevOps
+**DevOps**
 - Linux Ubuntu LTS
 - MySQL
 - Gunicorn (сервер приложений)
