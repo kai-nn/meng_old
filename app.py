@@ -7,17 +7,17 @@ import os, base64, math
 
 
 # работа с токенами
-from flask_jwt_extended import \
-    create_access_token, \
-    get_jwt, \
-    get_jwt_identity,\
-    unset_jwt_cookies, \
-    jwt_required, \
-    JWTManager
+# from flask_jwt_extended import \
+#     create_access_token, \
+#     get_jwt, \
+#     get_jwt_identity,\
+#     unset_jwt_cookies, \
+#     jwt_required, \
+#     JWTManager
 
 
 app = Flask(__name__, static_folder="./front/build", static_url_path='/')
-jwt = JWTManager(app)
+# jwt = JWTManager(app)
 
 
 # настройки подключения к базе, токены
@@ -38,7 +38,7 @@ from dadata import Dadata
 
 
 # функции
-import defs
+from defs import *
 
 
 
@@ -81,21 +81,25 @@ def authorization():
 
     temp_login = User.query.filter_by(login=login, psw=psw).first()
 
-    user_schema = UserSchema()
-    user = user_schema.dump(temp_login)
-
     if temp_login is None:
         return jsonify({'type': 'error',
                         'message': 'Пользователь с такими Логин | Пароль не зарегистрирован'})
 
-    access = Shtat.query.filter_by(user=temp_login).first()
+    shtat = Shtat.query.filter_by(user=temp_login).first()
 
-    if access is None:
+    if shtat is None:
         return jsonify({'type': 'error',
                         'message': f'Пользователь {login} еще не назначен на должность. Ждите...'})
 
+    user_schema = UserSchema()
+    user = user_schema.dump(temp_login)
 
-    access_token = create_access_token(identity=login)
+    user.pop('psw')
+
+    shtat_schema = ShtatSchema()
+    shtat = shtat_schema.dump(shtat)
+
+    access_token = getAccess(login, user, shtat)
 
     return jsonify({'type': 'success',
                     'message': 'Вход успешен',
@@ -166,7 +170,7 @@ def list_tech():
 @app.route('/location', methods=['POST'])
 def location():
     value = request.get_json()
-    print(value)
+    # print(value)
 
     if len(value) == 0:
         print('Геоданные отсутствуют')
@@ -174,7 +178,7 @@ def location():
 
     lat = value['latitude']
     lon = value['longitude']
-    print(lat, lon)
+    # print(lat, lon)
 
     dadata = Dadata(DADATA_TOKEN)
     try:

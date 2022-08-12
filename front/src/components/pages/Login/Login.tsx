@@ -7,7 +7,7 @@ import {loginValidation, passwordValidation} from "./validation";
 import axios from "axios";
 import {useDispatch} from "react-redux";
 import {showMessage} from '../../../store/message/messageSlice'
-import {setToken} from "../../../store/access/accessSlice";
+import {setAccess} from "../../../store/access/accessSlice";
 import './Login.css'
 
 interface ISignInForm {
@@ -31,8 +31,7 @@ const Login = () => {
     const onSubmit: SubmitHandler<ISignInForm> = data => {
         api('authorization', data)
             .then(data => {
-                // console.log(data)
-                dispatch(setToken(data.access_token))
+                dispatch(setAccess(data))
                 dispatch(showMessage({
                     visibility: true,
                     type: data.type,

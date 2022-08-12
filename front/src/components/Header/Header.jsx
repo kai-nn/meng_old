@@ -1,4 +1,4 @@
-import React, {FC} from "react";
+import React, {useEffect, useState} from "react";
 import {Link, useLocation} from "react-router-dom";
 import style from './Header.module.scss'
 import {
@@ -7,33 +7,42 @@ import {
 } from "@mui/material";
 import {general_style} from "../../general/style";
 import avatar from './images/avatar_1.jpg'
+import {useSelector} from "react-redux";
+import '../../store/access/accessSlice'
+import {linkExtensions} from "./linkExtensions";
 
 
-interface ILink {
-    label: string;
-    url: string;
-    icon: React.ReactNode
-}
-interface ILinks {
-    links: ILink[]
-}
 
-const Header:FC<ILinks> = ({links}) => {
+const Header = () => {
 
     const {pathname} = useLocation()
-    // console.log(pathname)
+    const menuData = useSelector(state => state.access)
+    const [links, setLinks] = useState([])
+    console.log(menuData)
+
+    const getIntersection = (menuData) => {
+        let intersection = []
+        menuData.menu.forEach(a =>
+            linkExtensions.forEach( b => a.url === b.url && intersection.push(b) )
+        )
+        return intersection
+    }
+
+
+    useEffect(() => {
+        setLinks(getIntersection(menuData))
+    }, [menuData])
+
 
     return (
         <div className={style.window}>
 
-            <div></div> {/* адаптивные поля для правильной работы Grid */}
+            <div></div> {/* схлопывающиеся поля */}
 
             <div className={style.logo}>
                 <span style={{color: 'orange'}}>micro</span>
                 <span style={{color: 'midnightblue'}}>erp</span>
-
             </div>
-
 
             <div>
                 {
@@ -56,8 +65,12 @@ const Header:FC<ILinks> = ({links}) => {
 
             <div className={style.role}>
                 <div className={style.role__text}>
-                    <span className={style.role__fio}>Александр Корпусов</span>
-                    <span className={style.role__name}>Администратор</span>
+                    <span className={style.role__fio}>
+                        {menuData.user && menuData.user.last_name + ' ' + menuData.user.first_name}
+                    </span>
+                    <span className={style.role__name}>
+                        {menuData.shtat ? menuData.shtat.position : 'Гость'}
+                    </span>
                 </div>
                 <Avatar
                     src={avatar}
@@ -65,7 +78,7 @@ const Header:FC<ILinks> = ({links}) => {
                     alt="avatar" />
             </div>
 
-            <div></div> {/* адаптивные поля для правильной работы Grid */}
+            <div></div> {/* схлопывающиеся поля */}
         </div>
 
     )

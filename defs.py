@@ -1,7 +1,20 @@
 from flask import Flask, request, jsonify
+from flask_marshmallow import pprint
 from app import app
 import os, base64, math
 from secret_data import *
+
+
+# работа с токенами
+from flask_jwt_extended import \
+    create_access_token, \
+    get_jwt, \
+    get_jwt_identity,\
+    unset_jwt_cookies, \
+    jwt_required, \
+    JWTManager
+
+jwt = JWTManager(app)
 
 
 # отправка почты
@@ -13,6 +26,25 @@ from email.mime.image import MIMEImage  # Изображения
 
 # работа с изображениями
 from PIL import Image, ImageEnhance
+
+
+def getAccess(login, user, shtat):
+
+    """ Считывание прав доступа """
+
+    # права доступа в меню: просмотр * редактирование * архивирование
+    additional_claims = {
+        'shtat': shtat,
+        'user': user,
+        'menu': [
+            {'url': '', 'code': 111},
+            {'url': 'review', 'code': 100},
+            {'url': 'logout', 'code': 101},
+        ]
+    }
+    access_token = create_access_token(identity=login, additional_claims=additional_claims)
+
+    return access_token
 
 
 def save_immage(file, type, s=3500, mini='on'):

@@ -180,17 +180,17 @@ class UserSchema(ma.SQLAlchemyAutoSchema):
 
 
 
-class ShtatSchema(ma.SQLAlchemySchema):
+class ShtatSchema(ma.SQLAlchemyAutoSchema):
     # ...AutoSchema - для автоматического создания полей из модели базы
     class Meta:
         model = Shtat
         include_fk = True
 
-    id = ma.auto_field()
-    division = ma.auto_field()
-    subdivision = ma.auto_field()
-    position = ma.auto_field()
-    user = ma.Nested(UserSchema)
+    # id = ma.auto_field()
+    # division = ma.auto_field()
+    # subdivision = ma.auto_field()
+    # position = ma.auto_field()
+    # user = ma.Nested(UserSchema)
 
 
 class DetailSchema(ma.SQLAlchemyAutoSchema):

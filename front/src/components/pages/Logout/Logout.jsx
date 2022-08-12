@@ -3,7 +3,7 @@ import { Navigate  } from 'react-router-dom';
 import axios from "axios";
 import {showMessage} from "../../../store/message/messageSlice";
 import {useDispatch} from "react-redux";
-import {setToken} from "../../../store/access/accessSlice";
+import {killAccess} from "../../../store/access/accessSlice";
 
 const Logout = () => {
     const dispatch = useDispatch()
@@ -15,7 +15,7 @@ const Logout = () => {
     api('logout')
         .then(data => {
             // console.log(data)
-            dispatch(setToken(data.access_token))
+            dispatch(killAccess())
             dispatch(showMessage({
                 visibility: true,
                 type: data.type,
