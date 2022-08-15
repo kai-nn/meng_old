@@ -1,4 +1,4 @@
-from flask import Flask, request, jsonify
+from flask import Flask, request, jsonify, send_from_directory
 from datetime import datetime, timedelta, timezone
 from flask_marshmallow import pprint
 import os, base64, math
@@ -14,7 +14,6 @@ import os, base64, math
 #     unset_jwt_cookies, \
 #     jwt_required, \
 #     JWTManager
-
 
 app = Flask(__name__, static_folder="./front/build", static_url_path='/')
 # jwt = JWTManager(app)
@@ -192,6 +191,9 @@ def location():
 
 
 
+@app.route('/img_store/<path:name>', methods=['GET'])
+def img_store(name):
+    return send_from_directory("static/images", name)
 
 
 

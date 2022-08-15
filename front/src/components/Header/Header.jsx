@@ -6,7 +6,6 @@ import {
     Avatar,
 } from "@mui/material";
 import {general_style} from "../../general/style";
-import avatar from './images/avatar_1.jpg'
 import {useSelector} from "react-redux";
 import '../../store/access/accessSlice'
 import {linkExtensions} from "./linkExtensions";
@@ -18,7 +17,8 @@ const Header = () => {
     const {pathname} = useLocation()
     const menuData = useSelector(state => state.access)
     const [links, setLinks] = useState([])
-    console.log(menuData)
+    const [avatar, setAvatar] = useState('')
+
 
     const getIntersection = (menuData) => {
         let intersection = []
@@ -31,6 +31,7 @@ const Header = () => {
 
     useEffect(() => {
         setLinks(getIntersection(menuData))
+        menuData.user ? setAvatar('./img_store/' + menuData.user.path) : setAvatar('')
     }, [menuData])
 
 

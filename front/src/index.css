@@ -3,8 +3,9 @@
     margin: 0;
     border: 0;
     font-family: "Roboto";
-    position: relative;
+
 }
+
 
 /* набор спецсимволов */
 @font-face {

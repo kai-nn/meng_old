@@ -11,9 +11,10 @@
 
     z-index: 2000;
     color: white;
-    background-color: dodgerblue;
-    opacity: 0.8;
-    filter: drop-shadow(5px -3px 5px rgba(0, 0, 0, 0.3));
+
+    backdrop-filter: blur(4px);
+    background-color: rgba(0, 136, 255, 0.59);
+    box-shadow: 5px 5px 5px rgba(0, 0, 0, 0.2);
 
 }
 

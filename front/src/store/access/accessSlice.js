@@ -25,10 +25,10 @@ const initialState = {
         //     url: 'logout',
         //     code: 111
         // },
-        // {
-        //     url: 'test_jwt',
-        //     code: 111
-        // },
+        {
+            url: 'test_jwt',
+            code: 111
+        },
     ],
 }
 

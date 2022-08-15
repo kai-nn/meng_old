@@ -40,7 +40,7 @@ const TestJWT = () => {
             <br/>
             {data && data.message}
             {err && err.message}
-
+            <img src={'./img_store/' + 'ksiuha.jpg'}/>
         </div>
     )
 }

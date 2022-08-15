@@ -1,5 +1,6 @@
 .window {
-  position: absolute;
+  position: fixed;
+  top: 0;
   min-height: 50px;
   width: 100%;
   display: grid;
@@ -7,9 +8,9 @@
   gap: 10px;
   align-items: center;
   z-index: 2000;
-  background-color: dodgerblue;
-  opacity: 0.8;
-  filter: drop-shadow(5px 5px 5px rgba(0, 0, 0, 0.3));
+  backdrop-filter: blur(4px);
+  background-color: rgba(0, 136, 255, 0.59);
+  box-shadow: 5px 5px 5px rgba(0, 0, 0, 0.2);
   margin: 0 0 10px 0;
 }
 .window a button {
