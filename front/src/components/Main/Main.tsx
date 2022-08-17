@@ -17,18 +17,18 @@ import Review from "../pages/Tech/Review/Review";
 const Main = () => {
     return (
         <div className={style.window}>
-            <div></div> {/* адаптивные поля */}
-            <Routes>
-                <Route path="/" element={<Home />} />
-                <Route path="review" element={<Review />} />
-                <Route path="detail" element={<Detail />} />
-                <Route path="login" element={<Login />} />
-                <Route path="logout" element={<Logout />} />
-                {/*<Route path="test" element={<Test />} />*/}
-                <Route path="test_jwt" element={<TestJWT />} />
-            </Routes>
-            <Message/>
-            <div></div> {/* адаптивные поля */}
+            <div className={style.content}>
+                <Routes>
+                    <Route path="/" element={<Home />} />
+                    <Route path="review" element={<Review />} />
+                    <Route path="detail" element={<Detail />} />
+                    <Route path="login" element={<Login />} />
+                    <Route path="logout" element={<Logout />} />
+                    {/*<Route path="test" element={<Test />} />*/}
+                    <Route path="test_jwt" element={<TestJWT />} />
+                </Routes>
+                <Message/>
+            </div>
         </div>
     )
 }

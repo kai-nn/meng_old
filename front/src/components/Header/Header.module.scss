@@ -1,15 +1,22 @@
+a {
+    text-decoration: none;
+}
+
+button{
+    color:white;
+    text-transform: capitalize;
+}
+
 .window{
     position: fixed;
     top: 0;
 
-    min-height: 50px;
     width: 100%;
+    min-height: 53px;
 
-    display: grid;
-    grid-template-columns: 0px min-content auto min-content 0px;
-    gap: 10px;
+    display: flex;
+    flex-wrap: wrap;
 
-    //justify-content: center;
     align-items: center;
 
     z-index: 2000;
@@ -17,26 +24,32 @@
     backdrop-filter: blur(4px);
     background-color: rgba(0, 136, 255, 0.59);
     box-shadow: 5px 5px 5px rgba(0, 0, 0, 0.2);
-    margin: 0 0 10px 0;
-
-
-    & a button{
-        padding: 5px;
-        color:white;
-        text-transform: capitalize;
-    }
-
-    & *{
-        align-items: center;
-        text-decoration: none;
-    }
 
 }
+
+
+.window_activated{
+    height: 100vh;
+
+    display: flex;
+    flex-wrap: wrap;
+
+    align-items: normal;
+
+    z-index: 2000;
+
+    backdrop-filter: blur(4px);
+    background-color: rgba(0, 136, 255, 0.59);
+    box-shadow: 5px 5px 5px rgba(0, 0, 0, 0.2);
+}
+
 
 
 .logo{
     font-size: 22px;
     font-weight: bold;
+    justify-content: center;
+    padding: 5px 10px;
 }
 
 
@@ -44,14 +57,18 @@ $color_role_admin: midnightblue;
 $color_role_user: white;
 
 .role{
-    justify-content: right;
-    display: grid;
-    grid-template-columns: min-content min-content;
-    grid-gap: 10px;
+    margin-left: auto;
+
+    display: flex;
+    padding: 5px 10px;
+
+    align-items: center;
 
     .role__text{
-        display: grid;
         text-align: right;
+        margin-right: 5px;
+        display: flex;
+        flex-direction: column;
     }
     .role__fio{
         white-space: nowrap;
@@ -61,6 +78,79 @@ $color_role_user: white;
     .role__name{
         color: $color_role_admin;
         font-size: 0.7rem;
+    }
+}
+
+
+.burger{
+    display: none;
+    padding: 5px 10px;
+}
+
+
+@media screen and (max-width: 768px) {
+    .links{
+        order: 2;
+        width: 100%;
+        text-align: center;
+    }
+}
+
+
+@media screen and (max-width: 550px) {
+    .links{
+        display: none;
+    }
+    .role{
+        display: none;
+    }
+
+
+    .links_activated{
+        order: 2;
+        display: block;
+        width: 100%;
+        text-align: center;
+
+        & a{
+            display: flex;
+            justify-content: center;
+        }
+    }
+
+    .role_activated{
+
+        display: flex;
+        order: 3;
+        height: 50px;
+        padding: 5px 10px;
+        margin: 0 auto;
+        align-items: center;
+
+        .role__text{
+            display: flex;
+            flex-direction: column;
+        }
+        .avatar{
+            display: flex;
+            margin: 5px;
+            order: -1;
+        }
+        .role__fio{
+            display: flex;
+            white-space: nowrap;
+            color: white;
+            font-size: 0.7rem;
+        }
+        .role__name{
+            color: $color_role_admin;
+            font-size: 0.7rem;
+        }
+    }
+
+    .burger{
+        display: block;
+        margin-left: auto;
     }
 }
 

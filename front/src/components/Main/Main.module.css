@@ -1,6 +1,12 @@
 .window{
-    display: grid;
-    grid-template-columns: minmax(10px, 15%) minmax(480px, 70%) minmax(10px, 15%);
-    margin: 60px 0;
+    position: absolute;
+    margin: 95px 0 40px 0;
+    top: 0;
+    width: 100%;
+}
+
+.content{
+    max-width: 1000px;
+    margin: 0 auto;
 }
 

@@ -105,6 +105,15 @@ const Login = () => {
                 </Button>
             </form>
 
+            <Typography
+                variant="subtitle1"
+                component="div"
+                className='subtitle'
+                style={{margin: '20px'}}
+            >
+                или зарегистрируйтесь
+            </Typography>
+
         </div>
     )
 }
