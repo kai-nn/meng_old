@@ -41,6 +41,30 @@ from defs import *
 
 
 
+# ведение журналов
+# один печатает журналы (stdout), другой записывает журналы в файл:
+
+import logging
+import sys
+
+logger = logging.getLogger()
+logger.setLevel(logging.INFO)
+formatter = logging.Formatter('%(levelname)s | %(message)s')
+
+stdout_handler = logging.StreamHandler(sys.stdout)
+stdout_handler.setLevel(logging.DEBUG)
+stdout_handler.setFormatter(formatter)
+
+file_handler = logging.FileHandler('logs.log')
+file_handler.setLevel(logging.DEBUG)
+file_handler.setFormatter(formatter)
+
+
+logger.addHandler(file_handler)
+logger.addHandler(stdout_handler)
+
+
+
 
 ########################################
 #########  М А Р Ш Р У Т Ы   ###########
@@ -76,7 +100,6 @@ def authorization():
     value = request.get_json()
     login = value['login']
     psw = value['password']
-    # print(login, psw)
 
     temp_login = User.query.filter_by(login=login, psw=psw).first()
 
@@ -164,8 +187,6 @@ def list_tech():
     return jsonify(output)
 
 
-
-
 @app.route('/location', methods=['POST'])
 def location():
     value = request.get_json()
@@ -194,6 +215,12 @@ def location():
 @app.route('/img_store/<path:name>', methods=['GET'])
 def img_store(name):
     return send_from_directory("static/images", name)
+
+
+
+
+
+
 
 
 

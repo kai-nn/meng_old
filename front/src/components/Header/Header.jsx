@@ -1,5 +1,5 @@
 import React, {useEffect, useState} from "react";
-import {Link, useLocation} from "react-router-dom";
+import {Link, useLocation, useNavigate} from "react-router-dom";
 import style from './Header.module.scss'
 import {
     Button,
@@ -10,6 +10,7 @@ import {useSelector} from "react-redux";
 import '../../store/access/accessSlice'
 import {linkExtensions} from "./linkExtensions";
 import BurgerToggle from "../BurgerToggle/BurgerToggle";
+// import {useNavigate} from "react-router";
 
 
 
@@ -17,6 +18,7 @@ import BurgerToggle from "../BurgerToggle/BurgerToggle";
 const Header = () => {
 
     const {pathname} = useLocation()
+    const navigate = useNavigate();
     const menuData = useSelector(state => state.access)
     const [links, setLinks] = useState([])
     const [avatar, setAvatar] = useState('')
@@ -73,7 +75,7 @@ const Header = () => {
                         {menuData.user && menuData.user.last_name + ' ' + menuData.user.first_name}
                     </span>
                     <span className={style.role__name}>
-                        {menuData.shtat ? menuData.shtat.position : 'Гость'}
+                        {menuData.shtat ? menuData.shtat.position : <a onClick={() => navigate('/login')} style={{cursor: 'pointer', fontSize: '1.4em', color: 'white'}}>Войти</a>}
                     </span>
                 </div>
                 <Avatar

@@ -1,6 +1,7 @@
 import React, {useState} from "react";
 import {content} from './content'
 import style from './Home.module.css'
+import {Avatar} from "@mui/material";
 
 const Home = () => {
 

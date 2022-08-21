@@ -1,0 +1,13 @@
+2022-08-21 11:26:15,509 | INFO |  * Running on http://127.0.0.1:5000 (Press CTRL+C to quit)
+2022-08-21 11:26:28,733 | INFO | 127.0.0.1 - - [21/Aug/2022 11:26:28] "POST /list_tech HTTP/1.1" 200 -
+2022-08-21 11:26:29,257 | INFO | 127.0.0.1 - - [21/Aug/2022 11:26:29] "POST /list_tech HTTP/1.1" 200 -
+INFO |  * Running on http://127.0.0.1:5000 (Press CTRL+C to quit)
+INFO | 127.0.0.1 - - [21/Aug/2022 11:38:24] "POST /list_tech HTTP/1.1" 200 -
+INFO | 127.0.0.1 - - [21/Aug/2022 11:38:24] "POST /list_tech HTTP/1.1" 200 -
+INFO |  * Running on http://127.0.0.1:5000 (Press CTRL+C to quit)
+INFO | 127.0.0.1 - - [21/Aug/2022 16:52:38] "POST /location HTTP/1.1" 200 -
+INFO | 127.0.0.1 - - [21/Aug/2022 16:52:42] "POST /list_tech HTTP/1.1" 200 -
+INFO | 127.0.0.1 - - [21/Aug/2022 17:02:09] "POST /list_tech HTTP/1.1" 200 -
+INFO | 127.0.0.1 - - [21/Aug/2022 17:02:15] "POST /authorization HTTP/1.1" 200 -
+INFO | 127.0.0.1 - - [21/Aug/2022 17:02:16] "GET /img_store/avatar.jpg HTTP/1.1" 200 -
+INFO | 127.0.0.1 - - [21/Aug/2022 17:02:17] "POST /list_tech HTTP/1.1" 200 -

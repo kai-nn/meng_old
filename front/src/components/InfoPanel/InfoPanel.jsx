@@ -1,11 +1,11 @@
 import React, {useEffect} from "react";
-import style from './Footer.module.scss'
+import style from './InfoPanel.module.scss'
 import useAxios from "../../general/useAxios";
 import {useGeoData} from "../../general/useGeoData";
 import PublicIcon from '@mui/icons-material/Public';
 
 
-const Footer = () => {
+const InfoPanel = () => {
     let position = ''
     const {coord} = useGeoData()
     const {data, err, loaded, changeData} = useAxios(
@@ -33,4 +33,4 @@ const Footer = () => {
     )
 }
 
-export default Footer
+export default InfoPanel
