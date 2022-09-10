@@ -16,7 +16,8 @@ button {
   flex-wrap: wrap;
   align-items: center;
   z-index: 2000;
-  backdrop-filter: blur(4px);
+  
+    backdrop-filter: blur(4px);
   background-color: rgba(0, 136, 255, 0.59);
   box-shadow: 5px 5px 5px rgba(0, 0, 0, 0.2);
 }

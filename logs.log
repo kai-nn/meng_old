@@ -11,3 +11,35 @@ INFO | 127.0.0.1 - - [21/Aug/2022 17:02:09] "POST /list_tech HTTP/1.1" 200 -
 INFO | 127.0.0.1 - - [21/Aug/2022 17:02:15] "POST /authorization HTTP/1.1" 200 -
 INFO | 127.0.0.1 - - [21/Aug/2022 17:02:16] "GET /img_store/avatar.jpg HTTP/1.1" 200 -
 INFO | 127.0.0.1 - - [21/Aug/2022 17:02:17] "POST /list_tech HTTP/1.1" 200 -
+INFO |  * Running on http://127.0.0.1:5000 (Press CTRL+C to quit)
+INFO | 127.0.0.1 - - [22/Aug/2022 18:33:29] "[31m[1mGET /list_tech HTTP/1.1[0m" 400 -
+INFO | 127.0.0.1 - - [22/Aug/2022 18:33:56] "[33mGET /tech HTTP/1.1[0m" 404 -
+INFO | 127.0.0.1 - - [22/Aug/2022 18:33:56] "[33mGET /tech HTTP/1.1[0m" 404 -
+INFO | 127.0.0.1 - - [22/Aug/2022 18:34:02] "[33mGET /tech HTTP/1.1[0m" 404 -
+INFO | 127.0.0.1 - - [22/Aug/2022 18:34:03] "POST /location HTTP/1.1" 200 -
+INFO | 127.0.0.1 - - [22/Aug/2022 18:34:12] "[33mGET /tech HTTP/1.1[0m" 404 -
+INFO | 127.0.0.1 - - [22/Aug/2022 18:34:15] "[33mGET /tech HTTP/1.1[0m" 404 -
+INFO |  * Running on http://127.0.0.1:5000 (Press CTRL+C to quit)
+INFO | 127.0.0.1 - - [22/Aug/2022 20:11:51] "POST /list_tech HTTP/1.1" 200 -
+INFO | 127.0.0.1 - - [22/Aug/2022 20:11:51] "POST /location HTTP/1.1" 200 -
+INFO | 127.0.0.1 - - [25/Aug/2022 11:05:51] "POST /list_tech HTTP/1.1" 200 -
+INFO | 127.0.0.1 - - [25/Aug/2022 20:09:49] "POST /authorization HTTP/1.1" 200 -
+INFO | 127.0.0.1 - - [25/Aug/2022 20:09:50] "GET /img_store/avatar.jpg HTTP/1.1" 200 -
+INFO | 127.0.0.1 - - [25/Aug/2022 20:23:52] "POST /logout HTTP/1.1" 200 -
+INFO | 127.0.0.1 - - [25/Aug/2022 20:23:59] "POST /location HTTP/1.1" 200 -
+INFO | 127.0.0.1 - - [31/Aug/2022 18:23:02] "POST /location HTTP/1.1" 200 -
+INFO | 127.0.0.1 - - [31/Aug/2022 18:32:10] "POST /location HTTP/1.1" 200 -
+INFO | 127.0.0.1 - - [31/Aug/2022 18:40:38] "POST /location HTTP/1.1" 200 -
+INFO |  * Running on http://127.0.0.1:5000 (Press CTRL+C to quit)
+INFO | 127.0.0.1 - - [10/Sep/2022 17:37:50] "[33mGET /logo192.png HTTP/1.1[0m" 404 -
+INFO | 127.0.0.1 - - [10/Sep/2022 17:37:50] "POST /location HTTP/1.1" 200 -
+INFO | 127.0.0.1 - - [10/Sep/2022 18:28:22] "POST /location HTTP/1.1" 200 -
+INFO | 127.0.0.1 - - [10/Sep/2022 18:28:22] "[33mGET /logo192.png HTTP/1.1[0m" 404 -
+INFO | 127.0.0.1 - - [10/Sep/2022 18:31:36] "POST /list_tech HTTP/1.1" 200 -
+INFO | 127.0.0.1 - - [10/Sep/2022 18:31:43] "POST /list_tech HTTP/1.1" 200 -
+INFO | 127.0.0.1 - - [10/Sep/2022 20:24:15] "POST /authorization HTTP/1.1" 200 -
+INFO | 127.0.0.1 - - [10/Sep/2022 20:24:16] "GET /img_store/avatar.jpg HTTP/1.1" 200 -
+INFO | 127.0.0.1 - - [10/Sep/2022 20:25:18] "POST /logout HTTP/1.1" 200 -
+INFO | 127.0.0.1 - - [10/Sep/2022 20:58:24] "POST /list_tech HTTP/1.1" 200 -
+INFO | 127.0.0.1 - - [10/Sep/2022 20:59:16] "POST /authorization HTTP/1.1" 200 -
+INFO | 127.0.0.1 - - [10/Sep/2022 20:59:16] "[36mGET /img_store/avatar.jpg HTTP/1.1[0m" 304 -
