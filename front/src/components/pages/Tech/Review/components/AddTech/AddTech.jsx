@@ -36,14 +36,13 @@ const AddTech = ({addTech, setAddTech}) => {
                 <Typography variant="h6" gutterBottom component="div" color="primary">
                     Добавление технологии
                 </Typography>}
-            footer=
-                {
-                <ButtonGroup variant="text" aria-label="text button group">
+            footer={
+                <>
                     <Button color="success"><Add />Создать</Button>
                     <Button color="secondary"><ContentCopyIcon />Копировать</Button>
                     <Button color="error"><DeleteOutlineIcon />Удалить</Button>
                     <Button color="primary"><ArchiveOutlinedIcon />В архив</Button>
-                </ButtonGroup>
+                </>
                 }
             >
 
@@ -56,7 +55,7 @@ const AddTech = ({addTech, setAddTech}) => {
                     <b>Основные характеристики</b>
                 </AccordionSummary>
                 <AccordionDetails>
-                    <div style={{display: "grid", gridTemplateColumns: "auto auto", gap: "10px"}}>
+                    <div className={'field'} style={{display: "grid", gridTemplateColumns: "auto auto", gap: "10px"}}>
                         <TextField
                           label="Деталь"
                           size="small"
@@ -86,7 +85,7 @@ const AddTech = ({addTech, setAddTech}) => {
                    <b>Атрибуты документа</b>
                 </AccordionSummary>
                 <AccordionDetails>
-                    <div style={{display: "grid", gridTemplateColumns: "80% auto",  gap: "10px"}}>
+                    <div className={'field'} style={{display: "grid", gridTemplateColumns: "80% auto",  gap: "10px"}}>
                         <TextField
                           label="Название комлекта"
                           size="small"
@@ -113,7 +112,7 @@ const AddTech = ({addTech, setAddTech}) => {
                       style={{width: "100%", margin: "0 0 10px 0"}}
                       defaultValue=""
                     />
-                    <div style={{display: "grid", gridTemplateColumns: "auto auto", gap: "10px"}}>
+                    <div className={'field'} style={{display: "grid", gridTemplateColumns: "auto auto", gap: "10px"}}>
                         <TextField
                           label="Код"
                           size="small"

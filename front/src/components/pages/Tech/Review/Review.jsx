@@ -50,9 +50,9 @@ const Review = () => {
 
 
 
-    useEffect(() => {
-        return console.warn('componentWillUnmount')
-    }, [])
+    // useEffect(() => {
+    //     return console.warn('componentWillUnmount')
+    // }, [])
 
 
 

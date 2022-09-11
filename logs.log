@@ -43,3 +43,107 @@ INFO | 127.0.0.1 - - [10/Sep/2022 20:25:18] "POST /logout HTTP/1.1" 200 -
 INFO | 127.0.0.1 - - [10/Sep/2022 20:58:24] "POST /list_tech HTTP/1.1" 200 -
 INFO | 127.0.0.1 - - [10/Sep/2022 20:59:16] "POST /authorization HTTP/1.1" 200 -
 INFO | 127.0.0.1 - - [10/Sep/2022 20:59:16] "[36mGET /img_store/avatar.jpg HTTP/1.1[0m" 304 -
+INFO |  * Running on http://127.0.0.1:5000 (Press CTRL+C to quit)
+INFO | 127.0.0.1 - - [11/Sep/2022 12:02:33] "[33mGET /logo192.png HTTP/1.1[0m" 404 -
+INFO | 127.0.0.1 - - [11/Sep/2022 12:02:33] "POST /location HTTP/1.1" 200 -
+INFO | 127.0.0.1 - - [11/Sep/2022 12:03:02] "POST /authorization HTTP/1.1" 200 -
+INFO | 127.0.0.1 - - [11/Sep/2022 12:03:03] "GET /img_store/avatar.jpg HTTP/1.1" 200 -
+INFO | 127.0.0.1 - - [11/Sep/2022 12:03:10] "POST /list_tech HTTP/1.1" 200 -
+INFO | 127.0.0.1 - - [11/Sep/2022 12:12:55] "POST /list_tech HTTP/1.1" 200 -
+ERROR | Exception on /list_tech [POST]
+Traceback (most recent call last):
+  File "D:\MyProject\microerp\env\lib\site-packages\pymysql\connections.py", line 732, in _read_bytes
+    data = self._rfile.read(num_bytes)
+  File "C:\Python38\lib\socket.py", line 669, in readinto
+    return self._sock.recv_into(b)
+ConnectionAbortedError: [WinError 10053] Программа на вашем хост-компьютере разорвала установленное подключение
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "D:\MyProject\microerp\env\lib\site-packages\sqlalchemy\engine\base.py", line 1819, in _execute_context
+    self.dialect.do_execute(
+  File "D:\MyProject\microerp\env\lib\site-packages\sqlalchemy\engine\default.py", line 732, in do_execute
+    cursor.execute(statement, parameters)
+  File "D:\MyProject\microerp\env\lib\site-packages\pymysql\cursors.py", line 148, in execute
+    result = self._query(query)
+  File "D:\MyProject\microerp\env\lib\site-packages\pymysql\cursors.py", line 310, in _query
+    conn.query(q)
+  File "D:\MyProject\microerp\env\lib\site-packages\pymysql\connections.py", line 548, in query
+    self._affected_rows = self._read_query_result(unbuffered=unbuffered)
+  File "D:\MyProject\microerp\env\lib\site-packages\pymysql\connections.py", line 775, in _read_query_result
+    result.read()
+  File "D:\MyProject\microerp\env\lib\site-packages\pymysql\connections.py", line 1156, in read
+    first_packet = self.connection._read_packet()
+  File "D:\MyProject\microerp\env\lib\site-packages\pymysql\connections.py", line 692, in _read_packet
+    packet_header = self._read_bytes(4)
+  File "D:\MyProject\microerp\env\lib\site-packages\pymysql\connections.py", line 738, in _read_bytes
+    raise err.OperationalError(
+pymysql.err.OperationalError: (2013, 'Lost connection to MySQL server during query ([WinError 10053] Программа на вашем хост-компьютере разорвала установленное подключение)')
+
+The above exception was the direct cause of the following exception:
+
+Traceback (most recent call last):
+  File "D:\MyProject\microerp\env\lib\site-packages\flask\app.py", line 2525, in wsgi_app
+    response = self.full_dispatch_request()
+  File "D:\MyProject\microerp\env\lib\site-packages\flask\app.py", line 1822, in full_dispatch_request
+    rv = self.handle_user_exception(e)
+  File "D:\MyProject\microerp\env\lib\site-packages\flask\app.py", line 1820, in full_dispatch_request
+    rv = self.dispatch_request()
+  File "D:\MyProject\microerp\env\lib\site-packages\flask\app.py", line 1796, in dispatch_request
+    return self.ensure_sync(self.view_functions[rule.endpoint])(**view_args)
+  File "D:\MyProject\microerp\app.py", line 153, in list_tech
+    tech_count = tech.count()
+  File "D:\MyProject\microerp\env\lib\site-packages\sqlalchemy\orm\query.py", line 3163, in count
+    return self._from_self(col).enable_eagerloads(False).scalar()
+  File "D:\MyProject\microerp\env\lib\site-packages\sqlalchemy\orm\query.py", line 2888, in scalar
+    ret = self.one()
+  File "D:\MyProject\microerp\env\lib\site-packages\sqlalchemy\orm\query.py", line 2865, in one
+    return self._iter().one()
+  File "D:\MyProject\microerp\env\lib\site-packages\sqlalchemy\orm\query.py", line 2903, in _iter
+    result = self.session.execute(
+  File "D:\MyProject\microerp\env\lib\site-packages\sqlalchemy\orm\session.py", line 1712, in execute
+    result = conn._execute_20(statement, params or {}, execution_options)
+  File "D:\MyProject\microerp\env\lib\site-packages\sqlalchemy\engine\base.py", line 1631, in _execute_20
+    return meth(self, args_10style, kwargs_10style, execution_options)
+  File "D:\MyProject\microerp\env\lib\site-packages\sqlalchemy\sql\elements.py", line 332, in _execute_on_connection
+    return connection._execute_clauseelement(
+  File "D:\MyProject\microerp\env\lib\site-packages\sqlalchemy\engine\base.py", line 1498, in _execute_clauseelement
+    ret = self._execute_context(
+  File "D:\MyProject\microerp\env\lib\site-packages\sqlalchemy\engine\base.py", line 1862, in _execute_context
+    self._handle_dbapi_exception(
+  File "D:\MyProject\microerp\env\lib\site-packages\sqlalchemy\engine\base.py", line 2043, in _handle_dbapi_exception
+    util.raise_(
+  File "D:\MyProject\microerp\env\lib\site-packages\sqlalchemy\util\compat.py", line 208, in raise_
+    raise exception
+  File "D:\MyProject\microerp\env\lib\site-packages\sqlalchemy\engine\base.py", line 1819, in _execute_context
+    self.dialect.do_execute(
+  File "D:\MyProject\microerp\env\lib\site-packages\sqlalchemy\engine\default.py", line 732, in do_execute
+    cursor.execute(statement, parameters)
+  File "D:\MyProject\microerp\env\lib\site-packages\pymysql\cursors.py", line 148, in execute
+    result = self._query(query)
+  File "D:\MyProject\microerp\env\lib\site-packages\pymysql\cursors.py", line 310, in _query
+    conn.query(q)
+  File "D:\MyProject\microerp\env\lib\site-packages\pymysql\connections.py", line 548, in query
+    self._affected_rows = self._read_query_result(unbuffered=unbuffered)
+  File "D:\MyProject\microerp\env\lib\site-packages\pymysql\connections.py", line 775, in _read_query_result
+    result.read()
+  File "D:\MyProject\microerp\env\lib\site-packages\pymysql\connections.py", line 1156, in read
+    first_packet = self.connection._read_packet()
+  File "D:\MyProject\microerp\env\lib\site-packages\pymysql\connections.py", line 692, in _read_packet
+    packet_header = self._read_bytes(4)
+  File "D:\MyProject\microerp\env\lib\site-packages\pymysql\connections.py", line 738, in _read_bytes
+    raise err.OperationalError(
+sqlalchemy.exc.OperationalError: (pymysql.err.OperationalError) (2013, 'Lost connection to MySQL server during query ([WinError 10053] Программа на вашем хост-компьютере разорвала установленное подключение)')
+[SQL: SELECT count(*) AS count_1 
+FROM (SELECT tech.id AS tech_id, tech.name AS tech_name, tech.title AS tech_title, tech.description AS tech_description, tech.version AS tech_version, tech.date AS tech_date, tech.manufacturer AS tech_manufacturer, tech.opt AS tech_opt, tech.company AS tech_company, tech.last_mod AS tech_last_mod, tech.litera AS tech_litera, tech.sortament AS tech_sortament, tech.kod AS tech_kod, tech.ev AS tech_ev, tech.md AS tech_md, tech.en AS tech_en, tech.n_rash AS tech_n_rash, tech.kim AS tech_kim, tech.kod_zag AS tech_kod_zag, tech.profil_i_razmer AS tech_profil_i_razmer, tech.kd AS tech_kd, tech.mz AS tech_mz, tech.creater AS tech_creater, tech.status_tech AS tech_status_tech, tech.creater_id AS tech_creater_id, tech.detail_id AS tech_detail_id 
+FROM tech) AS anon_1]
+(Background on this error at: https://sqlalche.me/e/14/e3q8)
+INFO | 127.0.0.1 - - [11/Sep/2022 12:17:43] "[35m[1mPOST /list_tech HTTP/1.1[0m" 500 -
+INFO | 127.0.0.1 - - [11/Sep/2022 12:17:44] "POST /list_tech HTTP/1.1" 200 -
+INFO | 127.0.0.1 - - [11/Sep/2022 12:20:33] "POST /list_tech HTTP/1.1" 200 -
+INFO | 127.0.0.1 - - [11/Sep/2022 12:20:33] "POST /location HTTP/1.1" 200 -
+INFO | 127.0.0.1 - - [11/Sep/2022 12:20:34] "[33mGET /logo192.png HTTP/1.1[0m" 404 -
+INFO | 127.0.0.1 - - [11/Sep/2022 15:32:02] "POST /list_tech HTTP/1.1" 200 -
+INFO | 127.0.0.1 - - [11/Sep/2022 15:32:02] "POST /location HTTP/1.1" 200 -
+INFO | 127.0.0.1 - - [11/Sep/2022 15:32:03] "[33mGET /logo192.png HTTP/1.1[0m" 404 -

@@ -45,26 +45,17 @@
 
 .modal{
   position: fixed;
+  //display: flex;
+  //flex-direction: column;
   top: 120px;
-  padding: 15px;
+  padding: 15px 5px 20px 10px;
   border-radius: 5px;
   background-color: white;
   height: 440px;
-  width: 440px;
-
-
 
   filter: drop-shadow(5px 5px 5px rgba(0, 0, 0, 0.4));
 
-  & .modal__body{
-    height: inherit;
-    width: inherit;
-    padding: 5px;
-    z-index: 1000;
-    overflow-y: scroll;
-  }
-
-  & .modal__header{
+  &__header{
     position: absolute;
     top: -35px;
     animation-duration: .2s;
@@ -80,19 +71,28 @@
     }
   }
 
-  & .modal__footer{
-    position: absolute;
-    bottom: -45px;
+  &__body{
+    height: inherit;
+    width: inherit;
+    padding: 5px;
+    z-index: 1000;
+    overflow-y: scroll;
+  }
+
+  &__footer{
+    //position: absolute;
+    bottom: -15px;
+    text-align: center;
     animation-duration: .2s;
     animation-name: move_footer;
     z-index: 100;
   }
   @keyframes move_footer {
     from {
-      bottom: 0;
+      bottom: 45px;
     }
     to {
-      bottom: -45px;
+      bottom: -10px;
     }
   }
 
@@ -112,4 +112,24 @@
 ::-webkit-scrollbar-thumb:hover {
     background: darkgray;
 }
+
+
+
+@media screen and (max-width: 440px) {
+  .modal {
+    width: 100%;
+    padding: 15px 5px 20px 5px;
+  }
+
+  .field {
+    display: block !important;
+
+    & > *{
+      width: 100%;
+      margin: 10px 0 0 0 !important;
+    }
+}
+
+}
+
 
