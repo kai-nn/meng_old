@@ -1,1 +1,1 @@
-{"version":3,"sourceRoot":"","sources":["InfoPanel.module.scss"],"names":[],"mappings":"AAAA;EACI;EACA;EAEA;EACA;EACA;EAEA;EACA;EAEA;EACA;EAEA;EACA;EACA;;;AAIJ;EACI;;AAEA;EACI;EACA","file":"InfoPanel.module.css"}
+{"version":3,"sourceRoot":"","sources":["InfoPanel.module.scss"],"names":[],"mappings":"AAAA;EACI;EACA;EAEA;EACA;EACA;EAEA;EACA;EAEA;EACA;EAEA;EACA;EACA;;;AAIJ;EACI;;AAEA;EACI;EACA;;;AAIR;EACE;IACE","file":"InfoPanel.module.css"}

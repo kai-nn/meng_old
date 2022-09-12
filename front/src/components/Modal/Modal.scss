@@ -14,44 +14,44 @@
   display: flex;
   align-items: center;
   justify-content: center;
+
+  &.open{
+    animation-duration: .5s;
+    animation-name: open;
+  }
+  @keyframes open {
+    from {
+      opacity: 0;
+    }
+    to {
+      opacity: 1;
+    }
+  }
+
+  &.close{
+    opacity: 0;
+    animation-duration: .5s;
+    animation-name: close;
+  }
+  @keyframes close {
+    from {
+      opacity: 1;
+    }
+    to {
+      opacity: 0;
+    }
+  }
 }
 
-.curtain.open{
-  animation-duration: .5s;
-  animation-name: open;
-}
-@keyframes open {
-  from {
-    opacity: 0;
-  }
-  to {
-    opacity: 1;
-  }
-}
 
-.curtain.close{
-  opacity: 0;
-  animation-duration: .5s;
-  animation-name: close;
-}
-@keyframes close {
-  from {
-    opacity: 1;
-  }
-  to {
-    opacity: 0;
-  }
-}
 
 .modal{
   position: fixed;
-  //display: flex;
-  //flex-direction: column;
   top: 120px;
   padding: 15px 5px 20px 10px;
   border-radius: 5px;
   background-color: white;
-  height: 440px;
+  height: 420px;
 
   filter: drop-shadow(5px 5px 5px rgba(0, 0, 0, 0.4));
 
@@ -95,9 +95,29 @@
       bottom: -10px;
     }
   }
+}
 
+
+
+@media screen and (max-width: 440px) {
+  .modal {
+    top: 100px;
+    width: 100%;
+    height: 420px;
+    padding: 15px 5px 20px 5px;
+  }
+
+  .field {
+    display: block !important;
+
+    & > *{
+      width: 100%;
+      margin: 10px 0 0 0 !important;
+    }
+  }
 
 }
+
 
 /* Ползунки */
 ::-webkit-scrollbar {
@@ -112,24 +132,4 @@
 ::-webkit-scrollbar-thumb:hover {
     background: darkgray;
 }
-
-
-
-@media screen and (max-width: 440px) {
-  .modal {
-    width: 100%;
-    padding: 15px 5px 20px 5px;
-  }
-
-  .field {
-    display: block !important;
-
-    & > *{
-      width: 100%;
-      margin: 10px 0 0 0 !important;
-    }
-}
-
-}
-
 

@@ -12,12 +12,10 @@
   align-items: center;
   justify-content: center;
 }
-
 .curtain.open {
   animation-duration: 0.5s;
   animation-name: open;
 }
-
 @keyframes open {
   from {
     opacity: 0;
@@ -31,7 +29,6 @@
   animation-duration: 0.5s;
   animation-name: close;
 }
-
 @keyframes close {
   from {
     opacity: 1;
@@ -40,13 +37,14 @@
     opacity: 0;
   }
 }
+
 .modal {
   position: fixed;
   top: 120px;
   padding: 15px 5px 20px 10px;
   border-radius: 5px;
   background-color: white;
-  height: 440px;
+  height: 420px;
   filter: drop-shadow(5px 5px 5px rgba(0, 0, 0, 0.4));
 }
 .modal__header {
@@ -87,6 +85,21 @@
   }
 }
 
+@media screen and (max-width: 440px) {
+  .modal {
+    top: 100px;
+    width: 100%;
+    height: 420px;
+    padding: 15px 5px 20px 5px;
+  }
+  .field {
+    display: block !important;
+  }
+  .field > * {
+    width: 100%;
+    margin: 10px 0 0 0 !important;
+  }
+}
 /* Ползунки */
 ::-webkit-scrollbar {
   width: 10px;
@@ -101,20 +114,6 @@
 
 ::-webkit-scrollbar-thumb:hover {
   background: darkgray;
-}
-
-@media screen and (max-width: 440px) {
-  .modal {
-    width: 100%;
-    padding: 15px 5px 20px 5px;
-  }
-  .field {
-    display: block !important;
-  }
-  .field > * {
-    width: 100%;
-    margin: 10px 0 0 0 !important;
-  }
 }
 
 /*# sourceMappingURL=Modal.css.map */

@@ -57,6 +57,7 @@ class User(db.Model):
     status_id = db.Column(db.Integer, db.ForeignKey('status.id'))
 
     creater = db.relationship('Tech', backref='user')
+    added = db.relationship('Tech', backref='user')
 
 
 
@@ -168,6 +169,24 @@ class Oper(db.Model):
 
 
 
+class Resource(db.Model):
+    id = db.Column(db.Integer, primary_key=True)
+    type = db.Column(db.String(100))                            # additional - вспомогательный, prisp - приспособление, ...
+    description = db.Column(db.String(200))                     # полное описание
+    code = db.Column(db.String(100))                            # шифр, условный код
+    main_characteristic = db.Column(db.String(200))             # главная характеристика (для доп. фильтрации, ...)
+    # material = db.Column(db.String(100))                        # материал, если применимо
+    firm = db.Column(db.String(100))                            # производитель
+    path = db.Column(db.String(100))                            # путь к картинке
+    relevance = db.Column(db.Integer)                           # 1 - актуально, '' - аннулировано
+    data_added = db.Column(db.String(100))                      # дата добавления
+    added_id = db.Column(db.Integer, db.ForeignKey('user.id'))  # ID user добавившего
+
+
+
+
+
+
 
 # Shema's
 
@@ -223,3 +242,7 @@ class OperSchema(ma.SQLAlchemyAutoSchema):
         include_fk = True
 
 
+class ResourceSchema(ma.SQLAlchemyAutoSchema):
+    class Meta:
+        model = Resource
+        include_fk = True

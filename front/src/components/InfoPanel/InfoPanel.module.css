@@ -21,4 +21,10 @@
   color: lightgrey;
 }
 
+@media screen and (max-width: 440px) {
+  .window {
+    display: none;
+  }
+}
+
 /*# sourceMappingURL=InfoPanel.module.css.map */
