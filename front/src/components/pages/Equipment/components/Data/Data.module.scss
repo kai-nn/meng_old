@@ -1,0 +1,27 @@
+.data{
+  display: flex;
+  flex-flow: row nowrap;
+}
+
+.image{
+  width: 100%;
+
+  & img{
+    width: 100%;
+    //object-position: center top;
+  }
+}
+
+
+
+.input{
+  display: flex;
+  flex-flow: column wrap;
+  width: 100%;
+}
+
+@media screen and (max-width: 600px){
+  .data{
+    flex-flow: column wrap;
+  }
+}

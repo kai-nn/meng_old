@@ -57,7 +57,7 @@ class User(db.Model):
     status_id = db.Column(db.Integer, db.ForeignKey('status.id'))
 
     creater = db.relationship('Tech', backref='user')
-    added = db.relationship('Tech', backref='user')
+    added = db.relationship('Equipment', backref='user')
 
 
 
@@ -168,21 +168,25 @@ class Oper(db.Model):
     tech_id = db.Column(db.Integer, db.ForeignKey('tech.id'))
 
 
-
-class Resource(db.Model):
+class Equipment_position(db.Model):
     id = db.Column(db.Integer, primary_key=True)
-    type = db.Column(db.String(100))                            # additional - вспомогательный, prisp - приспособление, ...
+    num_position = db.Column(db.Integer)
+    num_str = db.Column(db.Integer)
+
+class Equipment(db.Model):                                      # оснащение
+    id = db.Column(db.Integer, primary_key=True)
+    name = db.Column(db.String(100))                            # additional - вспомогательный, prisp - приспособление, ...
+    is_group = db.Column(db.Boolean)                                # True - группа, False - элемент
     description = db.Column(db.String(200))                     # полное описание
     code = db.Column(db.String(100))                            # шифр, условный код
-    main_characteristic = db.Column(db.String(200))             # главная характеристика (для доп. фильтрации, ...)
-    # material = db.Column(db.String(100))                        # материал, если применимо
+    main_characteristic = db.Column(db.String(300))             # главная характеристика (для доп. фильтрации, ...)
     firm = db.Column(db.String(100))                            # производитель
     path = db.Column(db.String(100))                            # путь к картинке
-    relevance = db.Column(db.Integer)                           # 1 - актуально, '' - аннулировано
+    relevance = db.Column(db.Boolean)                           # True - актуально, False - аннулировано
     data_added = db.Column(db.String(100))                      # дата добавления
     added_id = db.Column(db.Integer, db.ForeignKey('user.id'))  # ID user добавившего
-
-
+    position_id = db.Column(db.Integer, db.ForeignKey('equipment_position.id'))
+    position = db.relationship('Equipment_position', backref='position')
 
 
 
@@ -242,7 +246,14 @@ class OperSchema(ma.SQLAlchemyAutoSchema):
         include_fk = True
 
 
-class ResourceSchema(ma.SQLAlchemyAutoSchema):
+class Equipment_positionSchema(ma.SQLAlchemyAutoSchema):
     class Meta:
-        model = Resource
+        model = Equipment_position
         include_fk = True
+
+class EquipmentSchema(ma.SQLAlchemyAutoSchema):
+    class Meta:
+        model = Equipment
+        include_fk = True
+
+    position = ma.Nested(Equipment_positionSchema)

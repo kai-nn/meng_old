@@ -218,10 +218,18 @@ def img_store(name):
 
 
 
+@app.route('/equipment', methods=['GET', 'POST'])
+def equipment():
+    if request.method == 'GET':
+        equipment = Equipment.query.join(Equipment_position).order_by(Equipment_position.num_str).all()
+        equipment_schema = EquipmentSchema(many=True)
+        response = equipment_schema.dump(equipment)
+        pprint(response)
+        return response
 
 
-
-
+# equipment = Equipment.query.join(Equipment_position).order_by(Equipment_position.num_str).all()
+# print(equipment)
 
 
 if __name__ == '__main__':

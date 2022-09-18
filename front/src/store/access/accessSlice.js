@@ -18,6 +18,10 @@ const initialState = {
             code: 111
         },
         {
+            url: 'equipment',
+            code: 111
+        },
+        {
             url: 'login',
             code: 111
         },

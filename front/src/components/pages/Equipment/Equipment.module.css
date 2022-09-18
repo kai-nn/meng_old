@@ -1,0 +1,28 @@
+.frame {
+  display: flex;
+  height: 75vh;
+}
+
+.list {
+  width: 250px;
+  padding: 5px;
+  background-color: #ebebeb;
+}
+
+.data {
+  width: 100%;
+  padding: 5px;
+  background-color: lightgreen;
+}
+
+@media screen and (max-width: 480px) {
+  .frame {
+    display: block;
+    height: 400px;
+  }
+  .list {
+    width: 100%;
+  }
+}
+
+/*# sourceMappingURL=Equipment.module.css.map */

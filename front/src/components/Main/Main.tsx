@@ -12,6 +12,7 @@ import Message from "../Message/Message";
 import Logout from "../pages/Logout/Logout";
 import TestJWT from "../pages/TestJWT/TestJWT";
 import Review from "../pages/Tech/Review/Review";
+import Equipment from "../pages/Equipment/Equipment";
 
 
 const Main = () => {
@@ -24,6 +25,7 @@ const Main = () => {
                     <Route path="detail" element={<Detail />} />
                     <Route path="login" element={<Login />} />
                     <Route path="logout" element={<Logout />} />
+                    <Route path="equipment" element={<Equipment />} />
                     {/*<Route path="test" element={<Test />} />*/}
                     <Route path="test_jwt" element={<TestJWT />} />
                 </Routes>

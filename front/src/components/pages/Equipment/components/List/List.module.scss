@@ -1,0 +1,24 @@
+.str{
+  display: flex;
+  height: 1.5em;
+  //background-color: #36a6fc;
+}
+
+.node{
+  //background-color: white;
+}
+
+.name{
+  //background-color: green;
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
+
+  &_sellected{
+    color: orange;
+  }
+}
+
+li{
+  list-style-type: none;
+}

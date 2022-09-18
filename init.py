@@ -4,9 +4,14 @@ db.create_all()
 
 from models import *
 
-# user = User(username='Александр', lastname='Корпусов', email='admin@example.com')
-# db.session.add(user)
-# db.session.commit()
+
+# Тест подключения к БД
+try:
+    exist = User.query.all()
+    print('\nТест подключения к БД - успешно\n')
+except Exception as ex:
+    print('\nОшибка подключения к БД!\n')
+
 
 
 # Закрепление п.п. меню для разных ролей
@@ -122,12 +127,7 @@ url = {
     'Вход': '/authorization',
 }
 
-try:
-    exist = User.query.all()
-    print('\nТест подключения к БД - успешно\n')
-except Exception as ex:
-    db.create_all()
-    print('\nСоздана структура базы данных\n')
+if len(User.query.all()) <= 0:
 
     # настройка статусов пользователя
     status = {None, 'Работает', 'Уволен', 'В отпуске', 'На больничном'}
@@ -158,12 +158,134 @@ except Exception as ex:
 
     user.status = Status.query.filter_by(status='Работает').first()
 
-    shtat = Shtat(division='330',
+    shtat = Shtat(division='300',
                   subdivision='Администрация',
-                  position='Начальник отдела',
+                  position='Главный инженер',
                   user=user,
                   role_in_shtat=admin)
 
     db.session.add(user)
     db.session.add(shtat)
     db.session.commit()
+    print('\nСозданы default\'ные записи User, Shtat.\n')
+
+
+
+
+# Настройки базы Equipment (оснащение)
+equipment_bd = [
+    {
+        'name': 'Приспособление',
+        'is_group': True,
+        'description': None,
+        'code': None,
+        'main_characteristic': None,
+        'firm': None,
+        'path': 'equipment/default_prisp.png',
+        'relevance': True,
+        'data_added': None,
+        'user': None,
+        'position': {
+            'num_position': 0,
+            'num_str': None
+        }
+    },
+    {
+        'name': 'Планшайба токарная',
+        'is_group': False,
+        'description': 'Планшайба для обработки цапф',
+        'code': '63015-100',
+        'main_characteristic': '#detail=11.4201.3080.00',
+        'firm': 'цех 50',
+        'path': 'equipment/prisp_1.jpg',
+        'relevance': True,
+        'data_added': '10.03.79',
+        'user': None,
+        'position': {
+            'num_position': 1,
+            'num_str': None
+        }
+    },
+    {
+        'name': 'Средство контроля',
+        'is_group': True,
+        'description': None,
+        'code': None,
+        'main_characteristic': None,
+        'firm': None,
+        'path': 'equipment/default_control.png',
+        'relevance': True,
+        'data_added': '10.03.90',
+        'user': None,
+        'position': {
+            'num_position': 0,
+            'num_str': None
+        }
+    },
+    {
+        'name': 'Скоба',
+        'is_group': False,
+        'description': 'Для контроля наружных гладких поверхностей',
+        'code': '63030-300',
+        'main_characteristic': '#diametr=50h8',
+        'firm': 'цех 50',
+        'path': 'equipment/control_1.jpg',
+        'relevance': True,
+        'data_added': '10.03.10',
+        'user': None,
+        'position': {
+            'num_position': 1,
+            'num_str': None
+        }
+    },
+    {
+        'name': 'Инструмент',
+        'is_group': True,
+        'description': None,
+        'code': None,
+        'main_characteristic': None,
+        'firm': None,
+        'path': 'equipment/default_tool.png',
+        'relevance': True,
+        'data_added': '10.03.90',
+        'user': None,
+        'position': {
+            'num_position': 0,
+            'num_str': None
+        }
+    },
+]
+
+if len(Equipment.query.all()) <= 0:
+    len = len(equipment_bd)
+    index = 0
+    user = User.query.first()
+    while index <= len - 1:
+        position = Equipment_position(
+            num_position=equipment_bd[index]['position']['num_position'],
+            num_str=index
+        )
+        # print(equipment_bd[index]['type'])
+        equipment = Equipment(
+            name=equipment_bd[index]['name'],
+            is_group=equipment_bd[index]['is_group'],
+            description=equipment_bd[index]['description'],
+            code=equipment_bd[index]['code'],
+            main_characteristic=equipment_bd[index]['main_characteristic'],
+            path=equipment_bd[index]['path'],
+            relevance=equipment_bd[index]['relevance'],
+            data_added=equipment_bd[index]['data_added'],
+            user=user,
+            position=position,
+        )
+        index += 1
+
+    db.session.add(equipment)
+    db.session.add(position)
+    db.session.commit()
+    print('\nСозданы default\'ные записи Equipment.\n')
+
+
+
+
+

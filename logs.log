@@ -153,3 +153,2306 @@ INFO | 127.0.0.1 - - [11/Sep/2022 17:46:33] "POST /location HTTP/1.1" 200 -
 INFO | 127.0.0.1 - - [11/Sep/2022 17:46:34] "POST /location HTTP/1.1" 200 -
 INFO | 127.0.0.1 - - [11/Sep/2022 17:46:37] "POST /location HTTP/1.1" 200 -
 INFO | 127.0.0.1 - - [11/Sep/2022 17:46:37] "POST /location HTTP/1.1" 200 -
+INFO |  * Running on http://127.0.0.1:5000 (Press CTRL+C to quit)
+INFO |  * Running on http://127.0.0.1:5000 (Press CTRL+C to quit)
+INFO |  * Running on http://127.0.0.1:5000 (Press CTRL+C to quit)
+INFO |  * Running on http://127.0.0.1:5000 (Press CTRL+C to quit)
+INFO |  * Running on http://127.0.0.1:5000 (Press CTRL+C to quit)
+INFO |  * Running on http://127.0.0.1:5000 (Press CTRL+C to quit)
+INFO |  * Running on http://127.0.0.1:5000 (Press CTRL+C to quit)
+INFO |  * Running on http://127.0.0.1:5000 (Press CTRL+C to quit)
+INFO |  * Running on http://127.0.0.1:5000 (Press CTRL+C to quit)
+INFO |  * Running on http://127.0.0.1:5000 (Press CTRL+C to quit)
+INFO |  * Running on http://127.0.0.1:5000 (Press CTRL+C to quit)
+INFO |  * Running on http://127.0.0.1:5000 (Press CTRL+C to quit)
+INFO |  * Running on http://127.0.0.1:5000 (Press CTRL+C to quit)
+INFO |  * Running on http://127.0.0.1:5000 (Press CTRL+C to quit)
+INFO |  * Running on http://127.0.0.1:5000 (Press CTRL+C to quit)
+INFO |  * Running on http://127.0.0.1:5000 (Press CTRL+C to quit)
+INFO |  * Running on http://127.0.0.1:5000 (Press CTRL+C to quit)
+INFO |  * Running on http://127.0.0.1:5000 (Press CTRL+C to quit)
+INFO |  * Running on http://127.0.0.1:5000 (Press CTRL+C to quit)
+INFO |  * Running on http://127.0.0.1:5000 (Press CTRL+C to quit)
+INFO |  * Running on http://127.0.0.1:5000 (Press CTRL+C to quit)
+INFO |  * Running on http://127.0.0.1:5000 (Press CTRL+C to quit)
+INFO |  * Running on http://127.0.0.1:5000 (Press CTRL+C to quit)
+INFO |  * Running on http://127.0.0.1:5000 (Press CTRL+C to quit)
+INFO |  * Running on http://127.0.0.1:5000 (Press CTRL+C to quit)
+INFO |  * Running on http://127.0.0.1:5000 (Press CTRL+C to quit)
+INFO |  * Running on http://127.0.0.1:5000 (Press CTRL+C to quit)
+INFO |  * Running on http://127.0.0.1:5000 (Press CTRL+C to quit)
+INFO |  * Running on http://127.0.0.1:5000 (Press CTRL+C to quit)
+INFO |  * Running on http://127.0.0.1:5000 (Press CTRL+C to quit)
+INFO |  * Running on http://127.0.0.1:5000 (Press CTRL+C to quit)
+INFO |  * Running on http://127.0.0.1:5000 (Press CTRL+C to quit)
+INFO |  * Running on http://127.0.0.1:5000 (Press CTRL+C to quit)
+INFO |  * Running on http://127.0.0.1:5000 (Press CTRL+C to quit)
+INFO |  * Running on http://127.0.0.1:5000 (Press CTRL+C to quit)
+INFO |  * Running on http://127.0.0.1:5000 (Press CTRL+C to quit)
+INFO |  * Running on http://127.0.0.1:5000 (Press CTRL+C to quit)
+INFO |  * Running on http://127.0.0.1:5000 (Press CTRL+C to quit)
+INFO |  * Running on http://127.0.0.1:5000 (Press CTRL+C to quit)
+INFO |  * Running on http://127.0.0.1:5000 (Press CTRL+C to quit)
+INFO |  * Running on http://127.0.0.1:5000 (Press CTRL+C to quit)
+INFO |  * Running on http://127.0.0.1:5000 (Press CTRL+C to quit)
+INFO |  * Running on http://127.0.0.1:5000 (Press CTRL+C to quit)
+INFO |  * Running on http://127.0.0.1:5000 (Press CTRL+C to quit)
+INFO |  * Running on http://127.0.0.1:5000 (Press CTRL+C to quit)
+INFO |  * Running on http://127.0.0.1:5000 (Press CTRL+C to quit)
+INFO |  * Running on http://127.0.0.1:5000 (Press CTRL+C to quit)
+INFO |  * Running on http://127.0.0.1:5000 (Press CTRL+C to quit)
+INFO |  * Running on http://127.0.0.1:5000 (Press CTRL+C to quit)
+INFO |  * Running on http://127.0.0.1:5000 (Press CTRL+C to quit)
+INFO |  * Running on http://127.0.0.1:5000 (Press CTRL+C to quit)
+INFO |  * Running on http://127.0.0.1:5000 (Press CTRL+C to quit)
+INFO |  * Running on http://127.0.0.1:5000 (Press CTRL+C to quit)
+INFO |  * Running on http://127.0.0.1:5000 (Press CTRL+C to quit)
+INFO |  * Running on http://127.0.0.1:5000 (Press CTRL+C to quit)
+INFO |  * Running on http://127.0.0.1:5000 (Press CTRL+C to quit)
+INFO |  * Running on http://127.0.0.1:5000 (Press CTRL+C to quit)
+INFO |  * Running on http://127.0.0.1:5000 (Press CTRL+C to quit)
+INFO |  * Running on http://127.0.0.1:5000 (Press CTRL+C to quit)
+INFO |  * Running on http://127.0.0.1:5000 (Press CTRL+C to quit)
+INFO |  * Running on http://127.0.0.1:5000 (Press CTRL+C to quit)
+ERROR | Exception on /list_tech [POST]
+Traceback (most recent call last):
+  File "D:\MyProject\microerp\env\lib\site-packages\pymysql\connections.py", line 732, in _read_bytes
+    data = self._rfile.read(num_bytes)
+  File "C:\Python38\lib\socket.py", line 669, in readinto
+    return self._sock.recv_into(b)
+ConnectionAbortedError: [WinError 10053] Программа на вашем хост-компьютере разорвала установленное подключение
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "D:\MyProject\microerp\env\lib\site-packages\sqlalchemy\engine\base.py", line 1819, in _execute_context
+    self.dialect.do_execute(
+  File "D:\MyProject\microerp\env\lib\site-packages\sqlalchemy\engine\default.py", line 732, in do_execute
+    cursor.execute(statement, parameters)
+  File "D:\MyProject\microerp\env\lib\site-packages\pymysql\cursors.py", line 148, in execute
+    result = self._query(query)
+  File "D:\MyProject\microerp\env\lib\site-packages\pymysql\cursors.py", line 310, in _query
+    conn.query(q)
+  File "D:\MyProject\microerp\env\lib\site-packages\pymysql\connections.py", line 548, in query
+    self._affected_rows = self._read_query_result(unbuffered=unbuffered)
+  File "D:\MyProject\microerp\env\lib\site-packages\pymysql\connections.py", line 775, in _read_query_result
+    result.read()
+  File "D:\MyProject\microerp\env\lib\site-packages\pymysql\connections.py", line 1156, in read
+    first_packet = self.connection._read_packet()
+  File "D:\MyProject\microerp\env\lib\site-packages\pymysql\connections.py", line 692, in _read_packet
+    packet_header = self._read_bytes(4)
+  File "D:\MyProject\microerp\env\lib\site-packages\pymysql\connections.py", line 738, in _read_bytes
+    raise err.OperationalError(
+pymysql.err.OperationalError: (2013, 'Lost connection to MySQL server during query ([WinError 10053] Программа на вашем хост-компьютере разорвала установленное подключение)')
+
+The above exception was the direct cause of the following exception:
+
+Traceback (most recent call last):
+  File "D:\MyProject\microerp\env\lib\site-packages\flask\app.py", line 2525, in wsgi_app
+    response = self.full_dispatch_request()
+  File "D:\MyProject\microerp\env\lib\site-packages\flask\app.py", line 1822, in full_dispatch_request
+    rv = self.handle_user_exception(e)
+  File "D:\MyProject\microerp\env\lib\site-packages\flask\app.py", line 1820, in full_dispatch_request
+    rv = self.dispatch_request()
+  File "D:\MyProject\microerp\env\lib\site-packages\flask\app.py", line 1796, in dispatch_request
+    return self.ensure_sync(self.view_functions[rule.endpoint])(**view_args)
+  File "D:\MyProject\microerp\app.py", line 153, in list_tech
+    tech_count = tech.count()
+  File "D:\MyProject\microerp\env\lib\site-packages\sqlalchemy\orm\query.py", line 3163, in count
+    return self._from_self(col).enable_eagerloads(False).scalar()
+  File "D:\MyProject\microerp\env\lib\site-packages\sqlalchemy\orm\query.py", line 2888, in scalar
+    ret = self.one()
+  File "D:\MyProject\microerp\env\lib\site-packages\sqlalchemy\orm\query.py", line 2865, in one
+    return self._iter().one()
+  File "D:\MyProject\microerp\env\lib\site-packages\sqlalchemy\orm\query.py", line 2903, in _iter
+    result = self.session.execute(
+  File "D:\MyProject\microerp\env\lib\site-packages\sqlalchemy\orm\session.py", line 1712, in execute
+    result = conn._execute_20(statement, params or {}, execution_options)
+  File "D:\MyProject\microerp\env\lib\site-packages\sqlalchemy\engine\base.py", line 1631, in _execute_20
+    return meth(self, args_10style, kwargs_10style, execution_options)
+  File "D:\MyProject\microerp\env\lib\site-packages\sqlalchemy\sql\elements.py", line 332, in _execute_on_connection
+    return connection._execute_clauseelement(
+  File "D:\MyProject\microerp\env\lib\site-packages\sqlalchemy\engine\base.py", line 1498, in _execute_clauseelement
+    ret = self._execute_context(
+  File "D:\MyProject\microerp\env\lib\site-packages\sqlalchemy\engine\base.py", line 1862, in _execute_context
+    self._handle_dbapi_exception(
+  File "D:\MyProject\microerp\env\lib\site-packages\sqlalchemy\engine\base.py", line 2043, in _handle_dbapi_exception
+    util.raise_(
+  File "D:\MyProject\microerp\env\lib\site-packages\sqlalchemy\util\compat.py", line 208, in raise_
+    raise exception
+  File "D:\MyProject\microerp\env\lib\site-packages\sqlalchemy\engine\base.py", line 1819, in _execute_context
+    self.dialect.do_execute(
+  File "D:\MyProject\microerp\env\lib\site-packages\sqlalchemy\engine\default.py", line 732, in do_execute
+    cursor.execute(statement, parameters)
+  File "D:\MyProject\microerp\env\lib\site-packages\pymysql\cursors.py", line 148, in execute
+    result = self._query(query)
+  File "D:\MyProject\microerp\env\lib\site-packages\pymysql\cursors.py", line 310, in _query
+    conn.query(q)
+  File "D:\MyProject\microerp\env\lib\site-packages\pymysql\connections.py", line 548, in query
+    self._affected_rows = self._read_query_result(unbuffered=unbuffered)
+  File "D:\MyProject\microerp\env\lib\site-packages\pymysql\connections.py", line 775, in _read_query_result
+    result.read()
+  File "D:\MyProject\microerp\env\lib\site-packages\pymysql\connections.py", line 1156, in read
+    first_packet = self.connection._read_packet()
+  File "D:\MyProject\microerp\env\lib\site-packages\pymysql\connections.py", line 692, in _read_packet
+    packet_header = self._read_bytes(4)
+  File "D:\MyProject\microerp\env\lib\site-packages\pymysql\connections.py", line 738, in _read_bytes
+    raise err.OperationalError(
+sqlalchemy.exc.OperationalError: (pymysql.err.OperationalError) (2013, 'Lost connection to MySQL server during query ([WinError 10053] Программа на вашем хост-компьютере разорвала установленное подключение)')
+[SQL: SELECT count(*) AS count_1 
+FROM (SELECT tech.id AS tech_id, tech.name AS tech_name, tech.title AS tech_title, tech.description AS tech_description, tech.version AS tech_version, tech.date AS tech_date, tech.manufacturer AS tech_manufacturer, tech.opt AS tech_opt, tech.company AS tech_company, tech.last_mod AS tech_last_mod, tech.litera AS tech_litera, tech.sortament AS tech_sortament, tech.kod AS tech_kod, tech.ev AS tech_ev, tech.md AS tech_md, tech.en AS tech_en, tech.n_rash AS tech_n_rash, tech.kim AS tech_kim, tech.kod_zag AS tech_kod_zag, tech.profil_i_razmer AS tech_profil_i_razmer, tech.kd AS tech_kd, tech.mz AS tech_mz, tech.creater AS tech_creater, tech.status_tech AS tech_status_tech, tech.creater_id AS tech_creater_id, tech.detail_id AS tech_detail_id 
+FROM tech) AS anon_1]
+(Background on this error at: https://sqlalche.me/e/14/e3q8)
+INFO | 127.0.0.1 - - [17/Sep/2022 15:21:27] "[35m[1mPOST /list_tech HTTP/1.1[0m" 500 -
+ERROR | Exception on /location [POST]
+Traceback (most recent call last):
+  File "D:\MyProject\microerp\env\lib\site-packages\flask\app.py", line 2525, in wsgi_app
+    response = self.full_dispatch_request()
+  File "D:\MyProject\microerp\env\lib\site-packages\flask\app.py", line 1822, in full_dispatch_request
+    rv = self.handle_user_exception(e)
+  File "D:\MyProject\microerp\env\lib\site-packages\flask\app.py", line 1820, in full_dispatch_request
+    rv = self.dispatch_request()
+  File "D:\MyProject\microerp\env\lib\site-packages\flask\app.py", line 1796, in dispatch_request
+    return self.ensure_sync(self.view_functions[rule.endpoint])(**view_args)
+  File "D:\MyProject\microerp\app.py", line 195, in location
+    if len(value) == 0:
+TypeError: 'int' object is not callable
+INFO | 127.0.0.1 - - [17/Sep/2022 15:21:27] "[35m[1mPOST /location HTTP/1.1[0m" 500 -
+INFO | 127.0.0.1 - - [17/Sep/2022 15:21:28] "[33mGET /logo192.png HTTP/1.1[0m" 404 -
+INFO | 127.0.0.1 - - [17/Sep/2022 15:21:39] "POST /list_tech HTTP/1.1" 200 -
+INFO | 127.0.0.1 - - [17/Sep/2022 15:21:41] "POST /list_tech HTTP/1.1" 200 -
+INFO | 127.0.0.1 - - [17/Sep/2022 15:21:49] "POST /authorization HTTP/1.1" 200 -
+INFO | 127.0.0.1 - - [17/Sep/2022 15:21:49] "GET /img_store/avatar/kainn.jpg HTTP/1.1" 200 -
+INFO |  * Running on http://127.0.0.1:5000 (Press CTRL+C to quit)
+INFO |  * Running on http://127.0.0.1:5000 (Press CTRL+C to quit)
+INFO | 127.0.0.1 - - [17/Sep/2022 16:26:34] "[33mGET /logo192.png HTTP/1.1[0m" 404 -
+INFO | 127.0.0.1 - - [17/Sep/2022 16:26:35] "POST /location HTTP/1.1" 200 -
+INFO | 127.0.0.1 - - [17/Sep/2022 16:28:45] "POST /location HTTP/1.1" 200 -
+INFO | 127.0.0.1 - - [17/Sep/2022 16:28:45] "[33mGET /logo192.png HTTP/1.1[0m" 404 -
+INFO | 127.0.0.1 - - [17/Sep/2022 16:33:16] "POST /location HTTP/1.1" 200 -
+INFO | 127.0.0.1 - - [17/Sep/2022 16:33:16] "[33mGET /logo192.png HTTP/1.1[0m" 404 -
+INFO | 127.0.0.1 - - [17/Sep/2022 16:36:29] "POST /location HTTP/1.1" 200 -
+INFO | 127.0.0.1 - - [17/Sep/2022 16:37:06] "[33mGET /logo192.png HTTP/1.1[0m" 404 -
+INFO | 127.0.0.1 - - [17/Sep/2022 16:37:06] "POST /location HTTP/1.1" 200 -
+INFO | 127.0.0.1 - - [17/Sep/2022 16:42:08] "POST /location HTTP/1.1" 200 -
+INFO | 127.0.0.1 - - [17/Sep/2022 16:43:27] "POST /authorization HTTP/1.1" 200 -
+INFO | 127.0.0.1 - - [17/Sep/2022 16:43:27] "GET /img_store/avatar/kainn.jpg HTTP/1.1" 200 -
+INFO | 127.0.0.1 - - [17/Sep/2022 16:43:34] "GET /equipment HTTP/1.1" 200 -
+INFO | 127.0.0.1 - - [17/Sep/2022 16:47:28] "POST /logout HTTP/1.1" 200 -
+ERROR | Exception on /list_tech [POST]
+Traceback (most recent call last):
+  File "D:\MyProject\microerp\env\lib\site-packages\pymysql\connections.py", line 732, in _read_bytes
+    data = self._rfile.read(num_bytes)
+  File "C:\Python38\lib\socket.py", line 669, in readinto
+    return self._sock.recv_into(b)
+ConnectionAbortedError: [WinError 10053] Программа на вашем хост-компьютере разорвала установленное подключение
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "D:\MyProject\microerp\env\lib\site-packages\sqlalchemy\engine\base.py", line 1819, in _execute_context
+    self.dialect.do_execute(
+  File "D:\MyProject\microerp\env\lib\site-packages\sqlalchemy\engine\default.py", line 732, in do_execute
+    cursor.execute(statement, parameters)
+  File "D:\MyProject\microerp\env\lib\site-packages\pymysql\cursors.py", line 148, in execute
+    result = self._query(query)
+  File "D:\MyProject\microerp\env\lib\site-packages\pymysql\cursors.py", line 310, in _query
+    conn.query(q)
+  File "D:\MyProject\microerp\env\lib\site-packages\pymysql\connections.py", line 548, in query
+    self._affected_rows = self._read_query_result(unbuffered=unbuffered)
+  File "D:\MyProject\microerp\env\lib\site-packages\pymysql\connections.py", line 775, in _read_query_result
+    result.read()
+  File "D:\MyProject\microerp\env\lib\site-packages\pymysql\connections.py", line 1156, in read
+    first_packet = self.connection._read_packet()
+  File "D:\MyProject\microerp\env\lib\site-packages\pymysql\connections.py", line 692, in _read_packet
+    packet_header = self._read_bytes(4)
+  File "D:\MyProject\microerp\env\lib\site-packages\pymysql\connections.py", line 738, in _read_bytes
+    raise err.OperationalError(
+pymysql.err.OperationalError: (2013, 'Lost connection to MySQL server during query ([WinError 10053] Программа на вашем хост-компьютере разорвала установленное подключение)')
+
+The above exception was the direct cause of the following exception:
+
+Traceback (most recent call last):
+  File "D:\MyProject\microerp\env\lib\site-packages\flask\app.py", line 2525, in wsgi_app
+    response = self.full_dispatch_request()
+  File "D:\MyProject\microerp\env\lib\site-packages\flask\app.py", line 1822, in full_dispatch_request
+    rv = self.handle_user_exception(e)
+  File "D:\MyProject\microerp\env\lib\site-packages\flask\app.py", line 1820, in full_dispatch_request
+    rv = self.dispatch_request()
+  File "D:\MyProject\microerp\env\lib\site-packages\flask\app.py", line 1796, in dispatch_request
+    return self.ensure_sync(self.view_functions[rule.endpoint])(**view_args)
+  File "D:\MyProject\microerp\app.py", line 153, in list_tech
+    tech_count = tech.count()
+  File "D:\MyProject\microerp\env\lib\site-packages\sqlalchemy\orm\query.py", line 3163, in count
+    return self._from_self(col).enable_eagerloads(False).scalar()
+  File "D:\MyProject\microerp\env\lib\site-packages\sqlalchemy\orm\query.py", line 2888, in scalar
+    ret = self.one()
+  File "D:\MyProject\microerp\env\lib\site-packages\sqlalchemy\orm\query.py", line 2865, in one
+    return self._iter().one()
+  File "D:\MyProject\microerp\env\lib\site-packages\sqlalchemy\orm\query.py", line 2903, in _iter
+    result = self.session.execute(
+  File "D:\MyProject\microerp\env\lib\site-packages\sqlalchemy\orm\session.py", line 1712, in execute
+    result = conn._execute_20(statement, params or {}, execution_options)
+  File "D:\MyProject\microerp\env\lib\site-packages\sqlalchemy\engine\base.py", line 1631, in _execute_20
+    return meth(self, args_10style, kwargs_10style, execution_options)
+  File "D:\MyProject\microerp\env\lib\site-packages\sqlalchemy\sql\elements.py", line 332, in _execute_on_connection
+    return connection._execute_clauseelement(
+  File "D:\MyProject\microerp\env\lib\site-packages\sqlalchemy\engine\base.py", line 1498, in _execute_clauseelement
+    ret = self._execute_context(
+  File "D:\MyProject\microerp\env\lib\site-packages\sqlalchemy\engine\base.py", line 1862, in _execute_context
+    self._handle_dbapi_exception(
+  File "D:\MyProject\microerp\env\lib\site-packages\sqlalchemy\engine\base.py", line 2043, in _handle_dbapi_exception
+    util.raise_(
+  File "D:\MyProject\microerp\env\lib\site-packages\sqlalchemy\util\compat.py", line 208, in raise_
+    raise exception
+  File "D:\MyProject\microerp\env\lib\site-packages\sqlalchemy\engine\base.py", line 1819, in _execute_context
+    self.dialect.do_execute(
+  File "D:\MyProject\microerp\env\lib\site-packages\sqlalchemy\engine\default.py", line 732, in do_execute
+    cursor.execute(statement, parameters)
+  File "D:\MyProject\microerp\env\lib\site-packages\pymysql\cursors.py", line 148, in execute
+    result = self._query(query)
+  File "D:\MyProject\microerp\env\lib\site-packages\pymysql\cursors.py", line 310, in _query
+    conn.query(q)
+  File "D:\MyProject\microerp\env\lib\site-packages\pymysql\connections.py", line 548, in query
+    self._affected_rows = self._read_query_result(unbuffered=unbuffered)
+  File "D:\MyProject\microerp\env\lib\site-packages\pymysql\connections.py", line 775, in _read_query_result
+    result.read()
+  File "D:\MyProject\microerp\env\lib\site-packages\pymysql\connections.py", line 1156, in read
+    first_packet = self.connection._read_packet()
+  File "D:\MyProject\microerp\env\lib\site-packages\pymysql\connections.py", line 692, in _read_packet
+    packet_header = self._read_bytes(4)
+  File "D:\MyProject\microerp\env\lib\site-packages\pymysql\connections.py", line 738, in _read_bytes
+    raise err.OperationalError(
+sqlalchemy.exc.OperationalError: (pymysql.err.OperationalError) (2013, 'Lost connection to MySQL server during query ([WinError 10053] Программа на вашем хост-компьютере разорвала установленное подключение)')
+[SQL: SELECT count(*) AS count_1 
+FROM (SELECT tech.id AS tech_id, tech.name AS tech_name, tech.title AS tech_title, tech.description AS tech_description, tech.version AS tech_version, tech.date AS tech_date, tech.manufacturer AS tech_manufacturer, tech.opt AS tech_opt, tech.company AS tech_company, tech.last_mod AS tech_last_mod, tech.litera AS tech_litera, tech.sortament AS tech_sortament, tech.kod AS tech_kod, tech.ev AS tech_ev, tech.md AS tech_md, tech.en AS tech_en, tech.n_rash AS tech_n_rash, tech.kim AS tech_kim, tech.kod_zag AS tech_kod_zag, tech.profil_i_razmer AS tech_profil_i_razmer, tech.kd AS tech_kd, tech.mz AS tech_mz, tech.creater AS tech_creater, tech.status_tech AS tech_status_tech, tech.creater_id AS tech_creater_id, tech.detail_id AS tech_detail_id 
+FROM tech) AS anon_1]
+(Background on this error at: https://sqlalche.me/e/14/e3q8)
+INFO | 127.0.0.1 - - [17/Sep/2022 16:47:32] "[35m[1mPOST /list_tech HTTP/1.1[0m" 500 -
+INFO | 127.0.0.1 - - [17/Sep/2022 16:47:42] "POST /list_tech HTTP/1.1" 200 -
+INFO | 127.0.0.1 - - [17/Sep/2022 16:47:45] "POST /list_tech HTTP/1.1" 200 -
+INFO | 127.0.0.1 - - [17/Sep/2022 16:55:45] "POST /list_tech HTTP/1.1" 200 -
+INFO | 127.0.0.1 - - [17/Sep/2022 16:55:45] "POST /location HTTP/1.1" 200 -
+INFO | 127.0.0.1 - - [17/Sep/2022 17:08:06] "POST /list_tech HTTP/1.1" 200 -
+INFO | 127.0.0.1 - - [17/Sep/2022 17:08:06] "POST /location HTTP/1.1" 200 -
+INFO | 127.0.0.1 - - [17/Sep/2022 17:08:09] "GET /equipment HTTP/1.1" 200 -
+INFO | 127.0.0.1 - - [17/Sep/2022 17:08:10] "POST /list_tech HTTP/1.1" 200 -
+INFO | 127.0.0.1 - - [17/Sep/2022 17:08:53] "GET /equipment HTTP/1.1" 200 -
+INFO |  * Running on http://127.0.0.1:5000 (Press CTRL+C to quit)
+ERROR | Exception on /equipment [GET]
+Traceback (most recent call last):
+  File "D:\MyProject\microerp\env\lib\site-packages\sqlalchemy\orm\attributes.py", line 327, in __getattr__
+    return getattr(self.comparator, key)
+AttributeError: 'Comparator' object has no attribute 'num_position'
+
+The above exception was the direct cause of the following exception:
+
+Traceback (most recent call last):
+  File "D:\MyProject\microerp\env\lib\site-packages\flask\app.py", line 2525, in wsgi_app
+    response = self.full_dispatch_request()
+  File "D:\MyProject\microerp\env\lib\site-packages\flask\app.py", line 1822, in full_dispatch_request
+    rv = self.handle_user_exception(e)
+  File "D:\MyProject\microerp\env\lib\site-packages\flask\app.py", line 1820, in full_dispatch_request
+    rv = self.dispatch_request()
+  File "D:\MyProject\microerp\env\lib\site-packages\flask\app.py", line 1796, in dispatch_request
+    return self.ensure_sync(self.view_functions[rule.endpoint])(**view_args)
+  File "D:\MyProject\microerp\app.py", line 224, in equipment
+    equipment = Equipment.query.order_by(Equipment.position.num_position).all()
+  File "D:\MyProject\microerp\env\lib\site-packages\sqlalchemy\orm\attributes.py", line 329, in __getattr__
+    util.raise_(
+  File "D:\MyProject\microerp\env\lib\site-packages\sqlalchemy\util\compat.py", line 208, in raise_
+    raise exception
+AttributeError: Neither 'InstrumentedAttribute' object nor 'Comparator' object associated with Equipment.position has an attribute 'num_position'
+INFO | 127.0.0.1 - - [17/Sep/2022 17:14:14] "[35m[1mGET /equipment HTTP/1.1[0m" 500 -
+ERROR | Exception on /equipment [GET]
+Traceback (most recent call last):
+  File "D:\MyProject\microerp\env\lib\site-packages\sqlalchemy\orm\attributes.py", line 327, in __getattr__
+    return getattr(self.comparator, key)
+AttributeError: 'Comparator' object has no attribute 'num_position'
+
+The above exception was the direct cause of the following exception:
+
+Traceback (most recent call last):
+  File "D:\MyProject\microerp\env\lib\site-packages\flask\app.py", line 2525, in wsgi_app
+    response = self.full_dispatch_request()
+  File "D:\MyProject\microerp\env\lib\site-packages\flask\app.py", line 1822, in full_dispatch_request
+    rv = self.handle_user_exception(e)
+  File "D:\MyProject\microerp\env\lib\site-packages\flask\app.py", line 1820, in full_dispatch_request
+    rv = self.dispatch_request()
+  File "D:\MyProject\microerp\env\lib\site-packages\flask\app.py", line 1796, in dispatch_request
+    return self.ensure_sync(self.view_functions[rule.endpoint])(**view_args)
+  File "D:\MyProject\microerp\app.py", line 224, in equipment
+    equipment = Equipment.query.order_by(Equipment.position.num_position).all()
+  File "D:\MyProject\microerp\env\lib\site-packages\sqlalchemy\orm\attributes.py", line 329, in __getattr__
+    util.raise_(
+  File "D:\MyProject\microerp\env\lib\site-packages\sqlalchemy\util\compat.py", line 208, in raise_
+    raise exception
+AttributeError: Neither 'InstrumentedAttribute' object nor 'Comparator' object associated with Equipment.position has an attribute 'num_position'
+INFO | 127.0.0.1 - - [17/Sep/2022 17:14:41] "[35m[1mGET /equipment HTTP/1.1[0m" 500 -
+ERROR | Exception on /equipment [GET]
+Traceback (most recent call last):
+  File "D:\MyProject\microerp\env\lib\site-packages\sqlalchemy\orm\attributes.py", line 327, in __getattr__
+    return getattr(self.comparator, key)
+AttributeError: 'Comparator' object has no attribute 'num_position'
+
+The above exception was the direct cause of the following exception:
+
+Traceback (most recent call last):
+  File "D:\MyProject\microerp\env\lib\site-packages\flask\app.py", line 2525, in wsgi_app
+    response = self.full_dispatch_request()
+  File "D:\MyProject\microerp\env\lib\site-packages\flask\app.py", line 1822, in full_dispatch_request
+    rv = self.handle_user_exception(e)
+  File "D:\MyProject\microerp\env\lib\site-packages\flask\app.py", line 1820, in full_dispatch_request
+    rv = self.dispatch_request()
+  File "D:\MyProject\microerp\env\lib\site-packages\flask\app.py", line 1796, in dispatch_request
+    return self.ensure_sync(self.view_functions[rule.endpoint])(**view_args)
+  File "D:\MyProject\microerp\app.py", line 224, in equipment
+    equipment = Equipment.query.order_by(Equipment.position.num_position).all()
+  File "D:\MyProject\microerp\env\lib\site-packages\sqlalchemy\orm\attributes.py", line 329, in __getattr__
+    util.raise_(
+  File "D:\MyProject\microerp\env\lib\site-packages\sqlalchemy\util\compat.py", line 208, in raise_
+    raise exception
+AttributeError: Neither 'InstrumentedAttribute' object nor 'Comparator' object associated with Equipment.position has an attribute 'num_position'
+INFO | 127.0.0.1 - - [17/Sep/2022 17:15:06] "[35m[1mGET /equipment HTTP/1.1[0m" 500 -
+ERROR | Exception on /equipment [GET]
+Traceback (most recent call last):
+  File "D:\MyProject\microerp\env\lib\site-packages\sqlalchemy\orm\attributes.py", line 327, in __getattr__
+    return getattr(self.comparator, key)
+AttributeError: 'Comparator' object has no attribute 'num_position'
+
+The above exception was the direct cause of the following exception:
+
+Traceback (most recent call last):
+  File "D:\MyProject\microerp\env\lib\site-packages\flask\app.py", line 2525, in wsgi_app
+    response = self.full_dispatch_request()
+  File "D:\MyProject\microerp\env\lib\site-packages\flask\app.py", line 1822, in full_dispatch_request
+    rv = self.handle_user_exception(e)
+  File "D:\MyProject\microerp\env\lib\site-packages\flask\app.py", line 1820, in full_dispatch_request
+    rv = self.dispatch_request()
+  File "D:\MyProject\microerp\env\lib\site-packages\flask\app.py", line 1796, in dispatch_request
+    return self.ensure_sync(self.view_functions[rule.endpoint])(**view_args)
+  File "D:\MyProject\microerp\app.py", line 224, in equipment
+    equipment = Equipment.query.order_by(Equipment.position.num_position).all()
+  File "D:\MyProject\microerp\env\lib\site-packages\sqlalchemy\orm\attributes.py", line 329, in __getattr__
+    util.raise_(
+  File "D:\MyProject\microerp\env\lib\site-packages\sqlalchemy\util\compat.py", line 208, in raise_
+    raise exception
+AttributeError: Neither 'InstrumentedAttribute' object nor 'Comparator' object associated with Equipment.position has an attribute 'num_position'
+INFO | 127.0.0.1 - - [17/Sep/2022 17:15:35] "[35m[1mGET /equipment HTTP/1.1[0m" 500 -
+ERROR | Exception on /equipment [GET]
+Traceback (most recent call last):
+  File "D:\MyProject\microerp\env\lib\site-packages\sqlalchemy\orm\attributes.py", line 327, in __getattr__
+    return getattr(self.comparator, key)
+AttributeError: 'Comparator' object has no attribute 'num_position'
+
+The above exception was the direct cause of the following exception:
+
+Traceback (most recent call last):
+  File "D:\MyProject\microerp\env\lib\site-packages\flask\app.py", line 2525, in wsgi_app
+    response = self.full_dispatch_request()
+  File "D:\MyProject\microerp\env\lib\site-packages\flask\app.py", line 1822, in full_dispatch_request
+    rv = self.handle_user_exception(e)
+  File "D:\MyProject\microerp\env\lib\site-packages\flask\app.py", line 1820, in full_dispatch_request
+    rv = self.dispatch_request()
+  File "D:\MyProject\microerp\env\lib\site-packages\flask\app.py", line 1796, in dispatch_request
+    return self.ensure_sync(self.view_functions[rule.endpoint])(**view_args)
+  File "D:\MyProject\microerp\app.py", line 224, in equipment
+    equipment = Equipment.query.order_by(Equipment.position.num_position).all()
+  File "D:\MyProject\microerp\env\lib\site-packages\sqlalchemy\orm\attributes.py", line 329, in __getattr__
+    util.raise_(
+  File "D:\MyProject\microerp\env\lib\site-packages\sqlalchemy\util\compat.py", line 208, in raise_
+    raise exception
+AttributeError: Neither 'InstrumentedAttribute' object nor 'Comparator' object associated with Equipment.position has an attribute 'num_position'
+INFO | 127.0.0.1 - - [17/Sep/2022 17:20:17] "[35m[1mGET /equipment HTTP/1.1[0m" 500 -
+ERROR | Exception on /equipment [GET]
+Traceback (most recent call last):
+  File "D:\MyProject\microerp\env\lib\site-packages\sqlalchemy\orm\attributes.py", line 327, in __getattr__
+    return getattr(self.comparator, key)
+AttributeError: 'Comparator' object has no attribute 'num_position'
+
+The above exception was the direct cause of the following exception:
+
+Traceback (most recent call last):
+  File "D:\MyProject\microerp\env\lib\site-packages\flask\app.py", line 2525, in wsgi_app
+    response = self.full_dispatch_request()
+  File "D:\MyProject\microerp\env\lib\site-packages\flask\app.py", line 1822, in full_dispatch_request
+    rv = self.handle_user_exception(e)
+  File "D:\MyProject\microerp\env\lib\site-packages\flask\app.py", line 1820, in full_dispatch_request
+    rv = self.dispatch_request()
+  File "D:\MyProject\microerp\env\lib\site-packages\flask\app.py", line 1796, in dispatch_request
+    return self.ensure_sync(self.view_functions[rule.endpoint])(**view_args)
+  File "D:\MyProject\microerp\app.py", line 224, in equipment
+    equipment = Equipment.query.order_by(Equipment.position.num_position).all()
+  File "D:\MyProject\microerp\env\lib\site-packages\sqlalchemy\orm\attributes.py", line 329, in __getattr__
+    util.raise_(
+  File "D:\MyProject\microerp\env\lib\site-packages\sqlalchemy\util\compat.py", line 208, in raise_
+    raise exception
+AttributeError: Neither 'InstrumentedAttribute' object nor 'Comparator' object associated with Equipment.position has an attribute 'num_position'
+INFO | 127.0.0.1 - - [17/Sep/2022 17:20:53] "[35m[1mGET /equipment HTTP/1.1[0m" 500 -
+INFO | 127.0.0.1 - - [17/Sep/2022 17:20:59] "POST /list_tech HTTP/1.1" 200 -
+ERROR | Exception on /equipment [GET]
+Traceback (most recent call last):
+  File "D:\MyProject\microerp\env\lib\site-packages\sqlalchemy\orm\attributes.py", line 327, in __getattr__
+    return getattr(self.comparator, key)
+AttributeError: 'Comparator' object has no attribute 'num_position'
+
+The above exception was the direct cause of the following exception:
+
+Traceback (most recent call last):
+  File "D:\MyProject\microerp\env\lib\site-packages\flask\app.py", line 2525, in wsgi_app
+    response = self.full_dispatch_request()
+  File "D:\MyProject\microerp\env\lib\site-packages\flask\app.py", line 1822, in full_dispatch_request
+    rv = self.handle_user_exception(e)
+  File "D:\MyProject\microerp\env\lib\site-packages\flask\app.py", line 1820, in full_dispatch_request
+    rv = self.dispatch_request()
+  File "D:\MyProject\microerp\env\lib\site-packages\flask\app.py", line 1796, in dispatch_request
+    return self.ensure_sync(self.view_functions[rule.endpoint])(**view_args)
+  File "D:\MyProject\microerp\app.py", line 224, in equipment
+    equipment = Equipment.query.order_by(Equipment.position.num_position).all()
+  File "D:\MyProject\microerp\env\lib\site-packages\sqlalchemy\orm\attributes.py", line 329, in __getattr__
+    util.raise_(
+  File "D:\MyProject\microerp\env\lib\site-packages\sqlalchemy\util\compat.py", line 208, in raise_
+    raise exception
+AttributeError: Neither 'InstrumentedAttribute' object nor 'Comparator' object associated with Equipment.position has an attribute 'num_position'
+INFO | 127.0.0.1 - - [17/Sep/2022 17:20:59] "[35m[1mGET /equipment HTTP/1.1[0m" 500 -
+ERROR | Exception on /equipment [GET]
+Traceback (most recent call last):
+  File "D:\MyProject\microerp\env\lib\site-packages\sqlalchemy\orm\attributes.py", line 327, in __getattr__
+    return getattr(self.comparator, key)
+AttributeError: 'Comparator' object has no attribute 'num_position'
+
+The above exception was the direct cause of the following exception:
+
+Traceback (most recent call last):
+  File "D:\MyProject\microerp\env\lib\site-packages\flask\app.py", line 2525, in wsgi_app
+    response = self.full_dispatch_request()
+  File "D:\MyProject\microerp\env\lib\site-packages\flask\app.py", line 1822, in full_dispatch_request
+    rv = self.handle_user_exception(e)
+  File "D:\MyProject\microerp\env\lib\site-packages\flask\app.py", line 1820, in full_dispatch_request
+    rv = self.dispatch_request()
+  File "D:\MyProject\microerp\env\lib\site-packages\flask\app.py", line 1796, in dispatch_request
+    return self.ensure_sync(self.view_functions[rule.endpoint])(**view_args)
+  File "D:\MyProject\microerp\app.py", line 224, in equipment
+    equipment = Equipment.query.order_by(Equipment.position.num_position).all()
+  File "D:\MyProject\microerp\env\lib\site-packages\sqlalchemy\orm\attributes.py", line 329, in __getattr__
+    util.raise_(
+  File "D:\MyProject\microerp\env\lib\site-packages\sqlalchemy\util\compat.py", line 208, in raise_
+    raise exception
+AttributeError: Neither 'InstrumentedAttribute' object nor 'Comparator' object associated with Equipment.position has an attribute 'num_position'
+INFO | 127.0.0.1 - - [17/Sep/2022 17:21:05] "[35m[1mGET /equipment HTTP/1.1[0m" 500 -
+INFO |  * Running on http://127.0.0.1:5000 (Press CTRL+C to quit)
+INFO | 127.0.0.1 - - [17/Sep/2022 17:21:27] "POST /list_tech HTTP/1.1" 200 -
+ERROR | Exception on /equipment [GET]
+Traceback (most recent call last):
+  File "D:\MyProject\microerp\env\lib\site-packages\sqlalchemy\orm\attributes.py", line 327, in __getattr__
+    return getattr(self.comparator, key)
+AttributeError: 'Comparator' object has no attribute 'num_position'
+
+The above exception was the direct cause of the following exception:
+
+Traceback (most recent call last):
+  File "D:\MyProject\microerp\env\lib\site-packages\flask\app.py", line 2525, in wsgi_app
+    response = self.full_dispatch_request()
+  File "D:\MyProject\microerp\env\lib\site-packages\flask\app.py", line 1822, in full_dispatch_request
+    rv = self.handle_user_exception(e)
+  File "D:\MyProject\microerp\env\lib\site-packages\flask\app.py", line 1820, in full_dispatch_request
+    rv = self.dispatch_request()
+  File "D:\MyProject\microerp\env\lib\site-packages\flask\app.py", line 1796, in dispatch_request
+    return self.ensure_sync(self.view_functions[rule.endpoint])(**view_args)
+  File "D:\MyProject\microerp\app.py", line 224, in equipment
+    equipment = Equipment.query.order_by(Equipment.position.num_position).all()
+  File "D:\MyProject\microerp\env\lib\site-packages\sqlalchemy\orm\attributes.py", line 329, in __getattr__
+    util.raise_(
+  File "D:\MyProject\microerp\env\lib\site-packages\sqlalchemy\util\compat.py", line 208, in raise_
+    raise exception
+AttributeError: Neither 'InstrumentedAttribute' object nor 'Comparator' object associated with Equipment.position has an attribute 'num_position'
+INFO | 127.0.0.1 - - [17/Sep/2022 17:21:28] "[35m[1mGET /equipment HTTP/1.1[0m" 500 -
+INFO |  * Running on http://127.0.0.1:5000 (Press CTRL+C to quit)
+INFO |  * Running on http://127.0.0.1:5000 (Press CTRL+C to quit)
+INFO |  * Running on http://127.0.0.1:5000 (Press CTRL+C to quit)
+ERROR | Exception on /equipment [GET]
+Traceback (most recent call last):
+  File "D:\MyProject\microerp\env\lib\site-packages\sqlalchemy\orm\attributes.py", line 327, in __getattr__
+    return getattr(self.comparator, key)
+AttributeError: 'Comparator' object has no attribute 'num_position'
+
+The above exception was the direct cause of the following exception:
+
+Traceback (most recent call last):
+  File "D:\MyProject\microerp\env\lib\site-packages\flask\app.py", line 2525, in wsgi_app
+    response = self.full_dispatch_request()
+  File "D:\MyProject\microerp\env\lib\site-packages\flask\app.py", line 1822, in full_dispatch_request
+    rv = self.handle_user_exception(e)
+  File "D:\MyProject\microerp\env\lib\site-packages\flask\app.py", line 1820, in full_dispatch_request
+    rv = self.dispatch_request()
+  File "D:\MyProject\microerp\env\lib\site-packages\flask\app.py", line 1796, in dispatch_request
+    return self.ensure_sync(self.view_functions[rule.endpoint])(**view_args)
+  File "D:\MyProject\microerp\app.py", line 224, in equipment
+    equipment = Equipment.query.order_by(Equipment.position.num_position).all()
+  File "D:\MyProject\microerp\env\lib\site-packages\sqlalchemy\orm\attributes.py", line 329, in __getattr__
+    util.raise_(
+  File "D:\MyProject\microerp\env\lib\site-packages\sqlalchemy\util\compat.py", line 208, in raise_
+    raise exception
+AttributeError: Neither 'InstrumentedAttribute' object nor 'Comparator' object associated with Equipment.position has an attribute 'num_position'
+INFO | 127.0.0.1 - - [17/Sep/2022 19:29:52] "[35m[1mGET /equipment HTTP/1.1[0m" 500 -
+INFO | 127.0.0.1 - - [17/Sep/2022 19:29:52] "POST /location HTTP/1.1" 200 -
+INFO |  * Running on http://127.0.0.1:5000 (Press CTRL+C to quit)
+INFO | 127.0.0.1 - - [17/Sep/2022 19:30:18] "GET /equipment HTTP/1.1" 200 -
+INFO | 127.0.0.1 - - [17/Sep/2022 19:30:18] "POST /location HTTP/1.1" 200 -
+INFO | 127.0.0.1 - - [17/Sep/2022 19:31:48] "GET /equipment HTTP/1.1" 200 -
+INFO | 127.0.0.1 - - [17/Sep/2022 19:31:48] "POST /location HTTP/1.1" 200 -
+INFO |  * Running on http://127.0.0.1:5000 (Press CTRL+C to quit)
+INFO | 127.0.0.1 - - [17/Sep/2022 19:35:31] "GET /equipment HTTP/1.1" 200 -
+INFO | 127.0.0.1 - - [17/Sep/2022 19:35:31] "POST /location HTTP/1.1" 200 -
+INFO |  * Running on http://127.0.0.1:5000 (Press CTRL+C to quit)
+INFO |  * Running on http://127.0.0.1:5000 (Press CTRL+C to quit)
+INFO | 127.0.0.1 - - [17/Sep/2022 19:42:59] "GET /equipment HTTP/1.1" 200 -
+INFO | 127.0.0.1 - - [17/Sep/2022 19:42:59] "POST /location HTTP/1.1" 200 -
+INFO |  * Running on http://127.0.0.1:5000 (Press CTRL+C to quit)
+INFO |  * Running on http://127.0.0.1:5000 (Press CTRL+C to quit)
+INFO |  * Running on http://127.0.0.1:5000 (Press CTRL+C to quit)
+INFO | 127.0.0.1 - - [17/Sep/2022 19:50:42] "GET /equipment HTTP/1.1" 200 -
+INFO | 127.0.0.1 - - [17/Sep/2022 19:50:42] "POST /location HTTP/1.1" 200 -
+INFO |  * Running on http://127.0.0.1:5000 (Press CTRL+C to quit)
+INFO | 127.0.0.1 - - [17/Sep/2022 19:51:10] "GET /equipment HTTP/1.1" 200 -
+INFO | 127.0.0.1 - - [17/Sep/2022 19:51:10] "POST /location HTTP/1.1" 200 -
+INFO |  * Running on http://127.0.0.1:5000 (Press CTRL+C to quit)
+INFO | 127.0.0.1 - - [17/Sep/2022 19:52:16] "GET /equipment HTTP/1.1" 200 -
+INFO | 127.0.0.1 - - [17/Sep/2022 19:52:16] "POST /location HTTP/1.1" 200 -
+INFO |  * Running on http://127.0.0.1:5000 (Press CTRL+C to quit)
+INFO |  * Running on http://127.0.0.1:5000 (Press CTRL+C to quit)
+INFO | 127.0.0.1 - - [17/Sep/2022 19:54:43] "GET /equipment HTTP/1.1" 200 -
+INFO | 127.0.0.1 - - [17/Sep/2022 19:54:44] "POST /location HTTP/1.1" 200 -
+INFO | 127.0.0.1 - - [17/Sep/2022 19:55:17] "GET /equipment HTTP/1.1" 200 -
+INFO | 127.0.0.1 - - [17/Sep/2022 19:55:18] "POST /location HTTP/1.1" 200 -
+INFO | 127.0.0.1 - - [17/Sep/2022 19:55:50] "GET /equipment HTTP/1.1" 200 -
+INFO | 127.0.0.1 - - [17/Sep/2022 19:56:12] "GET /equipment HTTP/1.1" 200 -
+INFO | 127.0.0.1 - - [17/Sep/2022 19:56:12] "POST /location HTTP/1.1" 200 -
+INFO |  * Running on http://127.0.0.1:5000 (Press CTRL+C to quit)
+INFO |  * Running on http://127.0.0.1:5000 (Press CTRL+C to quit)
+INFO | 127.0.0.1 - - [17/Sep/2022 19:57:17] "GET /equipment HTTP/1.1" 200 -
+INFO | 127.0.0.1 - - [17/Sep/2022 19:57:18] "POST /location HTTP/1.1" 200 -
+INFO |  * Running on http://127.0.0.1:5000 (Press CTRL+C to quit)
+INFO | 127.0.0.1 - - [17/Sep/2022 19:58:23] "GET /equipment HTTP/1.1" 200 -
+INFO | 127.0.0.1 - - [17/Sep/2022 19:58:23] "POST /location HTTP/1.1" 200 -
+INFO |  * Running on http://127.0.0.1:5000 (Press CTRL+C to quit)
+INFO | 127.0.0.1 - - [17/Sep/2022 20:02:10] "GET /equipment HTTP/1.1" 200 -
+INFO | 127.0.0.1 - - [17/Sep/2022 20:02:10] "POST /location HTTP/1.1" 200 -
+INFO |  * Running on http://127.0.0.1:5000 (Press CTRL+C to quit)
+ERROR | Exception on /equipment [GET]
+Traceback (most recent call last):
+  File "D:\MyProject\microerp\env\lib\site-packages\flask\app.py", line 2525, in wsgi_app
+    response = self.full_dispatch_request()
+  File "D:\MyProject\microerp\env\lib\site-packages\flask\app.py", line 1822, in full_dispatch_request
+    rv = self.handle_user_exception(e)
+  File "D:\MyProject\microerp\env\lib\site-packages\flask\app.py", line 1820, in full_dispatch_request
+    rv = self.dispatch_request()
+  File "D:\MyProject\microerp\env\lib\site-packages\flask\app.py", line 1796, in dispatch_request
+    return self.ensure_sync(self.view_functions[rule.endpoint])(**view_args)
+  File "D:\MyProject\microerp\app.py", line 227, in equipment
+    pprint(response, sort_keys=True)
+  File "D:\MyProject\microerp\env\lib\site-packages\marshmallow\utils.py", line 92, in pprint
+    py_pprint(obj, *args, **kwargs)
+TypeError: pprint() got an unexpected keyword argument 'sort_keys'
+INFO | 127.0.0.1 - - [17/Sep/2022 20:03:47] "[35m[1mGET /equipment HTTP/1.1[0m" 500 -
+INFO | 127.0.0.1 - - [17/Sep/2022 20:03:47] "POST /location HTTP/1.1" 200 -
+INFO |  * Running on http://127.0.0.1:5000 (Press CTRL+C to quit)
+INFO | 127.0.0.1 - - [17/Sep/2022 20:07:35] "GET /equipment HTTP/1.1" 200 -
+INFO | 127.0.0.1 - - [17/Sep/2022 20:07:35] "POST /location HTTP/1.1" 200 -
+INFO | 127.0.0.1 - - [17/Sep/2022 20:09:15] "GET /equipment HTTP/1.1" 200 -
+INFO | 127.0.0.1 - - [17/Sep/2022 20:13:25] "GET /equipment HTTP/1.1" 200 -
+INFO | 127.0.0.1 - - [17/Sep/2022 20:13:25] "POST /location HTTP/1.1" 200 -
+INFO | 127.0.0.1 - - [17/Sep/2022 20:13:33] "GET /equipment HTTP/1.1" 200 -
+INFO | 127.0.0.1 - - [17/Sep/2022 20:14:36] "GET /equipment HTTP/1.1" 200 -
+INFO | 127.0.0.1 - - [17/Sep/2022 20:14:48] "GET /equipment HTTP/1.1" 200 -
+INFO | 127.0.0.1 - - [17/Sep/2022 20:19:25] "GET /equipment HTTP/1.1" 200 -
+ERROR | Exception on /equipment [GET]
+Traceback (most recent call last):
+  File "D:\MyProject\microerp\env\lib\site-packages\pymysql\connections.py", line 732, in _read_bytes
+    data = self._rfile.read(num_bytes)
+  File "C:\Python38\lib\socket.py", line 669, in readinto
+    return self._sock.recv_into(b)
+ConnectionAbortedError: [WinError 10053] Программа на вашем хост-компьютере разорвала установленное подключение
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "D:\MyProject\microerp\env\lib\site-packages\sqlalchemy\engine\base.py", line 1819, in _execute_context
+    self.dialect.do_execute(
+  File "D:\MyProject\microerp\env\lib\site-packages\sqlalchemy\engine\default.py", line 732, in do_execute
+    cursor.execute(statement, parameters)
+  File "D:\MyProject\microerp\env\lib\site-packages\pymysql\cursors.py", line 148, in execute
+    result = self._query(query)
+  File "D:\MyProject\microerp\env\lib\site-packages\pymysql\cursors.py", line 310, in _query
+    conn.query(q)
+  File "D:\MyProject\microerp\env\lib\site-packages\pymysql\connections.py", line 548, in query
+    self._affected_rows = self._read_query_result(unbuffered=unbuffered)
+  File "D:\MyProject\microerp\env\lib\site-packages\pymysql\connections.py", line 775, in _read_query_result
+    result.read()
+  File "D:\MyProject\microerp\env\lib\site-packages\pymysql\connections.py", line 1156, in read
+    first_packet = self.connection._read_packet()
+  File "D:\MyProject\microerp\env\lib\site-packages\pymysql\connections.py", line 692, in _read_packet
+    packet_header = self._read_bytes(4)
+  File "D:\MyProject\microerp\env\lib\site-packages\pymysql\connections.py", line 738, in _read_bytes
+    raise err.OperationalError(
+pymysql.err.OperationalError: (2013, 'Lost connection to MySQL server during query ([WinError 10053] Программа на вашем хост-компьютере разорвала установленное подключение)')
+
+The above exception was the direct cause of the following exception:
+
+Traceback (most recent call last):
+  File "D:\MyProject\microerp\env\lib\site-packages\flask\app.py", line 2525, in wsgi_app
+    response = self.full_dispatch_request()
+  File "D:\MyProject\microerp\env\lib\site-packages\flask\app.py", line 1822, in full_dispatch_request
+    rv = self.handle_user_exception(e)
+  File "D:\MyProject\microerp\env\lib\site-packages\flask\app.py", line 1820, in full_dispatch_request
+    rv = self.dispatch_request()
+  File "D:\MyProject\microerp\env\lib\site-packages\flask\app.py", line 1796, in dispatch_request
+    return self.ensure_sync(self.view_functions[rule.endpoint])(**view_args)
+  File "D:\MyProject\microerp\app.py", line 224, in equipment
+    equipment = Equipment.query.join(Equipment_position).order_by(Equipment_position.num_str).all()
+  File "D:\MyProject\microerp\env\lib\site-packages\sqlalchemy\orm\query.py", line 2768, in all
+    return self._iter().all()
+  File "D:\MyProject\microerp\env\lib\site-packages\sqlalchemy\orm\query.py", line 2903, in _iter
+    result = self.session.execute(
+  File "D:\MyProject\microerp\env\lib\site-packages\sqlalchemy\orm\session.py", line 1712, in execute
+    result = conn._execute_20(statement, params or {}, execution_options)
+  File "D:\MyProject\microerp\env\lib\site-packages\sqlalchemy\engine\base.py", line 1631, in _execute_20
+    return meth(self, args_10style, kwargs_10style, execution_options)
+  File "D:\MyProject\microerp\env\lib\site-packages\sqlalchemy\sql\elements.py", line 332, in _execute_on_connection
+    return connection._execute_clauseelement(
+  File "D:\MyProject\microerp\env\lib\site-packages\sqlalchemy\engine\base.py", line 1498, in _execute_clauseelement
+    ret = self._execute_context(
+  File "D:\MyProject\microerp\env\lib\site-packages\sqlalchemy\engine\base.py", line 1862, in _execute_context
+    self._handle_dbapi_exception(
+  File "D:\MyProject\microerp\env\lib\site-packages\sqlalchemy\engine\base.py", line 2043, in _handle_dbapi_exception
+    util.raise_(
+  File "D:\MyProject\microerp\env\lib\site-packages\sqlalchemy\util\compat.py", line 208, in raise_
+    raise exception
+  File "D:\MyProject\microerp\env\lib\site-packages\sqlalchemy\engine\base.py", line 1819, in _execute_context
+    self.dialect.do_execute(
+  File "D:\MyProject\microerp\env\lib\site-packages\sqlalchemy\engine\default.py", line 732, in do_execute
+    cursor.execute(statement, parameters)
+  File "D:\MyProject\microerp\env\lib\site-packages\pymysql\cursors.py", line 148, in execute
+    result = self._query(query)
+  File "D:\MyProject\microerp\env\lib\site-packages\pymysql\cursors.py", line 310, in _query
+    conn.query(q)
+  File "D:\MyProject\microerp\env\lib\site-packages\pymysql\connections.py", line 548, in query
+    self._affected_rows = self._read_query_result(unbuffered=unbuffered)
+  File "D:\MyProject\microerp\env\lib\site-packages\pymysql\connections.py", line 775, in _read_query_result
+    result.read()
+  File "D:\MyProject\microerp\env\lib\site-packages\pymysql\connections.py", line 1156, in read
+    first_packet = self.connection._read_packet()
+  File "D:\MyProject\microerp\env\lib\site-packages\pymysql\connections.py", line 692, in _read_packet
+    packet_header = self._read_bytes(4)
+  File "D:\MyProject\microerp\env\lib\site-packages\pymysql\connections.py", line 738, in _read_bytes
+    raise err.OperationalError(
+sqlalchemy.exc.OperationalError: (pymysql.err.OperationalError) (2013, 'Lost connection to MySQL server during query ([WinError 10053] Программа на вашем хост-компьютере разорвала установленное подключение)')
+[SQL: SELECT equipment.id AS equipment_id, equipment.type AS equipment_type, equipment.description AS equipment_description, equipment.code AS equipment_code, equipment.main_characteristic AS equipment_main_characteristic, equipment.firm AS equipment_firm, equipment.path AS equipment_path, equipment.relevance AS equipment_relevance, equipment.data_added AS equipment_data_added, equipment.added_id AS equipment_added_id, equipment.position_id AS equipment_position_id 
+FROM equipment INNER JOIN equipment_position ON equipment_position.id = equipment.position_id ORDER BY equipment_position.num_str]
+(Background on this error at: https://sqlalche.me/e/14/e3q8)
+INFO | 127.0.0.1 - - [17/Sep/2022 20:22:40] "[35m[1mGET /equipment HTTP/1.1[0m" 500 -
+INFO | 127.0.0.1 - - [17/Sep/2022 20:22:53] "GET /equipment HTTP/1.1" 200 -
+INFO | 127.0.0.1 - - [17/Sep/2022 20:23:23] "GET /equipment HTTP/1.1" 200 -
+INFO | 127.0.0.1 - - [17/Sep/2022 20:23:27] "GET /equipment HTTP/1.1" 200 -
+INFO | 127.0.0.1 - - [17/Sep/2022 20:23:29] "GET /equipment HTTP/1.1" 200 -
+INFO | 127.0.0.1 - - [17/Sep/2022 20:24:12] "GET /equipment HTTP/1.1" 200 -
+INFO | 127.0.0.1 - - [17/Sep/2022 20:25:04] "GET /equipment HTTP/1.1" 200 -
+INFO | 127.0.0.1 - - [17/Sep/2022 20:26:55] "GET /equipment HTTP/1.1" 200 -
+INFO | 127.0.0.1 - - [17/Sep/2022 20:27:52] "GET /equipment HTTP/1.1" 200 -
+INFO | 127.0.0.1 - - [17/Sep/2022 20:29:48] "GET /equipment HTTP/1.1" 200 -
+INFO | 127.0.0.1 - - [17/Sep/2022 20:29:51] "GET /equipment HTTP/1.1" 200 -
+INFO | 127.0.0.1 - - [17/Sep/2022 20:31:33] "GET /equipment HTTP/1.1" 200 -
+INFO | 127.0.0.1 - - [17/Sep/2022 20:33:06] "GET /equipment HTTP/1.1" 200 -
+INFO | 127.0.0.1 - - [17/Sep/2022 20:35:07] "GET /equipment HTTP/1.1" 200 -
+INFO | 127.0.0.1 - - [17/Sep/2022 20:35:26] "GET /equipment HTTP/1.1" 200 -
+INFO | 127.0.0.1 - - [17/Sep/2022 20:41:17] "GET /equipment HTTP/1.1" 200 -
+INFO | 127.0.0.1 - - [17/Sep/2022 20:41:20] "POST /location HTTP/1.1" 200 -
+INFO | 127.0.0.1 - - [17/Sep/2022 20:41:27] "GET /equipment HTTP/1.1" 200 -
+INFO | 127.0.0.1 - - [17/Sep/2022 20:41:27] "POST /location HTTP/1.1" 200 -
+INFO | 127.0.0.1 - - [17/Sep/2022 20:41:36] "GET /equipment HTTP/1.1" 200 -
+INFO | 127.0.0.1 - - [17/Sep/2022 20:41:36] "POST /location HTTP/1.1" 200 -
+INFO | 127.0.0.1 - - [18/Sep/2022 08:00:28] "GET /equipment HTTP/1.1" 200 -
+ERROR | Exception on /equipment [GET]
+Traceback (most recent call last):
+  File "D:\MyProject\microerp\env\lib\site-packages\pymysql\connections.py", line 732, in _read_bytes
+    data = self._rfile.read(num_bytes)
+  File "C:\Python38\lib\socket.py", line 669, in readinto
+    return self._sock.recv_into(b)
+ConnectionAbortedError: [WinError 10053] Программа на вашем хост-компьютере разорвала установленное подключение
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "D:\MyProject\microerp\env\lib\site-packages\sqlalchemy\engine\base.py", line 1819, in _execute_context
+    self.dialect.do_execute(
+  File "D:\MyProject\microerp\env\lib\site-packages\sqlalchemy\engine\default.py", line 732, in do_execute
+    cursor.execute(statement, parameters)
+  File "D:\MyProject\microerp\env\lib\site-packages\pymysql\cursors.py", line 148, in execute
+    result = self._query(query)
+  File "D:\MyProject\microerp\env\lib\site-packages\pymysql\cursors.py", line 310, in _query
+    conn.query(q)
+  File "D:\MyProject\microerp\env\lib\site-packages\pymysql\connections.py", line 548, in query
+    self._affected_rows = self._read_query_result(unbuffered=unbuffered)
+  File "D:\MyProject\microerp\env\lib\site-packages\pymysql\connections.py", line 775, in _read_query_result
+    result.read()
+  File "D:\MyProject\microerp\env\lib\site-packages\pymysql\connections.py", line 1156, in read
+    first_packet = self.connection._read_packet()
+  File "D:\MyProject\microerp\env\lib\site-packages\pymysql\connections.py", line 692, in _read_packet
+    packet_header = self._read_bytes(4)
+  File "D:\MyProject\microerp\env\lib\site-packages\pymysql\connections.py", line 738, in _read_bytes
+    raise err.OperationalError(
+pymysql.err.OperationalError: (2013, 'Lost connection to MySQL server during query ([WinError 10053] Программа на вашем хост-компьютере разорвала установленное подключение)')
+
+The above exception was the direct cause of the following exception:
+
+Traceback (most recent call last):
+  File "D:\MyProject\microerp\env\lib\site-packages\flask\app.py", line 2525, in wsgi_app
+    response = self.full_dispatch_request()
+  File "D:\MyProject\microerp\env\lib\site-packages\flask\app.py", line 1822, in full_dispatch_request
+    rv = self.handle_user_exception(e)
+  File "D:\MyProject\microerp\env\lib\site-packages\flask\app.py", line 1820, in full_dispatch_request
+    rv = self.dispatch_request()
+  File "D:\MyProject\microerp\env\lib\site-packages\flask\app.py", line 1796, in dispatch_request
+    return self.ensure_sync(self.view_functions[rule.endpoint])(**view_args)
+  File "D:\MyProject\microerp\app.py", line 224, in equipment
+    equipment = Equipment.query.join(Equipment_position).order_by(Equipment_position.num_str).all()
+  File "D:\MyProject\microerp\env\lib\site-packages\sqlalchemy\orm\query.py", line 2768, in all
+    return self._iter().all()
+  File "D:\MyProject\microerp\env\lib\site-packages\sqlalchemy\orm\query.py", line 2903, in _iter
+    result = self.session.execute(
+  File "D:\MyProject\microerp\env\lib\site-packages\sqlalchemy\orm\session.py", line 1712, in execute
+    result = conn._execute_20(statement, params or {}, execution_options)
+  File "D:\MyProject\microerp\env\lib\site-packages\sqlalchemy\engine\base.py", line 1631, in _execute_20
+    return meth(self, args_10style, kwargs_10style, execution_options)
+  File "D:\MyProject\microerp\env\lib\site-packages\sqlalchemy\sql\elements.py", line 332, in _execute_on_connection
+    return connection._execute_clauseelement(
+  File "D:\MyProject\microerp\env\lib\site-packages\sqlalchemy\engine\base.py", line 1498, in _execute_clauseelement
+    ret = self._execute_context(
+  File "D:\MyProject\microerp\env\lib\site-packages\sqlalchemy\engine\base.py", line 1862, in _execute_context
+    self._handle_dbapi_exception(
+  File "D:\MyProject\microerp\env\lib\site-packages\sqlalchemy\engine\base.py", line 2043, in _handle_dbapi_exception
+    util.raise_(
+  File "D:\MyProject\microerp\env\lib\site-packages\sqlalchemy\util\compat.py", line 208, in raise_
+    raise exception
+  File "D:\MyProject\microerp\env\lib\site-packages\sqlalchemy\engine\base.py", line 1819, in _execute_context
+    self.dialect.do_execute(
+  File "D:\MyProject\microerp\env\lib\site-packages\sqlalchemy\engine\default.py", line 732, in do_execute
+    cursor.execute(statement, parameters)
+  File "D:\MyProject\microerp\env\lib\site-packages\pymysql\cursors.py", line 148, in execute
+    result = self._query(query)
+  File "D:\MyProject\microerp\env\lib\site-packages\pymysql\cursors.py", line 310, in _query
+    conn.query(q)
+  File "D:\MyProject\microerp\env\lib\site-packages\pymysql\connections.py", line 548, in query
+    self._affected_rows = self._read_query_result(unbuffered=unbuffered)
+  File "D:\MyProject\microerp\env\lib\site-packages\pymysql\connections.py", line 775, in _read_query_result
+    result.read()
+  File "D:\MyProject\microerp\env\lib\site-packages\pymysql\connections.py", line 1156, in read
+    first_packet = self.connection._read_packet()
+  File "D:\MyProject\microerp\env\lib\site-packages\pymysql\connections.py", line 692, in _read_packet
+    packet_header = self._read_bytes(4)
+  File "D:\MyProject\microerp\env\lib\site-packages\pymysql\connections.py", line 738, in _read_bytes
+    raise err.OperationalError(
+sqlalchemy.exc.OperationalError: (pymysql.err.OperationalError) (2013, 'Lost connection to MySQL server during query ([WinError 10053] Программа на вашем хост-компьютере разорвала установленное подключение)')
+[SQL: SELECT equipment.id AS equipment_id, equipment.type AS equipment_type, equipment.description AS equipment_description, equipment.code AS equipment_code, equipment.main_characteristic AS equipment_main_characteristic, equipment.firm AS equipment_firm, equipment.path AS equipment_path, equipment.relevance AS equipment_relevance, equipment.data_added AS equipment_data_added, equipment.added_id AS equipment_added_id, equipment.position_id AS equipment_position_id 
+FROM equipment INNER JOIN equipment_position ON equipment_position.id = equipment.position_id ORDER BY equipment_position.num_str]
+(Background on this error at: https://sqlalche.me/e/14/e3q8)
+INFO | 127.0.0.1 - - [18/Sep/2022 08:05:11] "[35m[1mGET /equipment HTTP/1.1[0m" 500 -
+INFO | 127.0.0.1 - - [18/Sep/2022 08:05:13] "GET /equipment HTTP/1.1" 200 -
+INFO | 127.0.0.1 - - [18/Sep/2022 08:05:15] "GET /equipment HTTP/1.1" 200 -
+INFO | 127.0.0.1 - - [18/Sep/2022 08:05:28] "GET /equipment HTTP/1.1" 200 -
+INFO | 127.0.0.1 - - [18/Sep/2022 08:05:43] "GET /equipment HTTP/1.1" 200 -
+INFO | 127.0.0.1 - - [18/Sep/2022 08:12:17] "GET /equipment HTTP/1.1" 200 -
+INFO | 127.0.0.1 - - [18/Sep/2022 08:12:54] "GET /equipment HTTP/1.1" 200 -
+INFO | 127.0.0.1 - - [18/Sep/2022 08:13:22] "GET /equipment HTTP/1.1" 200 -
+ERROR | Exception on /equipment [GET]
+Traceback (most recent call last):
+  File "D:\MyProject\microerp\env\lib\site-packages\pymysql\connections.py", line 732, in _read_bytes
+    data = self._rfile.read(num_bytes)
+  File "C:\Python38\lib\socket.py", line 669, in readinto
+    return self._sock.recv_into(b)
+ConnectionAbortedError: [WinError 10053] Программа на вашем хост-компьютере разорвала установленное подключение
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "D:\MyProject\microerp\env\lib\site-packages\sqlalchemy\engine\base.py", line 1819, in _execute_context
+    self.dialect.do_execute(
+  File "D:\MyProject\microerp\env\lib\site-packages\sqlalchemy\engine\default.py", line 732, in do_execute
+    cursor.execute(statement, parameters)
+  File "D:\MyProject\microerp\env\lib\site-packages\pymysql\cursors.py", line 148, in execute
+    result = self._query(query)
+  File "D:\MyProject\microerp\env\lib\site-packages\pymysql\cursors.py", line 310, in _query
+    conn.query(q)
+  File "D:\MyProject\microerp\env\lib\site-packages\pymysql\connections.py", line 548, in query
+    self._affected_rows = self._read_query_result(unbuffered=unbuffered)
+  File "D:\MyProject\microerp\env\lib\site-packages\pymysql\connections.py", line 775, in _read_query_result
+    result.read()
+  File "D:\MyProject\microerp\env\lib\site-packages\pymysql\connections.py", line 1156, in read
+    first_packet = self.connection._read_packet()
+  File "D:\MyProject\microerp\env\lib\site-packages\pymysql\connections.py", line 692, in _read_packet
+    packet_header = self._read_bytes(4)
+  File "D:\MyProject\microerp\env\lib\site-packages\pymysql\connections.py", line 738, in _read_bytes
+    raise err.OperationalError(
+pymysql.err.OperationalError: (2013, 'Lost connection to MySQL server during query ([WinError 10053] Программа на вашем хост-компьютере разорвала установленное подключение)')
+
+The above exception was the direct cause of the following exception:
+
+Traceback (most recent call last):
+  File "D:\MyProject\microerp\env\lib\site-packages\flask\app.py", line 2525, in wsgi_app
+    response = self.full_dispatch_request()
+  File "D:\MyProject\microerp\env\lib\site-packages\flask\app.py", line 1822, in full_dispatch_request
+    rv = self.handle_user_exception(e)
+  File "D:\MyProject\microerp\env\lib\site-packages\flask\app.py", line 1820, in full_dispatch_request
+    rv = self.dispatch_request()
+  File "D:\MyProject\microerp\env\lib\site-packages\flask\app.py", line 1796, in dispatch_request
+    return self.ensure_sync(self.view_functions[rule.endpoint])(**view_args)
+  File "D:\MyProject\microerp\app.py", line 224, in equipment
+    equipment = Equipment.query.join(Equipment_position).order_by(Equipment_position.num_str).all()
+  File "D:\MyProject\microerp\env\lib\site-packages\sqlalchemy\orm\query.py", line 2768, in all
+    return self._iter().all()
+  File "D:\MyProject\microerp\env\lib\site-packages\sqlalchemy\orm\query.py", line 2903, in _iter
+    result = self.session.execute(
+  File "D:\MyProject\microerp\env\lib\site-packages\sqlalchemy\orm\session.py", line 1712, in execute
+    result = conn._execute_20(statement, params or {}, execution_options)
+  File "D:\MyProject\microerp\env\lib\site-packages\sqlalchemy\engine\base.py", line 1631, in _execute_20
+    return meth(self, args_10style, kwargs_10style, execution_options)
+  File "D:\MyProject\microerp\env\lib\site-packages\sqlalchemy\sql\elements.py", line 332, in _execute_on_connection
+    return connection._execute_clauseelement(
+  File "D:\MyProject\microerp\env\lib\site-packages\sqlalchemy\engine\base.py", line 1498, in _execute_clauseelement
+    ret = self._execute_context(
+  File "D:\MyProject\microerp\env\lib\site-packages\sqlalchemy\engine\base.py", line 1862, in _execute_context
+    self._handle_dbapi_exception(
+  File "D:\MyProject\microerp\env\lib\site-packages\sqlalchemy\engine\base.py", line 2043, in _handle_dbapi_exception
+    util.raise_(
+  File "D:\MyProject\microerp\env\lib\site-packages\sqlalchemy\util\compat.py", line 208, in raise_
+    raise exception
+  File "D:\MyProject\microerp\env\lib\site-packages\sqlalchemy\engine\base.py", line 1819, in _execute_context
+    self.dialect.do_execute(
+  File "D:\MyProject\microerp\env\lib\site-packages\sqlalchemy\engine\default.py", line 732, in do_execute
+    cursor.execute(statement, parameters)
+  File "D:\MyProject\microerp\env\lib\site-packages\pymysql\cursors.py", line 148, in execute
+    result = self._query(query)
+  File "D:\MyProject\microerp\env\lib\site-packages\pymysql\cursors.py", line 310, in _query
+    conn.query(q)
+  File "D:\MyProject\microerp\env\lib\site-packages\pymysql\connections.py", line 548, in query
+    self._affected_rows = self._read_query_result(unbuffered=unbuffered)
+  File "D:\MyProject\microerp\env\lib\site-packages\pymysql\connections.py", line 775, in _read_query_result
+    result.read()
+  File "D:\MyProject\microerp\env\lib\site-packages\pymysql\connections.py", line 1156, in read
+    first_packet = self.connection._read_packet()
+  File "D:\MyProject\microerp\env\lib\site-packages\pymysql\connections.py", line 692, in _read_packet
+    packet_header = self._read_bytes(4)
+  File "D:\MyProject\microerp\env\lib\site-packages\pymysql\connections.py", line 738, in _read_bytes
+    raise err.OperationalError(
+sqlalchemy.exc.OperationalError: (pymysql.err.OperationalError) (2013, 'Lost connection to MySQL server during query ([WinError 10053] Программа на вашем хост-компьютере разорвала установленное подключение)')
+[SQL: SELECT equipment.id AS equipment_id, equipment.type AS equipment_type, equipment.description AS equipment_description, equipment.code AS equipment_code, equipment.main_characteristic AS equipment_main_characteristic, equipment.firm AS equipment_firm, equipment.path AS equipment_path, equipment.relevance AS equipment_relevance, equipment.data_added AS equipment_data_added, equipment.added_id AS equipment_added_id, equipment.position_id AS equipment_position_id 
+FROM equipment INNER JOIN equipment_position ON equipment_position.id = equipment.position_id ORDER BY equipment_position.num_str]
+(Background on this error at: https://sqlalche.me/e/14/e3q8)
+INFO | 127.0.0.1 - - [18/Sep/2022 08:17:09] "[35m[1mGET /equipment HTTP/1.1[0m" 500 -
+INFO | 127.0.0.1 - - [18/Sep/2022 08:19:43] "GET /equipment HTTP/1.1" 200 -
+INFO | 127.0.0.1 - - [18/Sep/2022 08:20:26] "GET /equipment HTTP/1.1" 200 -
+INFO | 127.0.0.1 - - [18/Sep/2022 08:22:47] "GET /equipment HTTP/1.1" 200 -
+INFO | 127.0.0.1 - - [18/Sep/2022 08:22:48] "POST /location HTTP/1.1" 200 -
+INFO | 127.0.0.1 - - [18/Sep/2022 08:23:42] "GET /equipment HTTP/1.1" 200 -
+INFO | 127.0.0.1 - - [18/Sep/2022 08:23:42] "POST /location HTTP/1.1" 200 -
+INFO | 127.0.0.1 - - [18/Sep/2022 08:28:31] "GET /equipment HTTP/1.1" 200 -
+INFO | 127.0.0.1 - - [18/Sep/2022 08:28:31] "POST /location HTTP/1.1" 200 -
+INFO | 127.0.0.1 - - [18/Sep/2022 08:31:10] "GET /equipment HTTP/1.1" 200 -
+INFO | 127.0.0.1 - - [18/Sep/2022 08:31:10] "GET /equipment HTTP/1.1" 200 -
+INFO | 127.0.0.1 - - [18/Sep/2022 08:31:11] "POST /location HTTP/1.1" 200 -
+INFO | 127.0.0.1 - - [18/Sep/2022 08:55:07] "GET /equipment HTTP/1.1" 200 -
+INFO | 127.0.0.1 - - [18/Sep/2022 08:55:23] "GET /equipment HTTP/1.1" 200 -
+INFO | 127.0.0.1 - - [18/Sep/2022 08:55:24] "POST /location HTTP/1.1" 200 -
+INFO | 127.0.0.1 - - [18/Sep/2022 09:02:38] "GET /equipment HTTP/1.1" 200 -
+INFO | 127.0.0.1 - - [18/Sep/2022 09:02:38] "POST /location HTTP/1.1" 200 -
+INFO | 127.0.0.1 - - [18/Sep/2022 09:09:43] "GET /equipment HTTP/1.1" 200 -
+INFO | 127.0.0.1 - - [18/Sep/2022 09:09:44] "POST /location HTTP/1.1" 200 -
+INFO | 127.0.0.1 - - [18/Sep/2022 09:22:54] "GET /equipment HTTP/1.1" 200 -
+INFO | 127.0.0.1 - - [18/Sep/2022 09:22:54] "POST /location HTTP/1.1" 200 -
+INFO | 127.0.0.1 - - [18/Sep/2022 09:24:49] "GET /equipment HTTP/1.1" 200 -
+INFO | 127.0.0.1 - - [18/Sep/2022 09:24:51] "POST /location HTTP/1.1" 200 -
+INFO | 127.0.0.1 - - [18/Sep/2022 09:28:35] "GET /equipment HTTP/1.1" 200 -
+INFO | 127.0.0.1 - - [18/Sep/2022 09:28:35] "POST /location HTTP/1.1" 200 -
+INFO | 127.0.0.1 - - [18/Sep/2022 09:28:40] "GET /equipment HTTP/1.1" 200 -
+INFO | 127.0.0.1 - - [18/Sep/2022 09:28:40] "POST /location HTTP/1.1" 200 -
+INFO | 127.0.0.1 - - [18/Sep/2022 09:29:06] "GET /equipment HTTP/1.1" 200 -
+INFO | 127.0.0.1 - - [18/Sep/2022 09:29:06] "POST /location HTTP/1.1" 200 -
+INFO | 127.0.0.1 - - [18/Sep/2022 09:31:52] "GET /equipment HTTP/1.1" 200 -
+INFO | 127.0.0.1 - - [18/Sep/2022 09:31:52] "POST /location HTTP/1.1" 200 -
+INFO | 127.0.0.1 - - [18/Sep/2022 09:38:58] "GET /equipment HTTP/1.1" 200 -
+INFO | 127.0.0.1 - - [18/Sep/2022 09:38:59] "POST /location HTTP/1.1" 200 -
+INFO | 127.0.0.1 - - [18/Sep/2022 09:39:07] "GET /equipment HTTP/1.1" 200 -
+INFO | 127.0.0.1 - - [18/Sep/2022 09:39:08] "POST /location HTTP/1.1" 200 -
+INFO | 127.0.0.1 - - [18/Sep/2022 09:39:42] "GET /equipment HTTP/1.1" 200 -
+INFO | 127.0.0.1 - - [18/Sep/2022 09:39:42] "POST /location HTTP/1.1" 200 -
+INFO | 127.0.0.1 - - [18/Sep/2022 09:40:35] "GET /equipment HTTP/1.1" 200 -
+INFO | 127.0.0.1 - - [18/Sep/2022 09:40:35] "POST /location HTTP/1.1" 200 -
+INFO | 127.0.0.1 - - [18/Sep/2022 09:45:56] "GET /equipment HTTP/1.1" 200 -
+INFO | 127.0.0.1 - - [18/Sep/2022 09:45:56] "POST /location HTTP/1.1" 200 -
+INFO | 127.0.0.1 - - [18/Sep/2022 09:50:55] "GET /img_store/equipment/default_prisp.png HTTP/1.1" 200 -
+INFO | 127.0.0.1 - - [18/Sep/2022 09:51:36] "[33mGET /img_store/equipment/prisp_1.jpg HTTP/1.1[0m" 404 -
+INFO | 127.0.0.1 - - [18/Sep/2022 09:51:38] "GET /img_store/equipment/default_control.png HTTP/1.1" 200 -
+INFO | 127.0.0.1 - - [18/Sep/2022 09:51:40] "[33mGET /img_store/equipment/prisp_1.jpg HTTP/1.1[0m" 404 -
+INFO | 127.0.0.1 - - [18/Sep/2022 09:51:40] "GET /img_store/equipment/default_prisp.png HTTP/1.1" 200 -
+INFO | 127.0.0.1 - - [18/Sep/2022 09:51:41] "[33mGET /img_store/equipment/prisp_1.jpg HTTP/1.1[0m" 404 -
+INFO | 127.0.0.1 - - [18/Sep/2022 09:51:42] "GET /img_store/equipment/default_control.png HTTP/1.1" 200 -
+INFO | 127.0.0.1 - - [18/Sep/2022 09:51:44] "[33mGET /img_store/equipment/control_1.jpg HTTP/1.1[0m" 404 -
+INFO | 127.0.0.1 - - [18/Sep/2022 09:51:45] "GET /img_store/equipment/default_tool.png HTTP/1.1" 200 -
+INFO | 127.0.0.1 - - [18/Sep/2022 09:51:54] "GET /img_store/equipment/default_control.png HTTP/1.1" 200 -
+INFO | 127.0.0.1 - - [18/Sep/2022 09:51:56] "[33mGET /img_store/equipment/control_1.jpg HTTP/1.1[0m" 404 -
+INFO | 127.0.0.1 - - [18/Sep/2022 09:52:02] "GET /img_store/equipment/default_prisp.png HTTP/1.1" 200 -
+INFO | 127.0.0.1 - - [18/Sep/2022 09:52:15] "POST /list_tech HTTP/1.1" 200 -
+INFO | 127.0.0.1 - - [18/Sep/2022 09:52:17] "GET /equipment HTTP/1.1" 200 -
+INFO | 127.0.0.1 - - [18/Sep/2022 09:52:17] "GET /img_store/equipment/default_prisp.png HTTP/1.1" 200 -
+INFO | 127.0.0.1 - - [18/Sep/2022 09:52:38] "GET /img_store/equipment/default_control.png HTTP/1.1" 200 -
+INFO | 127.0.0.1 - - [18/Sep/2022 09:54:08] "GET /img_store/equipment/default_control.png HTTP/1.1" 200 -
+INFO | 127.0.0.1 - - [18/Sep/2022 09:54:49] "[33mGET /img_store/equipment/prisp_1.jpg HTTP/1.1[0m" 404 -
+INFO | 127.0.0.1 - - [18/Sep/2022 09:54:53] "GET /img_store/equipment/default_control.png HTTP/1.1" 200 -
+INFO | 127.0.0.1 - - [18/Sep/2022 09:54:54] "[33mGET /img_store/equipment/control_1.jpg HTTP/1.1[0m" 404 -
+INFO | 127.0.0.1 - - [18/Sep/2022 09:54:55] "GET /img_store/equipment/default_prisp.png HTTP/1.1" 200 -
+INFO | 127.0.0.1 - - [18/Sep/2022 09:54:56] "GET /img_store/equipment/default_tool.png HTTP/1.1" 200 -
+INFO | 127.0.0.1 - - [18/Sep/2022 09:54:57] "[33mGET /img_store/equipment/control_1.jpg HTTP/1.1[0m" 404 -
+INFO | 127.0.0.1 - - [18/Sep/2022 09:54:58] "GET /img_store/equipment/default_control.png HTTP/1.1" 200 -
+INFO | 127.0.0.1 - - [18/Sep/2022 09:54:59] "[33mGET /img_store/equipment/prisp_1.jpg HTTP/1.1[0m" 404 -
+INFO | 127.0.0.1 - - [18/Sep/2022 09:55:00] "GET /img_store/equipment/default_prisp.png HTTP/1.1" 200 -
+INFO | 127.0.0.1 - - [18/Sep/2022 09:56:15] "[33mGET /img_store/equipment/prisp_1.jpg HTTP/1.1[0m" 404 -
+INFO | 127.0.0.1 - - [18/Sep/2022 09:58:49] "GET /equipment HTTP/1.1" 200 -
+INFO | 127.0.0.1 - - [18/Sep/2022 09:58:49] "POST /location HTTP/1.1" 200 -
+INFO | 127.0.0.1 - - [18/Sep/2022 09:58:49] "GET /img_store/equipment/default_prisp.png HTTP/1.1" 200 -
+INFO | 127.0.0.1 - - [18/Sep/2022 09:58:51] "[33mGET /img_store/equipment/prisp_1.jpg HTTP/1.1[0m" 404 -
+INFO | 127.0.0.1 - - [18/Sep/2022 09:58:52] "GET /img_store/equipment/default_control.png HTTP/1.1" 200 -
+INFO | 127.0.0.1 - - [18/Sep/2022 09:58:53] "[33mGET /img_store/equipment/control_1.jpg HTTP/1.1[0m" 404 -
+INFO | 127.0.0.1 - - [18/Sep/2022 09:58:54] "GET /img_store/equipment/default_tool.png HTTP/1.1" 200 -
+INFO | 127.0.0.1 - - [18/Sep/2022 09:59:40] "GET /equipment HTTP/1.1" 200 -
+INFO | 127.0.0.1 - - [18/Sep/2022 10:00:37] "[33mGET /img_store/equipment/prisp_1.jpg HTTP/1.1[0m" 404 -
+INFO | 127.0.0.1 - - [18/Sep/2022 10:00:39] "GET /img_store/equipment/default_control.png HTTP/1.1" 200 -
+INFO | 127.0.0.1 - - [18/Sep/2022 10:00:39] "[33mGET /img_store/equipment/control_1.jpg HTTP/1.1[0m" 404 -
+INFO | 127.0.0.1 - - [18/Sep/2022 10:00:54] "GET /img_store/equipment/default_prisp.png HTTP/1.1" 200 -
+INFO | 127.0.0.1 - - [18/Sep/2022 10:00:55] "[33mGET /img_store/equipment/prisp_1.jpg HTTP/1.1[0m" 404 -
+INFO | 127.0.0.1 - - [18/Sep/2022 10:00:56] "GET /img_store/equipment/default_control.png HTTP/1.1" 200 -
+INFO | 127.0.0.1 - - [18/Sep/2022 10:00:57] "[33mGET /img_store/equipment/control_1.jpg HTTP/1.1[0m" 404 -
+INFO | 127.0.0.1 - - [18/Sep/2022 10:00:58] "GET /img_store/equipment/default_tool.png HTTP/1.1" 200 -
+INFO | 127.0.0.1 - - [18/Sep/2022 10:01:54] "[33mGET /img_store/equipment/prisp_1.jpg HTTP/1.1[0m" 404 -
+INFO | 127.0.0.1 - - [18/Sep/2022 10:01:56] "GET /img_store/equipment/default_control.png HTTP/1.1" 200 -
+INFO | 127.0.0.1 - - [18/Sep/2022 10:01:59] "GET /img_store/equipment/default_prisp.png HTTP/1.1" 200 -
+INFO | 127.0.0.1 - - [18/Sep/2022 10:02:02] "GET /img_store/equipment/default_control.png HTTP/1.1" 200 -
+INFO | 127.0.0.1 - - [18/Sep/2022 10:02:09] "GET /img_store/equipment/default_tool.png HTTP/1.1" 200 -
+ERROR | Exception on /equipment [GET]
+Traceback (most recent call last):
+  File "D:\MyProject\microerp\env\lib\site-packages\pymysql\connections.py", line 732, in _read_bytes
+    data = self._rfile.read(num_bytes)
+  File "C:\Python38\lib\socket.py", line 669, in readinto
+    return self._sock.recv_into(b)
+ConnectionAbortedError: [WinError 10053] Программа на вашем хост-компьютере разорвала установленное подключение
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "D:\MyProject\microerp\env\lib\site-packages\sqlalchemy\engine\base.py", line 1819, in _execute_context
+    self.dialect.do_execute(
+  File "D:\MyProject\microerp\env\lib\site-packages\sqlalchemy\engine\default.py", line 732, in do_execute
+    cursor.execute(statement, parameters)
+  File "D:\MyProject\microerp\env\lib\site-packages\pymysql\cursors.py", line 148, in execute
+    result = self._query(query)
+  File "D:\MyProject\microerp\env\lib\site-packages\pymysql\cursors.py", line 310, in _query
+    conn.query(q)
+  File "D:\MyProject\microerp\env\lib\site-packages\pymysql\connections.py", line 548, in query
+    self._affected_rows = self._read_query_result(unbuffered=unbuffered)
+  File "D:\MyProject\microerp\env\lib\site-packages\pymysql\connections.py", line 775, in _read_query_result
+    result.read()
+  File "D:\MyProject\microerp\env\lib\site-packages\pymysql\connections.py", line 1156, in read
+    first_packet = self.connection._read_packet()
+  File "D:\MyProject\microerp\env\lib\site-packages\pymysql\connections.py", line 692, in _read_packet
+    packet_header = self._read_bytes(4)
+  File "D:\MyProject\microerp\env\lib\site-packages\pymysql\connections.py", line 738, in _read_bytes
+    raise err.OperationalError(
+pymysql.err.OperationalError: (2013, 'Lost connection to MySQL server during query ([WinError 10053] Программа на вашем хост-компьютере разорвала установленное подключение)')
+
+The above exception was the direct cause of the following exception:
+
+Traceback (most recent call last):
+  File "D:\MyProject\microerp\env\lib\site-packages\flask\app.py", line 2525, in wsgi_app
+    response = self.full_dispatch_request()
+  File "D:\MyProject\microerp\env\lib\site-packages\flask\app.py", line 1822, in full_dispatch_request
+    rv = self.handle_user_exception(e)
+  File "D:\MyProject\microerp\env\lib\site-packages\flask\app.py", line 1820, in full_dispatch_request
+    rv = self.dispatch_request()
+  File "D:\MyProject\microerp\env\lib\site-packages\flask\app.py", line 1796, in dispatch_request
+    return self.ensure_sync(self.view_functions[rule.endpoint])(**view_args)
+  File "D:\MyProject\microerp\app.py", line 224, in equipment
+    equipment = Equipment.query.join(Equipment_position).order_by(Equipment_position.num_str).all()
+  File "D:\MyProject\microerp\env\lib\site-packages\sqlalchemy\orm\query.py", line 2768, in all
+    return self._iter().all()
+  File "D:\MyProject\microerp\env\lib\site-packages\sqlalchemy\orm\query.py", line 2903, in _iter
+    result = self.session.execute(
+  File "D:\MyProject\microerp\env\lib\site-packages\sqlalchemy\orm\session.py", line 1712, in execute
+    result = conn._execute_20(statement, params or {}, execution_options)
+  File "D:\MyProject\microerp\env\lib\site-packages\sqlalchemy\engine\base.py", line 1631, in _execute_20
+    return meth(self, args_10style, kwargs_10style, execution_options)
+  File "D:\MyProject\microerp\env\lib\site-packages\sqlalchemy\sql\elements.py", line 332, in _execute_on_connection
+    return connection._execute_clauseelement(
+  File "D:\MyProject\microerp\env\lib\site-packages\sqlalchemy\engine\base.py", line 1498, in _execute_clauseelement
+    ret = self._execute_context(
+  File "D:\MyProject\microerp\env\lib\site-packages\sqlalchemy\engine\base.py", line 1862, in _execute_context
+    self._handle_dbapi_exception(
+  File "D:\MyProject\microerp\env\lib\site-packages\sqlalchemy\engine\base.py", line 2043, in _handle_dbapi_exception
+    util.raise_(
+  File "D:\MyProject\microerp\env\lib\site-packages\sqlalchemy\util\compat.py", line 208, in raise_
+    raise exception
+  File "D:\MyProject\microerp\env\lib\site-packages\sqlalchemy\engine\base.py", line 1819, in _execute_context
+    self.dialect.do_execute(
+  File "D:\MyProject\microerp\env\lib\site-packages\sqlalchemy\engine\default.py", line 732, in do_execute
+    cursor.execute(statement, parameters)
+  File "D:\MyProject\microerp\env\lib\site-packages\pymysql\cursors.py", line 148, in execute
+    result = self._query(query)
+  File "D:\MyProject\microerp\env\lib\site-packages\pymysql\cursors.py", line 310, in _query
+    conn.query(q)
+  File "D:\MyProject\microerp\env\lib\site-packages\pymysql\connections.py", line 548, in query
+    self._affected_rows = self._read_query_result(unbuffered=unbuffered)
+  File "D:\MyProject\microerp\env\lib\site-packages\pymysql\connections.py", line 775, in _read_query_result
+    result.read()
+  File "D:\MyProject\microerp\env\lib\site-packages\pymysql\connections.py", line 1156, in read
+    first_packet = self.connection._read_packet()
+  File "D:\MyProject\microerp\env\lib\site-packages\pymysql\connections.py", line 692, in _read_packet
+    packet_header = self._read_bytes(4)
+  File "D:\MyProject\microerp\env\lib\site-packages\pymysql\connections.py", line 738, in _read_bytes
+    raise err.OperationalError(
+sqlalchemy.exc.OperationalError: (pymysql.err.OperationalError) (2013, 'Lost connection to MySQL server during query ([WinError 10053] Программа на вашем хост-компьютере разорвала установленное подключение)')
+[SQL: SELECT equipment.id AS equipment_id, equipment.type AS equipment_type, equipment.description AS equipment_description, equipment.code AS equipment_code, equipment.main_characteristic AS equipment_main_characteristic, equipment.firm AS equipment_firm, equipment.path AS equipment_path, equipment.relevance AS equipment_relevance, equipment.data_added AS equipment_data_added, equipment.added_id AS equipment_added_id, equipment.position_id AS equipment_position_id 
+FROM equipment INNER JOIN equipment_position ON equipment_position.id = equipment.position_id ORDER BY equipment_position.num_str]
+(Background on this error at: https://sqlalche.me/e/14/e3q8)
+INFO | 127.0.0.1 - - [18/Sep/2022 10:03:21] "[35m[1mGET /equipment HTTP/1.1[0m" 500 -
+INFO | 127.0.0.1 - - [18/Sep/2022 10:03:23] "POST /location HTTP/1.1" 200 -
+INFO | 127.0.0.1 - - [18/Sep/2022 10:03:26] "GET /equipment HTTP/1.1" 200 -
+INFO | 127.0.0.1 - - [18/Sep/2022 10:03:26] "GET /img_store/equipment/default_prisp.png HTTP/1.1" 200 -
+INFO | 127.0.0.1 - - [18/Sep/2022 10:03:26] "POST /location HTTP/1.1" 200 -
+INFO | 127.0.0.1 - - [18/Sep/2022 10:03:28] "[33mGET /img_store/equipment/prisp_1.jpg HTTP/1.1[0m" 404 -
+INFO | 127.0.0.1 - - [18/Sep/2022 10:03:32] "GET /img_store/equipment/default_control.png HTTP/1.1" 200 -
+INFO | 127.0.0.1 - - [18/Sep/2022 10:03:33] "[33mGET /img_store/equipment/control_1.jpg HTTP/1.1[0m" 404 -
+INFO | 127.0.0.1 - - [18/Sep/2022 10:03:34] "[33mGET /img_store/equipment/prisp_1.jpg HTTP/1.1[0m" 404 -
+INFO | 127.0.0.1 - - [18/Sep/2022 10:04:03] "GET /img_store/equipment/default_prisp.png HTTP/1.1" 200 -
+INFO | 127.0.0.1 - - [18/Sep/2022 10:04:04] "[33mGET /img_store/equipment/prisp_1.jpg HTTP/1.1[0m" 404 -
+INFO | 127.0.0.1 - - [18/Sep/2022 10:04:05] "GET /img_store/equipment/default_control.png HTTP/1.1" 200 -
+INFO | 127.0.0.1 - - [18/Sep/2022 10:04:06] "[33mGET /img_store/equipment/control_1.jpg HTTP/1.1[0m" 404 -
+INFO | 127.0.0.1 - - [18/Sep/2022 10:04:08] "GET /img_store/equipment/default_tool.png HTTP/1.1" 200 -
+INFO | 127.0.0.1 - - [18/Sep/2022 10:04:39] "[33mGET /img_store/equipment/prisp_1.jpg HTTP/1.1[0m" 404 -
+INFO | 127.0.0.1 - - [18/Sep/2022 10:04:39] "GET /img_store/equipment/default_control.png HTTP/1.1" 200 -
+INFO | 127.0.0.1 - - [18/Sep/2022 10:04:40] "[33mGET /img_store/equipment/control_1.jpg HTTP/1.1[0m" 404 -
+INFO | 127.0.0.1 - - [18/Sep/2022 10:04:41] "GET /img_store/equipment/default_tool.png HTTP/1.1" 200 -
+INFO | 127.0.0.1 - - [18/Sep/2022 10:06:15] "GET /img_store/equipment/default_control.png HTTP/1.1" 200 -
+INFO | 127.0.0.1 - - [18/Sep/2022 10:06:15] "[33mGET /img_store/equipment/prisp_1.jpg HTTP/1.1[0m" 404 -
+INFO | 127.0.0.1 - - [18/Sep/2022 10:06:17] "GET /img_store/equipment/default_prisp.png HTTP/1.1" 200 -
+INFO | 127.0.0.1 - - [18/Sep/2022 10:07:17] "GET /img_store/equipment/default_prisp.png HTTP/1.1" 200 -
+INFO | 127.0.0.1 - - [18/Sep/2022 10:07:19] "[33mGET /img_store/equipment/prisp_1.jpg HTTP/1.1[0m" 404 -
+INFO | 127.0.0.1 - - [18/Sep/2022 10:07:21] "GET /img_store/equipment/default_prisp.png HTTP/1.1" 200 -
+INFO | 127.0.0.1 - - [18/Sep/2022 10:07:23] "[33mGET /img_store/equipment/prisp_1.jpg HTTP/1.1[0m" 404 -
+INFO | 127.0.0.1 - - [18/Sep/2022 10:07:23] "GET /img_store/equipment/default_control.png HTTP/1.1" 200 -
+INFO | 127.0.0.1 - - [18/Sep/2022 10:07:25] "[33mGET /img_store/equipment/control_1.jpg HTTP/1.1[0m" 404 -
+INFO | 127.0.0.1 - - [18/Sep/2022 10:07:26] "GET /img_store/equipment/default_tool.png HTTP/1.1" 200 -
+INFO | 127.0.0.1 - - [18/Sep/2022 10:08:17] "[33mGET /img_store/equipment/control_1.jpg HTTP/1.1[0m" 404 -
+INFO | 127.0.0.1 - - [18/Sep/2022 10:08:17] "GET /img_store/equipment/default_control.png HTTP/1.1" 200 -
+INFO | 127.0.0.1 - - [18/Sep/2022 10:08:18] "[33mGET /img_store/equipment/prisp_1.jpg HTTP/1.1[0m" 404 -
+INFO | 127.0.0.1 - - [18/Sep/2022 10:08:19] "GET /img_store/equipment/default_prisp.png HTTP/1.1" 200 -
+INFO | 127.0.0.1 - - [18/Sep/2022 10:08:20] "GET /img_store/equipment/default_tool.png HTTP/1.1" 200 -
+INFO | 127.0.0.1 - - [18/Sep/2022 10:09:50] "GET /img_store/equipment/default_control.png HTTP/1.1" 200 -
+INFO | 127.0.0.1 - - [18/Sep/2022 10:09:51] "[33mGET /img_store/equipment/control_1.jpg HTTP/1.1[0m" 404 -
+INFO | 127.0.0.1 - - [18/Sep/2022 10:09:54] "GET /img_store/equipment/default_tool.png HTTP/1.1" 200 -
+INFO | 127.0.0.1 - - [18/Sep/2022 10:10:05] "[33mGET /img_store/equipment/control_1.jpg HTTP/1.1[0m" 404 -
+INFO | 127.0.0.1 - - [18/Sep/2022 10:10:08] "GET /img_store/equipment/default_control.png HTTP/1.1" 200 -
+INFO | 127.0.0.1 - - [18/Sep/2022 10:10:13] "[33mGET /img_store/equipment/control_1.jpg HTTP/1.1[0m" 404 -
+INFO | 127.0.0.1 - - [18/Sep/2022 10:10:14] "GET /img_store/equipment/default_control.png HTTP/1.1" 200 -
+INFO | 127.0.0.1 - - [18/Sep/2022 10:10:15] "[33mGET /img_store/equipment/prisp_1.jpg HTTP/1.1[0m" 404 -
+INFO | 127.0.0.1 - - [18/Sep/2022 10:10:17] "GET /img_store/equipment/default_prisp.png HTTP/1.1" 200 -
+INFO | 127.0.0.1 - - [18/Sep/2022 10:10:57] "[33mGET /img_store/equipment/prisp_1.jpg HTTP/1.1[0m" 404 -
+INFO | 127.0.0.1 - - [18/Sep/2022 10:10:59] "GET /img_store/equipment/default_prisp.png HTTP/1.1" 200 -
+INFO | 127.0.0.1 - - [18/Sep/2022 10:11:06] "[33mGET /img_store/equipment/prisp_1.jpg HTTP/1.1[0m" 404 -
+INFO | 127.0.0.1 - - [18/Sep/2022 10:11:07] "GET /img_store/equipment/default_control.png HTTP/1.1" 200 -
+INFO | 127.0.0.1 - - [18/Sep/2022 10:11:08] "[33mGET /img_store/equipment/control_1.jpg HTTP/1.1[0m" 404 -
+INFO | 127.0.0.1 - - [18/Sep/2022 10:11:09] "GET /img_store/equipment/default_tool.png HTTP/1.1" 200 -
+INFO | 127.0.0.1 - - [18/Sep/2022 10:11:11] "GET /img_store/equipment/default_prisp.png HTTP/1.1" 200 -
+INFO | 127.0.0.1 - - [18/Sep/2022 10:11:26] "[33mGET /img_store/equipment/prisp_1.jpg HTTP/1.1[0m" 404 -
+INFO | 127.0.0.1 - - [18/Sep/2022 10:11:30] "GET /img_store/equipment/default_prisp.png HTTP/1.1" 200 -
+INFO | 127.0.0.1 - - [18/Sep/2022 10:17:51] "GET /img_store/equipment/default_prisp.png HTTP/1.1" 200 -
+INFO | 127.0.0.1 - - [18/Sep/2022 10:17:58] "[33mGET /img_store/equipment/prisp_1.jpg HTTP/1.1[0m" 404 -
+INFO | 127.0.0.1 - - [18/Sep/2022 10:18:06] "GET /img_store/equipment/default_prisp.png HTTP/1.1" 200 -
+INFO | 127.0.0.1 - - [18/Sep/2022 10:18:19] "[33mGET /img_store/equipment/prisp_1.jpg HTTP/1.1[0m" 404 -
+INFO | 127.0.0.1 - - [18/Sep/2022 10:18:26] "GET /img_store/equipment/default_control.png HTTP/1.1" 200 -
+INFO | 127.0.0.1 - - [18/Sep/2022 10:19:14] "GET /equipment HTTP/1.1" 200 -
+INFO | 127.0.0.1 - - [18/Sep/2022 10:19:14] "GET /img_store/equipment/default_prisp.png HTTP/1.1" 200 -
+INFO | 127.0.0.1 - - [18/Sep/2022 10:19:15] "POST /location HTTP/1.1" 200 -
+INFO | 127.0.0.1 - - [18/Sep/2022 10:19:18] "[33mGET /img_store/equipment/prisp_1.jpg HTTP/1.1[0m" 404 -
+INFO | 127.0.0.1 - - [18/Sep/2022 10:19:20] "GET /img_store/equipment/default_control.png HTTP/1.1" 200 -
+INFO | 127.0.0.1 - - [18/Sep/2022 10:19:49] "GET /img_store/equipment/default_prisp.png HTTP/1.1" 200 -
+INFO | 127.0.0.1 - - [18/Sep/2022 10:19:51] "[33mGET /img_store/equipment/prisp_1.jpg HTTP/1.1[0m" 404 -
+INFO | 127.0.0.1 - - [18/Sep/2022 10:19:53] "GET /img_store/equipment/default_control.png HTTP/1.1" 200 -
+INFO | 127.0.0.1 - - [18/Sep/2022 10:20:16] "GET /img_store/equipment/default_prisp.png HTTP/1.1" 200 -
+INFO | 127.0.0.1 - - [18/Sep/2022 10:20:17] "[33mGET /img_store/equipment/prisp_1.jpg HTTP/1.1[0m" 404 -
+INFO | 127.0.0.1 - - [18/Sep/2022 10:20:19] "GET /img_store/equipment/default_control.png HTTP/1.1" 200 -
+INFO | 127.0.0.1 - - [18/Sep/2022 10:20:20] "[33mGET /img_store/equipment/control_1.jpg HTTP/1.1[0m" 404 -
+INFO | 127.0.0.1 - - [18/Sep/2022 10:20:22] "GET /img_store/equipment/default_tool.png HTTP/1.1" 200 -
+INFO | 127.0.0.1 - - [18/Sep/2022 10:21:02] "GET /img_store/equipment/default_prisp.png HTTP/1.1" 200 -
+INFO | 127.0.0.1 - - [18/Sep/2022 10:21:03] "[33mGET /img_store/equipment/prisp_1.jpg HTTP/1.1[0m" 404 -
+INFO | 127.0.0.1 - - [18/Sep/2022 10:21:05] "GET /img_store/equipment/default_control.png HTTP/1.1" 200 -
+INFO | 127.0.0.1 - - [18/Sep/2022 10:21:07] "[33mGET /img_store/equipment/control_1.jpg HTTP/1.1[0m" 404 -
+INFO | 127.0.0.1 - - [18/Sep/2022 10:21:08] "GET /img_store/equipment/default_tool.png HTTP/1.1" 200 -
+INFO | 127.0.0.1 - - [18/Sep/2022 10:21:19] "GET /img_store/equipment/default_prisp.png HTTP/1.1" 200 -
+INFO | 127.0.0.1 - - [18/Sep/2022 10:21:20] "[33mGET /img_store/equipment/prisp_1.jpg HTTP/1.1[0m" 404 -
+INFO | 127.0.0.1 - - [18/Sep/2022 10:21:30] "GET /img_store/equipment/default_control.png HTTP/1.1" 200 -
+INFO | 127.0.0.1 - - [18/Sep/2022 10:21:31] "[33mGET /img_store/equipment/control_1.jpg HTTP/1.1[0m" 404 -
+INFO | 127.0.0.1 - - [18/Sep/2022 10:21:32] "GET /img_store/equipment/default_tool.png HTTP/1.1" 200 -
+ERROR | Exception on /equipment [GET]
+Traceback (most recent call last):
+  File "D:\MyProject\microerp\env\lib\site-packages\pymysql\connections.py", line 732, in _read_bytes
+    data = self._rfile.read(num_bytes)
+  File "C:\Python38\lib\socket.py", line 669, in readinto
+    return self._sock.recv_into(b)
+ConnectionAbortedError: [WinError 10053] Программа на вашем хост-компьютере разорвала установленное подключение
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "D:\MyProject\microerp\env\lib\site-packages\sqlalchemy\engine\base.py", line 1819, in _execute_context
+    self.dialect.do_execute(
+  File "D:\MyProject\microerp\env\lib\site-packages\sqlalchemy\engine\default.py", line 732, in do_execute
+    cursor.execute(statement, parameters)
+  File "D:\MyProject\microerp\env\lib\site-packages\pymysql\cursors.py", line 148, in execute
+    result = self._query(query)
+  File "D:\MyProject\microerp\env\lib\site-packages\pymysql\cursors.py", line 310, in _query
+    conn.query(q)
+  File "D:\MyProject\microerp\env\lib\site-packages\pymysql\connections.py", line 548, in query
+    self._affected_rows = self._read_query_result(unbuffered=unbuffered)
+  File "D:\MyProject\microerp\env\lib\site-packages\pymysql\connections.py", line 775, in _read_query_result
+    result.read()
+  File "D:\MyProject\microerp\env\lib\site-packages\pymysql\connections.py", line 1156, in read
+    first_packet = self.connection._read_packet()
+  File "D:\MyProject\microerp\env\lib\site-packages\pymysql\connections.py", line 692, in _read_packet
+    packet_header = self._read_bytes(4)
+  File "D:\MyProject\microerp\env\lib\site-packages\pymysql\connections.py", line 738, in _read_bytes
+    raise err.OperationalError(
+pymysql.err.OperationalError: (2013, 'Lost connection to MySQL server during query ([WinError 10053] Программа на вашем хост-компьютере разорвала установленное подключение)')
+
+The above exception was the direct cause of the following exception:
+
+Traceback (most recent call last):
+  File "D:\MyProject\microerp\env\lib\site-packages\flask\app.py", line 2525, in wsgi_app
+    response = self.full_dispatch_request()
+  File "D:\MyProject\microerp\env\lib\site-packages\flask\app.py", line 1822, in full_dispatch_request
+    rv = self.handle_user_exception(e)
+  File "D:\MyProject\microerp\env\lib\site-packages\flask\app.py", line 1820, in full_dispatch_request
+    rv = self.dispatch_request()
+  File "D:\MyProject\microerp\env\lib\site-packages\flask\app.py", line 1796, in dispatch_request
+    return self.ensure_sync(self.view_functions[rule.endpoint])(**view_args)
+  File "D:\MyProject\microerp\app.py", line 224, in equipment
+    equipment = Equipment.query.join(Equipment_position).order_by(Equipment_position.num_str).all()
+  File "D:\MyProject\microerp\env\lib\site-packages\sqlalchemy\orm\query.py", line 2768, in all
+    return self._iter().all()
+  File "D:\MyProject\microerp\env\lib\site-packages\sqlalchemy\orm\query.py", line 2903, in _iter
+    result = self.session.execute(
+  File "D:\MyProject\microerp\env\lib\site-packages\sqlalchemy\orm\session.py", line 1712, in execute
+    result = conn._execute_20(statement, params or {}, execution_options)
+  File "D:\MyProject\microerp\env\lib\site-packages\sqlalchemy\engine\base.py", line 1631, in _execute_20
+    return meth(self, args_10style, kwargs_10style, execution_options)
+  File "D:\MyProject\microerp\env\lib\site-packages\sqlalchemy\sql\elements.py", line 332, in _execute_on_connection
+    return connection._execute_clauseelement(
+  File "D:\MyProject\microerp\env\lib\site-packages\sqlalchemy\engine\base.py", line 1498, in _execute_clauseelement
+    ret = self._execute_context(
+  File "D:\MyProject\microerp\env\lib\site-packages\sqlalchemy\engine\base.py", line 1862, in _execute_context
+    self._handle_dbapi_exception(
+  File "D:\MyProject\microerp\env\lib\site-packages\sqlalchemy\engine\base.py", line 2043, in _handle_dbapi_exception
+    util.raise_(
+  File "D:\MyProject\microerp\env\lib\site-packages\sqlalchemy\util\compat.py", line 208, in raise_
+    raise exception
+  File "D:\MyProject\microerp\env\lib\site-packages\sqlalchemy\engine\base.py", line 1819, in _execute_context
+    self.dialect.do_execute(
+  File "D:\MyProject\microerp\env\lib\site-packages\sqlalchemy\engine\default.py", line 732, in do_execute
+    cursor.execute(statement, parameters)
+  File "D:\MyProject\microerp\env\lib\site-packages\pymysql\cursors.py", line 148, in execute
+    result = self._query(query)
+  File "D:\MyProject\microerp\env\lib\site-packages\pymysql\cursors.py", line 310, in _query
+    conn.query(q)
+  File "D:\MyProject\microerp\env\lib\site-packages\pymysql\connections.py", line 548, in query
+    self._affected_rows = self._read_query_result(unbuffered=unbuffered)
+  File "D:\MyProject\microerp\env\lib\site-packages\pymysql\connections.py", line 775, in _read_query_result
+    result.read()
+  File "D:\MyProject\microerp\env\lib\site-packages\pymysql\connections.py", line 1156, in read
+    first_packet = self.connection._read_packet()
+  File "D:\MyProject\microerp\env\lib\site-packages\pymysql\connections.py", line 692, in _read_packet
+    packet_header = self._read_bytes(4)
+  File "D:\MyProject\microerp\env\lib\site-packages\pymysql\connections.py", line 738, in _read_bytes
+    raise err.OperationalError(
+sqlalchemy.exc.OperationalError: (pymysql.err.OperationalError) (2013, 'Lost connection to MySQL server during query ([WinError 10053] Программа на вашем хост-компьютере разорвала установленное подключение)')
+[SQL: SELECT equipment.id AS equipment_id, equipment.type AS equipment_type, equipment.description AS equipment_description, equipment.code AS equipment_code, equipment.main_characteristic AS equipment_main_characteristic, equipment.firm AS equipment_firm, equipment.path AS equipment_path, equipment.relevance AS equipment_relevance, equipment.data_added AS equipment_data_added, equipment.added_id AS equipment_added_id, equipment.position_id AS equipment_position_id 
+FROM equipment INNER JOIN equipment_position ON equipment_position.id = equipment.position_id ORDER BY equipment_position.num_str]
+(Background on this error at: https://sqlalche.me/e/14/e3q8)
+INFO | 127.0.0.1 - - [18/Sep/2022 10:23:24] "[35m[1mGET /equipment HTTP/1.1[0m" 500 -
+INFO | 127.0.0.1 - - [18/Sep/2022 10:23:28] "GET /equipment HTTP/1.1" 200 -
+INFO | 127.0.0.1 - - [18/Sep/2022 10:23:29] "GET /img_store/equipment/default_prisp.png HTTP/1.1" 200 -
+INFO | 127.0.0.1 - - [18/Sep/2022 10:23:29] "POST /location HTTP/1.1" 200 -
+INFO | 127.0.0.1 - - [18/Sep/2022 10:23:30] "[33mGET /img_store/equipment/prisp_1.jpg HTTP/1.1[0m" 404 -
+INFO | 127.0.0.1 - - [18/Sep/2022 10:23:31] "GET /img_store/equipment/default_control.png HTTP/1.1" 200 -
+INFO | 127.0.0.1 - - [18/Sep/2022 10:23:32] "[33mGET /img_store/equipment/control_1.jpg HTTP/1.1[0m" 404 -
+INFO | 127.0.0.1 - - [18/Sep/2022 10:23:32] "GET /img_store/equipment/default_tool.png HTTP/1.1" 200 -
+INFO | 127.0.0.1 - - [18/Sep/2022 10:23:33] "GET /img_store/equipment/default_prisp.png HTTP/1.1" 200 -
+INFO | 127.0.0.1 - - [18/Sep/2022 10:29:54] "[33mGET /img_store/equipment/prisp_1.jpg HTTP/1.1[0m" 404 -
+INFO | 127.0.0.1 - - [18/Sep/2022 10:29:58] "GET /img_store/equipment/default_control.png HTTP/1.1" 200 -
+INFO | 127.0.0.1 - - [18/Sep/2022 10:29:59] "[33mGET /img_store/equipment/control_1.jpg HTTP/1.1[0m" 404 -
+INFO | 127.0.0.1 - - [18/Sep/2022 10:30:00] "GET /img_store/equipment/default_tool.png HTTP/1.1" 200 -
+INFO | 127.0.0.1 - - [18/Sep/2022 10:30:01] "GET /img_store/equipment/default_prisp.png HTTP/1.1" 200 -
+INFO | 127.0.0.1 - - [18/Sep/2022 10:30:05] "[33mGET /img_store/equipment/prisp_1.jpg HTTP/1.1[0m" 404 -
+INFO | 127.0.0.1 - - [18/Sep/2022 10:30:07] "GET /img_store/equipment/default_control.png HTTP/1.1" 200 -
+INFO | 127.0.0.1 - - [18/Sep/2022 10:30:07] "[33mGET /img_store/equipment/control_1.jpg HTTP/1.1[0m" 404 -
+INFO | 127.0.0.1 - - [18/Sep/2022 10:30:08] "GET /img_store/equipment/default_tool.png HTTP/1.1" 200 -
+INFO | 127.0.0.1 - - [18/Sep/2022 10:30:10] "GET /equipment HTTP/1.1" 200 -
+INFO | 127.0.0.1 - - [18/Sep/2022 10:30:10] "GET /img_store/equipment/default_prisp.png HTTP/1.1" 200 -
+INFO | 127.0.0.1 - - [18/Sep/2022 10:30:10] "POST /location HTTP/1.1" 200 -
+INFO | 127.0.0.1 - - [18/Sep/2022 10:30:13] "[33mGET /img_store/equipment/prisp_1.jpg HTTP/1.1[0m" 404 -
+INFO | 127.0.0.1 - - [18/Sep/2022 10:30:13] "GET /img_store/equipment/default_control.png HTTP/1.1" 200 -
+INFO | 127.0.0.1 - - [18/Sep/2022 10:30:14] "[33mGET /img_store/equipment/control_1.jpg HTTP/1.1[0m" 404 -
+INFO | 127.0.0.1 - - [18/Sep/2022 10:30:14] "GET /img_store/equipment/default_tool.png HTTP/1.1" 200 -
+INFO | 127.0.0.1 - - [18/Sep/2022 10:30:15] "GET /img_store/equipment/default_prisp.png HTTP/1.1" 200 -
+INFO | 127.0.0.1 - - [18/Sep/2022 10:30:18] "[33mGET /img_store/equipment/prisp_1.jpg HTTP/1.1[0m" 404 -
+INFO | 127.0.0.1 - - [18/Sep/2022 10:30:18] "GET /img_store/equipment/default_control.png HTTP/1.1" 200 -
+INFO | 127.0.0.1 - - [18/Sep/2022 10:30:19] "[33mGET /img_store/equipment/control_1.jpg HTTP/1.1[0m" 404 -
+INFO | 127.0.0.1 - - [18/Sep/2022 10:30:20] "GET /img_store/equipment/default_tool.png HTTP/1.1" 200 -
+INFO | 127.0.0.1 - - [18/Sep/2022 10:30:36] "[33mGET /img_store/equipment/prisp_1.jpg HTTP/1.1[0m" 404 -
+INFO | 127.0.0.1 - - [18/Sep/2022 10:30:37] "GET /img_store/equipment/default_prisp.png HTTP/1.1" 200 -
+INFO | 127.0.0.1 - - [18/Sep/2022 10:30:38] "GET /img_store/equipment/default_control.png HTTP/1.1" 200 -
+INFO | 127.0.0.1 - - [18/Sep/2022 10:31:14] "[33mGET /img_store/equipment/control_1.jpg HTTP/1.1[0m" 404 -
+INFO | 127.0.0.1 - - [18/Sep/2022 10:31:16] "GET /img_store/equipment/default_tool.png HTTP/1.1" 200 -
+INFO | 127.0.0.1 - - [18/Sep/2022 10:31:17] "GET /img_store/equipment/default_prisp.png HTTP/1.1" 200 -
+INFO | 127.0.0.1 - - [18/Sep/2022 10:31:18] "[33mGET /img_store/equipment/prisp_1.jpg HTTP/1.1[0m" 404 -
+INFO | 127.0.0.1 - - [18/Sep/2022 10:31:18] "GET /img_store/equipment/default_control.png HTTP/1.1" 200 -
+INFO | 127.0.0.1 - - [18/Sep/2022 10:31:19] "[33mGET /img_store/equipment/control_1.jpg HTTP/1.1[0m" 404 -
+INFO | 127.0.0.1 - - [18/Sep/2022 10:31:20] "GET /img_store/equipment/default_tool.png HTTP/1.1" 200 -
+INFO | 127.0.0.1 - - [18/Sep/2022 10:31:34] "[33mGET /img_store/equipment/control_1.jpg HTTP/1.1[0m" 404 -
+INFO | 127.0.0.1 - - [18/Sep/2022 10:31:35] "GET /img_store/equipment/default_control.png HTTP/1.1" 200 -
+INFO | 127.0.0.1 - - [18/Sep/2022 10:31:36] "[33mGET /img_store/equipment/control_1.jpg HTTP/1.1[0m" 404 -
+INFO | 127.0.0.1 - - [18/Sep/2022 10:31:47] "GET /img_store/equipment/default_control.png HTTP/1.1" 200 -
+INFO | 127.0.0.1 - - [18/Sep/2022 10:31:49] "[33mGET /img_store/equipment/prisp_1.jpg HTTP/1.1[0m" 404 -
+INFO | 127.0.0.1 - - [18/Sep/2022 10:31:49] "GET /img_store/equipment/default_prisp.png HTTP/1.1" 200 -
+INFO | 127.0.0.1 - - [18/Sep/2022 10:31:51] "[33mGET /img_store/equipment/prisp_1.jpg HTTP/1.1[0m" 404 -
+INFO | 127.0.0.1 - - [18/Sep/2022 10:31:52] "GET /img_store/equipment/default_control.png HTTP/1.1" 200 -
+INFO | 127.0.0.1 - - [18/Sep/2022 10:31:53] "[33mGET /img_store/equipment/control_1.jpg HTTP/1.1[0m" 404 -
+INFO | 127.0.0.1 - - [18/Sep/2022 10:31:54] "GET /img_store/equipment/default_tool.png HTTP/1.1" 200 -
+INFO | 127.0.0.1 - - [18/Sep/2022 10:39:30] "GET /img_store/equipment/default_prisp.png HTTP/1.1" 200 -
+INFO | 127.0.0.1 - - [18/Sep/2022 10:39:31] "[33mGET /img_store/equipment/prisp_1.jpg HTTP/1.1[0m" 404 -
+INFO | 127.0.0.1 - - [18/Sep/2022 10:39:35] "POST /list_tech HTTP/1.1" 200 -
+INFO | 127.0.0.1 - - [18/Sep/2022 10:39:49] "GET /equipment HTTP/1.1" 200 -
+INFO | 127.0.0.1 - - [18/Sep/2022 10:39:49] "GET /img_store/equipment/default_prisp.png HTTP/1.1" 200 -
+INFO | 127.0.0.1 - - [18/Sep/2022 10:40:17] "[33mGET /img_store/equipment/prisp_1.jpg HTTP/1.1[0m" 404 -
+INFO | 127.0.0.1 - - [18/Sep/2022 10:40:18] "GET /img_store/equipment/default_prisp.png HTTP/1.1" 200 -
+INFO | 127.0.0.1 - - [18/Sep/2022 10:40:22] "GET /img_store/equipment/default_control.png HTTP/1.1" 200 -
+INFO | 127.0.0.1 - - [18/Sep/2022 10:40:25] "GET /img_store/equipment/default_tool.png HTTP/1.1" 200 -
+INFO | 127.0.0.1 - - [18/Sep/2022 10:40:30] "GET /img_store/equipment/default_prisp.png HTTP/1.1" 200 -
+INFO | 127.0.0.1 - - [18/Sep/2022 10:40:34] "[33mGET /img_store/equipment/prisp_1.jpg HTTP/1.1[0m" 404 -
+INFO | 127.0.0.1 - - [18/Sep/2022 10:40:43] "GET /img_store/equipment/default_prisp.png HTTP/1.1" 200 -
+INFO | 127.0.0.1 - - [18/Sep/2022 10:40:48] "[33mGET /img_store/equipment/prisp_1.jpg HTTP/1.1[0m" 404 -
+INFO | 127.0.0.1 - - [18/Sep/2022 10:40:49] "GET /img_store/equipment/default_prisp.png HTTP/1.1" 200 -
+INFO | 127.0.0.1 - - [18/Sep/2022 10:40:51] "[33mGET /img_store/equipment/prisp_1.jpg HTTP/1.1[0m" 404 -
+INFO | 127.0.0.1 - - [18/Sep/2022 10:40:59] "GET /img_store/equipment/default_prisp.png HTTP/1.1" 200 -
+INFO | 127.0.0.1 - - [18/Sep/2022 10:41:01] "[33mGET /img_store/equipment/prisp_1.jpg HTTP/1.1[0m" 404 -
+INFO | 127.0.0.1 - - [18/Sep/2022 10:41:02] "GET /img_store/equipment/default_prisp.png HTTP/1.1" 200 -
+INFO | 127.0.0.1 - - [18/Sep/2022 10:41:08] "[33mGET /img_store/equipment/prisp_1.jpg HTTP/1.1[0m" 404 -
+INFO | 127.0.0.1 - - [18/Sep/2022 10:41:23] "GET /img_store/equipment/default_control.png HTTP/1.1" 200 -
+INFO | 127.0.0.1 - - [18/Sep/2022 10:41:24] "[33mGET /img_store/equipment/control_1.jpg HTTP/1.1[0m" 404 -
+INFO | 127.0.0.1 - - [18/Sep/2022 10:41:24] "GET /img_store/equipment/default_tool.png HTTP/1.1" 200 -
+INFO | 127.0.0.1 - - [18/Sep/2022 10:41:39] "[33mGET /img_store/equipment/control_1.jpg HTTP/1.1[0m" 404 -
+INFO | 127.0.0.1 - - [18/Sep/2022 10:41:40] "GET /img_store/equipment/default_control.png HTTP/1.1" 200 -
+INFO | 127.0.0.1 - - [18/Sep/2022 10:41:41] "[33mGET /img_store/equipment/prisp_1.jpg HTTP/1.1[0m" 404 -
+INFO | 127.0.0.1 - - [18/Sep/2022 10:41:41] "GET /img_store/equipment/default_prisp.png HTTP/1.1" 200 -
+INFO | 127.0.0.1 - - [18/Sep/2022 10:41:44] "[33mGET /img_store/equipment/prisp_1.jpg HTTP/1.1[0m" 404 -
+INFO | 127.0.0.1 - - [18/Sep/2022 10:41:45] "GET /img_store/equipment/default_control.png HTTP/1.1" 200 -
+INFO | 127.0.0.1 - - [18/Sep/2022 10:41:46] "[33mGET /img_store/equipment/control_1.jpg HTTP/1.1[0m" 404 -
+INFO | 127.0.0.1 - - [18/Sep/2022 10:41:47] "GET /img_store/equipment/default_tool.png HTTP/1.1" 200 -
+INFO | 127.0.0.1 - - [18/Sep/2022 10:41:48] "[33mGET /img_store/equipment/control_1.jpg HTTP/1.1[0m" 404 -
+INFO | 127.0.0.1 - - [18/Sep/2022 10:41:49] "GET /img_store/equipment/default_control.png HTTP/1.1" 200 -
+INFO | 127.0.0.1 - - [18/Sep/2022 10:41:49] "[33mGET /img_store/equipment/prisp_1.jpg HTTP/1.1[0m" 404 -
+INFO | 127.0.0.1 - - [18/Sep/2022 10:41:50] "GET /img_store/equipment/default_prisp.png HTTP/1.1" 200 -
+INFO | 127.0.0.1 - - [18/Sep/2022 10:42:26] "[33mGET /img_store/equipment/prisp_1.jpg HTTP/1.1[0m" 404 -
+INFO | 127.0.0.1 - - [18/Sep/2022 10:43:21] "GET /img_store/equipment/default_prisp.png HTTP/1.1" 200 -
+INFO | 127.0.0.1 - - [18/Sep/2022 10:44:58] "POST /authorization HTTP/1.1" 200 -
+INFO | 127.0.0.1 - - [18/Sep/2022 10:44:59] "GET /img_store/avatar/kainn.jpg HTTP/1.1" 200 -
+INFO | 127.0.0.1 - - [18/Sep/2022 10:45:00] "GET /equipment HTTP/1.1" 200 -
+INFO | 127.0.0.1 - - [18/Sep/2022 10:45:00] "GET /img_store/equipment/default_prisp.png HTTP/1.1" 200 -
+INFO | 127.0.0.1 - - [18/Sep/2022 10:45:03] "POST /list_tech HTTP/1.1" 200 -
+INFO | 127.0.0.1 - - [18/Sep/2022 10:45:05] "POST /list_tech HTTP/1.1" 200 -
+INFO | 127.0.0.1 - - [18/Sep/2022 10:45:06] "GET /equipment HTTP/1.1" 200 -
+INFO | 127.0.0.1 - - [18/Sep/2022 10:45:06] "GET /img_store/equipment/default_prisp.png HTTP/1.1" 200 -
+INFO | 127.0.0.1 - - [18/Sep/2022 10:45:07] "POST /list_tech HTTP/1.1" 200 -
+INFO | 127.0.0.1 - - [18/Sep/2022 10:45:07] "GET /equipment HTTP/1.1" 200 -
+INFO | 127.0.0.1 - - [18/Sep/2022 10:45:07] "GET /img_store/equipment/default_prisp.png HTTP/1.1" 200 -
+INFO | 127.0.0.1 - - [18/Sep/2022 10:45:08] "POST /list_tech HTTP/1.1" 200 -
+INFO | 127.0.0.1 - - [18/Sep/2022 10:45:08] "GET /equipment HTTP/1.1" 200 -
+INFO | 127.0.0.1 - - [18/Sep/2022 10:45:08] "GET /img_store/equipment/default_prisp.png HTTP/1.1" 200 -
+INFO | 127.0.0.1 - - [18/Sep/2022 10:45:09] "POST /list_tech HTTP/1.1" 200 -
+INFO | 127.0.0.1 - - [18/Sep/2022 10:45:10] "POST /list_tech HTTP/1.1" 200 -
+INFO | 127.0.0.1 - - [18/Sep/2022 10:45:21] "GET /equipment HTTP/1.1" 200 -
+INFO | 127.0.0.1 - - [18/Sep/2022 10:45:22] "GET /img_store/equipment/default_prisp.png HTTP/1.1" 200 -
+INFO |  * Running on http://127.0.0.1:5000 (Press CTRL+C to quit)
+INFO | 127.0.0.1 - - [18/Sep/2022 12:47:35] "GET /equipment HTTP/1.1" 200 -
+ERROR | Exception on /location [POST]
+Traceback (most recent call last):
+  File "D:\MyProject\microerp\env\lib\site-packages\flask\app.py", line 2525, in wsgi_app
+    response = self.full_dispatch_request()
+  File "D:\MyProject\microerp\env\lib\site-packages\flask\app.py", line 1822, in full_dispatch_request
+    rv = self.handle_user_exception(e)
+  File "D:\MyProject\microerp\env\lib\site-packages\flask\app.py", line 1820, in full_dispatch_request
+    rv = self.dispatch_request()
+  File "D:\MyProject\microerp\env\lib\site-packages\flask\app.py", line 1796, in dispatch_request
+    return self.ensure_sync(self.view_functions[rule.endpoint])(**view_args)
+  File "D:\MyProject\microerp\app.py", line 195, in location
+    if len(value) == 0:
+TypeError: 'int' object is not callable
+INFO | 127.0.0.1 - - [18/Sep/2022 12:47:35] "GET /img_store/equipment/default_prisp.png HTTP/1.1" 200 -
+INFO | 127.0.0.1 - - [18/Sep/2022 12:47:35] "[35m[1mPOST /location HTTP/1.1[0m" 500 -
+INFO | 127.0.0.1 - - [18/Sep/2022 12:47:39] "GET /equipment HTTP/1.1" 200 -
+ERROR | Exception on /location [POST]
+Traceback (most recent call last):
+  File "D:\MyProject\microerp\env\lib\site-packages\flask\app.py", line 2525, in wsgi_app
+    response = self.full_dispatch_request()
+  File "D:\MyProject\microerp\env\lib\site-packages\flask\app.py", line 1822, in full_dispatch_request
+    rv = self.handle_user_exception(e)
+  File "D:\MyProject\microerp\env\lib\site-packages\flask\app.py", line 1820, in full_dispatch_request
+    rv = self.dispatch_request()
+  File "D:\MyProject\microerp\env\lib\site-packages\flask\app.py", line 1796, in dispatch_request
+    return self.ensure_sync(self.view_functions[rule.endpoint])(**view_args)
+  File "D:\MyProject\microerp\app.py", line 195, in location
+    if len(value) == 0:
+TypeError: 'int' object is not callable
+INFO | 127.0.0.1 - - [18/Sep/2022 12:47:39] "[35m[1mPOST /location HTTP/1.1[0m" 500 -
+INFO | 127.0.0.1 - - [18/Sep/2022 12:47:39] "GET /img_store/equipment/default_prisp.png HTTP/1.1" 200 -
+INFO | 127.0.0.1 - - [18/Sep/2022 12:47:50] "[33mGET /img_store/equipment/prisp_1.jpg HTTP/1.1[0m" 404 -
+INFO | 127.0.0.1 - - [18/Sep/2022 12:47:55] "GET /img_store/equipment/default_control.png HTTP/1.1" 200 -
+INFO | 127.0.0.1 - - [18/Sep/2022 12:47:57] "[33mGET /img_store/equipment/control_1.jpg HTTP/1.1[0m" 404 -
+INFO | 127.0.0.1 - - [18/Sep/2022 12:47:58] "GET /img_store/equipment/default_tool.png HTTP/1.1" 200 -
+INFO | 127.0.0.1 - - [18/Sep/2022 12:48:00] "GET /img_store/equipment/default_prisp.png HTTP/1.1" 200 -
+INFO | 127.0.0.1 - - [18/Sep/2022 12:48:31] "[33mGET /img_store/equipment/prisp_1.jpg HTTP/1.1[0m" 404 -
+INFO | 127.0.0.1 - - [18/Sep/2022 12:48:33] "GET /img_store/equipment/default_control.png HTTP/1.1" 200 -
+INFO | 127.0.0.1 - - [18/Sep/2022 12:48:35] "[33mGET /img_store/equipment/control_1.jpg HTTP/1.1[0m" 404 -
+INFO | 127.0.0.1 - - [18/Sep/2022 12:48:38] "GET /img_store/equipment/default_tool.png HTTP/1.1" 200 -
+INFO | 127.0.0.1 - - [18/Sep/2022 12:48:44] "GET /equipment HTTP/1.1" 200 -
+ERROR | Exception on /location [POST]
+Traceback (most recent call last):
+  File "D:\MyProject\microerp\env\lib\site-packages\flask\app.py", line 2525, in wsgi_app
+    response = self.full_dispatch_request()
+  File "D:\MyProject\microerp\env\lib\site-packages\flask\app.py", line 1822, in full_dispatch_request
+    rv = self.handle_user_exception(e)
+  File "D:\MyProject\microerp\env\lib\site-packages\flask\app.py", line 1820, in full_dispatch_request
+    rv = self.dispatch_request()
+  File "D:\MyProject\microerp\env\lib\site-packages\flask\app.py", line 1796, in dispatch_request
+    return self.ensure_sync(self.view_functions[rule.endpoint])(**view_args)
+  File "D:\MyProject\microerp\app.py", line 195, in location
+    if len(value) == 0:
+TypeError: 'int' object is not callable
+INFO | 127.0.0.1 - - [18/Sep/2022 12:48:44] "[35m[1mPOST /location HTTP/1.1[0m" 500 -
+INFO | 127.0.0.1 - - [18/Sep/2022 12:48:44] "GET /img_store/equipment/default_prisp.png HTTP/1.1" 200 -
+INFO | 127.0.0.1 - - [18/Sep/2022 12:50:31] "[33mGET /img_store/equipment/prisp_1.jpg HTTP/1.1[0m" 404 -
+INFO | 127.0.0.1 - - [18/Sep/2022 12:50:32] "GET /img_store/equipment/default_control.png HTTP/1.1" 200 -
+INFO | 127.0.0.1 - - [18/Sep/2022 12:50:33] "[33mGET /img_store/equipment/control_1.jpg HTTP/1.1[0m" 404 -
+INFO | 127.0.0.1 - - [18/Sep/2022 12:50:34] "GET /img_store/equipment/default_tool.png HTTP/1.1" 200 -
+INFO | 127.0.0.1 - - [18/Sep/2022 12:50:42] "GET /img_store/equipment/default_prisp.png HTTP/1.1" 200 -
+INFO | 127.0.0.1 - - [18/Sep/2022 12:50:43] "[33mGET /img_store/equipment/prisp_1.jpg HTTP/1.1[0m" 404 -
+INFO | 127.0.0.1 - - [18/Sep/2022 12:50:46] "GET /img_store/equipment/default_control.png HTTP/1.1" 200 -
+INFO | 127.0.0.1 - - [18/Sep/2022 12:50:51] "[33mGET /img_store/equipment/control_1.jpg HTTP/1.1[0m" 404 -
+INFO | 127.0.0.1 - - [18/Sep/2022 12:50:52] "GET /img_store/equipment/default_tool.png HTTP/1.1" 200 -
+INFO | 127.0.0.1 - - [18/Sep/2022 12:50:55] "[33mGET /img_store/equipment/control_1.jpg HTTP/1.1[0m" 404 -
+INFO | 127.0.0.1 - - [18/Sep/2022 12:50:57] "GET /img_store/equipment/default_control.png HTTP/1.1" 200 -
+INFO | 127.0.0.1 - - [18/Sep/2022 12:50:59] "[33mGET /img_store/equipment/prisp_1.jpg HTTP/1.1[0m" 404 -
+INFO | 127.0.0.1 - - [18/Sep/2022 12:51:03] "GET /img_store/equipment/default_prisp.png HTTP/1.1" 200 -
+INFO | 127.0.0.1 - - [18/Sep/2022 12:51:09] "GET /equipment HTTP/1.1" 200 -
+ERROR | Exception on /location [POST]
+Traceback (most recent call last):
+  File "D:\MyProject\microerp\env\lib\site-packages\flask\app.py", line 2525, in wsgi_app
+    response = self.full_dispatch_request()
+  File "D:\MyProject\microerp\env\lib\site-packages\flask\app.py", line 1822, in full_dispatch_request
+    rv = self.handle_user_exception(e)
+  File "D:\MyProject\microerp\env\lib\site-packages\flask\app.py", line 1820, in full_dispatch_request
+    rv = self.dispatch_request()
+  File "D:\MyProject\microerp\env\lib\site-packages\flask\app.py", line 1796, in dispatch_request
+    return self.ensure_sync(self.view_functions[rule.endpoint])(**view_args)
+  File "D:\MyProject\microerp\app.py", line 195, in location
+    if len(value) == 0:
+TypeError: 'int' object is not callable
+INFO | 127.0.0.1 - - [18/Sep/2022 12:51:09] "[35m[1mPOST /location HTTP/1.1[0m" 500 -
+INFO | 127.0.0.1 - - [18/Sep/2022 12:51:09] "GET /img_store/equipment/default_prisp.png HTTP/1.1" 200 -
+INFO | 127.0.0.1 - - [18/Sep/2022 12:52:13] "GET /equipment HTTP/1.1" 200 -
+INFO | 127.0.0.1 - - [18/Sep/2022 12:52:14] "GET /img_store/equipment/default_prisp.png HTTP/1.1" 200 -
+ERROR | Exception on /location [POST]
+Traceback (most recent call last):
+  File "D:\MyProject\microerp\env\lib\site-packages\flask\app.py", line 2525, in wsgi_app
+    response = self.full_dispatch_request()
+  File "D:\MyProject\microerp\env\lib\site-packages\flask\app.py", line 1822, in full_dispatch_request
+    rv = self.handle_user_exception(e)
+  File "D:\MyProject\microerp\env\lib\site-packages\flask\app.py", line 1820, in full_dispatch_request
+    rv = self.dispatch_request()
+  File "D:\MyProject\microerp\env\lib\site-packages\flask\app.py", line 1796, in dispatch_request
+    return self.ensure_sync(self.view_functions[rule.endpoint])(**view_args)
+  File "D:\MyProject\microerp\app.py", line 195, in location
+    if len(value) == 0:
+TypeError: 'int' object is not callable
+INFO | 127.0.0.1 - - [18/Sep/2022 12:52:14] "[35m[1mPOST /location HTTP/1.1[0m" 500 -
+INFO | 127.0.0.1 - - [18/Sep/2022 12:52:19] "GET /equipment HTTP/1.1" 200 -
+ERROR | Exception on /location [POST]
+Traceback (most recent call last):
+  File "D:\MyProject\microerp\env\lib\site-packages\flask\app.py", line 2525, in wsgi_app
+    response = self.full_dispatch_request()
+  File "D:\MyProject\microerp\env\lib\site-packages\flask\app.py", line 1822, in full_dispatch_request
+    rv = self.handle_user_exception(e)
+  File "D:\MyProject\microerp\env\lib\site-packages\flask\app.py", line 1820, in full_dispatch_request
+    rv = self.dispatch_request()
+  File "D:\MyProject\microerp\env\lib\site-packages\flask\app.py", line 1796, in dispatch_request
+    return self.ensure_sync(self.view_functions[rule.endpoint])(**view_args)
+  File "D:\MyProject\microerp\app.py", line 195, in location
+    if len(value) == 0:
+TypeError: 'int' object is not callable
+INFO | 127.0.0.1 - - [18/Sep/2022 12:52:19] "[35m[1mPOST /location HTTP/1.1[0m" 500 -
+INFO | 127.0.0.1 - - [18/Sep/2022 12:52:20] "GET /img_store/equipment/default_prisp.png HTTP/1.1" 200 -
+INFO | 127.0.0.1 - - [18/Sep/2022 12:52:24] "GET /equipment HTTP/1.1" 200 -
+ERROR | Exception on /location [POST]
+Traceback (most recent call last):
+  File "D:\MyProject\microerp\env\lib\site-packages\flask\app.py", line 2525, in wsgi_app
+    response = self.full_dispatch_request()
+  File "D:\MyProject\microerp\env\lib\site-packages\flask\app.py", line 1822, in full_dispatch_request
+    rv = self.handle_user_exception(e)
+  File "D:\MyProject\microerp\env\lib\site-packages\flask\app.py", line 1820, in full_dispatch_request
+    rv = self.dispatch_request()
+  File "D:\MyProject\microerp\env\lib\site-packages\flask\app.py", line 1796, in dispatch_request
+    return self.ensure_sync(self.view_functions[rule.endpoint])(**view_args)
+  File "D:\MyProject\microerp\app.py", line 195, in location
+    if len(value) == 0:
+TypeError: 'int' object is not callable
+INFO | 127.0.0.1 - - [18/Sep/2022 12:52:24] "[35m[1mPOST /location HTTP/1.1[0m" 500 -
+INFO | 127.0.0.1 - - [18/Sep/2022 12:52:24] "GET /img_store/equipment/default_prisp.png HTTP/1.1" 200 -
+INFO | 127.0.0.1 - - [18/Sep/2022 12:52:30] "GET /equipment HTTP/1.1" 200 -
+ERROR | Exception on /location [POST]
+Traceback (most recent call last):
+  File "D:\MyProject\microerp\env\lib\site-packages\flask\app.py", line 2525, in wsgi_app
+    response = self.full_dispatch_request()
+  File "D:\MyProject\microerp\env\lib\site-packages\flask\app.py", line 1822, in full_dispatch_request
+    rv = self.handle_user_exception(e)
+  File "D:\MyProject\microerp\env\lib\site-packages\flask\app.py", line 1820, in full_dispatch_request
+    rv = self.dispatch_request()
+  File "D:\MyProject\microerp\env\lib\site-packages\flask\app.py", line 1796, in dispatch_request
+    return self.ensure_sync(self.view_functions[rule.endpoint])(**view_args)
+  File "D:\MyProject\microerp\app.py", line 195, in location
+    if len(value) == 0:
+TypeError: 'int' object is not callable
+INFO | 127.0.0.1 - - [18/Sep/2022 12:52:30] "[35m[1mPOST /location HTTP/1.1[0m" 500 -
+INFO | 127.0.0.1 - - [18/Sep/2022 12:52:30] "GET /img_store/equipment/default_prisp.png HTTP/1.1" 200 -
+INFO | 127.0.0.1 - - [18/Sep/2022 12:52:34] "[33mGET /img_store/equipment/prisp_1.jpg HTTP/1.1[0m" 404 -
+INFO | 127.0.0.1 - - [18/Sep/2022 12:52:35] "GET /img_store/equipment/default_control.png HTTP/1.1" 200 -
+INFO | 127.0.0.1 - - [18/Sep/2022 12:52:36] "[33mGET /img_store/equipment/control_1.jpg HTTP/1.1[0m" 404 -
+INFO | 127.0.0.1 - - [18/Sep/2022 12:52:37] "GET /img_store/equipment/default_tool.png HTTP/1.1" 200 -
+INFO | 127.0.0.1 - - [18/Sep/2022 12:52:39] "[33mGET /img_store/equipment/control_1.jpg HTTP/1.1[0m" 404 -
+INFO | 127.0.0.1 - - [18/Sep/2022 12:52:39] "GET /img_store/equipment/default_control.png HTTP/1.1" 200 -
+INFO | 127.0.0.1 - - [18/Sep/2022 12:52:39] "[33mGET /img_store/equipment/prisp_1.jpg HTTP/1.1[0m" 404 -
+INFO | 127.0.0.1 - - [18/Sep/2022 12:52:40] "GET /img_store/equipment/default_prisp.png HTTP/1.1" 200 -
+INFO | 127.0.0.1 - - [18/Sep/2022 12:52:51] "[33mGET /img_store/equipment/prisp_1.jpg HTTP/1.1[0m" 404 -
+INFO | 127.0.0.1 - - [18/Sep/2022 12:52:56] "GET /img_store/equipment/default_control.png HTTP/1.1" 200 -
+INFO | 127.0.0.1 - - [18/Sep/2022 12:52:57] "[33mGET /img_store/equipment/control_1.jpg HTTP/1.1[0m" 404 -
+INFO | 127.0.0.1 - - [18/Sep/2022 12:52:58] "GET /img_store/equipment/default_tool.png HTTP/1.1" 200 -
+INFO | 127.0.0.1 - - [18/Sep/2022 12:52:59] "GET /img_store/equipment/default_prisp.png HTTP/1.1" 200 -
+INFO | 127.0.0.1 - - [18/Sep/2022 13:17:49] "POST /list_tech HTTP/1.1" 200 -
+INFO | 127.0.0.1 - - [18/Sep/2022 13:17:50] "GET /equipment HTTP/1.1" 200 -
+INFO | 127.0.0.1 - - [18/Sep/2022 13:17:50] "GET /img_store/equipment/default_prisp.png HTTP/1.1" 200 -
+INFO | 127.0.0.1 - - [18/Sep/2022 13:17:52] "POST /list_tech HTTP/1.1" 200 -
+INFO | 127.0.0.1 - - [18/Sep/2022 13:17:53] "GET /equipment HTTP/1.1" 200 -
+INFO | 127.0.0.1 - - [18/Sep/2022 13:17:54] "GET /img_store/equipment/default_prisp.png HTTP/1.1" 200 -
+INFO | 127.0.0.1 - - [18/Sep/2022 13:17:55] "[33mGET /img_store/equipment/prisp_1.jpg HTTP/1.1[0m" 404 -
+INFO | 127.0.0.1 - - [18/Sep/2022 13:17:56] "GET /img_store/equipment/default_control.png HTTP/1.1" 200 -
+INFO | 127.0.0.1 - - [18/Sep/2022 13:17:57] "[33mGET /img_store/equipment/control_1.jpg HTTP/1.1[0m" 404 -
+INFO | 127.0.0.1 - - [18/Sep/2022 13:17:58] "GET /img_store/equipment/default_tool.png HTTP/1.1" 200 -
+INFO | 127.0.0.1 - - [18/Sep/2022 13:18:00] "GET /img_store/equipment/default_prisp.png HTTP/1.1" 200 -
+INFO | 127.0.0.1 - - [18/Sep/2022 13:23:55] "[33mGET /img_store/equipment/prisp_1.jpg HTTP/1.1[0m" 404 -
+INFO | 127.0.0.1 - - [18/Sep/2022 13:23:56] "GET /img_store/equipment/default_control.png HTTP/1.1" 200 -
+INFO | 127.0.0.1 - - [18/Sep/2022 13:23:57] "[33mGET /img_store/equipment/control_1.jpg HTTP/1.1[0m" 404 -
+INFO | 127.0.0.1 - - [18/Sep/2022 13:23:58] "GET /img_store/equipment/default_tool.png HTTP/1.1" 200 -
+INFO | 127.0.0.1 - - [18/Sep/2022 13:24:00] "GET /img_store/equipment/default_prisp.png HTTP/1.1" 200 -
+INFO | 127.0.0.1 - - [18/Sep/2022 15:03:05] "GET /equipment HTTP/1.1" 200 -
+INFO | 127.0.0.1 - - [18/Sep/2022 15:03:05] "GET /img_store/equipment/default_prisp.png HTTP/1.1" 200 -
+ERROR | Exception on /location [POST]
+Traceback (most recent call last):
+  File "D:\MyProject\microerp\env\lib\site-packages\flask\app.py", line 2525, in wsgi_app
+    response = self.full_dispatch_request()
+  File "D:\MyProject\microerp\env\lib\site-packages\flask\app.py", line 1822, in full_dispatch_request
+    rv = self.handle_user_exception(e)
+  File "D:\MyProject\microerp\env\lib\site-packages\flask\app.py", line 1820, in full_dispatch_request
+    rv = self.dispatch_request()
+  File "D:\MyProject\microerp\env\lib\site-packages\flask\app.py", line 1796, in dispatch_request
+    return self.ensure_sync(self.view_functions[rule.endpoint])(**view_args)
+  File "D:\MyProject\microerp\app.py", line 195, in location
+    if len(value) == 0:
+TypeError: 'int' object is not callable
+INFO | 127.0.0.1 - - [18/Sep/2022 15:03:05] "[35m[1mPOST /location HTTP/1.1[0m" 500 -
+INFO | 127.0.0.1 - - [18/Sep/2022 15:03:12] "[33mGET /img_store/equipment/prisp_1.jpg HTTP/1.1[0m" 404 -
+INFO | 127.0.0.1 - - [18/Sep/2022 15:03:13] "GET /img_store/equipment/default_control.png HTTP/1.1" 200 -
+INFO | 127.0.0.1 - - [18/Sep/2022 15:03:14] "[33mGET /img_store/equipment/control_1.jpg HTTP/1.1[0m" 404 -
+INFO | 127.0.0.1 - - [18/Sep/2022 15:03:15] "GET /img_store/equipment/default_tool.png HTTP/1.1" 200 -
+INFO | 127.0.0.1 - - [18/Sep/2022 15:03:16] "GET /img_store/equipment/default_prisp.png HTTP/1.1" 200 -
+INFO | 127.0.0.1 - - [18/Sep/2022 15:23:16] "GET /equipment HTTP/1.1" 200 -
+INFO | 127.0.0.1 - - [18/Sep/2022 15:23:16] "GET /img_store/equipment/default_prisp.png HTTP/1.1" 200 -
+ERROR | Exception on /location [POST]
+Traceback (most recent call last):
+  File "D:\MyProject\microerp\env\lib\site-packages\flask\app.py", line 2525, in wsgi_app
+    response = self.full_dispatch_request()
+  File "D:\MyProject\microerp\env\lib\site-packages\flask\app.py", line 1822, in full_dispatch_request
+    rv = self.handle_user_exception(e)
+  File "D:\MyProject\microerp\env\lib\site-packages\flask\app.py", line 1820, in full_dispatch_request
+    rv = self.dispatch_request()
+  File "D:\MyProject\microerp\env\lib\site-packages\flask\app.py", line 1796, in dispatch_request
+    return self.ensure_sync(self.view_functions[rule.endpoint])(**view_args)
+  File "D:\MyProject\microerp\app.py", line 195, in location
+    if len(value) == 0:
+TypeError: 'int' object is not callable
+INFO | 127.0.0.1 - - [18/Sep/2022 15:23:16] "[35m[1mPOST /location HTTP/1.1[0m" 500 -
+INFO | 127.0.0.1 - - [18/Sep/2022 15:23:38] "GET /equipment HTTP/1.1" 200 -
+ERROR | Exception on /location [POST]
+Traceback (most recent call last):
+  File "D:\MyProject\microerp\env\lib\site-packages\flask\app.py", line 2525, in wsgi_app
+    response = self.full_dispatch_request()
+  File "D:\MyProject\microerp\env\lib\site-packages\flask\app.py", line 1822, in full_dispatch_request
+    rv = self.handle_user_exception(e)
+  File "D:\MyProject\microerp\env\lib\site-packages\flask\app.py", line 1820, in full_dispatch_request
+    rv = self.dispatch_request()
+  File "D:\MyProject\microerp\env\lib\site-packages\flask\app.py", line 1796, in dispatch_request
+    return self.ensure_sync(self.view_functions[rule.endpoint])(**view_args)
+  File "D:\MyProject\microerp\app.py", line 195, in location
+    if len(value) == 0:
+TypeError: 'int' object is not callable
+INFO | 127.0.0.1 - - [18/Sep/2022 15:23:38] "[35m[1mPOST /location HTTP/1.1[0m" 500 -
+INFO | 127.0.0.1 - - [18/Sep/2022 15:23:39] "GET /img_store/equipment/default_prisp.png HTTP/1.1" 200 -
+INFO | 127.0.0.1 - - [18/Sep/2022 15:25:28] "GET /equipment HTTP/1.1" 200 -
+ERROR | Exception on /location [POST]
+Traceback (most recent call last):
+  File "D:\MyProject\microerp\env\lib\site-packages\flask\app.py", line 2525, in wsgi_app
+    response = self.full_dispatch_request()
+  File "D:\MyProject\microerp\env\lib\site-packages\flask\app.py", line 1822, in full_dispatch_request
+    rv = self.handle_user_exception(e)
+  File "D:\MyProject\microerp\env\lib\site-packages\flask\app.py", line 1820, in full_dispatch_request
+    rv = self.dispatch_request()
+  File "D:\MyProject\microerp\env\lib\site-packages\flask\app.py", line 1796, in dispatch_request
+    return self.ensure_sync(self.view_functions[rule.endpoint])(**view_args)
+  File "D:\MyProject\microerp\app.py", line 195, in location
+    if len(value) == 0:
+TypeError: 'int' object is not callable
+INFO | 127.0.0.1 - - [18/Sep/2022 15:25:29] "[35m[1mPOST /location HTTP/1.1[0m" 500 -
+INFO | 127.0.0.1 - - [18/Sep/2022 15:25:29] "GET /img_store/equipment/default_prisp.png HTTP/1.1" 200 -
+INFO | 127.0.0.1 - - [18/Sep/2022 15:27:15] "GET /equipment HTTP/1.1" 200 -
+ERROR | Exception on /location [POST]
+Traceback (most recent call last):
+  File "D:\MyProject\microerp\env\lib\site-packages\flask\app.py", line 2525, in wsgi_app
+    response = self.full_dispatch_request()
+  File "D:\MyProject\microerp\env\lib\site-packages\flask\app.py", line 1822, in full_dispatch_request
+    rv = self.handle_user_exception(e)
+  File "D:\MyProject\microerp\env\lib\site-packages\flask\app.py", line 1820, in full_dispatch_request
+    rv = self.dispatch_request()
+  File "D:\MyProject\microerp\env\lib\site-packages\flask\app.py", line 1796, in dispatch_request
+    return self.ensure_sync(self.view_functions[rule.endpoint])(**view_args)
+  File "D:\MyProject\microerp\app.py", line 195, in location
+    if len(value) == 0:
+TypeError: 'int' object is not callable
+INFO | 127.0.0.1 - - [18/Sep/2022 15:27:15] "[35m[1mPOST /location HTTP/1.1[0m" 500 -
+INFO | 127.0.0.1 - - [18/Sep/2022 15:27:15] "GET /img_store/equipment/default_prisp.png HTTP/1.1" 200 -
+ERROR | Exception on /location [POST]
+Traceback (most recent call last):
+  File "D:\MyProject\microerp\env\lib\site-packages\flask\app.py", line 2525, in wsgi_app
+    response = self.full_dispatch_request()
+  File "D:\MyProject\microerp\env\lib\site-packages\flask\app.py", line 1822, in full_dispatch_request
+    rv = self.handle_user_exception(e)
+  File "D:\MyProject\microerp\env\lib\site-packages\flask\app.py", line 1820, in full_dispatch_request
+    rv = self.dispatch_request()
+  File "D:\MyProject\microerp\env\lib\site-packages\flask\app.py", line 1796, in dispatch_request
+    return self.ensure_sync(self.view_functions[rule.endpoint])(**view_args)
+  File "D:\MyProject\microerp\app.py", line 195, in location
+    if len(value) == 0:
+TypeError: 'int' object is not callable
+INFO | 127.0.0.1 - - [18/Sep/2022 15:28:06] "[35m[1mPOST /location HTTP/1.1[0m" 500 -
+INFO | 127.0.0.1 - - [18/Sep/2022 15:28:06] "GET /equipment HTTP/1.1" 200 -
+INFO | 127.0.0.1 - - [18/Sep/2022 15:28:06] "GET /img_store/equipment/default_prisp.png HTTP/1.1" 200 -
+INFO | 127.0.0.1 - - [18/Sep/2022 15:30:38] "GET /equipment HTTP/1.1" 200 -
+ERROR | Exception on /location [POST]
+Traceback (most recent call last):
+  File "D:\MyProject\microerp\env\lib\site-packages\flask\app.py", line 2525, in wsgi_app
+    response = self.full_dispatch_request()
+  File "D:\MyProject\microerp\env\lib\site-packages\flask\app.py", line 1822, in full_dispatch_request
+    rv = self.handle_user_exception(e)
+  File "D:\MyProject\microerp\env\lib\site-packages\flask\app.py", line 1820, in full_dispatch_request
+    rv = self.dispatch_request()
+  File "D:\MyProject\microerp\env\lib\site-packages\flask\app.py", line 1796, in dispatch_request
+    return self.ensure_sync(self.view_functions[rule.endpoint])(**view_args)
+  File "D:\MyProject\microerp\app.py", line 195, in location
+    if len(value) == 0:
+TypeError: 'int' object is not callable
+INFO | 127.0.0.1 - - [18/Sep/2022 15:30:39] "[35m[1mPOST /location HTTP/1.1[0m" 500 -
+INFO | 127.0.0.1 - - [18/Sep/2022 15:30:39] "GET /img_store/equipment/default_prisp.png HTTP/1.1" 200 -
+ERROR | Exception on /equipment [GET]
+Traceback (most recent call last):
+  File "D:\MyProject\microerp\env\lib\site-packages\pymysql\connections.py", line 732, in _read_bytes
+    data = self._rfile.read(num_bytes)
+  File "C:\Python38\lib\socket.py", line 669, in readinto
+    return self._sock.recv_into(b)
+ConnectionAbortedError: [WinError 10053] Программа на вашем хост-компьютере разорвала установленное подключение
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "D:\MyProject\microerp\env\lib\site-packages\sqlalchemy\engine\base.py", line 1819, in _execute_context
+    self.dialect.do_execute(
+  File "D:\MyProject\microerp\env\lib\site-packages\sqlalchemy\engine\default.py", line 732, in do_execute
+    cursor.execute(statement, parameters)
+  File "D:\MyProject\microerp\env\lib\site-packages\pymysql\cursors.py", line 148, in execute
+    result = self._query(query)
+  File "D:\MyProject\microerp\env\lib\site-packages\pymysql\cursors.py", line 310, in _query
+    conn.query(q)
+  File "D:\MyProject\microerp\env\lib\site-packages\pymysql\connections.py", line 548, in query
+    self._affected_rows = self._read_query_result(unbuffered=unbuffered)
+  File "D:\MyProject\microerp\env\lib\site-packages\pymysql\connections.py", line 775, in _read_query_result
+    result.read()
+  File "D:\MyProject\microerp\env\lib\site-packages\pymysql\connections.py", line 1156, in read
+    first_packet = self.connection._read_packet()
+  File "D:\MyProject\microerp\env\lib\site-packages\pymysql\connections.py", line 692, in _read_packet
+    packet_header = self._read_bytes(4)
+  File "D:\MyProject\microerp\env\lib\site-packages\pymysql\connections.py", line 738, in _read_bytes
+    raise err.OperationalError(
+pymysql.err.OperationalError: (2013, 'Lost connection to MySQL server during query ([WinError 10053] Программа на вашем хост-компьютере разорвала установленное подключение)')
+
+The above exception was the direct cause of the following exception:
+
+Traceback (most recent call last):
+  File "D:\MyProject\microerp\env\lib\site-packages\flask\app.py", line 2525, in wsgi_app
+    response = self.full_dispatch_request()
+  File "D:\MyProject\microerp\env\lib\site-packages\flask\app.py", line 1822, in full_dispatch_request
+    rv = self.handle_user_exception(e)
+  File "D:\MyProject\microerp\env\lib\site-packages\flask\app.py", line 1820, in full_dispatch_request
+    rv = self.dispatch_request()
+  File "D:\MyProject\microerp\env\lib\site-packages\flask\app.py", line 1796, in dispatch_request
+    return self.ensure_sync(self.view_functions[rule.endpoint])(**view_args)
+  File "D:\MyProject\microerp\app.py", line 224, in equipment
+    equipment = Equipment.query.join(Equipment_position).order_by(Equipment_position.num_str).all()
+  File "D:\MyProject\microerp\env\lib\site-packages\sqlalchemy\orm\query.py", line 2768, in all
+    return self._iter().all()
+  File "D:\MyProject\microerp\env\lib\site-packages\sqlalchemy\orm\query.py", line 2903, in _iter
+    result = self.session.execute(
+  File "D:\MyProject\microerp\env\lib\site-packages\sqlalchemy\orm\session.py", line 1712, in execute
+    result = conn._execute_20(statement, params or {}, execution_options)
+  File "D:\MyProject\microerp\env\lib\site-packages\sqlalchemy\engine\base.py", line 1631, in _execute_20
+    return meth(self, args_10style, kwargs_10style, execution_options)
+  File "D:\MyProject\microerp\env\lib\site-packages\sqlalchemy\sql\elements.py", line 332, in _execute_on_connection
+    return connection._execute_clauseelement(
+  File "D:\MyProject\microerp\env\lib\site-packages\sqlalchemy\engine\base.py", line 1498, in _execute_clauseelement
+    ret = self._execute_context(
+  File "D:\MyProject\microerp\env\lib\site-packages\sqlalchemy\engine\base.py", line 1862, in _execute_context
+    self._handle_dbapi_exception(
+  File "D:\MyProject\microerp\env\lib\site-packages\sqlalchemy\engine\base.py", line 2043, in _handle_dbapi_exception
+    util.raise_(
+  File "D:\MyProject\microerp\env\lib\site-packages\sqlalchemy\util\compat.py", line 208, in raise_
+    raise exception
+  File "D:\MyProject\microerp\env\lib\site-packages\sqlalchemy\engine\base.py", line 1819, in _execute_context
+    self.dialect.do_execute(
+  File "D:\MyProject\microerp\env\lib\site-packages\sqlalchemy\engine\default.py", line 732, in do_execute
+    cursor.execute(statement, parameters)
+  File "D:\MyProject\microerp\env\lib\site-packages\pymysql\cursors.py", line 148, in execute
+    result = self._query(query)
+  File "D:\MyProject\microerp\env\lib\site-packages\pymysql\cursors.py", line 310, in _query
+    conn.query(q)
+  File "D:\MyProject\microerp\env\lib\site-packages\pymysql\connections.py", line 548, in query
+    self._affected_rows = self._read_query_result(unbuffered=unbuffered)
+  File "D:\MyProject\microerp\env\lib\site-packages\pymysql\connections.py", line 775, in _read_query_result
+    result.read()
+  File "D:\MyProject\microerp\env\lib\site-packages\pymysql\connections.py", line 1156, in read
+    first_packet = self.connection._read_packet()
+  File "D:\MyProject\microerp\env\lib\site-packages\pymysql\connections.py", line 692, in _read_packet
+    packet_header = self._read_bytes(4)
+  File "D:\MyProject\microerp\env\lib\site-packages\pymysql\connections.py", line 738, in _read_bytes
+    raise err.OperationalError(
+sqlalchemy.exc.OperationalError: (pymysql.err.OperationalError) (2013, 'Lost connection to MySQL server during query ([WinError 10053] Программа на вашем хост-компьютере разорвала установленное подключение)')
+[SQL: SELECT equipment.id AS equipment_id, equipment.name AS equipment_name, equipment.is_group AS equipment_is_group, equipment.description AS equipment_description, equipment.code AS equipment_code, equipment.main_characteristic AS equipment_main_characteristic, equipment.firm AS equipment_firm, equipment.path AS equipment_path, equipment.relevance AS equipment_relevance, equipment.data_added AS equipment_data_added, equipment.added_id AS equipment_added_id, equipment.position_id AS equipment_position_id 
+FROM equipment INNER JOIN equipment_position ON equipment_position.id = equipment.position_id ORDER BY equipment_position.num_str]
+(Background on this error at: https://sqlalche.me/e/14/e3q8)
+INFO | 127.0.0.1 - - [18/Sep/2022 15:35:25] "[35m[1mGET /equipment HTTP/1.1[0m" 500 -
+ERROR | Exception on /location [POST]
+Traceback (most recent call last):
+  File "D:\MyProject\microerp\env\lib\site-packages\flask\app.py", line 2525, in wsgi_app
+    response = self.full_dispatch_request()
+  File "D:\MyProject\microerp\env\lib\site-packages\flask\app.py", line 1822, in full_dispatch_request
+    rv = self.handle_user_exception(e)
+  File "D:\MyProject\microerp\env\lib\site-packages\flask\app.py", line 1820, in full_dispatch_request
+    rv = self.dispatch_request()
+  File "D:\MyProject\microerp\env\lib\site-packages\flask\app.py", line 1796, in dispatch_request
+    return self.ensure_sync(self.view_functions[rule.endpoint])(**view_args)
+  File "D:\MyProject\microerp\app.py", line 195, in location
+    if len(value) == 0:
+TypeError: 'int' object is not callable
+INFO | 127.0.0.1 - - [18/Sep/2022 15:35:25] "[35m[1mPOST /location HTTP/1.1[0m" 500 -
+INFO | 127.0.0.1 - - [18/Sep/2022 15:35:30] "GET /equipment HTTP/1.1" 200 -
+ERROR | Exception on /location [POST]
+Traceback (most recent call last):
+  File "D:\MyProject\microerp\env\lib\site-packages\flask\app.py", line 2525, in wsgi_app
+    response = self.full_dispatch_request()
+  File "D:\MyProject\microerp\env\lib\site-packages\flask\app.py", line 1822, in full_dispatch_request
+    rv = self.handle_user_exception(e)
+  File "D:\MyProject\microerp\env\lib\site-packages\flask\app.py", line 1820, in full_dispatch_request
+    rv = self.dispatch_request()
+  File "D:\MyProject\microerp\env\lib\site-packages\flask\app.py", line 1796, in dispatch_request
+    return self.ensure_sync(self.view_functions[rule.endpoint])(**view_args)
+  File "D:\MyProject\microerp\app.py", line 195, in location
+    if len(value) == 0:
+TypeError: 'int' object is not callable
+INFO | 127.0.0.1 - - [18/Sep/2022 15:35:30] "[35m[1mPOST /location HTTP/1.1[0m" 500 -
+INFO | 127.0.0.1 - - [18/Sep/2022 15:35:30] "GET /img_store/equipment/default_prisp.png HTTP/1.1" 200 -
+INFO | 127.0.0.1 - - [18/Sep/2022 15:38:36] "GET /img_store/equipment/default_prisp.png HTTP/1.1" 200 -
+INFO | 127.0.0.1 - - [18/Sep/2022 15:41:19] "GET /equipment HTTP/1.1" 200 -
+ERROR | Exception on /location [POST]
+Traceback (most recent call last):
+  File "D:\MyProject\microerp\env\lib\site-packages\flask\app.py", line 2525, in wsgi_app
+    response = self.full_dispatch_request()
+  File "D:\MyProject\microerp\env\lib\site-packages\flask\app.py", line 1822, in full_dispatch_request
+    rv = self.handle_user_exception(e)
+  File "D:\MyProject\microerp\env\lib\site-packages\flask\app.py", line 1820, in full_dispatch_request
+    rv = self.dispatch_request()
+  File "D:\MyProject\microerp\env\lib\site-packages\flask\app.py", line 1796, in dispatch_request
+    return self.ensure_sync(self.view_functions[rule.endpoint])(**view_args)
+  File "D:\MyProject\microerp\app.py", line 195, in location
+    if len(value) == 0:
+TypeError: 'int' object is not callable
+INFO | 127.0.0.1 - - [18/Sep/2022 15:41:20] "[35m[1mPOST /location HTTP/1.1[0m" 500 -
+INFO | 127.0.0.1 - - [18/Sep/2022 15:41:20] "GET /img_store/equipment/default_prisp.png HTTP/1.1" 200 -
+INFO | 127.0.0.1 - - [18/Sep/2022 15:41:54] "GET /equipment HTTP/1.1" 200 -
+ERROR | Exception on /location [POST]
+Traceback (most recent call last):
+  File "D:\MyProject\microerp\env\lib\site-packages\flask\app.py", line 2525, in wsgi_app
+    response = self.full_dispatch_request()
+  File "D:\MyProject\microerp\env\lib\site-packages\flask\app.py", line 1822, in full_dispatch_request
+    rv = self.handle_user_exception(e)
+  File "D:\MyProject\microerp\env\lib\site-packages\flask\app.py", line 1820, in full_dispatch_request
+    rv = self.dispatch_request()
+  File "D:\MyProject\microerp\env\lib\site-packages\flask\app.py", line 1796, in dispatch_request
+    return self.ensure_sync(self.view_functions[rule.endpoint])(**view_args)
+  File "D:\MyProject\microerp\app.py", line 195, in location
+    if len(value) == 0:
+TypeError: 'int' object is not callable
+INFO | 127.0.0.1 - - [18/Sep/2022 15:41:54] "[35m[1mPOST /location HTTP/1.1[0m" 500 -
+INFO | 127.0.0.1 - - [18/Sep/2022 15:41:55] "GET /img_store/equipment/default_prisp.png HTTP/1.1" 200 -
+INFO | 127.0.0.1 - - [18/Sep/2022 15:44:54] "GET /equipment HTTP/1.1" 200 -
+INFO | 127.0.0.1 - - [18/Sep/2022 15:44:54] "GET /img_store/equipment/default_prisp.png HTTP/1.1" 200 -
+ERROR | Exception on /location [POST]
+Traceback (most recent call last):
+  File "D:\MyProject\microerp\env\lib\site-packages\flask\app.py", line 2525, in wsgi_app
+    response = self.full_dispatch_request()
+  File "D:\MyProject\microerp\env\lib\site-packages\flask\app.py", line 1822, in full_dispatch_request
+    rv = self.handle_user_exception(e)
+  File "D:\MyProject\microerp\env\lib\site-packages\flask\app.py", line 1820, in full_dispatch_request
+    rv = self.dispatch_request()
+  File "D:\MyProject\microerp\env\lib\site-packages\flask\app.py", line 1796, in dispatch_request
+    return self.ensure_sync(self.view_functions[rule.endpoint])(**view_args)
+  File "D:\MyProject\microerp\app.py", line 195, in location
+    if len(value) == 0:
+TypeError: 'int' object is not callable
+INFO | 127.0.0.1 - - [18/Sep/2022 15:44:54] "[35m[1mPOST /location HTTP/1.1[0m" 500 -
+INFO | 127.0.0.1 - - [18/Sep/2022 15:45:35] "GET /equipment HTTP/1.1" 200 -
+ERROR | Exception on /location [POST]
+Traceback (most recent call last):
+  File "D:\MyProject\microerp\env\lib\site-packages\flask\app.py", line 2525, in wsgi_app
+    response = self.full_dispatch_request()
+  File "D:\MyProject\microerp\env\lib\site-packages\flask\app.py", line 1822, in full_dispatch_request
+    rv = self.handle_user_exception(e)
+  File "D:\MyProject\microerp\env\lib\site-packages\flask\app.py", line 1820, in full_dispatch_request
+    rv = self.dispatch_request()
+  File "D:\MyProject\microerp\env\lib\site-packages\flask\app.py", line 1796, in dispatch_request
+    return self.ensure_sync(self.view_functions[rule.endpoint])(**view_args)
+  File "D:\MyProject\microerp\app.py", line 195, in location
+    if len(value) == 0:
+TypeError: 'int' object is not callable
+INFO | 127.0.0.1 - - [18/Sep/2022 15:45:36] "[35m[1mPOST /location HTTP/1.1[0m" 500 -
+INFO | 127.0.0.1 - - [18/Sep/2022 15:45:36] "GET /img_store/equipment/default_prisp.png HTTP/1.1" 200 -
+INFO | 127.0.0.1 - - [18/Sep/2022 15:46:43] "GET /equipment HTTP/1.1" 200 -
+ERROR | Exception on /location [POST]
+Traceback (most recent call last):
+  File "D:\MyProject\microerp\env\lib\site-packages\flask\app.py", line 2525, in wsgi_app
+    response = self.full_dispatch_request()
+  File "D:\MyProject\microerp\env\lib\site-packages\flask\app.py", line 1822, in full_dispatch_request
+    rv = self.handle_user_exception(e)
+  File "D:\MyProject\microerp\env\lib\site-packages\flask\app.py", line 1820, in full_dispatch_request
+    rv = self.dispatch_request()
+  File "D:\MyProject\microerp\env\lib\site-packages\flask\app.py", line 1796, in dispatch_request
+    return self.ensure_sync(self.view_functions[rule.endpoint])(**view_args)
+  File "D:\MyProject\microerp\app.py", line 195, in location
+    if len(value) == 0:
+TypeError: 'int' object is not callable
+INFO | 127.0.0.1 - - [18/Sep/2022 15:46:43] "[35m[1mPOST /location HTTP/1.1[0m" 500 -
+INFO | 127.0.0.1 - - [18/Sep/2022 15:46:43] "GET /img_store/equipment/default_prisp.png HTTP/1.1" 200 -
+INFO | 127.0.0.1 - - [18/Sep/2022 15:47:16] "GET /equipment HTTP/1.1" 200 -
+ERROR | Exception on /location [POST]
+Traceback (most recent call last):
+  File "D:\MyProject\microerp\env\lib\site-packages\flask\app.py", line 2525, in wsgi_app
+    response = self.full_dispatch_request()
+  File "D:\MyProject\microerp\env\lib\site-packages\flask\app.py", line 1822, in full_dispatch_request
+    rv = self.handle_user_exception(e)
+  File "D:\MyProject\microerp\env\lib\site-packages\flask\app.py", line 1820, in full_dispatch_request
+    rv = self.dispatch_request()
+  File "D:\MyProject\microerp\env\lib\site-packages\flask\app.py", line 1796, in dispatch_request
+    return self.ensure_sync(self.view_functions[rule.endpoint])(**view_args)
+  File "D:\MyProject\microerp\app.py", line 195, in location
+    if len(value) == 0:
+TypeError: 'int' object is not callable
+INFO | 127.0.0.1 - - [18/Sep/2022 15:47:16] "[35m[1mPOST /location HTTP/1.1[0m" 500 -
+INFO | 127.0.0.1 - - [18/Sep/2022 15:47:16] "GET /img_store/equipment/default_prisp.png HTTP/1.1" 200 -
+INFO | 127.0.0.1 - - [18/Sep/2022 15:47:56] "GET /equipment HTTP/1.1" 200 -
+ERROR | Exception on /location [POST]
+Traceback (most recent call last):
+  File "D:\MyProject\microerp\env\lib\site-packages\flask\app.py", line 2525, in wsgi_app
+    response = self.full_dispatch_request()
+  File "D:\MyProject\microerp\env\lib\site-packages\flask\app.py", line 1822, in full_dispatch_request
+    rv = self.handle_user_exception(e)
+  File "D:\MyProject\microerp\env\lib\site-packages\flask\app.py", line 1820, in full_dispatch_request
+    rv = self.dispatch_request()
+  File "D:\MyProject\microerp\env\lib\site-packages\flask\app.py", line 1796, in dispatch_request
+    return self.ensure_sync(self.view_functions[rule.endpoint])(**view_args)
+  File "D:\MyProject\microerp\app.py", line 195, in location
+    if len(value) == 0:
+TypeError: 'int' object is not callable
+INFO | 127.0.0.1 - - [18/Sep/2022 15:47:56] "[35m[1mPOST /location HTTP/1.1[0m" 500 -
+INFO | 127.0.0.1 - - [18/Sep/2022 15:47:56] "GET /img_store/equipment/default_prisp.png HTTP/1.1" 200 -
+INFO | 127.0.0.1 - - [18/Sep/2022 15:48:23] "GET /equipment HTTP/1.1" 200 -
+ERROR | Exception on /location [POST]
+Traceback (most recent call last):
+  File "D:\MyProject\microerp\env\lib\site-packages\flask\app.py", line 2525, in wsgi_app
+    response = self.full_dispatch_request()
+  File "D:\MyProject\microerp\env\lib\site-packages\flask\app.py", line 1822, in full_dispatch_request
+    rv = self.handle_user_exception(e)
+  File "D:\MyProject\microerp\env\lib\site-packages\flask\app.py", line 1820, in full_dispatch_request
+    rv = self.dispatch_request()
+  File "D:\MyProject\microerp\env\lib\site-packages\flask\app.py", line 1796, in dispatch_request
+    return self.ensure_sync(self.view_functions[rule.endpoint])(**view_args)
+  File "D:\MyProject\microerp\app.py", line 195, in location
+    if len(value) == 0:
+TypeError: 'int' object is not callable
+INFO | 127.0.0.1 - - [18/Sep/2022 15:48:24] "[35m[1mPOST /location HTTP/1.1[0m" 500 -
+INFO | 127.0.0.1 - - [18/Sep/2022 15:48:24] "GET /img_store/equipment/default_prisp.png HTTP/1.1" 200 -
+INFO | 127.0.0.1 - - [18/Sep/2022 15:48:44] "GET /equipment HTTP/1.1" 200 -
+ERROR | Exception on /location [POST]
+Traceback (most recent call last):
+  File "D:\MyProject\microerp\env\lib\site-packages\flask\app.py", line 2525, in wsgi_app
+    response = self.full_dispatch_request()
+  File "D:\MyProject\microerp\env\lib\site-packages\flask\app.py", line 1822, in full_dispatch_request
+    rv = self.handle_user_exception(e)
+  File "D:\MyProject\microerp\env\lib\site-packages\flask\app.py", line 1820, in full_dispatch_request
+    rv = self.dispatch_request()
+  File "D:\MyProject\microerp\env\lib\site-packages\flask\app.py", line 1796, in dispatch_request
+    return self.ensure_sync(self.view_functions[rule.endpoint])(**view_args)
+  File "D:\MyProject\microerp\app.py", line 195, in location
+    if len(value) == 0:
+TypeError: 'int' object is not callable
+INFO | 127.0.0.1 - - [18/Sep/2022 15:48:44] "[35m[1mPOST /location HTTP/1.1[0m" 500 -
+INFO | 127.0.0.1 - - [18/Sep/2022 15:48:44] "GET /img_store/equipment/default_prisp.png HTTP/1.1" 200 -
+INFO | 127.0.0.1 - - [18/Sep/2022 15:50:09] "GET /equipment HTTP/1.1" 200 -
+ERROR | Exception on /location [POST]
+Traceback (most recent call last):
+  File "D:\MyProject\microerp\env\lib\site-packages\flask\app.py", line 2525, in wsgi_app
+    response = self.full_dispatch_request()
+  File "D:\MyProject\microerp\env\lib\site-packages\flask\app.py", line 1822, in full_dispatch_request
+    rv = self.handle_user_exception(e)
+  File "D:\MyProject\microerp\env\lib\site-packages\flask\app.py", line 1820, in full_dispatch_request
+    rv = self.dispatch_request()
+  File "D:\MyProject\microerp\env\lib\site-packages\flask\app.py", line 1796, in dispatch_request
+    return self.ensure_sync(self.view_functions[rule.endpoint])(**view_args)
+  File "D:\MyProject\microerp\app.py", line 195, in location
+    if len(value) == 0:
+TypeError: 'int' object is not callable
+INFO | 127.0.0.1 - - [18/Sep/2022 15:50:10] "[35m[1mPOST /location HTTP/1.1[0m" 500 -
+INFO | 127.0.0.1 - - [18/Sep/2022 15:50:10] "GET /img_store/equipment/default_prisp.png HTTP/1.1" 200 -
+INFO | 127.0.0.1 - - [18/Sep/2022 15:56:45] "GET /equipment HTTP/1.1" 200 -
+ERROR | Exception on /location [POST]
+Traceback (most recent call last):
+  File "D:\MyProject\microerp\env\lib\site-packages\flask\app.py", line 2525, in wsgi_app
+    response = self.full_dispatch_request()
+  File "D:\MyProject\microerp\env\lib\site-packages\flask\app.py", line 1822, in full_dispatch_request
+    rv = self.handle_user_exception(e)
+  File "D:\MyProject\microerp\env\lib\site-packages\flask\app.py", line 1820, in full_dispatch_request
+    rv = self.dispatch_request()
+  File "D:\MyProject\microerp\env\lib\site-packages\flask\app.py", line 1796, in dispatch_request
+    return self.ensure_sync(self.view_functions[rule.endpoint])(**view_args)
+  File "D:\MyProject\microerp\app.py", line 195, in location
+    if len(value) == 0:
+TypeError: 'int' object is not callable
+INFO | 127.0.0.1 - - [18/Sep/2022 15:56:46] "[35m[1mPOST /location HTTP/1.1[0m" 500 -
+INFO | 127.0.0.1 - - [18/Sep/2022 15:56:46] "GET /img_store/equipment/default_prisp.png HTTP/1.1" 200 -
+INFO | 127.0.0.1 - - [18/Sep/2022 15:57:45] "GET /equipment HTTP/1.1" 200 -
+ERROR | Exception on /location [POST]
+Traceback (most recent call last):
+  File "D:\MyProject\microerp\env\lib\site-packages\flask\app.py", line 2525, in wsgi_app
+    response = self.full_dispatch_request()
+  File "D:\MyProject\microerp\env\lib\site-packages\flask\app.py", line 1822, in full_dispatch_request
+    rv = self.handle_user_exception(e)
+  File "D:\MyProject\microerp\env\lib\site-packages\flask\app.py", line 1820, in full_dispatch_request
+    rv = self.dispatch_request()
+  File "D:\MyProject\microerp\env\lib\site-packages\flask\app.py", line 1796, in dispatch_request
+    return self.ensure_sync(self.view_functions[rule.endpoint])(**view_args)
+  File "D:\MyProject\microerp\app.py", line 195, in location
+    if len(value) == 0:
+TypeError: 'int' object is not callable
+INFO | 127.0.0.1 - - [18/Sep/2022 15:57:46] "[35m[1mPOST /location HTTP/1.1[0m" 500 -
+INFO | 127.0.0.1 - - [18/Sep/2022 15:57:46] "GET /img_store/equipment/default_prisp.png HTTP/1.1" 200 -
+INFO | 127.0.0.1 - - [18/Sep/2022 15:58:07] "GET /equipment HTTP/1.1" 200 -
+ERROR | Exception on /location [POST]
+Traceback (most recent call last):
+  File "D:\MyProject\microerp\env\lib\site-packages\flask\app.py", line 2525, in wsgi_app
+    response = self.full_dispatch_request()
+  File "D:\MyProject\microerp\env\lib\site-packages\flask\app.py", line 1822, in full_dispatch_request
+    rv = self.handle_user_exception(e)
+  File "D:\MyProject\microerp\env\lib\site-packages\flask\app.py", line 1820, in full_dispatch_request
+    rv = self.dispatch_request()
+  File "D:\MyProject\microerp\env\lib\site-packages\flask\app.py", line 1796, in dispatch_request
+    return self.ensure_sync(self.view_functions[rule.endpoint])(**view_args)
+  File "D:\MyProject\microerp\app.py", line 195, in location
+    if len(value) == 0:
+TypeError: 'int' object is not callable
+INFO | 127.0.0.1 - - [18/Sep/2022 15:58:07] "[35m[1mPOST /location HTTP/1.1[0m" 500 -
+INFO | 127.0.0.1 - - [18/Sep/2022 15:58:07] "GET /img_store/equipment/default_prisp.png HTTP/1.1" 200 -
+INFO | 127.0.0.1 - - [18/Sep/2022 15:58:59] "GET /equipment HTTP/1.1" 200 -
+ERROR | Exception on /location [POST]
+Traceback (most recent call last):
+  File "D:\MyProject\microerp\env\lib\site-packages\flask\app.py", line 2525, in wsgi_app
+    response = self.full_dispatch_request()
+  File "D:\MyProject\microerp\env\lib\site-packages\flask\app.py", line 1822, in full_dispatch_request
+    rv = self.handle_user_exception(e)
+  File "D:\MyProject\microerp\env\lib\site-packages\flask\app.py", line 1820, in full_dispatch_request
+    rv = self.dispatch_request()
+  File "D:\MyProject\microerp\env\lib\site-packages\flask\app.py", line 1796, in dispatch_request
+    return self.ensure_sync(self.view_functions[rule.endpoint])(**view_args)
+  File "D:\MyProject\microerp\app.py", line 195, in location
+    if len(value) == 0:
+TypeError: 'int' object is not callable
+INFO | 127.0.0.1 - - [18/Sep/2022 15:58:59] "[35m[1mPOST /location HTTP/1.1[0m" 500 -
+INFO | 127.0.0.1 - - [18/Sep/2022 15:59:00] "GET /img_store/equipment/default_prisp.png HTTP/1.1" 200 -
+INFO | 127.0.0.1 - - [18/Sep/2022 16:01:43] "POST /list_tech HTTP/1.1" 200 -
+INFO | 127.0.0.1 - - [18/Sep/2022 16:01:44] "GET /equipment HTTP/1.1" 200 -
+INFO | 127.0.0.1 - - [18/Sep/2022 16:01:44] "GET /img_store/equipment/default_prisp.png HTTP/1.1" 200 -
+INFO | 127.0.0.1 - - [18/Sep/2022 16:02:08] "[33mGET /img_store/equipment/prisp_1.jpg HTTP/1.1[0m" 404 -
+INFO | 127.0.0.1 - - [18/Sep/2022 16:02:15] "GET /img_store/equipment/default_prisp.png HTTP/1.1" 200 -
+INFO | 127.0.0.1 - - [18/Sep/2022 16:02:17] "[33mGET /img_store/equipment/prisp_1.jpg HTTP/1.1[0m" 404 -
+INFO | 127.0.0.1 - - [18/Sep/2022 16:02:29] "GET /img_store/equipment/default_prisp.png HTTP/1.1" 200 -
+INFO | 127.0.0.1 - - [18/Sep/2022 16:02:30] "[33mGET /img_store/equipment/prisp_1.jpg HTTP/1.1[0m" 404 -
+INFO | 127.0.0.1 - - [18/Sep/2022 16:02:31] "GET /img_store/equipment/default_control.png HTTP/1.1" 200 -
+INFO | 127.0.0.1 - - [18/Sep/2022 16:02:32] "[33mGET /img_store/equipment/control_1.jpg HTTP/1.1[0m" 404 -
+INFO | 127.0.0.1 - - [18/Sep/2022 16:02:33] "GET /img_store/equipment/default_tool.png HTTP/1.1" 200 -
+INFO | 127.0.0.1 - - [18/Sep/2022 16:02:33] "GET /img_store/equipment/default_prisp.png HTTP/1.1" 200 -
+INFO | 127.0.0.1 - - [18/Sep/2022 16:06:27] "GET /equipment HTTP/1.1" 200 -
+ERROR | Exception on /location [POST]
+Traceback (most recent call last):
+  File "D:\MyProject\microerp\env\lib\site-packages\flask\app.py", line 2525, in wsgi_app
+    response = self.full_dispatch_request()
+  File "D:\MyProject\microerp\env\lib\site-packages\flask\app.py", line 1822, in full_dispatch_request
+    rv = self.handle_user_exception(e)
+  File "D:\MyProject\microerp\env\lib\site-packages\flask\app.py", line 1820, in full_dispatch_request
+    rv = self.dispatch_request()
+  File "D:\MyProject\microerp\env\lib\site-packages\flask\app.py", line 1796, in dispatch_request
+    return self.ensure_sync(self.view_functions[rule.endpoint])(**view_args)
+  File "D:\MyProject\microerp\app.py", line 195, in location
+    if len(value) == 0:
+TypeError: 'int' object is not callable
+INFO | 127.0.0.1 - - [18/Sep/2022 16:06:27] "[35m[1mPOST /location HTTP/1.1[0m" 500 -
+INFO | 127.0.0.1 - - [18/Sep/2022 16:06:27] "GET /img_store/equipment/default_prisp.png HTTP/1.1" 200 -
+INFO | 127.0.0.1 - - [18/Sep/2022 16:19:38] "GET /equipment HTTP/1.1" 200 -
+ERROR | Exception on /location [POST]
+Traceback (most recent call last):
+  File "D:\MyProject\microerp\env\lib\site-packages\flask\app.py", line 2525, in wsgi_app
+    response = self.full_dispatch_request()
+  File "D:\MyProject\microerp\env\lib\site-packages\flask\app.py", line 1822, in full_dispatch_request
+    rv = self.handle_user_exception(e)
+  File "D:\MyProject\microerp\env\lib\site-packages\flask\app.py", line 1820, in full_dispatch_request
+    rv = self.dispatch_request()
+  File "D:\MyProject\microerp\env\lib\site-packages\flask\app.py", line 1796, in dispatch_request
+    return self.ensure_sync(self.view_functions[rule.endpoint])(**view_args)
+  File "D:\MyProject\microerp\app.py", line 195, in location
+    if len(value) == 0:
+TypeError: 'int' object is not callable
+INFO | 127.0.0.1 - - [18/Sep/2022 16:19:38] "[35m[1mPOST /location HTTP/1.1[0m" 500 -
+INFO | 127.0.0.1 - - [18/Sep/2022 16:19:39] "GET /img_store/equipment/default_prisp.png HTTP/1.1" 200 -
+INFO | 127.0.0.1 - - [18/Sep/2022 16:20:11] "GET /equipment HTTP/1.1" 200 -
+INFO | 127.0.0.1 - - [18/Sep/2022 16:21:07] "GET /equipment HTTP/1.1" 200 -
+INFO | 127.0.0.1 - - [18/Sep/2022 16:27:50] "GET /equipment HTTP/1.1" 200 -
+ERROR | Exception on /location [POST]
+Traceback (most recent call last):
+  File "D:\MyProject\microerp\env\lib\site-packages\flask\app.py", line 2525, in wsgi_app
+    response = self.full_dispatch_request()
+  File "D:\MyProject\microerp\env\lib\site-packages\flask\app.py", line 1822, in full_dispatch_request
+    rv = self.handle_user_exception(e)
+  File "D:\MyProject\microerp\env\lib\site-packages\flask\app.py", line 1820, in full_dispatch_request
+    rv = self.dispatch_request()
+  File "D:\MyProject\microerp\env\lib\site-packages\flask\app.py", line 1796, in dispatch_request
+    return self.ensure_sync(self.view_functions[rule.endpoint])(**view_args)
+  File "D:\MyProject\microerp\app.py", line 195, in location
+    if len(value) == 0:
+TypeError: 'int' object is not callable
+INFO | 127.0.0.1 - - [18/Sep/2022 16:27:50] "[35m[1mPOST /location HTTP/1.1[0m" 500 -
+INFO | 127.0.0.1 - - [18/Sep/2022 16:27:50] "GET /img_store/equipment/default_prisp.png HTTP/1.1" 200 -
+INFO | 127.0.0.1 - - [18/Sep/2022 16:28:47] "GET /equipment HTTP/1.1" 200 -
+ERROR | Exception on /location [POST]
+Traceback (most recent call last):
+  File "D:\MyProject\microerp\env\lib\site-packages\flask\app.py", line 2525, in wsgi_app
+    response = self.full_dispatch_request()
+  File "D:\MyProject\microerp\env\lib\site-packages\flask\app.py", line 1822, in full_dispatch_request
+    rv = self.handle_user_exception(e)
+  File "D:\MyProject\microerp\env\lib\site-packages\flask\app.py", line 1820, in full_dispatch_request
+    rv = self.dispatch_request()
+  File "D:\MyProject\microerp\env\lib\site-packages\flask\app.py", line 1796, in dispatch_request
+    return self.ensure_sync(self.view_functions[rule.endpoint])(**view_args)
+  File "D:\MyProject\microerp\app.py", line 195, in location
+    if len(value) == 0:
+TypeError: 'int' object is not callable
+INFO | 127.0.0.1 - - [18/Sep/2022 16:28:48] "[35m[1mPOST /location HTTP/1.1[0m" 500 -
+INFO | 127.0.0.1 - - [18/Sep/2022 16:28:48] "GET /img_store/equipment/default_prisp.png HTTP/1.1" 200 -
+INFO | 127.0.0.1 - - [18/Sep/2022 16:35:19] "GET /equipment HTTP/1.1" 200 -
+ERROR | Exception on /location [POST]
+Traceback (most recent call last):
+  File "D:\MyProject\microerp\env\lib\site-packages\flask\app.py", line 2525, in wsgi_app
+    response = self.full_dispatch_request()
+  File "D:\MyProject\microerp\env\lib\site-packages\flask\app.py", line 1822, in full_dispatch_request
+    rv = self.handle_user_exception(e)
+  File "D:\MyProject\microerp\env\lib\site-packages\flask\app.py", line 1820, in full_dispatch_request
+    rv = self.dispatch_request()
+  File "D:\MyProject\microerp\env\lib\site-packages\flask\app.py", line 1796, in dispatch_request
+    return self.ensure_sync(self.view_functions[rule.endpoint])(**view_args)
+  File "D:\MyProject\microerp\app.py", line 195, in location
+    if len(value) == 0:
+TypeError: 'int' object is not callable
+INFO | 127.0.0.1 - - [18/Sep/2022 16:35:19] "[35m[1mPOST /location HTTP/1.1[0m" 500 -
+INFO | 127.0.0.1 - - [18/Sep/2022 16:35:19] "GET /img_store/equipment/default_prisp.png HTTP/1.1" 200 -
+INFO | 127.0.0.1 - - [18/Sep/2022 16:35:37] "[33mGET /img_store/equipment/prisp_1.jpg HTTP/1.1[0m" 404 -
+INFO | 127.0.0.1 - - [18/Sep/2022 16:35:38] "GET /img_store/equipment/default_control.png HTTP/1.1" 200 -
+INFO | 127.0.0.1 - - [18/Sep/2022 16:35:39] "GET /img_store/equipment/default_tool.png HTTP/1.1" 200 -
+INFO | 127.0.0.1 - - [18/Sep/2022 16:35:40] "GET /img_store/equipment/default_prisp.png HTTP/1.1" 200 -
+INFO | 127.0.0.1 - - [18/Sep/2022 16:37:10] "[33mGET /img_store/equipment/prisp_1.jpg HTTP/1.1[0m" 404 -
+INFO | 127.0.0.1 - - [18/Sep/2022 16:37:10] "GET /img_store/equipment/default_control.png HTTP/1.1" 200 -
+INFO | 127.0.0.1 - - [18/Sep/2022 16:37:11] "[33mGET /img_store/equipment/control_1.jpg HTTP/1.1[0m" 404 -
+INFO | 127.0.0.1 - - [18/Sep/2022 16:37:12] "GET /img_store/equipment/default_tool.png HTTP/1.1" 200 -
+INFO | 127.0.0.1 - - [18/Sep/2022 16:37:13] "GET /img_store/equipment/default_prisp.png HTTP/1.1" 200 -
+INFO | 127.0.0.1 - - [18/Sep/2022 16:40:20] "GET /equipment HTTP/1.1" 200 -
+INFO | 127.0.0.1 - - [18/Sep/2022 16:40:21] "GET /img_store/equipment/default_prisp.png HTTP/1.1" 200 -
+ERROR | Exception on /location [POST]
+Traceback (most recent call last):
+  File "D:\MyProject\microerp\env\lib\site-packages\flask\app.py", line 2525, in wsgi_app
+    response = self.full_dispatch_request()
+  File "D:\MyProject\microerp\env\lib\site-packages\flask\app.py", line 1822, in full_dispatch_request
+    rv = self.handle_user_exception(e)
+  File "D:\MyProject\microerp\env\lib\site-packages\flask\app.py", line 1820, in full_dispatch_request
+    rv = self.dispatch_request()
+  File "D:\MyProject\microerp\env\lib\site-packages\flask\app.py", line 1796, in dispatch_request
+    return self.ensure_sync(self.view_functions[rule.endpoint])(**view_args)
+  File "D:\MyProject\microerp\app.py", line 195, in location
+    if len(value) == 0:
+TypeError: 'int' object is not callable
+INFO | 127.0.0.1 - - [18/Sep/2022 16:40:21] "[35m[1mPOST /location HTTP/1.1[0m" 500 -
+INFO | 127.0.0.1 - - [18/Sep/2022 16:40:24] "GET /equipment HTTP/1.1" 200 -
+ERROR | Exception on /location [POST]
+Traceback (most recent call last):
+  File "D:\MyProject\microerp\env\lib\site-packages\flask\app.py", line 2525, in wsgi_app
+    response = self.full_dispatch_request()
+  File "D:\MyProject\microerp\env\lib\site-packages\flask\app.py", line 1822, in full_dispatch_request
+    rv = self.handle_user_exception(e)
+  File "D:\MyProject\microerp\env\lib\site-packages\flask\app.py", line 1820, in full_dispatch_request
+    rv = self.dispatch_request()
+  File "D:\MyProject\microerp\env\lib\site-packages\flask\app.py", line 1796, in dispatch_request
+    return self.ensure_sync(self.view_functions[rule.endpoint])(**view_args)
+  File "D:\MyProject\microerp\app.py", line 195, in location
+    if len(value) == 0:
+TypeError: 'int' object is not callable
+INFO | 127.0.0.1 - - [18/Sep/2022 16:40:24] "[35m[1mPOST /location HTTP/1.1[0m" 500 -
+INFO | 127.0.0.1 - - [18/Sep/2022 16:40:24] "GET /img_store/equipment/default_prisp.png HTTP/1.1" 200 -
+INFO | 127.0.0.1 - - [18/Sep/2022 16:40:30] "GET /equipment HTTP/1.1" 200 -
+ERROR | Exception on /location [POST]
+Traceback (most recent call last):
+  File "D:\MyProject\microerp\env\lib\site-packages\flask\app.py", line 2525, in wsgi_app
+    response = self.full_dispatch_request()
+  File "D:\MyProject\microerp\env\lib\site-packages\flask\app.py", line 1822, in full_dispatch_request
+    rv = self.handle_user_exception(e)
+  File "D:\MyProject\microerp\env\lib\site-packages\flask\app.py", line 1820, in full_dispatch_request
+    rv = self.dispatch_request()
+  File "D:\MyProject\microerp\env\lib\site-packages\flask\app.py", line 1796, in dispatch_request
+    return self.ensure_sync(self.view_functions[rule.endpoint])(**view_args)
+  File "D:\MyProject\microerp\app.py", line 195, in location
+    if len(value) == 0:
+TypeError: 'int' object is not callable
+INFO | 127.0.0.1 - - [18/Sep/2022 16:40:31] "[35m[1mPOST /location HTTP/1.1[0m" 500 -
+INFO | 127.0.0.1 - - [18/Sep/2022 16:40:31] "GET /img_store/equipment/default_prisp.png HTTP/1.1" 200 -
+INFO | 127.0.0.1 - - [18/Sep/2022 16:42:14] "GET /equipment HTTP/1.1" 200 -
+INFO | 127.0.0.1 - - [18/Sep/2022 16:42:14] "GET /img_store/equipment/default_prisp.png HTTP/1.1" 200 -
+INFO | 127.0.0.1 - - [18/Sep/2022 16:43:11] "GET /equipment HTTP/1.1" 200 -
+INFO | 127.0.0.1 - - [18/Sep/2022 17:09:34] "[33mGET /img_store/equipment/prisp_1.jpg HTTP/1.1[0m" 404 -
+INFO | 127.0.0.1 - - [18/Sep/2022 17:09:36] "GET /img_store/equipment/default_control.png HTTP/1.1" 200 -
+INFO | 127.0.0.1 - - [18/Sep/2022 17:09:38] "[33mGET /img_store/equipment/control_1.jpg HTTP/1.1[0m" 404 -
+INFO | 127.0.0.1 - - [18/Sep/2022 17:09:39] "GET /img_store/equipment/default_tool.png HTTP/1.1" 200 -
+INFO | 127.0.0.1 - - [18/Sep/2022 17:09:41] "[33mGET /img_store/equipment/control_1.jpg HTTP/1.1[0m" 404 -
+INFO | 127.0.0.1 - - [18/Sep/2022 17:09:41] "GET /img_store/equipment/default_control.png HTTP/1.1" 200 -
+INFO | 127.0.0.1 - - [18/Sep/2022 17:09:42] "[33mGET /img_store/equipment/prisp_1.jpg HTTP/1.1[0m" 404 -
+INFO | 127.0.0.1 - - [18/Sep/2022 17:09:42] "GET /img_store/equipment/default_prisp.png HTTP/1.1" 200 -
+INFO | 127.0.0.1 - - [18/Sep/2022 17:12:48] "[33mGET /img_store/equipment/prisp_1.jpg HTTP/1.1[0m" 404 -
+INFO | 127.0.0.1 - - [18/Sep/2022 17:12:50] "GET /img_store/equipment/default_control.png HTTP/1.1" 200 -
+INFO | 127.0.0.1 - - [18/Sep/2022 17:12:52] "[33mGET /img_store/equipment/control_1.jpg HTTP/1.1[0m" 404 -
+INFO | 127.0.0.1 - - [18/Sep/2022 17:12:52] "GET /img_store/equipment/default_tool.png HTTP/1.1" 200 -
+INFO | 127.0.0.1 - - [18/Sep/2022 17:12:55] "GET /img_store/equipment/default_prisp.png HTTP/1.1" 200 -
+INFO | 127.0.0.1 - - [18/Sep/2022 17:12:56] "[33mGET /img_store/equipment/prisp_1.jpg HTTP/1.1[0m" 404 -
+INFO | 127.0.0.1 - - [18/Sep/2022 17:12:57] "GET /img_store/equipment/default_control.png HTTP/1.1" 200 -
+INFO | 127.0.0.1 - - [18/Sep/2022 17:12:58] "[33mGET /img_store/equipment/control_1.jpg HTTP/1.1[0m" 404 -
+INFO | 127.0.0.1 - - [18/Sep/2022 17:13:00] "GET /img_store/equipment/default_tool.png HTTP/1.1" 200 -
+INFO | 127.0.0.1 - - [18/Sep/2022 17:13:01] "GET /img_store/equipment/default_prisp.png HTTP/1.1" 200 -
+INFO | 127.0.0.1 - - [18/Sep/2022 17:14:26] "[33mGET /img_store/equipment/prisp_1.jpg HTTP/1.1[0m" 404 -
+INFO | 127.0.0.1 - - [18/Sep/2022 17:14:31] "GET /img_store/equipment/default_control.png HTTP/1.1" 200 -
+INFO | 127.0.0.1 - - [18/Sep/2022 17:14:36] "[33mGET /img_store/equipment/control_1.jpg HTTP/1.1[0m" 404 -
+INFO | 127.0.0.1 - - [18/Sep/2022 17:14:39] "GET /img_store/equipment/default_tool.png HTTP/1.1" 200 -
+INFO | 127.0.0.1 - - [18/Sep/2022 17:15:16] "GET /equipment HTTP/1.1" 200 -
+ERROR | Exception on /location [POST]
+Traceback (most recent call last):
+  File "D:\MyProject\microerp\env\lib\site-packages\flask\app.py", line 2525, in wsgi_app
+    response = self.full_dispatch_request()
+  File "D:\MyProject\microerp\env\lib\site-packages\flask\app.py", line 1822, in full_dispatch_request
+    rv = self.handle_user_exception(e)
+  File "D:\MyProject\microerp\env\lib\site-packages\flask\app.py", line 1820, in full_dispatch_request
+    rv = self.dispatch_request()
+  File "D:\MyProject\microerp\env\lib\site-packages\flask\app.py", line 1796, in dispatch_request
+    return self.ensure_sync(self.view_functions[rule.endpoint])(**view_args)
+  File "D:\MyProject\microerp\app.py", line 195, in location
+    if len(value) == 0:
+TypeError: 'int' object is not callable
+INFO | 127.0.0.1 - - [18/Sep/2022 17:15:16] "[35m[1mPOST /location HTTP/1.1[0m" 500 -
+INFO | 127.0.0.1 - - [18/Sep/2022 17:15:17] "GET /img_store/equipment/default_prisp.png HTTP/1.1" 200 -
+INFO | 127.0.0.1 - - [18/Sep/2022 17:15:32] "GET /equipment HTTP/1.1" 200 -
+ERROR | Exception on /location [POST]
+Traceback (most recent call last):
+  File "D:\MyProject\microerp\env\lib\site-packages\flask\app.py", line 2525, in wsgi_app
+    response = self.full_dispatch_request()
+  File "D:\MyProject\microerp\env\lib\site-packages\flask\app.py", line 1822, in full_dispatch_request
+    rv = self.handle_user_exception(e)
+  File "D:\MyProject\microerp\env\lib\site-packages\flask\app.py", line 1820, in full_dispatch_request
+    rv = self.dispatch_request()
+  File "D:\MyProject\microerp\env\lib\site-packages\flask\app.py", line 1796, in dispatch_request
+    return self.ensure_sync(self.view_functions[rule.endpoint])(**view_args)
+  File "D:\MyProject\microerp\app.py", line 195, in location
+    if len(value) == 0:
+TypeError: 'int' object is not callable
+INFO | 127.0.0.1 - - [18/Sep/2022 17:15:32] "[35m[1mPOST /location HTTP/1.1[0m" 500 -
+INFO | 127.0.0.1 - - [18/Sep/2022 17:15:32] "GET /img_store/equipment/default_prisp.png HTTP/1.1" 200 -
+INFO | 127.0.0.1 - - [18/Sep/2022 17:15:33] "[33mGET /img_store/equipment/prisp_1.jpg HTTP/1.1[0m" 404 -
+INFO | 127.0.0.1 - - [18/Sep/2022 17:15:34] "GET /img_store/equipment/default_control.png HTTP/1.1" 200 -
+INFO | 127.0.0.1 - - [18/Sep/2022 17:15:35] "[33mGET /img_store/equipment/control_1.jpg HTTP/1.1[0m" 404 -
+INFO | 127.0.0.1 - - [18/Sep/2022 17:15:42] "GET /img_store/equipment/default_prisp.png HTTP/1.1" 200 -
+INFO | 127.0.0.1 - - [18/Sep/2022 17:15:43] "[33mGET /img_store/equipment/prisp_1.jpg HTTP/1.1[0m" 404 -
+INFO | 127.0.0.1 - - [18/Sep/2022 17:15:45] "GET /img_store/equipment/default_control.png HTTP/1.1" 200 -
+INFO | 127.0.0.1 - - [18/Sep/2022 17:15:46] "[33mGET /img_store/equipment/control_1.jpg HTTP/1.1[0m" 404 -
+INFO | 127.0.0.1 - - [18/Sep/2022 17:15:48] "GET /img_store/equipment/default_tool.png HTTP/1.1" 200 -
+INFO | 127.0.0.1 - - [18/Sep/2022 17:15:51] "[33mGET /img_store/equipment/control_1.jpg HTTP/1.1[0m" 404 -
+INFO | 127.0.0.1 - - [18/Sep/2022 17:15:53] "GET /img_store/equipment/default_control.png HTTP/1.1" 200 -
+INFO | 127.0.0.1 - - [18/Sep/2022 17:15:54] "[33mGET /img_store/equipment/prisp_1.jpg HTTP/1.1[0m" 404 -
+INFO | 127.0.0.1 - - [18/Sep/2022 17:15:55] "GET /img_store/equipment/default_prisp.png HTTP/1.1" 200 -
+ERROR | Exception on /location [POST]
+Traceback (most recent call last):
+  File "D:\MyProject\microerp\env\lib\site-packages\flask\app.py", line 2525, in wsgi_app
+    response = self.full_dispatch_request()
+  File "D:\MyProject\microerp\env\lib\site-packages\flask\app.py", line 1822, in full_dispatch_request
+    rv = self.handle_user_exception(e)
+  File "D:\MyProject\microerp\env\lib\site-packages\flask\app.py", line 1820, in full_dispatch_request
+    rv = self.dispatch_request()
+  File "D:\MyProject\microerp\env\lib\site-packages\flask\app.py", line 1796, in dispatch_request
+    return self.ensure_sync(self.view_functions[rule.endpoint])(**view_args)
+  File "D:\MyProject\microerp\app.py", line 195, in location
+    if len(value) == 0:
+TypeError: 'int' object is not callable
+INFO | 127.0.0.1 - - [18/Sep/2022 17:17:11] "[35m[1mPOST /location HTTP/1.1[0m" 500 -
+INFO | 127.0.0.1 - - [18/Sep/2022 17:17:14] "GET /equipment HTTP/1.1" 200 -
+INFO | 127.0.0.1 - - [18/Sep/2022 17:17:14] "[36mGET /img_store/equipment/default_prisp.png HTTP/1.1[0m" 304 -
+INFO | 127.0.0.1 - - [18/Sep/2022 17:17:21] "[33mGET /img_store/equipment/prisp_1.jpg HTTP/1.1[0m" 404 -
+INFO | 127.0.0.1 - - [18/Sep/2022 17:17:22] "[36mGET /img_store/equipment/default_control.png HTTP/1.1[0m" 304 -
+INFO | 127.0.0.1 - - [18/Sep/2022 17:18:05] "[33mGET /img_store/equipment/prisp_1.jpg HTTP/1.1[0m" 404 -
+INFO | 127.0.0.1 - - [18/Sep/2022 17:18:07] "GET /img_store/equipment/default_prisp.png HTTP/1.1" 200 -
+INFO | 127.0.0.1 - - [18/Sep/2022 17:20:34] "GET /equipment HTTP/1.1" 200 -
+INFO | 127.0.0.1 - - [18/Sep/2022 17:20:36] "[33mGET /img_store/equipment/prisp_1.jpg HTTP/1.1[0m" 404 -
+INFO | 127.0.0.1 - - [18/Sep/2022 17:20:37] "GET /img_store/equipment/default_control.png HTTP/1.1" 200 -
+INFO | 127.0.0.1 - - [18/Sep/2022 17:20:38] "[33mGET /img_store/equipment/control_1.jpg HTTP/1.1[0m" 404 -
+INFO | 127.0.0.1 - - [18/Sep/2022 17:20:38] "GET /img_store/equipment/default_tool.png HTTP/1.1" 200 -
+INFO | 127.0.0.1 - - [18/Sep/2022 17:20:39] "GET /img_store/equipment/default_prisp.png HTTP/1.1" 200 -
+INFO | 127.0.0.1 - - [18/Sep/2022 19:10:39] "[33mGET /img_store/equipment/prisp_1.jpg HTTP/1.1[0m" 404 -
+INFO | 127.0.0.1 - - [18/Sep/2022 19:10:41] "GET /img_store/equipment/default_prisp.png HTTP/1.1" 200 -
+INFO | 127.0.0.1 - - [18/Sep/2022 19:10:43] "[33mGET /img_store/equipment/prisp_1.jpg HTTP/1.1[0m" 404 -
+INFO | 127.0.0.1 - - [18/Sep/2022 19:10:44] "GET /img_store/equipment/default_control.png HTTP/1.1" 200 -
+INFO | 127.0.0.1 - - [18/Sep/2022 19:10:45] "[33mGET /img_store/equipment/control_1.jpg HTTP/1.1[0m" 404 -
+INFO | 127.0.0.1 - - [18/Sep/2022 19:10:47] "GET /img_store/equipment/default_tool.png HTTP/1.1" 200 -
+INFO | 127.0.0.1 - - [18/Sep/2022 19:24:17] "[33mGET /img_store/equipment/prisp_1.jpg HTTP/1.1[0m" 404 -
+INFO | 127.0.0.1 - - [18/Sep/2022 19:24:18] "GET /img_store/equipment/default_prisp.png HTTP/1.1" 200 -
+INFO | 127.0.0.1 - - [18/Sep/2022 19:24:20] "GET /img_store/equipment/default_control.png HTTP/1.1" 200 -
+INFO | 127.0.0.1 - - [18/Sep/2022 19:24:20] "GET /img_store/equipment/default_prisp.png HTTP/1.1" 200 -
+INFO | 127.0.0.1 - - [18/Sep/2022 19:24:22] "[33mGET /img_store/equipment/prisp_1.jpg HTTP/1.1[0m" 404 -
+INFO | 127.0.0.1 - - [18/Sep/2022 19:24:27] "GET /img_store/equipment/default_prisp.png HTTP/1.1" 200 -
+INFO | 127.0.0.1 - - [18/Sep/2022 19:24:29] "[33mGET /img_store/equipment/prisp_1.jpg HTTP/1.1[0m" 404 -
+INFO | 127.0.0.1 - - [18/Sep/2022 19:24:29] "GET /img_store/equipment/default_control.png HTTP/1.1" 200 -
+INFO | 127.0.0.1 - - [18/Sep/2022 19:24:31] "[33mGET /img_store/equipment/control_1.jpg HTTP/1.1[0m" 404 -
+INFO | 127.0.0.1 - - [18/Sep/2022 19:24:32] "GET /img_store/equipment/default_tool.png HTTP/1.1" 200 -
+INFO | 127.0.0.1 - - [18/Sep/2022 19:24:37] "[33mGET /img_store/equipment/prisp_1.jpg HTTP/1.1[0m" 404 -
+INFO | 127.0.0.1 - - [18/Sep/2022 19:27:57] "GET /img_store/equipment/default_control.png HTTP/1.1" 200 -
+INFO | 127.0.0.1 - - [18/Sep/2022 19:27:58] "[33mGET /img_store/equipment/control_1.jpg HTTP/1.1[0m" 404 -
+INFO | 127.0.0.1 - - [18/Sep/2022 19:27:59] "GET /img_store/equipment/default_control.png HTTP/1.1" 200 -
+INFO | 127.0.0.1 - - [18/Sep/2022 19:28:00] "GET /img_store/equipment/default_prisp.png HTTP/1.1" 200 -
+INFO | 127.0.0.1 - - [18/Sep/2022 19:30:53] "[33mGET /img_store/equipment/prisp_1.jpg HTTP/1.1[0m" 404 -
+INFO | 127.0.0.1 - - [18/Sep/2022 19:30:53] "GET /img_store/equipment/default_control.png HTTP/1.1" 200 -
+INFO | 127.0.0.1 - - [18/Sep/2022 19:30:54] "[33mGET /img_store/equipment/control_1.jpg HTTP/1.1[0m" 404 -
+INFO | 127.0.0.1 - - [18/Sep/2022 19:30:55] "GET /img_store/equipment/default_tool.png HTTP/1.1" 200 -
+INFO | 127.0.0.1 - - [18/Sep/2022 19:30:56] "[33mGET /img_store/equipment/control_1.jpg HTTP/1.1[0m" 404 -
+INFO | 127.0.0.1 - - [18/Sep/2022 19:30:56] "GET /img_store/equipment/default_control.png HTTP/1.1" 200 -
+INFO | 127.0.0.1 - - [18/Sep/2022 19:30:57] "[33mGET /img_store/equipment/prisp_1.jpg HTTP/1.1[0m" 404 -
+INFO | 127.0.0.1 - - [18/Sep/2022 19:30:57] "GET /img_store/equipment/default_prisp.png HTTP/1.1" 200 -
+INFO | 127.0.0.1 - - [18/Sep/2022 19:31:05] "GET /img_store/equipment/default_tool.png HTTP/1.1" 200 -
+INFO | 127.0.0.1 - - [18/Sep/2022 19:31:06] "[33mGET /img_store/equipment/control_1.jpg HTTP/1.1[0m" 404 -
+INFO | 127.0.0.1 - - [18/Sep/2022 19:31:06] "GET /img_store/equipment/default_prisp.png HTTP/1.1" 200 -
+INFO | 127.0.0.1 - - [18/Sep/2022 19:31:07] "[33mGET /img_store/equipment/prisp_1.jpg HTTP/1.1[0m" 404 -
+INFO | 127.0.0.1 - - [18/Sep/2022 19:31:08] "GET /img_store/equipment/default_control.png HTTP/1.1" 200 -
+INFO | 127.0.0.1 - - [18/Sep/2022 19:31:08] "[33mGET /img_store/equipment/control_1.jpg HTTP/1.1[0m" 404 -
+INFO | 127.0.0.1 - - [18/Sep/2022 19:31:09] "GET /img_store/equipment/default_tool.png HTTP/1.1" 200 -
+INFO | 127.0.0.1 - - [18/Sep/2022 19:31:11] "GET /img_store/equipment/default_prisp.png HTTP/1.1" 200 -
+INFO | 127.0.0.1 - - [18/Sep/2022 19:31:36] "[33mGET /img_store/equipment/prisp_1.jpg HTTP/1.1[0m" 404 -
+INFO | 127.0.0.1 - - [18/Sep/2022 19:31:38] "GET /img_store/equipment/default_control.png HTTP/1.1" 200 -
+INFO | 127.0.0.1 - - [18/Sep/2022 19:31:38] "[33mGET /img_store/equipment/control_1.jpg HTTP/1.1[0m" 404 -
+INFO | 127.0.0.1 - - [18/Sep/2022 19:31:39] "GET /img_store/equipment/default_tool.png HTTP/1.1" 200 -
+INFO | 127.0.0.1 - - [18/Sep/2022 19:31:39] "[33mGET /img_store/equipment/control_1.jpg HTTP/1.1[0m" 404 -
+INFO | 127.0.0.1 - - [18/Sep/2022 19:31:46] "GET /img_store/equipment/default_control.png HTTP/1.1" 200 -
+INFO | 127.0.0.1 - - [18/Sep/2022 19:31:46] "[33mGET /img_store/equipment/prisp_1.jpg HTTP/1.1[0m" 404 -
+INFO | 127.0.0.1 - - [18/Sep/2022 19:31:47] "GET /img_store/equipment/default_prisp.png HTTP/1.1" 200 -
+INFO | 127.0.0.1 - - [18/Sep/2022 19:42:45] "GET /equipment HTTP/1.1" 200 -
+ERROR | Exception on /location [POST]
+Traceback (most recent call last):
+  File "D:\MyProject\microerp\env\lib\site-packages\flask\app.py", line 2525, in wsgi_app
+    response = self.full_dispatch_request()
+  File "D:\MyProject\microerp\env\lib\site-packages\flask\app.py", line 1822, in full_dispatch_request
+    rv = self.handle_user_exception(e)
+  File "D:\MyProject\microerp\env\lib\site-packages\flask\app.py", line 1820, in full_dispatch_request
+    rv = self.dispatch_request()
+  File "D:\MyProject\microerp\env\lib\site-packages\flask\app.py", line 1796, in dispatch_request
+    return self.ensure_sync(self.view_functions[rule.endpoint])(**view_args)
+  File "D:\MyProject\microerp\app.py", line 195, in location
+    if len(value) == 0:
+TypeError: 'int' object is not callable
+INFO | 127.0.0.1 - - [18/Sep/2022 19:42:46] "[35m[1mPOST /location HTTP/1.1[0m" 500 -
+INFO | 127.0.0.1 - - [18/Sep/2022 19:42:46] "GET /img_store/equipment/default_prisp.png HTTP/1.1" 200 -
+INFO | 127.0.0.1 - - [18/Sep/2022 19:48:59] "[33mGET /img_store/equipment/prisp_1.jpg HTTP/1.1[0m" 404 -
+INFO | 127.0.0.1 - - [18/Sep/2022 19:49:00] "GET /img_store/equipment/default_control.png HTTP/1.1" 200 -
+INFO | 127.0.0.1 - - [18/Sep/2022 19:49:01] "[33mGET /img_store/equipment/control_1.jpg HTTP/1.1[0m" 404 -
+INFO | 127.0.0.1 - - [18/Sep/2022 19:49:01] "GET /img_store/equipment/default_tool.png HTTP/1.1" 200 -
+INFO | 127.0.0.1 - - [18/Sep/2022 19:49:02] "[33mGET /img_store/equipment/control_1.jpg HTTP/1.1[0m" 404 -
+INFO | 127.0.0.1 - - [18/Sep/2022 19:49:03] "GET /img_store/equipment/default_control.png HTTP/1.1" 200 -
+INFO | 127.0.0.1 - - [18/Sep/2022 19:49:03] "[33mGET /img_store/equipment/prisp_1.jpg HTTP/1.1[0m" 404 -
+INFO | 127.0.0.1 - - [18/Sep/2022 19:49:05] "GET /img_store/equipment/default_prisp.png HTTP/1.1" 200 -
+INFO | 127.0.0.1 - - [18/Sep/2022 19:49:05] "[33mGET /img_store/equipment/prisp_1.jpg HTTP/1.1[0m" 404 -
+INFO | 127.0.0.1 - - [18/Sep/2022 19:49:05] "GET /img_store/equipment/default_control.png HTTP/1.1" 200 -
+INFO | 127.0.0.1 - - [18/Sep/2022 19:49:06] "[33mGET /img_store/equipment/control_1.jpg HTTP/1.1[0m" 404 -
+INFO | 127.0.0.1 - - [18/Sep/2022 19:49:07] "GET /img_store/equipment/default_tool.png HTTP/1.1" 200 -
+INFO | 127.0.0.1 - - [18/Sep/2022 19:49:08] "[33mGET /img_store/equipment/control_1.jpg HTTP/1.1[0m" 404 -
+INFO | 127.0.0.1 - - [18/Sep/2022 19:49:08] "GET /img_store/equipment/default_control.png HTTP/1.1" 200 -
+INFO | 127.0.0.1 - - [18/Sep/2022 19:49:09] "[33mGET /img_store/equipment/prisp_1.jpg HTTP/1.1[0m" 404 -
+INFO | 127.0.0.1 - - [18/Sep/2022 19:49:10] "GET /img_store/equipment/default_prisp.png HTTP/1.1" 200 -
+INFO | 127.0.0.1 - - [18/Sep/2022 19:50:23] "[33mGET /img_store/equipment/prisp_1.jpg HTTP/1.1[0m" 404 -
+INFO | 127.0.0.1 - - [18/Sep/2022 19:50:24] "GET /img_store/equipment/default_control.png HTTP/1.1" 200 -
+INFO | 127.0.0.1 - - [18/Sep/2022 19:50:25] "[33mGET /img_store/equipment/control_1.jpg HTTP/1.1[0m" 404 -
+INFO | 127.0.0.1 - - [18/Sep/2022 19:50:25] "GET /img_store/equipment/default_tool.png HTTP/1.1" 200 -
+INFO | 127.0.0.1 - - [18/Sep/2022 19:50:26] "[33mGET /img_store/equipment/control_1.jpg HTTP/1.1[0m" 404 -
+INFO | 127.0.0.1 - - [18/Sep/2022 19:50:27] "GET /img_store/equipment/default_control.png HTTP/1.1" 200 -
+INFO | 127.0.0.1 - - [18/Sep/2022 19:50:36] "[33mGET /img_store/equipment/prisp_1.jpg HTTP/1.1[0m" 404 -
+INFO | 127.0.0.1 - - [18/Sep/2022 19:50:37] "GET /img_store/equipment/default_prisp.png HTTP/1.1" 200 -

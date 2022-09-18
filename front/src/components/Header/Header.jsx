@@ -32,6 +32,7 @@ const Header = () => {
         menuData.menu.forEach(a =>
             linkExtensions.forEach( b => a.url === b.url && intersection.push(b) )
         )
+        // console.log(intersection)
         return intersection
     }
 
