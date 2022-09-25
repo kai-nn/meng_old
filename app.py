@@ -221,15 +221,36 @@ def img_store(name):
 @app.route('/equipment', methods=['GET', 'POST'])
 def equipment():
     if request.method == 'GET':
-        equipment = Equipment.query.join(Equipment_position).order_by(Equipment_position.num_str).all()
+        eq = Equipment.query.all()
+        equipment = []
+        for e in eq:
+            # equipment += [eval(e.position)]
+            equipment += [{
+                'id': e.id,
+                'name': e.name,
+                'type': e.type,
+                'description': e.description,
+                'code': e.code,
+                'firm': e.firm,
+                'path': e.path,
+                'data_added': e.data_added,
+
+                'nodes': eval(e.nodes),
+                'main_characteristic': eval(e.main_characteristic),
+
+                'relevance': e.relevance,
+                'added_id': e.added_id,
+                'collapsed': e.collapsed,
+            }]
         equipment_schema = EquipmentSchema(many=True)
         response = equipment_schema.dump(equipment)
         pprint(response)
-        return response
+        return equipment
 
 
-# equipment = Equipment.query.join(Equipment_position).order_by(Equipment_position.num_str).all()
-# print(equipment)
+
+
+
 
 
 if __name__ == '__main__':

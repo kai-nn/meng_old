@@ -5,7 +5,7 @@ import List from "./components/List/List";
 import Data from "./components/Data/Data";
 
 const Equipment = () => {
-    const [sellected, setSellected] = useState(0)
+    const [sellected, setSellected] = useState(2)
     const {data, err, loaded, changeData} = useAxios(
         'equipment',
         'get',

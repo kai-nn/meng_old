@@ -168,25 +168,31 @@ class Oper(db.Model):
     tech_id = db.Column(db.Integer, db.ForeignKey('tech.id'))
 
 
-class Equipment_position(db.Model):
-    id = db.Column(db.Integer, primary_key=True)
-    num_position = db.Column(db.Integer)
-    num_str = db.Column(db.Integer)
+
+# class Eq_nodes(db.Model):                                      # оснащение
+#     id = db.Column(db.Integer, primary_key=True)
+#
+#     name = db.Column(db.String(100))
+
 
 class Equipment(db.Model):                                      # оснащение
     id = db.Column(db.Integer, primary_key=True)
     name = db.Column(db.String(100))                            # additional - вспомогательный, prisp - приспособление, ...
-    is_group = db.Column(db.Boolean)                                # True - группа, False - элемент
+    type = db.Column(db.String(20))                             # тип данных
     description = db.Column(db.String(200))                     # полное описание
     code = db.Column(db.String(100))                            # шифр, условный код
-    main_characteristic = db.Column(db.String(300))             # главная характеристика (для доп. фильтрации, ...)
     firm = db.Column(db.String(100))                            # производитель
     path = db.Column(db.String(100))                            # путь к картинке
+    data_added = db.Column(db.String(10))                       # дата добавления
+
+    nodes = db.Column(db.Text)
+    main_characteristic = db.Column(db.Text)                    # главная характеристика (для доп. фильтрации, ...)
+
     relevance = db.Column(db.Boolean)                           # True - актуально, False - аннулировано
-    data_added = db.Column(db.String(100))                      # дата добавления
     added_id = db.Column(db.Integer, db.ForeignKey('user.id'))  # ID user добавившего
-    position_id = db.Column(db.Integer, db.ForeignKey('equipment_position.id'))
-    position = db.relationship('Equipment_position', backref='position')
+    collapsed = db.Column(db.Boolean)                           # True - свернуто
+    # is_group = db.Column(db.Boolean)                           # True - свернуто
+
 
 
 
@@ -246,14 +252,14 @@ class OperSchema(ma.SQLAlchemyAutoSchema):
         include_fk = True
 
 
-class Equipment_positionSchema(ma.SQLAlchemyAutoSchema):
-    class Meta:
-        model = Equipment_position
-        include_fk = True
+# class Equipment_positionSchema(ma.SQLAlchemyAutoSchema):
+#     class Meta:
+#         model = Equipment_position
+#         include_fk = True
 
 class EquipmentSchema(ma.SQLAlchemyAutoSchema):
     class Meta:
         model = Equipment
         include_fk = True
 
-    position = ma.Nested(Equipment_positionSchema)
+    # position = ma.Nested(Equipment_positionSchema)

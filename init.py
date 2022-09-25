@@ -1,5 +1,6 @@
 from app import *
 
+
 db.create_all()
 
 from models import *
@@ -172,119 +173,163 @@ if len(User.query.all()) <= 0:
 
 
 
-# Настройки базы Equipment (оснащение)
 equipment_bd = [
     {
+        'name': 'Root',
+        'type': None,
+        'description': 'Корневая запись',
+        'code': None,
+        'firm': None,
+        'path': None,
+        'data_added': None,
+
+        'nodes': [2, 4, 8],
+        'main_characteristic': None,
+
+        'relevance': True,
+        'added_id': None,
+        'collapsed': None,
+    },
+    {
         'name': 'Приспособление',
-        'is_group': True,
+        'type': None,
         'description': None,
         'code': None,
-        'main_characteristic': None,
         'firm': None,
         'path': 'equipment/default_prisp.png',
-        'relevance': True,
         'data_added': None,
-        'user': None,
-        'position': {
-            'num_position': 0,
-            'num_str': None
-        }
+
+        'nodes': [3],
+        'main_characteristic': None,
+
+        'relevance': True,
+        'added_id': None,
+        'collapsed': None,
     },
     {
         'name': 'Планшайба токарная',
-        'is_group': False,
-        'description': 'Планшайба для обработки цапф',
-        'code': '63015-100',
-        'main_characteristic': '#detail=11.4201.3080.00',
+        'type': None,
+        'description': 'Токарное приспособление (планшайба)',
+        'code': '63030-100',
         'firm': 'цех 50',
-        'path': 'equipment/prisp_1.jpg',
+        'path': 'equipment/prisp_1.png',
+        'data_added': '20.09.22',
+
+        'nodes': [],
+        'main_characteristic': {'detail': '11.4201.3080.00'},
+
         'relevance': True,
-        'data_added': '10.03.79',
-        'user': None,
-        'position': {
-            'num_position': 1,
-            'num_str': None
-        }
-    },
-    {
-        'name': 'Средство контроля',
-        'is_group': True,
-        'description': None,
-        'code': None,
-        'main_characteristic': None,
-        'firm': None,
-        'path': 'equipment/default_control.png',
-        'relevance': True,
-        'data_added': '10.03.90',
-        'user': None,
-        'position': {
-            'num_position': 0,
-            'num_str': None
-        }
-    },
-    {
-        'name': 'Скоба',
-        'is_group': False,
-        'description': 'Для контроля наружных гладких поверхностей',
-        'code': '63030-300',
-        'main_characteristic': '#diametr=50h8',
-        'firm': 'цех 50',
-        'path': 'equipment/control_1.jpg',
-        'relevance': True,
-        'data_added': '10.03.10',
-        'user': None,
-        'position': {
-            'num_position': 1,
-            'num_str': None
-        }
+        'added_id': None,
+        'collapsed': None,
     },
     {
         'name': 'Инструмент',
-        'is_group': True,
+        'type': None,
         'description': None,
         'code': None,
-        'main_characteristic': None,
         'firm': None,
         'path': 'equipment/default_tool.png',
+        'data_added': '20.09.22',
+
+        'nodes': [5, 6],
+        'main_characteristic': None,
+
         'relevance': True,
-        'data_added': '10.03.90',
-        'user': None,
-        'position': {
-            'num_position': 0,
-            'num_str': None
-        }
+        'added_id': None,
+        'collapsed': None,
+    },
+    {
+        'name': 'Резец',
+        'type': None,
+        'description': 'Оправка токарная',
+        'code': '61510-500',
+        'firm': 'Цех 50',
+        'path': 'equipment/tool_1.png',
+        'data_added': '20.01.90',
+
+        'nodes': [],
+        'main_characteristic': {'len': 200, 'b*h': '30*30'},
+
+        'relevance': True,
+        'added_id': None,
+        'collapsed': None,
+    },
+    {
+        'name': 'Сверло',
+        'type': None,
+        'description': 'Инструмент для сверления отверстий',
+        'code': None,
+        'firm': None,
+        'path': 'equipment/tool_2.png',
+        'data_added': '20.01.88',
+
+        'nodes': [7],
+        'main_characteristic': None,
+
+        'relevance': True,
+        'added_id': None,
+        'collapsed': None,
+    },
+    {
+        'name': 'Сверло спиральное',
+        'type': None,
+        'description': 'Сверло спиральное твердосплавное',
+        'code': '61510-2000',
+        'firm': 'Guring',
+        'path': 'equipment/tool_3.png',
+        'data_added': '20.01.21',
+
+        'nodes': [],
+        'main_characteristic': {'len': 150, 'diam': 32},
+
+        'relevance': True,
+        'added_id': None,
+        'collapsed': None,
+    },
+
+    {
+        'name': 'Средство контроля',
+        'type': None,
+        'description': None,
+        'code': None,
+        'firm': None,
+        'path': 'equipment/default_control.png',
+        'data_added': '20.09.22',
+
+        'nodes': [],
+        'main_characteristic': {'detail': '11.4201.3080.00'},
+
+        'relevance': True,
+        'added_id': None,
+        'collapsed': None,
     },
 ]
-
+# Настройки базы Equipment (оснащение)
 if len(Equipment.query.all()) <= 0:
     len = len(equipment_bd)
     index = 0
     user = User.query.first()
     while index <= len - 1:
-        position = Equipment_position(
-            num_position=equipment_bd[index]['position']['num_position'],
-            num_str=index
-        )
-        # print(equipment_bd[index]['type'])
         equipment = Equipment(
             name=equipment_bd[index]['name'],
-            is_group=equipment_bd[index]['is_group'],
+            type=equipment_bd[index]['type'],
             description=equipment_bd[index]['description'],
             code=equipment_bd[index]['code'],
-            main_characteristic=equipment_bd[index]['main_characteristic'],
             path=equipment_bd[index]['path'],
-            relevance=equipment_bd[index]['relevance'],
             data_added=equipment_bd[index]['data_added'],
+
+            nodes=str(equipment_bd[index]['nodes']),
+            main_characteristic=str(equipment_bd[index]['main_characteristic']),
+
+            relevance=equipment_bd[index]['relevance'],
             user=user,
-            position=position,
+            collapsed=equipment_bd[index]['collapsed'],
         )
         index += 1
 
     db.session.add(equipment)
-    db.session.add(position)
     db.session.commit()
     print('\nСозданы default\'ные записи Equipment.\n')
-
 
 
 

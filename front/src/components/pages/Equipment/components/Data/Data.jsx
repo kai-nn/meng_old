@@ -6,7 +6,7 @@ const Data = ({data, sellected}) => {
     const [output, setOutput] = useState(null)
 
     useEffect(() => {
-        setOutput(data?.find(el => el.position.num_str === sellected))
+        setOutput(data?.find(el => el.id === sellected))
     }, [data, sellected])
 
 
@@ -25,13 +25,13 @@ const Data = ({data, sellected}) => {
                             </div>
                             <div className={style.input}>
                                 <input type={'text'}
-                                       value={output.name}
+                                       defaultValue={output.name}
                                 />
                                 <input type={'text'}
-                                       value={output.code ? output.code : ''}
+                                       defaultValue={output.code ? output.code : ''}
                                 />
                                 <input type={'text'}
-                                       value={output.description ? output.description : ''}
+                                       defaultValue={output.description ? output.description : ''}
                                 />
                             </div>
 
