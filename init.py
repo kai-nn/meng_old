@@ -189,6 +189,7 @@ equipment_bd = [
         'relevance': True,
         'added_id': None,
         'collapsed': None,
+        'is_group': True,
     },
     {
         'name': 'Приспособление',
@@ -205,6 +206,7 @@ equipment_bd = [
         'relevance': True,
         'added_id': None,
         'collapsed': None,
+        'is_group': True,
     },
     {
         'name': 'Планшайба токарная',
@@ -221,6 +223,7 @@ equipment_bd = [
         'relevance': True,
         'added_id': None,
         'collapsed': None,
+        'is_group': False,
     },
     {
         'name': 'Инструмент',
@@ -237,6 +240,7 @@ equipment_bd = [
         'relevance': True,
         'added_id': None,
         'collapsed': None,
+        'is_group': True,
     },
     {
         'name': 'Резец',
@@ -253,6 +257,7 @@ equipment_bd = [
         'relevance': True,
         'added_id': None,
         'collapsed': None,
+        'is_group': False,
     },
     {
         'name': 'Сверло',
@@ -269,6 +274,7 @@ equipment_bd = [
         'relevance': True,
         'added_id': None,
         'collapsed': None,
+        'is_group': True,
     },
     {
         'name': 'Сверло спиральное',
@@ -285,6 +291,7 @@ equipment_bd = [
         'relevance': True,
         'added_id': None,
         'collapsed': None,
+        'is_group': False,
     },
 
     {
@@ -302,6 +309,7 @@ equipment_bd = [
         'relevance': True,
         'added_id': None,
         'collapsed': None,
+        'is_group': True,
     },
 ]
 # Настройки базы Equipment (оснащение)
@@ -324,6 +332,7 @@ if len(Equipment.query.all()) <= 0:
             relevance=equipment_bd[index]['relevance'],
             user=user,
             collapsed=equipment_bd[index]['collapsed'],
+            is_group=equipment_bd[index]['is_group'],
         )
         index += 1
 

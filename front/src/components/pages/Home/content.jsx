@@ -205,7 +205,13 @@ export const content = [
                 <h3>Как подключиться</h3>
                 <br/>
                 <section>
-                    <p>По всем вопросам подключения необходимо обратиться к автору.</p>
+                    <p>По всем вопросам подключения необходимо обратиться к автору - Корпусову А.И.</p>
+                    <br/>
+                    <p>E-mail: kai.nn@mail.ru</p>
+                    <p>
+                        GitHub:
+                        https://github.com/kai-nn
+                    </p>
                 </section>
             </div>
     },
@@ -216,16 +222,12 @@ export const content = [
         elementMenu: 'Об авторе',
         body:
             <div style={{textAlign: 'justify'}}>
-                <h3>Об авторе</h3>
+                <h3>Изменения</h3>
                 <br/>
                 <section>
-                    <p>Корпусов А.И.</p>
+                    <p>Дата изменения</p>
                     <br/>
-                    <p>E-mail: kai.nn@mail.ru</p>
-                    <p>
-                        GitHub:
-                        https://github.com/kai-nn
-                    </p>
+                    <p>Содержание изменения...</p>
                 </section>
             </div>
     },

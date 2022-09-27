@@ -24,6 +24,7 @@ const Data = ({data, sellected}) => {
                                 />
                             </div>
                             <div className={style.input}>
+                                <h4>Характеристики</h4>
                                 <input type={'text'}
                                        defaultValue={output.name}
                                 />

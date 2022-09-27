@@ -1,22 +1,27 @@
 .str{
   display: flex;
-  height: 1.5em;
-  //background-color: #36a6fc;
   justify-content: space-between;
+
+  //&_sellected{
+  //  color: orange;
+  //}
+
+}
+
+.str_sellected{
+  display: flex;
+  justify-content: space-between;
+  color: orange;
 }
 
 .node{
-  //background-color: white;
+  cursor: pointer;
 }
 
 .name{
-  //background-color: green;
   white-space: nowrap;
   overflow: hidden;
   text-overflow: ellipsis;
-
-  &_sellected{
-    color: orange;
-  }
+  cursor: pointer;
 }
 

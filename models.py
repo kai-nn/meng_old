@@ -191,7 +191,7 @@ class Equipment(db.Model):                                      # оснащен
     relevance = db.Column(db.Boolean)                           # True - актуально, False - аннулировано
     added_id = db.Column(db.Integer, db.ForeignKey('user.id'))  # ID user добавившего
     collapsed = db.Column(db.Boolean)                           # True - свернуто
-    # is_group = db.Column(db.Boolean)                           # True - свернуто
+    is_group = db.Column(db.Boolean)                            # True - группа, False - элемент
 
 
 

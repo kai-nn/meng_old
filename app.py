@@ -241,6 +241,7 @@ def equipment():
                 'relevance': e.relevance,
                 'added_id': e.added_id,
                 'collapsed': e.collapsed,
+                'is_group': e.is_group,
             }]
         equipment_schema = EquipmentSchema(many=True)
         response = equipment_schema.dump(equipment)
