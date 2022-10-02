@@ -1,16 +1,14 @@
 .str{
   display: flex;
   justify-content: space-between;
-
-  //&_sellected{
-  //  color: orange;
-  //}
+  height: 1.3em;
 
 }
 
 .str_sellected{
   display: flex;
   justify-content: space-between;
+  height: 1.3em;
   color: orange;
 }
 

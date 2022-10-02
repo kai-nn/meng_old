@@ -1,5 +1,8 @@
 import React, {useEffect, useState} from 'react'
 import style from './List.module.scss'
+import Submenu from "../../../../Submenu/Submenu";
+import ExpandLessIcon from '@mui/icons-material/ExpandLess';
+import ExpandMoreIcon from '@mui/icons-material/ExpandMore';
 
 
 
@@ -79,6 +82,8 @@ const List = ({data, sellected, setSellected}) => {
 
     return (
         <>
+
+
             {
                 data != undefined &&
                 res.map(el => {
@@ -97,8 +102,8 @@ const List = ({data, sellected, setSellected}) => {
                             {
                                 is_group && (
                                     !collapsed
-                                        ? <span className={style.node} onClick={() => collaps(id)}>&#9660;</span>
-                                        : <span className={style.node} onClick={() => collaps(id)}>&#9650;</span>
+                                        ? <span className={style.node} onClick={() => collaps(id)}><ExpandLessIcon fontSize="small"/></span>
+                                        : <span className={style.node} onClick={() => collaps(id)}><ExpandMoreIcon fontSize="small"/></span>
                                 )
                             }
                         </div>

@@ -3,6 +3,7 @@ import useAxios from "../../../general/useAxios";
 import style from './Equipment.module.scss'
 import List from "./components/List/List";
 import Data from "./components/Data/Data";
+import Submenu from "../../Submenu/Submenu";
 
 const Equipment = () => {
     const [sellected, setSellected] = useState(2)
@@ -13,6 +14,8 @@ const Equipment = () => {
     )
     return (
         <>
+            <Submenu />
+
             <div className={style.frame}>
                 <div className={style.list}>
                     <List

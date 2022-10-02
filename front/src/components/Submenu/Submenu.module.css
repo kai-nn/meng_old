@@ -1,0 +1,42 @@
+.sub_menu {
+  display: flex;
+  background-color: #ebebeb;
+  border-radius: 3px;
+  box-shadow: 1px 1px 1px lightgray;
+  flex-wrap: wrap;
+}
+
+.group_2 {
+  display: flex;
+  align-items: center;
+  flex-wrap: nowrap;
+  flex-grow: 1;
+}
+.group_2 .input {
+  height: 1.5rem;
+  border: 1px solid lightgrey;
+  border-radius: 3px;
+  padding: 0 3px;
+  width: 100%;
+  max-width: 400px;
+  margin: 0 10px 0 0;
+}
+
+.group_3 {
+  margin-left: auto;
+}
+
+@media screen and (max-width: 480px) {
+  .group_1 {
+    order: 1;
+  }
+  .group_3 {
+    order: 2;
+    text-align: right;
+  }
+  .group_2 {
+    order: 99;
+  }
+}
+
+/*# sourceMappingURL=Submenu.module.css.map */

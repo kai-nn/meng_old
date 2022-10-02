@@ -10,6 +10,7 @@ import {useSelector} from "react-redux";
 import '../../store/access/accessSlice'
 import {linkExtensions} from "./linkExtensions";
 import BurgerToggle from "../BurgerToggle/BurgerToggle";
+import IconButton from "@mui/material/IconButton";
 // import {useNavigate} from "react-router";
 
 
@@ -58,12 +59,13 @@ const Header = () => {
                         const st = pathname.slice(1) === url ? general_style.select : general_style.unselect
                         return (
                             <Link key={i} to={url} onClick={() => setPress(false)}>
-                                <Button
+                                <IconButton
                                     value={url}
                                     style={st}
                                     >
-                                    {icon}{label}
-                                </Button>
+                                    <span className={style.icon}>{icon}</span>
+                                    <span className={style.label}>{label}</span>
+                                </IconButton>
                             </Link>
                         )
                     })

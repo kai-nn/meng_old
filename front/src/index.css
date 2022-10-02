@@ -4,6 +4,11 @@
     border: 0;
     font-family: "Roboto";
     position: relative;
+    box-sizing: border-box;
+}
+
+body, p {
+  /*margin: auto;*/
 }
 
 

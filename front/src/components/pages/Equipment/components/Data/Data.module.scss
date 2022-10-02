@@ -1,31 +1,49 @@
 .data{
+
   display: flex;
   flex-flow: row nowrap;
+  //display: inline;
+  //height: 85%;
+  //overflow-y: scroll;
+
 }
 
 .image{
-  width: 100%;
+  width: 50%;
 
   & img{
     width: 100%;
-    //object-position: center top;
+    object-position: center top;
   }
 }
 
 
 
 .input{
+  padding: 0 10px;
   display: flex;
   flex-flow: column wrap;
-  width: 100%;
+  gap: 10px;
+  width: 50%;
+
 }
 
 @media screen and (max-width: 600px){
   .data{
-    flex-flow: column wrap;
+    //flex-flow: column wrap;
+    //display: inline;
+    display: block;
+  }
+
+  .image{
+    width: 100%;
+  }
+
+  .input{
+    width: 100%;
   }
 }
 
 h4{
-  margin: 10px 0;
+  margin-top: 15px;
 }

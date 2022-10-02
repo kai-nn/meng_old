@@ -1,5 +1,6 @@
 import React, {useEffect, useState} from 'react'
 import style from "./Data.module.scss";
+import TextField from "@mui/material/TextField";
 
 const Data = ({data, sellected}) => {
 
@@ -18,22 +19,38 @@ const Data = ({data, sellected}) => {
                         <div className={style.data}>
                             <div className={style.image}>
                                 <img
-                                     // width={'300px'}
                                      src={'./img_store/' + output.path}
                                      alt={'Нет картинки'}
                                 />
                             </div>
                             <div className={style.input}>
                                 <h4>Характеристики</h4>
-                                <input type={'text'}
-                                       defaultValue={output.name}
+
+                                <TextField
+                                  label="Деталь"
+                                  size="small"
+                                  defaultValue={output.name}
                                 />
-                                <input type={'text'}
-                                       defaultValue={output.code ? output.code : ''}
+                                <TextField
+                                  label="Название"
+                                  size="small"
+                                  defaultValue={output.code ? output.code : ''}
                                 />
-                                <input type={'text'}
-                                       defaultValue={output.description ? output.description : ''}
+                                <TextField
+                                  label="Обозначение технологии"
+                                  size="small"
+                                  defaultValue={output.description ? output.description : ''}
                                 />
+
+                                {/*<input type={'text'}*/}
+                                {/*       defaultValue={output.name}*/}
+                                {/*/>*/}
+                                {/*<input type={'text'}*/}
+                                {/*       defaultValue={output.code ? output.code : ''}*/}
+                                {/*/>*/}
+                                {/*<input type={'text'}*/}
+                                {/*       defaultValue={output.description ? output.description : ''}*/}
+                                {/*/>*/}
                             </div>
 
                         </div>

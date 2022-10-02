@@ -9,10 +9,10 @@ const initialState = {
             url: '',
             code: 111
         },
-        {
-            url: 'detail',
-            code: 111
-        },
+        // {
+        //     url: 'detail',
+        //     code: 111
+        // },
         {
             url: 'review',
             code: 111
