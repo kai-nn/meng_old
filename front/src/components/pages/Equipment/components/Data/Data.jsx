@@ -2,65 +2,48 @@ import React, {useEffect, useState} from 'react'
 import style from "./Data.module.scss";
 import TextField from "@mui/material/TextField";
 
+
 const Data = ({data, sellected}) => {
-
-    const [output, setOutput] = useState(null)
-
-    useEffect(() => {
-        setOutput(data?.find(el => el.id === sellected))
-    }, [data, sellected])
-
-
+    // console.log(data)
     return (
         <>
             {
-                output
-                    ? (
-                        <div className={style.data}>
-                            <div className={style.image}>
-                                <img
-                                     src={'./img_store/' + output.path}
-                                     alt={'Нет картинки'}
-                                />
-                            </div>
-                            <div className={style.input}>
-                                <h4>Характеристики</h4>
+                data && (
 
-                                <TextField
-                                  label="Деталь"
-                                  size="small"
-                                  defaultValue={output.name}
-                                />
-                                <TextField
-                                  label="Название"
-                                  size="small"
-                                  defaultValue={output.code ? output.code : ''}
-                                />
-                                <TextField
-                                  label="Обозначение технологии"
-                                  size="small"
-                                  defaultValue={output.description ? output.description : ''}
-                                />
+                    <div className={style.data}>
 
-                                {/*<input type={'text'}*/}
-                                {/*       defaultValue={output.name}*/}
-                                {/*/>*/}
-                                {/*<input type={'text'}*/}
-                                {/*       defaultValue={output.code ? output.code : ''}*/}
-                                {/*/>*/}
-                                {/*<input type={'text'}*/}
-                                {/*       defaultValue={output.description ? output.description : ''}*/}
-                                {/*/>*/}
-                            </div>
-
+                        <div className={style.image}>
+                            <img
+                                src={'./img_store/' + data[sellected-1].path}
+                                alt={'Нет картинки'}
+                            />
                         </div>
-                    )
-                    : (
-                        <>
-                            Данные отсутствуют!
-                        </>
-                    )
+
+                        <div className={style.input}>
+                            <h4>Характеристики</h4>
+
+                            <TextField
+                                label="Наименование"
+                                size="small"
+                                value={data[sellected-1].name}
+                            />
+                            <TextField
+                                label="Обозначение"
+                                size="small"
+                                value={data[sellected-1].code ? data[sellected-1].code : ''}
+                            />
+                            <TextField
+                                label="Описание"
+                                size="small"
+                                value={data[sellected-1].description ? data[sellected-1].description : ''}
+                            />
+                        </div>
+
+                    </div>
+                )
             }
+
+            {!data && <>Данные отсутствуют!</>}
         </>
     )
 }

@@ -1,6 +1,6 @@
 .frame {
   display: flex;
-  height: 82vh;
+  height: 79vh;
   border: 1px solid gainsboro;
   border-radius: 0 0 5px 5px;
 }
@@ -23,7 +23,6 @@
 @media screen and (max-width: 480px) {
   .frame {
     display: block;
-    height: 100%;
   }
   .list {
     width: 100%;

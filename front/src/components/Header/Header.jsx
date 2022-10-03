@@ -73,7 +73,7 @@ const Header = () => {
             </div>
 
             <div className={press ? style.role_activated : style.role}>
-                <div className={style.role__text}>
+                <div className={style.role__text} onClick={() => setPress(false)}>
                     <span className={style.role__fio}>
                         {menuData.user && menuData.user.last_name + ' ' + menuData.user.first_name}
                     </span>
