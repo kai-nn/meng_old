@@ -17,14 +17,13 @@
   width: 100%;
   height: 100%;
   padding: 5px;
-  //background-color: lightgreen;
   overflow-y: scroll;
 }
 
 @media screen and (max-width: 480px){
   .frame{
     display: block;
-    //height: 100%;
+    border: none;
   }
 
   .list {

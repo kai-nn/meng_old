@@ -23,6 +23,7 @@
 @media screen and (max-width: 480px) {
   .frame {
     display: block;
+    border: none;
   }
   .list {
     width: 100%;

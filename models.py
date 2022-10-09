@@ -169,15 +169,11 @@ class Oper(db.Model):
 
 
 
-# class Eq_nodes(db.Model):                                      # оснащение
-#     id = db.Column(db.Integer, primary_key=True)
-#
-#     name = db.Column(db.String(100))
 
 
 class Equipment(db.Model):                                      # оснащение
     id = db.Column(db.Integer, primary_key=True)
-    name = db.Column(db.String(100))                            # additional - вспомогательный, prisp - приспособление, ...
+    name = db.Column(db.String(100))                            # краткое наименование
     type = db.Column(db.String(20))                             # тип данных
     description = db.Column(db.String(200))                     # полное описание
     code = db.Column(db.String(100))                            # шифр, условный код
@@ -185,12 +181,11 @@ class Equipment(db.Model):                                      # оснащен
     path = db.Column(db.String(100))                            # путь к картинке
     data_added = db.Column(db.String(10))                       # дата добавления
 
-    nodes = db.Column(db.Text)
-    main_characteristic = db.Column(db.Text)                    # главная характеристика (для доп. фильтрации, ...)
+    nodes = db.Column(db.Text)                                  # ID потомков
+    options = db.Column(db.Text)                                # дополнительные характеристики
 
     relevance = db.Column(db.Boolean)                           # True - актуально, False - аннулировано
     added_id = db.Column(db.Integer, db.ForeignKey('user.id'))  # ID user добавившего
-    collapsed = db.Column(db.Boolean)                           # True - свернуто
     is_group = db.Column(db.Boolean)                            # True - группа, False - элемент
 
 
@@ -252,14 +247,9 @@ class OperSchema(ma.SQLAlchemyAutoSchema):
         include_fk = True
 
 
-# class Equipment_positionSchema(ma.SQLAlchemyAutoSchema):
-#     class Meta:
-#         model = Equipment_position
-#         include_fk = True
+
 
 class EquipmentSchema(ma.SQLAlchemyAutoSchema):
     class Meta:
         model = Equipment
         include_fk = True
-
-    # position = ma.Nested(Equipment_positionSchema)

@@ -15,7 +15,7 @@ function useAxios(url, method='get', value={}) {
         // отмена сетевого запроса в случае преднамеренного null
         if(value === null) return
 
-        console.log('%c changeData', 'color: blue;')
+        // console.log('%c changeData', 'color: blue;')
         axios({
                 url: url,
                 method: method,

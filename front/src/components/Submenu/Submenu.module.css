@@ -1,9 +1,9 @@
 .sub_menu {
   display: flex;
-  background-color: #ebebeb;
+  flex-wrap: wrap;
+  background-color: rgb(235, 235, 235);
   border-radius: 3px;
   box-shadow: 1px 1px 1px lightgray;
-  flex-wrap: wrap;
 }
 
 .group_2 {
@@ -37,6 +37,9 @@
   .group_2 {
     order: 99;
   }
+}
+.btn {
+  color: red;
 }
 
 /*# sourceMappingURL=Submenu.module.css.map */

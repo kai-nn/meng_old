@@ -224,7 +224,6 @@ def equipment():
         eq = Equipment.query.all()
         equipment = []
         for e in eq:
-            # equipment += [eval(e.position)]
             equipment += [{
                 'id': e.id,
                 'name': e.name,
@@ -236,16 +235,16 @@ def equipment():
                 'data_added': e.data_added,
 
                 'nodes': eval(e.nodes),
-                'main_characteristic': eval(e.main_characteristic),
+                'options': eval(e.options),
 
                 'relevance': e.relevance,
                 'added_id': e.added_id,
-                'collapsed': e.collapsed,
+                'collapsed': True,
                 'is_group': e.is_group,
             }]
-        equipment_schema = EquipmentSchema(many=True)
-        response = equipment_schema.dump(equipment)
-        pprint(response)
+        # equipment_schema = EquipmentSchema(many=True)
+        # response = equipment_schema.dump(equipment)
+        # pprint(response)
         return equipment
 
 

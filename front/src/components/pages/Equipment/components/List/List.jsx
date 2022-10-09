@@ -1,67 +1,77 @@
-import React, {useEffect, useState} from 'react'
+import React, {useEffect} from 'react'
 import style from './List.module.scss'
 import ExpandLessIcon from '@mui/icons-material/ExpandLess';
 import ExpandMoreIcon from '@mui/icons-material/ExpandMore';
+import {useDispatch, useSelector} from "react-redux";
+import {setList, setSelected, changeData} from "../../../../../store/equipment/equipmentSlice";
 
 
-const List = ({data, sellected, setSellected}) => {
+const List = () => {
 
-    let res = []
-    let nesting = -1
-    const [d, setD] = useState(data)
+    const dispatch = useDispatch()
+    const selected = useSelector(state => state.equipment.selected)
+    const data = useSelector(state => state.equipment.data)
+    const list = useSelector(state => state.equipment.list)
 
-    const createTree = (object, parrent=1) => {
-        nesting++
-        object.nodes.map(n => {
-            const { id, name, type, collapsed, is_group } = data[n-1]
-            res.push(
-                {
-                    id: id,
-                    name: name,
-                    type: type,
-                    collapsed: collapsed,
-                    nesting: nesting,
-                    parrent: parrent,
-                    is_group: is_group,
+
+    function createList(object) {
+        let res = []
+        let nesting = -1
+        const chainReaction = (object, parrent = 1) => {
+            nesting++
+            object.nodes.map(n => {
+                const {id, name, type, collapsed, is_group} = data[n - 1]
+                res.push(
+                    {
+                        id: id,
+                        name: name,
+                        type: type,
+                        collapsed: collapsed,
+                        nesting: nesting,
+                        parrent: parrent,
+                        is_group: is_group,
+                    }
+                )
+                if (collapsed) {
+                    return
                 }
-            )
-            if (collapsed){
-                return
-            }
-            createTree(data[n-1], id)
-        })
-        nesting--
-        return res
+                chainReaction(data[n - 1], id)
+            })
+            nesting--
+            return res
+        }
+        return chainReaction(object)
     }
 
 
-    if(data != undefined) {
-        res = []
-        createTree(data[0])
-    }
+    useEffect(() => {
+        console.log('selected')
+    }, [selected])
+
+
+    // активация списка
+    useEffect(() => {
+        // console.log('data activation', data)
+        data && data.length && dispatch(setList( createList(data[0]) ))
+    }, [data])
+
 
     const activate = (id) => {
-        setSellected(id)
+        dispatch(setSelected(id))
     }
 
     const collaps = (id) => {
-        data[id-1].collapsed = !data[id-1].collapsed
-        res = []
-        createTree(data[id-1])
-        setD(data[id-1].collapsed)
+        dispatch(changeData( data[id - 1] ))
     }
-
 
 
     return (
         <>
-
             {
-                data != undefined &&
-                res.map(el => {
+                list?.map(el => {
                     const { id, name, type, collapsed, nesting, is_group } = el
                     const indent = nesting * 10 + 'px'
-                    const sell = id === sellected
+                    const sell = id === selected
                         ? style.str_sellected
                         : style.str
                     return (

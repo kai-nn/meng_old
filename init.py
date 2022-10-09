@@ -184,11 +184,11 @@ equipment_bd = [
         'data_added': None,
 
         'nodes': [2, 4, 8],
-        'main_characteristic': None,
+        'options': None,
 
         'relevance': True,
         'added_id': None,
-        'collapsed': None,
+        # 'collapsed': None,
         'is_group': True,
     },
     {
@@ -201,11 +201,11 @@ equipment_bd = [
         'data_added': None,
 
         'nodes': [3],
-        'main_characteristic': None,
+        'options': None,
 
         'relevance': True,
         'added_id': None,
-        'collapsed': None,
+        # 'collapsed': None,
         'is_group': True,
     },
     {
@@ -218,11 +218,11 @@ equipment_bd = [
         'data_added': '20.09.22',
 
         'nodes': [],
-        'main_characteristic': {'detail': '11.4201.3080.00'},
+        'options': {'detail': '11.4201.3080.00'},
 
         'relevance': True,
         'added_id': None,
-        'collapsed': None,
+        # 'collapsed': None,
         'is_group': False,
     },
     {
@@ -235,11 +235,11 @@ equipment_bd = [
         'data_added': '20.09.22',
 
         'nodes': [5, 6],
-        'main_characteristic': None,
+        'options': None,
 
         'relevance': True,
         'added_id': None,
-        'collapsed': None,
+        # 'collapsed': None,
         'is_group': True,
     },
     {
@@ -252,11 +252,11 @@ equipment_bd = [
         'data_added': '20.01.90',
 
         'nodes': [],
-        'main_characteristic': {'len': 200, 'b*h': '30*30'},
+        'options': {'len': 200, 'b*h': '30*30'},
 
         'relevance': True,
         'added_id': None,
-        'collapsed': None,
+        # 'collapsed': None,
         'is_group': False,
     },
     {
@@ -269,11 +269,11 @@ equipment_bd = [
         'data_added': '20.01.88',
 
         'nodes': [7],
-        'main_characteristic': None,
+        'options': None,
 
         'relevance': True,
         'added_id': None,
-        'collapsed': None,
+        # 'collapsed': None,
         'is_group': True,
     },
     {
@@ -286,11 +286,11 @@ equipment_bd = [
         'data_added': '20.01.21',
 
         'nodes': [],
-        'main_characteristic': {'len': 150, 'diam': 32},
+        'options': {'len': 150, 'diam': 32},
 
         'relevance': True,
         'added_id': None,
-        'collapsed': None,
+        # 'collapsed': None,
         'is_group': False,
     },
 
@@ -304,11 +304,11 @@ equipment_bd = [
         'data_added': '20.09.22',
 
         'nodes': [],
-        'main_characteristic': {'detail': '11.4201.3080.00'},
+        'options': {'detail': '11.4201.3080.00'},
 
         'relevance': True,
         'added_id': None,
-        'collapsed': None,
+        # 'collapsed': None,
         'is_group': True,
     },
 ]
@@ -327,11 +327,11 @@ if len(Equipment.query.all()) <= 0:
             data_added=equipment_bd[index]['data_added'],
 
             nodes=str(equipment_bd[index]['nodes']),
-            main_characteristic=str(equipment_bd[index]['main_characteristic']),
+            options=str(equipment_bd[index]['options']),
 
             relevance=equipment_bd[index]['relevance'],
             user=user,
-            collapsed=equipment_bd[index]['collapsed'],
+            # collapsed=equipment_bd[index]['collapsed'],
             is_group=equipment_bd[index]['is_group'],
         )
         index += 1
