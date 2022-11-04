@@ -5,6 +5,10 @@
   border-radius: 3px;
   box-shadow: 1px 1px 1px lightgray;
 }
+.sub_menu svg {
+  width: 20px;
+  height: 20px;
+}
 
 .group_2 {
   display: flex;
@@ -24,6 +28,8 @@
 
 .group_3 {
   margin-left: auto;
+  display: flex;
+  align-items: center;
 }
 
 @media screen and (max-width: 480px) {
@@ -37,9 +43,6 @@
   .group_2 {
     order: 99;
   }
-}
-.btn {
-  color: red;
 }
 
 /*# sourceMappingURL=Submenu.module.css.map */

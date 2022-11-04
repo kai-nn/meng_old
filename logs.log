@@ -9709,3 +9709,2364 @@ INFO | 127.0.0.1 - - [09/Oct/2022 19:27:57] "[33mGET /img_store/equipment/prisp
 INFO | 127.0.0.1 - - [09/Oct/2022 19:27:59] "[33mGET /img_store/equipment/prisp_1.png HTTP/1.1[0m" 404 -
 INFO | 127.0.0.1 - - [09/Oct/2022 19:27:59] "[33mGET /img_store/equipment/tool_1.png HTTP/1.1[0m" 404 -
 INFO | 127.0.0.1 - - [09/Oct/2022 19:28:00] "[36mGET /img_store/equipment/default_control.png HTTP/1.1[0m" 304 -
+INFO | 127.0.0.1 - - [09/Oct/2022 19:47:51] "[36mGET /img_store/equipment/default_prisp.png HTTP/1.1[0m" 304 -
+INFO | 127.0.0.1 - - [09/Oct/2022 19:47:51] "[33mGET /img_store/equipment/prisp_1.png HTTP/1.1[0m" 404 -
+INFO | 127.0.0.1 - - [09/Oct/2022 19:47:53] "[36mGET /img_store/equipment/default_tool.png HTTP/1.1[0m" 304 -
+INFO | 127.0.0.1 - - [09/Oct/2022 19:47:55] "[33mGET /img_store/equipment/tool_2.png HTTP/1.1[0m" 404 -
+INFO | 127.0.0.1 - - [10/Oct/2022 19:03:52] "[36mGET /img_store/equipment/default_tool.png HTTP/1.1[0m" 304 -
+INFO | 127.0.0.1 - - [10/Oct/2022 19:03:54] "[33mGET /img_store/equipment/tool_2.png HTTP/1.1[0m" 404 -
+INFO | 127.0.0.1 - - [10/Oct/2022 19:03:57] "[36mGET /img_store/equipment/default_control.png HTTP/1.1[0m" 304 -
+INFO | 127.0.0.1 - - [10/Oct/2022 19:03:59] "[36mGET /img_store/equipment/default_prisp.png HTTP/1.1[0m" 304 -
+INFO | 127.0.0.1 - - [10/Oct/2022 19:04:02] "[33mGET /img_store/equipment/prisp_1.png HTTP/1.1[0m" 404 -
+INFO | 127.0.0.1 - - [10/Oct/2022 19:04:03] "[33mGET /img_store/equipment/tool_1.png HTTP/1.1[0m" 404 -
+INFO | 127.0.0.1 - - [10/Oct/2022 19:04:03] "[33mGET /img_store/equipment/tool_2.png HTTP/1.1[0m" 404 -
+INFO | 127.0.0.1 - - [10/Oct/2022 19:04:05] "[33mGET /img_store/equipment/tool_3.png HTTP/1.1[0m" 404 -
+INFO | 127.0.0.1 - - [10/Oct/2022 19:05:32] "POST /list_tech HTTP/1.1" 200 -
+INFO | 127.0.0.1 - - [10/Oct/2022 19:05:36] "POST /list_tech HTTP/1.1" 200 -
+INFO | 127.0.0.1 - - [10/Oct/2022 19:05:37] "POST /list_tech HTTP/1.1" 200 -
+INFO | 127.0.0.1 - - [10/Oct/2022 19:05:56] "[36mGET /img_store/equipment/default_control.png HTTP/1.1[0m" 304 -
+INFO | 127.0.0.1 - - [10/Oct/2022 19:05:56] "GET /equipment HTTP/1.1" 200 -
+INFO | 127.0.0.1 - - [10/Oct/2022 19:06:02] "GET /equipment HTTP/1.1" 200 -
+INFO | 127.0.0.1 - - [10/Oct/2022 19:06:06] "POST /list_tech HTTP/1.1" 200 -
+INFO | 127.0.0.1 - - [10/Oct/2022 19:06:08] "POST /list_tech HTTP/1.1" 200 -
+INFO | 127.0.0.1 - - [10/Oct/2022 19:06:09] "[36mGET /img_store/equipment/default_control.png HTTP/1.1[0m" 304 -
+INFO | 127.0.0.1 - - [10/Oct/2022 19:06:09] "GET /equipment HTTP/1.1" 200 -
+INFO | 127.0.0.1 - - [10/Oct/2022 19:06:17] "GET /equipment HTTP/1.1" 200 -
+INFO | 127.0.0.1 - - [10/Oct/2022 19:19:18] "[36mGET /img_store/equipment/default_tool.png HTTP/1.1[0m" 304 -
+INFO | 127.0.0.1 - - [10/Oct/2022 19:19:20] "[33mGET /img_store/equipment/tool_2.png HTTP/1.1[0m" 404 -
+INFO | 127.0.0.1 - - [10/Oct/2022 19:19:23] "[36mGET /img_store/equipment/default_prisp.png HTTP/1.1[0m" 304 -
+INFO | 127.0.0.1 - - [10/Oct/2022 19:19:25] "[33mGET /img_store/equipment/prisp_1.png HTTP/1.1[0m" 404 -
+INFO | 127.0.0.1 - - [10/Oct/2022 19:19:26] "[33mGET /img_store/equipment/tool_1.png HTTP/1.1[0m" 404 -
+INFO | 127.0.0.1 - - [10/Oct/2022 19:19:26] "[33mGET /img_store/equipment/tool_2.png HTTP/1.1[0m" 404 -
+INFO | 127.0.0.1 - - [10/Oct/2022 19:19:27] "[33mGET /img_store/equipment/tool_3.png HTTP/1.1[0m" 404 -
+INFO | 127.0.0.1 - - [10/Oct/2022 19:19:34] "[36mGET /img_store/equipment/default_prisp.png HTTP/1.1[0m" 304 -
+INFO | 127.0.0.1 - - [10/Oct/2022 19:20:07] "[33mGET /img_store/equipment/prisp_1.png HTTP/1.1[0m" 404 -
+INFO | 127.0.0.1 - - [10/Oct/2022 19:20:07] "[36mGET /img_store/equipment/default_tool.png HTTP/1.1[0m" 304 -
+INFO | 127.0.0.1 - - [10/Oct/2022 19:20:08] "[33mGET /img_store/equipment/tool_1.png HTTP/1.1[0m" 404 -
+INFO | 127.0.0.1 - - [10/Oct/2022 19:21:51] "[36mGET /img_store/equipment/default_tool.png HTTP/1.1[0m" 304 -
+INFO | 127.0.0.1 - - [10/Oct/2022 19:21:52] "[33mGET /img_store/equipment/prisp_1.png HTTP/1.1[0m" 404 -
+INFO | 127.0.0.1 - - [11/Oct/2022 10:46:03] "[33mGET /img_store/equipment/prisp_1.png HTTP/1.1[0m" 404 -
+INFO | 127.0.0.1 - - [11/Oct/2022 10:46:03] "[36mGET /img_store/equipment/default_prisp.png HTTP/1.1[0m" 304 -
+INFO | 127.0.0.1 - - [11/Oct/2022 10:46:05] "[33mGET /img_store/equipment/tool_2.png HTTP/1.1[0m" 404 -
+INFO | 127.0.0.1 - - [11/Oct/2022 10:46:05] "[33mGET /img_store/equipment/tool_3.png HTTP/1.1[0m" 404 -
+INFO | 127.0.0.1 - - [11/Oct/2022 10:46:05] "[36mGET /img_store/equipment/default_control.png HTTP/1.1[0m" 304 -
+INFO |  * Running on http://127.0.0.1:5000 (Press CTRL+C to quit)
+INFO |  * Running on http://127.0.0.1:5000 (Press CTRL+C to quit)
+INFO | 127.0.0.1 - - [16/Oct/2022 09:53:02] "POST /location HTTP/1.1" 200 -
+INFO | 127.0.0.1 - - [16/Oct/2022 09:53:10] "GET /equipment HTTP/1.1" 200 -
+INFO | 127.0.0.1 - - [16/Oct/2022 09:53:11] "GET /img_store/equipment/default_prisp.png HTTP/1.1" 200 -
+INFO | 127.0.0.1 - - [16/Oct/2022 09:53:13] "GET /img_store/equipment/default_tool.png HTTP/1.1" 200 -
+INFO | 127.0.0.1 - - [16/Oct/2022 09:53:14] "GET /img_store/equipment/default_control.png HTTP/1.1" 200 -
+INFO | 127.0.0.1 - - [16/Oct/2022 09:53:17] "[33mGET /img_store/equipment/tool_2.png HTTP/1.1[0m" 404 -
+INFO | 127.0.0.1 - - [16/Oct/2022 09:53:18] "[36mGET /img_store/equipment/default_control.png HTTP/1.1[0m" 304 -
+INFO | 127.0.0.1 - - [16/Oct/2022 09:53:19] "[36mGET /img_store/equipment/default_prisp.png HTTP/1.1[0m" 304 -
+INFO | 127.0.0.1 - - [16/Oct/2022 09:56:06] "GET /equipment HTTP/1.1" 200 -
+INFO | 127.0.0.1 - - [16/Oct/2022 09:56:06] "[36mGET /img_store/equipment/default_prisp.png HTTP/1.1[0m" 304 -
+INFO | 127.0.0.1 - - [16/Oct/2022 09:56:06] "POST /location HTTP/1.1" 200 -
+INFO | 127.0.0.1 - - [16/Oct/2022 09:56:09] "[33mGET /img_store/equipment/prisp_1.png HTTP/1.1[0m" 404 -
+INFO | 127.0.0.1 - - [16/Oct/2022 09:56:12] "[36mGET /img_store/equipment/default_tool.png HTTP/1.1[0m" 304 -
+INFO | 127.0.0.1 - - [16/Oct/2022 09:56:13] "[33mGET /img_store/equipment/tool_2.png HTTP/1.1[0m" 404 -
+INFO | 127.0.0.1 - - [16/Oct/2022 10:02:11] "GET /equipment HTTP/1.1" 200 -
+INFO | 127.0.0.1 - - [16/Oct/2022 10:02:11] "[36mGET /img_store/equipment/default_prisp.png HTTP/1.1[0m" 304 -
+INFO | 127.0.0.1 - - [16/Oct/2022 10:02:11] "POST /location HTTP/1.1" 200 -
+INFO | 127.0.0.1 - - [16/Oct/2022 10:03:30] "GET /equipment HTTP/1.1" 200 -
+INFO | 127.0.0.1 - - [16/Oct/2022 10:03:30] "GET /img_store/equipment/default_prisp.png HTTP/1.1" 200 -
+INFO | 127.0.0.1 - - [16/Oct/2022 10:03:30] "POST /location HTTP/1.1" 200 -
+INFO | 127.0.0.1 - - [16/Oct/2022 10:03:38] "GET /img_store/equipment/default_tool.png HTTP/1.1" 200 -
+INFO | 127.0.0.1 - - [16/Oct/2022 10:04:01] "[33mGET /img_store/equipment/tool_2.png HTTP/1.1[0m" 404 -
+INFO | 127.0.0.1 - - [16/Oct/2022 10:04:05] "GET /img_store/equipment/default_control.png HTTP/1.1" 200 -
+INFO | 127.0.0.1 - - [16/Oct/2022 10:04:30] "GET /img_store/equipment/default_prisp.png HTTP/1.1" 200 -
+INFO | 127.0.0.1 - - [16/Oct/2022 10:04:31] "GET /img_store/equipment/default_tool.png HTTP/1.1" 200 -
+INFO | 127.0.0.1 - - [16/Oct/2022 10:04:33] "GET /img_store/equipment/default_control.png HTTP/1.1" 200 -
+INFO | 127.0.0.1 - - [16/Oct/2022 10:05:10] "GET /img_store/equipment/default_prisp.png HTTP/1.1" 200 -
+INFO | 127.0.0.1 - - [16/Oct/2022 10:05:12] "GET /img_store/equipment/default_tool.png HTTP/1.1" 200 -
+INFO | 127.0.0.1 - - [16/Oct/2022 10:05:15] "GET /img_store/equipment/default_control.png HTTP/1.1" 200 -
+ERROR | Exception on /equipment [GET]
+Traceback (most recent call last):
+  File "D:\MyProject\microerp\env\lib\site-packages\pymysql\connections.py", line 732, in _read_bytes
+    data = self._rfile.read(num_bytes)
+  File "C:\Python38\lib\socket.py", line 669, in readinto
+    return self._sock.recv_into(b)
+ConnectionAbortedError: [WinError 10053] Программа на вашем хост-компьютере разорвала установленное подключение
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "D:\MyProject\microerp\env\lib\site-packages\sqlalchemy\engine\base.py", line 1819, in _execute_context
+    self.dialect.do_execute(
+  File "D:\MyProject\microerp\env\lib\site-packages\sqlalchemy\engine\default.py", line 732, in do_execute
+    cursor.execute(statement, parameters)
+  File "D:\MyProject\microerp\env\lib\site-packages\pymysql\cursors.py", line 148, in execute
+    result = self._query(query)
+  File "D:\MyProject\microerp\env\lib\site-packages\pymysql\cursors.py", line 310, in _query
+    conn.query(q)
+  File "D:\MyProject\microerp\env\lib\site-packages\pymysql\connections.py", line 548, in query
+    self._affected_rows = self._read_query_result(unbuffered=unbuffered)
+  File "D:\MyProject\microerp\env\lib\site-packages\pymysql\connections.py", line 775, in _read_query_result
+    result.read()
+  File "D:\MyProject\microerp\env\lib\site-packages\pymysql\connections.py", line 1156, in read
+    first_packet = self.connection._read_packet()
+  File "D:\MyProject\microerp\env\lib\site-packages\pymysql\connections.py", line 692, in _read_packet
+    packet_header = self._read_bytes(4)
+  File "D:\MyProject\microerp\env\lib\site-packages\pymysql\connections.py", line 738, in _read_bytes
+    raise err.OperationalError(
+pymysql.err.OperationalError: (2013, 'Lost connection to MySQL server during query ([WinError 10053] Программа на вашем хост-компьютере разорвала установленное подключение)')
+
+The above exception was the direct cause of the following exception:
+
+Traceback (most recent call last):
+  File "D:\MyProject\microerp\env\lib\site-packages\flask\app.py", line 2525, in wsgi_app
+    response = self.full_dispatch_request()
+  File "D:\MyProject\microerp\env\lib\site-packages\flask\app.py", line 1822, in full_dispatch_request
+    rv = self.handle_user_exception(e)
+  File "D:\MyProject\microerp\env\lib\site-packages\flask\app.py", line 1820, in full_dispatch_request
+    rv = self.dispatch_request()
+  File "D:\MyProject\microerp\env\lib\site-packages\flask\app.py", line 1796, in dispatch_request
+    return self.ensure_sync(self.view_functions[rule.endpoint])(**view_args)
+  File "D:\MyProject\microerp\app.py", line 224, in equipment
+    eq = Equipment.query.all()
+  File "D:\MyProject\microerp\env\lib\site-packages\sqlalchemy\orm\query.py", line 2768, in all
+    return self._iter().all()
+  File "D:\MyProject\microerp\env\lib\site-packages\sqlalchemy\orm\query.py", line 2903, in _iter
+    result = self.session.execute(
+  File "D:\MyProject\microerp\env\lib\site-packages\sqlalchemy\orm\session.py", line 1712, in execute
+    result = conn._execute_20(statement, params or {}, execution_options)
+  File "D:\MyProject\microerp\env\lib\site-packages\sqlalchemy\engine\base.py", line 1631, in _execute_20
+    return meth(self, args_10style, kwargs_10style, execution_options)
+  File "D:\MyProject\microerp\env\lib\site-packages\sqlalchemy\sql\elements.py", line 332, in _execute_on_connection
+    return connection._execute_clauseelement(
+  File "D:\MyProject\microerp\env\lib\site-packages\sqlalchemy\engine\base.py", line 1498, in _execute_clauseelement
+    ret = self._execute_context(
+  File "D:\MyProject\microerp\env\lib\site-packages\sqlalchemy\engine\base.py", line 1862, in _execute_context
+    self._handle_dbapi_exception(
+  File "D:\MyProject\microerp\env\lib\site-packages\sqlalchemy\engine\base.py", line 2043, in _handle_dbapi_exception
+    util.raise_(
+  File "D:\MyProject\microerp\env\lib\site-packages\sqlalchemy\util\compat.py", line 208, in raise_
+    raise exception
+  File "D:\MyProject\microerp\env\lib\site-packages\sqlalchemy\engine\base.py", line 1819, in _execute_context
+    self.dialect.do_execute(
+  File "D:\MyProject\microerp\env\lib\site-packages\sqlalchemy\engine\default.py", line 732, in do_execute
+    cursor.execute(statement, parameters)
+  File "D:\MyProject\microerp\env\lib\site-packages\pymysql\cursors.py", line 148, in execute
+    result = self._query(query)
+  File "D:\MyProject\microerp\env\lib\site-packages\pymysql\cursors.py", line 310, in _query
+    conn.query(q)
+  File "D:\MyProject\microerp\env\lib\site-packages\pymysql\connections.py", line 548, in query
+    self._affected_rows = self._read_query_result(unbuffered=unbuffered)
+  File "D:\MyProject\microerp\env\lib\site-packages\pymysql\connections.py", line 775, in _read_query_result
+    result.read()
+  File "D:\MyProject\microerp\env\lib\site-packages\pymysql\connections.py", line 1156, in read
+    first_packet = self.connection._read_packet()
+  File "D:\MyProject\microerp\env\lib\site-packages\pymysql\connections.py", line 692, in _read_packet
+    packet_header = self._read_bytes(4)
+  File "D:\MyProject\microerp\env\lib\site-packages\pymysql\connections.py", line 738, in _read_bytes
+    raise err.OperationalError(
+sqlalchemy.exc.OperationalError: (pymysql.err.OperationalError) (2013, 'Lost connection to MySQL server during query ([WinError 10053] Программа на вашем хост-компьютере разорвала установленное подключение)')
+[SQL: SELECT equipment.id AS equipment_id, equipment.name AS equipment_name, equipment.type AS equipment_type, equipment.description AS equipment_description, equipment.code AS equipment_code, equipment.firm AS equipment_firm, equipment.path AS equipment_path, equipment.data_added AS equipment_data_added, equipment.nodes AS equipment_nodes, equipment.options AS equipment_options, equipment.relevance AS equipment_relevance, equipment.added_id AS equipment_added_id, equipment.is_group AS equipment_is_group 
+FROM equipment]
+(Background on this error at: https://sqlalche.me/e/14/e3q8)
+INFO | 127.0.0.1 - - [16/Oct/2022 10:06:49] "[35m[1mGET /equipment HTTP/1.1[0m" 500 -
+INFO | 127.0.0.1 - - [16/Oct/2022 10:06:54] "GET /equipment HTTP/1.1" 200 -
+INFO | 127.0.0.1 - - [16/Oct/2022 10:06:55] "GET /img_store/equipment/default_prisp.png HTTP/1.1" 200 -
+INFO | 127.0.0.1 - - [16/Oct/2022 10:06:58] "POST /location HTTP/1.1" 200 -
+INFO | 127.0.0.1 - - [16/Oct/2022 10:07:22] "GET /img_store/equipment/default_tool.png HTTP/1.1" 200 -
+INFO | 127.0.0.1 - - [16/Oct/2022 10:07:59] "[33mGET /img_store/equipment/prisp_1.png HTTP/1.1[0m" 404 -
+INFO | 127.0.0.1 - - [16/Oct/2022 10:09:01] "GET /equipment HTTP/1.1" 200 -
+INFO | 127.0.0.1 - - [16/Oct/2022 10:09:01] "GET /img_store/equipment/default_prisp.png HTTP/1.1" 200 -
+INFO | 127.0.0.1 - - [16/Oct/2022 10:09:01] "POST /location HTTP/1.1" 200 -
+INFO | 127.0.0.1 - - [16/Oct/2022 10:09:07] "GET /img_store/equipment/default_control.png HTTP/1.1" 200 -
+INFO | 127.0.0.1 - - [16/Oct/2022 10:09:16] "GET /img_store/equipment/default_tool.png HTTP/1.1" 200 -
+INFO | 127.0.0.1 - - [16/Oct/2022 11:17:43] "[33mGET /babel/parser/lib/index.js HTTP/1.1[0m" 404 -
+INFO | 127.0.0.1 - - [16/Oct/2022 12:22:30] "GET /equipment HTTP/1.1" 200 -
+INFO | 127.0.0.1 - - [16/Oct/2022 12:22:30] "GET /img_store/equipment/default_prisp.png HTTP/1.1" 200 -
+INFO | 127.0.0.1 - - [16/Oct/2022 12:22:30] "POST /location HTTP/1.1" 200 -
+INFO | 127.0.0.1 - - [16/Oct/2022 12:23:12] "GET /equipment HTTP/1.1" 200 -
+INFO | 127.0.0.1 - - [16/Oct/2022 12:23:12] "GET /img_store/equipment/default_prisp.png HTTP/1.1" 200 -
+INFO | 127.0.0.1 - - [16/Oct/2022 12:23:12] "POST /location HTTP/1.1" 200 -
+INFO | 127.0.0.1 - - [16/Oct/2022 12:23:40] "GET /equipment HTTP/1.1" 200 -
+INFO | 127.0.0.1 - - [16/Oct/2022 12:23:40] "GET /img_store/equipment/default_prisp.png HTTP/1.1" 200 -
+INFO | 127.0.0.1 - - [16/Oct/2022 12:23:40] "POST /location HTTP/1.1" 200 -
+INFO | 127.0.0.1 - - [16/Oct/2022 12:24:22] "GET /equipment HTTP/1.1" 200 -
+INFO | 127.0.0.1 - - [16/Oct/2022 12:24:22] "GET /img_store/equipment/default_prisp.png HTTP/1.1" 200 -
+INFO | 127.0.0.1 - - [16/Oct/2022 12:24:23] "POST /location HTTP/1.1" 200 -
+INFO | 127.0.0.1 - - [16/Oct/2022 12:24:26] "GET /equipment HTTP/1.1" 200 -
+INFO | 127.0.0.1 - - [16/Oct/2022 12:24:26] "GET /img_store/equipment/default_prisp.png HTTP/1.1" 200 -
+INFO | 127.0.0.1 - - [16/Oct/2022 12:24:26] "POST /location HTTP/1.1" 200 -
+INFO | 127.0.0.1 - - [16/Oct/2022 12:24:28] "GET /img_store/equipment/default_tool.png HTTP/1.1" 200 -
+INFO | 127.0.0.1 - - [16/Oct/2022 12:24:29] "GET /img_store/equipment/default_prisp.png HTTP/1.1" 200 -
+INFO | 127.0.0.1 - - [16/Oct/2022 12:35:55] "GET /equipment HTTP/1.1" 200 -
+INFO | 127.0.0.1 - - [16/Oct/2022 12:35:55] "GET /img_store/equipment/default_prisp.png HTTP/1.1" 200 -
+INFO | 127.0.0.1 - - [16/Oct/2022 12:35:56] "POST /location HTTP/1.1" 200 -
+INFO | 127.0.0.1 - - [16/Oct/2022 12:36:26] "GET /equipment HTTP/1.1" 200 -
+INFO | 127.0.0.1 - - [16/Oct/2022 12:36:26] "GET /img_store/equipment/default_prisp.png HTTP/1.1" 200 -
+INFO | 127.0.0.1 - - [16/Oct/2022 12:36:26] "POST /location HTTP/1.1" 200 -
+INFO | 127.0.0.1 - - [16/Oct/2022 12:38:54] "GET /equipment HTTP/1.1" 200 -
+INFO | 127.0.0.1 - - [16/Oct/2022 12:38:54] "GET /img_store/equipment/default_prisp.png HTTP/1.1" 200 -
+INFO | 127.0.0.1 - - [16/Oct/2022 12:38:54] "POST /location HTTP/1.1" 200 -
+INFO | 127.0.0.1 - - [16/Oct/2022 12:40:25] "GET /equipment HTTP/1.1" 200 -
+INFO | 127.0.0.1 - - [16/Oct/2022 12:40:25] "GET /img_store/equipment/default_prisp.png HTTP/1.1" 200 -
+INFO | 127.0.0.1 - - [16/Oct/2022 12:40:26] "POST /location HTTP/1.1" 200 -
+INFO | 127.0.0.1 - - [16/Oct/2022 12:41:24] "GET /equipment HTTP/1.1" 200 -
+INFO | 127.0.0.1 - - [16/Oct/2022 12:41:24] "GET /img_store/equipment/default_prisp.png HTTP/1.1" 200 -
+INFO | 127.0.0.1 - - [16/Oct/2022 12:41:24] "POST /location HTTP/1.1" 200 -
+ERROR | Exception on /equipment [GET]
+Traceback (most recent call last):
+  File "D:\MyProject\microerp\env\lib\site-packages\pymysql\connections.py", line 732, in _read_bytes
+    data = self._rfile.read(num_bytes)
+  File "C:\Python38\lib\socket.py", line 669, in readinto
+    return self._sock.recv_into(b)
+ConnectionAbortedError: [WinError 10053] Программа на вашем хост-компьютере разорвала установленное подключение
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "D:\MyProject\microerp\env\lib\site-packages\sqlalchemy\engine\base.py", line 1819, in _execute_context
+    self.dialect.do_execute(
+  File "D:\MyProject\microerp\env\lib\site-packages\sqlalchemy\engine\default.py", line 732, in do_execute
+    cursor.execute(statement, parameters)
+  File "D:\MyProject\microerp\env\lib\site-packages\pymysql\cursors.py", line 148, in execute
+    result = self._query(query)
+  File "D:\MyProject\microerp\env\lib\site-packages\pymysql\cursors.py", line 310, in _query
+    conn.query(q)
+  File "D:\MyProject\microerp\env\lib\site-packages\pymysql\connections.py", line 548, in query
+    self._affected_rows = self._read_query_result(unbuffered=unbuffered)
+  File "D:\MyProject\microerp\env\lib\site-packages\pymysql\connections.py", line 775, in _read_query_result
+    result.read()
+  File "D:\MyProject\microerp\env\lib\site-packages\pymysql\connections.py", line 1156, in read
+    first_packet = self.connection._read_packet()
+  File "D:\MyProject\microerp\env\lib\site-packages\pymysql\connections.py", line 692, in _read_packet
+    packet_header = self._read_bytes(4)
+  File "D:\MyProject\microerp\env\lib\site-packages\pymysql\connections.py", line 738, in _read_bytes
+    raise err.OperationalError(
+pymysql.err.OperationalError: (2013, 'Lost connection to MySQL server during query ([WinError 10053] Программа на вашем хост-компьютере разорвала установленное подключение)')
+
+The above exception was the direct cause of the following exception:
+
+Traceback (most recent call last):
+  File "D:\MyProject\microerp\env\lib\site-packages\flask\app.py", line 2525, in wsgi_app
+    response = self.full_dispatch_request()
+  File "D:\MyProject\microerp\env\lib\site-packages\flask\app.py", line 1822, in full_dispatch_request
+    rv = self.handle_user_exception(e)
+  File "D:\MyProject\microerp\env\lib\site-packages\flask\app.py", line 1820, in full_dispatch_request
+    rv = self.dispatch_request()
+  File "D:\MyProject\microerp\env\lib\site-packages\flask\app.py", line 1796, in dispatch_request
+    return self.ensure_sync(self.view_functions[rule.endpoint])(**view_args)
+  File "D:\MyProject\microerp\app.py", line 224, in equipment
+    eq = Equipment.query.all()
+  File "D:\MyProject\microerp\env\lib\site-packages\sqlalchemy\orm\query.py", line 2768, in all
+    return self._iter().all()
+  File "D:\MyProject\microerp\env\lib\site-packages\sqlalchemy\orm\query.py", line 2903, in _iter
+    result = self.session.execute(
+  File "D:\MyProject\microerp\env\lib\site-packages\sqlalchemy\orm\session.py", line 1712, in execute
+    result = conn._execute_20(statement, params or {}, execution_options)
+  File "D:\MyProject\microerp\env\lib\site-packages\sqlalchemy\engine\base.py", line 1631, in _execute_20
+    return meth(self, args_10style, kwargs_10style, execution_options)
+  File "D:\MyProject\microerp\env\lib\site-packages\sqlalchemy\sql\elements.py", line 332, in _execute_on_connection
+    return connection._execute_clauseelement(
+  File "D:\MyProject\microerp\env\lib\site-packages\sqlalchemy\engine\base.py", line 1498, in _execute_clauseelement
+    ret = self._execute_context(
+  File "D:\MyProject\microerp\env\lib\site-packages\sqlalchemy\engine\base.py", line 1862, in _execute_context
+    self._handle_dbapi_exception(
+  File "D:\MyProject\microerp\env\lib\site-packages\sqlalchemy\engine\base.py", line 2043, in _handle_dbapi_exception
+    util.raise_(
+  File "D:\MyProject\microerp\env\lib\site-packages\sqlalchemy\util\compat.py", line 208, in raise_
+    raise exception
+  File "D:\MyProject\microerp\env\lib\site-packages\sqlalchemy\engine\base.py", line 1819, in _execute_context
+    self.dialect.do_execute(
+  File "D:\MyProject\microerp\env\lib\site-packages\sqlalchemy\engine\default.py", line 732, in do_execute
+    cursor.execute(statement, parameters)
+  File "D:\MyProject\microerp\env\lib\site-packages\pymysql\cursors.py", line 148, in execute
+    result = self._query(query)
+  File "D:\MyProject\microerp\env\lib\site-packages\pymysql\cursors.py", line 310, in _query
+    conn.query(q)
+  File "D:\MyProject\microerp\env\lib\site-packages\pymysql\connections.py", line 548, in query
+    self._affected_rows = self._read_query_result(unbuffered=unbuffered)
+  File "D:\MyProject\microerp\env\lib\site-packages\pymysql\connections.py", line 775, in _read_query_result
+    result.read()
+  File "D:\MyProject\microerp\env\lib\site-packages\pymysql\connections.py", line 1156, in read
+    first_packet = self.connection._read_packet()
+  File "D:\MyProject\microerp\env\lib\site-packages\pymysql\connections.py", line 692, in _read_packet
+    packet_header = self._read_bytes(4)
+  File "D:\MyProject\microerp\env\lib\site-packages\pymysql\connections.py", line 738, in _read_bytes
+    raise err.OperationalError(
+sqlalchemy.exc.OperationalError: (pymysql.err.OperationalError) (2013, 'Lost connection to MySQL server during query ([WinError 10053] Программа на вашем хост-компьютере разорвала установленное подключение)')
+[SQL: SELECT equipment.id AS equipment_id, equipment.name AS equipment_name, equipment.type AS equipment_type, equipment.description AS equipment_description, equipment.code AS equipment_code, equipment.firm AS equipment_firm, equipment.path AS equipment_path, equipment.data_added AS equipment_data_added, equipment.nodes AS equipment_nodes, equipment.options AS equipment_options, equipment.relevance AS equipment_relevance, equipment.added_id AS equipment_added_id, equipment.is_group AS equipment_is_group 
+FROM equipment]
+(Background on this error at: https://sqlalche.me/e/14/e3q8)
+INFO | 127.0.0.1 - - [16/Oct/2022 12:45:24] "[35m[1mGET /equipment HTTP/1.1[0m" 500 -
+INFO | 127.0.0.1 - - [16/Oct/2022 12:45:24] "POST /location HTTP/1.1" 200 -
+INFO | 127.0.0.1 - - [16/Oct/2022 12:54:11] "GET /equipment HTTP/1.1" 200 -
+INFO | 127.0.0.1 - - [16/Oct/2022 12:54:11] "GET /img_store/equipment/default_prisp.png HTTP/1.1" 200 -
+INFO | 127.0.0.1 - - [16/Oct/2022 12:54:12] "POST /location HTTP/1.1" 200 -
+INFO | 127.0.0.1 - - [16/Oct/2022 13:05:38] "GET /equipment HTTP/1.1" 200 -
+INFO | 127.0.0.1 - - [16/Oct/2022 13:05:38] "GET /img_store/equipment/default_prisp.png HTTP/1.1" 200 -
+INFO | 127.0.0.1 - - [16/Oct/2022 13:05:38] "POST /location HTTP/1.1" 200 -
+ERROR | Exception on /equipment [GET]
+Traceback (most recent call last):
+  File "D:\MyProject\microerp\env\lib\site-packages\pymysql\connections.py", line 732, in _read_bytes
+    data = self._rfile.read(num_bytes)
+  File "C:\Python38\lib\socket.py", line 669, in readinto
+    return self._sock.recv_into(b)
+ConnectionAbortedError: [WinError 10053] Программа на вашем хост-компьютере разорвала установленное подключение
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "D:\MyProject\microerp\env\lib\site-packages\sqlalchemy\engine\base.py", line 1819, in _execute_context
+    self.dialect.do_execute(
+  File "D:\MyProject\microerp\env\lib\site-packages\sqlalchemy\engine\default.py", line 732, in do_execute
+    cursor.execute(statement, parameters)
+  File "D:\MyProject\microerp\env\lib\site-packages\pymysql\cursors.py", line 148, in execute
+    result = self._query(query)
+  File "D:\MyProject\microerp\env\lib\site-packages\pymysql\cursors.py", line 310, in _query
+    conn.query(q)
+  File "D:\MyProject\microerp\env\lib\site-packages\pymysql\connections.py", line 548, in query
+    self._affected_rows = self._read_query_result(unbuffered=unbuffered)
+  File "D:\MyProject\microerp\env\lib\site-packages\pymysql\connections.py", line 775, in _read_query_result
+    result.read()
+  File "D:\MyProject\microerp\env\lib\site-packages\pymysql\connections.py", line 1156, in read
+    first_packet = self.connection._read_packet()
+  File "D:\MyProject\microerp\env\lib\site-packages\pymysql\connections.py", line 692, in _read_packet
+    packet_header = self._read_bytes(4)
+  File "D:\MyProject\microerp\env\lib\site-packages\pymysql\connections.py", line 738, in _read_bytes
+    raise err.OperationalError(
+pymysql.err.OperationalError: (2013, 'Lost connection to MySQL server during query ([WinError 10053] Программа на вашем хост-компьютере разорвала установленное подключение)')
+
+The above exception was the direct cause of the following exception:
+
+Traceback (most recent call last):
+  File "D:\MyProject\microerp\env\lib\site-packages\flask\app.py", line 2525, in wsgi_app
+    response = self.full_dispatch_request()
+  File "D:\MyProject\microerp\env\lib\site-packages\flask\app.py", line 1822, in full_dispatch_request
+    rv = self.handle_user_exception(e)
+  File "D:\MyProject\microerp\env\lib\site-packages\flask\app.py", line 1820, in full_dispatch_request
+    rv = self.dispatch_request()
+  File "D:\MyProject\microerp\env\lib\site-packages\flask\app.py", line 1796, in dispatch_request
+    return self.ensure_sync(self.view_functions[rule.endpoint])(**view_args)
+  File "D:\MyProject\microerp\app.py", line 224, in equipment
+    eq = Equipment.query.all()
+  File "D:\MyProject\microerp\env\lib\site-packages\sqlalchemy\orm\query.py", line 2768, in all
+    return self._iter().all()
+  File "D:\MyProject\microerp\env\lib\site-packages\sqlalchemy\orm\query.py", line 2903, in _iter
+    result = self.session.execute(
+  File "D:\MyProject\microerp\env\lib\site-packages\sqlalchemy\orm\session.py", line 1712, in execute
+    result = conn._execute_20(statement, params or {}, execution_options)
+  File "D:\MyProject\microerp\env\lib\site-packages\sqlalchemy\engine\base.py", line 1631, in _execute_20
+    return meth(self, args_10style, kwargs_10style, execution_options)
+  File "D:\MyProject\microerp\env\lib\site-packages\sqlalchemy\sql\elements.py", line 332, in _execute_on_connection
+    return connection._execute_clauseelement(
+  File "D:\MyProject\microerp\env\lib\site-packages\sqlalchemy\engine\base.py", line 1498, in _execute_clauseelement
+    ret = self._execute_context(
+  File "D:\MyProject\microerp\env\lib\site-packages\sqlalchemy\engine\base.py", line 1862, in _execute_context
+    self._handle_dbapi_exception(
+  File "D:\MyProject\microerp\env\lib\site-packages\sqlalchemy\engine\base.py", line 2043, in _handle_dbapi_exception
+    util.raise_(
+  File "D:\MyProject\microerp\env\lib\site-packages\sqlalchemy\util\compat.py", line 208, in raise_
+    raise exception
+  File "D:\MyProject\microerp\env\lib\site-packages\sqlalchemy\engine\base.py", line 1819, in _execute_context
+    self.dialect.do_execute(
+  File "D:\MyProject\microerp\env\lib\site-packages\sqlalchemy\engine\default.py", line 732, in do_execute
+    cursor.execute(statement, parameters)
+  File "D:\MyProject\microerp\env\lib\site-packages\pymysql\cursors.py", line 148, in execute
+    result = self._query(query)
+  File "D:\MyProject\microerp\env\lib\site-packages\pymysql\cursors.py", line 310, in _query
+    conn.query(q)
+  File "D:\MyProject\microerp\env\lib\site-packages\pymysql\connections.py", line 548, in query
+    self._affected_rows = self._read_query_result(unbuffered=unbuffered)
+  File "D:\MyProject\microerp\env\lib\site-packages\pymysql\connections.py", line 775, in _read_query_result
+    result.read()
+  File "D:\MyProject\microerp\env\lib\site-packages\pymysql\connections.py", line 1156, in read
+    first_packet = self.connection._read_packet()
+  File "D:\MyProject\microerp\env\lib\site-packages\pymysql\connections.py", line 692, in _read_packet
+    packet_header = self._read_bytes(4)
+  File "D:\MyProject\microerp\env\lib\site-packages\pymysql\connections.py", line 738, in _read_bytes
+    raise err.OperationalError(
+sqlalchemy.exc.OperationalError: (pymysql.err.OperationalError) (2013, 'Lost connection to MySQL server during query ([WinError 10053] Программа на вашем хост-компьютере разорвала установленное подключение)')
+[SQL: SELECT equipment.id AS equipment_id, equipment.name AS equipment_name, equipment.type AS equipment_type, equipment.description AS equipment_description, equipment.code AS equipment_code, equipment.firm AS equipment_firm, equipment.path AS equipment_path, equipment.data_added AS equipment_data_added, equipment.nodes AS equipment_nodes, equipment.options AS equipment_options, equipment.relevance AS equipment_relevance, equipment.added_id AS equipment_added_id, equipment.is_group AS equipment_is_group 
+FROM equipment]
+(Background on this error at: https://sqlalche.me/e/14/e3q8)
+INFO | 127.0.0.1 - - [16/Oct/2022 13:09:01] "[35m[1mGET /equipment HTTP/1.1[0m" 500 -
+INFO | 127.0.0.1 - - [16/Oct/2022 13:09:02] "POST /location HTTP/1.1" 200 -
+INFO | 127.0.0.1 - - [16/Oct/2022 13:09:06] "GET /equipment HTTP/1.1" 200 -
+INFO | 127.0.0.1 - - [16/Oct/2022 13:09:06] "[36mGET /img_store/equipment/default_prisp.png HTTP/1.1[0m" 304 -
+INFO | 127.0.0.1 - - [16/Oct/2022 13:09:06] "POST /location HTTP/1.1" 200 -
+INFO | 127.0.0.1 - - [16/Oct/2022 13:09:07] "[36mGET /img_store/equipment/default_tool.png HTTP/1.1[0m" 304 -
+INFO | 127.0.0.1 - - [16/Oct/2022 13:09:08] "[36mGET /img_store/equipment/default_control.png HTTP/1.1[0m" 304 -
+INFO | 127.0.0.1 - - [16/Oct/2022 13:18:59] "GET /equipment HTTP/1.1" 200 -
+INFO | 127.0.0.1 - - [16/Oct/2022 13:18:59] "[36mGET /img_store/equipment/default_prisp.png HTTP/1.1[0m" 304 -
+INFO | 127.0.0.1 - - [16/Oct/2022 13:18:59] "POST /location HTTP/1.1" 200 -
+INFO | 127.0.0.1 - - [16/Oct/2022 13:47:26] "GET /equipment HTTP/1.1" 200 -
+INFO | 127.0.0.1 - - [16/Oct/2022 13:47:26] "[36mGET /img_store/equipment/default_prisp.png HTTP/1.1[0m" 304 -
+INFO | 127.0.0.1 - - [16/Oct/2022 13:47:26] "POST /location HTTP/1.1" 200 -
+INFO | 127.0.0.1 - - [16/Oct/2022 14:38:55] "GET /equipment HTTP/1.1" 200 -
+INFO | 127.0.0.1 - - [16/Oct/2022 14:38:55] "[36mGET /img_store/equipment/default_prisp.png HTTP/1.1[0m" 304 -
+INFO | 127.0.0.1 - - [16/Oct/2022 14:38:55] "POST /location HTTP/1.1" 200 -
+INFO | 127.0.0.1 - - [16/Oct/2022 14:40:58] "GET /equipment HTTP/1.1" 200 -
+INFO | 127.0.0.1 - - [16/Oct/2022 14:40:58] "[36mGET /img_store/equipment/default_prisp.png HTTP/1.1[0m" 304 -
+INFO | 127.0.0.1 - - [16/Oct/2022 14:40:58] "POST /location HTTP/1.1" 200 -
+INFO | 127.0.0.1 - - [16/Oct/2022 14:41:53] "GET /equipment HTTP/1.1" 200 -
+INFO | 127.0.0.1 - - [16/Oct/2022 14:41:53] "[36mGET /img_store/equipment/default_prisp.png HTTP/1.1[0m" 304 -
+INFO | 127.0.0.1 - - [16/Oct/2022 14:41:53] "POST /location HTTP/1.1" 200 -
+INFO | 127.0.0.1 - - [16/Oct/2022 14:48:31] "GET /equipment HTTP/1.1" 200 -
+INFO | 127.0.0.1 - - [16/Oct/2022 14:48:31] "[36mGET /img_store/equipment/default_prisp.png HTTP/1.1[0m" 304 -
+INFO | 127.0.0.1 - - [16/Oct/2022 14:48:31] "POST /location HTTP/1.1" 200 -
+INFO | 127.0.0.1 - - [16/Oct/2022 14:49:48] "GET /equipment HTTP/1.1" 200 -
+INFO | 127.0.0.1 - - [16/Oct/2022 14:49:48] "[36mGET /img_store/equipment/default_prisp.png HTTP/1.1[0m" 304 -
+INFO | 127.0.0.1 - - [16/Oct/2022 14:49:49] "POST /location HTTP/1.1" 200 -
+INFO | 127.0.0.1 - - [16/Oct/2022 15:01:45] "GET /equipment HTTP/1.1" 200 -
+INFO | 127.0.0.1 - - [16/Oct/2022 15:01:45] "[36mGET /img_store/equipment/default_prisp.png HTTP/1.1[0m" 304 -
+INFO | 127.0.0.1 - - [16/Oct/2022 15:01:45] "POST /location HTTP/1.1" 200 -
+INFO | 127.0.0.1 - - [16/Oct/2022 15:04:44] "[36mGET /img_store/equipment/default_tool.png HTTP/1.1[0m" 304 -
+INFO | 127.0.0.1 - - [16/Oct/2022 15:11:59] "[33mGET /img_store/equipment/prisp_1.png HTTP/1.1[0m" 404 -
+INFO | 127.0.0.1 - - [16/Oct/2022 15:12:01] "[36mGET /img_store/equipment/default_tool.png HTTP/1.1[0m" 304 -
+INFO | 127.0.0.1 - - [16/Oct/2022 15:12:02] "[36mGET /img_store/equipment/default_control.png HTTP/1.1[0m" 304 -
+INFO | 127.0.0.1 - - [16/Oct/2022 15:12:05] "[33mGET /img_store/equipment/tool_1.png HTTP/1.1[0m" 404 -
+INFO | 127.0.0.1 - - [16/Oct/2022 15:12:07] "[33mGET /img_store/equipment/tool_1.png HTTP/1.1[0m" 404 -
+INFO | 127.0.0.1 - - [16/Oct/2022 15:12:08] "[33mGET /img_store/equipment/tool_1.png HTTP/1.1[0m" 404 -
+INFO | 127.0.0.1 - - [16/Oct/2022 15:12:09] "[33mGET /img_store/equipment/tool_2.png HTTP/1.1[0m" 404 -
+INFO | 127.0.0.1 - - [16/Oct/2022 15:12:11] "[33mGET /img_store/equipment/tool_3.png HTTP/1.1[0m" 404 -
+INFO | 127.0.0.1 - - [16/Oct/2022 15:12:13] "[33mGET /img_store/equipment/prisp_1.png HTTP/1.1[0m" 404 -
+INFO | 127.0.0.1 - - [16/Oct/2022 15:12:14] "[36mGET /img_store/equipment/default_prisp.png HTTP/1.1[0m" 304 -
+INFO | 127.0.0.1 - - [16/Oct/2022 15:12:38] "[33mGET /img_store/equipment/prisp_1.png HTTP/1.1[0m" 404 -
+INFO | 127.0.0.1 - - [16/Oct/2022 15:46:55] "GET /equipment HTTP/1.1" 200 -
+INFO | 127.0.0.1 - - [16/Oct/2022 15:46:55] "[36mGET /img_store/equipment/default_prisp.png HTTP/1.1[0m" 304 -
+INFO | 127.0.0.1 - - [16/Oct/2022 15:46:55] "POST /location HTTP/1.1" 200 -
+INFO | 127.0.0.1 - - [16/Oct/2022 15:58:56] "GET /equipment HTTP/1.1" 200 -
+INFO | 127.0.0.1 - - [16/Oct/2022 15:58:56] "[36mGET /img_store/equipment/default_prisp.png HTTP/1.1[0m" 304 -
+INFO | 127.0.0.1 - - [16/Oct/2022 15:58:57] "POST /location HTTP/1.1" 200 -
+INFO | 127.0.0.1 - - [16/Oct/2022 15:59:35] "GET /equipment HTTP/1.1" 200 -
+INFO | 127.0.0.1 - - [16/Oct/2022 15:59:35] "[36mGET /img_store/equipment/default_prisp.png HTTP/1.1[0m" 304 -
+INFO | 127.0.0.1 - - [16/Oct/2022 15:59:35] "POST /location HTTP/1.1" 200 -
+INFO | 127.0.0.1 - - [16/Oct/2022 15:59:36] "[36mGET /img_store/equipment/default_tool.png HTTP/1.1[0m" 304 -
+INFO | 127.0.0.1 - - [16/Oct/2022 15:59:37] "[36mGET /img_store/equipment/default_control.png HTTP/1.1[0m" 304 -
+INFO | 127.0.0.1 - - [16/Oct/2022 16:18:59] "GET /equipment HTTP/1.1" 200 -
+INFO | 127.0.0.1 - - [16/Oct/2022 16:18:59] "[36mGET /img_store/equipment/default_prisp.png HTTP/1.1[0m" 304 -
+INFO | 127.0.0.1 - - [16/Oct/2022 16:19:00] "POST /location HTTP/1.1" 200 -
+ERROR | Exception on /equipment [GET]
+Traceback (most recent call last):
+  File "D:\MyProject\microerp\env\lib\site-packages\pymysql\connections.py", line 732, in _read_bytes
+    data = self._rfile.read(num_bytes)
+  File "C:\Python38\lib\socket.py", line 669, in readinto
+    return self._sock.recv_into(b)
+ConnectionAbortedError: [WinError 10053] Программа на вашем хост-компьютере разорвала установленное подключение
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "D:\MyProject\microerp\env\lib\site-packages\sqlalchemy\engine\base.py", line 1819, in _execute_context
+    self.dialect.do_execute(
+  File "D:\MyProject\microerp\env\lib\site-packages\sqlalchemy\engine\default.py", line 732, in do_execute
+    cursor.execute(statement, parameters)
+  File "D:\MyProject\microerp\env\lib\site-packages\pymysql\cursors.py", line 148, in execute
+    result = self._query(query)
+  File "D:\MyProject\microerp\env\lib\site-packages\pymysql\cursors.py", line 310, in _query
+    conn.query(q)
+  File "D:\MyProject\microerp\env\lib\site-packages\pymysql\connections.py", line 548, in query
+    self._affected_rows = self._read_query_result(unbuffered=unbuffered)
+  File "D:\MyProject\microerp\env\lib\site-packages\pymysql\connections.py", line 775, in _read_query_result
+    result.read()
+  File "D:\MyProject\microerp\env\lib\site-packages\pymysql\connections.py", line 1156, in read
+    first_packet = self.connection._read_packet()
+  File "D:\MyProject\microerp\env\lib\site-packages\pymysql\connections.py", line 692, in _read_packet
+    packet_header = self._read_bytes(4)
+  File "D:\MyProject\microerp\env\lib\site-packages\pymysql\connections.py", line 738, in _read_bytes
+    raise err.OperationalError(
+pymysql.err.OperationalError: (2013, 'Lost connection to MySQL server during query ([WinError 10053] Программа на вашем хост-компьютере разорвала установленное подключение)')
+
+The above exception was the direct cause of the following exception:
+
+Traceback (most recent call last):
+  File "D:\MyProject\microerp\env\lib\site-packages\flask\app.py", line 2525, in wsgi_app
+    response = self.full_dispatch_request()
+  File "D:\MyProject\microerp\env\lib\site-packages\flask\app.py", line 1822, in full_dispatch_request
+    rv = self.handle_user_exception(e)
+  File "D:\MyProject\microerp\env\lib\site-packages\flask\app.py", line 1820, in full_dispatch_request
+    rv = self.dispatch_request()
+  File "D:\MyProject\microerp\env\lib\site-packages\flask\app.py", line 1796, in dispatch_request
+    return self.ensure_sync(self.view_functions[rule.endpoint])(**view_args)
+  File "D:\MyProject\microerp\app.py", line 224, in equipment
+    eq = Equipment.query.all()
+  File "D:\MyProject\microerp\env\lib\site-packages\sqlalchemy\orm\query.py", line 2768, in all
+    return self._iter().all()
+  File "D:\MyProject\microerp\env\lib\site-packages\sqlalchemy\orm\query.py", line 2903, in _iter
+    result = self.session.execute(
+  File "D:\MyProject\microerp\env\lib\site-packages\sqlalchemy\orm\session.py", line 1712, in execute
+    result = conn._execute_20(statement, params or {}, execution_options)
+  File "D:\MyProject\microerp\env\lib\site-packages\sqlalchemy\engine\base.py", line 1631, in _execute_20
+    return meth(self, args_10style, kwargs_10style, execution_options)
+  File "D:\MyProject\microerp\env\lib\site-packages\sqlalchemy\sql\elements.py", line 332, in _execute_on_connection
+    return connection._execute_clauseelement(
+  File "D:\MyProject\microerp\env\lib\site-packages\sqlalchemy\engine\base.py", line 1498, in _execute_clauseelement
+    ret = self._execute_context(
+  File "D:\MyProject\microerp\env\lib\site-packages\sqlalchemy\engine\base.py", line 1862, in _execute_context
+    self._handle_dbapi_exception(
+  File "D:\MyProject\microerp\env\lib\site-packages\sqlalchemy\engine\base.py", line 2043, in _handle_dbapi_exception
+    util.raise_(
+  File "D:\MyProject\microerp\env\lib\site-packages\sqlalchemy\util\compat.py", line 208, in raise_
+    raise exception
+  File "D:\MyProject\microerp\env\lib\site-packages\sqlalchemy\engine\base.py", line 1819, in _execute_context
+    self.dialect.do_execute(
+  File "D:\MyProject\microerp\env\lib\site-packages\sqlalchemy\engine\default.py", line 732, in do_execute
+    cursor.execute(statement, parameters)
+  File "D:\MyProject\microerp\env\lib\site-packages\pymysql\cursors.py", line 148, in execute
+    result = self._query(query)
+  File "D:\MyProject\microerp\env\lib\site-packages\pymysql\cursors.py", line 310, in _query
+    conn.query(q)
+  File "D:\MyProject\microerp\env\lib\site-packages\pymysql\connections.py", line 548, in query
+    self._affected_rows = self._read_query_result(unbuffered=unbuffered)
+  File "D:\MyProject\microerp\env\lib\site-packages\pymysql\connections.py", line 775, in _read_query_result
+    result.read()
+  File "D:\MyProject\microerp\env\lib\site-packages\pymysql\connections.py", line 1156, in read
+    first_packet = self.connection._read_packet()
+  File "D:\MyProject\microerp\env\lib\site-packages\pymysql\connections.py", line 692, in _read_packet
+    packet_header = self._read_bytes(4)
+  File "D:\MyProject\microerp\env\lib\site-packages\pymysql\connections.py", line 738, in _read_bytes
+    raise err.OperationalError(
+sqlalchemy.exc.OperationalError: (pymysql.err.OperationalError) (2013, 'Lost connection to MySQL server during query ([WinError 10053] Программа на вашем хост-компьютере разорвала установленное подключение)')
+[SQL: SELECT equipment.id AS equipment_id, equipment.name AS equipment_name, equipment.type AS equipment_type, equipment.description AS equipment_description, equipment.code AS equipment_code, equipment.firm AS equipment_firm, equipment.path AS equipment_path, equipment.data_added AS equipment_data_added, equipment.nodes AS equipment_nodes, equipment.options AS equipment_options, equipment.relevance AS equipment_relevance, equipment.added_id AS equipment_added_id, equipment.is_group AS equipment_is_group 
+FROM equipment]
+(Background on this error at: https://sqlalche.me/e/14/e3q8)
+INFO | 127.0.0.1 - - [16/Oct/2022 16:22:09] "[35m[1mGET /equipment HTTP/1.1[0m" 500 -
+INFO | 127.0.0.1 - - [16/Oct/2022 16:22:09] "POST /location HTTP/1.1" 200 -
+INFO | 127.0.0.1 - - [16/Oct/2022 16:22:14] "GET /equipment HTTP/1.1" 200 -
+INFO | 127.0.0.1 - - [16/Oct/2022 16:22:14] "[36mGET /img_store/equipment/default_prisp.png HTTP/1.1[0m" 304 -
+INFO | 127.0.0.1 - - [16/Oct/2022 16:22:14] "POST /location HTTP/1.1" 200 -
+INFO | 127.0.0.1 - - [16/Oct/2022 16:41:27] "GET /equipment HTTP/1.1" 200 -
+INFO | 127.0.0.1 - - [16/Oct/2022 16:41:27] "[36mGET /img_store/equipment/default_prisp.png HTTP/1.1[0m" 304 -
+INFO | 127.0.0.1 - - [16/Oct/2022 16:41:27] "POST /location HTTP/1.1" 200 -
+ERROR | Exception on /equipment [GET]
+Traceback (most recent call last):
+  File "D:\MyProject\microerp\env\lib\site-packages\pymysql\connections.py", line 732, in _read_bytes
+    data = self._rfile.read(num_bytes)
+  File "C:\Python38\lib\socket.py", line 669, in readinto
+    return self._sock.recv_into(b)
+ConnectionAbortedError: [WinError 10053] Программа на вашем хост-компьютере разорвала установленное подключение
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "D:\MyProject\microerp\env\lib\site-packages\sqlalchemy\engine\base.py", line 1819, in _execute_context
+    self.dialect.do_execute(
+  File "D:\MyProject\microerp\env\lib\site-packages\sqlalchemy\engine\default.py", line 732, in do_execute
+    cursor.execute(statement, parameters)
+  File "D:\MyProject\microerp\env\lib\site-packages\pymysql\cursors.py", line 148, in execute
+    result = self._query(query)
+  File "D:\MyProject\microerp\env\lib\site-packages\pymysql\cursors.py", line 310, in _query
+    conn.query(q)
+  File "D:\MyProject\microerp\env\lib\site-packages\pymysql\connections.py", line 548, in query
+    self._affected_rows = self._read_query_result(unbuffered=unbuffered)
+  File "D:\MyProject\microerp\env\lib\site-packages\pymysql\connections.py", line 775, in _read_query_result
+    result.read()
+  File "D:\MyProject\microerp\env\lib\site-packages\pymysql\connections.py", line 1156, in read
+    first_packet = self.connection._read_packet()
+  File "D:\MyProject\microerp\env\lib\site-packages\pymysql\connections.py", line 692, in _read_packet
+    packet_header = self._read_bytes(4)
+  File "D:\MyProject\microerp\env\lib\site-packages\pymysql\connections.py", line 738, in _read_bytes
+    raise err.OperationalError(
+pymysql.err.OperationalError: (2013, 'Lost connection to MySQL server during query ([WinError 10053] Программа на вашем хост-компьютере разорвала установленное подключение)')
+
+The above exception was the direct cause of the following exception:
+
+Traceback (most recent call last):
+  File "D:\MyProject\microerp\env\lib\site-packages\flask\app.py", line 2525, in wsgi_app
+    response = self.full_dispatch_request()
+  File "D:\MyProject\microerp\env\lib\site-packages\flask\app.py", line 1822, in full_dispatch_request
+    rv = self.handle_user_exception(e)
+  File "D:\MyProject\microerp\env\lib\site-packages\flask\app.py", line 1820, in full_dispatch_request
+    rv = self.dispatch_request()
+  File "D:\MyProject\microerp\env\lib\site-packages\flask\app.py", line 1796, in dispatch_request
+    return self.ensure_sync(self.view_functions[rule.endpoint])(**view_args)
+  File "D:\MyProject\microerp\app.py", line 224, in equipment
+    eq = Equipment.query.all()
+  File "D:\MyProject\microerp\env\lib\site-packages\sqlalchemy\orm\query.py", line 2768, in all
+    return self._iter().all()
+  File "D:\MyProject\microerp\env\lib\site-packages\sqlalchemy\orm\query.py", line 2903, in _iter
+    result = self.session.execute(
+  File "D:\MyProject\microerp\env\lib\site-packages\sqlalchemy\orm\session.py", line 1712, in execute
+    result = conn._execute_20(statement, params or {}, execution_options)
+  File "D:\MyProject\microerp\env\lib\site-packages\sqlalchemy\engine\base.py", line 1631, in _execute_20
+    return meth(self, args_10style, kwargs_10style, execution_options)
+  File "D:\MyProject\microerp\env\lib\site-packages\sqlalchemy\sql\elements.py", line 332, in _execute_on_connection
+    return connection._execute_clauseelement(
+  File "D:\MyProject\microerp\env\lib\site-packages\sqlalchemy\engine\base.py", line 1498, in _execute_clauseelement
+    ret = self._execute_context(
+  File "D:\MyProject\microerp\env\lib\site-packages\sqlalchemy\engine\base.py", line 1862, in _execute_context
+    self._handle_dbapi_exception(
+  File "D:\MyProject\microerp\env\lib\site-packages\sqlalchemy\engine\base.py", line 2043, in _handle_dbapi_exception
+    util.raise_(
+  File "D:\MyProject\microerp\env\lib\site-packages\sqlalchemy\util\compat.py", line 208, in raise_
+    raise exception
+  File "D:\MyProject\microerp\env\lib\site-packages\sqlalchemy\engine\base.py", line 1819, in _execute_context
+    self.dialect.do_execute(
+  File "D:\MyProject\microerp\env\lib\site-packages\sqlalchemy\engine\default.py", line 732, in do_execute
+    cursor.execute(statement, parameters)
+  File "D:\MyProject\microerp\env\lib\site-packages\pymysql\cursors.py", line 148, in execute
+    result = self._query(query)
+  File "D:\MyProject\microerp\env\lib\site-packages\pymysql\cursors.py", line 310, in _query
+    conn.query(q)
+  File "D:\MyProject\microerp\env\lib\site-packages\pymysql\connections.py", line 548, in query
+    self._affected_rows = self._read_query_result(unbuffered=unbuffered)
+  File "D:\MyProject\microerp\env\lib\site-packages\pymysql\connections.py", line 775, in _read_query_result
+    result.read()
+  File "D:\MyProject\microerp\env\lib\site-packages\pymysql\connections.py", line 1156, in read
+    first_packet = self.connection._read_packet()
+  File "D:\MyProject\microerp\env\lib\site-packages\pymysql\connections.py", line 692, in _read_packet
+    packet_header = self._read_bytes(4)
+  File "D:\MyProject\microerp\env\lib\site-packages\pymysql\connections.py", line 738, in _read_bytes
+    raise err.OperationalError(
+sqlalchemy.exc.OperationalError: (pymysql.err.OperationalError) (2013, 'Lost connection to MySQL server during query ([WinError 10053] Программа на вашем хост-компьютере разорвала установленное подключение)')
+[SQL: SELECT equipment.id AS equipment_id, equipment.name AS equipment_name, equipment.type AS equipment_type, equipment.description AS equipment_description, equipment.code AS equipment_code, equipment.firm AS equipment_firm, equipment.path AS equipment_path, equipment.data_added AS equipment_data_added, equipment.nodes AS equipment_nodes, equipment.options AS equipment_options, equipment.relevance AS equipment_relevance, equipment.added_id AS equipment_added_id, equipment.is_group AS equipment_is_group 
+FROM equipment]
+(Background on this error at: https://sqlalche.me/e/14/e3q8)
+INFO | 127.0.0.1 - - [16/Oct/2022 16:46:21] "[35m[1mGET /equipment HTTP/1.1[0m" 500 -
+INFO | 127.0.0.1 - - [16/Oct/2022 16:46:21] "POST /location HTTP/1.1" 200 -
+INFO | 127.0.0.1 - - [16/Oct/2022 16:46:24] "GET /equipment HTTP/1.1" 200 -
+INFO | 127.0.0.1 - - [16/Oct/2022 16:46:24] "[36mGET /img_store/equipment/default_prisp.png HTTP/1.1[0m" 304 -
+INFO | 127.0.0.1 - - [16/Oct/2022 16:46:24] "POST /location HTTP/1.1" 200 -
+INFO | 127.0.0.1 - - [16/Oct/2022 16:46:26] "[36mGET /img_store/equipment/default_tool.png HTTP/1.1[0m" 304 -
+INFO | 127.0.0.1 - - [16/Oct/2022 16:46:26] "[36mGET /img_store/equipment/default_control.png HTTP/1.1[0m" 304 -
+INFO | 127.0.0.1 - - [16/Oct/2022 16:47:01] "[36mGET /img_store/equipment/default_tool.png HTTP/1.1[0m" 304 -
+INFO | 127.0.0.1 - - [16/Oct/2022 16:47:02] "[36mGET /img_store/equipment/default_control.png HTTP/1.1[0m" 304 -
+INFO | 127.0.0.1 - - [16/Oct/2022 16:47:49] "GET /equipment HTTP/1.1" 200 -
+INFO | 127.0.0.1 - - [16/Oct/2022 16:47:49] "[36mGET /img_store/equipment/default_prisp.png HTTP/1.1[0m" 304 -
+INFO | 127.0.0.1 - - [16/Oct/2022 16:47:49] "POST /location HTTP/1.1" 200 -
+INFO | 127.0.0.1 - - [16/Oct/2022 16:48:26] "GET /equipment HTTP/1.1" 200 -
+INFO | 127.0.0.1 - - [16/Oct/2022 16:48:26] "[36mGET /img_store/equipment/default_prisp.png HTTP/1.1[0m" 304 -
+INFO | 127.0.0.1 - - [16/Oct/2022 16:48:27] "POST /location HTTP/1.1" 200 -
+INFO | 127.0.0.1 - - [16/Oct/2022 17:44:17] "GET /equipment HTTP/1.1" 200 -
+INFO | 127.0.0.1 - - [16/Oct/2022 17:44:17] "[36mGET /img_store/equipment/default_prisp.png HTTP/1.1[0m" 304 -
+INFO | 127.0.0.1 - - [16/Oct/2022 17:44:18] "POST /location HTTP/1.1" 200 -
+INFO | 127.0.0.1 - - [16/Oct/2022 17:49:27] "GET /equipment HTTP/1.1" 200 -
+INFO | 127.0.0.1 - - [16/Oct/2022 17:49:27] "[36mGET /img_store/equipment/default_prisp.png HTTP/1.1[0m" 304 -
+INFO | 127.0.0.1 - - [16/Oct/2022 17:49:27] "POST /location HTTP/1.1" 200 -
+INFO | 127.0.0.1 - - [16/Oct/2022 19:34:15] "GET /equipment HTTP/1.1" 200 -
+INFO | 127.0.0.1 - - [16/Oct/2022 19:34:15] "[36mGET /img_store/equipment/default_prisp.png HTTP/1.1[0m" 304 -
+INFO | 127.0.0.1 - - [16/Oct/2022 19:34:16] "POST /location HTTP/1.1" 200 -
+INFO | 127.0.0.1 - - [16/Oct/2022 19:36:00] "GET /equipment HTTP/1.1" 200 -
+INFO | 127.0.0.1 - - [16/Oct/2022 19:36:00] "[36mGET /img_store/equipment/default_prisp.png HTTP/1.1[0m" 304 -
+INFO | 127.0.0.1 - - [16/Oct/2022 19:36:00] "POST /location HTTP/1.1" 200 -
+INFO | 127.0.0.1 - - [16/Oct/2022 20:12:04] "GET /equipment HTTP/1.1" 200 -
+INFO | 127.0.0.1 - - [16/Oct/2022 20:12:04] "[36mGET /img_store/equipment/default_prisp.png HTTP/1.1[0m" 304 -
+INFO | 127.0.0.1 - - [16/Oct/2022 20:12:04] "POST /location HTTP/1.1" 200 -
+INFO | 127.0.0.1 - - [16/Oct/2022 20:12:46] "GET /equipment HTTP/1.1" 200 -
+INFO | 127.0.0.1 - - [16/Oct/2022 20:12:46] "[36mGET /img_store/equipment/default_prisp.png HTTP/1.1[0m" 304 -
+INFO | 127.0.0.1 - - [16/Oct/2022 20:12:47] "POST /location HTTP/1.1" 200 -
+INFO | 127.0.0.1 - - [16/Oct/2022 20:15:39] "GET /equipment HTTP/1.1" 200 -
+INFO | 127.0.0.1 - - [16/Oct/2022 20:15:39] "[36mGET /img_store/equipment/default_prisp.png HTTP/1.1[0m" 304 -
+INFO | 127.0.0.1 - - [16/Oct/2022 20:15:39] "POST /location HTTP/1.1" 200 -
+INFO | 127.0.0.1 - - [16/Oct/2022 20:15:54] "GET /equipment HTTP/1.1" 200 -
+INFO | 127.0.0.1 - - [16/Oct/2022 20:15:54] "[36mGET /img_store/equipment/default_prisp.png HTTP/1.1[0m" 304 -
+INFO | 127.0.0.1 - - [16/Oct/2022 20:15:54] "POST /location HTTP/1.1" 200 -
+INFO | 127.0.0.1 - - [16/Oct/2022 20:33:25] "[36mGET /img_store/equipment/default_tool.png HTTP/1.1[0m" 304 -
+INFO | 127.0.0.1 - - [16/Oct/2022 20:33:25] "[36mGET /img_store/equipment/default_control.png HTTP/1.1[0m" 304 -
+INFO | 127.0.0.1 - - [16/Oct/2022 21:14:38] "GET /equipment HTTP/1.1" 200 -
+INFO | 127.0.0.1 - - [16/Oct/2022 21:14:38] "[36mGET /img_store/equipment/default_prisp.png HTTP/1.1[0m" 304 -
+INFO | 127.0.0.1 - - [16/Oct/2022 21:14:38] "POST /location HTTP/1.1" 200 -
+INFO | 127.0.0.1 - - [16/Oct/2022 21:16:12] "GET /equipment HTTP/1.1" 200 -
+INFO | 127.0.0.1 - - [16/Oct/2022 21:16:12] "[36mGET /img_store/equipment/default_prisp.png HTTP/1.1[0m" 304 -
+INFO | 127.0.0.1 - - [16/Oct/2022 21:16:12] "POST /location HTTP/1.1" 200 -
+INFO | 127.0.0.1 - - [16/Oct/2022 21:16:39] "[36mGET /img_store/equipment/default_tool.png HTTP/1.1[0m" 304 -
+INFO | 127.0.0.1 - - [16/Oct/2022 21:16:43] "[33mGET /img_store/equipment/tool_2.png HTTP/1.1[0m" 404 -
+INFO | 127.0.0.1 - - [16/Oct/2022 21:16:44] "[33mGET /img_store/equipment/tool_3.png HTTP/1.1[0m" 404 -
+INFO | 127.0.0.1 - - [16/Oct/2022 21:16:44] "[33mGET /img_store/equipment/tool_2.png HTTP/1.1[0m" 404 -
+INFO | 127.0.0.1 - - [16/Oct/2022 21:16:45] "[33mGET /img_store/equipment/tool_1.png HTTP/1.1[0m" 404 -
+INFO |  * Running on http://127.0.0.1:5000 (Press CTRL+C to quit)
+INFO | 127.0.0.1 - - [17/Oct/2022 18:50:02] "POST /location HTTP/1.1" 200 -
+INFO | 127.0.0.1 - - [17/Oct/2022 18:57:16] "GET /equipment HTTP/1.1" 200 -
+INFO | 127.0.0.1 - - [17/Oct/2022 18:57:17] "[36mGET /img_store/equipment/default_prisp.png HTTP/1.1[0m" 304 -
+INFO | 127.0.0.1 - - [17/Oct/2022 18:57:27] "[36mGET /img_store/equipment/default_tool.png HTTP/1.1[0m" 304 -
+INFO | 127.0.0.1 - - [17/Oct/2022 18:57:29] "[33mGET /img_store/equipment/tool_2.png HTTP/1.1[0m" 404 -
+INFO | 127.0.0.1 - - [17/Oct/2022 18:57:35] "[36mGET /img_store/equipment/default_control.png HTTP/1.1[0m" 304 -
+INFO | 127.0.0.1 - - [17/Oct/2022 19:46:09] "[36mGET /img_store/equipment/default_tool.png HTTP/1.1[0m" 304 -
+INFO | 127.0.0.1 - - [28/Oct/2022 14:25:44] "POST /location HTTP/1.1" 200 -
+INFO | 127.0.0.1 - - [28/Oct/2022 14:25:50] "GET /equipment HTTP/1.1" 200 -
+INFO | 127.0.0.1 - - [28/Oct/2022 14:25:50] "[36mGET /img_store/equipment/default_prisp.png HTTP/1.1[0m" 304 -
+INFO | 127.0.0.1 - - [28/Oct/2022 14:25:54] "[36mGET /img_store/equipment/default_tool.png HTTP/1.1[0m" 304 -
+INFO | 127.0.0.1 - - [28/Oct/2022 14:25:56] "GET /img_store/equipment/default_control.png HTTP/1.1" 200 -
+INFO | 127.0.0.1 - - [28/Oct/2022 14:26:01] "[33mGET /img_store/equipment/tool_2.png HTTP/1.1[0m" 404 -
+INFO | 127.0.0.1 - - [28/Oct/2022 14:26:02] "[33mGET /img_store/equipment/tool_1.png HTTP/1.1[0m" 404 -
+INFO | 127.0.0.1 - - [28/Oct/2022 14:26:04] "[33mGET /img_store/equipment/tool_2.png HTTP/1.1[0m" 404 -
+INFO | 127.0.0.1 - - [28/Oct/2022 14:26:06] "[33mGET /img_store/equipment/tool_3.png HTTP/1.1[0m" 404 -
+INFO | 127.0.0.1 - - [28/Oct/2022 14:26:07] "[36mGET /img_store/equipment/default_prisp.png HTTP/1.1[0m" 304 -
+INFO | 127.0.0.1 - - [28/Oct/2022 14:26:35] "POST /list_tech HTTP/1.1" 200 -
+INFO | 127.0.0.1 - - [28/Oct/2022 14:27:14] "POST /list_tech HTTP/1.1" 200 -
+INFO | 127.0.0.1 - - [28/Oct/2022 14:27:22] "GET /equipment HTTP/1.1" 200 -
+INFO | 127.0.0.1 - - [28/Oct/2022 14:27:22] "[36mGET /img_store/equipment/default_prisp.png HTTP/1.1[0m" 304 -
+INFO | 127.0.0.1 - - [28/Oct/2022 14:27:27] "[36mGET /img_store/equipment/default_tool.png HTTP/1.1[0m" 304 -
+INFO | 127.0.0.1 - - [28/Oct/2022 14:27:28] "[33mGET /img_store/equipment/tool_2.png HTTP/1.1[0m" 404 -
+INFO |  * Running on http://127.0.0.1:5000 (Press CTRL+C to quit)
+INFO | 127.0.0.1 - - [30/Oct/2022 15:50:10] "POST /location HTTP/1.1" 200 -
+INFO | 127.0.0.1 - - [30/Oct/2022 15:50:11] "GET /equipment HTTP/1.1" 200 -
+INFO | 127.0.0.1 - - [30/Oct/2022 15:50:11] "[36mGET /img_store/equipment/default_prisp.png HTTP/1.1[0m" 304 -
+INFO | 127.0.0.1 - - [30/Oct/2022 15:50:14] "[33mGET /img_store/equipment/prisp_1.png HTTP/1.1[0m" 404 -
+INFO | 127.0.0.1 - - [30/Oct/2022 16:16:12] "POST /list_tech HTTP/1.1" 200 -
+INFO | 127.0.0.1 - - [30/Oct/2022 16:16:15] "POST /list_tech HTTP/1.1" 200 -
+INFO | 127.0.0.1 - - [30/Oct/2022 16:16:17] "POST /list_tech HTTP/1.1" 200 -
+INFO | 127.0.0.1 - - [30/Oct/2022 16:16:19] "GET /equipment HTTP/1.1" 200 -
+INFO | 127.0.0.1 - - [30/Oct/2022 16:16:19] "[36mGET /img_store/equipment/default_prisp.png HTTP/1.1[0m" 304 -
+INFO | 127.0.0.1 - - [30/Oct/2022 16:16:22] "[36mGET /img_store/equipment/default_tool.png HTTP/1.1[0m" 304 -
+INFO | 127.0.0.1 - - [30/Oct/2022 16:16:23] "[33mGET /img_store/equipment/tool_2.png HTTP/1.1[0m" 404 -
+INFO | 127.0.0.1 - - [31/Oct/2022 07:23:59] "[36mGET /img_store/equipment/default_tool.png HTTP/1.1[0m" 304 -
+INFO | 127.0.0.1 - - [31/Oct/2022 07:23:59] "[33mGET /img_store/equipment/tool_1.png HTTP/1.1[0m" 404 -
+INFO | 127.0.0.1 - - [31/Oct/2022 07:28:38] "GET /equipment HTTP/1.1" 200 -
+INFO | 127.0.0.1 - - [31/Oct/2022 07:28:38] "[36mGET /img_store/equipment/default_prisp.png HTTP/1.1[0m" 304 -
+INFO | 127.0.0.1 - - [31/Oct/2022 07:28:38] "POST /location HTTP/1.1" 200 -
+INFO | 127.0.0.1 - - [01/Nov/2022 07:38:08] "GET /equipment HTTP/1.1" 200 -
+INFO | 127.0.0.1 - - [01/Nov/2022 07:38:08] "GET /img_store/equipment/default_prisp.png HTTP/1.1" 200 -
+INFO | 127.0.0.1 - - [01/Nov/2022 07:38:08] "POST /location HTTP/1.1" 200 -
+INFO | 127.0.0.1 - - [01/Nov/2022 07:38:58] "GET /equipment HTTP/1.1" 200 -
+INFO | 127.0.0.1 - - [01/Nov/2022 07:38:58] "GET /img_store/equipment/default_prisp.png HTTP/1.1" 200 -
+INFO | 127.0.0.1 - - [01/Nov/2022 07:38:58] "POST /location HTTP/1.1" 200 -
+INFO | 127.0.0.1 - - [01/Nov/2022 07:39:02] "GET /img_store/equipment/default_tool.png HTTP/1.1" 200 -
+INFO | 127.0.0.1 - - [01/Nov/2022 07:40:02] "GET /equipment HTTP/1.1" 200 -
+INFO | 127.0.0.1 - - [01/Nov/2022 07:40:02] "GET /img_store/equipment/default_prisp.png HTTP/1.1" 200 -
+INFO | 127.0.0.1 - - [01/Nov/2022 07:40:02] "POST /location HTTP/1.1" 200 -
+INFO | 127.0.0.1 - - [01/Nov/2022 07:40:07] "GET /img_store/equipment/default_control.png HTTP/1.1" 200 -
+INFO | 127.0.0.1 - - [01/Nov/2022 07:40:09] "GET /img_store/equipment/default_tool.png HTTP/1.1" 200 -
+INFO | 127.0.0.1 - - [01/Nov/2022 07:40:10] "GET /img_store/equipment/default_control.png HTTP/1.1" 200 -
+INFO | 127.0.0.1 - - [01/Nov/2022 07:41:46] "GET /equipment HTTP/1.1" 200 -
+INFO | 127.0.0.1 - - [01/Nov/2022 07:41:46] "GET /img_store/equipment/default_prisp.png HTTP/1.1" 200 -
+INFO | 127.0.0.1 - - [01/Nov/2022 07:41:47] "POST /location HTTP/1.1" 200 -
+INFO | 127.0.0.1 - - [01/Nov/2022 07:41:52] "GET /img_store/equipment/default_control.png HTTP/1.1" 200 -
+INFO | 127.0.0.1 - - [01/Nov/2022 07:42:21] "GET /img_store/equipment/default_tool.png HTTP/1.1" 200 -
+INFO | 127.0.0.1 - - [01/Nov/2022 07:42:23] "[33mGET /img_store/equipment/tool_2.png HTTP/1.1[0m" 404 -
+INFO | 127.0.0.1 - - [01/Nov/2022 07:42:27] "[33mGET /img_store/equipment/tool_1.png HTTP/1.1[0m" 404 -
+INFO | 127.0.0.1 - - [01/Nov/2022 07:42:28] "[33mGET /img_store/equipment/tool_2.png HTTP/1.1[0m" 404 -
+INFO | 127.0.0.1 - - [01/Nov/2022 08:02:48] "GET /img_store/equipment/default_prisp.png HTTP/1.1" 200 -
+INFO | 127.0.0.1 - - [01/Nov/2022 08:02:50] "GET /img_store/equipment/default_tool.png HTTP/1.1" 200 -
+INFO | 127.0.0.1 - - [01/Nov/2022 08:31:12] "GET /equipment HTTP/1.1" 200 -
+INFO | 127.0.0.1 - - [01/Nov/2022 08:31:12] "GET /img_store/equipment/default_prisp.png HTTP/1.1" 200 -
+INFO | 127.0.0.1 - - [01/Nov/2022 08:31:12] "POST /location HTTP/1.1" 200 -
+INFO | 127.0.0.1 - - [01/Nov/2022 08:31:14] "GET /img_store/equipment/default_control.png HTTP/1.1" 200 -
+INFO | 127.0.0.1 - - [01/Nov/2022 08:32:55] "GET /equipment HTTP/1.1" 200 -
+INFO | 127.0.0.1 - - [01/Nov/2022 08:32:55] "GET /img_store/equipment/default_prisp.png HTTP/1.1" 200 -
+INFO | 127.0.0.1 - - [01/Nov/2022 08:32:56] "POST /location HTTP/1.1" 200 -
+INFO | 127.0.0.1 - - [01/Nov/2022 08:32:57] "GET /img_store/equipment/default_control.png HTTP/1.1" 200 -
+INFO | 127.0.0.1 - - [01/Nov/2022 08:33:28] "GET /equipment HTTP/1.1" 200 -
+INFO | 127.0.0.1 - - [01/Nov/2022 08:33:29] "GET /img_store/equipment/default_prisp.png HTTP/1.1" 200 -
+INFO | 127.0.0.1 - - [01/Nov/2022 08:33:29] "POST /location HTTP/1.1" 200 -
+INFO | 127.0.0.1 - - [01/Nov/2022 08:33:30] "GET /img_store/equipment/default_control.png HTTP/1.1" 200 -
+INFO | 127.0.0.1 - - [01/Nov/2022 08:33:39] "GET /img_store/equipment/default_prisp.png HTTP/1.1" 200 -
+INFO | 127.0.0.1 - - [01/Nov/2022 08:34:49] "GET /equipment HTTP/1.1" 200 -
+INFO | 127.0.0.1 - - [01/Nov/2022 08:34:50] "GET /img_store/equipment/default_prisp.png HTTP/1.1" 200 -
+INFO | 127.0.0.1 - - [01/Nov/2022 08:34:50] "POST /location HTTP/1.1" 200 -
+INFO | 127.0.0.1 - - [01/Nov/2022 08:35:18] "GET /img_store/equipment/default_tool.png HTTP/1.1" 200 -
+INFO | 127.0.0.1 - - [01/Nov/2022 08:35:19] "[33mGET /img_store/equipment/tool_1.png HTTP/1.1[0m" 404 -
+INFO | 127.0.0.1 - - [01/Nov/2022 08:35:41] "[33mGET /img_store/equipment/tool_2.png HTTP/1.1[0m" 404 -
+INFO | 127.0.0.1 - - [01/Nov/2022 08:35:47] "[33mGET /img_store/equipment/tool_3.png HTTP/1.1[0m" 404 -
+INFO | 127.0.0.1 - - [01/Nov/2022 08:38:55] "GET /equipment HTTP/1.1" 200 -
+INFO | 127.0.0.1 - - [01/Nov/2022 08:38:55] "GET /img_store/equipment/default_prisp.png HTTP/1.1" 200 -
+INFO | 127.0.0.1 - - [01/Nov/2022 08:38:55] "POST /location HTTP/1.1" 200 -
+INFO | 127.0.0.1 - - [01/Nov/2022 08:39:38] "GET /equipment HTTP/1.1" 200 -
+INFO | 127.0.0.1 - - [01/Nov/2022 08:39:38] "GET /img_store/equipment/default_prisp.png HTTP/1.1" 200 -
+INFO | 127.0.0.1 - - [01/Nov/2022 08:39:38] "POST /location HTTP/1.1" 200 -
+INFO | 127.0.0.1 - - [01/Nov/2022 08:39:39] "GET /img_store/equipment/default_control.png HTTP/1.1" 200 -
+INFO | 127.0.0.1 - - [01/Nov/2022 08:39:45] "GET /img_store/equipment/default_tool.png HTTP/1.1" 200 -
+INFO | 127.0.0.1 - - [01/Nov/2022 08:39:48] "GET /img_store/equipment/default_prisp.png HTTP/1.1" 200 -
+INFO | 127.0.0.1 - - [01/Nov/2022 08:41:06] "GET /equipment HTTP/1.1" 200 -
+INFO | 127.0.0.1 - - [01/Nov/2022 08:41:06] "GET /img_store/equipment/default_prisp.png HTTP/1.1" 200 -
+INFO | 127.0.0.1 - - [01/Nov/2022 08:41:06] "POST /location HTTP/1.1" 200 -
+INFO | 127.0.0.1 - - [01/Nov/2022 08:41:23] "GET /img_store/equipment/default_control.png HTTP/1.1" 200 -
+INFO | 127.0.0.1 - - [01/Nov/2022 08:50:13] "GET /equipment HTTP/1.1" 200 -
+INFO | 127.0.0.1 - - [01/Nov/2022 08:50:13] "GET /img_store/equipment/default_prisp.png HTTP/1.1" 200 -
+INFO | 127.0.0.1 - - [01/Nov/2022 08:50:14] "POST /location HTTP/1.1" 200 -
+INFO | 127.0.0.1 - - [01/Nov/2022 08:50:33] "GET /equipment HTTP/1.1" 200 -
+INFO | 127.0.0.1 - - [01/Nov/2022 08:50:33] "GET /img_store/equipment/default_prisp.png HTTP/1.1" 200 -
+INFO | 127.0.0.1 - - [01/Nov/2022 08:50:33] "POST /location HTTP/1.1" 200 -
+INFO | 127.0.0.1 - - [01/Nov/2022 08:50:45] "GET /img_store/equipment/default_control.png HTTP/1.1" 200 -
+INFO | 127.0.0.1 - - [01/Nov/2022 08:50:55] "GET /img_store/equipment/default_tool.png HTTP/1.1" 200 -
+INFO | 127.0.0.1 - - [01/Nov/2022 08:58:33] "[33mGET /img_store/equipment/tool_1.png HTTP/1.1[0m" 404 -
+INFO | 127.0.0.1 - - [01/Nov/2022 08:59:32] "GET /equipment HTTP/1.1" 200 -
+INFO | 127.0.0.1 - - [01/Nov/2022 08:59:32] "GET /img_store/equipment/default_prisp.png HTTP/1.1" 200 -
+INFO | 127.0.0.1 - - [01/Nov/2022 08:59:32] "POST /location HTTP/1.1" 200 -
+INFO | 127.0.0.1 - - [01/Nov/2022 08:59:36] "[33mGET /img_store/equipment/prisp_1.png HTTP/1.1[0m" 404 -
+INFO | 127.0.0.1 - - [01/Nov/2022 09:00:20] "GET /equipment HTTP/1.1" 200 -
+INFO | 127.0.0.1 - - [01/Nov/2022 09:00:20] "GET /img_store/equipment/default_prisp.png HTTP/1.1" 200 -
+INFO | 127.0.0.1 - - [01/Nov/2022 09:00:20] "POST /location HTTP/1.1" 200 -
+INFO | 127.0.0.1 - - [01/Nov/2022 09:00:23] "[33mGET /img_store/equipment/prisp_1.png HTTP/1.1[0m" 404 -
+INFO | 127.0.0.1 - - [01/Nov/2022 09:00:48] "GET /img_store/equipment/default_tool.png HTTP/1.1" 200 -
+INFO | 127.0.0.1 - - [01/Nov/2022 09:00:49] "[33mGET /img_store/equipment/tool_2.png HTTP/1.1[0m" 404 -
+INFO | 127.0.0.1 - - [01/Nov/2022 09:00:51] "[33mGET /img_store/equipment/tool_3.png HTTP/1.1[0m" 404 -
+ERROR | Exception on /equipment [GET]
+Traceback (most recent call last):
+  File "D:\MyProject\microerp\env\lib\site-packages\pymysql\connections.py", line 732, in _read_bytes
+    data = self._rfile.read(num_bytes)
+  File "C:\Python38\lib\socket.py", line 669, in readinto
+    return self._sock.recv_into(b)
+ConnectionAbortedError: [WinError 10053] Программа на вашем хост-компьютере разорвала установленное подключение
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "D:\MyProject\microerp\env\lib\site-packages\sqlalchemy\engine\base.py", line 1819, in _execute_context
+    self.dialect.do_execute(
+  File "D:\MyProject\microerp\env\lib\site-packages\sqlalchemy\engine\default.py", line 732, in do_execute
+    cursor.execute(statement, parameters)
+  File "D:\MyProject\microerp\env\lib\site-packages\pymysql\cursors.py", line 148, in execute
+    result = self._query(query)
+  File "D:\MyProject\microerp\env\lib\site-packages\pymysql\cursors.py", line 310, in _query
+    conn.query(q)
+  File "D:\MyProject\microerp\env\lib\site-packages\pymysql\connections.py", line 548, in query
+    self._affected_rows = self._read_query_result(unbuffered=unbuffered)
+  File "D:\MyProject\microerp\env\lib\site-packages\pymysql\connections.py", line 775, in _read_query_result
+    result.read()
+  File "D:\MyProject\microerp\env\lib\site-packages\pymysql\connections.py", line 1156, in read
+    first_packet = self.connection._read_packet()
+  File "D:\MyProject\microerp\env\lib\site-packages\pymysql\connections.py", line 692, in _read_packet
+    packet_header = self._read_bytes(4)
+  File "D:\MyProject\microerp\env\lib\site-packages\pymysql\connections.py", line 738, in _read_bytes
+    raise err.OperationalError(
+pymysql.err.OperationalError: (2013, 'Lost connection to MySQL server during query ([WinError 10053] Программа на вашем хост-компьютере разорвала установленное подключение)')
+
+The above exception was the direct cause of the following exception:
+
+Traceback (most recent call last):
+  File "D:\MyProject\microerp\env\lib\site-packages\flask\app.py", line 2525, in wsgi_app
+    response = self.full_dispatch_request()
+  File "D:\MyProject\microerp\env\lib\site-packages\flask\app.py", line 1822, in full_dispatch_request
+    rv = self.handle_user_exception(e)
+  File "D:\MyProject\microerp\env\lib\site-packages\flask\app.py", line 1820, in full_dispatch_request
+    rv = self.dispatch_request()
+  File "D:\MyProject\microerp\env\lib\site-packages\flask\app.py", line 1796, in dispatch_request
+    return self.ensure_sync(self.view_functions[rule.endpoint])(**view_args)
+  File "D:\MyProject\microerp\app.py", line 224, in equipment
+    eq = Equipment.query.all()
+  File "D:\MyProject\microerp\env\lib\site-packages\sqlalchemy\orm\query.py", line 2768, in all
+    return self._iter().all()
+  File "D:\MyProject\microerp\env\lib\site-packages\sqlalchemy\orm\query.py", line 2903, in _iter
+    result = self.session.execute(
+  File "D:\MyProject\microerp\env\lib\site-packages\sqlalchemy\orm\session.py", line 1712, in execute
+    result = conn._execute_20(statement, params or {}, execution_options)
+  File "D:\MyProject\microerp\env\lib\site-packages\sqlalchemy\engine\base.py", line 1631, in _execute_20
+    return meth(self, args_10style, kwargs_10style, execution_options)
+  File "D:\MyProject\microerp\env\lib\site-packages\sqlalchemy\sql\elements.py", line 332, in _execute_on_connection
+    return connection._execute_clauseelement(
+  File "D:\MyProject\microerp\env\lib\site-packages\sqlalchemy\engine\base.py", line 1498, in _execute_clauseelement
+    ret = self._execute_context(
+  File "D:\MyProject\microerp\env\lib\site-packages\sqlalchemy\engine\base.py", line 1862, in _execute_context
+    self._handle_dbapi_exception(
+  File "D:\MyProject\microerp\env\lib\site-packages\sqlalchemy\engine\base.py", line 2043, in _handle_dbapi_exception
+    util.raise_(
+  File "D:\MyProject\microerp\env\lib\site-packages\sqlalchemy\util\compat.py", line 208, in raise_
+    raise exception
+  File "D:\MyProject\microerp\env\lib\site-packages\sqlalchemy\engine\base.py", line 1819, in _execute_context
+    self.dialect.do_execute(
+  File "D:\MyProject\microerp\env\lib\site-packages\sqlalchemy\engine\default.py", line 732, in do_execute
+    cursor.execute(statement, parameters)
+  File "D:\MyProject\microerp\env\lib\site-packages\pymysql\cursors.py", line 148, in execute
+    result = self._query(query)
+  File "D:\MyProject\microerp\env\lib\site-packages\pymysql\cursors.py", line 310, in _query
+    conn.query(q)
+  File "D:\MyProject\microerp\env\lib\site-packages\pymysql\connections.py", line 548, in query
+    self._affected_rows = self._read_query_result(unbuffered=unbuffered)
+  File "D:\MyProject\microerp\env\lib\site-packages\pymysql\connections.py", line 775, in _read_query_result
+    result.read()
+  File "D:\MyProject\microerp\env\lib\site-packages\pymysql\connections.py", line 1156, in read
+    first_packet = self.connection._read_packet()
+  File "D:\MyProject\microerp\env\lib\site-packages\pymysql\connections.py", line 692, in _read_packet
+    packet_header = self._read_bytes(4)
+  File "D:\MyProject\microerp\env\lib\site-packages\pymysql\connections.py", line 738, in _read_bytes
+    raise err.OperationalError(
+sqlalchemy.exc.OperationalError: (pymysql.err.OperationalError) (2013, 'Lost connection to MySQL server during query ([WinError 10053] Программа на вашем хост-компьютере разорвала установленное подключение)')
+[SQL: SELECT equipment.id AS equipment_id, equipment.name AS equipment_name, equipment.type AS equipment_type, equipment.description AS equipment_description, equipment.code AS equipment_code, equipment.firm AS equipment_firm, equipment.path AS equipment_path, equipment.data_added AS equipment_data_added, equipment.nodes AS equipment_nodes, equipment.options AS equipment_options, equipment.relevance AS equipment_relevance, equipment.added_id AS equipment_added_id, equipment.is_group AS equipment_is_group 
+FROM equipment]
+(Background on this error at: https://sqlalche.me/e/14/e3q8)
+INFO | 127.0.0.1 - - [01/Nov/2022 09:03:36] "POST /location HTTP/1.1" 200 -
+INFO | 127.0.0.1 - - [01/Nov/2022 09:03:36] "[35m[1mGET /equipment HTTP/1.1[0m" 500 -
+INFO | 127.0.0.1 - - [01/Nov/2022 09:03:40] "GET /equipment HTTP/1.1" 200 -
+INFO | 127.0.0.1 - - [01/Nov/2022 09:03:41] "GET /img_store/equipment/default_prisp.png HTTP/1.1" 200 -
+INFO | 127.0.0.1 - - [01/Nov/2022 09:03:41] "POST /location HTTP/1.1" 200 -
+INFO | 127.0.0.1 - - [01/Nov/2022 09:04:12] "GET /equipment HTTP/1.1" 200 -
+INFO | 127.0.0.1 - - [01/Nov/2022 09:04:12] "GET /img_store/equipment/default_prisp.png HTTP/1.1" 200 -
+INFO | 127.0.0.1 - - [01/Nov/2022 09:04:15] "POST /location HTTP/1.1" 200 -
+INFO | 127.0.0.1 - - [01/Nov/2022 09:04:17] "[33mGET /img_store/equipment/prisp_1.png HTTP/1.1[0m" 404 -
+INFO | 127.0.0.1 - - [01/Nov/2022 09:04:53] "GET /img_store/equipment/default_control.png HTTP/1.1" 200 -
+INFO | 127.0.0.1 - - [01/Nov/2022 09:04:55] "GET /img_store/equipment/default_tool.png HTTP/1.1" 200 -
+INFO | 127.0.0.1 - - [01/Nov/2022 09:04:58] "[33mGET /img_store/equipment/tool_2.png HTTP/1.1[0m" 404 -
+INFO | 127.0.0.1 - - [01/Nov/2022 09:05:20] "[33mGET /img_store/equipment/tool_3.png HTTP/1.1[0m" 404 -
+INFO | 127.0.0.1 - - [01/Nov/2022 09:06:57] "GET /equipment HTTP/1.1" 200 -
+INFO | 127.0.0.1 - - [01/Nov/2022 09:06:57] "GET /img_store/equipment/default_prisp.png HTTP/1.1" 200 -
+INFO | 127.0.0.1 - - [01/Nov/2022 09:06:57] "POST /location HTTP/1.1" 200 -
+INFO | 127.0.0.1 - - [01/Nov/2022 09:22:13] "GET /equipment HTTP/1.1" 200 -
+INFO | 127.0.0.1 - - [01/Nov/2022 09:22:13] "GET /img_store/equipment/default_prisp.png HTTP/1.1" 200 -
+INFO | 127.0.0.1 - - [01/Nov/2022 09:22:13] "POST /location HTTP/1.1" 200 -
+INFO | 127.0.0.1 - - [01/Nov/2022 10:17:04] "POST /location HTTP/1.1" 200 -
+INFO | 127.0.0.1 - - [01/Nov/2022 10:17:05] "GET /equipment HTTP/1.1" 200 -
+INFO | 127.0.0.1 - - [01/Nov/2022 10:17:05] "GET /img_store/equipment/default_prisp.png HTTP/1.1" 200 -
+INFO | 127.0.0.1 - - [01/Nov/2022 10:17:19] "GET /equipment HTTP/1.1" 200 -
+INFO | 127.0.0.1 - - [01/Nov/2022 10:17:20] "GET /img_store/equipment/default_prisp.png HTTP/1.1" 200 -
+INFO | 127.0.0.1 - - [01/Nov/2022 10:17:20] "POST /location HTTP/1.1" 200 -
+INFO | 127.0.0.1 - - [01/Nov/2022 10:17:24] "[33mGET /img_store/null HTTP/1.1[0m" 404 -
+INFO | 127.0.0.1 - - [01/Nov/2022 10:17:29] "GET /img_store/equipment/default_prisp.png HTTP/1.1" 200 -
+INFO | 127.0.0.1 - - [01/Nov/2022 10:17:30] "[33mGET /img_store/null HTTP/1.1[0m" 404 -
+INFO | 127.0.0.1 - - [01/Nov/2022 10:17:34] "GET /img_store/equipment/default_prisp.png HTTP/1.1" 200 -
+INFO | 127.0.0.1 - - [01/Nov/2022 10:18:01] "GET /img_store/equipment/default_tool.png HTTP/1.1" 200 -
+INFO | 127.0.0.1 - - [01/Nov/2022 10:18:02] "[33mGET /img_store/equipment/tool_2.png HTTP/1.1[0m" 404 -
+INFO | 127.0.0.1 - - [01/Nov/2022 10:18:03] "[33mGET /img_store/equipment/tool_3.png HTTP/1.1[0m" 404 -
+INFO | 127.0.0.1 - - [01/Nov/2022 10:18:06] "[33mGET /img_store/equipment/tool_2.png HTTP/1.1[0m" 404 -
+INFO | 127.0.0.1 - - [01/Nov/2022 10:18:07] "GET /img_store/equipment/default_tool.png HTTP/1.1" 200 -
+INFO | 127.0.0.1 - - [01/Nov/2022 10:18:09] "GET /img_store/equipment/default_control.png HTTP/1.1" 200 -
+INFO | 127.0.0.1 - - [01/Nov/2022 10:18:12] "[33mGET /img_store/equipment/tool_3.png HTTP/1.1[0m" 404 -
+INFO | 127.0.0.1 - - [01/Nov/2022 10:23:59] "GET /equipment HTTP/1.1" 200 -
+INFO | 127.0.0.1 - - [01/Nov/2022 10:23:59] "GET /img_store/equipment/default_prisp.png HTTP/1.1" 200 -
+INFO | 127.0.0.1 - - [01/Nov/2022 10:23:59] "POST /location HTTP/1.1" 200 -
+INFO | 127.0.0.1 - - [01/Nov/2022 10:24:32] "GET /equipment HTTP/1.1" 200 -
+INFO | 127.0.0.1 - - [01/Nov/2022 10:24:32] "GET /img_store/equipment/default_prisp.png HTTP/1.1" 200 -
+INFO | 127.0.0.1 - - [01/Nov/2022 10:24:32] "POST /location HTTP/1.1" 200 -
+INFO | 127.0.0.1 - - [01/Nov/2022 10:25:22] "GET /equipment HTTP/1.1" 200 -
+INFO | 127.0.0.1 - - [01/Nov/2022 10:25:22] "GET /img_store/equipment/default_prisp.png HTTP/1.1" 200 -
+INFO | 127.0.0.1 - - [01/Nov/2022 10:25:23] "POST /location HTTP/1.1" 200 -
+INFO | 127.0.0.1 - - [01/Nov/2022 10:25:27] "GET /img_store/equipment/default_tool.png HTTP/1.1" 200 -
+INFO | 127.0.0.1 - - [01/Nov/2022 10:25:58] "GET /equipment HTTP/1.1" 200 -
+INFO | 127.0.0.1 - - [01/Nov/2022 10:25:58] "GET /img_store/equipment/default_prisp.png HTTP/1.1" 200 -
+INFO | 127.0.0.1 - - [01/Nov/2022 10:25:59] "POST /location HTTP/1.1" 200 -
+INFO | 127.0.0.1 - - [01/Nov/2022 10:26:09] "GET /img_store/equipment/default_tool.png HTTP/1.1" 200 -
+INFO | 127.0.0.1 - - [01/Nov/2022 10:26:10] "[33mGET /img_store/equipment/tool_2.png HTTP/1.1[0m" 404 -
+INFO | 127.0.0.1 - - [01/Nov/2022 10:26:14] "[33mGET /img_store/equipment/tool_3.png HTTP/1.1[0m" 404 -
+INFO | 127.0.0.1 - - [01/Nov/2022 10:26:46] "GET /img_store/equipment/default_prisp.png HTTP/1.1" 200 -
+INFO | 127.0.0.1 - - [01/Nov/2022 10:26:48] "GET /img_store/equipment/default_control.png HTTP/1.1" 200 -
+INFO | 127.0.0.1 - - [01/Nov/2022 10:35:27] "GET /equipment HTTP/1.1" 200 -
+INFO | 127.0.0.1 - - [01/Nov/2022 10:35:27] "GET /img_store/equipment/default_prisp.png HTTP/1.1" 200 -
+INFO | 127.0.0.1 - - [01/Nov/2022 10:35:27] "POST /location HTTP/1.1" 200 -
+INFO | 127.0.0.1 - - [01/Nov/2022 10:36:30] "GET /equipment HTTP/1.1" 200 -
+INFO | 127.0.0.1 - - [01/Nov/2022 10:36:30] "GET /img_store/equipment/default_prisp.png HTTP/1.1" 200 -
+INFO | 127.0.0.1 - - [01/Nov/2022 10:36:30] "POST /location HTTP/1.1" 200 -
+INFO | 127.0.0.1 - - [01/Nov/2022 10:36:31] "GET /img_store/equipment/default_tool.png HTTP/1.1" 200 -
+INFO | 127.0.0.1 - - [01/Nov/2022 10:36:32] "[33mGET /img_store/equipment/tool_1.png HTTP/1.1[0m" 404 -
+INFO | 127.0.0.1 - - [01/Nov/2022 10:37:26] "GET /equipment HTTP/1.1" 200 -
+INFO | 127.0.0.1 - - [01/Nov/2022 10:37:26] "GET /img_store/equipment/default_prisp.png HTTP/1.1" 200 -
+INFO | 127.0.0.1 - - [01/Nov/2022 10:37:27] "POST /location HTTP/1.1" 200 -
+INFO | 127.0.0.1 - - [01/Nov/2022 10:40:23] "GET /equipment HTTP/1.1" 200 -
+INFO | 127.0.0.1 - - [01/Nov/2022 10:40:23] "GET /img_store/equipment/default_prisp.png HTTP/1.1" 200 -
+INFO | 127.0.0.1 - - [01/Nov/2022 10:40:23] "POST /location HTTP/1.1" 200 -
+INFO | 127.0.0.1 - - [01/Nov/2022 10:40:40] "GET /equipment HTTP/1.1" 200 -
+INFO | 127.0.0.1 - - [01/Nov/2022 10:40:40] "GET /img_store/equipment/default_prisp.png HTTP/1.1" 200 -
+INFO | 127.0.0.1 - - [01/Nov/2022 10:40:40] "POST /location HTTP/1.1" 200 -
+INFO | 127.0.0.1 - - [01/Nov/2022 10:49:01] "GET /equipment HTTP/1.1" 200 -
+INFO | 127.0.0.1 - - [01/Nov/2022 10:49:01] "GET /img_store/equipment/default_prisp.png HTTP/1.1" 200 -
+INFO | 127.0.0.1 - - [01/Nov/2022 10:49:01] "POST /location HTTP/1.1" 200 -
+INFO | 127.0.0.1 - - [01/Nov/2022 10:49:40] "GET /equipment HTTP/1.1" 200 -
+INFO | 127.0.0.1 - - [01/Nov/2022 10:49:40] "GET /img_store/equipment/default_prisp.png HTTP/1.1" 200 -
+INFO | 127.0.0.1 - - [01/Nov/2022 10:49:40] "POST /location HTTP/1.1" 200 -
+ERROR | Exception on /equipment [GET]
+Traceback (most recent call last):
+  File "D:\MyProject\microerp\env\lib\site-packages\pymysql\connections.py", line 732, in _read_bytes
+    data = self._rfile.read(num_bytes)
+  File "C:\Python38\lib\socket.py", line 669, in readinto
+    return self._sock.recv_into(b)
+ConnectionAbortedError: [WinError 10053] Программа на вашем хост-компьютере разорвала установленное подключение
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "D:\MyProject\microerp\env\lib\site-packages\sqlalchemy\engine\base.py", line 1819, in _execute_context
+    self.dialect.do_execute(
+  File "D:\MyProject\microerp\env\lib\site-packages\sqlalchemy\engine\default.py", line 732, in do_execute
+    cursor.execute(statement, parameters)
+  File "D:\MyProject\microerp\env\lib\site-packages\pymysql\cursors.py", line 148, in execute
+    result = self._query(query)
+  File "D:\MyProject\microerp\env\lib\site-packages\pymysql\cursors.py", line 310, in _query
+    conn.query(q)
+  File "D:\MyProject\microerp\env\lib\site-packages\pymysql\connections.py", line 548, in query
+    self._affected_rows = self._read_query_result(unbuffered=unbuffered)
+  File "D:\MyProject\microerp\env\lib\site-packages\pymysql\connections.py", line 775, in _read_query_result
+    result.read()
+  File "D:\MyProject\microerp\env\lib\site-packages\pymysql\connections.py", line 1156, in read
+    first_packet = self.connection._read_packet()
+  File "D:\MyProject\microerp\env\lib\site-packages\pymysql\connections.py", line 692, in _read_packet
+    packet_header = self._read_bytes(4)
+  File "D:\MyProject\microerp\env\lib\site-packages\pymysql\connections.py", line 738, in _read_bytes
+    raise err.OperationalError(
+pymysql.err.OperationalError: (2013, 'Lost connection to MySQL server during query ([WinError 10053] Программа на вашем хост-компьютере разорвала установленное подключение)')
+
+The above exception was the direct cause of the following exception:
+
+Traceback (most recent call last):
+  File "D:\MyProject\microerp\env\lib\site-packages\flask\app.py", line 2525, in wsgi_app
+    response = self.full_dispatch_request()
+  File "D:\MyProject\microerp\env\lib\site-packages\flask\app.py", line 1822, in full_dispatch_request
+    rv = self.handle_user_exception(e)
+  File "D:\MyProject\microerp\env\lib\site-packages\flask\app.py", line 1820, in full_dispatch_request
+    rv = self.dispatch_request()
+  File "D:\MyProject\microerp\env\lib\site-packages\flask\app.py", line 1796, in dispatch_request
+    return self.ensure_sync(self.view_functions[rule.endpoint])(**view_args)
+  File "D:\MyProject\microerp\app.py", line 224, in equipment
+    eq = Equipment.query.all()
+  File "D:\MyProject\microerp\env\lib\site-packages\sqlalchemy\orm\query.py", line 2768, in all
+    return self._iter().all()
+  File "D:\MyProject\microerp\env\lib\site-packages\sqlalchemy\orm\query.py", line 2903, in _iter
+    result = self.session.execute(
+  File "D:\MyProject\microerp\env\lib\site-packages\sqlalchemy\orm\session.py", line 1712, in execute
+    result = conn._execute_20(statement, params or {}, execution_options)
+  File "D:\MyProject\microerp\env\lib\site-packages\sqlalchemy\engine\base.py", line 1631, in _execute_20
+    return meth(self, args_10style, kwargs_10style, execution_options)
+  File "D:\MyProject\microerp\env\lib\site-packages\sqlalchemy\sql\elements.py", line 332, in _execute_on_connection
+    return connection._execute_clauseelement(
+  File "D:\MyProject\microerp\env\lib\site-packages\sqlalchemy\engine\base.py", line 1498, in _execute_clauseelement
+    ret = self._execute_context(
+  File "D:\MyProject\microerp\env\lib\site-packages\sqlalchemy\engine\base.py", line 1862, in _execute_context
+    self._handle_dbapi_exception(
+  File "D:\MyProject\microerp\env\lib\site-packages\sqlalchemy\engine\base.py", line 2043, in _handle_dbapi_exception
+    util.raise_(
+  File "D:\MyProject\microerp\env\lib\site-packages\sqlalchemy\util\compat.py", line 208, in raise_
+    raise exception
+  File "D:\MyProject\microerp\env\lib\site-packages\sqlalchemy\engine\base.py", line 1819, in _execute_context
+    self.dialect.do_execute(
+  File "D:\MyProject\microerp\env\lib\site-packages\sqlalchemy\engine\default.py", line 732, in do_execute
+    cursor.execute(statement, parameters)
+  File "D:\MyProject\microerp\env\lib\site-packages\pymysql\cursors.py", line 148, in execute
+    result = self._query(query)
+  File "D:\MyProject\microerp\env\lib\site-packages\pymysql\cursors.py", line 310, in _query
+    conn.query(q)
+  File "D:\MyProject\microerp\env\lib\site-packages\pymysql\connections.py", line 548, in query
+    self._affected_rows = self._read_query_result(unbuffered=unbuffered)
+  File "D:\MyProject\microerp\env\lib\site-packages\pymysql\connections.py", line 775, in _read_query_result
+    result.read()
+  File "D:\MyProject\microerp\env\lib\site-packages\pymysql\connections.py", line 1156, in read
+    first_packet = self.connection._read_packet()
+  File "D:\MyProject\microerp\env\lib\site-packages\pymysql\connections.py", line 692, in _read_packet
+    packet_header = self._read_bytes(4)
+  File "D:\MyProject\microerp\env\lib\site-packages\pymysql\connections.py", line 738, in _read_bytes
+    raise err.OperationalError(
+sqlalchemy.exc.OperationalError: (pymysql.err.OperationalError) (2013, 'Lost connection to MySQL server during query ([WinError 10053] Программа на вашем хост-компьютере разорвала установленное подключение)')
+[SQL: SELECT equipment.id AS equipment_id, equipment.name AS equipment_name, equipment.type AS equipment_type, equipment.description AS equipment_description, equipment.code AS equipment_code, equipment.firm AS equipment_firm, equipment.path AS equipment_path, equipment.data_added AS equipment_data_added, equipment.nodes AS equipment_nodes, equipment.options AS equipment_options, equipment.relevance AS equipment_relevance, equipment.added_id AS equipment_added_id, equipment.is_group AS equipment_is_group 
+FROM equipment]
+(Background on this error at: https://sqlalche.me/e/14/e3q8)
+INFO | 127.0.0.1 - - [01/Nov/2022 10:52:49] "[35m[1mGET /equipment HTTP/1.1[0m" 500 -
+INFO | 127.0.0.1 - - [01/Nov/2022 10:52:49] "POST /location HTTP/1.1" 200 -
+INFO | 127.0.0.1 - - [01/Nov/2022 10:52:54] "GET /equipment HTTP/1.1" 200 -
+INFO | 127.0.0.1 - - [01/Nov/2022 10:52:54] "GET /img_store/equipment/default_prisp.png HTTP/1.1" 200 -
+INFO | 127.0.0.1 - - [01/Nov/2022 10:52:54] "POST /location HTTP/1.1" 200 -
+INFO | 127.0.0.1 - - [01/Nov/2022 10:53:13] "GET /equipment HTTP/1.1" 200 -
+INFO | 127.0.0.1 - - [01/Nov/2022 10:53:13] "GET /img_store/equipment/default_prisp.png HTTP/1.1" 200 -
+INFO | 127.0.0.1 - - [01/Nov/2022 10:53:13] "POST /location HTTP/1.1" 200 -
+INFO | 127.0.0.1 - - [01/Nov/2022 10:54:23] "GET /equipment HTTP/1.1" 200 -
+INFO | 127.0.0.1 - - [01/Nov/2022 10:54:23] "POST /location HTTP/1.1" 200 -
+INFO | 127.0.0.1 - - [01/Nov/2022 10:54:23] "GET /img_store/equipment/default_prisp.png HTTP/1.1" 200 -
+INFO | 127.0.0.1 - - [01/Nov/2022 10:55:08] "GET /equipment HTTP/1.1" 200 -
+INFO | 127.0.0.1 - - [01/Nov/2022 10:55:08] "GET /img_store/equipment/default_prisp.png HTTP/1.1" 200 -
+INFO | 127.0.0.1 - - [01/Nov/2022 10:55:08] "POST /location HTTP/1.1" 200 -
+INFO | 127.0.0.1 - - [01/Nov/2022 11:09:55] "GET /equipment HTTP/1.1" 200 -
+INFO | 127.0.0.1 - - [01/Nov/2022 11:09:55] "GET /img_store/equipment/default_prisp.png HTTP/1.1" 200 -
+INFO | 127.0.0.1 - - [01/Nov/2022 11:09:55] "POST /location HTTP/1.1" 200 -
+INFO | 127.0.0.1 - - [01/Nov/2022 11:12:23] "GET /equipment HTTP/1.1" 200 -
+INFO | 127.0.0.1 - - [01/Nov/2022 11:12:23] "GET /img_store/equipment/default_prisp.png HTTP/1.1" 200 -
+INFO | 127.0.0.1 - - [01/Nov/2022 11:12:23] "POST /location HTTP/1.1" 200 -
+INFO | 127.0.0.1 - - [01/Nov/2022 11:13:06] "GET /equipment HTTP/1.1" 200 -
+INFO | 127.0.0.1 - - [01/Nov/2022 11:13:06] "GET /img_store/equipment/default_prisp.png HTTP/1.1" 200 -
+INFO | 127.0.0.1 - - [01/Nov/2022 11:13:06] "POST /location HTTP/1.1" 200 -
+INFO | 127.0.0.1 - - [01/Nov/2022 11:15:28] "GET /equipment HTTP/1.1" 200 -
+INFO | 127.0.0.1 - - [01/Nov/2022 11:15:28] "GET /img_store/equipment/default_prisp.png HTTP/1.1" 200 -
+INFO | 127.0.0.1 - - [01/Nov/2022 11:15:29] "POST /location HTTP/1.1" 200 -
+INFO | 127.0.0.1 - - [01/Nov/2022 11:17:11] "GET /equipment HTTP/1.1" 200 -
+INFO | 127.0.0.1 - - [01/Nov/2022 11:17:11] "GET /img_store/equipment/default_prisp.png HTTP/1.1" 200 -
+INFO | 127.0.0.1 - - [01/Nov/2022 11:17:11] "POST /location HTTP/1.1" 200 -
+INFO | 127.0.0.1 - - [01/Nov/2022 11:27:24] "GET /equipment HTTP/1.1" 200 -
+INFO | 127.0.0.1 - - [01/Nov/2022 11:27:24] "GET /img_store/equipment/default_prisp.png HTTP/1.1" 200 -
+INFO | 127.0.0.1 - - [01/Nov/2022 11:27:24] "POST /location HTTP/1.1" 200 -
+INFO | 127.0.0.1 - - [01/Nov/2022 11:28:14] "GET /equipment HTTP/1.1" 200 -
+INFO | 127.0.0.1 - - [01/Nov/2022 11:28:14] "GET /img_store/equipment/default_prisp.png HTTP/1.1" 200 -
+INFO | 127.0.0.1 - - [01/Nov/2022 11:28:14] "POST /location HTTP/1.1" 200 -
+INFO | 127.0.0.1 - - [01/Nov/2022 11:28:48] "GET /equipment HTTP/1.1" 200 -
+INFO | 127.0.0.1 - - [01/Nov/2022 11:28:48] "GET /img_store/equipment/default_prisp.png HTTP/1.1" 200 -
+INFO | 127.0.0.1 - - [01/Nov/2022 11:28:48] "POST /location HTTP/1.1" 200 -
+INFO | 127.0.0.1 - - [01/Nov/2022 11:29:42] "GET /equipment HTTP/1.1" 200 -
+INFO | 127.0.0.1 - - [01/Nov/2022 11:29:42] "GET /img_store/equipment/default_prisp.png HTTP/1.1" 200 -
+INFO | 127.0.0.1 - - [01/Nov/2022 11:29:42] "POST /location HTTP/1.1" 200 -
+INFO | 127.0.0.1 - - [01/Nov/2022 11:30:33] "GET /equipment HTTP/1.1" 200 -
+INFO | 127.0.0.1 - - [01/Nov/2022 11:30:33] "GET /img_store/equipment/default_prisp.png HTTP/1.1" 200 -
+INFO | 127.0.0.1 - - [01/Nov/2022 11:30:33] "POST /location HTTP/1.1" 200 -
+INFO | 127.0.0.1 - - [01/Nov/2022 11:34:52] "GET /equipment HTTP/1.1" 200 -
+INFO | 127.0.0.1 - - [01/Nov/2022 11:34:52] "GET /img_store/equipment/default_prisp.png HTTP/1.1" 200 -
+INFO | 127.0.0.1 - - [01/Nov/2022 11:34:52] "POST /location HTTP/1.1" 200 -
+INFO | 127.0.0.1 - - [01/Nov/2022 11:35:59] "GET /equipment HTTP/1.1" 200 -
+INFO | 127.0.0.1 - - [01/Nov/2022 11:35:59] "GET /img_store/equipment/default_prisp.png HTTP/1.1" 200 -
+INFO | 127.0.0.1 - - [01/Nov/2022 11:35:59] "POST /location HTTP/1.1" 200 -
+INFO | 127.0.0.1 - - [01/Nov/2022 11:37:30] "GET /equipment HTTP/1.1" 200 -
+INFO | 127.0.0.1 - - [01/Nov/2022 11:37:30] "GET /img_store/equipment/default_prisp.png HTTP/1.1" 200 -
+INFO | 127.0.0.1 - - [01/Nov/2022 11:37:30] "POST /location HTTP/1.1" 200 -
+INFO | 127.0.0.1 - - [01/Nov/2022 11:46:51] "GET /equipment HTTP/1.1" 200 -
+INFO | 127.0.0.1 - - [01/Nov/2022 11:46:51] "GET /img_store/equipment/default_prisp.png HTTP/1.1" 200 -
+INFO | 127.0.0.1 - - [01/Nov/2022 11:46:51] "POST /location HTTP/1.1" 200 -
+INFO | 127.0.0.1 - - [01/Nov/2022 11:48:12] "GET /equipment HTTP/1.1" 200 -
+INFO | 127.0.0.1 - - [01/Nov/2022 11:48:12] "GET /img_store/equipment/default_prisp.png HTTP/1.1" 200 -
+INFO | 127.0.0.1 - - [01/Nov/2022 11:48:12] "POST /location HTTP/1.1" 200 -
+INFO | 127.0.0.1 - - [01/Nov/2022 11:49:42] "GET /equipment HTTP/1.1" 200 -
+INFO | 127.0.0.1 - - [01/Nov/2022 11:49:42] "GET /img_store/equipment/default_prisp.png HTTP/1.1" 200 -
+INFO | 127.0.0.1 - - [01/Nov/2022 11:49:42] "POST /location HTTP/1.1" 200 -
+INFO | 127.0.0.1 - - [01/Nov/2022 11:50:10] "GET /equipment HTTP/1.1" 200 -
+INFO | 127.0.0.1 - - [01/Nov/2022 11:50:10] "GET /img_store/equipment/default_prisp.png HTTP/1.1" 200 -
+INFO | 127.0.0.1 - - [01/Nov/2022 11:50:10] "POST /location HTTP/1.1" 200 -
+INFO | 127.0.0.1 - - [01/Nov/2022 11:51:24] "GET /equipment HTTP/1.1" 200 -
+INFO | 127.0.0.1 - - [01/Nov/2022 11:51:24] "GET /img_store/equipment/default_prisp.png HTTP/1.1" 200 -
+INFO | 127.0.0.1 - - [01/Nov/2022 11:51:24] "POST /location HTTP/1.1" 200 -
+INFO | 127.0.0.1 - - [01/Nov/2022 11:51:58] "GET /equipment HTTP/1.1" 200 -
+INFO | 127.0.0.1 - - [01/Nov/2022 11:51:58] "GET /img_store/equipment/default_prisp.png HTTP/1.1" 200 -
+INFO | 127.0.0.1 - - [01/Nov/2022 11:51:58] "POST /location HTTP/1.1" 200 -
+INFO | 127.0.0.1 - - [01/Nov/2022 12:01:52] "GET /equipment HTTP/1.1" 200 -
+INFO | 127.0.0.1 - - [01/Nov/2022 12:01:52] "GET /img_store/equipment/default_prisp.png HTTP/1.1" 200 -
+INFO | 127.0.0.1 - - [01/Nov/2022 12:01:53] "POST /location HTTP/1.1" 200 -
+INFO | 127.0.0.1 - - [01/Nov/2022 12:02:23] "GET /equipment HTTP/1.1" 200 -
+INFO | 127.0.0.1 - - [01/Nov/2022 12:02:23] "GET /img_store/equipment/default_prisp.png HTTP/1.1" 200 -
+INFO | 127.0.0.1 - - [01/Nov/2022 12:02:23] "POST /location HTTP/1.1" 200 -
+INFO | 127.0.0.1 - - [01/Nov/2022 12:08:29] "GET /equipment HTTP/1.1" 200 -
+INFO | 127.0.0.1 - - [01/Nov/2022 12:08:29] "GET /img_store/equipment/default_prisp.png HTTP/1.1" 200 -
+INFO | 127.0.0.1 - - [01/Nov/2022 12:08:29] "POST /location HTTP/1.1" 200 -
+INFO | 127.0.0.1 - - [01/Nov/2022 12:09:53] "GET /equipment HTTP/1.1" 200 -
+INFO | 127.0.0.1 - - [01/Nov/2022 12:09:53] "GET /img_store/equipment/default_prisp.png HTTP/1.1" 200 -
+INFO | 127.0.0.1 - - [01/Nov/2022 12:09:53] "POST /location HTTP/1.1" 200 -
+INFO | 127.0.0.1 - - [01/Nov/2022 12:10:41] "GET /equipment HTTP/1.1" 200 -
+INFO | 127.0.0.1 - - [01/Nov/2022 12:10:41] "GET /img_store/equipment/default_prisp.png HTTP/1.1" 200 -
+INFO | 127.0.0.1 - - [01/Nov/2022 12:10:44] "POST /location HTTP/1.1" 200 -
+INFO | 127.0.0.1 - - [01/Nov/2022 12:12:05] "GET /equipment HTTP/1.1" 200 -
+INFO | 127.0.0.1 - - [01/Nov/2022 12:12:05] "GET /img_store/equipment/default_prisp.png HTTP/1.1" 200 -
+INFO | 127.0.0.1 - - [01/Nov/2022 12:12:08] "POST /location HTTP/1.1" 200 -
+INFO | 127.0.0.1 - - [01/Nov/2022 12:13:52] "GET /equipment HTTP/1.1" 200 -
+INFO | 127.0.0.1 - - [01/Nov/2022 12:13:52] "GET /img_store/equipment/default_prisp.png HTTP/1.1" 200 -
+INFO | 127.0.0.1 - - [01/Nov/2022 12:13:52] "POST /location HTTP/1.1" 200 -
+INFO | 127.0.0.1 - - [01/Nov/2022 12:14:08] "GET /equipment HTTP/1.1" 200 -
+INFO | 127.0.0.1 - - [01/Nov/2022 12:14:08] "GET /img_store/equipment/default_prisp.png HTTP/1.1" 200 -
+INFO | 127.0.0.1 - - [01/Nov/2022 12:14:08] "POST /location HTTP/1.1" 200 -
+INFO | 127.0.0.1 - - [01/Nov/2022 12:14:11] "GET /img_store/equipment/default_control.png HTTP/1.1" 200 -
+INFO | 127.0.0.1 - - [01/Nov/2022 12:16:52] "GET /equipment HTTP/1.1" 200 -
+INFO | 127.0.0.1 - - [01/Nov/2022 12:16:52] "GET /img_store/equipment/default_prisp.png HTTP/1.1" 200 -
+INFO | 127.0.0.1 - - [01/Nov/2022 12:16:52] "POST /location HTTP/1.1" 200 -
+INFO | 127.0.0.1 - - [01/Nov/2022 12:22:15] "POST /location HTTP/1.1" 200 -
+INFO | 127.0.0.1 - - [01/Nov/2022 12:22:19] "GET /equipment HTTP/1.1" 200 -
+INFO | 127.0.0.1 - - [01/Nov/2022 12:22:19] "[36mGET /img_store/equipment/default_prisp.png HTTP/1.1[0m" 304 -
+INFO | 127.0.0.1 - - [01/Nov/2022 12:22:48] "GET /equipment HTTP/1.1" 200 -
+INFO | 127.0.0.1 - - [01/Nov/2022 12:22:48] "GET /img_store/equipment/default_prisp.png HTTP/1.1" 200 -
+INFO | 127.0.0.1 - - [01/Nov/2022 12:22:48] "POST /location HTTP/1.1" 200 -
+INFO | 127.0.0.1 - - [01/Nov/2022 12:25:01] "GET /equipment HTTP/1.1" 200 -
+INFO | 127.0.0.1 - - [01/Nov/2022 12:25:02] "POST /location HTTP/1.1" 200 -
+INFO | 127.0.0.1 - - [01/Nov/2022 12:25:02] "GET /img_store/equipment/default_prisp.png HTTP/1.1" 200 -
+INFO | 127.0.0.1 - - [01/Nov/2022 12:41:48] "GET /equipment HTTP/1.1" 200 -
+INFO | 127.0.0.1 - - [01/Nov/2022 12:41:49] "GET /img_store/equipment/default_prisp.png HTTP/1.1" 200 -
+INFO | 127.0.0.1 - - [01/Nov/2022 12:41:49] "POST /location HTTP/1.1" 200 -
+INFO | 127.0.0.1 - - [01/Nov/2022 12:43:44] "GET /equipment HTTP/1.1" 200 -
+INFO | 127.0.0.1 - - [01/Nov/2022 12:43:44] "GET /img_store/equipment/default_prisp.png HTTP/1.1" 200 -
+INFO | 127.0.0.1 - - [01/Nov/2022 12:43:45] "POST /location HTTP/1.1" 200 -
+INFO | 127.0.0.1 - - [01/Nov/2022 12:46:39] "GET /equipment HTTP/1.1" 200 -
+INFO | 127.0.0.1 - - [01/Nov/2022 12:46:39] "GET /img_store/equipment/default_prisp.png HTTP/1.1" 200 -
+INFO | 127.0.0.1 - - [01/Nov/2022 12:46:39] "POST /location HTTP/1.1" 200 -
+INFO | 127.0.0.1 - - [01/Nov/2022 12:48:25] "GET /equipment HTTP/1.1" 200 -
+INFO | 127.0.0.1 - - [01/Nov/2022 12:48:25] "GET /img_store/equipment/default_prisp.png HTTP/1.1" 200 -
+INFO | 127.0.0.1 - - [01/Nov/2022 12:48:25] "POST /location HTTP/1.1" 200 -
+INFO | 127.0.0.1 - - [01/Nov/2022 12:48:56] "GET /equipment HTTP/1.1" 200 -
+INFO | 127.0.0.1 - - [01/Nov/2022 12:48:56] "GET /img_store/equipment/default_prisp.png HTTP/1.1" 200 -
+INFO | 127.0.0.1 - - [01/Nov/2022 12:48:56] "POST /location HTTP/1.1" 200 -
+INFO | 127.0.0.1 - - [01/Nov/2022 12:49:09] "GET /equipment HTTP/1.1" 200 -
+INFO | 127.0.0.1 - - [01/Nov/2022 12:49:09] "GET /img_store/equipment/default_prisp.png HTTP/1.1" 200 -
+INFO | 127.0.0.1 - - [01/Nov/2022 12:49:10] "POST /location HTTP/1.1" 200 -
+INFO | 127.0.0.1 - - [01/Nov/2022 12:49:29] "GET /equipment HTTP/1.1" 200 -
+INFO | 127.0.0.1 - - [01/Nov/2022 12:49:30] "GET /img_store/equipment/default_prisp.png HTTP/1.1" 200 -
+INFO | 127.0.0.1 - - [01/Nov/2022 12:49:30] "POST /location HTTP/1.1" 200 -
+INFO | 127.0.0.1 - - [01/Nov/2022 12:51:43] "GET /img_store/equipment/default_tool.png HTTP/1.1" 200 -
+INFO | 127.0.0.1 - - [01/Nov/2022 12:51:43] "GET /img_store/equipment/default_control.png HTTP/1.1" 200 -
+INFO | 127.0.0.1 - - [01/Nov/2022 12:51:48] "GET /img_store/equipment/default_tool.png HTTP/1.1" 200 -
+INFO | 127.0.0.1 - - [01/Nov/2022 12:51:50] "GET /img_store/equipment/default_prisp.png HTTP/1.1" 200 -
+INFO | 127.0.0.1 - - [01/Nov/2022 12:51:52] "GET /img_store/equipment/default_control.png HTTP/1.1" 200 -
+INFO | 127.0.0.1 - - [01/Nov/2022 13:11:42] "GET /equipment HTTP/1.1" 200 -
+INFO | 127.0.0.1 - - [01/Nov/2022 13:11:42] "GET /img_store/equipment/default_prisp.png HTTP/1.1" 200 -
+INFO | 127.0.0.1 - - [01/Nov/2022 13:11:43] "POST /location HTTP/1.1" 200 -
+INFO | 127.0.0.1 - - [01/Nov/2022 13:13:07] "GET /equipment HTTP/1.1" 200 -
+INFO | 127.0.0.1 - - [01/Nov/2022 13:13:07] "GET /img_store/equipment/default_prisp.png HTTP/1.1" 200 -
+INFO | 127.0.0.1 - - [01/Nov/2022 13:13:07] "POST /location HTTP/1.1" 200 -
+INFO | 127.0.0.1 - - [01/Nov/2022 13:13:12] "GET /equipment HTTP/1.1" 200 -
+INFO | 127.0.0.1 - - [01/Nov/2022 13:13:12] "GET /img_store/equipment/default_prisp.png HTTP/1.1" 200 -
+INFO | 127.0.0.1 - - [01/Nov/2022 13:13:13] "POST /location HTTP/1.1" 200 -
+INFO | 127.0.0.1 - - [01/Nov/2022 13:13:41] "GET /equipment HTTP/1.1" 200 -
+INFO | 127.0.0.1 - - [01/Nov/2022 13:13:41] "GET /img_store/equipment/default_prisp.png HTTP/1.1" 200 -
+INFO | 127.0.0.1 - - [01/Nov/2022 13:13:41] "POST /location HTTP/1.1" 200 -
+INFO | 127.0.0.1 - - [01/Nov/2022 13:14:11] "GET /equipment HTTP/1.1" 200 -
+INFO | 127.0.0.1 - - [01/Nov/2022 13:14:11] "GET /img_store/equipment/default_prisp.png HTTP/1.1" 200 -
+INFO | 127.0.0.1 - - [01/Nov/2022 13:14:11] "POST /location HTTP/1.1" 200 -
+INFO | 127.0.0.1 - - [01/Nov/2022 13:15:10] "GET /equipment HTTP/1.1" 200 -
+INFO | 127.0.0.1 - - [01/Nov/2022 13:15:10] "GET /img_store/equipment/default_prisp.png HTTP/1.1" 200 -
+INFO | 127.0.0.1 - - [01/Nov/2022 13:15:10] "POST /location HTTP/1.1" 200 -
+INFO | 127.0.0.1 - - [01/Nov/2022 13:15:45] "GET /equipment HTTP/1.1" 200 -
+INFO | 127.0.0.1 - - [01/Nov/2022 13:15:45] "GET /img_store/equipment/default_prisp.png HTTP/1.1" 200 -
+INFO | 127.0.0.1 - - [01/Nov/2022 13:15:45] "POST /location HTTP/1.1" 200 -
+INFO | 127.0.0.1 - - [01/Nov/2022 13:18:10] "GET /equipment HTTP/1.1" 200 -
+INFO | 127.0.0.1 - - [01/Nov/2022 13:18:10] "GET /img_store/equipment/default_prisp.png HTTP/1.1" 200 -
+INFO | 127.0.0.1 - - [01/Nov/2022 13:18:11] "POST /location HTTP/1.1" 200 -
+INFO | 127.0.0.1 - - [01/Nov/2022 13:18:18] "GET /equipment HTTP/1.1" 200 -
+INFO | 127.0.0.1 - - [01/Nov/2022 13:18:18] "GET /img_store/equipment/default_prisp.png HTTP/1.1" 200 -
+INFO | 127.0.0.1 - - [01/Nov/2022 13:18:18] "POST /location HTTP/1.1" 200 -
+INFO | 127.0.0.1 - - [01/Nov/2022 13:18:41] "GET /equipment HTTP/1.1" 200 -
+INFO | 127.0.0.1 - - [01/Nov/2022 13:18:42] "GET /img_store/equipment/default_prisp.png HTTP/1.1" 200 -
+INFO | 127.0.0.1 - - [01/Nov/2022 13:18:42] "POST /location HTTP/1.1" 200 -
+INFO | 127.0.0.1 - - [01/Nov/2022 13:18:48] "GET /equipment HTTP/1.1" 200 -
+INFO | 127.0.0.1 - - [01/Nov/2022 13:18:48] "GET /img_store/equipment/default_prisp.png HTTP/1.1" 200 -
+INFO | 127.0.0.1 - - [01/Nov/2022 13:18:49] "POST /location HTTP/1.1" 200 -
+INFO | 127.0.0.1 - - [01/Nov/2022 13:19:16] "GET /equipment HTTP/1.1" 200 -
+INFO | 127.0.0.1 - - [01/Nov/2022 13:19:16] "GET /img_store/equipment/default_prisp.png HTTP/1.1" 200 -
+INFO | 127.0.0.1 - - [01/Nov/2022 13:19:16] "POST /location HTTP/1.1" 200 -
+INFO | 127.0.0.1 - - [01/Nov/2022 13:19:28] "GET /img_store/equipment/default_control.png HTTP/1.1" 200 -
+INFO | 127.0.0.1 - - [01/Nov/2022 13:19:33] "GET /img_store/equipment/default_tool.png HTTP/1.1" 200 -
+INFO | 127.0.0.1 - - [01/Nov/2022 13:19:56] "GET /equipment HTTP/1.1" 200 -
+INFO | 127.0.0.1 - - [01/Nov/2022 13:19:56] "GET /img_store/equipment/default_prisp.png HTTP/1.1" 200 -
+INFO | 127.0.0.1 - - [01/Nov/2022 13:19:56] "POST /location HTTP/1.1" 200 -
+INFO | 127.0.0.1 - - [01/Nov/2022 13:20:14] "GET /img_store/equipment/default_tool.png HTTP/1.1" 200 -
+INFO | 127.0.0.1 - - [01/Nov/2022 13:20:20] "GET /img_store/equipment/default_control.png HTTP/1.1" 200 -
+INFO | 127.0.0.1 - - [01/Nov/2022 13:20:53] "GET /equipment HTTP/1.1" 200 -
+INFO | 127.0.0.1 - - [01/Nov/2022 13:20:53] "GET /img_store/equipment/default_prisp.png HTTP/1.1" 200 -
+INFO | 127.0.0.1 - - [01/Nov/2022 13:20:54] "POST /location HTTP/1.1" 200 -
+INFO | 127.0.0.1 - - [01/Nov/2022 13:21:04] "GET /img_store/equipment/default_tool.png HTTP/1.1" 200 -
+INFO | 127.0.0.1 - - [01/Nov/2022 13:21:08] "GET /img_store/equipment/default_control.png HTTP/1.1" 200 -
+INFO | 127.0.0.1 - - [01/Nov/2022 13:21:16] "GET /img_store/equipment/default_prisp.png HTTP/1.1" 200 -
+INFO | 127.0.0.1 - - [01/Nov/2022 13:21:41] "GET /equipment HTTP/1.1" 200 -
+INFO | 127.0.0.1 - - [01/Nov/2022 13:21:41] "GET /img_store/equipment/default_prisp.png HTTP/1.1" 200 -
+INFO | 127.0.0.1 - - [01/Nov/2022 13:21:42] "POST /location HTTP/1.1" 200 -
+INFO | 127.0.0.1 - - [01/Nov/2022 13:21:48] "GET /img_store/equipment/default_tool.png HTTP/1.1" 200 -
+INFO | 127.0.0.1 - - [01/Nov/2022 13:21:53] "GET /img_store/equipment/default_control.png HTTP/1.1" 200 -
+INFO | 127.0.0.1 - - [01/Nov/2022 13:22:13] "GET /equipment HTTP/1.1" 200 -
+INFO | 127.0.0.1 - - [01/Nov/2022 13:22:13] "GET /img_store/equipment/default_prisp.png HTTP/1.1" 200 -
+INFO | 127.0.0.1 - - [01/Nov/2022 13:22:13] "POST /location HTTP/1.1" 200 -
+INFO | 127.0.0.1 - - [01/Nov/2022 13:22:17] "GET /img_store/equipment/default_tool.png HTTP/1.1" 200 -
+INFO | 127.0.0.1 - - [01/Nov/2022 13:22:22] "GET /img_store/equipment/default_control.png HTTP/1.1" 200 -
+INFO | 127.0.0.1 - - [01/Nov/2022 13:22:26] "GET /img_store/equipment/default_prisp.png HTTP/1.1" 200 -
+INFO | 127.0.0.1 - - [01/Nov/2022 13:23:00] "GET /equipment HTTP/1.1" 200 -
+INFO | 127.0.0.1 - - [01/Nov/2022 13:23:00] "GET /img_store/equipment/default_prisp.png HTTP/1.1" 200 -
+INFO | 127.0.0.1 - - [01/Nov/2022 13:23:00] "POST /location HTTP/1.1" 200 -
+INFO | 127.0.0.1 - - [01/Nov/2022 13:23:04] "GET /img_store/equipment/default_tool.png HTTP/1.1" 200 -
+INFO | 127.0.0.1 - - [01/Nov/2022 13:23:06] "GET /img_store/equipment/default_control.png HTTP/1.1" 200 -
+INFO | 127.0.0.1 - - [01/Nov/2022 13:23:09] "GET /img_store/equipment/default_prisp.png HTTP/1.1" 200 -
+INFO | 127.0.0.1 - - [01/Nov/2022 13:25:49] "GET /equipment HTTP/1.1" 200 -
+INFO | 127.0.0.1 - - [01/Nov/2022 13:25:49] "GET /img_store/equipment/default_prisp.png HTTP/1.1" 200 -
+INFO | 127.0.0.1 - - [01/Nov/2022 13:25:49] "POST /location HTTP/1.1" 200 -
+INFO | 127.0.0.1 - - [01/Nov/2022 13:25:56] "GET /img_store/equipment/default_control.png HTTP/1.1" 200 -
+INFO | 127.0.0.1 - - [01/Nov/2022 13:27:20] "GET /equipment HTTP/1.1" 200 -
+INFO | 127.0.0.1 - - [01/Nov/2022 13:27:20] "GET /img_store/equipment/default_prisp.png HTTP/1.1" 200 -
+INFO | 127.0.0.1 - - [01/Nov/2022 13:27:20] "POST /location HTTP/1.1" 200 -
+INFO | 127.0.0.1 - - [01/Nov/2022 13:27:32] "GET /img_store/equipment/default_control.png HTTP/1.1" 200 -
+INFO | 127.0.0.1 - - [01/Nov/2022 13:28:07] "GET /img_store/equipment/default_prisp.png HTTP/1.1" 200 -
+INFO | 127.0.0.1 - - [01/Nov/2022 13:38:20] "GET /equipment HTTP/1.1" 200 -
+INFO | 127.0.0.1 - - [01/Nov/2022 13:38:20] "GET /img_store/equipment/default_prisp.png HTTP/1.1" 200 -
+INFO | 127.0.0.1 - - [01/Nov/2022 13:38:23] "POST /location HTTP/1.1" 200 -
+INFO | 127.0.0.1 - - [01/Nov/2022 13:40:56] "GET /equipment HTTP/1.1" 200 -
+INFO | 127.0.0.1 - - [01/Nov/2022 13:40:56] "GET /img_store/equipment/default_prisp.png HTTP/1.1" 200 -
+INFO | 127.0.0.1 - - [01/Nov/2022 13:40:56] "POST /location HTTP/1.1" 200 -
+INFO | 127.0.0.1 - - [01/Nov/2022 13:41:04] "GET /img_store/equipment/default_control.png HTTP/1.1" 200 -
+INFO | 127.0.0.1 - - [01/Nov/2022 13:41:39] "GET /equipment HTTP/1.1" 200 -
+INFO | 127.0.0.1 - - [01/Nov/2022 13:41:39] "GET /img_store/equipment/default_prisp.png HTTP/1.1" 200 -
+INFO | 127.0.0.1 - - [01/Nov/2022 13:41:40] "POST /location HTTP/1.1" 200 -
+INFO | 127.0.0.1 - - [01/Nov/2022 13:41:50] "GET /img_store/equipment/default_control.png HTTP/1.1" 200 -
+INFO | 127.0.0.1 - - [01/Nov/2022 13:43:01] "GET /equipment HTTP/1.1" 200 -
+INFO | 127.0.0.1 - - [01/Nov/2022 13:43:01] "GET /img_store/equipment/default_prisp.png HTTP/1.1" 200 -
+INFO | 127.0.0.1 - - [01/Nov/2022 13:43:01] "POST /location HTTP/1.1" 200 -
+INFO | 127.0.0.1 - - [01/Nov/2022 13:43:08] "GET /img_store/equipment/default_control.png HTTP/1.1" 200 -
+INFO | 127.0.0.1 - - [01/Nov/2022 13:43:23] "GET /img_store/equipment/default_prisp.png HTTP/1.1" 200 -
+INFO | 127.0.0.1 - - [01/Nov/2022 13:44:16] "GET /equipment HTTP/1.1" 200 -
+INFO | 127.0.0.1 - - [01/Nov/2022 13:44:16] "GET /img_store/equipment/default_prisp.png HTTP/1.1" 200 -
+INFO | 127.0.0.1 - - [01/Nov/2022 13:44:18] "GET /img_store/equipment/default_control.png HTTP/1.1" 200 -
+INFO | 127.0.0.1 - - [01/Nov/2022 13:44:19] "POST /location HTTP/1.1" 200 -
+INFO | 127.0.0.1 - - [01/Nov/2022 13:44:25] "GET /img_store/equipment/default_tool.png HTTP/1.1" 200 -
+INFO | 127.0.0.1 - - [01/Nov/2022 13:44:25] "[33mGET /img_store/equipment/tool_1.png HTTP/1.1[0m" 404 -
+INFO | 127.0.0.1 - - [01/Nov/2022 13:45:02] "[33mGET /img_store/equipment/tool_2.png HTTP/1.1[0m" 404 -
+INFO | 127.0.0.1 - - [01/Nov/2022 13:45:03] "[33mGET /img_store/equipment/tool_3.png HTTP/1.1[0m" 404 -
+INFO | 127.0.0.1 - - [01/Nov/2022 13:54:40] "GET /equipment HTTP/1.1" 200 -
+INFO | 127.0.0.1 - - [01/Nov/2022 13:54:40] "GET /img_store/equipment/default_prisp.png HTTP/1.1" 200 -
+INFO | 127.0.0.1 - - [01/Nov/2022 13:54:40] "POST /location HTTP/1.1" 200 -
+INFO | 127.0.0.1 - - [01/Nov/2022 13:54:46] "GET /img_store/equipment/default_tool.png HTTP/1.1" 200 -
+INFO | 127.0.0.1 - - [01/Nov/2022 13:54:49] "GET /img_store/equipment/default_control.png HTTP/1.1" 200 -
+INFO | 127.0.0.1 - - [01/Nov/2022 13:55:27] "GET /equipment HTTP/1.1" 200 -
+INFO | 127.0.0.1 - - [01/Nov/2022 13:55:27] "GET /img_store/equipment/default_prisp.png HTTP/1.1" 200 -
+INFO | 127.0.0.1 - - [01/Nov/2022 13:55:27] "POST /location HTTP/1.1" 200 -
+INFO | 127.0.0.1 - - [01/Nov/2022 13:55:31] "GET /img_store/equipment/default_control.png HTTP/1.1" 200 -
+INFO | 127.0.0.1 - - [01/Nov/2022 15:28:52] "GET /equipment HTTP/1.1" 200 -
+INFO | 127.0.0.1 - - [01/Nov/2022 15:28:52] "GET /img_store/equipment/default_prisp.png HTTP/1.1" 200 -
+INFO | 127.0.0.1 - - [01/Nov/2022 15:28:52] "POST /location HTTP/1.1" 200 -
+INFO | 127.0.0.1 - - [01/Nov/2022 15:30:16] "GET /equipment HTTP/1.1" 200 -
+INFO | 127.0.0.1 - - [01/Nov/2022 15:30:16] "GET /img_store/equipment/default_prisp.png HTTP/1.1" 200 -
+INFO | 127.0.0.1 - - [01/Nov/2022 15:30:16] "POST /location HTTP/1.1" 200 -
+INFO | 127.0.0.1 - - [01/Nov/2022 15:32:16] "GET /equipment HTTP/1.1" 200 -
+INFO | 127.0.0.1 - - [01/Nov/2022 15:32:16] "GET /img_store/equipment/default_prisp.png HTTP/1.1" 200 -
+INFO | 127.0.0.1 - - [01/Nov/2022 15:32:16] "POST /location HTTP/1.1" 200 -
+INFO | 127.0.0.1 - - [01/Nov/2022 15:35:25] "GET /equipment HTTP/1.1" 200 -
+INFO | 127.0.0.1 - - [01/Nov/2022 15:35:25] "GET /img_store/equipment/default_prisp.png HTTP/1.1" 200 -
+INFO | 127.0.0.1 - - [01/Nov/2022 15:35:25] "POST /location HTTP/1.1" 200 -
+INFO | 127.0.0.1 - - [01/Nov/2022 15:36:21] "GET /equipment HTTP/1.1" 200 -
+INFO | 127.0.0.1 - - [01/Nov/2022 15:36:22] "GET /img_store/equipment/default_prisp.png HTTP/1.1" 200 -
+INFO | 127.0.0.1 - - [01/Nov/2022 15:36:22] "POST /location HTTP/1.1" 200 -
+INFO | 127.0.0.1 - - [01/Nov/2022 15:36:29] "GET /img_store/equipment/default_control.png HTTP/1.1" 200 -
+INFO | 127.0.0.1 - - [01/Nov/2022 15:36:37] "GET /img_store/equipment/default_tool.png HTTP/1.1" 200 -
+INFO | 127.0.0.1 - - [01/Nov/2022 15:37:27] "GET /equipment HTTP/1.1" 200 -
+INFO | 127.0.0.1 - - [01/Nov/2022 15:37:27] "GET /img_store/equipment/default_prisp.png HTTP/1.1" 200 -
+INFO | 127.0.0.1 - - [01/Nov/2022 15:37:27] "POST /location HTTP/1.1" 200 -
+INFO | 127.0.0.1 - - [01/Nov/2022 15:37:47] "GET /img_store/equipment/default_control.png HTTP/1.1" 200 -
+INFO | 127.0.0.1 - - [01/Nov/2022 15:38:05] "GET /img_store/equipment/default_prisp.png HTTP/1.1" 200 -
+INFO | 127.0.0.1 - - [01/Nov/2022 15:38:28] "GET /equipment HTTP/1.1" 200 -
+INFO | 127.0.0.1 - - [01/Nov/2022 15:38:28] "GET /img_store/equipment/default_prisp.png HTTP/1.1" 200 -
+INFO | 127.0.0.1 - - [01/Nov/2022 15:38:28] "POST /location HTTP/1.1" 200 -
+INFO | 127.0.0.1 - - [01/Nov/2022 15:38:35] "GET /img_store/equipment/default_control.png HTTP/1.1" 200 -
+INFO | 127.0.0.1 - - [01/Nov/2022 15:44:47] "GET /equipment HTTP/1.1" 200 -
+INFO | 127.0.0.1 - - [01/Nov/2022 15:44:47] "GET /img_store/equipment/default_prisp.png HTTP/1.1" 200 -
+INFO | 127.0.0.1 - - [01/Nov/2022 15:44:47] "POST /location HTTP/1.1" 200 -
+INFO | 127.0.0.1 - - [01/Nov/2022 15:45:08] "GET /img_store/equipment/default_tool.png HTTP/1.1" 200 -
+INFO | 127.0.0.1 - - [01/Nov/2022 15:45:16] "GET /equipment HTTP/1.1" 200 -
+INFO | 127.0.0.1 - - [01/Nov/2022 15:45:16] "GET /img_store/equipment/default_prisp.png HTTP/1.1" 200 -
+INFO | 127.0.0.1 - - [01/Nov/2022 15:45:16] "POST /location HTTP/1.1" 200 -
+INFO | 127.0.0.1 - - [01/Nov/2022 15:49:58] "GET /img_store/equipment/default_tool.png HTTP/1.1" 200 -
+INFO | 127.0.0.1 - - [01/Nov/2022 15:50:48] "GET /equipment HTTP/1.1" 200 -
+INFO | 127.0.0.1 - - [01/Nov/2022 15:50:48] "GET /img_store/equipment/default_prisp.png HTTP/1.1" 200 -
+INFO | 127.0.0.1 - - [01/Nov/2022 15:50:48] "POST /location HTTP/1.1" 200 -
+INFO | 127.0.0.1 - - [01/Nov/2022 15:50:49] "GET /img_store/equipment/default_tool.png HTTP/1.1" 200 -
+INFO | 127.0.0.1 - - [01/Nov/2022 15:51:10] "GET /img_store/equipment/default_control.png HTTP/1.1" 200 -
+INFO | 127.0.0.1 - - [01/Nov/2022 15:53:31] "GET /equipment HTTP/1.1" 200 -
+INFO | 127.0.0.1 - - [01/Nov/2022 15:53:31] "GET /img_store/equipment/default_prisp.png HTTP/1.1" 200 -
+INFO | 127.0.0.1 - - [01/Nov/2022 15:53:32] "POST /location HTTP/1.1" 200 -
+INFO | 127.0.0.1 - - [01/Nov/2022 15:53:32] "GET /img_store/equipment/default_tool.png HTTP/1.1" 200 -
+INFO | 127.0.0.1 - - [01/Nov/2022 15:54:19] "GET /img_store/equipment/default_prisp.png HTTP/1.1" 200 -
+INFO | 127.0.0.1 - - [01/Nov/2022 15:54:20] "[33mGET /img_store/equipment/prisp_1.png HTTP/1.1[0m" 404 -
+INFO | 127.0.0.1 - - [01/Nov/2022 15:54:24] "GET /equipment HTTP/1.1" 200 -
+INFO | 127.0.0.1 - - [01/Nov/2022 15:54:24] "GET /img_store/equipment/default_prisp.png HTTP/1.1" 200 -
+INFO | 127.0.0.1 - - [01/Nov/2022 15:54:25] "POST /location HTTP/1.1" 200 -
+INFO | 127.0.0.1 - - [01/Nov/2022 15:54:26] "[33mGET /img_store/equipment/prisp_1.png HTTP/1.1[0m" 404 -
+INFO | 127.0.0.1 - - [01/Nov/2022 15:54:59] "GET /equipment HTTP/1.1" 200 -
+INFO | 127.0.0.1 - - [01/Nov/2022 15:54:59] "GET /img_store/equipment/default_prisp.png HTTP/1.1" 200 -
+INFO | 127.0.0.1 - - [01/Nov/2022 15:54:59] "POST /location HTTP/1.1" 200 -
+INFO | 127.0.0.1 - - [01/Nov/2022 15:55:02] "[33mGET /img_store/equipment/prisp_1.png HTTP/1.1[0m" 404 -
+INFO | 127.0.0.1 - - [01/Nov/2022 15:58:16] "GET /equipment HTTP/1.1" 200 -
+INFO | 127.0.0.1 - - [01/Nov/2022 15:58:16] "GET /img_store/equipment/default_prisp.png HTTP/1.1" 200 -
+INFO | 127.0.0.1 - - [01/Nov/2022 15:58:16] "POST /location HTTP/1.1" 200 -
+INFO | 127.0.0.1 - - [01/Nov/2022 15:58:18] "[33mGET /img_store/equipment/prisp_1.png HTTP/1.1[0m" 404 -
+INFO | 127.0.0.1 - - [01/Nov/2022 15:58:45] "GET /equipment HTTP/1.1" 200 -
+INFO | 127.0.0.1 - - [01/Nov/2022 15:58:45] "GET /img_store/equipment/default_prisp.png HTTP/1.1" 200 -
+INFO | 127.0.0.1 - - [01/Nov/2022 15:58:46] "POST /location HTTP/1.1" 200 -
+INFO | 127.0.0.1 - - [01/Nov/2022 15:58:47] "GET /img_store/equipment/default_tool.png HTTP/1.1" 200 -
+INFO | 127.0.0.1 - - [01/Nov/2022 15:58:49] "[33mGET /img_store/equipment/tool_1.png HTTP/1.1[0m" 404 -
+INFO | 127.0.0.1 - - [01/Nov/2022 16:01:05] "GET /equipment HTTP/1.1" 200 -
+INFO | 127.0.0.1 - - [01/Nov/2022 16:01:05] "GET /img_store/equipment/default_prisp.png HTTP/1.1" 200 -
+INFO | 127.0.0.1 - - [01/Nov/2022 16:01:05] "POST /location HTTP/1.1" 200 -
+INFO | 127.0.0.1 - - [01/Nov/2022 16:01:09] "GET /img_store/equipment/default_tool.png HTTP/1.1" 200 -
+INFO | 127.0.0.1 - - [01/Nov/2022 16:01:10] "[33mGET /img_store/equipment/tool_2.png HTTP/1.1[0m" 404 -
+INFO | 127.0.0.1 - - [01/Nov/2022 16:01:11] "[33mGET /img_store/equipment/tool_3.png HTTP/1.1[0m" 404 -
+INFO | 127.0.0.1 - - [01/Nov/2022 16:01:57] "GET /equipment HTTP/1.1" 200 -
+INFO | 127.0.0.1 - - [01/Nov/2022 16:01:57] "GET /img_store/equipment/default_prisp.png HTTP/1.1" 200 -
+INFO | 127.0.0.1 - - [01/Nov/2022 16:01:57] "POST /location HTTP/1.1" 200 -
+INFO | 127.0.0.1 - - [01/Nov/2022 16:02:00] "GET /img_store/equipment/default_tool.png HTTP/1.1" 200 -
+INFO | 127.0.0.1 - - [01/Nov/2022 16:02:01] "[33mGET /img_store/equipment/tool_1.png HTTP/1.1[0m" 404 -
+INFO | 127.0.0.1 - - [01/Nov/2022 16:02:31] "GET /equipment HTTP/1.1" 200 -
+INFO | 127.0.0.1 - - [01/Nov/2022 16:02:31] "GET /img_store/equipment/default_prisp.png HTTP/1.1" 200 -
+INFO | 127.0.0.1 - - [01/Nov/2022 16:02:31] "POST /location HTTP/1.1" 200 -
+INFO | 127.0.0.1 - - [01/Nov/2022 16:02:32] "GET /img_store/equipment/default_tool.png HTTP/1.1" 200 -
+INFO | 127.0.0.1 - - [01/Nov/2022 16:02:33] "[33mGET /img_store/equipment/tool_2.png HTTP/1.1[0m" 404 -
+INFO | 127.0.0.1 - - [01/Nov/2022 16:03:41] "[33mGET /img_store/equipment/tool_1.png HTTP/1.1[0m" 404 -
+INFO | 127.0.0.1 - - [01/Nov/2022 16:03:41] "GET /img_store/equipment/default_tool.png HTTP/1.1" 200 -
+INFO | 127.0.0.1 - - [01/Nov/2022 16:03:44] "[33mGET /img_store/equipment/tool_1.png HTTP/1.1[0m" 404 -
+INFO | 127.0.0.1 - - [01/Nov/2022 16:06:23] "GET /equipment HTTP/1.1" 200 -
+INFO | 127.0.0.1 - - [01/Nov/2022 16:06:23] "GET /img_store/equipment/default_prisp.png HTTP/1.1" 200 -
+INFO | 127.0.0.1 - - [01/Nov/2022 16:06:24] "POST /location HTTP/1.1" 200 -
+INFO | 127.0.0.1 - - [01/Nov/2022 16:06:54] "GET /equipment HTTP/1.1" 200 -
+INFO | 127.0.0.1 - - [01/Nov/2022 16:06:54] "GET /img_store/equipment/default_prisp.png HTTP/1.1" 200 -
+INFO | 127.0.0.1 - - [01/Nov/2022 16:06:54] "POST /location HTTP/1.1" 200 -
+INFO | 127.0.0.1 - - [01/Nov/2022 16:07:02] "GET /img_store/equipment/default_control.png HTTP/1.1" 200 -
+INFO | 127.0.0.1 - - [01/Nov/2022 16:07:03] "GET /img_store/equipment/default_tool.png HTTP/1.1" 200 -
+INFO | 127.0.0.1 - - [01/Nov/2022 16:24:26] "GET /equipment HTTP/1.1" 200 -
+INFO | 127.0.0.1 - - [01/Nov/2022 16:24:26] "GET /img_store/equipment/default_prisp.png HTTP/1.1" 200 -
+INFO | 127.0.0.1 - - [01/Nov/2022 16:24:26] "POST /location HTTP/1.1" 200 -
+INFO | 127.0.0.1 - - [01/Nov/2022 16:24:29] "[33mGET /img_store/equipment/prisp_1.png HTTP/1.1[0m" 404 -
+INFO | 127.0.0.1 - - [01/Nov/2022 16:24:32] "GET /img_store/equipment/default_prisp.png HTTP/1.1" 200 -
+INFO | 127.0.0.1 - - [01/Nov/2022 16:24:33] "[33mGET /img_store/equipment/prisp_1.png HTTP/1.1[0m" 404 -
+INFO | 127.0.0.1 - - [01/Nov/2022 16:25:02] "GET /img_store/equipment/default_prisp.png HTTP/1.1" 200 -
+INFO | 127.0.0.1 - - [01/Nov/2022 16:29:47] "GET /equipment HTTP/1.1" 200 -
+INFO | 127.0.0.1 - - [01/Nov/2022 16:29:47] "GET /img_store/equipment/default_prisp.png HTTP/1.1" 200 -
+INFO | 127.0.0.1 - - [01/Nov/2022 16:29:47] "POST /location HTTP/1.1" 200 -
+INFO | 127.0.0.1 - - [01/Nov/2022 16:29:50] "[33mGET /img_store/equipment/prisp_1.png HTTP/1.1[0m" 404 -
+ERROR | Exception on /equipment [GET]
+Traceback (most recent call last):
+  File "D:\MyProject\microerp\env\lib\site-packages\pymysql\connections.py", line 732, in _read_bytes
+    data = self._rfile.read(num_bytes)
+  File "C:\Python38\lib\socket.py", line 669, in readinto
+    return self._sock.recv_into(b)
+ConnectionAbortedError: [WinError 10053] Программа на вашем хост-компьютере разорвала установленное подключение
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "D:\MyProject\microerp\env\lib\site-packages\sqlalchemy\engine\base.py", line 1819, in _execute_context
+    self.dialect.do_execute(
+  File "D:\MyProject\microerp\env\lib\site-packages\sqlalchemy\engine\default.py", line 732, in do_execute
+    cursor.execute(statement, parameters)
+  File "D:\MyProject\microerp\env\lib\site-packages\pymysql\cursors.py", line 148, in execute
+    result = self._query(query)
+  File "D:\MyProject\microerp\env\lib\site-packages\pymysql\cursors.py", line 310, in _query
+    conn.query(q)
+  File "D:\MyProject\microerp\env\lib\site-packages\pymysql\connections.py", line 548, in query
+    self._affected_rows = self._read_query_result(unbuffered=unbuffered)
+  File "D:\MyProject\microerp\env\lib\site-packages\pymysql\connections.py", line 775, in _read_query_result
+    result.read()
+  File "D:\MyProject\microerp\env\lib\site-packages\pymysql\connections.py", line 1156, in read
+    first_packet = self.connection._read_packet()
+  File "D:\MyProject\microerp\env\lib\site-packages\pymysql\connections.py", line 692, in _read_packet
+    packet_header = self._read_bytes(4)
+  File "D:\MyProject\microerp\env\lib\site-packages\pymysql\connections.py", line 738, in _read_bytes
+    raise err.OperationalError(
+pymysql.err.OperationalError: (2013, 'Lost connection to MySQL server during query ([WinError 10053] Программа на вашем хост-компьютере разорвала установленное подключение)')
+
+The above exception was the direct cause of the following exception:
+
+Traceback (most recent call last):
+  File "D:\MyProject\microerp\env\lib\site-packages\flask\app.py", line 2525, in wsgi_app
+    response = self.full_dispatch_request()
+  File "D:\MyProject\microerp\env\lib\site-packages\flask\app.py", line 1822, in full_dispatch_request
+    rv = self.handle_user_exception(e)
+  File "D:\MyProject\microerp\env\lib\site-packages\flask\app.py", line 1820, in full_dispatch_request
+    rv = self.dispatch_request()
+  File "D:\MyProject\microerp\env\lib\site-packages\flask\app.py", line 1796, in dispatch_request
+    return self.ensure_sync(self.view_functions[rule.endpoint])(**view_args)
+  File "D:\MyProject\microerp\app.py", line 224, in equipment
+    eq = Equipment.query.all()
+  File "D:\MyProject\microerp\env\lib\site-packages\sqlalchemy\orm\query.py", line 2768, in all
+    return self._iter().all()
+  File "D:\MyProject\microerp\env\lib\site-packages\sqlalchemy\orm\query.py", line 2903, in _iter
+    result = self.session.execute(
+  File "D:\MyProject\microerp\env\lib\site-packages\sqlalchemy\orm\session.py", line 1712, in execute
+    result = conn._execute_20(statement, params or {}, execution_options)
+  File "D:\MyProject\microerp\env\lib\site-packages\sqlalchemy\engine\base.py", line 1631, in _execute_20
+    return meth(self, args_10style, kwargs_10style, execution_options)
+  File "D:\MyProject\microerp\env\lib\site-packages\sqlalchemy\sql\elements.py", line 332, in _execute_on_connection
+    return connection._execute_clauseelement(
+  File "D:\MyProject\microerp\env\lib\site-packages\sqlalchemy\engine\base.py", line 1498, in _execute_clauseelement
+    ret = self._execute_context(
+  File "D:\MyProject\microerp\env\lib\site-packages\sqlalchemy\engine\base.py", line 1862, in _execute_context
+    self._handle_dbapi_exception(
+  File "D:\MyProject\microerp\env\lib\site-packages\sqlalchemy\engine\base.py", line 2043, in _handle_dbapi_exception
+    util.raise_(
+  File "D:\MyProject\microerp\env\lib\site-packages\sqlalchemy\util\compat.py", line 208, in raise_
+    raise exception
+  File "D:\MyProject\microerp\env\lib\site-packages\sqlalchemy\engine\base.py", line 1819, in _execute_context
+    self.dialect.do_execute(
+  File "D:\MyProject\microerp\env\lib\site-packages\sqlalchemy\engine\default.py", line 732, in do_execute
+    cursor.execute(statement, parameters)
+  File "D:\MyProject\microerp\env\lib\site-packages\pymysql\cursors.py", line 148, in execute
+    result = self._query(query)
+  File "D:\MyProject\microerp\env\lib\site-packages\pymysql\cursors.py", line 310, in _query
+    conn.query(q)
+  File "D:\MyProject\microerp\env\lib\site-packages\pymysql\connections.py", line 548, in query
+    self._affected_rows = self._read_query_result(unbuffered=unbuffered)
+  File "D:\MyProject\microerp\env\lib\site-packages\pymysql\connections.py", line 775, in _read_query_result
+    result.read()
+  File "D:\MyProject\microerp\env\lib\site-packages\pymysql\connections.py", line 1156, in read
+    first_packet = self.connection._read_packet()
+  File "D:\MyProject\microerp\env\lib\site-packages\pymysql\connections.py", line 692, in _read_packet
+    packet_header = self._read_bytes(4)
+  File "D:\MyProject\microerp\env\lib\site-packages\pymysql\connections.py", line 738, in _read_bytes
+    raise err.OperationalError(
+sqlalchemy.exc.OperationalError: (pymysql.err.OperationalError) (2013, 'Lost connection to MySQL server during query ([WinError 10053] Программа на вашем хост-компьютере разорвала установленное подключение)')
+[SQL: SELECT equipment.id AS equipment_id, equipment.name AS equipment_name, equipment.type AS equipment_type, equipment.description AS equipment_description, equipment.code AS equipment_code, equipment.firm AS equipment_firm, equipment.path AS equipment_path, equipment.data_added AS equipment_data_added, equipment.nodes AS equipment_nodes, equipment.options AS equipment_options, equipment.relevance AS equipment_relevance, equipment.added_id AS equipment_added_id, equipment.is_group AS equipment_is_group 
+FROM equipment]
+(Background on this error at: https://sqlalche.me/e/14/e3q8)
+INFO | 127.0.0.1 - - [01/Nov/2022 16:33:38] "[35m[1mGET /equipment HTTP/1.1[0m" 500 -
+INFO | 127.0.0.1 - - [01/Nov/2022 16:33:38] "POST /location HTTP/1.1" 200 -
+INFO | 127.0.0.1 - - [01/Nov/2022 16:33:42] "GET /equipment HTTP/1.1" 200 -
+INFO | 127.0.0.1 - - [01/Nov/2022 16:33:43] "GET /img_store/equipment/default_prisp.png HTTP/1.1" 200 -
+INFO | 127.0.0.1 - - [01/Nov/2022 16:33:43] "POST /location HTTP/1.1" 200 -
+INFO | 127.0.0.1 - - [01/Nov/2022 16:33:45] "[33mGET /img_store/equipment/prisp_1.png HTTP/1.1[0m" 404 -
+INFO | 127.0.0.1 - - [01/Nov/2022 16:36:39] "GET /equipment HTTP/1.1" 200 -
+INFO | 127.0.0.1 - - [01/Nov/2022 16:36:39] "GET /img_store/equipment/default_prisp.png HTTP/1.1" 200 -
+INFO | 127.0.0.1 - - [01/Nov/2022 16:36:39] "POST /location HTTP/1.1" 200 -
+INFO | 127.0.0.1 - - [01/Nov/2022 16:36:40] "GET /img_store/equipment/default_tool.png HTTP/1.1" 200 -
+INFO | 127.0.0.1 - - [01/Nov/2022 16:36:44] "[33mGET /img_store/equipment/tool_1.png HTTP/1.1[0m" 404 -
+INFO | 127.0.0.1 - - [01/Nov/2022 16:37:17] "GET /equipment HTTP/1.1" 200 -
+INFO | 127.0.0.1 - - [01/Nov/2022 16:37:17] "GET /img_store/equipment/default_prisp.png HTTP/1.1" 200 -
+INFO | 127.0.0.1 - - [01/Nov/2022 16:37:17] "POST /location HTTP/1.1" 200 -
+INFO | 127.0.0.1 - - [01/Nov/2022 16:37:19] "GET /img_store/equipment/default_tool.png HTTP/1.1" 200 -
+INFO | 127.0.0.1 - - [01/Nov/2022 16:37:20] "[33mGET /img_store/equipment/tool_2.png HTTP/1.1[0m" 404 -
+INFO | 127.0.0.1 - - [01/Nov/2022 16:49:06] "GET /equipment HTTP/1.1" 200 -
+INFO | 127.0.0.1 - - [01/Nov/2022 16:49:06] "GET /img_store/equipment/default_prisp.png HTTP/1.1" 200 -
+INFO | 127.0.0.1 - - [01/Nov/2022 16:49:07] "POST /location HTTP/1.1" 200 -
+INFO | 127.0.0.1 - - [01/Nov/2022 16:49:08] "GET /img_store/equipment/default_tool.png HTTP/1.1" 200 -
+INFO | 127.0.0.1 - - [01/Nov/2022 16:49:09] "[33mGET /img_store/equipment/tool_2.png HTTP/1.1[0m" 404 -
+INFO | 127.0.0.1 - - [01/Nov/2022 16:49:55] "GET /equipment HTTP/1.1" 200 -
+INFO | 127.0.0.1 - - [01/Nov/2022 16:49:55] "GET /img_store/equipment/default_prisp.png HTTP/1.1" 200 -
+INFO | 127.0.0.1 - - [01/Nov/2022 16:49:55] "POST /location HTTP/1.1" 200 -
+INFO | 127.0.0.1 - - [01/Nov/2022 16:49:57] "GET /img_store/equipment/default_tool.png HTTP/1.1" 200 -
+INFO | 127.0.0.1 - - [01/Nov/2022 16:49:58] "[33mGET /img_store/equipment/tool_2.png HTTP/1.1[0m" 404 -
+INFO | 127.0.0.1 - - [01/Nov/2022 16:51:57] "GET /equipment HTTP/1.1" 200 -
+INFO | 127.0.0.1 - - [01/Nov/2022 16:51:57] "GET /img_store/equipment/default_prisp.png HTTP/1.1" 200 -
+INFO | 127.0.0.1 - - [01/Nov/2022 16:51:58] "POST /location HTTP/1.1" 200 -
+INFO | 127.0.0.1 - - [01/Nov/2022 16:51:59] "GET /img_store/equipment/default_tool.png HTTP/1.1" 200 -
+INFO | 127.0.0.1 - - [01/Nov/2022 16:52:00] "[33mGET /img_store/equipment/tool_2.png HTTP/1.1[0m" 404 -
+INFO | 127.0.0.1 - - [01/Nov/2022 16:52:49] "GET /equipment HTTP/1.1" 200 -
+INFO | 127.0.0.1 - - [01/Nov/2022 16:52:49] "GET /img_store/equipment/default_prisp.png HTTP/1.1" 200 -
+INFO | 127.0.0.1 - - [01/Nov/2022 16:52:50] "POST /location HTTP/1.1" 200 -
+INFO | 127.0.0.1 - - [01/Nov/2022 16:52:50] "GET /img_store/equipment/default_tool.png HTTP/1.1" 200 -
+INFO | 127.0.0.1 - - [01/Nov/2022 16:52:51] "[33mGET /img_store/equipment/tool_2.png HTTP/1.1[0m" 404 -
+INFO | 127.0.0.1 - - [01/Nov/2022 16:53:19] "GET /equipment HTTP/1.1" 200 -
+INFO | 127.0.0.1 - - [01/Nov/2022 16:53:19] "GET /img_store/equipment/default_prisp.png HTTP/1.1" 200 -
+INFO | 127.0.0.1 - - [01/Nov/2022 16:53:19] "POST /location HTTP/1.1" 200 -
+INFO | 127.0.0.1 - - [01/Nov/2022 16:53:21] "GET /img_store/equipment/default_tool.png HTTP/1.1" 200 -
+INFO | 127.0.0.1 - - [01/Nov/2022 16:53:22] "[33mGET /img_store/equipment/tool_2.png HTTP/1.1[0m" 404 -
+INFO | 127.0.0.1 - - [01/Nov/2022 16:53:54] "GET /equipment HTTP/1.1" 200 -
+INFO | 127.0.0.1 - - [01/Nov/2022 16:53:54] "GET /img_store/equipment/default_prisp.png HTTP/1.1" 200 -
+INFO | 127.0.0.1 - - [01/Nov/2022 16:53:54] "POST /location HTTP/1.1" 200 -
+INFO | 127.0.0.1 - - [01/Nov/2022 16:54:00] "GET /equipment HTTP/1.1" 200 -
+INFO | 127.0.0.1 - - [01/Nov/2022 16:54:00] "GET /img_store/equipment/default_prisp.png HTTP/1.1" 200 -
+INFO | 127.0.0.1 - - [01/Nov/2022 16:54:00] "POST /location HTTP/1.1" 200 -
+INFO | 127.0.0.1 - - [01/Nov/2022 16:54:01] "GET /img_store/equipment/default_tool.png HTTP/1.1" 200 -
+INFO | 127.0.0.1 - - [01/Nov/2022 16:54:02] "[33mGET /img_store/equipment/tool_2.png HTTP/1.1[0m" 404 -
+INFO | 127.0.0.1 - - [01/Nov/2022 17:04:29] "GET /equipment HTTP/1.1" 200 -
+INFO | 127.0.0.1 - - [01/Nov/2022 17:04:29] "GET /img_store/equipment/default_prisp.png HTTP/1.1" 200 -
+INFO | 127.0.0.1 - - [01/Nov/2022 17:04:30] "POST /location HTTP/1.1" 200 -
+INFO | 127.0.0.1 - - [01/Nov/2022 17:04:31] "[33mGET /img_store/equipment/prisp_1.png HTTP/1.1[0m" 404 -
+INFO | 127.0.0.1 - - [01/Nov/2022 17:05:35] "GET /equipment HTTP/1.1" 200 -
+INFO | 127.0.0.1 - - [01/Nov/2022 17:05:35] "GET /img_store/equipment/default_prisp.png HTTP/1.1" 200 -
+INFO | 127.0.0.1 - - [01/Nov/2022 17:05:35] "POST /location HTTP/1.1" 200 -
+INFO | 127.0.0.1 - - [01/Nov/2022 17:05:37] "GET /img_store/equipment/default_tool.png HTTP/1.1" 200 -
+INFO | 127.0.0.1 - - [01/Nov/2022 17:05:38] "[33mGET /img_store/equipment/tool_2.png HTTP/1.1[0m" 404 -
+INFO | 127.0.0.1 - - [01/Nov/2022 17:07:40] "GET /equipment HTTP/1.1" 200 -
+INFO | 127.0.0.1 - - [01/Nov/2022 17:07:40] "GET /img_store/equipment/default_prisp.png HTTP/1.1" 200 -
+INFO | 127.0.0.1 - - [01/Nov/2022 17:07:40] "POST /location HTTP/1.1" 200 -
+INFO | 127.0.0.1 - - [01/Nov/2022 17:07:41] "GET /img_store/equipment/default_tool.png HTTP/1.1" 200 -
+INFO | 127.0.0.1 - - [01/Nov/2022 17:07:42] "[33mGET /img_store/equipment/tool_2.png HTTP/1.1[0m" 404 -
+INFO | 127.0.0.1 - - [01/Nov/2022 17:07:50] "GET /img_store/equipment/default_tool.png HTTP/1.1" 200 -
+INFO | 127.0.0.1 - - [01/Nov/2022 17:07:52] "GET /img_store/equipment/default_prisp.png HTTP/1.1" 200 -
+INFO | 127.0.0.1 - - [01/Nov/2022 17:07:54] "[33mGET /img_store/equipment/prisp_1.png HTTP/1.1[0m" 404 -
+INFO | 127.0.0.1 - - [01/Nov/2022 17:08:06] "GET /img_store/equipment/default_prisp.png HTTP/1.1" 200 -
+INFO | 127.0.0.1 - - [01/Nov/2022 17:08:15] "GET /img_store/equipment/default_control.png HTTP/1.1" 200 -
+INFO | 127.0.0.1 - - [01/Nov/2022 17:26:41] "GET /equipment HTTP/1.1" 200 -
+INFO | 127.0.0.1 - - [01/Nov/2022 17:26:41] "GET /img_store/equipment/default_prisp.png HTTP/1.1" 200 -
+INFO | 127.0.0.1 - - [01/Nov/2022 17:26:41] "POST /location HTTP/1.1" 200 -
+INFO | 127.0.0.1 - - [01/Nov/2022 17:27:09] "GET /equipment HTTP/1.1" 200 -
+INFO | 127.0.0.1 - - [01/Nov/2022 17:27:09] "GET /img_store/equipment/default_prisp.png HTTP/1.1" 200 -
+INFO | 127.0.0.1 - - [01/Nov/2022 17:27:09] "POST /location HTTP/1.1" 200 -
+INFO | 127.0.0.1 - - [01/Nov/2022 17:27:48] "GET /equipment HTTP/1.1" 200 -
+INFO | 127.0.0.1 - - [01/Nov/2022 17:27:48] "GET /img_store/equipment/default_prisp.png HTTP/1.1" 200 -
+INFO | 127.0.0.1 - - [01/Nov/2022 17:27:50] "POST /location HTTP/1.1" 200 -
+INFO | 127.0.0.1 - - [01/Nov/2022 17:28:00] "GET /img_store/equipment/default_control.png HTTP/1.1" 200 -
+INFO | 127.0.0.1 - - [01/Nov/2022 17:28:14] "GET /img_store/equipment/default_tool.png HTTP/1.1" 200 -
+INFO | 127.0.0.1 - - [01/Nov/2022 17:28:15] "[33mGET /img_store/equipment/tool_2.png HTTP/1.1[0m" 404 -
+INFO | 127.0.0.1 - - [01/Nov/2022 17:29:50] "GET /equipment HTTP/1.1" 200 -
+INFO | 127.0.0.1 - - [01/Nov/2022 17:29:50] "GET /img_store/equipment/default_prisp.png HTTP/1.1" 200 -
+INFO | 127.0.0.1 - - [01/Nov/2022 17:29:50] "POST /location HTTP/1.1" 200 -
+INFO | 127.0.0.1 - - [01/Nov/2022 17:29:52] "GET /img_store/equipment/default_tool.png HTTP/1.1" 200 -
+INFO | 127.0.0.1 - - [01/Nov/2022 17:29:53] "[33mGET /img_store/equipment/tool_2.png HTTP/1.1[0m" 404 -
+INFO | 127.0.0.1 - - [01/Nov/2022 17:30:30] "GET /equipment HTTP/1.1" 200 -
+INFO | 127.0.0.1 - - [01/Nov/2022 17:30:30] "GET /img_store/equipment/default_prisp.png HTTP/1.1" 200 -
+INFO | 127.0.0.1 - - [01/Nov/2022 17:30:30] "POST /location HTTP/1.1" 200 -
+INFO | 127.0.0.1 - - [01/Nov/2022 17:30:31] "GET /img_store/equipment/default_tool.png HTTP/1.1" 200 -
+INFO | 127.0.0.1 - - [01/Nov/2022 17:30:32] "[33mGET /img_store/equipment/tool_2.png HTTP/1.1[0m" 404 -
+INFO | 127.0.0.1 - - [01/Nov/2022 17:30:56] "GET /equipment HTTP/1.1" 200 -
+INFO | 127.0.0.1 - - [01/Nov/2022 17:30:56] "GET /img_store/equipment/default_prisp.png HTTP/1.1" 200 -
+INFO | 127.0.0.1 - - [01/Nov/2022 17:30:57] "POST /location HTTP/1.1" 200 -
+INFO | 127.0.0.1 - - [01/Nov/2022 17:31:47] "GET /equipment HTTP/1.1" 200 -
+INFO | 127.0.0.1 - - [01/Nov/2022 17:31:47] "GET /img_store/equipment/default_prisp.png HTTP/1.1" 200 -
+INFO | 127.0.0.1 - - [01/Nov/2022 17:31:48] "POST /location HTTP/1.1" 200 -
+INFO | 127.0.0.1 - - [01/Nov/2022 17:32:03] "GET /img_store/equipment/default_tool.png HTTP/1.1" 200 -
+INFO | 127.0.0.1 - - [01/Nov/2022 17:32:04] "[33mGET /img_store/equipment/tool_2.png HTTP/1.1[0m" 404 -
+INFO | 127.0.0.1 - - [01/Nov/2022 17:36:56] "GET /equipment HTTP/1.1" 200 -
+INFO | 127.0.0.1 - - [01/Nov/2022 17:36:56] "GET /img_store/equipment/default_prisp.png HTTP/1.1" 200 -
+INFO | 127.0.0.1 - - [01/Nov/2022 17:36:56] "POST /location HTTP/1.1" 200 -
+INFO | 127.0.0.1 - - [01/Nov/2022 17:37:27] "GET /equipment HTTP/1.1" 200 -
+INFO | 127.0.0.1 - - [01/Nov/2022 17:37:28] "GET /img_store/equipment/default_prisp.png HTTP/1.1" 200 -
+INFO | 127.0.0.1 - - [01/Nov/2022 17:37:28] "POST /location HTTP/1.1" 200 -
+INFO | 127.0.0.1 - - [01/Nov/2022 17:37:42] "GET /img_store/equipment/default_control.png HTTP/1.1" 200 -
+INFO | 127.0.0.1 - - [01/Nov/2022 17:46:41] "GET /equipment HTTP/1.1" 200 -
+INFO | 127.0.0.1 - - [01/Nov/2022 17:46:41] "GET /img_store/equipment/default_prisp.png HTTP/1.1" 200 -
+INFO | 127.0.0.1 - - [01/Nov/2022 17:46:42] "POST /location HTTP/1.1" 200 -
+INFO | 127.0.0.1 - - [01/Nov/2022 18:03:59] "GET /equipment HTTP/1.1" 200 -
+INFO | 127.0.0.1 - - [01/Nov/2022 18:04:00] "GET /img_store/equipment/default_prisp.png HTTP/1.1" 200 -
+INFO | 127.0.0.1 - - [01/Nov/2022 18:04:00] "POST /location HTTP/1.1" 200 -
+INFO | 127.0.0.1 - - [01/Nov/2022 18:04:10] "GET /img_store/equipment/default_tool.png HTTP/1.1" 200 -
+INFO | 127.0.0.1 - - [01/Nov/2022 18:04:10] "[33mGET /img_store/equipment/tool_2.png HTTP/1.1[0m" 404 -
+INFO | 127.0.0.1 - - [01/Nov/2022 18:04:11] "[33mGET /img_store/equipment/tool_3.png HTTP/1.1[0m" 404 -
+ERROR | Exception on /equipment [GET]
+Traceback (most recent call last):
+  File "D:\MyProject\microerp\env\lib\site-packages\pymysql\connections.py", line 732, in _read_bytes
+    data = self._rfile.read(num_bytes)
+  File "C:\Python38\lib\socket.py", line 669, in readinto
+    return self._sock.recv_into(b)
+ConnectionAbortedError: [WinError 10053] Программа на вашем хост-компьютере разорвала установленное подключение
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "D:\MyProject\microerp\env\lib\site-packages\sqlalchemy\engine\base.py", line 1819, in _execute_context
+    self.dialect.do_execute(
+  File "D:\MyProject\microerp\env\lib\site-packages\sqlalchemy\engine\default.py", line 732, in do_execute
+    cursor.execute(statement, parameters)
+  File "D:\MyProject\microerp\env\lib\site-packages\pymysql\cursors.py", line 148, in execute
+    result = self._query(query)
+  File "D:\MyProject\microerp\env\lib\site-packages\pymysql\cursors.py", line 310, in _query
+    conn.query(q)
+  File "D:\MyProject\microerp\env\lib\site-packages\pymysql\connections.py", line 548, in query
+    self._affected_rows = self._read_query_result(unbuffered=unbuffered)
+  File "D:\MyProject\microerp\env\lib\site-packages\pymysql\connections.py", line 775, in _read_query_result
+    result.read()
+  File "D:\MyProject\microerp\env\lib\site-packages\pymysql\connections.py", line 1156, in read
+    first_packet = self.connection._read_packet()
+  File "D:\MyProject\microerp\env\lib\site-packages\pymysql\connections.py", line 692, in _read_packet
+    packet_header = self._read_bytes(4)
+  File "D:\MyProject\microerp\env\lib\site-packages\pymysql\connections.py", line 738, in _read_bytes
+    raise err.OperationalError(
+pymysql.err.OperationalError: (2013, 'Lost connection to MySQL server during query ([WinError 10053] Программа на вашем хост-компьютере разорвала установленное подключение)')
+
+The above exception was the direct cause of the following exception:
+
+Traceback (most recent call last):
+  File "D:\MyProject\microerp\env\lib\site-packages\flask\app.py", line 2525, in wsgi_app
+    response = self.full_dispatch_request()
+  File "D:\MyProject\microerp\env\lib\site-packages\flask\app.py", line 1822, in full_dispatch_request
+    rv = self.handle_user_exception(e)
+  File "D:\MyProject\microerp\env\lib\site-packages\flask\app.py", line 1820, in full_dispatch_request
+    rv = self.dispatch_request()
+  File "D:\MyProject\microerp\env\lib\site-packages\flask\app.py", line 1796, in dispatch_request
+    return self.ensure_sync(self.view_functions[rule.endpoint])(**view_args)
+  File "D:\MyProject\microerp\app.py", line 224, in equipment
+    eq = Equipment.query.all()
+  File "D:\MyProject\microerp\env\lib\site-packages\sqlalchemy\orm\query.py", line 2768, in all
+    return self._iter().all()
+  File "D:\MyProject\microerp\env\lib\site-packages\sqlalchemy\orm\query.py", line 2903, in _iter
+    result = self.session.execute(
+  File "D:\MyProject\microerp\env\lib\site-packages\sqlalchemy\orm\session.py", line 1712, in execute
+    result = conn._execute_20(statement, params or {}, execution_options)
+  File "D:\MyProject\microerp\env\lib\site-packages\sqlalchemy\engine\base.py", line 1631, in _execute_20
+    return meth(self, args_10style, kwargs_10style, execution_options)
+  File "D:\MyProject\microerp\env\lib\site-packages\sqlalchemy\sql\elements.py", line 332, in _execute_on_connection
+    return connection._execute_clauseelement(
+  File "D:\MyProject\microerp\env\lib\site-packages\sqlalchemy\engine\base.py", line 1498, in _execute_clauseelement
+    ret = self._execute_context(
+  File "D:\MyProject\microerp\env\lib\site-packages\sqlalchemy\engine\base.py", line 1862, in _execute_context
+    self._handle_dbapi_exception(
+  File "D:\MyProject\microerp\env\lib\site-packages\sqlalchemy\engine\base.py", line 2043, in _handle_dbapi_exception
+    util.raise_(
+  File "D:\MyProject\microerp\env\lib\site-packages\sqlalchemy\util\compat.py", line 208, in raise_
+    raise exception
+  File "D:\MyProject\microerp\env\lib\site-packages\sqlalchemy\engine\base.py", line 1819, in _execute_context
+    self.dialect.do_execute(
+  File "D:\MyProject\microerp\env\lib\site-packages\sqlalchemy\engine\default.py", line 732, in do_execute
+    cursor.execute(statement, parameters)
+  File "D:\MyProject\microerp\env\lib\site-packages\pymysql\cursors.py", line 148, in execute
+    result = self._query(query)
+  File "D:\MyProject\microerp\env\lib\site-packages\pymysql\cursors.py", line 310, in _query
+    conn.query(q)
+  File "D:\MyProject\microerp\env\lib\site-packages\pymysql\connections.py", line 548, in query
+    self._affected_rows = self._read_query_result(unbuffered=unbuffered)
+  File "D:\MyProject\microerp\env\lib\site-packages\pymysql\connections.py", line 775, in _read_query_result
+    result.read()
+  File "D:\MyProject\microerp\env\lib\site-packages\pymysql\connections.py", line 1156, in read
+    first_packet = self.connection._read_packet()
+  File "D:\MyProject\microerp\env\lib\site-packages\pymysql\connections.py", line 692, in _read_packet
+    packet_header = self._read_bytes(4)
+  File "D:\MyProject\microerp\env\lib\site-packages\pymysql\connections.py", line 738, in _read_bytes
+    raise err.OperationalError(
+sqlalchemy.exc.OperationalError: (pymysql.err.OperationalError) (2013, 'Lost connection to MySQL server during query ([WinError 10053] Программа на вашем хост-компьютере разорвала установленное подключение)')
+[SQL: SELECT equipment.id AS equipment_id, equipment.name AS equipment_name, equipment.type AS equipment_type, equipment.description AS equipment_description, equipment.code AS equipment_code, equipment.firm AS equipment_firm, equipment.path AS equipment_path, equipment.data_added AS equipment_data_added, equipment.nodes AS equipment_nodes, equipment.options AS equipment_options, equipment.relevance AS equipment_relevance, equipment.added_id AS equipment_added_id, equipment.is_group AS equipment_is_group 
+FROM equipment]
+(Background on this error at: https://sqlalche.me/e/14/e3q8)
+INFO | 127.0.0.1 - - [01/Nov/2022 18:07:39] "[35m[1mGET /equipment HTTP/1.1[0m" 500 -
+INFO | 127.0.0.1 - - [01/Nov/2022 18:07:39] "POST /location HTTP/1.1" 200 -
+INFO | 127.0.0.1 - - [01/Nov/2022 18:07:43] "GET /equipment HTTP/1.1" 200 -
+INFO | 127.0.0.1 - - [01/Nov/2022 18:07:43] "GET /img_store/equipment/default_prisp.png HTTP/1.1" 200 -
+INFO | 127.0.0.1 - - [01/Nov/2022 18:07:43] "POST /location HTTP/1.1" 200 -
+INFO | 127.0.0.1 - - [01/Nov/2022 18:09:23] "GET /equipment HTTP/1.1" 200 -
+INFO | 127.0.0.1 - - [01/Nov/2022 18:09:23] "GET /img_store/equipment/default_prisp.png HTTP/1.1" 200 -
+INFO | 127.0.0.1 - - [01/Nov/2022 18:09:24] "POST /location HTTP/1.1" 200 -
+INFO | 127.0.0.1 - - [01/Nov/2022 18:09:36] "GET /img_store/equipment/default_tool.png HTTP/1.1" 200 -
+INFO | 127.0.0.1 - - [01/Nov/2022 18:09:43] "GET /equipment HTTP/1.1" 200 -
+INFO | 127.0.0.1 - - [01/Nov/2022 18:09:43] "GET /img_store/equipment/default_prisp.png HTTP/1.1" 200 -
+INFO | 127.0.0.1 - - [01/Nov/2022 18:09:43] "POST /location HTTP/1.1" 200 -
+INFO | 127.0.0.1 - - [01/Nov/2022 18:09:44] "GET /img_store/equipment/default_tool.png HTTP/1.1" 200 -
+INFO | 127.0.0.1 - - [01/Nov/2022 18:09:45] "[33mGET /img_store/equipment/tool_2.png HTTP/1.1[0m" 404 -
+INFO | 127.0.0.1 - - [01/Nov/2022 18:10:35] "GET /equipment HTTP/1.1" 200 -
+INFO | 127.0.0.1 - - [01/Nov/2022 18:10:35] "GET /img_store/equipment/default_prisp.png HTTP/1.1" 200 -
+INFO | 127.0.0.1 - - [01/Nov/2022 18:10:36] "POST /location HTTP/1.1" 200 -
+INFO | 127.0.0.1 - - [01/Nov/2022 18:12:51] "GET /equipment HTTP/1.1" 200 -
+INFO | 127.0.0.1 - - [01/Nov/2022 18:12:51] "GET /img_store/equipment/default_prisp.png HTTP/1.1" 200 -
+INFO | 127.0.0.1 - - [01/Nov/2022 18:12:51] "POST /location HTTP/1.1" 200 -
+INFO | 127.0.0.1 - - [01/Nov/2022 18:13:19] "GET /equipment HTTP/1.1" 200 -
+INFO | 127.0.0.1 - - [01/Nov/2022 18:13:19] "GET /img_store/equipment/default_prisp.png HTTP/1.1" 200 -
+INFO | 127.0.0.1 - - [01/Nov/2022 18:13:19] "POST /location HTTP/1.1" 200 -
+INFO | 127.0.0.1 - - [01/Nov/2022 18:14:29] "GET /equipment HTTP/1.1" 200 -
+INFO | 127.0.0.1 - - [01/Nov/2022 18:14:29] "GET /img_store/equipment/default_prisp.png HTTP/1.1" 200 -
+INFO | 127.0.0.1 - - [01/Nov/2022 18:14:29] "POST /location HTTP/1.1" 200 -
+INFO | 127.0.0.1 - - [01/Nov/2022 18:32:36] "GET /equipment HTTP/1.1" 200 -
+INFO | 127.0.0.1 - - [01/Nov/2022 18:32:37] "GET /img_store/equipment/default_prisp.png HTTP/1.1" 200 -
+INFO | 127.0.0.1 - - [01/Nov/2022 18:32:37] "POST /location HTTP/1.1" 200 -
+INFO | 127.0.0.1 - - [01/Nov/2022 18:32:58] "GET /equipment HTTP/1.1" 200 -
+INFO | 127.0.0.1 - - [01/Nov/2022 18:32:58] "GET /img_store/equipment/default_prisp.png HTTP/1.1" 200 -
+INFO | 127.0.0.1 - - [01/Nov/2022 18:32:58] "POST /location HTTP/1.1" 200 -
+INFO | 127.0.0.1 - - [01/Nov/2022 18:33:48] "GET /equipment HTTP/1.1" 200 -
+INFO | 127.0.0.1 - - [01/Nov/2022 18:33:48] "GET /img_store/equipment/default_prisp.png HTTP/1.1" 200 -
+INFO | 127.0.0.1 - - [01/Nov/2022 18:33:48] "POST /location HTTP/1.1" 200 -
+INFO | 127.0.0.1 - - [01/Nov/2022 18:35:20] "GET /equipment HTTP/1.1" 200 -
+INFO | 127.0.0.1 - - [01/Nov/2022 18:35:20] "GET /img_store/equipment/default_prisp.png HTTP/1.1" 200 -
+INFO | 127.0.0.1 - - [01/Nov/2022 18:35:21] "POST /location HTTP/1.1" 200 -
+INFO | 127.0.0.1 - - [01/Nov/2022 18:37:21] "GET /equipment HTTP/1.1" 200 -
+INFO | 127.0.0.1 - - [01/Nov/2022 18:37:21] "GET /img_store/equipment/default_prisp.png HTTP/1.1" 200 -
+INFO | 127.0.0.1 - - [01/Nov/2022 18:37:21] "POST /location HTTP/1.1" 200 -
+INFO | 127.0.0.1 - - [01/Nov/2022 18:45:27] "GET /equipment HTTP/1.1" 200 -
+INFO | 127.0.0.1 - - [01/Nov/2022 18:45:27] "GET /img_store/equipment/default_prisp.png HTTP/1.1" 200 -
+INFO | 127.0.0.1 - - [01/Nov/2022 18:45:28] "POST /location HTTP/1.1" 200 -
+INFO | 127.0.0.1 - - [01/Nov/2022 18:46:18] "GET /equipment HTTP/1.1" 200 -
+INFO | 127.0.0.1 - - [01/Nov/2022 18:46:18] "GET /img_store/equipment/default_prisp.png HTTP/1.1" 200 -
+INFO | 127.0.0.1 - - [01/Nov/2022 18:46:18] "POST /location HTTP/1.1" 200 -
+INFO | 127.0.0.1 - - [01/Nov/2022 18:46:37] "GET /equipment HTTP/1.1" 200 -
+INFO | 127.0.0.1 - - [01/Nov/2022 18:46:37] "GET /img_store/equipment/default_prisp.png HTTP/1.1" 200 -
+INFO | 127.0.0.1 - - [01/Nov/2022 18:46:38] "POST /location HTTP/1.1" 200 -
+INFO | 127.0.0.1 - - [01/Nov/2022 18:46:42] "GET /img_store/equipment/default_tool.png HTTP/1.1" 200 -
+INFO | 127.0.0.1 - - [01/Nov/2022 18:46:43] "[33mGET /img_store/equipment/tool_2.png HTTP/1.1[0m" 404 -
+INFO | 127.0.0.1 - - [01/Nov/2022 18:52:52] "GET /equipment HTTP/1.1" 200 -
+INFO | 127.0.0.1 - - [01/Nov/2022 18:52:52] "GET /img_store/equipment/default_prisp.png HTTP/1.1" 200 -
+INFO | 127.0.0.1 - - [01/Nov/2022 18:52:52] "POST /location HTTP/1.1" 200 -
+INFO | 127.0.0.1 - - [01/Nov/2022 18:52:58] "GET /img_store/equipment/default_control.png HTTP/1.1" 200 -
+INFO | 127.0.0.1 - - [01/Nov/2022 18:53:38] "GET /equipment HTTP/1.1" 200 -
+INFO | 127.0.0.1 - - [01/Nov/2022 18:53:38] "GET /img_store/equipment/default_prisp.png HTTP/1.1" 200 -
+INFO | 127.0.0.1 - - [01/Nov/2022 18:53:39] "POST /location HTTP/1.1" 200 -
+INFO | 127.0.0.1 - - [01/Nov/2022 18:53:40] "GET /img_store/equipment/default_control.png HTTP/1.1" 200 -
+INFO | 127.0.0.1 - - [01/Nov/2022 18:53:45] "GET /img_store/equipment/default_prisp.png HTTP/1.1" 200 -
+ERROR | Exception on /equipment [GET]
+Traceback (most recent call last):
+  File "D:\MyProject\microerp\env\lib\site-packages\pymysql\connections.py", line 732, in _read_bytes
+    data = self._rfile.read(num_bytes)
+  File "C:\Python38\lib\socket.py", line 669, in readinto
+    return self._sock.recv_into(b)
+ConnectionAbortedError: [WinError 10053] Программа на вашем хост-компьютере разорвала установленное подключение
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "D:\MyProject\microerp\env\lib\site-packages\sqlalchemy\engine\base.py", line 1819, in _execute_context
+    self.dialect.do_execute(
+  File "D:\MyProject\microerp\env\lib\site-packages\sqlalchemy\engine\default.py", line 732, in do_execute
+    cursor.execute(statement, parameters)
+  File "D:\MyProject\microerp\env\lib\site-packages\pymysql\cursors.py", line 148, in execute
+    result = self._query(query)
+  File "D:\MyProject\microerp\env\lib\site-packages\pymysql\cursors.py", line 310, in _query
+    conn.query(q)
+  File "D:\MyProject\microerp\env\lib\site-packages\pymysql\connections.py", line 548, in query
+    self._affected_rows = self._read_query_result(unbuffered=unbuffered)
+  File "D:\MyProject\microerp\env\lib\site-packages\pymysql\connections.py", line 775, in _read_query_result
+    result.read()
+  File "D:\MyProject\microerp\env\lib\site-packages\pymysql\connections.py", line 1156, in read
+    first_packet = self.connection._read_packet()
+  File "D:\MyProject\microerp\env\lib\site-packages\pymysql\connections.py", line 692, in _read_packet
+    packet_header = self._read_bytes(4)
+  File "D:\MyProject\microerp\env\lib\site-packages\pymysql\connections.py", line 738, in _read_bytes
+    raise err.OperationalError(
+pymysql.err.OperationalError: (2013, 'Lost connection to MySQL server during query ([WinError 10053] Программа на вашем хост-компьютере разорвала установленное подключение)')
+
+The above exception was the direct cause of the following exception:
+
+Traceback (most recent call last):
+  File "D:\MyProject\microerp\env\lib\site-packages\flask\app.py", line 2525, in wsgi_app
+    response = self.full_dispatch_request()
+  File "D:\MyProject\microerp\env\lib\site-packages\flask\app.py", line 1822, in full_dispatch_request
+    rv = self.handle_user_exception(e)
+  File "D:\MyProject\microerp\env\lib\site-packages\flask\app.py", line 1820, in full_dispatch_request
+    rv = self.dispatch_request()
+  File "D:\MyProject\microerp\env\lib\site-packages\flask\app.py", line 1796, in dispatch_request
+    return self.ensure_sync(self.view_functions[rule.endpoint])(**view_args)
+  File "D:\MyProject\microerp\app.py", line 224, in equipment
+    eq = Equipment.query.all()
+  File "D:\MyProject\microerp\env\lib\site-packages\sqlalchemy\orm\query.py", line 2768, in all
+    return self._iter().all()
+  File "D:\MyProject\microerp\env\lib\site-packages\sqlalchemy\orm\query.py", line 2903, in _iter
+    result = self.session.execute(
+  File "D:\MyProject\microerp\env\lib\site-packages\sqlalchemy\orm\session.py", line 1712, in execute
+    result = conn._execute_20(statement, params or {}, execution_options)
+  File "D:\MyProject\microerp\env\lib\site-packages\sqlalchemy\engine\base.py", line 1631, in _execute_20
+    return meth(self, args_10style, kwargs_10style, execution_options)
+  File "D:\MyProject\microerp\env\lib\site-packages\sqlalchemy\sql\elements.py", line 332, in _execute_on_connection
+    return connection._execute_clauseelement(
+  File "D:\MyProject\microerp\env\lib\site-packages\sqlalchemy\engine\base.py", line 1498, in _execute_clauseelement
+    ret = self._execute_context(
+  File "D:\MyProject\microerp\env\lib\site-packages\sqlalchemy\engine\base.py", line 1862, in _execute_context
+    self._handle_dbapi_exception(
+  File "D:\MyProject\microerp\env\lib\site-packages\sqlalchemy\engine\base.py", line 2043, in _handle_dbapi_exception
+    util.raise_(
+  File "D:\MyProject\microerp\env\lib\site-packages\sqlalchemy\util\compat.py", line 208, in raise_
+    raise exception
+  File "D:\MyProject\microerp\env\lib\site-packages\sqlalchemy\engine\base.py", line 1819, in _execute_context
+    self.dialect.do_execute(
+  File "D:\MyProject\microerp\env\lib\site-packages\sqlalchemy\engine\default.py", line 732, in do_execute
+    cursor.execute(statement, parameters)
+  File "D:\MyProject\microerp\env\lib\site-packages\pymysql\cursors.py", line 148, in execute
+    result = self._query(query)
+  File "D:\MyProject\microerp\env\lib\site-packages\pymysql\cursors.py", line 310, in _query
+    conn.query(q)
+  File "D:\MyProject\microerp\env\lib\site-packages\pymysql\connections.py", line 548, in query
+    self._affected_rows = self._read_query_result(unbuffered=unbuffered)
+  File "D:\MyProject\microerp\env\lib\site-packages\pymysql\connections.py", line 775, in _read_query_result
+    result.read()
+  File "D:\MyProject\microerp\env\lib\site-packages\pymysql\connections.py", line 1156, in read
+    first_packet = self.connection._read_packet()
+  File "D:\MyProject\microerp\env\lib\site-packages\pymysql\connections.py", line 692, in _read_packet
+    packet_header = self._read_bytes(4)
+  File "D:\MyProject\microerp\env\lib\site-packages\pymysql\connections.py", line 738, in _read_bytes
+    raise err.OperationalError(
+sqlalchemy.exc.OperationalError: (pymysql.err.OperationalError) (2013, 'Lost connection to MySQL server during query ([WinError 10053] Программа на вашем хост-компьютере разорвала установленное подключение)')
+[SQL: SELECT equipment.id AS equipment_id, equipment.name AS equipment_name, equipment.type AS equipment_type, equipment.description AS equipment_description, equipment.code AS equipment_code, equipment.firm AS equipment_firm, equipment.path AS equipment_path, equipment.data_added AS equipment_data_added, equipment.nodes AS equipment_nodes, equipment.options AS equipment_options, equipment.relevance AS equipment_relevance, equipment.added_id AS equipment_added_id, equipment.is_group AS equipment_is_group 
+FROM equipment]
+(Background on this error at: https://sqlalche.me/e/14/e3q8)
+INFO | 127.0.0.1 - - [01/Nov/2022 18:57:09] "[35m[1mGET /equipment HTTP/1.1[0m" 500 -
+INFO | 127.0.0.1 - - [01/Nov/2022 18:57:09] "POST /location HTTP/1.1" 200 -
+INFO | 127.0.0.1 - - [01/Nov/2022 18:57:13] "GET /equipment HTTP/1.1" 200 -
+INFO | 127.0.0.1 - - [01/Nov/2022 18:57:13] "GET /img_store/equipment/default_prisp.png HTTP/1.1" 200 -
+INFO | 127.0.0.1 - - [01/Nov/2022 18:57:13] "POST /location HTTP/1.1" 200 -
+ERROR | Exception on /equipment [GET]
+Traceback (most recent call last):
+  File "D:\MyProject\microerp\env\lib\site-packages\pymysql\connections.py", line 732, in _read_bytes
+    data = self._rfile.read(num_bytes)
+  File "C:\Python38\lib\socket.py", line 669, in readinto
+    return self._sock.recv_into(b)
+ConnectionAbortedError: [WinError 10053] Программа на вашем хост-компьютере разорвала установленное подключение
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "D:\MyProject\microerp\env\lib\site-packages\sqlalchemy\engine\base.py", line 1819, in _execute_context
+    self.dialect.do_execute(
+  File "D:\MyProject\microerp\env\lib\site-packages\sqlalchemy\engine\default.py", line 732, in do_execute
+    cursor.execute(statement, parameters)
+  File "D:\MyProject\microerp\env\lib\site-packages\pymysql\cursors.py", line 148, in execute
+    result = self._query(query)
+  File "D:\MyProject\microerp\env\lib\site-packages\pymysql\cursors.py", line 310, in _query
+    conn.query(q)
+  File "D:\MyProject\microerp\env\lib\site-packages\pymysql\connections.py", line 548, in query
+    self._affected_rows = self._read_query_result(unbuffered=unbuffered)
+  File "D:\MyProject\microerp\env\lib\site-packages\pymysql\connections.py", line 775, in _read_query_result
+    result.read()
+  File "D:\MyProject\microerp\env\lib\site-packages\pymysql\connections.py", line 1156, in read
+    first_packet = self.connection._read_packet()
+  File "D:\MyProject\microerp\env\lib\site-packages\pymysql\connections.py", line 692, in _read_packet
+    packet_header = self._read_bytes(4)
+  File "D:\MyProject\microerp\env\lib\site-packages\pymysql\connections.py", line 738, in _read_bytes
+    raise err.OperationalError(
+pymysql.err.OperationalError: (2013, 'Lost connection to MySQL server during query ([WinError 10053] Программа на вашем хост-компьютере разорвала установленное подключение)')
+
+The above exception was the direct cause of the following exception:
+
+Traceback (most recent call last):
+  File "D:\MyProject\microerp\env\lib\site-packages\flask\app.py", line 2525, in wsgi_app
+    response = self.full_dispatch_request()
+  File "D:\MyProject\microerp\env\lib\site-packages\flask\app.py", line 1822, in full_dispatch_request
+    rv = self.handle_user_exception(e)
+  File "D:\MyProject\microerp\env\lib\site-packages\flask\app.py", line 1820, in full_dispatch_request
+    rv = self.dispatch_request()
+  File "D:\MyProject\microerp\env\lib\site-packages\flask\app.py", line 1796, in dispatch_request
+    return self.ensure_sync(self.view_functions[rule.endpoint])(**view_args)
+  File "D:\MyProject\microerp\app.py", line 224, in equipment
+    eq = Equipment.query.all()
+  File "D:\MyProject\microerp\env\lib\site-packages\sqlalchemy\orm\query.py", line 2768, in all
+    return self._iter().all()
+  File "D:\MyProject\microerp\env\lib\site-packages\sqlalchemy\orm\query.py", line 2903, in _iter
+    result = self.session.execute(
+  File "D:\MyProject\microerp\env\lib\site-packages\sqlalchemy\orm\session.py", line 1712, in execute
+    result = conn._execute_20(statement, params or {}, execution_options)
+  File "D:\MyProject\microerp\env\lib\site-packages\sqlalchemy\engine\base.py", line 1631, in _execute_20
+    return meth(self, args_10style, kwargs_10style, execution_options)
+  File "D:\MyProject\microerp\env\lib\site-packages\sqlalchemy\sql\elements.py", line 332, in _execute_on_connection
+    return connection._execute_clauseelement(
+  File "D:\MyProject\microerp\env\lib\site-packages\sqlalchemy\engine\base.py", line 1498, in _execute_clauseelement
+    ret = self._execute_context(
+  File "D:\MyProject\microerp\env\lib\site-packages\sqlalchemy\engine\base.py", line 1862, in _execute_context
+    self._handle_dbapi_exception(
+  File "D:\MyProject\microerp\env\lib\site-packages\sqlalchemy\engine\base.py", line 2043, in _handle_dbapi_exception
+    util.raise_(
+  File "D:\MyProject\microerp\env\lib\site-packages\sqlalchemy\util\compat.py", line 208, in raise_
+    raise exception
+  File "D:\MyProject\microerp\env\lib\site-packages\sqlalchemy\engine\base.py", line 1819, in _execute_context
+    self.dialect.do_execute(
+  File "D:\MyProject\microerp\env\lib\site-packages\sqlalchemy\engine\default.py", line 732, in do_execute
+    cursor.execute(statement, parameters)
+  File "D:\MyProject\microerp\env\lib\site-packages\pymysql\cursors.py", line 148, in execute
+    result = self._query(query)
+  File "D:\MyProject\microerp\env\lib\site-packages\pymysql\cursors.py", line 310, in _query
+    conn.query(q)
+  File "D:\MyProject\microerp\env\lib\site-packages\pymysql\connections.py", line 548, in query
+    self._affected_rows = self._read_query_result(unbuffered=unbuffered)
+  File "D:\MyProject\microerp\env\lib\site-packages\pymysql\connections.py", line 775, in _read_query_result
+    result.read()
+  File "D:\MyProject\microerp\env\lib\site-packages\pymysql\connections.py", line 1156, in read
+    first_packet = self.connection._read_packet()
+  File "D:\MyProject\microerp\env\lib\site-packages\pymysql\connections.py", line 692, in _read_packet
+    packet_header = self._read_bytes(4)
+  File "D:\MyProject\microerp\env\lib\site-packages\pymysql\connections.py", line 738, in _read_bytes
+    raise err.OperationalError(
+sqlalchemy.exc.OperationalError: (pymysql.err.OperationalError) (2013, 'Lost connection to MySQL server during query ([WinError 10053] Программа на вашем хост-компьютере разорвала установленное подключение)')
+[SQL: SELECT equipment.id AS equipment_id, equipment.name AS equipment_name, equipment.type AS equipment_type, equipment.description AS equipment_description, equipment.code AS equipment_code, equipment.firm AS equipment_firm, equipment.path AS equipment_path, equipment.data_added AS equipment_data_added, equipment.nodes AS equipment_nodes, equipment.options AS equipment_options, equipment.relevance AS equipment_relevance, equipment.added_id AS equipment_added_id, equipment.is_group AS equipment_is_group 
+FROM equipment]
+(Background on this error at: https://sqlalche.me/e/14/e3q8)
+INFO | 127.0.0.1 - - [01/Nov/2022 19:01:57] "[35m[1mGET /equipment HTTP/1.1[0m" 500 -
+INFO | 127.0.0.1 - - [01/Nov/2022 19:01:57] "POST /location HTTP/1.1" 200 -
+INFO | 127.0.0.1 - - [01/Nov/2022 19:02:01] "GET /equipment HTTP/1.1" 200 -
+INFO | 127.0.0.1 - - [01/Nov/2022 19:02:01] "GET /img_store/equipment/default_prisp.png HTTP/1.1" 200 -
+INFO | 127.0.0.1 - - [01/Nov/2022 19:02:01] "POST /location HTTP/1.1" 200 -
+INFO | 127.0.0.1 - - [01/Nov/2022 19:03:09] "GET /equipment HTTP/1.1" 200 -
+INFO | 127.0.0.1 - - [01/Nov/2022 19:03:09] "GET /img_store/equipment/default_prisp.png HTTP/1.1" 200 -
+INFO | 127.0.0.1 - - [01/Nov/2022 19:03:09] "POST /location HTTP/1.1" 200 -
+INFO | 127.0.0.1 - - [01/Nov/2022 19:05:37] "GET /equipment HTTP/1.1" 200 -
+INFO | 127.0.0.1 - - [01/Nov/2022 19:05:37] "GET /img_store/equipment/default_prisp.png HTTP/1.1" 200 -
+INFO | 127.0.0.1 - - [01/Nov/2022 19:05:37] "POST /location HTTP/1.1" 200 -
+INFO | 127.0.0.1 - - [01/Nov/2022 19:06:42] "GET /equipment HTTP/1.1" 200 -
+INFO | 127.0.0.1 - - [01/Nov/2022 19:06:42] "GET /img_store/equipment/default_prisp.png HTTP/1.1" 200 -
+INFO | 127.0.0.1 - - [01/Nov/2022 19:06:42] "POST /location HTTP/1.1" 200 -
+INFO | 127.0.0.1 - - [01/Nov/2022 19:06:47] "GET /img_store/equipment/default_control.png HTTP/1.1" 200 -
+INFO | 127.0.0.1 - - [01/Nov/2022 19:07:01] "GET /img_store/equipment/default_tool.png HTTP/1.1" 200 -
+INFO | 127.0.0.1 - - [01/Nov/2022 19:07:01] "[33mGET /img_store/equipment/tool_2.png HTTP/1.1[0m" 404 -
+INFO | 127.0.0.1 - - [01/Nov/2022 19:08:10] "GET /equipment HTTP/1.1" 200 -
+INFO | 127.0.0.1 - - [01/Nov/2022 19:08:10] "GET /img_store/equipment/default_prisp.png HTTP/1.1" 200 -
+INFO | 127.0.0.1 - - [01/Nov/2022 19:08:10] "POST /location HTTP/1.1" 200 -
+INFO | 127.0.0.1 - - [01/Nov/2022 19:08:17] "GET /img_store/equipment/default_control.png HTTP/1.1" 200 -
+INFO | 127.0.0.1 - - [01/Nov/2022 19:08:29] "GET /img_store/equipment/default_prisp.png HTTP/1.1" 200 -
+INFO | 127.0.0.1 - - [01/Nov/2022 19:08:30] "[33mGET /img_store/equipment/prisp_1.png HTTP/1.1[0m" 404 -
+INFO | 127.0.0.1 - - [01/Nov/2022 19:08:33] "GET /img_store/equipment/default_tool.png HTTP/1.1" 200 -
+INFO | 127.0.0.1 - - [01/Nov/2022 19:08:38] "[33mGET /img_store/equipment/tool_2.png HTTP/1.1[0m" 404 -
+INFO | 127.0.0.1 - - [01/Nov/2022 19:08:48] "GET /img_store/equipment/default_prisp.png HTTP/1.1" 200 -
+INFO | 127.0.0.1 - - [01/Nov/2022 19:09:15] "[33mGET /img_store/equipment/tool_2.png HTTP/1.1[0m" 404 -
+INFO | 127.0.0.1 - - [01/Nov/2022 19:09:17] "[33mGET /img_store/equipment/tool_3.png HTTP/1.1[0m" 404 -
+INFO | 127.0.0.1 - - [01/Nov/2022 19:09:35] "GET /img_store/equipment/default_tool.png HTTP/1.1" 200 -
+ERROR | Exception on /equipment [GET]
+Traceback (most recent call last):
+  File "D:\MyProject\microerp\env\lib\site-packages\pymysql\connections.py", line 732, in _read_bytes
+    data = self._rfile.read(num_bytes)
+  File "C:\Python38\lib\socket.py", line 669, in readinto
+    return self._sock.recv_into(b)
+ConnectionAbortedError: [WinError 10053] Программа на вашем хост-компьютере разорвала установленное подключение
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "D:\MyProject\microerp\env\lib\site-packages\sqlalchemy\engine\base.py", line 1819, in _execute_context
+    self.dialect.do_execute(
+  File "D:\MyProject\microerp\env\lib\site-packages\sqlalchemy\engine\default.py", line 732, in do_execute
+    cursor.execute(statement, parameters)
+  File "D:\MyProject\microerp\env\lib\site-packages\pymysql\cursors.py", line 148, in execute
+    result = self._query(query)
+  File "D:\MyProject\microerp\env\lib\site-packages\pymysql\cursors.py", line 310, in _query
+    conn.query(q)
+  File "D:\MyProject\microerp\env\lib\site-packages\pymysql\connections.py", line 548, in query
+    self._affected_rows = self._read_query_result(unbuffered=unbuffered)
+  File "D:\MyProject\microerp\env\lib\site-packages\pymysql\connections.py", line 775, in _read_query_result
+    result.read()
+  File "D:\MyProject\microerp\env\lib\site-packages\pymysql\connections.py", line 1156, in read
+    first_packet = self.connection._read_packet()
+  File "D:\MyProject\microerp\env\lib\site-packages\pymysql\connections.py", line 692, in _read_packet
+    packet_header = self._read_bytes(4)
+  File "D:\MyProject\microerp\env\lib\site-packages\pymysql\connections.py", line 738, in _read_bytes
+    raise err.OperationalError(
+pymysql.err.OperationalError: (2013, 'Lost connection to MySQL server during query ([WinError 10053] Программа на вашем хост-компьютере разорвала установленное подключение)')
+
+The above exception was the direct cause of the following exception:
+
+Traceback (most recent call last):
+  File "D:\MyProject\microerp\env\lib\site-packages\flask\app.py", line 2525, in wsgi_app
+    response = self.full_dispatch_request()
+  File "D:\MyProject\microerp\env\lib\site-packages\flask\app.py", line 1822, in full_dispatch_request
+    rv = self.handle_user_exception(e)
+  File "D:\MyProject\microerp\env\lib\site-packages\flask\app.py", line 1820, in full_dispatch_request
+    rv = self.dispatch_request()
+  File "D:\MyProject\microerp\env\lib\site-packages\flask\app.py", line 1796, in dispatch_request
+    return self.ensure_sync(self.view_functions[rule.endpoint])(**view_args)
+  File "D:\MyProject\microerp\app.py", line 224, in equipment
+    eq = Equipment.query.all()
+  File "D:\MyProject\microerp\env\lib\site-packages\sqlalchemy\orm\query.py", line 2768, in all
+    return self._iter().all()
+  File "D:\MyProject\microerp\env\lib\site-packages\sqlalchemy\orm\query.py", line 2903, in _iter
+    result = self.session.execute(
+  File "D:\MyProject\microerp\env\lib\site-packages\sqlalchemy\orm\session.py", line 1712, in execute
+    result = conn._execute_20(statement, params or {}, execution_options)
+  File "D:\MyProject\microerp\env\lib\site-packages\sqlalchemy\engine\base.py", line 1631, in _execute_20
+    return meth(self, args_10style, kwargs_10style, execution_options)
+  File "D:\MyProject\microerp\env\lib\site-packages\sqlalchemy\sql\elements.py", line 332, in _execute_on_connection
+    return connection._execute_clauseelement(
+  File "D:\MyProject\microerp\env\lib\site-packages\sqlalchemy\engine\base.py", line 1498, in _execute_clauseelement
+    ret = self._execute_context(
+  File "D:\MyProject\microerp\env\lib\site-packages\sqlalchemy\engine\base.py", line 1862, in _execute_context
+    self._handle_dbapi_exception(
+  File "D:\MyProject\microerp\env\lib\site-packages\sqlalchemy\engine\base.py", line 2043, in _handle_dbapi_exception
+    util.raise_(
+  File "D:\MyProject\microerp\env\lib\site-packages\sqlalchemy\util\compat.py", line 208, in raise_
+    raise exception
+  File "D:\MyProject\microerp\env\lib\site-packages\sqlalchemy\engine\base.py", line 1819, in _execute_context
+    self.dialect.do_execute(
+  File "D:\MyProject\microerp\env\lib\site-packages\sqlalchemy\engine\default.py", line 732, in do_execute
+    cursor.execute(statement, parameters)
+  File "D:\MyProject\microerp\env\lib\site-packages\pymysql\cursors.py", line 148, in execute
+    result = self._query(query)
+  File "D:\MyProject\microerp\env\lib\site-packages\pymysql\cursors.py", line 310, in _query
+    conn.query(q)
+  File "D:\MyProject\microerp\env\lib\site-packages\pymysql\connections.py", line 548, in query
+    self._affected_rows = self._read_query_result(unbuffered=unbuffered)
+  File "D:\MyProject\microerp\env\lib\site-packages\pymysql\connections.py", line 775, in _read_query_result
+    result.read()
+  File "D:\MyProject\microerp\env\lib\site-packages\pymysql\connections.py", line 1156, in read
+    first_packet = self.connection._read_packet()
+  File "D:\MyProject\microerp\env\lib\site-packages\pymysql\connections.py", line 692, in _read_packet
+    packet_header = self._read_bytes(4)
+  File "D:\MyProject\microerp\env\lib\site-packages\pymysql\connections.py", line 738, in _read_bytes
+    raise err.OperationalError(
+sqlalchemy.exc.OperationalError: (pymysql.err.OperationalError) (2013, 'Lost connection to MySQL server during query ([WinError 10053] Программа на вашем хост-компьютере разорвала установленное подключение)')
+[SQL: SELECT equipment.id AS equipment_id, equipment.name AS equipment_name, equipment.type AS equipment_type, equipment.description AS equipment_description, equipment.code AS equipment_code, equipment.firm AS equipment_firm, equipment.path AS equipment_path, equipment.data_added AS equipment_data_added, equipment.nodes AS equipment_nodes, equipment.options AS equipment_options, equipment.relevance AS equipment_relevance, equipment.added_id AS equipment_added_id, equipment.is_group AS equipment_is_group 
+FROM equipment]
+(Background on this error at: https://sqlalche.me/e/14/e3q8)
+INFO | 127.0.0.1 - - [01/Nov/2022 19:11:39] "[35m[1mGET /equipment HTTP/1.1[0m" 500 -
+INFO | 127.0.0.1 - - [01/Nov/2022 19:11:39] "POST /location HTTP/1.1" 200 -
+INFO | 127.0.0.1 - - [01/Nov/2022 19:11:42] "GET /equipment HTTP/1.1" 200 -
+INFO | 127.0.0.1 - - [01/Nov/2022 19:11:42] "GET /img_store/equipment/default_prisp.png HTTP/1.1" 200 -
+INFO | 127.0.0.1 - - [01/Nov/2022 19:11:42] "POST /location HTTP/1.1" 200 -
+INFO | 127.0.0.1 - - [01/Nov/2022 19:11:43] "GET /img_store/equipment/default_tool.png HTTP/1.1" 200 -
+INFO | 127.0.0.1 - - [01/Nov/2022 19:12:28] "GET /equipment HTTP/1.1" 200 -
+INFO | 127.0.0.1 - - [01/Nov/2022 19:12:28] "GET /img_store/equipment/default_prisp.png HTTP/1.1" 200 -
+INFO | 127.0.0.1 - - [01/Nov/2022 19:12:28] "POST /location HTTP/1.1" 200 -
+INFO | 127.0.0.1 - - [01/Nov/2022 19:12:29] "GET /img_store/equipment/default_tool.png HTTP/1.1" 200 -
+INFO | 127.0.0.1 - - [01/Nov/2022 19:12:32] "GET /img_store/equipment/default_control.png HTTP/1.1" 200 -
+INFO | 127.0.0.1 - - [01/Nov/2022 19:12:36] "GET /img_store/equipment/default_prisp.png HTTP/1.1" 200 -
+INFO | 127.0.0.1 - - [01/Nov/2022 19:12:45] "GET /equipment HTTP/1.1" 200 -
+INFO | 127.0.0.1 - - [01/Nov/2022 19:12:45] "GET /img_store/equipment/default_prisp.png HTTP/1.1" 200 -
+INFO | 127.0.0.1 - - [01/Nov/2022 19:12:45] "POST /location HTTP/1.1" 200 -
+INFO | 127.0.0.1 - - [01/Nov/2022 19:12:46] "GET /img_store/equipment/default_control.png HTTP/1.1" 200 -
+INFO | 127.0.0.1 - - [01/Nov/2022 19:12:48] "GET /img_store/equipment/default_tool.png HTTP/1.1" 200 -
+INFO | 127.0.0.1 - - [01/Nov/2022 19:12:50] "GET /img_store/equipment/default_prisp.png HTTP/1.1" 200 -
+INFO | 127.0.0.1 - - [01/Nov/2022 19:12:57] "GET /img_store/equipment/default_control.png HTTP/1.1" 200 -
+INFO | 127.0.0.1 - - [01/Nov/2022 19:13:34] "GET /equipment HTTP/1.1" 200 -
+INFO | 127.0.0.1 - - [01/Nov/2022 19:13:34] "GET /img_store/equipment/default_prisp.png HTTP/1.1" 200 -
+INFO | 127.0.0.1 - - [01/Nov/2022 19:13:34] "POST /location HTTP/1.1" 200 -
+INFO | 127.0.0.1 - - [01/Nov/2022 19:13:55] "GET /img_store/equipment/default_tool.png HTTP/1.1" 200 -
+INFO | 127.0.0.1 - - [01/Nov/2022 19:14:01] "GET /equipment HTTP/1.1" 200 -
+INFO | 127.0.0.1 - - [01/Nov/2022 19:14:01] "GET /img_store/equipment/default_prisp.png HTTP/1.1" 200 -
+INFO | 127.0.0.1 - - [01/Nov/2022 19:14:01] "POST /location HTTP/1.1" 200 -
+INFO | 127.0.0.1 - - [01/Nov/2022 19:14:03] "GET /img_store/equipment/default_tool.png HTTP/1.1" 200 -
+INFO | 127.0.0.1 - - [01/Nov/2022 19:14:04] "[33mGET /img_store/equipment/tool_2.png HTTP/1.1[0m" 404 -
+INFO | 127.0.0.1 - - [01/Nov/2022 19:14:05] "[33mGET /img_store/equipment/tool_3.png HTTP/1.1[0m" 404 -
+INFO | 127.0.0.1 - - [01/Nov/2022 19:14:12] "GET /img_store/equipment/default_control.png HTTP/1.1" 200 -
+INFO | 127.0.0.1 - - [01/Nov/2022 19:14:57] "GET /equipment HTTP/1.1" 200 -
+INFO | 127.0.0.1 - - [01/Nov/2022 19:14:57] "GET /img_store/equipment/default_prisp.png HTTP/1.1" 200 -
+INFO | 127.0.0.1 - - [01/Nov/2022 19:14:57] "POST /location HTTP/1.1" 200 -
+INFO | 127.0.0.1 - - [01/Nov/2022 19:14:58] "GET /img_store/equipment/default_tool.png HTTP/1.1" 200 -
+INFO | 127.0.0.1 - - [01/Nov/2022 19:15:00] "[33mGET /img_store/equipment/tool_1.png HTTP/1.1[0m" 404 -
+INFO | 127.0.0.1 - - [01/Nov/2022 19:15:43] "GET /equipment HTTP/1.1" 200 -
+INFO | 127.0.0.1 - - [01/Nov/2022 19:15:43] "GET /img_store/equipment/default_prisp.png HTTP/1.1" 200 -
+INFO | 127.0.0.1 - - [01/Nov/2022 19:15:43] "POST /location HTTP/1.1" 200 -
+INFO | 127.0.0.1 - - [01/Nov/2022 19:15:47] "GET /img_store/equipment/default_tool.png HTTP/1.1" 200 -
+INFO | 127.0.0.1 - - [01/Nov/2022 19:15:48] "[33mGET /img_store/equipment/tool_1.png HTTP/1.1[0m" 404 -
+INFO | 127.0.0.1 - - [01/Nov/2022 19:15:50] "[33mGET /img_store/equipment/tool_2.png HTTP/1.1[0m" 404 -
+INFO | 127.0.0.1 - - [01/Nov/2022 19:15:51] "[33mGET /img_store/equipment/tool_3.png HTTP/1.1[0m" 404 -
+INFO | 127.0.0.1 - - [01/Nov/2022 19:15:54] "GET /img_store/equipment/default_control.png HTTP/1.1" 200 -
+INFO | 127.0.0.1 - - [01/Nov/2022 19:36:06] "[33mGET /img_store/equipment/tool_2.png HTTP/1.1[0m" 404 -
+INFO | 127.0.0.1 - - [01/Nov/2022 19:36:24] "GET /equipment HTTP/1.1" 200 -
+INFO | 127.0.0.1 - - [01/Nov/2022 19:36:24] "GET /img_store/equipment/default_prisp.png HTTP/1.1" 200 -
+INFO | 127.0.0.1 - - [01/Nov/2022 19:36:24] "POST /location HTTP/1.1" 200 -
+INFO | 127.0.0.1 - - [01/Nov/2022 19:36:26] "GET /img_store/equipment/default_tool.png HTTP/1.1" 200 -
+INFO | 127.0.0.1 - - [01/Nov/2022 19:36:28] "[33mGET /img_store/equipment/tool_2.png HTTP/1.1[0m" 404 -
+INFO | 127.0.0.1 - - [01/Nov/2022 19:36:45] "[33mGET /img_store/equipment/tool_1.png HTTP/1.1[0m" 404 -
+INFO | 127.0.0.1 - - [01/Nov/2022 19:36:47] "[33mGET /img_store/equipment/tool_2.png HTTP/1.1[0m" 404 -
+INFO | 127.0.0.1 - - [01/Nov/2022 19:36:53] "[33mGET /img_store/equipment/tool_3.png HTTP/1.1[0m" 404 -
+INFO | 127.0.0.1 - - [01/Nov/2022 19:36:56] "GET /img_store/equipment/default_control.png HTTP/1.1" 200 -
+INFO | 127.0.0.1 - - [01/Nov/2022 19:37:05] "GET /img_store/equipment/default_prisp.png HTTP/1.1" 200 -
+ERROR | Exception on /equipment [GET]
+Traceback (most recent call last):
+  File "D:\MyProject\microerp\env\lib\site-packages\pymysql\connections.py", line 732, in _read_bytes
+    data = self._rfile.read(num_bytes)
+  File "C:\Python38\lib\socket.py", line 669, in readinto
+    return self._sock.recv_into(b)
+ConnectionAbortedError: [WinError 10053] Программа на вашем хост-компьютере разорвала установленное подключение
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "D:\MyProject\microerp\env\lib\site-packages\sqlalchemy\engine\base.py", line 1819, in _execute_context
+    self.dialect.do_execute(
+  File "D:\MyProject\microerp\env\lib\site-packages\sqlalchemy\engine\default.py", line 732, in do_execute
+    cursor.execute(statement, parameters)
+  File "D:\MyProject\microerp\env\lib\site-packages\pymysql\cursors.py", line 148, in execute
+    result = self._query(query)
+  File "D:\MyProject\microerp\env\lib\site-packages\pymysql\cursors.py", line 310, in _query
+    conn.query(q)
+  File "D:\MyProject\microerp\env\lib\site-packages\pymysql\connections.py", line 548, in query
+    self._affected_rows = self._read_query_result(unbuffered=unbuffered)
+  File "D:\MyProject\microerp\env\lib\site-packages\pymysql\connections.py", line 775, in _read_query_result
+    result.read()
+  File "D:\MyProject\microerp\env\lib\site-packages\pymysql\connections.py", line 1156, in read
+    first_packet = self.connection._read_packet()
+  File "D:\MyProject\microerp\env\lib\site-packages\pymysql\connections.py", line 692, in _read_packet
+    packet_header = self._read_bytes(4)
+  File "D:\MyProject\microerp\env\lib\site-packages\pymysql\connections.py", line 738, in _read_bytes
+    raise err.OperationalError(
+pymysql.err.OperationalError: (2013, 'Lost connection to MySQL server during query ([WinError 10053] Программа на вашем хост-компьютере разорвала установленное подключение)')
+
+The above exception was the direct cause of the following exception:
+
+Traceback (most recent call last):
+  File "D:\MyProject\microerp\env\lib\site-packages\flask\app.py", line 2525, in wsgi_app
+    response = self.full_dispatch_request()
+  File "D:\MyProject\microerp\env\lib\site-packages\flask\app.py", line 1822, in full_dispatch_request
+    rv = self.handle_user_exception(e)
+  File "D:\MyProject\microerp\env\lib\site-packages\flask\app.py", line 1820, in full_dispatch_request
+    rv = self.dispatch_request()
+  File "D:\MyProject\microerp\env\lib\site-packages\flask\app.py", line 1796, in dispatch_request
+    return self.ensure_sync(self.view_functions[rule.endpoint])(**view_args)
+  File "D:\MyProject\microerp\app.py", line 224, in equipment
+    eq = Equipment.query.all()
+  File "D:\MyProject\microerp\env\lib\site-packages\sqlalchemy\orm\query.py", line 2768, in all
+    return self._iter().all()
+  File "D:\MyProject\microerp\env\lib\site-packages\sqlalchemy\orm\query.py", line 2903, in _iter
+    result = self.session.execute(
+  File "D:\MyProject\microerp\env\lib\site-packages\sqlalchemy\orm\session.py", line 1712, in execute
+    result = conn._execute_20(statement, params or {}, execution_options)
+  File "D:\MyProject\microerp\env\lib\site-packages\sqlalchemy\engine\base.py", line 1631, in _execute_20
+    return meth(self, args_10style, kwargs_10style, execution_options)
+  File "D:\MyProject\microerp\env\lib\site-packages\sqlalchemy\sql\elements.py", line 332, in _execute_on_connection
+    return connection._execute_clauseelement(
+  File "D:\MyProject\microerp\env\lib\site-packages\sqlalchemy\engine\base.py", line 1498, in _execute_clauseelement
+    ret = self._execute_context(
+  File "D:\MyProject\microerp\env\lib\site-packages\sqlalchemy\engine\base.py", line 1862, in _execute_context
+    self._handle_dbapi_exception(
+  File "D:\MyProject\microerp\env\lib\site-packages\sqlalchemy\engine\base.py", line 2043, in _handle_dbapi_exception
+    util.raise_(
+  File "D:\MyProject\microerp\env\lib\site-packages\sqlalchemy\util\compat.py", line 208, in raise_
+    raise exception
+  File "D:\MyProject\microerp\env\lib\site-packages\sqlalchemy\engine\base.py", line 1819, in _execute_context
+    self.dialect.do_execute(
+  File "D:\MyProject\microerp\env\lib\site-packages\sqlalchemy\engine\default.py", line 732, in do_execute
+    cursor.execute(statement, parameters)
+  File "D:\MyProject\microerp\env\lib\site-packages\pymysql\cursors.py", line 148, in execute
+    result = self._query(query)
+  File "D:\MyProject\microerp\env\lib\site-packages\pymysql\cursors.py", line 310, in _query
+    conn.query(q)
+  File "D:\MyProject\microerp\env\lib\site-packages\pymysql\connections.py", line 548, in query
+    self._affected_rows = self._read_query_result(unbuffered=unbuffered)
+  File "D:\MyProject\microerp\env\lib\site-packages\pymysql\connections.py", line 775, in _read_query_result
+    result.read()
+  File "D:\MyProject\microerp\env\lib\site-packages\pymysql\connections.py", line 1156, in read
+    first_packet = self.connection._read_packet()
+  File "D:\MyProject\microerp\env\lib\site-packages\pymysql\connections.py", line 692, in _read_packet
+    packet_header = self._read_bytes(4)
+  File "D:\MyProject\microerp\env\lib\site-packages\pymysql\connections.py", line 738, in _read_bytes
+    raise err.OperationalError(
+sqlalchemy.exc.OperationalError: (pymysql.err.OperationalError) (2013, 'Lost connection to MySQL server during query ([WinError 10053] Программа на вашем хост-компьютере разорвала установленное подключение)')
+[SQL: SELECT equipment.id AS equipment_id, equipment.name AS equipment_name, equipment.type AS equipment_type, equipment.description AS equipment_description, equipment.code AS equipment_code, equipment.firm AS equipment_firm, equipment.path AS equipment_path, equipment.data_added AS equipment_data_added, equipment.nodes AS equipment_nodes, equipment.options AS equipment_options, equipment.relevance AS equipment_relevance, equipment.added_id AS equipment_added_id, equipment.is_group AS equipment_is_group 
+FROM equipment]
+(Background on this error at: https://sqlalche.me/e/14/e3q8)
+INFO | 127.0.0.1 - - [01/Nov/2022 19:39:34] "[35m[1mGET /equipment HTTP/1.1[0m" 500 -
+INFO | 127.0.0.1 - - [01/Nov/2022 19:39:34] "POST /location HTTP/1.1" 200 -
+INFO | 127.0.0.1 - - [01/Nov/2022 19:39:38] "GET /equipment HTTP/1.1" 200 -
+INFO | 127.0.0.1 - - [01/Nov/2022 19:39:38] "GET /img_store/equipment/default_prisp.png HTTP/1.1" 200 -
+INFO | 127.0.0.1 - - [01/Nov/2022 19:39:38] "POST /location HTTP/1.1" 200 -
+INFO | 127.0.0.1 - - [01/Nov/2022 19:39:47] "GET /img_store/equipment/default_tool.png HTTP/1.1" 200 -
+INFO | 127.0.0.1 - - [01/Nov/2022 19:39:49] "[33mGET /img_store/equipment/tool_1.png HTTP/1.1[0m" 404 -
+INFO | 127.0.0.1 - - [01/Nov/2022 19:40:05] "GET /img_store/equipment/default_tool.png HTTP/1.1" 200 -
+INFO | 127.0.0.1 - - [01/Nov/2022 19:40:34] "[33mGET /img_store/equipment/tool_2.png HTTP/1.1[0m" 404 -
+INFO | 127.0.0.1 - - [01/Nov/2022 19:40:44] "GET /img_store/equipment/default_tool.png HTTP/1.1" 200 -
+INFO | 127.0.0.1 - - [01/Nov/2022 19:41:00] "GET /img_store/equipment/default_prisp.png HTTP/1.1" 200 -
+INFO | 127.0.0.1 - - [01/Nov/2022 19:41:37] "GET /img_store/equipment/default_tool.png HTTP/1.1" 200 -
+INFO | 127.0.0.1 - - [02/Nov/2022 13:03:07] "GET /equipment HTTP/1.1" 200 -
+INFO | 127.0.0.1 - - [02/Nov/2022 13:03:07] "GET /img_store/equipment/default_prisp.png HTTP/1.1" 200 -
+INFO | 127.0.0.1 - - [04/Nov/2022 07:11:52] "[33mGET /img_store/equipment/prisp_1.png HTTP/1.1[0m" 404 -
+INFO | 127.0.0.1 - - [04/Nov/2022 07:11:57] "GET /img_store/equipment/default_prisp.png HTTP/1.1" 200 -
+INFO | 127.0.0.1 - - [04/Nov/2022 07:16:40] "GET /equipment HTTP/1.1" 200 -
+INFO | 127.0.0.1 - - [04/Nov/2022 07:16:40] "GET /img_store/equipment/default_prisp.png HTTP/1.1" 200 -
+INFO | 127.0.0.1 - - [04/Nov/2022 07:16:46] "GET /img_store/equipment/default_tool.png HTTP/1.1" 200 -
+INFO | 127.0.0.1 - - [04/Nov/2022 07:16:48] "[33mGET /img_store/equipment/tool_2.png HTTP/1.1[0m" 404 -
+INFO | 127.0.0.1 - - [04/Nov/2022 07:16:52] "POST /location HTTP/1.1" 200 -
+INFO | 127.0.0.1 - - [04/Nov/2022 07:21:24] "GET /img_store/equipment/default_tool.png HTTP/1.1" 200 -
+INFO | 127.0.0.1 - - [04/Nov/2022 07:21:31] "[33mGET /img_store/equipment/tool_2.png HTTP/1.1[0m" 404 -
+INFO | 127.0.0.1 - - [04/Nov/2022 07:21:33] "[33mGET /img_store/equipment/tool_3.png HTTP/1.1[0m" 404 -
+INFO | 127.0.0.1 - - [04/Nov/2022 07:21:36] "GET /img_store/equipment/default_tool.png HTTP/1.1" 200 -
+INFO | 127.0.0.1 - - [04/Nov/2022 07:43:23] "[33mGET /img_store/equipment/tool_1.png HTTP/1.1[0m" 404 -
+INFO | 127.0.0.1 - - [04/Nov/2022 08:12:51] "GET /equipment HTTP/1.1" 200 -
+INFO | 127.0.0.1 - - [04/Nov/2022 08:12:51] "GET /img_store/equipment/default_prisp.png HTTP/1.1" 200 -
+INFO | 127.0.0.1 - - [04/Nov/2022 08:12:52] "POST /location HTTP/1.1" 200 -
+INFO | 127.0.0.1 - - [04/Nov/2022 08:12:59] "GET /img_store/equipment/default_tool.png HTTP/1.1" 200 -
+INFO | 127.0.0.1 - - [04/Nov/2022 08:13:01] "GET /img_store/equipment/default_control.png HTTP/1.1" 200 -
+INFO | 127.0.0.1 - - [04/Nov/2022 08:14:20] "GET /equipment HTTP/1.1" 200 -
+INFO | 127.0.0.1 - - [04/Nov/2022 08:14:20] "GET /img_store/equipment/default_prisp.png HTTP/1.1" 200 -
+INFO | 127.0.0.1 - - [04/Nov/2022 08:14:20] "POST /location HTTP/1.1" 200 -
+INFO | 127.0.0.1 - - [04/Nov/2022 08:14:23] "GET /img_store/equipment/default_control.png HTTP/1.1" 200 -
+INFO | 127.0.0.1 - - [04/Nov/2022 08:14:37] "GET /img_store/equipment/default_prisp.png HTTP/1.1" 200 -
+INFO | 127.0.0.1 - - [04/Nov/2022 08:14:44] "[33mGET /img_store/equipment/prisp_1.png HTTP/1.1[0m" 404 -
+INFO | 127.0.0.1 - - [04/Nov/2022 08:14:48] "GET /img_store/equipment/default_prisp.png HTTP/1.1" 200 -
+INFO | 127.0.0.1 - - [04/Nov/2022 08:15:02] "GET /img_store/equipment/default_tool.png HTTP/1.1" 200 -
+INFO | 127.0.0.1 - - [04/Nov/2022 08:15:15] "GET /img_store/equipment/default_control.png HTTP/1.1" 200 -
+INFO | 127.0.0.1 - - [04/Nov/2022 08:23:49] "GET /equipment HTTP/1.1" 200 -
+INFO | 127.0.0.1 - - [04/Nov/2022 08:23:49] "GET /img_store/equipment/default_prisp.png HTTP/1.1" 200 -
+INFO | 127.0.0.1 - - [04/Nov/2022 08:23:49] "POST /location HTTP/1.1" 200 -
+INFO | 127.0.0.1 - - [04/Nov/2022 08:24:11] "GET /equipment HTTP/1.1" 200 -
+INFO | 127.0.0.1 - - [04/Nov/2022 08:24:11] "GET /img_store/equipment/default_prisp.png HTTP/1.1" 200 -
+INFO | 127.0.0.1 - - [04/Nov/2022 08:24:11] "POST /location HTTP/1.1" 200 -
+INFO | 127.0.0.1 - - [04/Nov/2022 08:24:16] "GET /img_store/equipment/default_tool.png HTTP/1.1" 200 -
+INFO | 127.0.0.1 - - [04/Nov/2022 08:24:17] "GET /img_store/equipment/default_control.png HTTP/1.1" 200 -
+ERROR | Exception on /equipment [GET]
+Traceback (most recent call last):
+  File "D:\MyProject\microerp\env\lib\site-packages\pymysql\connections.py", line 732, in _read_bytes
+    data = self._rfile.read(num_bytes)
+  File "C:\Python38\lib\socket.py", line 669, in readinto
+    return self._sock.recv_into(b)
+ConnectionAbortedError: [WinError 10053] Программа на вашем хост-компьютере разорвала установленное подключение
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "D:\MyProject\microerp\env\lib\site-packages\sqlalchemy\engine\base.py", line 1819, in _execute_context
+    self.dialect.do_execute(
+  File "D:\MyProject\microerp\env\lib\site-packages\sqlalchemy\engine\default.py", line 732, in do_execute
+    cursor.execute(statement, parameters)
+  File "D:\MyProject\microerp\env\lib\site-packages\pymysql\cursors.py", line 148, in execute
+    result = self._query(query)
+  File "D:\MyProject\microerp\env\lib\site-packages\pymysql\cursors.py", line 310, in _query
+    conn.query(q)
+  File "D:\MyProject\microerp\env\lib\site-packages\pymysql\connections.py", line 548, in query
+    self._affected_rows = self._read_query_result(unbuffered=unbuffered)
+  File "D:\MyProject\microerp\env\lib\site-packages\pymysql\connections.py", line 775, in _read_query_result
+    result.read()
+  File "D:\MyProject\microerp\env\lib\site-packages\pymysql\connections.py", line 1156, in read
+    first_packet = self.connection._read_packet()
+  File "D:\MyProject\microerp\env\lib\site-packages\pymysql\connections.py", line 692, in _read_packet
+    packet_header = self._read_bytes(4)
+  File "D:\MyProject\microerp\env\lib\site-packages\pymysql\connections.py", line 738, in _read_bytes
+    raise err.OperationalError(
+pymysql.err.OperationalError: (2013, 'Lost connection to MySQL server during query ([WinError 10053] Программа на вашем хост-компьютере разорвала установленное подключение)')
+
+The above exception was the direct cause of the following exception:
+
+Traceback (most recent call last):
+  File "D:\MyProject\microerp\env\lib\site-packages\flask\app.py", line 2525, in wsgi_app
+    response = self.full_dispatch_request()
+  File "D:\MyProject\microerp\env\lib\site-packages\flask\app.py", line 1822, in full_dispatch_request
+    rv = self.handle_user_exception(e)
+  File "D:\MyProject\microerp\env\lib\site-packages\flask\app.py", line 1820, in full_dispatch_request
+    rv = self.dispatch_request()
+  File "D:\MyProject\microerp\env\lib\site-packages\flask\app.py", line 1796, in dispatch_request
+    return self.ensure_sync(self.view_functions[rule.endpoint])(**view_args)
+  File "D:\MyProject\microerp\app.py", line 224, in equipment
+    eq = Equipment.query.all()
+  File "D:\MyProject\microerp\env\lib\site-packages\sqlalchemy\orm\query.py", line 2768, in all
+    return self._iter().all()
+  File "D:\MyProject\microerp\env\lib\site-packages\sqlalchemy\orm\query.py", line 2903, in _iter
+    result = self.session.execute(
+  File "D:\MyProject\microerp\env\lib\site-packages\sqlalchemy\orm\session.py", line 1712, in execute
+    result = conn._execute_20(statement, params or {}, execution_options)
+  File "D:\MyProject\microerp\env\lib\site-packages\sqlalchemy\engine\base.py", line 1631, in _execute_20
+    return meth(self, args_10style, kwargs_10style, execution_options)
+  File "D:\MyProject\microerp\env\lib\site-packages\sqlalchemy\sql\elements.py", line 332, in _execute_on_connection
+    return connection._execute_clauseelement(
+  File "D:\MyProject\microerp\env\lib\site-packages\sqlalchemy\engine\base.py", line 1498, in _execute_clauseelement
+    ret = self._execute_context(
+  File "D:\MyProject\microerp\env\lib\site-packages\sqlalchemy\engine\base.py", line 1862, in _execute_context
+    self._handle_dbapi_exception(
+  File "D:\MyProject\microerp\env\lib\site-packages\sqlalchemy\engine\base.py", line 2043, in _handle_dbapi_exception
+    util.raise_(
+  File "D:\MyProject\microerp\env\lib\site-packages\sqlalchemy\util\compat.py", line 208, in raise_
+    raise exception
+  File "D:\MyProject\microerp\env\lib\site-packages\sqlalchemy\engine\base.py", line 1819, in _execute_context
+    self.dialect.do_execute(
+  File "D:\MyProject\microerp\env\lib\site-packages\sqlalchemy\engine\default.py", line 732, in do_execute
+    cursor.execute(statement, parameters)
+  File "D:\MyProject\microerp\env\lib\site-packages\pymysql\cursors.py", line 148, in execute
+    result = self._query(query)
+  File "D:\MyProject\microerp\env\lib\site-packages\pymysql\cursors.py", line 310, in _query
+    conn.query(q)
+  File "D:\MyProject\microerp\env\lib\site-packages\pymysql\connections.py", line 548, in query
+    self._affected_rows = self._read_query_result(unbuffered=unbuffered)
+  File "D:\MyProject\microerp\env\lib\site-packages\pymysql\connections.py", line 775, in _read_query_result
+    result.read()
+  File "D:\MyProject\microerp\env\lib\site-packages\pymysql\connections.py", line 1156, in read
+    first_packet = self.connection._read_packet()
+  File "D:\MyProject\microerp\env\lib\site-packages\pymysql\connections.py", line 692, in _read_packet
+    packet_header = self._read_bytes(4)
+  File "D:\MyProject\microerp\env\lib\site-packages\pymysql\connections.py", line 738, in _read_bytes
+    raise err.OperationalError(
+sqlalchemy.exc.OperationalError: (pymysql.err.OperationalError) (2013, 'Lost connection to MySQL server during query ([WinError 10053] Программа на вашем хост-компьютере разорвала установленное подключение)')
+[SQL: SELECT equipment.id AS equipment_id, equipment.name AS equipment_name, equipment.type AS equipment_type, equipment.description AS equipment_description, equipment.code AS equipment_code, equipment.firm AS equipment_firm, equipment.path AS equipment_path, equipment.data_added AS equipment_data_added, equipment.nodes AS equipment_nodes, equipment.options AS equipment_options, equipment.relevance AS equipment_relevance, equipment.added_id AS equipment_added_id, equipment.is_group AS equipment_is_group 
+FROM equipment]
+(Background on this error at: https://sqlalche.me/e/14/e3q8)
+INFO | 127.0.0.1 - - [04/Nov/2022 08:28:38] "POST /location HTTP/1.1" 200 -
+INFO | 127.0.0.1 - - [04/Nov/2022 08:28:38] "[35m[1mGET /equipment HTTP/1.1[0m" 500 -
+INFO | 127.0.0.1 - - [04/Nov/2022 08:28:43] "GET /equipment HTTP/1.1" 200 -
+INFO | 127.0.0.1 - - [04/Nov/2022 08:28:43] "GET /img_store/equipment/default_prisp.png HTTP/1.1" 200 -
+INFO | 127.0.0.1 - - [04/Nov/2022 08:28:43] "POST /location HTTP/1.1" 200 -
+ERROR | Exception on /equipment [GET]
+Traceback (most recent call last):
+  File "D:\MyProject\microerp\env\lib\site-packages\pymysql\connections.py", line 732, in _read_bytes
+    data = self._rfile.read(num_bytes)
+  File "C:\Python38\lib\socket.py", line 669, in readinto
+    return self._sock.recv_into(b)
+ConnectionAbortedError: [WinError 10053] Программа на вашем хост-компьютере разорвала установленное подключение
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "D:\MyProject\microerp\env\lib\site-packages\sqlalchemy\engine\base.py", line 1819, in _execute_context
+    self.dialect.do_execute(
+  File "D:\MyProject\microerp\env\lib\site-packages\sqlalchemy\engine\default.py", line 732, in do_execute
+    cursor.execute(statement, parameters)
+  File "D:\MyProject\microerp\env\lib\site-packages\pymysql\cursors.py", line 148, in execute
+    result = self._query(query)
+  File "D:\MyProject\microerp\env\lib\site-packages\pymysql\cursors.py", line 310, in _query
+    conn.query(q)
+  File "D:\MyProject\microerp\env\lib\site-packages\pymysql\connections.py", line 548, in query
+    self._affected_rows = self._read_query_result(unbuffered=unbuffered)
+  File "D:\MyProject\microerp\env\lib\site-packages\pymysql\connections.py", line 775, in _read_query_result
+    result.read()
+  File "D:\MyProject\microerp\env\lib\site-packages\pymysql\connections.py", line 1156, in read
+    first_packet = self.connection._read_packet()
+  File "D:\MyProject\microerp\env\lib\site-packages\pymysql\connections.py", line 692, in _read_packet
+    packet_header = self._read_bytes(4)
+  File "D:\MyProject\microerp\env\lib\site-packages\pymysql\connections.py", line 738, in _read_bytes
+    raise err.OperationalError(
+pymysql.err.OperationalError: (2013, 'Lost connection to MySQL server during query ([WinError 10053] Программа на вашем хост-компьютере разорвала установленное подключение)')
+
+The above exception was the direct cause of the following exception:
+
+Traceback (most recent call last):
+  File "D:\MyProject\microerp\env\lib\site-packages\flask\app.py", line 2525, in wsgi_app
+    response = self.full_dispatch_request()
+  File "D:\MyProject\microerp\env\lib\site-packages\flask\app.py", line 1822, in full_dispatch_request
+    rv = self.handle_user_exception(e)
+  File "D:\MyProject\microerp\env\lib\site-packages\flask\app.py", line 1820, in full_dispatch_request
+    rv = self.dispatch_request()
+  File "D:\MyProject\microerp\env\lib\site-packages\flask\app.py", line 1796, in dispatch_request
+    return self.ensure_sync(self.view_functions[rule.endpoint])(**view_args)
+  File "D:\MyProject\microerp\app.py", line 224, in equipment
+    eq = Equipment.query.all()
+  File "D:\MyProject\microerp\env\lib\site-packages\sqlalchemy\orm\query.py", line 2768, in all
+    return self._iter().all()
+  File "D:\MyProject\microerp\env\lib\site-packages\sqlalchemy\orm\query.py", line 2903, in _iter
+    result = self.session.execute(
+  File "D:\MyProject\microerp\env\lib\site-packages\sqlalchemy\orm\session.py", line 1712, in execute
+    result = conn._execute_20(statement, params or {}, execution_options)
+  File "D:\MyProject\microerp\env\lib\site-packages\sqlalchemy\engine\base.py", line 1631, in _execute_20
+    return meth(self, args_10style, kwargs_10style, execution_options)
+  File "D:\MyProject\microerp\env\lib\site-packages\sqlalchemy\sql\elements.py", line 332, in _execute_on_connection
+    return connection._execute_clauseelement(
+  File "D:\MyProject\microerp\env\lib\site-packages\sqlalchemy\engine\base.py", line 1498, in _execute_clauseelement
+    ret = self._execute_context(
+  File "D:\MyProject\microerp\env\lib\site-packages\sqlalchemy\engine\base.py", line 1862, in _execute_context
+    self._handle_dbapi_exception(
+  File "D:\MyProject\microerp\env\lib\site-packages\sqlalchemy\engine\base.py", line 2043, in _handle_dbapi_exception
+    util.raise_(
+  File "D:\MyProject\microerp\env\lib\site-packages\sqlalchemy\util\compat.py", line 208, in raise_
+    raise exception
+  File "D:\MyProject\microerp\env\lib\site-packages\sqlalchemy\engine\base.py", line 1819, in _execute_context
+    self.dialect.do_execute(
+  File "D:\MyProject\microerp\env\lib\site-packages\sqlalchemy\engine\default.py", line 732, in do_execute
+    cursor.execute(statement, parameters)
+  File "D:\MyProject\microerp\env\lib\site-packages\pymysql\cursors.py", line 148, in execute
+    result = self._query(query)
+  File "D:\MyProject\microerp\env\lib\site-packages\pymysql\cursors.py", line 310, in _query
+    conn.query(q)
+  File "D:\MyProject\microerp\env\lib\site-packages\pymysql\connections.py", line 548, in query
+    self._affected_rows = self._read_query_result(unbuffered=unbuffered)
+  File "D:\MyProject\microerp\env\lib\site-packages\pymysql\connections.py", line 775, in _read_query_result
+    result.read()
+  File "D:\MyProject\microerp\env\lib\site-packages\pymysql\connections.py", line 1156, in read
+    first_packet = self.connection._read_packet()
+  File "D:\MyProject\microerp\env\lib\site-packages\pymysql\connections.py", line 692, in _read_packet
+    packet_header = self._read_bytes(4)
+  File "D:\MyProject\microerp\env\lib\site-packages\pymysql\connections.py", line 738, in _read_bytes
+    raise err.OperationalError(
+sqlalchemy.exc.OperationalError: (pymysql.err.OperationalError) (2013, 'Lost connection to MySQL server during query ([WinError 10053] Программа на вашем хост-компьютере разорвала установленное подключение)')
+[SQL: SELECT equipment.id AS equipment_id, equipment.name AS equipment_name, equipment.type AS equipment_type, equipment.description AS equipment_description, equipment.code AS equipment_code, equipment.firm AS equipment_firm, equipment.path AS equipment_path, equipment.data_added AS equipment_data_added, equipment.nodes AS equipment_nodes, equipment.options AS equipment_options, equipment.relevance AS equipment_relevance, equipment.added_id AS equipment_added_id, equipment.is_group AS equipment_is_group 
+FROM equipment]
+(Background on this error at: https://sqlalche.me/e/14/e3q8)
+INFO | 127.0.0.1 - - [04/Nov/2022 08:33:40] "[35m[1mGET /equipment HTTP/1.1[0m" 500 -
+INFO | 127.0.0.1 - - [04/Nov/2022 08:34:22] "GET /equipment HTTP/1.1" 200 -
+INFO | 127.0.0.1 - - [04/Nov/2022 08:34:22] "GET /img_store/equipment/default_prisp.png HTTP/1.1" 200 -
+INFO | 127.0.0.1 - - [04/Nov/2022 08:34:22] "POST /location HTTP/1.1" 200 -
+INFO | 127.0.0.1 - - [04/Nov/2022 08:36:52] "GET /equipment HTTP/1.1" 200 -
+INFO | 127.0.0.1 - - [04/Nov/2022 08:36:52] "GET /img_store/equipment/default_prisp.png HTTP/1.1" 200 -
+INFO | 127.0.0.1 - - [04/Nov/2022 08:36:52] "POST /location HTTP/1.1" 200 -
+INFO | 127.0.0.1 - - [04/Nov/2022 08:36:54] "GET /img_store/equipment/default_tool.png HTTP/1.1" 200 -

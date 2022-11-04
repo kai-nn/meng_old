@@ -6,6 +6,7 @@ import {useDispatch, useSelector} from "react-redux";
 import {setList, setSelected, changeData} from "../../../../../store/equipment/equipmentSlice";
 
 
+
 const List = () => {
 
     const dispatch = useDispatch()
@@ -15,26 +16,30 @@ const List = () => {
 
 
     function createList(object) {
-        let res = []
+        let res = [object]
         let nesting = -1
         const chainReaction = (object, parrent = 1) => {
             nesting++
             object.nodes.map(n => {
-                const {id, name, type, collapsed, is_group} = data[n - 1]
+
+                const {id, name, type, nodes, collapsed, is_group} = data[n - 1]
                 res.push(
                     {
                         id: id,
                         name: name,
                         type: type,
+                        nodes: nodes,
                         collapsed: collapsed,
+                        is_group: is_group,
+
                         nesting: nesting,
                         parrent: parrent,
-                        is_group: is_group,
                     }
                 )
                 if (collapsed) {
                     return
                 }
+
                 chainReaction(data[n - 1], id)
             })
             nesting--
@@ -44,16 +49,37 @@ const List = () => {
     }
 
 
-    useEffect(() => {
-        console.log('selected')
-    }, [selected])
+// function createList(object) {
+//     let res = []
+//     let nesting = -1
+//     const chainReaction = (object, parrent = 1) => {
+//         nesting++
+//         object.nodes.map(n => {
+//
+//             const {id, name, type, nodes, collapsed, is_group} = data[n - 1]
+//             res.push( id  )
+//             if (collapsed) {
+//                 return
+//             }
+//
+//             chainReaction(data[n - 1], id)
+//         })
+//         nesting--
+//         return res
+//     }
+//     return chainReaction(object)
+// }
+
+
 
 
     // активация списка
     useEffect(() => {
         // console.log('data activation', data)
+        // data && data.length && console.log( createList(data[0]) )
         data && data.length && dispatch(setList( createList(data[0]) ))
     }, [data])
+
 
 
     const activate = (id) => {
@@ -64,11 +90,10 @@ const List = () => {
         dispatch(changeData( data[id - 1] ))
     }
 
-
     return (
         <>
             {
-                list?.map(el => {
+                list?.filter(el => el.name != 'Root').map(el => {
                     const { id, name, type, collapsed, nesting, is_group } = el
                     const indent = nesting * 10 + 'px'
                     const sell = id === selected

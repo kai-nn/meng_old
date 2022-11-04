@@ -6,6 +6,11 @@
   background-color: rgba(235, 235, 235, 1);
   border-radius: 3px;
   box-shadow: 1px 1px 1px lightgray;
+
+  & svg{
+    width: 20px;
+    height: 20px;
+  }
 }
 
 .group_1{
@@ -31,6 +36,8 @@
 
 .group_3{
   margin-left: auto;
+  display: flex;
+  align-items: center;
 }
 
 @media screen and (max-width: 480px){
@@ -51,15 +58,4 @@
   }
 }
 
-.btn{
-  color: red;
-}
-
-
-
-
-//button[disabled=false]{
-//  border: 1px solid #999999;
-//  color: red;
-//}
 

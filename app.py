@@ -226,8 +226,8 @@ def equipment():
         for e in eq:
             equipment += [{
                 'id': e.id,
-                'name': e.name,
                 'type': e.type,
+                'name': e.name,
                 'description': e.description,
                 'code': e.code,
                 'firm': e.firm,

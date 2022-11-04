@@ -24,6 +24,15 @@ export const getEquipment = createAsyncThunk(
     }
 )
 
+export const createElem = createAsyncThunk(
+    'equipment/createElem',
+    async (_, {rejectedWithValue, dispatch}) => {
+        const response = await axios.post('equipment', {name: 'new elem'})
+        // console.log(response)
+        return response.data
+    }
+)
+
 export const equipmentSlice = createSlice({
     name: 'equipment',
     initialState,
@@ -45,6 +54,7 @@ export const equipmentSlice = createSlice({
 
 
     extraReducers: {
+
         [getEquipment.pending]: (state, action) => {
             // console.log('getEquipment.pending')
         },
@@ -56,6 +66,22 @@ export const equipmentSlice = createSlice({
         [getEquipment.rejected]: (state, action) => {
             // console.log('getEquipment.rejected')
         },
+
+
+        [createElem.pending]: (state, action) => {
+            // console.log('getEquipment.pending')
+        },
+        [createElem.fulfilled]: (state, action) => {
+            console.log('createElem.fulfilled')
+            // console.log('getEquipment.state', action)
+            state.data = action.payload
+        },
+        [createElem.rejected]: (state, action) => {
+            // console.log('getEquipment.rejected')
+        },
+
+
+
     }
 })
 
