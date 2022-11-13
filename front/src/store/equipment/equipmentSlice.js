@@ -4,7 +4,6 @@ import axios from "axios";
 
 const initialState = {
     data: null,
-    list: null,
     selected: 2,
 }
 
@@ -13,8 +12,20 @@ export const getEquipment = createAsyncThunk(
     'equipment/getEquipment',
     async (_, {rejectedWithValue, dispatch}) => {
         const response = await axios.get('equipment', {filter: '', page: 1, page_len: 10})
-        // console.log(response)
-        return response.data
+        const data = response.data
+
+        // добавляем служебные поля
+        const res = data.map(el => {
+            return {
+                ...el,
+                collapsed: true,
+                is_group: !!el.nodes.length,
+                nesting: null,
+                parrent: null,
+            }
+        })
+
+        return res
 
         // dispatch(setEquipment(response.data))
         // async function(){
@@ -28,7 +39,6 @@ export const createElem = createAsyncThunk(
     'equipment/createElem',
     async (_, {rejectedWithValue, dispatch}) => {
         const response = await axios.post('equipment', {name: 'new elem'})
-        // console.log(response)
         return response.data
     }
 )
@@ -40,12 +50,7 @@ export const equipmentSlice = createSlice({
 
     reducers: {
         changeData: (state, action) => {
-            const value = state.data.find(el => el.id === action.payload.id)
-            value.collapsed = !value.collapsed
-        },
-        setList: (state, action) => {
-            // console.log('changeData', action)
-            state.list = action.payload
+            state.data = action.payload
         },
         setSelected: (state, action) => {
             state.selected = action.payload
@@ -86,5 +91,5 @@ export const equipmentSlice = createSlice({
 })
 
 
-export const {setSelected, changeData, setList} = equipmentSlice.actions
+export const {setSelected, changeData} = equipmentSlice.actions
 export default equipmentSlice.reducer

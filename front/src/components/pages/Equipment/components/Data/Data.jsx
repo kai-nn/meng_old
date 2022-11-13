@@ -2,7 +2,8 @@ import React from 'react'
 import style from "./Data.module.scss";
 import TextField from "@mui/material/TextField";
 import {useDispatch, useSelector} from "react-redux";
-
+import {ReactComponent as NoData} from "./svg/noData.svg";
+import {ReactComponent as NoServerData} from "./svg/noServerData.svg";
 
 const Data = () => {
 
@@ -14,7 +15,17 @@ const Data = () => {
     return (
         <>
             {
-                data && (
+                selected === 1 && (
+                    <div className={style.data}>
+                        <div>
+                            <NoData/>
+                        </div>
+                    </div>
+                )
+            }
+
+            {
+                data && selected !==1 && (
 
                     <div className={style.data}>
 
@@ -49,7 +60,15 @@ const Data = () => {
                 )
             }
 
-            {!data && <>Данные отсутствуют!</>}
+            {
+                !data && (
+                    <div className={style.data}>
+                        <div>
+                            <NoServerData />
+                        </div>
+                    </div>
+                )
+            }
         </>
     )
 }

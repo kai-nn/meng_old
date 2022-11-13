@@ -2,10 +2,14 @@
 
   display: flex;
   flex-flow: row nowrap;
-  //display: inline;
-  //height: 85%;
-  //overflow-y: scroll;
 
+  & div{
+    width: 100%;
+    text-align: center;
+    & svg{
+      width: 60%;
+    }
+  }
 }
 
 .image{
@@ -15,6 +19,7 @@
     width: 100%;
     object-position: center top;
   }
+
 }
 
 
