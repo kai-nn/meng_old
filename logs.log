@@ -15712,3 +15712,1877 @@ INFO | 127.0.0.1 - - [13/Nov/2022 20:05:54] "[36mGET /img_store/equipment/defau
 INFO | 127.0.0.1 - - [13/Nov/2022 20:05:57] "[36mGET /img_store/equipment/default_prisp.png HTTP/1.1[0m" 304 -
 INFO | 127.0.0.1 - - [13/Nov/2022 20:45:12] "[36mGET /img_store/equipment/default_control.png HTTP/1.1[0m" 304 -
 INFO | 127.0.0.1 - - [13/Nov/2022 20:45:29] "[33mGET /img_store/null HTTP/1.1[0m" 404 -
+INFO |  * Running on http://127.0.0.1:5000 (Press CTRL+C to quit)
+INFO | 127.0.0.1 - - [14/Nov/2022 18:57:51] "POST /location HTTP/1.1" 200 -
+INFO | 127.0.0.1 - - [14/Nov/2022 18:58:50] "POST /location HTTP/1.1" 200 -
+INFO | 127.0.0.1 - - [14/Nov/2022 19:00:02] "POST /location HTTP/1.1" 200 -
+INFO | 127.0.0.1 - - [14/Nov/2022 19:00:13] "POST /location HTTP/1.1" 200 -
+INFO | 127.0.0.1 - - [14/Nov/2022 19:00:22] "GET /equipment HTTP/1.1" 200 -
+INFO | 127.0.0.1 - - [14/Nov/2022 19:00:22] "[36mGET /img_store/equipment/default_prisp.png HTTP/1.1[0m" 304 -
+INFO | 127.0.0.1 - - [14/Nov/2022 19:00:26] "[36mGET /img_store/equipment/default_tool.png HTTP/1.1[0m" 304 -
+INFO | 127.0.0.1 - - [14/Nov/2022 19:00:28] "[36mGET /img_store/equipment/default_control.png HTTP/1.1[0m" 304 -
+INFO | 127.0.0.1 - - [14/Nov/2022 19:00:31] "[33mGET /img_store/null HTTP/1.1[0m" 404 -
+INFO | 127.0.0.1 - - [14/Nov/2022 19:05:25] "GET /equipment HTTP/1.1" 200 -
+INFO | 127.0.0.1 - - [14/Nov/2022 19:05:25] "[36mGET /img_store/equipment/default_prisp.png HTTP/1.1[0m" 304 -
+INFO | 127.0.0.1 - - [14/Nov/2022 19:05:25] "POST /location HTTP/1.1" 200 -
+INFO |  * Running on http://127.0.0.1:5000 (Press CTRL+C to quit)
+INFO | 127.0.0.1 - - [14/Nov/2022 19:05:43] "GET /equipment HTTP/1.1" 200 -
+INFO | 127.0.0.1 - - [14/Nov/2022 19:05:43] "[36mGET /img_store/equipment/default_prisp.png HTTP/1.1[0m" 304 -
+INFO | 127.0.0.1 - - [14/Nov/2022 19:05:43] "POST /location HTTP/1.1" 200 -
+ERROR | Exception on /equipment [POST]
+Traceback (most recent call last):
+  File "D:\MyProject\microerp\env\lib\site-packages\flask\app.py", line 2525, in wsgi_app
+    response = self.full_dispatch_request()
+  File "D:\MyProject\microerp\env\lib\site-packages\flask\app.py", line 1823, in full_dispatch_request
+    return self.finalize_request(rv)
+  File "D:\MyProject\microerp\env\lib\site-packages\flask\app.py", line 1842, in finalize_request
+    response = self.make_response(rv)
+  File "D:\MyProject\microerp\env\lib\site-packages\flask\app.py", line 2134, in make_response
+    raise TypeError(
+TypeError: The view function for 'equipment' did not return a valid response. The function either returned None or ended without a return statement.
+ERROR | Exception on /equipment [GET]
+Traceback (most recent call last):
+  File "D:\MyProject\microerp\env\lib\site-packages\pymysql\connections.py", line 732, in _read_bytes
+    data = self._rfile.read(num_bytes)
+  File "C:\Python38\lib\socket.py", line 669, in readinto
+    return self._sock.recv_into(b)
+ConnectionAbortedError: [WinError 10053] Программа на вашем хост-компьютере разорвала установленное подключение
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "D:\MyProject\microerp\env\lib\site-packages\sqlalchemy\engine\base.py", line 1819, in _execute_context
+    self.dialect.do_execute(
+  File "D:\MyProject\microerp\env\lib\site-packages\sqlalchemy\engine\default.py", line 732, in do_execute
+    cursor.execute(statement, parameters)
+  File "D:\MyProject\microerp\env\lib\site-packages\pymysql\cursors.py", line 148, in execute
+    result = self._query(query)
+  File "D:\MyProject\microerp\env\lib\site-packages\pymysql\cursors.py", line 310, in _query
+    conn.query(q)
+  File "D:\MyProject\microerp\env\lib\site-packages\pymysql\connections.py", line 548, in query
+    self._affected_rows = self._read_query_result(unbuffered=unbuffered)
+  File "D:\MyProject\microerp\env\lib\site-packages\pymysql\connections.py", line 775, in _read_query_result
+    result.read()
+  File "D:\MyProject\microerp\env\lib\site-packages\pymysql\connections.py", line 1156, in read
+    first_packet = self.connection._read_packet()
+  File "D:\MyProject\microerp\env\lib\site-packages\pymysql\connections.py", line 692, in _read_packet
+    packet_header = self._read_bytes(4)
+  File "D:\MyProject\microerp\env\lib\site-packages\pymysql\connections.py", line 738, in _read_bytes
+    raise err.OperationalError(
+pymysql.err.OperationalError: (2013, 'Lost connection to MySQL server during query ([WinError 10053] Программа на вашем хост-компьютере разорвала установленное подключение)')
+
+The above exception was the direct cause of the following exception:
+
+Traceback (most recent call last):
+  File "D:\MyProject\microerp\env\lib\site-packages\flask\app.py", line 2525, in wsgi_app
+    response = self.full_dispatch_request()
+  File "D:\MyProject\microerp\env\lib\site-packages\flask\app.py", line 1822, in full_dispatch_request
+    rv = self.handle_user_exception(e)
+  File "D:\MyProject\microerp\env\lib\site-packages\flask\app.py", line 1820, in full_dispatch_request
+    rv = self.dispatch_request()
+  File "D:\MyProject\microerp\env\lib\site-packages\flask\app.py", line 1796, in dispatch_request
+    return self.ensure_sync(self.view_functions[rule.endpoint])(**view_args)
+  File "D:\MyProject\microerp\app.py", line 224, in equipment
+    eq = Equipment.query.all()
+  File "D:\MyProject\microerp\env\lib\site-packages\sqlalchemy\orm\query.py", line 2768, in all
+    return self._iter().all()
+  File "D:\MyProject\microerp\env\lib\site-packages\sqlalchemy\orm\query.py", line 2903, in _iter
+    result = self.session.execute(
+  File "D:\MyProject\microerp\env\lib\site-packages\sqlalchemy\orm\session.py", line 1712, in execute
+    result = conn._execute_20(statement, params or {}, execution_options)
+  File "D:\MyProject\microerp\env\lib\site-packages\sqlalchemy\engine\base.py", line 1631, in _execute_20
+    return meth(self, args_10style, kwargs_10style, execution_options)
+  File "D:\MyProject\microerp\env\lib\site-packages\sqlalchemy\sql\elements.py", line 332, in _execute_on_connection
+    return connection._execute_clauseelement(
+  File "D:\MyProject\microerp\env\lib\site-packages\sqlalchemy\engine\base.py", line 1498, in _execute_clauseelement
+    ret = self._execute_context(
+  File "D:\MyProject\microerp\env\lib\site-packages\sqlalchemy\engine\base.py", line 1862, in _execute_context
+    self._handle_dbapi_exception(
+  File "D:\MyProject\microerp\env\lib\site-packages\sqlalchemy\engine\base.py", line 2043, in _handle_dbapi_exception
+    util.raise_(
+  File "D:\MyProject\microerp\env\lib\site-packages\sqlalchemy\util\compat.py", line 208, in raise_
+    raise exception
+  File "D:\MyProject\microerp\env\lib\site-packages\sqlalchemy\engine\base.py", line 1819, in _execute_context
+    self.dialect.do_execute(
+  File "D:\MyProject\microerp\env\lib\site-packages\sqlalchemy\engine\default.py", line 732, in do_execute
+    cursor.execute(statement, parameters)
+  File "D:\MyProject\microerp\env\lib\site-packages\pymysql\cursors.py", line 148, in execute
+    result = self._query(query)
+  File "D:\MyProject\microerp\env\lib\site-packages\pymysql\cursors.py", line 310, in _query
+    conn.query(q)
+  File "D:\MyProject\microerp\env\lib\site-packages\pymysql\connections.py", line 548, in query
+    self._affected_rows = self._read_query_result(unbuffered=unbuffered)
+  File "D:\MyProject\microerp\env\lib\site-packages\pymysql\connections.py", line 775, in _read_query_result
+    result.read()
+  File "D:\MyProject\microerp\env\lib\site-packages\pymysql\connections.py", line 1156, in read
+    first_packet = self.connection._read_packet()
+  File "D:\MyProject\microerp\env\lib\site-packages\pymysql\connections.py", line 692, in _read_packet
+    packet_header = self._read_bytes(4)
+  File "D:\MyProject\microerp\env\lib\site-packages\pymysql\connections.py", line 738, in _read_bytes
+    raise err.OperationalError(
+sqlalchemy.exc.OperationalError: (pymysql.err.OperationalError) (2013, 'Lost connection to MySQL server during query ([WinError 10053] Программа на вашем хост-компьютере разорвала установленное подключение)')
+[SQL: SELECT equipment.id AS equipment_id, equipment.name AS equipment_name, equipment.type AS equipment_type, equipment.description AS equipment_description, equipment.code AS equipment_code, equipment.firm AS equipment_firm, equipment.path AS equipment_path, equipment.data_added AS equipment_data_added, equipment.nodes AS equipment_nodes, equipment.options AS equipment_options, equipment.relevance AS equipment_relevance, equipment.added_id AS equipment_added_id, equipment.is_group AS equipment_is_group 
+FROM equipment]
+(Background on this error at: https://sqlalche.me/e/14/e3q8)
+INFO | 127.0.0.1 - - [14/Nov/2022 19:10:16] "[35m[1mPOST /equipment HTTP/1.1[0m" 500 -
+INFO | 127.0.0.1 - - [14/Nov/2022 19:10:16] "POST /location HTTP/1.1" 200 -
+INFO | 127.0.0.1 - - [14/Nov/2022 19:10:16] "[35m[1mGET /equipment HTTP/1.1[0m" 500 -
+ERROR | Exception on /equipment [POST]
+Traceback (most recent call last):
+  File "D:\MyProject\microerp\env\lib\site-packages\flask\app.py", line 2525, in wsgi_app
+    response = self.full_dispatch_request()
+  File "D:\MyProject\microerp\env\lib\site-packages\flask\app.py", line 1823, in full_dispatch_request
+    return self.finalize_request(rv)
+  File "D:\MyProject\microerp\env\lib\site-packages\flask\app.py", line 1842, in finalize_request
+    response = self.make_response(rv)
+  File "D:\MyProject\microerp\env\lib\site-packages\flask\app.py", line 2134, in make_response
+    raise TypeError(
+TypeError: The view function for 'equipment' did not return a valid response. The function either returned None or ended without a return statement.
+INFO | 127.0.0.1 - - [14/Nov/2022 19:10:24] "[35m[1mPOST /equipment HTTP/1.1[0m" 500 -
+INFO | 127.0.0.1 - - [14/Nov/2022 19:10:24] "GET /equipment HTTP/1.1" 200 -
+ERROR | Exception on /equipment [POST]
+Traceback (most recent call last):
+  File "D:\MyProject\microerp\env\lib\site-packages\flask\app.py", line 2525, in wsgi_app
+    response = self.full_dispatch_request()
+  File "D:\MyProject\microerp\env\lib\site-packages\flask\app.py", line 1823, in full_dispatch_request
+    return self.finalize_request(rv)
+  File "D:\MyProject\microerp\env\lib\site-packages\flask\app.py", line 1842, in finalize_request
+    response = self.make_response(rv)
+  File "D:\MyProject\microerp\env\lib\site-packages\flask\app.py", line 2134, in make_response
+    raise TypeError(
+TypeError: The view function for 'equipment' did not return a valid response. The function either returned None or ended without a return statement.
+INFO | 127.0.0.1 - - [14/Nov/2022 19:10:24] "[35m[1mPOST /equipment HTTP/1.1[0m" 500 -
+INFO | 127.0.0.1 - - [14/Nov/2022 19:10:24] "POST /location HTTP/1.1" 200 -
+ERROR | Exception on /equipment [POST]
+Traceback (most recent call last):
+  File "D:\MyProject\microerp\env\lib\site-packages\flask\app.py", line 2525, in wsgi_app
+    response = self.full_dispatch_request()
+  File "D:\MyProject\microerp\env\lib\site-packages\flask\app.py", line 1823, in full_dispatch_request
+    return self.finalize_request(rv)
+  File "D:\MyProject\microerp\env\lib\site-packages\flask\app.py", line 1842, in finalize_request
+    response = self.make_response(rv)
+  File "D:\MyProject\microerp\env\lib\site-packages\flask\app.py", line 2134, in make_response
+    raise TypeError(
+TypeError: The view function for 'equipment' did not return a valid response. The function either returned None or ended without a return statement.
+INFO | 127.0.0.1 - - [14/Nov/2022 19:10:24] "[35m[1mPOST /equipment HTTP/1.1[0m" 500 -
+INFO | 127.0.0.1 - - [14/Nov/2022 19:10:24] "[36mGET /img_store/equipment/default_prisp.png HTTP/1.1[0m" 304 -
+ERROR | Exception on /equipment [POST]
+Traceback (most recent call last):
+  File "D:\MyProject\microerp\env\lib\site-packages\flask\app.py", line 2525, in wsgi_app
+    response = self.full_dispatch_request()
+  File "D:\MyProject\microerp\env\lib\site-packages\flask\app.py", line 1823, in full_dispatch_request
+    return self.finalize_request(rv)
+  File "D:\MyProject\microerp\env\lib\site-packages\flask\app.py", line 1842, in finalize_request
+    response = self.make_response(rv)
+  File "D:\MyProject\microerp\env\lib\site-packages\flask\app.py", line 2134, in make_response
+    raise TypeError(
+TypeError: The view function for 'equipment' did not return a valid response. The function either returned None or ended without a return statement.
+INFO | 127.0.0.1 - - [14/Nov/2022 19:10:24] "[35m[1mPOST /equipment HTTP/1.1[0m" 500 -
+INFO |  * Running on http://127.0.0.1:5000 (Press CTRL+C to quit)
+INFO | 127.0.0.1 - - [14/Nov/2022 19:11:10] "POST /equipment HTTP/1.1" 200 -
+INFO | 127.0.0.1 - - [14/Nov/2022 19:11:10] "POST /equipment HTTP/1.1" 200 -
+INFO | 127.0.0.1 - - [14/Nov/2022 19:11:10] "GET /equipment HTTP/1.1" 200 -
+INFO | 127.0.0.1 - - [14/Nov/2022 19:11:10] "POST /equipment HTTP/1.1" 200 -
+INFO | 127.0.0.1 - - [14/Nov/2022 19:11:11] "[33mGET /img_store/undefined HTTP/1.1[0m" 404 -
+INFO | 127.0.0.1 - - [14/Nov/2022 19:11:36] "POST /equipment HTTP/1.1" 200 -
+INFO | 127.0.0.1 - - [14/Nov/2022 19:11:36] "GET /equipment HTTP/1.1" 200 -
+INFO | 127.0.0.1 - - [14/Nov/2022 19:11:36] "POST /equipment HTTP/1.1" 200 -
+INFO | 127.0.0.1 - - [14/Nov/2022 19:11:37] "POST /equipment HTTP/1.1" 200 -
+INFO | 127.0.0.1 - - [14/Nov/2022 19:11:37] "[33mGET /img_store/undefined HTTP/1.1[0m" 404 -
+INFO |  * Running on http://127.0.0.1:5000 (Press CTRL+C to quit)
+INFO | 127.0.0.1 - - [14/Nov/2022 19:13:07] "POST /equipment HTTP/1.1" 200 -
+INFO | 127.0.0.1 - - [14/Nov/2022 19:13:07] "GET /equipment HTTP/1.1" 200 -
+INFO | 127.0.0.1 - - [14/Nov/2022 19:13:07] "POST /equipment HTTP/1.1" 200 -
+INFO | 127.0.0.1 - - [14/Nov/2022 19:13:07] "POST /equipment HTTP/1.1" 200 -
+INFO | 127.0.0.1 - - [14/Nov/2022 19:13:07] "[33mGET /img_store/undefined HTTP/1.1[0m" 404 -
+INFO | 127.0.0.1 - - [14/Nov/2022 19:14:02] "GET /equipment HTTP/1.1" 200 -
+INFO | 127.0.0.1 - - [14/Nov/2022 19:14:02] "GET /img_store/equipment/default_prisp.png HTTP/1.1" 200 -
+INFO | 127.0.0.1 - - [14/Nov/2022 19:14:02] "POST /location HTTP/1.1" 200 -
+INFO | 127.0.0.1 - - [14/Nov/2022 19:14:05] "POST /equipment HTTP/1.1" 200 -
+INFO | 127.0.0.1 - - [14/Nov/2022 19:15:13] "GET /equipment HTTP/1.1" 200 -
+INFO | 127.0.0.1 - - [14/Nov/2022 19:15:13] "GET /img_store/equipment/default_prisp.png HTTP/1.1" 200 -
+INFO | 127.0.0.1 - - [14/Nov/2022 19:15:13] "POST /location HTTP/1.1" 200 -
+INFO | 127.0.0.1 - - [14/Nov/2022 19:15:17] "POST /equipment HTTP/1.1" 200 -
+INFO | 127.0.0.1 - - [14/Nov/2022 19:15:55] "GET /equipment HTTP/1.1" 200 -
+INFO | 127.0.0.1 - - [14/Nov/2022 19:15:55] "GET /img_store/equipment/default_prisp.png HTTP/1.1" 200 -
+INFO | 127.0.0.1 - - [14/Nov/2022 19:15:56] "POST /location HTTP/1.1" 200 -
+INFO | 127.0.0.1 - - [14/Nov/2022 19:15:57] "POST /equipment HTTP/1.1" 200 -
+INFO | 127.0.0.1 - - [14/Nov/2022 19:16:02] "POST /equipment HTTP/1.1" 200 -
+INFO |  * Running on http://127.0.0.1:5000 (Press CTRL+C to quit)
+INFO | 127.0.0.1 - - [14/Nov/2022 19:18:07] "GET /equipment HTTP/1.1" 200 -
+INFO | 127.0.0.1 - - [14/Nov/2022 19:18:07] "GET /img_store/equipment/default_prisp.png HTTP/1.1" 200 -
+INFO | 127.0.0.1 - - [14/Nov/2022 19:18:07] "POST /location HTTP/1.1" 200 -
+INFO | 127.0.0.1 - - [14/Nov/2022 19:18:08] "POST /equipment HTTP/1.1" 200 -
+INFO |  * Running on http://127.0.0.1:5000 (Press CTRL+C to quit)
+INFO | 127.0.0.1 - - [14/Nov/2022 19:18:58] "POST /equipment HTTP/1.1" 200 -
+INFO |  * Running on http://127.0.0.1:5000 (Press CTRL+C to quit)
+INFO | 127.0.0.1 - - [14/Nov/2022 19:19:11] "POST /equipment HTTP/1.1" 200 -
+INFO |  * Running on http://127.0.0.1:5000 (Press CTRL+C to quit)
+INFO | 127.0.0.1 - - [14/Nov/2022 19:24:31] "GET /equipment HTTP/1.1" 200 -
+INFO | 127.0.0.1 - - [14/Nov/2022 19:24:31] "GET /img_store/equipment/default_prisp.png HTTP/1.1" 200 -
+INFO | 127.0.0.1 - - [14/Nov/2022 19:24:31] "POST /location HTTP/1.1" 200 -
+INFO | 127.0.0.1 - - [14/Nov/2022 19:24:47] "GET /img_store/equipment/default_tool.png HTTP/1.1" 200 -
+INFO | 127.0.0.1 - - [14/Nov/2022 19:26:46] "GET /equipment HTTP/1.1" 200 -
+INFO | 127.0.0.1 - - [14/Nov/2022 19:26:47] "GET /img_store/equipment/default_prisp.png HTTP/1.1" 200 -
+INFO | 127.0.0.1 - - [14/Nov/2022 19:26:47] "POST /location HTTP/1.1" 200 -
+INFO |  * Running on http://127.0.0.1:5000 (Press CTRL+C to quit)
+INFO | 127.0.0.1 - - [14/Nov/2022 19:29:24] "GET /equipment HTTP/1.1" 200 -
+INFO | 127.0.0.1 - - [14/Nov/2022 19:29:24] "GET /img_store/equipment/default_prisp.png HTTP/1.1" 200 -
+INFO | 127.0.0.1 - - [14/Nov/2022 19:29:24] "POST /location HTTP/1.1" 200 -
+INFO | 127.0.0.1 - - [14/Nov/2022 19:30:21] "GET /equipment HTTP/1.1" 200 -
+INFO | 127.0.0.1 - - [14/Nov/2022 19:30:21] "GET /img_store/equipment/default_prisp.png HTTP/1.1" 200 -
+INFO | 127.0.0.1 - - [14/Nov/2022 19:30:21] "POST /location HTTP/1.1" 200 -
+INFO | 127.0.0.1 - - [14/Nov/2022 19:32:03] "POST /location HTTP/1.1" 200 -
+INFO | 127.0.0.1 - - [14/Nov/2022 19:32:06] "POST /location HTTP/1.1" 200 -
+INFO | 127.0.0.1 - - [14/Nov/2022 19:32:16] "POST /location HTTP/1.1" 200 -
+INFO | 127.0.0.1 - - [14/Nov/2022 19:32:19] "GET /equipment HTTP/1.1" 200 -
+INFO | 127.0.0.1 - - [14/Nov/2022 19:32:19] "[36mGET /img_store/equipment/default_prisp.png HTTP/1.1[0m" 304 -
+INFO | 127.0.0.1 - - [14/Nov/2022 19:36:45] "GET /equipment HTTP/1.1" 200 -
+INFO | 127.0.0.1 - - [14/Nov/2022 19:36:46] "GET /img_store/equipment/default_prisp.png HTTP/1.1" 200 -
+INFO | 127.0.0.1 - - [14/Nov/2022 19:36:46] "POST /location HTTP/1.1" 200 -
+INFO | 127.0.0.1 - - [14/Nov/2022 19:36:56] "POST /equipment HTTP/1.1" 200 -
+INFO |  * Running on http://127.0.0.1:5000 (Press CTRL+C to quit)
+INFO | 127.0.0.1 - - [14/Nov/2022 19:38:19] "GET /equipment HTTP/1.1" 200 -
+INFO | 127.0.0.1 - - [14/Nov/2022 19:38:19] "GET /img_store/equipment/default_prisp.png HTTP/1.1" 200 -
+INFO | 127.0.0.1 - - [14/Nov/2022 19:38:19] "POST /location HTTP/1.1" 200 -
+INFO |  * Running on http://127.0.0.1:5000 (Press CTRL+C to quit)
+INFO | 127.0.0.1 - - [14/Nov/2022 19:38:56] "GET /equipment HTTP/1.1" 200 -
+INFO | 127.0.0.1 - - [14/Nov/2022 19:38:57] "GET /img_store/equipment/default_prisp.png HTTP/1.1" 200 -
+INFO | 127.0.0.1 - - [14/Nov/2022 19:38:57] "POST /location HTTP/1.1" 200 -
+INFO | 127.0.0.1 - - [14/Nov/2022 19:38:59] "POST /equipment HTTP/1.1" 200 -
+INFO | 127.0.0.1 - - [14/Nov/2022 19:39:27] "GET /equipment HTTP/1.1" 200 -
+INFO | 127.0.0.1 - - [14/Nov/2022 19:39:27] "GET /img_store/equipment/default_prisp.png HTTP/1.1" 200 -
+INFO | 127.0.0.1 - - [14/Nov/2022 19:39:27] "POST /location HTTP/1.1" 200 -
+INFO | 127.0.0.1 - - [14/Nov/2022 19:40:08] "GET /equipment HTTP/1.1" 200 -
+INFO | 127.0.0.1 - - [14/Nov/2022 19:40:08] "GET /img_store/equipment/default_prisp.png HTTP/1.1" 200 -
+INFO | 127.0.0.1 - - [14/Nov/2022 19:40:08] "POST /location HTTP/1.1" 200 -
+INFO | 127.0.0.1 - - [14/Nov/2022 19:40:11] "POST /equipment HTTP/1.1" 200 -
+INFO | 127.0.0.1 - - [14/Nov/2022 19:40:17] "POST /equipment HTTP/1.1" 200 -
+INFO | 127.0.0.1 - - [14/Nov/2022 19:41:02] "GET /equipment HTTP/1.1" 200 -
+INFO | 127.0.0.1 - - [14/Nov/2022 19:41:02] "GET /img_store/equipment/default_prisp.png HTTP/1.1" 200 -
+INFO | 127.0.0.1 - - [14/Nov/2022 19:41:02] "POST /location HTTP/1.1" 200 -
+INFO | 127.0.0.1 - - [14/Nov/2022 19:41:03] "POST /equipment HTTP/1.1" 200 -
+INFO | 127.0.0.1 - - [14/Nov/2022 19:42:04] "GET /equipment HTTP/1.1" 200 -
+INFO | 127.0.0.1 - - [14/Nov/2022 19:42:04] "GET /img_store/equipment/default_prisp.png HTTP/1.1" 200 -
+INFO | 127.0.0.1 - - [14/Nov/2022 19:42:04] "POST /location HTTP/1.1" 200 -
+INFO | 127.0.0.1 - - [14/Nov/2022 19:42:06] "POST /equipment HTTP/1.1" 200 -
+INFO | 127.0.0.1 - - [14/Nov/2022 19:45:32] "GET /equipment HTTP/1.1" 200 -
+INFO | 127.0.0.1 - - [14/Nov/2022 19:45:32] "GET /img_store/equipment/default_prisp.png HTTP/1.1" 200 -
+INFO | 127.0.0.1 - - [14/Nov/2022 19:45:32] "POST /location HTTP/1.1" 200 -
+INFO | 127.0.0.1 - - [14/Nov/2022 19:45:43] "GET /equipment HTTP/1.1" 200 -
+INFO | 127.0.0.1 - - [14/Nov/2022 19:45:43] "GET /img_store/equipment/default_prisp.png HTTP/1.1" 200 -
+INFO | 127.0.0.1 - - [14/Nov/2022 19:45:43] "POST /location HTTP/1.1" 200 -
+INFO | 127.0.0.1 - - [14/Nov/2022 19:45:46] "GET /img_store/equipment/default_tool.png HTTP/1.1" 200 -
+INFO | 127.0.0.1 - - [14/Nov/2022 19:45:52] "[33mGET /img_store/null HTTP/1.1[0m" 404 -
+INFO | 127.0.0.1 - - [14/Nov/2022 19:45:52] "POST /equipment HTTP/1.1" 200 -
+INFO |  * Running on http://127.0.0.1:5000 (Press CTRL+C to quit)
+INFO | 127.0.0.1 - - [14/Nov/2022 20:19:59] "GET /equipment HTTP/1.1" 200 -
+INFO | 127.0.0.1 - - [14/Nov/2022 20:19:59] "GET /img_store/equipment/default_prisp.png HTTP/1.1" 200 -
+INFO | 127.0.0.1 - - [14/Nov/2022 20:19:59] "POST /location HTTP/1.1" 200 -
+INFO | 127.0.0.1 - - [14/Nov/2022 20:20:01] "POST /equipment HTTP/1.1" 200 -
+INFO | 127.0.0.1 - - [14/Nov/2022 20:20:01] "[33mGET /img_store/null HTTP/1.1[0m" 404 -
+INFO |  * Running on http://127.0.0.1:5000 (Press CTRL+C to quit)
+INFO |  * Running on http://127.0.0.1:5000 (Press CTRL+C to quit)
+INFO |  * Running on http://127.0.0.1:5000 (Press CTRL+C to quit)
+INFO |  * Running on http://127.0.0.1:5000 (Press CTRL+C to quit)
+INFO |  * Running on http://127.0.0.1:5000 (Press CTRL+C to quit)
+INFO |  * Running on http://127.0.0.1:5000 (Press CTRL+C to quit)
+INFO |  * Running on http://127.0.0.1:5000 (Press CTRL+C to quit)
+INFO |  * Running on http://127.0.0.1:5000 (Press CTRL+C to quit)
+INFO |  * Running on http://127.0.0.1:5000 (Press CTRL+C to quit)
+INFO |  * Running on http://127.0.0.1:5000 (Press CTRL+C to quit)
+INFO |  * Running on http://127.0.0.1:5000 (Press CTRL+C to quit)
+INFO |  * Running on http://127.0.0.1:5000 (Press CTRL+C to quit)
+INFO | 127.0.0.1 - - [17/Nov/2022 18:36:31] "GET /img_store/equipment/default_tool.png HTTP/1.1" 200 -
+INFO | 127.0.0.1 - - [17/Nov/2022 18:36:32] "[33mGET /img_store/null HTTP/1.1[0m" 404 -
+INFO | 127.0.0.1 - - [17/Nov/2022 18:36:32] "GET /img_store/equipment/default_prisp.png HTTP/1.1" 200 -
+INFO |  * Running on http://127.0.0.1:5000 (Press CTRL+C to quit)
+INFO | 127.0.0.1 - - [18/Nov/2022 16:05:42] "POST /location HTTP/1.1" 200 -
+ERROR | The WebSocket transport is not available, you must install a WebSocket server that is compatible with your async mode to enable it. See the documentation for details. (further occurrences of this error will be logged with level INFO)
+INFO | 127.0.0.1 - - [18/Nov/2022 16:05:56] "GET /socket.io/?EIO=4&transport=polling&t=OIAs8K0 HTTP/1.1" 200 -
+INFO | 127.0.0.1 - - [18/Nov/2022 16:05:57] "POST /socket.io/?EIO=4&transport=polling&t=OIAs8UU&sid=27aKIkHlXC8ogwCyAAAA HTTP/1.1" 200 -
+INFO | 127.0.0.1 - - [18/Nov/2022 16:05:57] "POST /location HTTP/1.1" 200 -
+INFO | 127.0.0.1 - - [18/Nov/2022 16:05:57] "GET /socket.io/?EIO=4&transport=polling&t=OIAs8UU.0&sid=27aKIkHlXC8ogwCyAAAA HTTP/1.1" 200 -
+INFO | 127.0.0.1 - - [18/Nov/2022 16:06:01] "POST /socket.io/?EIO=4&transport=polling&t=OIAs9e6&sid=27aKIkHlXC8ogwCyAAAA HTTP/1.1" 200 -
+INFO | 127.0.0.1 - - [18/Nov/2022 16:06:01] "GET /socket.io/?EIO=4&transport=polling&t=OIAs8ZT&sid=27aKIkHlXC8ogwCyAAAA HTTP/1.1" 200 -
+INFO | 127.0.0.1 - - [18/Nov/2022 16:06:04] "POST /socket.io/?EIO=4&transport=polling&t=OIAsAA9&sid=27aKIkHlXC8ogwCyAAAA HTTP/1.1" 200 -
+INFO | 127.0.0.1 - - [18/Nov/2022 16:06:04] "GET /socket.io/?EIO=4&transport=polling&t=OIAs9f2&sid=27aKIkHlXC8ogwCyAAAA HTTP/1.1" 200 -
+INFO | 127.0.0.1 - - [18/Nov/2022 16:06:06] "POST /socket.io/?EIO=4&transport=polling&t=OIAsAlE&sid=27aKIkHlXC8ogwCyAAAA HTTP/1.1" 200 -
+INFO | 127.0.0.1 - - [18/Nov/2022 16:06:06] "GET /socket.io/?EIO=4&transport=polling&t=OIAsAAN&sid=27aKIkHlXC8ogwCyAAAA HTTP/1.1" 200 -
+INFO | 127.0.0.1 - - [18/Nov/2022 16:06:09] "GET /equipment HTTP/1.1" 200 -
+INFO | 127.0.0.1 - - [18/Nov/2022 16:06:10] "GET /img_store/equipment/default_prisp.png HTTP/1.1" 200 -
+INFO | 127.0.0.1 - - [18/Nov/2022 16:06:12] "GET /equipment HTTP/1.1" 200 -
+INFO | 127.0.0.1 - - [18/Nov/2022 16:06:13] "GET /img_store/equipment/default_tool.png HTTP/1.1" 200 -
+INFO | 127.0.0.1 - - [18/Nov/2022 16:06:21] "GET /socket.io/?EIO=4&transport=polling&t=OIAsAlV&sid=27aKIkHlXC8ogwCyAAAA HTTP/1.1" 200 -
+INFO | 127.0.0.1 - - [18/Nov/2022 16:06:21] "POST /socket.io/?EIO=4&transport=polling&t=OIAsEQy&sid=27aKIkHlXC8ogwCyAAAA HTTP/1.1" 200 -
+INFO | 127.0.0.1 - - [18/Nov/2022 16:06:46] "GET /socket.io/?EIO=4&transport=polling&t=OIAsEQy.0&sid=27aKIkHlXC8ogwCyAAAA HTTP/1.1" 200 -
+INFO | 127.0.0.1 - - [18/Nov/2022 16:06:46] "POST /socket.io/?EIO=4&transport=polling&t=OIAsKXs&sid=27aKIkHlXC8ogwCyAAAA HTTP/1.1" 200 -
+INFO | 127.0.0.1 - - [18/Nov/2022 16:07:11] "GET /socket.io/?EIO=4&transport=polling&t=OIAsKXs.0&sid=27aKIkHlXC8ogwCyAAAA HTTP/1.1" 200 -
+INFO | 127.0.0.1 - - [18/Nov/2022 16:07:11] "POST /socket.io/?EIO=4&transport=polling&t=OIAsQjq&sid=27aKIkHlXC8ogwCyAAAA HTTP/1.1" 200 -
+INFO | 127.0.0.1 - - [18/Nov/2022 16:07:36] "GET /socket.io/?EIO=4&transport=polling&t=OIAsQjq.0&sid=27aKIkHlXC8ogwCyAAAA HTTP/1.1" 200 -
+INFO | 127.0.0.1 - - [18/Nov/2022 16:07:37] "POST /socket.io/?EIO=4&transport=polling&t=OIAsWqn&sid=27aKIkHlXC8ogwCyAAAA HTTP/1.1" 200 -
+INFO | 127.0.0.1 - - [18/Nov/2022 16:08:02] "GET /socket.io/?EIO=4&transport=polling&t=OIAsWqn.0&sid=27aKIkHlXC8ogwCyAAAA HTTP/1.1" 200 -
+INFO | 127.0.0.1 - - [18/Nov/2022 16:08:02] "POST /socket.io/?EIO=4&transport=polling&t=OIAsd0s&sid=27aKIkHlXC8ogwCyAAAA HTTP/1.1" 200 -
+INFO | 127.0.0.1 - - [18/Nov/2022 16:08:27] "GET /socket.io/?EIO=4&transport=polling&t=OIAsd0t&sid=27aKIkHlXC8ogwCyAAAA HTTP/1.1" 200 -
+INFO | 127.0.0.1 - - [18/Nov/2022 16:08:27] "POST /socket.io/?EIO=4&transport=polling&t=OIAsj83&sid=27aKIkHlXC8ogwCyAAAA HTTP/1.1" 200 -
+INFO | 127.0.0.1 - - [18/Nov/2022 19:15:05] "GET /socket.io/?EIO=4&transport=polling&t=OIBXQyL HTTP/1.1" 200 -
+INFO | 127.0.0.1 - - [18/Nov/2022 19:15:05] "GET /socket.io/?EIO=4&transport=polling&t=OIAsj83.0&sid=27aKIkHlXC8ogwCyAAAA HTTP/1.1" 200 -
+INFO | 127.0.0.1 - - [18/Nov/2022 19:15:05] "POST /socket.io/?EIO=4&transport=polling&t=OIBXR6C&sid=CoKp3wOyujp9uclYAAAC HTTP/1.1" 200 -
+INFO | 127.0.0.1 - - [18/Nov/2022 19:15:05] "GET /socket.io/?EIO=4&transport=polling&t=OIBXR6D&sid=CoKp3wOyujp9uclYAAAC HTTP/1.1" 200 -
+INFO | 127.0.0.1 - - [18/Nov/2022 19:15:20] "POST /socket.io/?EIO=4&transport=polling&t=OIBXUi7&sid=CoKp3wOyujp9uclYAAAC HTTP/1.1" 200 -
+INFO | 127.0.0.1 - - [18/Nov/2022 19:15:20] "GET /socket.io/?EIO=4&transport=polling&t=OIBXRBL&sid=CoKp3wOyujp9uclYAAAC HTTP/1.1" 200 -
+INFO | 127.0.0.1 - - [18/Nov/2022 19:15:23] "POST /socket.io/?EIO=4&transport=polling&t=OIBXVRH&sid=CoKp3wOyujp9uclYAAAC HTTP/1.1" 200 -
+INFO | 127.0.0.1 - - [18/Nov/2022 19:15:23] "GET /socket.io/?EIO=4&transport=polling&t=OIBXUnF&sid=CoKp3wOyujp9uclYAAAC HTTP/1.1" 200 -
+INFO | 127.0.0.1 - - [18/Nov/2022 19:15:30] "GET /socket.io/?EIO=4&transport=polling&t=OIBXVRa&sid=CoKp3wOyujp9uclYAAAC HTTP/1.1" 200 -
+INFO | 127.0.0.1 - - [18/Nov/2022 19:15:30] "POST /socket.io/?EIO=4&transport=polling&t=OIBXXBl&sid=CoKp3wOyujp9uclYAAAC HTTP/1.1" 200 -
+INFO | 127.0.0.1 - - [18/Nov/2022 19:15:55] "GET /socket.io/?EIO=4&transport=polling&t=OIBXXBm&sid=CoKp3wOyujp9uclYAAAC HTTP/1.1" 200 -
+INFO | 127.0.0.1 - - [18/Nov/2022 19:15:55] "POST /socket.io/?EIO=4&transport=polling&t=OIBXdIk&sid=CoKp3wOyujp9uclYAAAC HTTP/1.1" 200 -
+INFO | 127.0.0.1 - - [18/Nov/2022 19:16:20] "GET /socket.io/?EIO=4&transport=polling&t=OIBXdIl&sid=CoKp3wOyujp9uclYAAAC HTTP/1.1" 200 -
+INFO | 127.0.0.1 - - [18/Nov/2022 19:16:20] "POST /socket.io/?EIO=4&transport=polling&t=OIBXjUe&sid=CoKp3wOyujp9uclYAAAC HTTP/1.1" 200 -
+INFO | 127.0.0.1 - - [18/Nov/2022 19:16:45] "GET /socket.io/?EIO=4&transport=polling&t=OIBXjUe.0&sid=CoKp3wOyujp9uclYAAAC HTTP/1.1" 200 -
+INFO | 127.0.0.1 - - [18/Nov/2022 19:16:46] "POST /socket.io/?EIO=4&transport=polling&t=OIBXpbc&sid=CoKp3wOyujp9uclYAAAC HTTP/1.1" 200 -
+INFO | 127.0.0.1 - - [18/Nov/2022 19:17:11] "GET /socket.io/?EIO=4&transport=polling&t=OIBXpbc.0&sid=CoKp3wOyujp9uclYAAAC HTTP/1.1" 200 -
+INFO | 127.0.0.1 - - [18/Nov/2022 19:17:11] "POST /socket.io/?EIO=4&transport=polling&t=OIBXvnW&sid=CoKp3wOyujp9uclYAAAC HTTP/1.1" 200 -
+INFO | 127.0.0.1 - - [18/Nov/2022 19:17:36] "GET /socket.io/?EIO=4&transport=polling&t=OIBXvnX&sid=CoKp3wOyujp9uclYAAAC HTTP/1.1" 200 -
+INFO | 127.0.0.1 - - [18/Nov/2022 19:17:36] "POST /socket.io/?EIO=4&transport=polling&t=OIBX_ue&sid=CoKp3wOyujp9uclYAAAC HTTP/1.1" 200 -
+INFO | 127.0.0.1 - - [18/Nov/2022 19:18:01] "GET /socket.io/?EIO=4&transport=polling&t=OIBX_uf&sid=CoKp3wOyujp9uclYAAAC HTTP/1.1" 200 -
+INFO | 127.0.0.1 - - [18/Nov/2022 19:18:01] "POST /socket.io/?EIO=4&transport=polling&t=OIBY64c&sid=CoKp3wOyujp9uclYAAAC HTTP/1.1" 200 -
+INFO | 127.0.0.1 - - [18/Nov/2022 19:18:26] "GET /socket.io/?EIO=4&transport=polling&t=OIBY64d&sid=CoKp3wOyujp9uclYAAAC HTTP/1.1" 200 -
+INFO | 127.0.0.1 - - [18/Nov/2022 19:18:26] "POST /socket.io/?EIO=4&transport=polling&t=OIBYCBd&sid=CoKp3wOyujp9uclYAAAC HTTP/1.1" 200 -
+INFO | 127.0.0.1 - - [18/Nov/2022 19:18:51] "GET /socket.io/?EIO=4&transport=polling&t=OIBYCBe&sid=CoKp3wOyujp9uclYAAAC HTTP/1.1" 200 -
+INFO | 127.0.0.1 - - [18/Nov/2022 19:18:52] "POST /socket.io/?EIO=4&transport=polling&t=OIBYINW&sid=CoKp3wOyujp9uclYAAAC HTTP/1.1" 200 -
+INFO | 127.0.0.1 - - [18/Nov/2022 19:19:17] "GET /socket.io/?EIO=4&transport=polling&t=OIBYINW.0&sid=CoKp3wOyujp9uclYAAAC HTTP/1.1" 200 -
+INFO | 127.0.0.1 - - [18/Nov/2022 19:19:17] "POST /socket.io/?EIO=4&transport=polling&t=OIBYOUP&sid=CoKp3wOyujp9uclYAAAC HTTP/1.1" 200 -
+INFO | 127.0.0.1 - - [18/Nov/2022 19:19:42] "GET /socket.io/?EIO=4&transport=polling&t=OIBYOUP.0&sid=CoKp3wOyujp9uclYAAAC HTTP/1.1" 200 -
+INFO | 127.0.0.1 - - [18/Nov/2022 19:19:42] "POST /socket.io/?EIO=4&transport=polling&t=OIBYUgQ&sid=CoKp3wOyujp9uclYAAAC HTTP/1.1" 200 -
+INFO | 127.0.0.1 - - [18/Nov/2022 19:20:07] "GET /socket.io/?EIO=4&transport=polling&t=OIBYUgR&sid=CoKp3wOyujp9uclYAAAC HTTP/1.1" 200 -
+INFO | 127.0.0.1 - - [18/Nov/2022 19:20:07] "POST /socket.io/?EIO=4&transport=polling&t=OIBYanS&sid=CoKp3wOyujp9uclYAAAC HTTP/1.1" 200 -
+INFO | 127.0.0.1 - - [18/Nov/2022 19:20:29] "POST /socket.io/?EIO=4&transport=polling&t=OIBYgBA&sid=CoKp3wOyujp9uclYAAAC HTTP/1.1" 200 -
+INFO | 127.0.0.1 - - [18/Nov/2022 19:20:29] "GET /socket.io/?EIO=4&transport=polling&t=OIBYanS.0&sid=CoKp3wOyujp9uclYAAAC HTTP/1.1" 200 -
+INFO | 127.0.0.1 - - [18/Nov/2022 19:20:35] "GET /socket.io/?EIO=4&transport=polling&t=OIBYhXN HTTP/1.1" 200 -
+INFO | 127.0.0.1 - - [18/Nov/2022 19:20:35] "POST /location HTTP/1.1" 200 -
+INFO | 127.0.0.1 - - [18/Nov/2022 19:20:35] "POST /socket.io/?EIO=4&transport=polling&t=OIBYhcO&sid=9q3aI248lmp8CsexAAAE HTTP/1.1" 200 -
+INFO | 127.0.0.1 - - [18/Nov/2022 19:20:35] "GET /socket.io/?EIO=4&transport=polling&t=OIBYhcO.0&sid=9q3aI248lmp8CsexAAAE HTTP/1.1" 200 -
+INFO | 127.0.0.1 - - [18/Nov/2022 19:20:53] "POST /socket.io/?EIO=4&transport=polling&t=OIBYlxg&sid=9q3aI248lmp8CsexAAAE HTTP/1.1" 200 -
+INFO | 127.0.0.1 - - [18/Nov/2022 19:20:53] "GET /socket.io/?EIO=4&transport=polling&t=OIBYhhg&sid=9q3aI248lmp8CsexAAAE HTTP/1.1" 200 -
+INFO | 127.0.0.1 - - [18/Nov/2022 19:20:55] "POST /location HTTP/1.1" 200 -
+INFO | 127.0.0.1 - - [18/Nov/2022 19:20:55] "GET /socket.io/?EIO=4&transport=polling&t=OIBYmZH HTTP/1.1" 200 -
+INFO | 127.0.0.1 - - [18/Nov/2022 19:20:56] "POST /socket.io/?EIO=4&transport=polling&t=OIBYmeM&sid=psb3cHMTBHR29UGeAAAG HTTP/1.1" 200 -
+INFO | 127.0.0.1 - - [18/Nov/2022 19:20:56] "GET /socket.io/?EIO=4&transport=polling&t=OIBYmeN&sid=psb3cHMTBHR29UGeAAAG HTTP/1.1" 200 -
+INFO | 127.0.0.1 - - [18/Nov/2022 19:21:20] "GET /socket.io/?EIO=4&transport=polling&t=OIBYmjQ&sid=psb3cHMTBHR29UGeAAAG HTTP/1.1" 200 -
+INFO | 127.0.0.1 - - [18/Nov/2022 19:21:21] "POST /socket.io/?EIO=4&transport=polling&t=OIBYslx&sid=psb3cHMTBHR29UGeAAAG HTTP/1.1" 200 -
+INFO | 127.0.0.1 - - [18/Nov/2022 19:21:46] "GET /socket.io/?EIO=4&transport=polling&t=OIBYsly&sid=psb3cHMTBHR29UGeAAAG HTTP/1.1" 200 -
+INFO | 127.0.0.1 - - [18/Nov/2022 19:21:46] "POST /socket.io/?EIO=4&transport=polling&t=OIBYyyk&sid=psb3cHMTBHR29UGeAAAG HTTP/1.1" 200 -
+INFO | 127.0.0.1 - - [18/Nov/2022 19:22:11] "GET /socket.io/?EIO=4&transport=polling&t=OIBYyyk.0&sid=psb3cHMTBHR29UGeAAAG HTTP/1.1" 200 -
+INFO | 127.0.0.1 - - [18/Nov/2022 19:22:11] "POST /socket.io/?EIO=4&transport=polling&t=OIBZ34T&sid=psb3cHMTBHR29UGeAAAG HTTP/1.1" 200 -
+INFO | 127.0.0.1 - - [18/Nov/2022 19:22:36] "GET /socket.io/?EIO=4&transport=polling&t=OIBZ34U&sid=psb3cHMTBHR29UGeAAAG HTTP/1.1" 200 -
+INFO | 127.0.0.1 - - [18/Nov/2022 19:22:36] "POST /socket.io/?EIO=4&transport=polling&t=OIBZ9H3&sid=psb3cHMTBHR29UGeAAAG HTTP/1.1" 200 -
+INFO | 127.0.0.1 - - [18/Nov/2022 19:23:01] "GET /socket.io/?EIO=4&transport=polling&t=OIBZ9H3.0&sid=psb3cHMTBHR29UGeAAAG HTTP/1.1" 200 -
+INFO | 127.0.0.1 - - [18/Nov/2022 19:23:02] "POST /socket.io/?EIO=4&transport=polling&t=OIBZFPC&sid=psb3cHMTBHR29UGeAAAG HTTP/1.1" 200 -
+INFO | 127.0.0.1 - - [18/Nov/2022 19:23:27] "GET /socket.io/?EIO=4&transport=polling&t=OIBZFPD&sid=psb3cHMTBHR29UGeAAAG HTTP/1.1" 200 -
+INFO | 127.0.0.1 - - [18/Nov/2022 19:23:27] "POST /socket.io/?EIO=4&transport=polling&t=OIBZLc1&sid=psb3cHMTBHR29UGeAAAG HTTP/1.1" 200 -
+INFO | 127.0.0.1 - - [18/Nov/2022 19:23:52] "GET /socket.io/?EIO=4&transport=polling&t=OIBZLc1.0&sid=psb3cHMTBHR29UGeAAAG HTTP/1.1" 200 -
+INFO | 127.0.0.1 - - [18/Nov/2022 19:23:52] "POST /socket.io/?EIO=4&transport=polling&t=OIBZRj-&sid=psb3cHMTBHR29UGeAAAG HTTP/1.1" 200 -
+INFO | 127.0.0.1 - - [18/Nov/2022 19:24:16] "POST /socket.io/?EIO=4&transport=polling&t=OIBZXau&sid=psb3cHMTBHR29UGeAAAG HTTP/1.1" 200 -
+INFO | 127.0.0.1 - - [18/Nov/2022 19:24:16] "GET /socket.io/?EIO=4&transport=polling&t=OIBZRj-.0&sid=psb3cHMTBHR29UGeAAAG HTTP/1.1" 200 -
+INFO | 127.0.0.1 - - [18/Nov/2022 19:24:19] "POST /location HTTP/1.1" 200 -
+INFO | 127.0.0.1 - - [18/Nov/2022 19:24:19] "GET /socket.io/?EIO=4&transport=polling&t=OIBZYKS HTTP/1.1" 200 -
+INFO | 127.0.0.1 - - [18/Nov/2022 19:24:20] "POST /socket.io/?EIO=4&transport=polling&t=OIBZYPd&sid=TID-ij5xu9ZMwTvpAAAI HTTP/1.1" 200 -
+INFO | 127.0.0.1 - - [18/Nov/2022 19:24:20] "GET /socket.io/?EIO=4&transport=polling&t=OIBZYPe&sid=TID-ij5xu9ZMwTvpAAAI HTTP/1.1" 200 -
+INFO | 127.0.0.1 - - [18/Nov/2022 19:24:42] "GET /socket.io/?EIO=4&transport=polling&t=OIBZdlp HTTP/1.1" 200 -
+INFO | 127.0.0.1 - - [18/Nov/2022 19:24:42] "POST /socket.io/?EIO=4&transport=polling&t=OIBZdqy&sid=iX86VKetbqJp4SOGAAAK HTTP/1.1" 200 -
+INFO | 127.0.0.1 - - [18/Nov/2022 19:24:42] "GET /socket.io/?EIO=4&transport=polling&t=OIBZdqz&sid=iX86VKetbqJp4SOGAAAK HTTP/1.1" 200 -
+INFO | 127.0.0.1 - - [18/Nov/2022 19:24:44] "GET /socket.io/?EIO=4&transport=polling&t=OIBZYUe&sid=TID-ij5xu9ZMwTvpAAAI HTTP/1.1" 200 -
+INFO | 127.0.0.1 - - [18/Nov/2022 19:24:45] "POST /socket.io/?EIO=4&transport=polling&t=OIBZeWT&sid=TID-ij5xu9ZMwTvpAAAI HTTP/1.1" 200 -
+INFO | 127.0.0.1 - - [18/Nov/2022 19:25:07] "GET /socket.io/?EIO=4&transport=polling&t=OIBZdw3&sid=iX86VKetbqJp4SOGAAAK HTTP/1.1" 200 -
+INFO | 127.0.0.1 - - [18/Nov/2022 19:25:07] "POST /socket.io/?EIO=4&transport=polling&t=OIBZjyc&sid=iX86VKetbqJp4SOGAAAK HTTP/1.1" 200 -
+INFO | 127.0.0.1 - - [18/Nov/2022 19:25:10] "GET /socket.io/?EIO=4&transport=polling&t=OIBZeWU&sid=TID-ij5xu9ZMwTvpAAAI HTTP/1.1" 200 -
+INFO | 127.0.0.1 - - [18/Nov/2022 19:25:10] "POST /socket.io/?EIO=4&transport=polling&t=OIBZkiT&sid=TID-ij5xu9ZMwTvpAAAI HTTP/1.1" 200 -
+INFO | 127.0.0.1 - - [18/Nov/2022 19:25:32] "GET /socket.io/?EIO=4&transport=polling&t=OIBZjyc.0&sid=iX86VKetbqJp4SOGAAAK HTTP/1.1" 200 -
+INFO | 127.0.0.1 - - [18/Nov/2022 19:25:32] "POST /socket.io/?EIO=4&transport=polling&t=OIBZq90&sid=iX86VKetbqJp4SOGAAAK HTTP/1.1" 200 -
+INFO | 127.0.0.1 - - [18/Nov/2022 19:25:35] "GET /socket.io/?EIO=4&transport=polling&t=OIBZkiV&sid=TID-ij5xu9ZMwTvpAAAI HTTP/1.1" 200 -
+INFO | 127.0.0.1 - - [18/Nov/2022 19:25:35] "POST /socket.io/?EIO=4&transport=polling&t=OIBZquf&sid=TID-ij5xu9ZMwTvpAAAI HTTP/1.1" 200 -
+INFO | 127.0.0.1 - - [18/Nov/2022 19:25:57] "GET /socket.io/?EIO=4&transport=polling&t=OIBZq90.0&sid=iX86VKetbqJp4SOGAAAK HTTP/1.1" 200 -
+INFO | 127.0.0.1 - - [18/Nov/2022 19:25:58] "POST /socket.io/?EIO=4&transport=polling&t=OIBZwLY&sid=iX86VKetbqJp4SOGAAAK HTTP/1.1" 200 -
+INFO | 127.0.0.1 - - [18/Nov/2022 19:26:00] "GET /socket.io/?EIO=4&transport=polling&t=OIBZquh&sid=TID-ij5xu9ZMwTvpAAAI HTTP/1.1" 200 -
+INFO | 127.0.0.1 - - [18/Nov/2022 19:26:01] "POST /socket.io/?EIO=4&transport=polling&t=OIBZx4h&sid=TID-ij5xu9ZMwTvpAAAI HTTP/1.1" 200 -
+INFO | 127.0.0.1 - - [18/Nov/2022 19:26:11] "[33mGET /babel/parser/lib/index.js HTTP/1.1[0m" 404 -
+INFO | 127.0.0.1 - - [18/Nov/2022 19:26:12] "[33mGET /babel/parser/lib/index.js HTTP/1.1[0m" 404 -
+INFO | 127.0.0.1 - - [18/Nov/2022 19:26:12] "[33mGET /babel/parser/lib/index.js HTTP/1.1[0m" 404 -
+INFO | 127.0.0.1 - - [18/Nov/2022 19:26:12] "GET /socket.io/?EIO=4&transport=polling&t=OIBZzsX HTTP/1.1" 200 -
+INFO | 127.0.0.1 - - [18/Nov/2022 19:26:12] "POST /socket.io/?EIO=4&transport=polling&t=OIBZzxs&sid=W74K3rbO-tive7yeAAAM HTTP/1.1" 200 -
+INFO | 127.0.0.1 - - [18/Nov/2022 19:26:12] "GET /socket.io/?EIO=4&transport=polling&t=OIBZzxu&sid=W74K3rbO-tive7yeAAAM HTTP/1.1" 200 -
+INFO | 127.0.0.1 - - [18/Nov/2022 19:26:23] "GET /socket.io/?EIO=4&transport=polling&t=OIBZwLY.0&sid=iX86VKetbqJp4SOGAAAK HTTP/1.1" 200 -
+INFO | 127.0.0.1 - - [18/Nov/2022 19:26:23] "POST /socket.io/?EIO=4&transport=polling&t=OIBa0YJ&sid=iX86VKetbqJp4SOGAAAK HTTP/1.1" 200 -
+INFO | 127.0.0.1 - - [18/Nov/2022 19:26:26] "GET /socket.io/?EIO=4&transport=polling&t=OIBZx4i&sid=TID-ij5xu9ZMwTvpAAAI HTTP/1.1" 200 -
+INFO | 127.0.0.1 - - [18/Nov/2022 19:26:26] "POST /socket.io/?EIO=4&transport=polling&t=OIBa1Ge&sid=TID-ij5xu9ZMwTvpAAAI HTTP/1.1" 200 -
+INFO | 127.0.0.1 - - [18/Nov/2022 19:26:37] "GET /socket.io/?EIO=4&transport=polling&t=OIBZ-0q&sid=W74K3rbO-tive7yeAAAM HTTP/1.1" 200 -
+INFO | 127.0.0.1 - - [18/Nov/2022 19:26:37] "POST /socket.io/?EIO=4&transport=polling&t=OIBa42U&sid=W74K3rbO-tive7yeAAAM HTTP/1.1" 200 -
+INFO | 127.0.0.1 - - [18/Nov/2022 19:26:48] "GET /socket.io/?EIO=4&transport=polling&t=OIBa0YK&sid=iX86VKetbqJp4SOGAAAK HTTP/1.1" 200 -
+INFO | 127.0.0.1 - - [18/Nov/2022 19:26:48] "POST /socket.io/?EIO=4&transport=polling&t=OIBa6kx&sid=iX86VKetbqJp4SOGAAAK HTTP/1.1" 200 -
+INFO | 127.0.0.1 - - [18/Nov/2022 19:26:51] "GET /socket.io/?EIO=4&transport=polling&t=OIBa1Ge.0&sid=TID-ij5xu9ZMwTvpAAAI HTTP/1.1" 200 -
+INFO | 127.0.0.1 - - [18/Nov/2022 19:26:51] "POST /socket.io/?EIO=4&transport=polling&t=OIBa7Sj&sid=TID-ij5xu9ZMwTvpAAAI HTTP/1.1" 200 -
+INFO | 127.0.0.1 - - [18/Nov/2022 19:27:02] "GET /socket.io/?EIO=4&transport=polling&t=OIBa42U.0&sid=W74K3rbO-tive7yeAAAM HTTP/1.1" 200 -
+INFO | 127.0.0.1 - - [18/Nov/2022 19:27:03] "POST /socket.io/?EIO=4&transport=polling&t=OIBaAEc&sid=W74K3rbO-tive7yeAAAM HTTP/1.1" 200 -
+INFO | 127.0.0.1 - - [18/Nov/2022 19:27:13] "GET /socket.io/?EIO=4&transport=polling&t=OIBa6kx.0&sid=iX86VKetbqJp4SOGAAAK HTTP/1.1" 200 -
+INFO | 127.0.0.1 - - [18/Nov/2022 19:27:14] "POST /socket.io/?EIO=4&transport=polling&t=OIBaCxd&sid=iX86VKetbqJp4SOGAAAK HTTP/1.1" 200 -
+INFO | 127.0.0.1 - - [18/Nov/2022 19:27:16] "GET /socket.io/?EIO=4&transport=polling&t=OIBa7Sl&sid=TID-ij5xu9ZMwTvpAAAI HTTP/1.1" 200 -
+INFO | 127.0.0.1 - - [18/Nov/2022 19:27:17] "POST /socket.io/?EIO=4&transport=polling&t=OIBaDet&sid=TID-ij5xu9ZMwTvpAAAI HTTP/1.1" 200 -
+INFO | 127.0.0.1 - - [18/Nov/2022 19:27:28] "GET /socket.io/?EIO=4&transport=polling&t=OIBaAEd&sid=W74K3rbO-tive7yeAAAM HTTP/1.1" 200 -
+INFO | 127.0.0.1 - - [18/Nov/2022 19:27:28] "POST /socket.io/?EIO=4&transport=polling&t=OIBaGQP&sid=W74K3rbO-tive7yeAAAM HTTP/1.1" 200 -
+INFO | 127.0.0.1 - - [18/Nov/2022 19:27:32] "GET /socket.io/?EIO=4&transport=polling&t=OIBaHSN HTTP/1.1" 200 -
+INFO | 127.0.0.1 - - [18/Nov/2022 19:27:33] "POST /socket.io/?EIO=4&transport=polling&t=OIBaHXX&sid=ZOa-8rzYtI2vxx04AAAO HTTP/1.1" 200 -
+INFO | 127.0.0.1 - - [18/Nov/2022 19:27:33] "GET /socket.io/?EIO=4&transport=polling&t=OIBaHXY&sid=ZOa-8rzYtI2vxx04AAAO HTTP/1.1" 200 -
+INFO | 127.0.0.1 - - [18/Nov/2022 19:27:39] "GET /socket.io/?EIO=4&transport=polling&t=OIBaCxe&sid=iX86VKetbqJp4SOGAAAK HTTP/1.1" 200 -
+INFO | 127.0.0.1 - - [18/Nov/2022 19:27:39] "POST /socket.io/?EIO=4&transport=polling&t=OIBaJ8C&sid=iX86VKetbqJp4SOGAAAK HTTP/1.1" 200 -
+INFO | 127.0.0.1 - - [18/Nov/2022 19:27:42] "GET /socket.io/?EIO=4&transport=polling&t=OIBaDew&sid=TID-ij5xu9ZMwTvpAAAI HTTP/1.1" 200 -
+INFO | 127.0.0.1 - - [18/Nov/2022 19:27:42] "POST /socket.io/?EIO=4&transport=polling&t=OIBaJq-&sid=TID-ij5xu9ZMwTvpAAAI HTTP/1.1" 200 -
+INFO | 127.0.0.1 - - [18/Nov/2022 19:27:53] "GET /socket.io/?EIO=4&transport=polling&t=OIBaGQQ&sid=W74K3rbO-tive7yeAAAM HTTP/1.1" 200 -
+INFO | 127.0.0.1 - - [18/Nov/2022 19:27:53] "POST /socket.io/?EIO=4&transport=polling&t=OIBaMcH&sid=W74K3rbO-tive7yeAAAM HTTP/1.1" 200 -
+INFO | 127.0.0.1 - - [18/Nov/2022 19:27:57] "GET /socket.io/?EIO=4&transport=polling&t=OIBaHcu&sid=ZOa-8rzYtI2vxx04AAAO HTTP/1.1" 200 -
+INFO | 127.0.0.1 - - [18/Nov/2022 19:27:58] "POST /socket.io/?EIO=4&transport=polling&t=OIBaNe4&sid=ZOa-8rzYtI2vxx04AAAO HTTP/1.1" 200 -
+INFO | 127.0.0.1 - - [18/Nov/2022 19:28:04] "GET /socket.io/?EIO=4&transport=polling&t=OIBaJ8D&sid=iX86VKetbqJp4SOGAAAK HTTP/1.1" 200 -
+INFO | 127.0.0.1 - - [18/Nov/2022 19:28:05] "POST /socket.io/?EIO=4&transport=polling&t=OIBaPL0&sid=iX86VKetbqJp4SOGAAAK HTTP/1.1" 200 -
+INFO | 127.0.0.1 - - [18/Nov/2022 19:28:07] "GET /socket.io/?EIO=4&transport=polling&t=OIBaJq_&sid=TID-ij5xu9ZMwTvpAAAI HTTP/1.1" 200 -
+INFO | 127.0.0.1 - - [18/Nov/2022 19:28:07] "POST /socket.io/?EIO=4&transport=polling&t=OIBaQ10&sid=TID-ij5xu9ZMwTvpAAAI HTTP/1.1" 200 -
+INFO | 127.0.0.1 - - [18/Nov/2022 19:28:18] "GET /socket.io/?EIO=4&transport=polling&t=OIBaMcI&sid=W74K3rbO-tive7yeAAAM HTTP/1.1" 200 -
+INFO | 127.0.0.1 - - [18/Nov/2022 19:28:19] "POST /socket.io/?EIO=4&transport=polling&t=OIBaSoE&sid=W74K3rbO-tive7yeAAAM HTTP/1.1" 200 -
+INFO | 127.0.0.1 - - [18/Nov/2022 19:28:23] "GET /socket.io/?EIO=4&transport=polling&t=OIBaNe4.0&sid=ZOa-8rzYtI2vxx04AAAO HTTP/1.1" 200 -
+INFO | 127.0.0.1 - - [18/Nov/2022 19:28:23] "POST /socket.io/?EIO=4&transport=polling&t=OIBaTpz&sid=ZOa-8rzYtI2vxx04AAAO HTTP/1.1" 200 -
+INFO | 127.0.0.1 - - [18/Nov/2022 19:28:30] "GET /socket.io/?EIO=4&transport=polling&t=OIBaPL0.0&sid=iX86VKetbqJp4SOGAAAK HTTP/1.1" 200 -
+INFO | 127.0.0.1 - - [18/Nov/2022 19:28:30] "POST /socket.io/?EIO=4&transport=polling&t=OIBaVXY&sid=iX86VKetbqJp4SOGAAAK HTTP/1.1" 200 -
+INFO | 127.0.0.1 - - [18/Nov/2022 19:28:32] "GET /socket.io/?EIO=4&transport=polling&t=OIBaQ12&sid=TID-ij5xu9ZMwTvpAAAI HTTP/1.1" 200 -
+INFO | 127.0.0.1 - - [18/Nov/2022 19:28:33] "POST /socket.io/?EIO=4&transport=polling&t=OIBaWDL&sid=TID-ij5xu9ZMwTvpAAAI HTTP/1.1" 200 -
+INFO | 127.0.0.1 - - [18/Nov/2022 19:28:44] "GET /socket.io/?EIO=4&transport=polling&t=OIBaSoE.0&sid=W74K3rbO-tive7yeAAAM HTTP/1.1" 200 -
+INFO | 127.0.0.1 - - [18/Nov/2022 19:28:44] "POST /socket.io/?EIO=4&transport=polling&t=OIBaY-8&sid=W74K3rbO-tive7yeAAAM HTTP/1.1" 200 -
+INFO | 127.0.0.1 - - [18/Nov/2022 19:28:48] "GET /socket.io/?EIO=4&transport=polling&t=OIBaTpz.0&sid=ZOa-8rzYtI2vxx04AAAO HTTP/1.1" 200 -
+INFO | 127.0.0.1 - - [18/Nov/2022 19:28:48] "POST /socket.io/?EIO=4&transport=polling&t=OIBaZ_t&sid=ZOa-8rzYtI2vxx04AAAO HTTP/1.1" 200 -
+INFO | 127.0.0.1 - - [18/Nov/2022 19:28:55] "GET /socket.io/?EIO=4&transport=polling&t=OIBaVXZ&sid=iX86VKetbqJp4SOGAAAK HTTP/1.1" 200 -
+INFO | 127.0.0.1 - - [18/Nov/2022 19:28:55] "POST /socket.io/?EIO=4&transport=polling&t=OIBabjr&sid=iX86VKetbqJp4SOGAAAK HTTP/1.1" 200 -
+INFO | 127.0.0.1 - - [18/Nov/2022 19:28:58] "GET /socket.io/?EIO=4&transport=polling&t=OIBaWDN&sid=TID-ij5xu9ZMwTvpAAAI HTTP/1.1" 200 -
+INFO | 127.0.0.1 - - [18/Nov/2022 19:28:58] "POST /socket.io/?EIO=4&transport=polling&t=OIBacPL&sid=TID-ij5xu9ZMwTvpAAAI HTTP/1.1" 200 -
+INFO | 127.0.0.1 - - [18/Nov/2022 19:29:09] "GET /socket.io/?EIO=4&transport=polling&t=OIBaY-9&sid=W74K3rbO-tive7yeAAAM HTTP/1.1" 200 -
+INFO | 127.0.0.1 - - [18/Nov/2022 19:29:09] "GET /socket.io/?EIO=4&transport=polling&t=OIBaf7_ HTTP/1.1" 200 -
+INFO | 127.0.0.1 - - [18/Nov/2022 19:29:09] "POST /socket.io/?EIO=4&transport=polling&t=OIBafAC&sid=W74K3rbO-tive7yeAAAM HTTP/1.1" 200 -
+INFO | 127.0.0.1 - - [18/Nov/2022 19:29:10] "POST /socket.io/?EIO=4&transport=polling&t=OIBafD8&sid=LLO_H1sfuMWHn0psAAAQ HTTP/1.1" 200 -
+INFO | 127.0.0.1 - - [18/Nov/2022 19:29:10] "GET /socket.io/?EIO=4&transport=polling&t=OIBafDA&sid=LLO_H1sfuMWHn0psAAAQ HTTP/1.1" 200 -
+INFO | 127.0.0.1 - - [18/Nov/2022 19:29:13] "GET /socket.io/?EIO=4&transport=polling&t=OIBaZ_u&sid=ZOa-8rzYtI2vxx04AAAO HTTP/1.1" 200 -
+INFO | 127.0.0.1 - - [18/Nov/2022 19:29:14] "POST /socket.io/?EIO=4&transport=polling&t=OIBagBz&sid=ZOa-8rzYtI2vxx04AAAO HTTP/1.1" 200 -
+INFO | 127.0.0.1 - - [18/Nov/2022 19:29:20] "GET /socket.io/?EIO=4&transport=polling&t=OIBabjs&sid=iX86VKetbqJp4SOGAAAK HTTP/1.1" 200 -
+INFO | 127.0.0.1 - - [18/Nov/2022 19:29:21] "POST /socket.io/?EIO=4&transport=polling&t=OIBahw6&sid=iX86VKetbqJp4SOGAAAK HTTP/1.1" 200 -
+INFO | 127.0.0.1 - - [18/Nov/2022 19:29:23] "GET /socket.io/?EIO=4&transport=polling&t=OIBacPN&sid=TID-ij5xu9ZMwTvpAAAI HTTP/1.1" 200 -
+INFO | 127.0.0.1 - - [18/Nov/2022 19:29:23] "POST /socket.io/?EIO=4&transport=polling&t=OIBaibA&sid=TID-ij5xu9ZMwTvpAAAI HTTP/1.1" 200 -
+INFO | 127.0.0.1 - - [18/Nov/2022 19:29:34] "GET /socket.io/?EIO=4&transport=polling&t=OIBafKJ&sid=LLO_H1sfuMWHn0psAAAQ HTTP/1.1" 200 -
+INFO | 127.0.0.1 - - [18/Nov/2022 19:29:34] "GET /socket.io/?EIO=4&transport=polling&t=OIBafAD&sid=W74K3rbO-tive7yeAAAM HTTP/1.1" 200 -
+INFO | 127.0.0.1 - - [18/Nov/2022 19:29:35] "POST /socket.io/?EIO=4&transport=polling&t=OIBalJo&sid=LLO_H1sfuMWHn0psAAAQ HTTP/1.1" 200 -
+INFO | 127.0.0.1 - - [18/Nov/2022 19:29:35] "POST /socket.io/?EIO=4&transport=polling&t=OIBalM8&sid=W74K3rbO-tive7yeAAAM HTTP/1.1" 200 -
+INFO | 127.0.0.1 - - [18/Nov/2022 19:29:39] "GET /socket.io/?EIO=4&transport=polling&t=OIBagBz.0&sid=ZOa-8rzYtI2vxx04AAAO HTTP/1.1" 200 -
+INFO | 127.0.0.1 - - [18/Nov/2022 19:29:39] "POST /socket.io/?EIO=4&transport=polling&t=OIBamNl&sid=ZOa-8rzYtI2vxx04AAAO HTTP/1.1" 200 -
+INFO | 127.0.0.1 - - [18/Nov/2022 19:29:44] "GET /socket.io/?EIO=4&transport=polling&t=OIBango HTTP/1.1" 200 -
+INFO | 127.0.0.1 - - [18/Nov/2022 19:29:45] "POST /socket.io/?EIO=4&transport=polling&t=OIBanmB&sid=IRx_UFPBmXGfCepCAAAS HTTP/1.1" 200 -
+INFO | 127.0.0.1 - - [18/Nov/2022 19:29:45] "GET /socket.io/?EIO=4&transport=polling&t=OIBanmD&sid=IRx_UFPBmXGfCepCAAAS HTTP/1.1" 200 -
+INFO | 127.0.0.1 - - [18/Nov/2022 19:29:46] "GET /socket.io/?EIO=4&transport=polling&t=OIBahw7&sid=iX86VKetbqJp4SOGAAAK HTTP/1.1" 200 -
+INFO | 127.0.0.1 - - [18/Nov/2022 19:29:46] "POST /socket.io/?EIO=4&transport=polling&t=OIBao5-&sid=iX86VKetbqJp4SOGAAAK HTTP/1.1" 200 -
+INFO | 127.0.0.1 - - [18/Nov/2022 19:29:48] "GET /socket.io/?EIO=4&transport=polling&t=OIBaibB&sid=TID-ij5xu9ZMwTvpAAAI HTTP/1.1" 200 -
+INFO | 127.0.0.1 - - [18/Nov/2022 19:29:49] "POST /socket.io/?EIO=4&transport=polling&t=OIBaonC&sid=TID-ij5xu9ZMwTvpAAAI HTTP/1.1" 200 -
+INFO | 127.0.0.1 - - [18/Nov/2022 19:30:00] "GET /socket.io/?EIO=4&transport=polling&t=OIBalJp&sid=LLO_H1sfuMWHn0psAAAQ HTTP/1.1" 200 -
+INFO | 127.0.0.1 - - [18/Nov/2022 19:30:00] "GET /socket.io/?EIO=4&transport=polling&t=OIBalM9&sid=W74K3rbO-tive7yeAAAM HTTP/1.1" 200 -
+INFO | 127.0.0.1 - - [18/Nov/2022 19:30:00] "POST /socket.io/?EIO=4&transport=polling&t=OIBarVq&sid=LLO_H1sfuMWHn0psAAAQ HTTP/1.1" 200 -
+INFO | 127.0.0.1 - - [18/Nov/2022 19:30:00] "POST /socket.io/?EIO=4&transport=polling&t=OIBarXv&sid=W74K3rbO-tive7yeAAAM HTTP/1.1" 200 -
+INFO | 127.0.0.1 - - [18/Nov/2022 19:30:04] "GET /socket.io/?EIO=4&transport=polling&t=OIBamNm&sid=ZOa-8rzYtI2vxx04AAAO HTTP/1.1" 200 -
+INFO | 127.0.0.1 - - [18/Nov/2022 19:30:04] "POST /socket.io/?EIO=4&transport=polling&t=OIBasZY&sid=ZOa-8rzYtI2vxx04AAAO HTTP/1.1" 200 -
+INFO | 127.0.0.1 - - [18/Nov/2022 19:30:09] "GET /socket.io/?EIO=4&transport=polling&t=OIBanwY&sid=IRx_UFPBmXGfCepCAAAS HTTP/1.1" 200 -
+INFO | 127.0.0.1 - - [18/Nov/2022 19:30:10] "POST /socket.io/?EIO=4&transport=polling&t=OIBatsn&sid=IRx_UFPBmXGfCepCAAAS HTTP/1.1" 200 -
+INFO | 127.0.0.1 - - [18/Nov/2022 19:30:11] "GET /socket.io/?EIO=4&transport=polling&t=OIBao60&sid=iX86VKetbqJp4SOGAAAK HTTP/1.1" 200 -
+INFO | 127.0.0.1 - - [18/Nov/2022 19:30:11] "POST /socket.io/?EIO=4&transport=polling&t=OIBauIf&sid=iX86VKetbqJp4SOGAAAK HTTP/1.1" 200 -
+INFO | 127.0.0.1 - - [18/Nov/2022 19:30:14] "GET /socket.io/?EIO=4&transport=polling&t=OIBaonE&sid=TID-ij5xu9ZMwTvpAAAI HTTP/1.1" 200 -
+INFO | 127.0.0.1 - - [18/Nov/2022 19:30:14] "POST /socket.io/?EIO=4&transport=polling&t=OIBauz7&sid=TID-ij5xu9ZMwTvpAAAI HTTP/1.1" 200 -
+INFO | 127.0.0.1 - - [18/Nov/2022 19:30:25] "GET /socket.io/?EIO=4&transport=polling&t=OIBarVr&sid=LLO_H1sfuMWHn0psAAAQ HTTP/1.1" 200 -
+INFO | 127.0.0.1 - - [18/Nov/2022 19:30:25] "POST /socket.io/?EIO=4&transport=polling&t=OIBaxhs&sid=LLO_H1sfuMWHn0psAAAQ HTTP/1.1" 200 -
+INFO | 127.0.0.1 - - [18/Nov/2022 19:30:25] "GET /socket.io/?EIO=4&transport=polling&t=OIBarXw&sid=W74K3rbO-tive7yeAAAM HTTP/1.1" 200 -
+INFO | 127.0.0.1 - - [18/Nov/2022 19:30:26] "POST /socket.io/?EIO=4&transport=polling&t=OIBaxn9&sid=W74K3rbO-tive7yeAAAM HTTP/1.1" 200 -
+INFO | 127.0.0.1 - - [18/Nov/2022 19:30:29] "GET /socket.io/?EIO=4&transport=polling&t=OIBasZZ&sid=ZOa-8rzYtI2vxx04AAAO HTTP/1.1" 200 -
+INFO | 127.0.0.1 - - [18/Nov/2022 19:30:30] "GET /socket.io/?EIO=4&transport=polling&t=OIBaxwy HTTP/1.1" 200 -
+INFO | 127.0.0.1 - - [18/Nov/2022 19:30:30] "POST /socket.io/?EIO=4&transport=polling&t=OIBaylP&sid=ZOa-8rzYtI2vxx04AAAO HTTP/1.1" 200 -
+INFO | 127.0.0.1 - - [18/Nov/2022 19:30:35] "GET /socket.io/?EIO=4&transport=polling&t=OIBatso&sid=IRx_UFPBmXGfCepCAAAS HTTP/1.1" 200 -
+INFO | 127.0.0.1 - - [18/Nov/2022 19:30:35] "POST /socket.io/?EIO=4&transport=polling&t=OIBayqT&sid=29v7tQB2qn5Uuv9oAAAU HTTP/1.1" 200 -
+INFO | 127.0.0.1 - - [18/Nov/2022 19:30:35] "GET /socket.io/?EIO=4&transport=polling&t=OIBayqT.0&sid=29v7tQB2qn5Uuv9oAAAU HTTP/1.1" 200 -
+INFO | 127.0.0.1 - - [18/Nov/2022 19:30:36] "POST /socket.io/?EIO=4&transport=polling&t=OIBa-2l&sid=IRx_UFPBmXGfCepCAAAS HTTP/1.1" 200 -
+INFO | 127.0.0.1 - - [18/Nov/2022 19:30:36] "GET /socket.io/?EIO=4&transport=polling&t=OIBauIf.0&sid=iX86VKetbqJp4SOGAAAK HTTP/1.1" 200 -
+INFO | 127.0.0.1 - - [18/Nov/2022 19:30:39] "GET /socket.io/?EIO=4&transport=polling&t=OIBauz8&sid=TID-ij5xu9ZMwTvpAAAI HTTP/1.1" 200 -
+INFO | 127.0.0.1 - - [18/Nov/2022 19:30:39] "POST /socket.io/?EIO=4&transport=polling&t=OIBa-VH&sid=iX86VKetbqJp4SOGAAAK HTTP/1.1" 200 -
+INFO | 127.0.0.1 - - [18/Nov/2022 19:30:50] "GET /socket.io/?EIO=4&transport=polling&t=OIBaxht&sid=LLO_H1sfuMWHn0psAAAQ HTTP/1.1" 200 -
+INFO | 127.0.0.1 - - [18/Nov/2022 19:30:51] "GET /socket.io/?EIO=4&transport=polling&t=OIBaxnA&sid=W74K3rbO-tive7yeAAAM HTTP/1.1" 200 -
+INFO | 127.0.0.1 - - [18/Nov/2022 19:30:51] "POST /socket.io/?EIO=4&transport=polling&t=OIBa_8t&sid=TID-ij5xu9ZMwTvpAAAI HTTP/1.1" 200 -
+INFO | 127.0.0.1 - - [18/Nov/2022 19:30:51] "POST /socket.io/?EIO=4&transport=polling&t=OIBb1u0&sid=LLO_H1sfuMWHn0psAAAQ HTTP/1.1" 200 -
+INFO | 127.0.0.1 - - [18/Nov/2022 19:30:55] "GET /socket.io/?EIO=4&transport=polling&t=OIBa-Cv&sid=29v7tQB2qn5Uuv9oAAAU HTTP/1.1" 200 -
+INFO | 127.0.0.1 - - [18/Nov/2022 19:30:55] "GET /socket.io/?EIO=4&transport=polling&t=OIBaylQ&sid=ZOa-8rzYtI2vxx04AAAO HTTP/1.1" 200 -
+INFO | 127.0.0.1 - - [18/Nov/2022 19:30:55] "POST /socket.io/?EIO=4&transport=polling&t=OIBb1z0&sid=W74K3rbO-tive7yeAAAM HTTP/1.1" 200 -
+INFO | 127.0.0.1 - - [18/Nov/2022 19:30:55] "POST /socket.io/?EIO=4&transport=polling&t=OIBb2xF&sid=29v7tQB2qn5Uuv9oAAAU HTTP/1.1" 200 -
+INFO | 127.0.0.1 - - [18/Nov/2022 19:31:01] "GET /socket.io/?EIO=4&transport=polling&t=OIBa-2m&sid=IRx_UFPBmXGfCepCAAAS HTTP/1.1" 200 -
+INFO | 127.0.0.1 - - [18/Nov/2022 19:31:01] "GET /socket.io/?EIO=4&transport=polling&t=OIBb4T1 HTTP/1.1" 200 -
+INFO | 127.0.0.1 - - [18/Nov/2022 19:31:01] "POST /socket.io/?EIO=4&transport=polling&t=OIBb4TF&sid=yCBtGMK8wHsLp6X_AAAW HTTP/1.1" 200 -
+INFO | 127.0.0.1 - - [18/Nov/2022 19:31:01] "GET /socket.io/?EIO=4&transport=polling&t=OIBb4TG&sid=yCBtGMK8wHsLp6X_AAAW HTTP/1.1" 200 -
+INFO | 127.0.0.1 - - [18/Nov/2022 19:31:01] "POST /location HTTP/1.1" 200 -
+INFO | 127.0.0.1 - - [18/Nov/2022 19:31:04] "GET /socket.io/?EIO=4&transport=polling&t=OIBa-VI&sid=iX86VKetbqJp4SOGAAAK HTTP/1.1" 200 -
+INFO | 127.0.0.1 - - [18/Nov/2022 19:31:16] "GET /socket.io/?EIO=4&transport=polling&t=OIBa_8t.0&sid=TID-ij5xu9ZMwTvpAAAI HTTP/1.1" 200 -
+INFO | 127.0.0.1 - - [18/Nov/2022 19:31:16] "GET /socket.io/?EIO=4&transport=polling&t=OIBb1u1&sid=LLO_H1sfuMWHn0psAAAQ HTTP/1.1" 200 -
+INFO | 127.0.0.1 - - [18/Nov/2022 19:31:20] "GET /socket.io/?EIO=4&transport=polling&t=OIBb1z1&sid=W74K3rbO-tive7yeAAAM HTTP/1.1" 200 -
+INFO | 127.0.0.1 - - [18/Nov/2022 19:31:20] "GET /socket.io/?EIO=4&transport=polling&t=OIBb2xF.0&sid=29v7tQB2qn5Uuv9oAAAU HTTP/1.1" 200 -
+INFO | 127.0.0.1 - - [18/Nov/2022 19:31:26] "GET /socket.io/?EIO=4&transport=polling&t=OIBb4UO&sid=yCBtGMK8wHsLp6X_AAAW HTTP/1.1" 200 -
+INFO | 127.0.0.1 - - [18/Nov/2022 19:31:26] "POST /socket.io/?EIO=4&transport=polling&t=OIBbAaf&sid=yCBtGMK8wHsLp6X_AAAW HTTP/1.1" 200 -
+INFO | 127.0.0.1 - - [18/Nov/2022 19:31:51] "GET /socket.io/?EIO=4&transport=polling&t=OIBbAag&sid=yCBtGMK8wHsLp6X_AAAW HTTP/1.1" 200 -
+INFO | 127.0.0.1 - - [18/Nov/2022 19:31:51] "POST /socket.io/?EIO=4&transport=polling&t=OIBbGnI&sid=yCBtGMK8wHsLp6X_AAAW HTTP/1.1" 200 -
+INFO | 127.0.0.1 - - [18/Nov/2022 19:32:16] "POST /socket.io/?EIO=4&transport=polling&t=OIBbMgE&sid=yCBtGMK8wHsLp6X_AAAW HTTP/1.1" 200 -
+INFO | 127.0.0.1 - - [18/Nov/2022 19:32:16] "GET /socket.io/?EIO=4&transport=polling&t=OIBbGnJ&sid=yCBtGMK8wHsLp6X_AAAW HTTP/1.1" 200 -
+INFO | 127.0.0.1 - - [18/Nov/2022 19:32:19] "POST /location HTTP/1.1" 200 -
+INFO | 127.0.0.1 - - [18/Nov/2022 19:32:19] "GET /socket.io/?EIO=4&transport=polling&t=OIBbNTJ HTTP/1.1" 200 -
+INFO | 127.0.0.1 - - [18/Nov/2022 19:32:19] "POST /socket.io/?EIO=4&transport=polling&t=OIBbNYV&sid=fcDg5Idy09bv-Z2CAAAY HTTP/1.1" 200 -
+INFO | 127.0.0.1 - - [18/Nov/2022 19:32:19] "GET /socket.io/?EIO=4&transport=polling&t=OIBbNYV.0&sid=fcDg5Idy09bv-Z2CAAAY HTTP/1.1" 200 -
+INFO | 127.0.0.1 - - [18/Nov/2022 19:32:44] "GET /socket.io/?EIO=4&transport=polling&t=OIBbNdV&sid=fcDg5Idy09bv-Z2CAAAY HTTP/1.1" 200 -
+INFO | 127.0.0.1 - - [18/Nov/2022 19:32:44] "POST /socket.io/?EIO=4&transport=polling&t=OIBbTfk&sid=fcDg5Idy09bv-Z2CAAAY HTTP/1.1" 200 -
+INFO | 127.0.0.1 - - [18/Nov/2022 19:33:09] "GET /socket.io/?EIO=4&transport=polling&t=OIBbTfk.0&sid=fcDg5Idy09bv-Z2CAAAY HTTP/1.1" 200 -
+INFO | 127.0.0.1 - - [18/Nov/2022 19:33:10] "POST /socket.io/?EIO=4&transport=polling&t=OIBbZsF&sid=fcDg5Idy09bv-Z2CAAAY HTTP/1.1" 200 -
+INFO | 127.0.0.1 - - [18/Nov/2022 19:33:35] "GET /socket.io/?EIO=4&transport=polling&t=OIBbZsF.0&sid=fcDg5Idy09bv-Z2CAAAY HTTP/1.1" 200 -
+INFO | 127.0.0.1 - - [18/Nov/2022 19:33:35] "POST /socket.io/?EIO=4&transport=polling&t=OIBbf-9&sid=fcDg5Idy09bv-Z2CAAAY HTTP/1.1" 200 -
+INFO | 127.0.0.1 - - [18/Nov/2022 19:34:00] "GET /socket.io/?EIO=4&transport=polling&t=OIBbf-A&sid=fcDg5Idy09bv-Z2CAAAY HTTP/1.1" 200 -
+INFO | 127.0.0.1 - - [18/Nov/2022 19:34:00] "POST /socket.io/?EIO=4&transport=polling&t=OIBbmAp&sid=fcDg5Idy09bv-Z2CAAAY HTTP/1.1" 200 -
+INFO | 127.0.0.1 - - [18/Nov/2022 19:34:25] "GET /socket.io/?EIO=4&transport=polling&t=OIBbmAq&sid=fcDg5Idy09bv-Z2CAAAY HTTP/1.1" 200 -
+INFO | 127.0.0.1 - - [18/Nov/2022 19:34:25] "POST /socket.io/?EIO=4&transport=polling&t=OIBbsIX&sid=fcDg5Idy09bv-Z2CAAAY HTTP/1.1" 200 -
+INFO | 127.0.0.1 - - [18/Nov/2022 19:34:50] "GET /socket.io/?EIO=4&transport=polling&t=OIBbsIY&sid=fcDg5Idy09bv-Z2CAAAY HTTP/1.1" 200 -
+INFO | 127.0.0.1 - - [18/Nov/2022 19:34:50] "POST /socket.io/?EIO=4&transport=polling&t=OIBbyV3&sid=fcDg5Idy09bv-Z2CAAAY HTTP/1.1" 200 -
+INFO | 127.0.0.1 - - [18/Nov/2022 19:35:03] "POST /socket.io/?EIO=4&transport=polling&t=OIBb_bQ&sid=fcDg5Idy09bv-Z2CAAAY HTTP/1.1" 200 -
+INFO | 127.0.0.1 - - [18/Nov/2022 19:35:03] "GET /socket.io/?EIO=4&transport=polling&t=OIBbyV3.0&sid=fcDg5Idy09bv-Z2CAAAY HTTP/1.1" 200 -
+INFO | 127.0.0.1 - - [18/Nov/2022 19:35:06] "POST /location HTTP/1.1" 200 -
+INFO | 127.0.0.1 - - [18/Nov/2022 19:35:06] "GET /socket.io/?EIO=4&transport=polling&t=OIBc0Jv HTTP/1.1" 200 -
+INFO | 127.0.0.1 - - [18/Nov/2022 19:35:07] "POST /socket.io/?EIO=4&transport=polling&t=OIBc0O_&sid=X4Vh_JKuaUP3AaVIAAAa HTTP/1.1" 200 -
+INFO | 127.0.0.1 - - [18/Nov/2022 19:35:07] "GET /socket.io/?EIO=4&transport=polling&t=OIBc0O_.0&sid=X4Vh_JKuaUP3AaVIAAAa HTTP/1.1" 200 -
+INFO | 127.0.0.1 - - [18/Nov/2022 19:35:11] "GET /socket.io/?EIO=4&transport=polling&t=OIBc1RA HTTP/1.1" 200 -
+INFO | 127.0.0.1 - - [18/Nov/2022 19:35:11] "POST /socket.io/?EIO=4&transport=polling&t=OIBc1WH&sid=dQq0TiSLSNFVtsM7AAAc HTTP/1.1" 200 -
+INFO | 127.0.0.1 - - [18/Nov/2022 19:35:11] "GET /socket.io/?EIO=4&transport=polling&t=OIBc1WH.0&sid=dQq0TiSLSNFVtsM7AAAc HTTP/1.1" 200 -
+INFO | 127.0.0.1 - - [18/Nov/2022 19:35:11] "GET /socket.io/?EIO=4&transport=polling&t=OIBc1Ww HTTP/1.1" 200 -
+INFO | 127.0.0.1 - - [18/Nov/2022 19:35:12] "POST /socket.io/?EIO=4&transport=polling&t=OIBc1bm&sid=jY5esiGhjEnY_oBJAAAe HTTP/1.1" 200 -
+INFO | 127.0.0.1 - - [18/Nov/2022 19:35:12] "GET /socket.io/?EIO=4&transport=polling&t=OIBc1bn&sid=jY5esiGhjEnY_oBJAAAe HTTP/1.1" 200 -
+INFO | 127.0.0.1 - - [18/Nov/2022 19:35:12] "GET /socket.io/?EIO=4&transport=polling&t=OIBc1d9 HTTP/1.1" 200 -
+INFO | 127.0.0.1 - - [18/Nov/2022 19:35:12] "POST /socket.io/?EIO=4&transport=polling&t=OIBc1iJ&sid=ZadjmeAI1r14cYCQAAAg HTTP/1.1" 200 -
+INFO | 127.0.0.1 - - [18/Nov/2022 19:35:12] "GET /socket.io/?EIO=4&transport=polling&t=OIBc1iK&sid=ZadjmeAI1r14cYCQAAAg HTTP/1.1" 200 -
+INFO | 127.0.0.1 - - [18/Nov/2022 19:35:28] "POST /socket.io/?EIO=4&transport=polling&t=OIBc5dq&sid=dQq0TiSLSNFVtsM7AAAc HTTP/1.1" 200 -
+INFO | 127.0.0.1 - - [18/Nov/2022 19:35:28] "POST /socket.io/?EIO=4&transport=polling&t=OIBc5dp&sid=X4Vh_JKuaUP3AaVIAAAa HTTP/1.1" 200 -
+INFO | 127.0.0.1 - - [18/Nov/2022 19:35:28] "GET /socket.io/?EIO=4&transport=polling&t=OIBc1be&sid=dQq0TiSLSNFVtsM7AAAc HTTP/1.1" 200 -
+INFO | 127.0.0.1 - - [18/Nov/2022 19:35:28] "GET /socket.io/?EIO=4&transport=polling&t=OIBc0T_&sid=X4Vh_JKuaUP3AaVIAAAa HTTP/1.1" 200 -
+INFO | 127.0.0.1 - - [18/Nov/2022 19:35:29] "POST /socket.io/?EIO=4&transport=polling&t=OIBc5dr.0&sid=ZadjmeAI1r14cYCQAAAg HTTP/1.1" 200 -
+INFO | 127.0.0.1 - - [18/Nov/2022 19:35:29] "GET /socket.io/?EIO=4&transport=polling&t=OIBc1nZ&sid=ZadjmeAI1r14cYCQAAAg HTTP/1.1" 200 -
+INFO | 127.0.0.1 - - [18/Nov/2022 19:35:29] "POST /socket.io/?EIO=4&transport=polling&t=OIBc5dr&sid=jY5esiGhjEnY_oBJAAAe HTTP/1.1" 200 -
+INFO | 127.0.0.1 - - [18/Nov/2022 19:35:29] "GET /socket.io/?EIO=4&transport=polling&t=OIBc1gk&sid=jY5esiGhjEnY_oBJAAAe HTTP/1.1" 200 -
+INFO | 127.0.0.1 - - [18/Nov/2022 19:35:31] "POST /location HTTP/1.1" 200 -
+INFO | 127.0.0.1 - - [18/Nov/2022 19:35:31] "GET /socket.io/?EIO=4&transport=polling&t=OIBc6PO HTTP/1.1" 200 -
+INFO | 127.0.0.1 - - [18/Nov/2022 19:35:32] "POST /socket.io/?EIO=4&transport=polling&t=OIBc6UT&sid=t77wdYvAOxXSNVi1AAAi HTTP/1.1" 200 -
+INFO | 127.0.0.1 - - [18/Nov/2022 19:35:32] "GET /socket.io/?EIO=4&transport=polling&t=OIBc6UU&sid=t77wdYvAOxXSNVi1AAAi HTTP/1.1" 200 -
+INFO | 127.0.0.1 - - [18/Nov/2022 19:35:34] "GET /socket.io/?EIO=4&transport=polling&t=OIBc77L HTTP/1.1" 200 -
+INFO | 127.0.0.1 - - [18/Nov/2022 19:35:34] "GET /socket.io/?EIO=4&transport=polling&t=OIBc79a HTTP/1.1" 200 -
+INFO | 127.0.0.1 - - [18/Nov/2022 19:35:35] "GET /socket.io/?EIO=4&transport=polling&t=OIBc7B_ HTTP/1.1" 200 -
+INFO | 127.0.0.1 - - [18/Nov/2022 19:35:35] "POST /socket.io/?EIO=4&transport=polling&t=OIBc7CI&sid=sdEE7xNRsFvth1zxAAAk HTTP/1.1" 200 -
+INFO | 127.0.0.1 - - [18/Nov/2022 19:35:35] "GET /socket.io/?EIO=4&transport=polling&t=OIBc7CI.0&sid=sdEE7xNRsFvth1zxAAAk HTTP/1.1" 200 -
+INFO | 127.0.0.1 - - [18/Nov/2022 19:35:35] "POST /socket.io/?EIO=4&transport=polling&t=OIBc7Ep&sid=td2irJOmR0GC3WC1AAAl HTTP/1.1" 200 -
+INFO | 127.0.0.1 - - [18/Nov/2022 19:35:35] "GET /socket.io/?EIO=4&transport=polling&t=OIBc7Eq&sid=td2irJOmR0GC3WC1AAAl HTTP/1.1" 200 -
+INFO | 127.0.0.1 - - [18/Nov/2022 19:35:35] "POST /socket.io/?EIO=4&transport=polling&t=OIBc7H9&sid=RHKD45RY9kDv1Mm5AAAm HTTP/1.1" 200 -
+INFO | 127.0.0.1 - - [18/Nov/2022 19:35:35] "GET /socket.io/?EIO=4&transport=polling&t=OIBc7HA&sid=RHKD45RY9kDv1Mm5AAAm HTTP/1.1" 200 -
+INFO | 127.0.0.1 - - [18/Nov/2022 19:35:56] "GET /socket.io/?EIO=4&transport=polling&t=OIBc6ZR&sid=t77wdYvAOxXSNVi1AAAi HTTP/1.1" 200 -
+INFO | 127.0.0.1 - - [18/Nov/2022 19:35:57] "POST /socket.io/?EIO=4&transport=polling&t=OIBcCbm&sid=t77wdYvAOxXSNVi1AAAi HTTP/1.1" 200 -
+INFO | 127.0.0.1 - - [18/Nov/2022 19:35:59] "GET /socket.io/?EIO=4&transport=polling&t=OIBc7HJ&sid=sdEE7xNRsFvth1zxAAAk HTTP/1.1" 200 -
+INFO | 127.0.0.1 - - [18/Nov/2022 19:35:59] "GET /socket.io/?EIO=4&transport=polling&t=OIBc7Jq&sid=td2irJOmR0GC3WC1AAAl HTTP/1.1" 200 -
+INFO | 127.0.0.1 - - [18/Nov/2022 19:36:00] "GET /socket.io/?EIO=4&transport=polling&t=OIBc7MF&sid=RHKD45RY9kDv1Mm5AAAm HTTP/1.1" 200 -
+INFO | 127.0.0.1 - - [18/Nov/2022 19:36:00] "POST /socket.io/?EIO=4&transport=polling&t=OIBcDJ6&sid=sdEE7xNRsFvth1zxAAAk HTTP/1.1" 200 -
+INFO | 127.0.0.1 - - [18/Nov/2022 19:36:00] "POST /socket.io/?EIO=4&transport=polling&t=OIBcDLm&sid=td2irJOmR0GC3WC1AAAl HTTP/1.1" 200 -
+INFO | 127.0.0.1 - - [18/Nov/2022 19:36:00] "POST /socket.io/?EIO=4&transport=polling&t=OIBcDNl&sid=RHKD45RY9kDv1Mm5AAAm HTTP/1.1" 200 -
+INFO | 127.0.0.1 - - [18/Nov/2022 19:36:22] "GET /socket.io/?EIO=4&transport=polling&t=OIBcCbm.0&sid=t77wdYvAOxXSNVi1AAAi HTTP/1.1" 200 -
+INFO | 127.0.0.1 - - [18/Nov/2022 19:36:22] "POST /socket.io/?EIO=4&transport=polling&t=OIBcIoB&sid=t77wdYvAOxXSNVi1AAAi HTTP/1.1" 200 -
+INFO | 127.0.0.1 - - [18/Nov/2022 19:36:25] "GET /socket.io/?EIO=4&transport=polling&t=OIBcDJ8&sid=sdEE7xNRsFvth1zxAAAk HTTP/1.1" 200 -
+INFO | 127.0.0.1 - - [18/Nov/2022 19:36:25] "GET /socket.io/?EIO=4&transport=polling&t=OIBcDLo&sid=td2irJOmR0GC3WC1AAAl HTTP/1.1" 200 -
+INFO | 127.0.0.1 - - [18/Nov/2022 19:36:25] "GET /socket.io/?EIO=4&transport=polling&t=OIBcDNl.0&sid=RHKD45RY9kDv1Mm5AAAm HTTP/1.1" 200 -
+INFO | 127.0.0.1 - - [18/Nov/2022 19:36:25] "POST /socket.io/?EIO=4&transport=polling&t=OIBcJU-&sid=sdEE7xNRsFvth1zxAAAk HTTP/1.1" 200 -
+INFO | 127.0.0.1 - - [18/Nov/2022 19:36:25] "POST /socket.io/?EIO=4&transport=polling&t=OIBcJXj&sid=td2irJOmR0GC3WC1AAAl HTTP/1.1" 200 -
+INFO | 127.0.0.1 - - [18/Nov/2022 19:36:25] "POST /socket.io/?EIO=4&transport=polling&t=OIBcJZr&sid=RHKD45RY9kDv1Mm5AAAm HTTP/1.1" 200 -
+INFO | 127.0.0.1 - - [18/Nov/2022 19:36:47] "GET /socket.io/?EIO=4&transport=polling&t=OIBcIoC&sid=t77wdYvAOxXSNVi1AAAi HTTP/1.1" 200 -
+INFO | 127.0.0.1 - - [18/Nov/2022 19:36:47] "POST /socket.io/?EIO=4&transport=polling&t=OIBcO-m&sid=t77wdYvAOxXSNVi1AAAi HTTP/1.1" 200 -
+INFO | 127.0.0.1 - - [18/Nov/2022 19:36:50] "GET /socket.io/?EIO=4&transport=polling&t=OIBcJU_&sid=sdEE7xNRsFvth1zxAAAk HTTP/1.1" 200 -
+INFO | 127.0.0.1 - - [18/Nov/2022 19:36:50] "GET /socket.io/?EIO=4&transport=polling&t=OIBcJXl&sid=td2irJOmR0GC3WC1AAAl HTTP/1.1" 200 -
+INFO | 127.0.0.1 - - [18/Nov/2022 19:36:50] "GET /socket.io/?EIO=4&transport=polling&t=OIBcJZs&sid=RHKD45RY9kDv1Mm5AAAm HTTP/1.1" 200 -
+INFO | 127.0.0.1 - - [18/Nov/2022 19:36:50] "POST /socket.io/?EIO=4&transport=polling&t=OIBcPgd&sid=sdEE7xNRsFvth1zxAAAk HTTP/1.1" 200 -
+INFO | 127.0.0.1 - - [18/Nov/2022 19:36:50] "POST /socket.io/?EIO=4&transport=polling&t=OIBcPjp&sid=td2irJOmR0GC3WC1AAAl HTTP/1.1" 200 -
+INFO | 127.0.0.1 - - [18/Nov/2022 19:36:51] "POST /socket.io/?EIO=4&transport=polling&t=OIBcPlg&sid=RHKD45RY9kDv1Mm5AAAm HTTP/1.1" 200 -
+INFO | 127.0.0.1 - - [18/Nov/2022 19:37:12] "GET /socket.io/?EIO=4&transport=polling&t=OIBcO-m.0&sid=t77wdYvAOxXSNVi1AAAi HTTP/1.1" 200 -
+INFO | 127.0.0.1 - - [18/Nov/2022 19:37:13] "POST /socket.io/?EIO=4&transport=polling&t=OIBcVBh&sid=t77wdYvAOxXSNVi1AAAi HTTP/1.1" 200 -
+INFO | 127.0.0.1 - - [18/Nov/2022 19:37:15] "GET /socket.io/?EIO=4&transport=polling&t=OIBcPge&sid=sdEE7xNRsFvth1zxAAAk HTTP/1.1" 200 -
+INFO | 127.0.0.1 - - [18/Nov/2022 19:37:16] "GET /socket.io/?EIO=4&transport=polling&t=OIBcPjq&sid=td2irJOmR0GC3WC1AAAl HTTP/1.1" 200 -
+INFO | 127.0.0.1 - - [18/Nov/2022 19:37:16] "GET /socket.io/?EIO=4&transport=polling&t=OIBcPlh&sid=RHKD45RY9kDv1Mm5AAAm HTTP/1.1" 200 -
+INFO | 127.0.0.1 - - [18/Nov/2022 19:37:16] "POST /socket.io/?EIO=4&transport=polling&t=OIBcVsd&sid=sdEE7xNRsFvth1zxAAAk HTTP/1.1" 200 -
+INFO | 127.0.0.1 - - [18/Nov/2022 19:37:16] "POST /socket.io/?EIO=4&transport=polling&t=OIBcVvk&sid=td2irJOmR0GC3WC1AAAl HTTP/1.1" 200 -
+INFO | 127.0.0.1 - - [18/Nov/2022 19:37:16] "POST /socket.io/?EIO=4&transport=polling&t=OIBcVxh&sid=RHKD45RY9kDv1Mm5AAAm HTTP/1.1" 200 -
+INFO | 127.0.0.1 - - [18/Nov/2022 19:37:20] "POST /socket.io/?EIO=4&transport=polling&t=OIBcWug.0&sid=sdEE7xNRsFvth1zxAAAk HTTP/1.1" 200 -
+INFO | 127.0.0.1 - - [18/Nov/2022 19:37:20] "POST /socket.io/?EIO=4&transport=polling&t=OIBcWug&sid=t77wdYvAOxXSNVi1AAAi HTTP/1.1" 200 -
+INFO | 127.0.0.1 - - [18/Nov/2022 19:37:20] "GET /socket.io/?EIO=4&transport=polling&t=OIBcVse&sid=sdEE7xNRsFvth1zxAAAk HTTP/1.1" 200 -
+INFO | 127.0.0.1 - - [18/Nov/2022 19:37:20] "GET /socket.io/?EIO=4&transport=polling&t=OIBcVBi&sid=t77wdYvAOxXSNVi1AAAi HTTP/1.1" 200 -
+INFO | 127.0.0.1 - - [18/Nov/2022 19:37:20] "POST /socket.io/?EIO=4&transport=polling&t=OIBcWuh.0&sid=RHKD45RY9kDv1Mm5AAAm HTTP/1.1" 200 -
+INFO | 127.0.0.1 - - [18/Nov/2022 19:37:20] "GET /socket.io/?EIO=4&transport=polling&t=OIBcVxi&sid=RHKD45RY9kDv1Mm5AAAm HTTP/1.1" 200 -
+INFO | 127.0.0.1 - - [18/Nov/2022 19:37:20] "POST /socket.io/?EIO=4&transport=polling&t=OIBcWuh&sid=td2irJOmR0GC3WC1AAAl HTTP/1.1" 200 -
+INFO | 127.0.0.1 - - [18/Nov/2022 19:37:20] "GET /socket.io/?EIO=4&transport=polling&t=OIBcVvl&sid=td2irJOmR0GC3WC1AAAl HTTP/1.1" 200 -
+INFO | 127.0.0.1 - - [18/Nov/2022 19:37:23] "POST /location HTTP/1.1" 200 -
+INFO | 127.0.0.1 - - [18/Nov/2022 19:37:23] "GET /socket.io/?EIO=4&transport=polling&t=OIBcXeO HTTP/1.1" 200 -
+INFO | 127.0.0.1 - - [18/Nov/2022 19:37:23] "POST /socket.io/?EIO=4&transport=polling&t=OIBcXja&sid=K9tG9QaflYW6a0HeAAAq HTTP/1.1" 200 -
+INFO | 127.0.0.1 - - [18/Nov/2022 19:37:23] "GET /socket.io/?EIO=4&transport=polling&t=OIBcXja.0&sid=K9tG9QaflYW6a0HeAAAq HTTP/1.1" 200 -
+INFO | 127.0.0.1 - - [18/Nov/2022 19:37:25] "GET /socket.io/?EIO=4&transport=polling&t=OIBcY6_ HTTP/1.1" 200 -
+INFO | 127.0.0.1 - - [18/Nov/2022 19:37:25] "GET /socket.io/?EIO=4&transport=polling&t=OIBcY96 HTTP/1.1" 200 -
+INFO | 127.0.0.1 - - [18/Nov/2022 19:37:25] "GET /socket.io/?EIO=4&transport=polling&t=OIBcYC9 HTTP/1.1" 200 -
+INFO | 127.0.0.1 - - [18/Nov/2022 19:37:25] "POST /socket.io/?EIO=4&transport=polling&t=OIBcYC5&sid=4jF-pGzKyBVMHeE0AAAs HTTP/1.1" 200 -
+INFO | 127.0.0.1 - - [18/Nov/2022 19:37:25] "GET /socket.io/?EIO=4&transport=polling&t=OIBcYC5.0&sid=4jF-pGzKyBVMHeE0AAAs HTTP/1.1" 200 -
+INFO | 127.0.0.1 - - [18/Nov/2022 19:37:25] "POST /socket.io/?EIO=4&transport=polling&t=OIBcYER&sid=Mpvlg73wLnGg2Zj1AAAt HTTP/1.1" 200 -
+INFO | 127.0.0.1 - - [18/Nov/2022 19:37:25] "GET /socket.io/?EIO=4&transport=polling&t=OIBcYES&sid=Mpvlg73wLnGg2Zj1AAAt HTTP/1.1" 200 -
+INFO | 127.0.0.1 - - [18/Nov/2022 19:37:26] "POST /socket.io/?EIO=4&transport=polling&t=OIBcYHA&sid=q1fKAPZZzE4IDF1-AAAu HTTP/1.1" 200 -
+INFO | 127.0.0.1 - - [18/Nov/2022 19:37:26] "GET /socket.io/?EIO=4&transport=polling&t=OIBcYHB&sid=q1fKAPZZzE4IDF1-AAAu HTTP/1.1" 200 -
+INFO | 127.0.0.1 - - [18/Nov/2022 19:37:26] "GET /socket.io/?EIO=4&transport=polling&t=OIBcYOT HTTP/1.1" 200 -
+INFO | 127.0.0.1 - - [18/Nov/2022 19:37:26] "POST /socket.io/?EIO=4&transport=polling&t=OIBcYOS&sid=q1fKAPZZzE4IDF1-AAAu HTTP/1.1" 200 -
+INFO | 127.0.0.1 - - [18/Nov/2022 19:37:26] "GET /socket.io/?EIO=4&transport=polling&t=OIBcXof&sid=K9tG9QaflYW6a0HeAAAq HTTP/1.1" 200 -
+INFO | 127.0.0.1 - - [18/Nov/2022 19:37:26] "GET /socket.io/?EIO=4&transport=polling&t=OIBcYMD&sid=q1fKAPZZzE4IDF1-AAAu HTTP/1.1" 200 -
+INFO | 127.0.0.1 - - [18/Nov/2022 19:37:26] "GET /socket.io/?EIO=4&transport=polling&t=OIBcYHD&sid=4jF-pGzKyBVMHeE0AAAs HTTP/1.1" 200 -
+INFO | 127.0.0.1 - - [18/Nov/2022 19:37:26] "GET /socket.io/?EIO=4&transport=polling&t=OIBcYJa&sid=Mpvlg73wLnGg2Zj1AAAt HTTP/1.1" 200 -
+INFO | 127.0.0.1 - - [18/Nov/2022 19:37:26] "POST /socket.io/?EIO=4&transport=polling&t=OIBcYTQ&sid=CKCcZGJE8qqMaF40AAAy HTTP/1.1" 200 -
+INFO | 127.0.0.1 - - [18/Nov/2022 19:37:26] "GET /socket.io/?EIO=4&transport=polling&t=OIBcYTR&sid=CKCcZGJE8qqMaF40AAAy HTTP/1.1" 200 -
+INFO | 127.0.0.1 - - [18/Nov/2022 19:37:27] "GET /socket.io/?EIO=4&transport=polling&t=OIBcYTc HTTP/1.1" 200 -
+INFO | 127.0.0.1 - - [18/Nov/2022 19:37:27] "POST /socket.io/?EIO=4&transport=polling&t=OIBcYdj&sid=x_nxB1qz_3WNsNTvAAA0 HTTP/1.1" 200 -
+INFO | 127.0.0.1 - - [18/Nov/2022 19:37:27] "GET /socket.io/?EIO=4&transport=polling&t=OIBcYdk&sid=x_nxB1qz_3WNsNTvAAA0 HTTP/1.1" 200 -
+INFO | 127.0.0.1 - - [18/Nov/2022 19:37:48] "GET /socket.io/?EIO=4&transport=polling&t=OIBcYTb&sid=K9tG9QaflYW6a0HeAAAq HTTP/1.1" 200 -
+INFO | 127.0.0.1 - - [18/Nov/2022 19:37:48] "POST /socket.io/?EIO=4&transport=polling&t=OIBcZJd&sid=x_nxB1qz_3WNsNTvAAA0 HTTP/1.1" 200 -
+INFO | 127.0.0.1 - - [18/Nov/2022 19:37:48] "GET /socket.io/?EIO=4&transport=polling&t=OIBcYTZ&sid=4jF-pGzKyBVMHeE0AAAs HTTP/1.1" 200 -
+INFO | 127.0.0.1 - - [18/Nov/2022 19:37:48] "GET /socket.io/?EIO=4&transport=polling&t=OIBcYTa&sid=Mpvlg73wLnGg2Zj1AAAt HTTP/1.1" 200 -
+INFO | 127.0.0.1 - - [18/Nov/2022 19:37:48] "GET /socket.io/?EIO=4&transport=polling&t=OIBcYTY&sid=q1fKAPZZzE4IDF1-AAAu HTTP/1.1" 200 -
+INFO | 127.0.0.1 - - [18/Nov/2022 19:37:48] "GET /socket.io/?EIO=4&transport=polling&t=OIBcYYY&sid=CKCcZGJE8qqMaF40AAAy HTTP/1.1" 200 -
+INFO | 127.0.0.1 - - [18/Nov/2022 19:37:48] "GET /socket.io/?EIO=4&transport=polling&t=OIBcYo5&sid=x_nxB1qz_3WNsNTvAAA0 HTTP/1.1" 200 -
+INFO | 127.0.0.1 - - [18/Nov/2022 19:37:49] "GET /socket.io/?EIO=4&transport=polling&t=OIBcZJf HTTP/1.1" 200 -
+INFO | 127.0.0.1 - - [18/Nov/2022 19:37:49] "GET /socket.io/?EIO=4&transport=polling&t=OIBcaOA HTTP/1.1" 200 -
+INFO | 127.0.0.1 - - [18/Nov/2022 19:37:49] "GET /socket.io/?EIO=4&transport=polling&t=OIBcaNM HTTP/1.1" 200 -
+INFO | 127.0.0.1 - - [18/Nov/2022 19:37:49] "GET /socket.io/?EIO=4&transport=polling&t=OIBcaQ7 HTTP/1.1" 200 -
+INFO | 127.0.0.1 - - [18/Nov/2022 19:37:49] "GET /socket.io/?EIO=4&transport=polling&t=OIBcaRo HTTP/1.1" 200 -
+INFO | 127.0.0.1 - - [18/Nov/2022 19:37:49] "GET /socket.io/?EIO=4&transport=polling&t=OIBcaQP HTTP/1.1" 200 -
+INFO | 127.0.0.1 - - [18/Nov/2022 19:37:49] "GET /socket.io/?EIO=4&transport=polling&t=OIBcaTJ HTTP/1.1" 200 -
+INFO | 127.0.0.1 - - [18/Nov/2022 19:37:49] "GET /socket.io/?EIO=4&transport=polling&t=OIBcb1_ HTTP/1.1" 200 -
+INFO | 127.0.0.1 - - [18/Nov/2022 19:37:49] "GET /socket.io/?EIO=4&transport=polling&t=OIBcadF HTTP/1.1" 200 -
+INFO | 127.0.0.1 - - [18/Nov/2022 19:37:49] "GET /socket.io/?EIO=4&transport=polling&t=OIBcb1G HTTP/1.1" 200 -
+INFO | 127.0.0.1 - - [18/Nov/2022 19:37:49] "GET /socket.io/?EIO=4&transport=polling&t=OIBcb3Q HTTP/1.1" 200 -
+INFO | 127.0.0.1 - - [18/Nov/2022 19:37:49] "GET /socket.io/?EIO=4&transport=polling&t=OIBcb4c HTTP/1.1" 200 -
+INFO | 127.0.0.1 - - [18/Nov/2022 19:37:49] "GET /socket.io/?EIO=4&transport=polling&t=OIBcdqY&sid=K9tG9QaflYW6a0HeAAAq HTTP/1.1" 200 -
+INFO | 127.0.0.1 - - [18/Nov/2022 19:37:49] "GET /socket.io/?EIO=4&transport=polling&t=OIBcdMJ HTTP/1.1" 200 -
+INFO | 127.0.0.1 - - [18/Nov/2022 19:37:49] "GET /socket.io/?EIO=4&transport=polling&t=OIBcb5_ HTTP/1.1" 200 -
+INFO | 127.0.0.1 - - [18/Nov/2022 19:37:49] "GET /socket.io/?EIO=4&transport=polling&t=OIBcbGw HTTP/1.1" 200 -
+INFO | 127.0.0.1 - - [18/Nov/2022 19:37:49] "GET /socket.io/?EIO=4&transport=polling&t=OIBcb6b HTTP/1.1" 200 -
+INFO | 127.0.0.1 - - [18/Nov/2022 19:37:49] "POST /socket.io/?EIO=4&transport=polling&t=OIBcdqX&sid=K9tG9QaflYW6a0HeAAAq HTTP/1.1" 200 -
+INFO | 127.0.0.1 - - [18/Nov/2022 19:37:50] "POST /socket.io/?EIO=4&transport=polling&t=OIBcd-u&sid=_kmWxZ0SZp6lXGAyAAA2 HTTP/1.1" 200 -
+INFO | 127.0.0.1 - - [18/Nov/2022 19:37:50] "GET /socket.io/?EIO=4&transport=polling&t=OIBcdvy&sid=4jF-pGzKyBVMHeE0AAAs HTTP/1.1" 200 -
+INFO | 127.0.0.1 - - [18/Nov/2022 19:37:50] "GET /socket.io/?EIO=4&transport=polling&t=OIBcd-v&sid=_kmWxZ0SZp6lXGAyAAA2 HTTP/1.1" 200 -
+INFO | 127.0.0.1 - - [18/Nov/2022 19:37:50] "GET /socket.io/?EIO=4&transport=polling&t=OIBcdw0&sid=Mpvlg73wLnGg2Zj1AAAt HTTP/1.1" 200 -
+INFO | 127.0.0.1 - - [18/Nov/2022 19:37:50] "GET /socket.io/?EIO=4&transport=polling&t=OIBcdv_&sid=q1fKAPZZzE4IDF1-AAAu HTTP/1.1" 200 -
+INFO | 127.0.0.1 - - [18/Nov/2022 19:37:50] "POST /socket.io/?EIO=4&transport=polling&t=OIBcd-x&sid=esnSM4tokq95LH3KAAA3 HTTP/1.1" 200 -
+INFO | 127.0.0.1 - - [18/Nov/2022 19:37:50] "GET /socket.io/?EIO=4&transport=polling&t=OIBcd-x.0&sid=esnSM4tokq95LH3KAAA3 HTTP/1.1" 200 -
+INFO | 127.0.0.1 - - [18/Nov/2022 19:37:50] "POST /socket.io/?EIO=4&transport=polling&t=OIBcd-y&sid=X0Mh-_oFqXMkk4c9AAA7 HTTP/1.1" 200 -
+INFO | 127.0.0.1 - - [18/Nov/2022 19:37:51] "GET /socket.io/?EIO=4&transport=polling&t=OIBcd-z&sid=X0Mh-_oFqXMkk4c9AAA7 HTTP/1.1" 200 -
+INFO | 127.0.0.1 - - [18/Nov/2022 19:37:51] "POST /socket.io/?EIO=4&transport=polling&t=OIBcd--&sid=-kPP0J4n9CY9SOTBAAA5 HTTP/1.1" 200 -
+INFO | 127.0.0.1 - - [18/Nov/2022 19:37:51] "GET /socket.io/?EIO=4&transport=polling&t=OIBcd--.0&sid=-kPP0J4n9CY9SOTBAAA5 HTTP/1.1" 200 -
+INFO | 127.0.0.1 - - [18/Nov/2022 19:37:51] "POST /socket.io/?EIO=4&transport=polling&t=OIBcd-_&sid=UQTLAIzlVHXeEFwYAAA4 HTTP/1.1" 200 -
+INFO | 127.0.0.1 - - [18/Nov/2022 19:37:51] "GET /socket.io/?EIO=4&transport=polling&t=OIBcd_0&sid=UQTLAIzlVHXeEFwYAAA4 HTTP/1.1" 200 -
+INFO | 127.0.0.1 - - [18/Nov/2022 19:37:51] "POST /socket.io/?EIO=4&transport=polling&t=OIBcd_1&sid=x3rQ9zGsBjK6POA-AAA6 HTTP/1.1" 200 -
+INFO | 127.0.0.1 - - [18/Nov/2022 19:37:51] "GET /socket.io/?EIO=4&transport=polling&t=OIBcd_1.0&sid=x3rQ9zGsBjK6POA-AAA6 HTTP/1.1" 200 -
+INFO | 127.0.0.1 - - [18/Nov/2022 19:37:51] "GET /socket.io/?EIO=4&transport=polling&t=OIBcdvz&sid=CKCcZGJE8qqMaF40AAAy HTTP/1.1" 200 -
+INFO | 127.0.0.1 - - [18/Nov/2022 19:37:51] "POST /socket.io/?EIO=4&transport=polling&t=OIBce3w&sid=VeLfausvhld6miaiAAA_ HTTP/1.1" 200 -
+INFO | 127.0.0.1 - - [18/Nov/2022 19:37:51] "GET /socket.io/?EIO=4&transport=polling&t=OIBce3x&sid=VeLfausvhld6miaiAAA_ HTTP/1.1" 200 -
+INFO | 127.0.0.1 - - [18/Nov/2022 19:37:51] "POST /socket.io/?EIO=4&transport=polling&t=OIBce3y&sid=EdTeYnaWeSUN6XncAAA9 HTTP/1.1" 200 -
+INFO | 127.0.0.1 - - [18/Nov/2022 19:37:51] "GET /socket.io/?EIO=4&transport=polling&t=OIBce3y.0&sid=EdTeYnaWeSUN6XncAAA9 HTTP/1.1" 200 -
+INFO | 127.0.0.1 - - [18/Nov/2022 19:37:51] "POST /socket.io/?EIO=4&transport=polling&t=OIBce3-&sid=zFu0b81K_QSPYvM5AAA- HTTP/1.1" 200 -
+INFO | 127.0.0.1 - - [18/Nov/2022 19:37:51] "GET /socket.io/?EIO=4&transport=polling&t=OIBce3_&sid=zFu0b81K_QSPYvM5AAA- HTTP/1.1" 200 -
+INFO | 127.0.0.1 - - [18/Nov/2022 19:37:52] "POST /socket.io/?EIO=4&transport=polling&t=OIBce42&sid=jUbRo1Yhp9kM8HBtAABA HTTP/1.1" 200 -
+INFO | 127.0.0.1 - - [18/Nov/2022 19:37:52] "POST /socket.io/?EIO=4&transport=polling&t=OIBce40&sid=6nijsDG_4JISt2s3AAA8 HTTP/1.1" 200 -
+INFO | 127.0.0.1 - - [18/Nov/2022 19:37:52] "GET /socket.io/?EIO=4&transport=polling&t=OIBce41&sid=6nijsDG_4JISt2s3AAA8 HTTP/1.1" 200 -
+INFO | 127.0.0.1 - - [18/Nov/2022 19:37:52] "GET /socket.io/?EIO=4&transport=polling&t=OIBcdw0.0&sid=x_nxB1qz_3WNsNTvAAA0 HTTP/1.1" 200 -
+INFO | 127.0.0.1 - - [18/Nov/2022 19:37:52] "GET /socket.io/?EIO=4&transport=polling&t=OIBce42.0&sid=jUbRo1Yhp9kM8HBtAABA HTTP/1.1" 200 -
+INFO | 127.0.0.1 - - [18/Nov/2022 19:37:52] "POST /socket.io/?EIO=4&transport=polling&t=OIBce43&sid=YCR62sszp_J9s1rCAABB HTTP/1.1" 200 -
+INFO | 127.0.0.1 - - [18/Nov/2022 19:37:52] "GET /socket.io/?EIO=4&transport=polling&t=OIBce44&sid=YCR62sszp_J9s1rCAABB HTTP/1.1" 200 -
+INFO | 127.0.0.1 - - [18/Nov/2022 19:37:52] "POST /socket.io/?EIO=4&transport=polling&t=OIBce92&sid=GeBxLf8LM--Xu9JRAABF HTTP/1.1" 200 -
+INFO | 127.0.0.1 - - [18/Nov/2022 19:37:52] "GET /socket.io/?EIO=4&transport=polling&t=OIBce93&sid=GeBxLf8LM--Xu9JRAABF HTTP/1.1" 200 -
+INFO | 127.0.0.1 - - [18/Nov/2022 19:37:52] "GET /socket.io/?EIO=4&transport=polling&t=OIBce93.0 HTTP/1.1" 200 -
+INFO | 127.0.0.1 - - [18/Nov/2022 19:37:52] "POST /socket.io/?EIO=4&transport=polling&t=OIBce96&sid=wxnliUuw4lOsgm8wAABE HTTP/1.1" 200 -
+INFO | 127.0.0.1 - - [18/Nov/2022 19:37:52] "GET /socket.io/?EIO=4&transport=polling&t=OIBce96.0&sid=wxnliUuw4lOsgm8wAABE HTTP/1.1" 200 -
+INFO | 127.0.0.1 - - [18/Nov/2022 19:37:52] "POST /socket.io/?EIO=4&transport=polling&t=OIBce97&sid=cxKu2yksZS9-AJ-oAABC HTTP/1.1" 200 -
+INFO | 127.0.0.1 - - [18/Nov/2022 19:37:52] "GET /socket.io/?EIO=4&transport=polling&t=OIBce98&sid=cxKu2yksZS9-AJ-oAABC HTTP/1.1" 200 -
+INFO | 127.0.0.1 - - [18/Nov/2022 19:37:52] "POST /socket.io/?EIO=4&transport=polling&t=OIBce99&sid=sAfan21KvKY2atKtAABD HTTP/1.1" 200 -
+INFO | 127.0.0.1 - - [18/Nov/2022 19:37:52] "GET /socket.io/?EIO=4&transport=polling&t=OIBce99.0&sid=sAfan21KvKY2atKtAABD HTTP/1.1" 200 -
+INFO | 127.0.0.1 - - [18/Nov/2022 19:37:52] "POST /socket.io/?EIO=4&transport=polling&t=OIBceIz&sid=4jF-pGzKyBVMHeE0AAAs HTTP/1.1" 200 -
+INFO | 127.0.0.1 - - [18/Nov/2022 19:37:53] "POST /socket.io/?EIO=4&transport=polling&t=OIBceLI&sid=Mpvlg73wLnGg2Zj1AAAt HTTP/1.1" 200 -
+INFO | 127.0.0.1 - - [18/Nov/2022 19:37:53] "POST /socket.io/?EIO=4&transport=polling&t=OIBceO0&sid=q1fKAPZZzE4IDF1-AAAu HTTP/1.1" 200 -
+INFO | 127.0.0.1 - - [18/Nov/2022 19:38:14] "GET /socket.io/?EIO=4&transport=polling&t=OIBceI_&sid=_kmWxZ0SZp6lXGAyAAA2 HTTP/1.1" 200 -
+INFO | 127.0.0.1 - - [18/Nov/2022 19:38:14] "GET /socket.io/?EIO=4&transport=polling&t=OIBceO6&sid=esnSM4tokq95LH3KAAA3 HTTP/1.1" 200 -
+INFO | 127.0.0.1 - - [18/Nov/2022 19:38:14] "GET /socket.io/?EIO=4&transport=polling&t=OIBceTE&sid=X0Mh-_oFqXMkk4c9AAA7 HTTP/1.1" 200 -
+INFO | 127.0.0.1 - - [18/Nov/2022 19:38:14] "GET /socket.io/?EIO=4&transport=polling&t=OIBceTL&sid=-kPP0J4n9CY9SOTBAAA5 HTTP/1.1" 200 -
+INFO | 127.0.0.1 - - [18/Nov/2022 19:38:14] "GET /socket.io/?EIO=4&transport=polling&t=OIBceYH&sid=x3rQ9zGsBjK6POA-AAA6 HTTP/1.1" 200 -
+INFO | 127.0.0.1 - - [18/Nov/2022 19:38:14] "GET /socket.io/?EIO=4&transport=polling&t=OIBceYB&sid=UQTLAIzlVHXeEFwYAAA4 HTTP/1.1" 200 -
+INFO | 127.0.0.1 - - [18/Nov/2022 19:38:14] "GET /socket.io/?EIO=4&transport=polling&t=OIBce8_&sid=K9tG9QaflYW6a0HeAAAq HTTP/1.1" 200 -
+INFO | 127.0.0.1 - - [18/Nov/2022 19:38:15] "POST /socket.io/?EIO=4&transport=polling&t=OIBceaH&sid=CKCcZGJE8qqMaF40AAAy HTTP/1.1" 200 -
+INFO | 127.0.0.1 - - [18/Nov/2022 19:38:15] "POST /socket.io/?EIO=4&transport=polling&t=OIBcedD&sid=VeLfausvhld6miaiAAA_ HTTP/1.1" 200 -
+INFO | 127.0.0.1 - - [18/Nov/2022 19:38:15] "GET /socket.io/?EIO=4&transport=polling&t=OIBceO0.0&sid=q1fKAPZZzE4IDF1-AAAu HTTP/1.1" 200 -
+INFO | 127.0.0.1 - - [18/Nov/2022 19:38:15] "GET /socket.io/?EIO=4&transport=polling&t=OIBceI-&sid=4jF-pGzKyBVMHeE0AAAs HTTP/1.1" 200 -
+INFO | 127.0.0.1 - - [18/Nov/2022 19:38:15] "GET /socket.io/?EIO=4&transport=polling&t=OIBceaI&sid=CKCcZGJE8qqMaF40AAAy HTTP/1.1" 200 -
+INFO | 127.0.0.1 - - [18/Nov/2022 19:38:15] "GET /socket.io/?EIO=4&transport=polling&t=OIBceLJ&sid=Mpvlg73wLnGg2Zj1AAAt HTTP/1.1" 200 -
+INFO | 127.0.0.1 - - [18/Nov/2022 19:38:15] "GET /socket.io/?EIO=4&transport=polling&t=OIBcedF&sid=EdTeYnaWeSUN6XncAAA9 HTTP/1.1" 200 -
+INFO | 127.0.0.1 - - [18/Nov/2022 19:38:15] "GET /socket.io/?EIO=4&transport=polling&t=OIBceiI&sid=6nijsDG_4JISt2s3AAA8 HTTP/1.1" 200 -
+INFO | 127.0.0.1 - - [18/Nov/2022 19:38:15] "[35m[1mGET /socket.io/?EIO=4&transport=polling&t=OIBcekO.0&sid=x_nxB1qz_3WNsNTvAAA0 HTTP/1.1[0m" 500 -
+INFO | 127.0.0.1 - - [18/Nov/2022 19:38:15] "GET /socket.io/?EIO=4&transport=polling&t=OIBcefy&sid=zFu0b81K_QSPYvM5AAA- HTTP/1.1" 200 -
+INFO | 127.0.0.1 - - [18/Nov/2022 19:38:15] "GET /socket.io/?EIO=4&transport=polling&t=OIBcedC&sid=VeLfausvhld6miaiAAA_ HTTP/1.1" 200 -
+ERROR | Invalid session x_nxB1qz_3WNsNTvAAA0 (further occurrences of this error will be logged with level INFO)
+INFO | 127.0.0.1 - - [18/Nov/2022 19:38:15] "[31m[1mPOST /socket.io/?EIO=4&transport=polling&t=OIBcekO&sid=x_nxB1qz_3WNsNTvAAA0 HTTP/1.1[0m" 400 -
+ERROR | Error on request:
+Traceback (most recent call last):
+  File "D:\MyProject\microerp\env\lib\site-packages\werkzeug\serving.py", line 335, in run_wsgi
+    execute(self.server.app)
+  File "D:\MyProject\microerp\env\lib\site-packages\werkzeug\serving.py", line 322, in execute
+    application_iter = app(environ, start_response)
+  File "D:\MyProject\microerp\env\lib\site-packages\flask\app.py", line 2548, in __call__
+    return self.wsgi_app(environ, start_response)
+  File "D:\MyProject\microerp\env\lib\site-packages\flask_socketio\__init__.py", line 43, in __call__
+    return super(_SocketIOMiddleware, self).__call__(environ,
+  File "D:\MyProject\microerp\env\lib\site-packages\engineio\middleware.py", line 63, in __call__
+    return self.engineio_app.handle_request(environ, start_response)
+  File "D:\MyProject\microerp\env\lib\site-packages\socketio\server.py", line 605, in handle_request
+    return self.eio.handle_request(environ, start_response)
+  File "D:\MyProject\microerp\env\lib\site-packages\engineio\server.py", line 409, in handle_request
+    socket = self._get_socket(sid)
+  File "D:\MyProject\microerp\env\lib\site-packages\engineio\server.py", line 638, in _get_socket
+    raise KeyError('Session is disconnected')
+KeyError: 'Session is disconnected'
+INFO | 127.0.0.1 - - [18/Nov/2022 19:38:15] "GET /socket.io/?EIO=4&transport=polling&t=OIBcekX&sid=jUbRo1Yhp9kM8HBtAABA HTTP/1.1" 200 -
+INFO | 127.0.0.1 - - [18/Nov/2022 19:38:15] "GET /socket.io/?EIO=4&transport=polling&t=OIBcepL&sid=GeBxLf8LM--Xu9JRAABF HTTP/1.1" 200 -
+INFO | 127.0.0.1 - - [18/Nov/2022 19:38:15] "GET /socket.io/?EIO=4&transport=polling&t=OIBcenJ&sid=YCR62sszp_J9s1rCAABB HTTP/1.1" 200 -
+INFO | 127.0.0.1 - - [18/Nov/2022 19:38:15] "POST /socket.io/?EIO=4&transport=polling&t=OIBcepM&sid=cni2K7CbOeoEwBhbAABT HTTP/1.1" 200 -
+INFO | 127.0.0.1 - - [18/Nov/2022 19:38:15] "GET /socket.io/?EIO=4&transport=polling&t=OIBcepN&sid=cni2K7CbOeoEwBhbAABT HTTP/1.1" 200 -
+INFO | 127.0.0.1 - - [18/Nov/2022 19:38:15] "POST /socket.io/?EIO=4&transport=polling&t=OIBcepL.0&sid=GeBxLf8LM--Xu9JRAABF HTTP/1.1" 200 -
+INFO | 127.0.0.1 - - [18/Nov/2022 19:38:16] "GET /socket.io/?EIO=4&transport=polling&t=OIBcesM&sid=wxnliUuw4lOsgm8wAABE HTTP/1.1" 200 -
+INFO | 127.0.0.1 - - [18/Nov/2022 19:38:16] "GET /socket.io/?EIO=4&transport=polling&t=OIBck6C&sid=_kmWxZ0SZp6lXGAyAAA2 HTTP/1.1" 200 -
+INFO | 127.0.0.1 - - [18/Nov/2022 19:38:16] "GET /socket.io/?EIO=4&transport=polling&t=OIBcevZ&sid=sAfan21KvKY2atKtAABD HTTP/1.1" 200 -
+INFO | 127.0.0.1 - - [18/Nov/2022 19:38:16] "GET /socket.io/?EIO=4&transport=polling&t=OIBceuH&sid=cxKu2yksZS9-AJ-oAABC HTTP/1.1" 200 -
+INFO | 127.0.0.1 - - [18/Nov/2022 19:38:16] "POST /socket.io/?EIO=4&transport=polling&t=OIBck6B&sid=_kmWxZ0SZp6lXGAyAAA2 HTTP/1.1" 200 -
+INFO | 127.0.0.1 - - [18/Nov/2022 19:38:16] "POST /socket.io/?EIO=4&transport=polling&t=OIBcevZ.0&sid=sAfan21KvKY2atKtAABD HTTP/1.1" 200 -
+INFO | 127.0.0.1 - - [18/Nov/2022 19:38:16] "GET /socket.io/?EIO=4&transport=polling&t=OIBck6D.0&sid=esnSM4tokq95LH3KAAA3 HTTP/1.1" 200 -
+INFO | 127.0.0.1 - - [18/Nov/2022 19:38:16] "GET /socket.io/?EIO=4&transport=polling&t=OIBckAd&sid=X0Mh-_oFqXMkk4c9AAA7 HTTP/1.1" 200 -
+INFO | 127.0.0.1 - - [18/Nov/2022 19:38:16] "GET /socket.io/?EIO=4&transport=polling&t=OIBck9n HTTP/1.1" 200 -
+INFO | 127.0.0.1 - - [18/Nov/2022 19:38:16] "POST /socket.io/?EIO=4&transport=polling&t=OIBck6D&sid=esnSM4tokq95LH3KAAA3 HTTP/1.1" 200 -
+INFO | 127.0.0.1 - - [18/Nov/2022 19:38:16] "POST /socket.io/?EIO=4&transport=polling&t=OIBckAe&sid=-kPP0J4n9CY9SOTBAAA5 HTTP/1.1" 200 -
+INFO | 127.0.0.1 - - [18/Nov/2022 19:38:16] "POST /socket.io/?EIO=4&transport=polling&t=OIBckAc&sid=X0Mh-_oFqXMkk4c9AAA7 HTTP/1.1" 200 -
+INFO | 127.0.0.1 - - [18/Nov/2022 19:38:16] "GET /socket.io/?EIO=4&transport=polling&t=OIBckAe.0&sid=-kPP0J4n9CY9SOTBAAA5 HTTP/1.1" 200 -
+INFO | 127.0.0.1 - - [18/Nov/2022 19:38:16] "GET /socket.io/?EIO=4&transport=polling&t=OIBckFd.0&sid=UQTLAIzlVHXeEFwYAAA4 HTTP/1.1" 200 -
+INFO | 127.0.0.1 - - [18/Nov/2022 19:38:16] "GET /socket.io/?EIO=4&transport=polling&t=OIBckFf&sid=x3rQ9zGsBjK6POA-AAA6 HTTP/1.1" 200 -
+INFO | 127.0.0.1 - - [18/Nov/2022 19:38:16] "POST /socket.io/?EIO=4&transport=polling&t=OIBckFd&sid=UQTLAIzlVHXeEFwYAAA4 HTTP/1.1" 200 -
+INFO | 127.0.0.1 - - [18/Nov/2022 19:38:16] "POST /socket.io/?EIO=4&transport=polling&t=OIBckFr&sid=K9tG9QaflYW6a0HeAAAq HTTP/1.1" 200 -
+INFO | 127.0.0.1 - - [18/Nov/2022 19:38:16] "POST /socket.io/?EIO=4&transport=polling&t=OIBckFe&sid=x3rQ9zGsBjK6POA-AAA6 HTTP/1.1" 200 -
+INFO | 127.0.0.1 - - [18/Nov/2022 19:38:17] "GET /socket.io/?EIO=4&transport=polling&t=OIBckL9&sid=4jF-pGzKyBVMHeE0AAAs HTTP/1.1" 200 -
+INFO | 127.0.0.1 - - [18/Nov/2022 19:38:17] "GET /socket.io/?EIO=4&transport=polling&t=OIBckFr.0&sid=K9tG9QaflYW6a0HeAAAq HTTP/1.1" 200 -
+INFO | 127.0.0.1 - - [18/Nov/2022 19:38:17] "GET /socket.io/?EIO=4&transport=polling&t=OIBckL8&sid=q1fKAPZZzE4IDF1-AAAu HTTP/1.1" 200 -
+INFO | 127.0.0.1 - - [18/Nov/2022 19:38:17] "GET /socket.io/?EIO=4&transport=polling&t=OIBckLB&sid=Mpvlg73wLnGg2Zj1AAAt HTTP/1.1" 200 -
+INFO | 127.0.0.1 - - [18/Nov/2022 19:38:17] "GET /socket.io/?EIO=4&transport=polling&t=OIBckLA&sid=CKCcZGJE8qqMaF40AAAy HTTP/1.1" 200 -
+INFO | 127.0.0.1 - - [18/Nov/2022 19:38:17] "POST /socket.io/?EIO=4&transport=polling&t=OIBckQ7&sid=EdTeYnaWeSUN6XncAAA9 HTTP/1.1" 200 -
+INFO | 127.0.0.1 - - [18/Nov/2022 19:38:17] "GET /socket.io/?EIO=4&transport=polling&t=OIBckQ7.0&sid=EdTeYnaWeSUN6XncAAA9 HTTP/1.1" 200 -
+INFO | 127.0.0.1 - - [18/Nov/2022 19:38:17] "GET /socket.io/?EIO=4&transport=polling&t=OIBckQA&sid=6nijsDG_4JISt2s3AAA8 HTTP/1.1" 200 -
+INFO | 127.0.0.1 - - [18/Nov/2022 19:38:17] "GET /socket.io/?EIO=4&transport=polling&t=OIBckQC&sid=zFu0b81K_QSPYvM5AAA- HTTP/1.1" 200 -
+INFO | 127.0.0.1 - - [18/Nov/2022 19:38:17] "POST /socket.io/?EIO=4&transport=polling&t=OIBckQB&sid=zFu0b81K_QSPYvM5AAA- HTTP/1.1" 200 -
+INFO | 127.0.0.1 - - [18/Nov/2022 19:38:17] "POST /socket.io/?EIO=4&transport=polling&t=OIBckQ9&sid=6nijsDG_4JISt2s3AAA8 HTTP/1.1" 200 -
+INFO | 127.0.0.1 - - [18/Nov/2022 19:38:17] "POST /socket.io/?EIO=4&transport=polling&t=OIBckQE&sid=VeLfausvhld6miaiAAA_ HTTP/1.1" 200 -
+INFO | 127.0.0.1 - - [18/Nov/2022 19:38:17] "GET /socket.io/?EIO=4&transport=polling&t=OIBckQE.0&sid=VeLfausvhld6miaiAAA_ HTTP/1.1" 200 -
+INFO | 127.0.0.1 - - [18/Nov/2022 19:38:17] "GET /socket.io/?EIO=4&transport=polling&t=OIBckV4&sid=YCR62sszp_J9s1rCAABB HTTP/1.1" 200 -
+INFO | 127.0.0.1 - - [18/Nov/2022 19:38:17] "GET /socket.io/?EIO=4&transport=polling&t=OIBckV5&sid=GeBxLf8LM--Xu9JRAABF HTTP/1.1" 200 -
+INFO | 127.0.0.1 - - [18/Nov/2022 19:38:17] "[31m[1mPOST /socket.io/?EIO=4&transport=polling&t=OIBckQF&sid=x_nxB1qz_3WNsNTvAAA0 HTTP/1.1[0m" 400 -
+INFO | 127.0.0.1 - - [18/Nov/2022 19:38:17] "POST /socket.io/?EIO=4&transport=polling&t=OIBckV3&sid=YCR62sszp_J9s1rCAABB HTTP/1.1" 200 -
+INFO | 127.0.0.1 - - [18/Nov/2022 19:38:17] "POST /socket.io/?EIO=4&transport=polling&t=OIBckV6&sid=jUbRo1Yhp9kM8HBtAABA HTTP/1.1" 200 -
+INFO | 127.0.0.1 - - [18/Nov/2022 19:38:18] "GET /socket.io/?EIO=4&transport=polling&t=OIBckV7&sid=jUbRo1Yhp9kM8HBtAABA HTTP/1.1" 200 -
+INFO | 127.0.0.1 - - [18/Nov/2022 19:38:18] "GET /socket.io/?EIO=4&transport=polling&t=OIBckVA&sid=cni2K7CbOeoEwBhbAABT HTTP/1.1" 200 -
+INFO | 127.0.0.1 - - [18/Nov/2022 19:38:18] "GET /socket.io/?EIO=4&transport=polling&t=OIBckaO&sid=wxnliUuw4lOsgm8wAABE HTTP/1.1" 200 -
+INFO | 127.0.0.1 - - [18/Nov/2022 19:38:18] "GET /socket.io/?EIO=4&transport=polling&t=OIBckaP&sid=_kmWxZ0SZp6lXGAyAAA2 HTTP/1.1" 200 -
+INFO | 127.0.0.1 - - [18/Nov/2022 19:38:18] "POST /socket.io/?EIO=4&transport=polling&t=OIBckaN&sid=wxnliUuw4lOsgm8wAABE HTTP/1.1" 200 -
+INFO | 127.0.0.1 - - [18/Nov/2022 19:38:18] "POST /socket.io/?EIO=4&transport=polling&t=OIBckVE&sid=GeBxLf8LM--Xu9JRAABF HTTP/1.1" 200 -
+INFO | 127.0.0.1 - - [18/Nov/2022 19:38:18] "GET /socket.io/?EIO=4&transport=polling&t=OIBckaR&sid=sAfan21KvKY2atKtAABD HTTP/1.1" 200 -
+INFO | 127.0.0.1 - - [18/Nov/2022 19:38:18] "GET /socket.io/?EIO=4&transport=polling&t=OIBckaT&sid=cxKu2yksZS9-AJ-oAABC HTTP/1.1" 200 -
+INFO | 127.0.0.1 - - [18/Nov/2022 19:38:18] "POST /socket.io/?EIO=4&transport=polling&t=OIBckaW&sid=sAfan21KvKY2atKtAABD HTTP/1.1" 200 -
+INFO | 127.0.0.1 - - [18/Nov/2022 19:38:18] "POST /socket.io/?EIO=4&transport=polling&t=OIBckaS&sid=cxKu2yksZS9-AJ-oAABC HTTP/1.1" 200 -
+INFO | 127.0.0.1 - - [18/Nov/2022 19:38:18] "GET /socket.io/?EIO=4&transport=polling&t=OIBcki9 HTTP/1.1" 200 -
+INFO | 127.0.0.1 - - [18/Nov/2022 19:38:18] "POST /socket.io/?EIO=4&transport=polling&t=OIBckfU&sid=M5Nzs9GVVrNPA6c9AABY HTTP/1.1" 200 -
+INFO | 127.0.0.1 - - [18/Nov/2022 19:38:18] "GET /socket.io/?EIO=4&transport=polling&t=OIBckfV&sid=M5Nzs9GVVrNPA6c9AABY HTTP/1.1" 200 -
+INFO | 127.0.0.1 - - [18/Nov/2022 19:38:18] "GET /socket.io/?EIO=4&transport=polling&t=OIBcklQ HTTP/1.1" 200 -
+INFO | 127.0.0.1 - - [18/Nov/2022 19:38:19] "GET /socket.io/?EIO=4&transport=polling&t=OIBckn8 HTTP/1.1" 200 -
+INFO | 127.0.0.1 - - [18/Nov/2022 19:38:19] "GET /socket.io/?EIO=4&transport=polling&t=OIBcko0 HTTP/1.1" 200 -
+INFO | 127.0.0.1 - - [18/Nov/2022 19:38:41] "GET /socket.io/?EIO=4&transport=polling&t=OIBckfR&sid=esnSM4tokq95LH3KAAA3 HTTP/1.1" 200 -
+INFO | 127.0.0.1 - - [18/Nov/2022 19:38:41] "GET /socket.io/?EIO=4&transport=polling&t=OIBckfT&sid=X0Mh-_oFqXMkk4c9AAA7 HTTP/1.1" 200 -
+INFO | 127.0.0.1 - - [18/Nov/2022 19:38:41] "GET /socket.io/?EIO=4&transport=polling&t=OIBckks&sid=-kPP0J4n9CY9SOTBAAA5 HTTP/1.1" 200 -
+INFO | 127.0.0.1 - - [18/Nov/2022 19:38:41] "GET /socket.io/?EIO=4&transport=polling&t=OIBckkq&sid=UQTLAIzlVHXeEFwYAAA4 HTTP/1.1" 200 -
+INFO | 127.0.0.1 - - [18/Nov/2022 19:38:41] "[35m[1mGET /socket.io/?EIO=4&transport=polling&t=OIBckpk&sid=4jF-pGzKyBVMHeE0AAAs HTTP/1.1[0m" 500 -
+INFO | 127.0.0.1 - - [18/Nov/2022 19:38:41] "GET /socket.io/?EIO=4&transport=polling&t=OIBckpl HTTP/1.1" 200 -
+INFO | 127.0.0.1 - - [18/Nov/2022 19:38:41] "[35m[1mGET /socket.io/?EIO=4&transport=polling&t=OIBckpn&sid=q1fKAPZZzE4IDF1-AAAu HTTP/1.1[0m" 500 -
+ERROR | Error on request:
+Traceback (most recent call last):
+  File "D:\MyProject\microerp\env\lib\site-packages\werkzeug\serving.py", line 335, in run_wsgi
+    execute(self.server.app)
+  File "D:\MyProject\microerp\env\lib\site-packages\werkzeug\serving.py", line 322, in execute
+    application_iter = app(environ, start_response)
+  File "D:\MyProject\microerp\env\lib\site-packages\flask\app.py", line 2548, in __call__
+    return self.wsgi_app(environ, start_response)
+  File "D:\MyProject\microerp\env\lib\site-packages\flask_socketio\__init__.py", line 43, in __call__
+    return super(_SocketIOMiddleware, self).__call__(environ,
+  File "D:\MyProject\microerp\env\lib\site-packages\engineio\middleware.py", line 63, in __call__
+    return self.engineio_app.handle_request(environ, start_response)
+  File "D:\MyProject\microerp\env\lib\site-packages\socketio\server.py", line 605, in handle_request
+    return self.eio.handle_request(environ, start_response)
+  File "D:\MyProject\microerp\env\lib\site-packages\engineio\server.py", line 409, in handle_request
+    socket = self._get_socket(sid)
+  File "D:\MyProject\microerp\env\lib\site-packages\engineio\server.py", line 638, in _get_socket
+    raise KeyError('Session is disconnected')
+KeyError: 'Session is disconnected'
+ERROR | Error on request:
+Traceback (most recent call last):
+  File "D:\MyProject\microerp\env\lib\site-packages\werkzeug\serving.py", line 335, in run_wsgi
+    execute(self.server.app)
+  File "D:\MyProject\microerp\env\lib\site-packages\werkzeug\serving.py", line 322, in execute
+    application_iter = app(environ, start_response)
+  File "D:\MyProject\microerp\env\lib\site-packages\flask\app.py", line 2548, in __call__
+    return self.wsgi_app(environ, start_response)
+  File "D:\MyProject\microerp\env\lib\site-packages\flask_socketio\__init__.py", line 43, in __call__
+    return super(_SocketIOMiddleware, self).__call__(environ,
+  File "D:\MyProject\microerp\env\lib\site-packages\engineio\middleware.py", line 63, in __call__
+    return self.engineio_app.handle_request(environ, start_response)
+  File "D:\MyProject\microerp\env\lib\site-packages\socketio\server.py", line 605, in handle_request
+    return self.eio.handle_request(environ, start_response)
+  File "D:\MyProject\microerp\env\lib\site-packages\engineio\server.py", line 409, in handle_request
+    socket = self._get_socket(sid)
+  File "D:\MyProject\microerp\env\lib\site-packages\engineio\server.py", line 638, in _get_socket
+    raise KeyError('Session is disconnected')
+KeyError: 'Session is disconnected'
+INFO | 127.0.0.1 - - [18/Nov/2022 19:38:41] "GET /socket.io/?EIO=4&transport=polling&t=OIBckpi&sid=K9tG9QaflYW6a0HeAAAq HTTP/1.1" 200 -
+INFO | 127.0.0.1 - - [18/Nov/2022 19:38:41] "GET /socket.io/?EIO=4&transport=polling&t=OIBckku&sid=x3rQ9zGsBjK6POA-AAA6 HTTP/1.1" 200 -
+INFO | 127.0.0.1 - - [18/Nov/2022 19:38:42] "[35m[1mGET /socket.io/?EIO=4&transport=polling&t=OIBckpp&sid=Mpvlg73wLnGg2Zj1AAAt HTTP/1.1[0m" 500 -
+INFO | 127.0.0.1 - - [18/Nov/2022 19:38:42] "GET /socket.io/?EIO=4&transport=polling&t=OIBckup&sid=EdTeYnaWeSUN6XncAAA9 HTTP/1.1" 200 -
+INFO | 127.0.0.1 - - [18/Nov/2022 19:38:42] "GET /socket.io/?EIO=4&transport=polling&t=OIBckpr&sid=CKCcZGJE8qqMaF40AAAy HTTP/1.1" 200 -
+ERROR | Error on request:
+Traceback (most recent call last):
+  File "D:\MyProject\microerp\env\lib\site-packages\werkzeug\serving.py", line 335, in run_wsgi
+    execute(self.server.app)
+  File "D:\MyProject\microerp\env\lib\site-packages\werkzeug\serving.py", line 322, in execute
+    application_iter = app(environ, start_response)
+  File "D:\MyProject\microerp\env\lib\site-packages\flask\app.py", line 2548, in __call__
+    return self.wsgi_app(environ, start_response)
+  File "D:\MyProject\microerp\env\lib\site-packages\flask_socketio\__init__.py", line 43, in __call__
+    return super(_SocketIOMiddleware, self).__call__(environ,
+  File "D:\MyProject\microerp\env\lib\site-packages\engineio\middleware.py", line 63, in __call__
+    return self.engineio_app.handle_request(environ, start_response)
+  File "D:\MyProject\microerp\env\lib\site-packages\socketio\server.py", line 605, in handle_request
+    return self.eio.handle_request(environ, start_response)
+  File "D:\MyProject\microerp\env\lib\site-packages\engineio\server.py", line 409, in handle_request
+    socket = self._get_socket(sid)
+  File "D:\MyProject\microerp\env\lib\site-packages\engineio\server.py", line 638, in _get_socket
+    raise KeyError('Session is disconnected')
+KeyError: 'Session is disconnected'
+INFO | 127.0.0.1 - - [18/Nov/2022 19:38:42] "GET /socket.io/?EIO=4&transport=polling&t=OIBckuu&sid=6nijsDG_4JISt2s3AAA8 HTTP/1.1" 200 -
+INFO | 127.0.0.1 - - [18/Nov/2022 19:38:42] "GET /socket.io/?EIO=4&transport=polling&t=OIBckzp&sid=VeLfausvhld6miaiAAA_ HTTP/1.1" 200 -
+INFO | 127.0.0.1 - - [18/Nov/2022 19:38:42] "GET /socket.io/?EIO=4&transport=polling&t=OIBckus&sid=zFu0b81K_QSPYvM5AAA- HTTP/1.1" 200 -
+INFO | 127.0.0.1 - - [18/Nov/2022 19:38:42] "GET /socket.io/?EIO=4&transport=polling&t=OIBcl14 HTTP/1.1" 200 -
+INFO | 127.0.0.1 - - [18/Nov/2022 19:38:42] "POST /socket.io/?EIO=4&transport=polling&t=OIBcl2w&sid=cni2K7CbOeoEwBhbAABT HTTP/1.1" 200 -
+INFO | 127.0.0.1 - - [18/Nov/2022 19:38:42] "GET /socket.io/?EIO=4&transport=polling&t=OIBcl2_&sid=_kmWxZ0SZp6lXGAyAAA2 HTTP/1.1" 200 -
+INFO | 127.0.0.1 - - [18/Nov/2022 19:38:42] "GET /socket.io/?EIO=4&transport=polling&t=OIBckzs&sid=YCR62sszp_J9s1rCAABB HTTP/1.1" 200 -
+INFO | 127.0.0.1 - - [18/Nov/2022 19:38:42] "GET /socket.io/?EIO=4&transport=polling&t=OIBcl2u&sid=jUbRo1Yhp9kM8HBtAABA HTTP/1.1" 200 -
+INFO | 127.0.0.1 - - [18/Nov/2022 19:38:43] "POST /socket.io/?EIO=4&transport=polling&t=OIBclCt&sid=-eRgUFZZxelcqAowAABZ HTTP/1.1" 200 -
+INFO | 127.0.0.1 - - [18/Nov/2022 19:38:43] "GET /socket.io/?EIO=4&transport=polling&t=OIBckzt&sid=GeBxLf8LM--Xu9JRAABF HTTP/1.1" 200 -
+INFO | 127.0.0.1 - - [18/Nov/2022 19:38:43] "GET /socket.io/?EIO=4&transport=polling&t=OIBcl30&sid=wxnliUuw4lOsgm8wAABE HTTP/1.1" 200 -
+INFO | 127.0.0.1 - - [18/Nov/2022 19:38:43] "GET /socket.io/?EIO=4&transport=polling&t=OIBclCt.0&sid=-eRgUFZZxelcqAowAABZ HTTP/1.1" 200 -
+INFO | 127.0.0.1 - - [18/Nov/2022 19:38:43] "GET /socket.io/?EIO=4&transport=polling&t=OIBclCw&sid=M5Nzs9GVVrNPA6c9AABY HTTP/1.1" 200 -
+INFO | 127.0.0.1 - - [18/Nov/2022 19:38:43] "POST /socket.io/?EIO=4&transport=polling&t=OIBclH-&sid=gS9aC_KRI5wi3qgEAABb HTTP/1.1" 200 -
+INFO | 127.0.0.1 - - [18/Nov/2022 19:38:43] "GET /socket.io/?EIO=4&transport=polling&t=OIBcl7u&sid=cxKu2yksZS9-AJ-oAABC HTTP/1.1" 200 -
+INFO | 127.0.0.1 - - [18/Nov/2022 19:38:43] "GET /socket.io/?EIO=4&transport=polling&t=OIBcl7t&sid=sAfan21KvKY2atKtAABD HTTP/1.1" 200 -
+INFO | 127.0.0.1 - - [18/Nov/2022 19:38:43] "GET /socket.io/?EIO=4&transport=polling&t=OIBclH_&sid=gS9aC_KRI5wi3qgEAABb HTTP/1.1" 200 -
+INFO | 127.0.0.1 - - [18/Nov/2022 19:38:43] "POST /socket.io/?EIO=4&transport=polling&t=OIBclS1&sid=_Vw6627YZ3AMIhHqAABd HTTP/1.1" 200 -
+INFO | 127.0.0.1 - - [18/Nov/2022 19:38:43] "POST /socket.io/?EIO=4&transport=polling&t=OIBclMz&sid=7zP9AHdDx5PDCCsFAABc HTTP/1.1" 200 -
+INFO | 127.0.0.1 - - [18/Nov/2022 19:38:43] "GET /socket.io/?EIO=4&transport=polling&t=OIBclM-&sid=7zP9AHdDx5PDCCsFAABc HTTP/1.1" 200 -
+INFO | 127.0.0.1 - - [18/Nov/2022 19:38:43] "GET /socket.io/?EIO=4&transport=polling&t=OIBclS1.0&sid=_Vw6627YZ3AMIhHqAABd HTTP/1.1" 200 -
+INFO | 127.0.0.1 - - [18/Nov/2022 19:38:44] "GET /socket.io/?EIO=4&transport=polling&t=OIBcpb2 HTTP/1.1" 200 -
+INFO | 127.0.0.1 - - [18/Nov/2022 19:38:44] "POST /socket.io/?EIO=4&transport=polling&t=OIBcpZb&sid=CKCcZGJE8qqMaF40AAAy HTTP/1.1" 200 -
+INFO | 127.0.0.1 - - [18/Nov/2022 19:38:44] "[31m[1mPOST /socket.io/?EIO=4&transport=polling&t=OIBcpKh&sid=Mpvlg73wLnGg2Zj1AAAt HTTP/1.1[0m" 400 -
+INFO | 127.0.0.1 - - [18/Nov/2022 19:38:44] "[31m[1mPOST /socket.io/?EIO=4&transport=polling&t=OIBcpNL&sid=q1fKAPZZzE4IDF1-AAAu HTTP/1.1[0m" 400 -
+INFO | 127.0.0.1 - - [18/Nov/2022 19:38:44] "[31m[1mPOST /socket.io/?EIO=4&transport=polling&t=OIBcpI_&sid=4jF-pGzKyBVMHeE0AAAs HTTP/1.1[0m" 400 -
+INFO | 127.0.0.1 - - [18/Nov/2022 19:38:44] "GET /socket.io/?EIO=4&transport=polling&t=OIBcq6E HTTP/1.1" 200 -
+INFO | 127.0.0.1 - - [18/Nov/2022 19:38:44] "GET /socket.io/?EIO=4&transport=polling&t=OIBcpzZ HTTP/1.1" 200 -
+INFO | 127.0.0.1 - - [18/Nov/2022 19:38:44] "GET /socket.io/?EIO=4&transport=polling&t=OIBcpbm HTTP/1.1" 200 -
+INFO | 127.0.0.1 - - [18/Nov/2022 19:38:44] "GET /socket.io/?EIO=4&transport=polling&t=OIBcpvG HTTP/1.1" 200 -
+INFO | 127.0.0.1 - - [18/Nov/2022 19:38:44] "GET /socket.io/?EIO=4&transport=polling&t=OIBcpbH HTTP/1.1" 200 -
+INFO | 127.0.0.1 - - [18/Nov/2022 19:38:44] "POST /socket.io/?EIO=4&transport=polling&t=OIBcqmW&sid=esnSM4tokq95LH3KAAA3 HTTP/1.1" 200 -
+INFO | 127.0.0.1 - - [18/Nov/2022 19:38:44] "POST /socket.io/?EIO=4&transport=polling&t=OIBcqmS&sid=X0Mh-_oFqXMkk4c9AAA7 HTTP/1.1" 200 -
+INFO | 127.0.0.1 - - [18/Nov/2022 19:38:44] "POST /socket.io/?EIO=4&transport=polling&t=OIBcqmU&sid=-kPP0J4n9CY9SOTBAAA5 HTTP/1.1" 200 -
+INFO | 127.0.0.1 - - [18/Nov/2022 19:38:44] "POST /socket.io/?EIO=4&transport=polling&t=OIBcqrT&sid=UQTLAIzlVHXeEFwYAAA4 HTTP/1.1" 200 -
+INFO | 127.0.0.1 - - [18/Nov/2022 19:38:45] "POST /socket.io/?EIO=4&transport=polling&t=OIBcqrg&sid=x3rQ9zGsBjK6POA-AAA6 HTTP/1.1" 200 -
+INFO | 127.0.0.1 - - [18/Nov/2022 19:39:07] "GET /socket.io/?EIO=4&transport=polling&t=OIBcl2w.0&sid=cni2K7CbOeoEwBhbAABT HTTP/1.1" 200 -
+INFO | 127.0.0.1 - - [18/Nov/2022 19:39:08] "POST /socket.io/?EIO=4&transport=polling&t=OIBcqrh&sid=K9tG9QaflYW6a0HeAAAq HTTP/1.1" 200 -
+INFO | 127.0.0.1 - - [18/Nov/2022 19:39:09] "GET /socket.io/?EIO=4&transport=polling&t=OIBcqmX&sid=esnSM4tokq95LH3KAAA3 HTTP/1.1" 200 -
+INFO | 127.0.0.1 - - [18/Nov/2022 19:39:09] "GET /socket.io/?EIO=4&transport=polling&t=OIBcqmT&sid=X0Mh-_oFqXMkk4c9AAA7 HTTP/1.1" 200 -
+INFO | 127.0.0.1 - - [18/Nov/2022 19:39:09] "GET /socket.io/?EIO=4&transport=polling&t=OIBcqmV&sid=-kPP0J4n9CY9SOTBAAA5 HTTP/1.1" 200 -
+INFO | 127.0.0.1 - - [18/Nov/2022 19:39:10] "GET /socket.io/?EIO=4&transport=polling&t=OIBcqrU&sid=UQTLAIzlVHXeEFwYAAA4 HTTP/1.1" 200 -
+INFO | 127.0.0.1 - - [18/Nov/2022 19:39:10] "[35m[1mGET /socket.io/?EIO=4&transport=polling&t=OIBcqwd.0&sid=EdTeYnaWeSUN6XncAAA9 HTTP/1.1[0m" 500 -
+ERROR | Error on request:
+Traceback (most recent call last):
+  File "D:\MyProject\microerp\env\lib\site-packages\werkzeug\serving.py", line 335, in run_wsgi
+    execute(self.server.app)
+  File "D:\MyProject\microerp\env\lib\site-packages\werkzeug\serving.py", line 322, in execute
+    application_iter = app(environ, start_response)
+  File "D:\MyProject\microerp\env\lib\site-packages\flask\app.py", line 2548, in __call__
+    return self.wsgi_app(environ, start_response)
+  File "D:\MyProject\microerp\env\lib\site-packages\flask_socketio\__init__.py", line 43, in __call__
+    return super(_SocketIOMiddleware, self).__call__(environ,
+  File "D:\MyProject\microerp\env\lib\site-packages\engineio\middleware.py", line 63, in __call__
+    return self.engineio_app.handle_request(environ, start_response)
+  File "D:\MyProject\microerp\env\lib\site-packages\socketio\server.py", line 605, in handle_request
+    return self.eio.handle_request(environ, start_response)
+  File "D:\MyProject\microerp\env\lib\site-packages\engineio\server.py", line 409, in handle_request
+    socket = self._get_socket(sid)
+  File "D:\MyProject\microerp\env\lib\site-packages\engineio\server.py", line 638, in _get_socket
+    raise KeyError('Session is disconnected')
+KeyError: 'Session is disconnected'
+INFO | 127.0.0.1 - - [18/Nov/2022 19:39:10] "[31m[1mPOST /socket.io/?EIO=4&transport=polling&t=OIBcqwd&sid=EdTeYnaWeSUN6XncAAA9 HTTP/1.1[0m" 400 -
+INFO | 127.0.0.1 - - [18/Nov/2022 19:39:10] "POST /socket.io/?EIO=4&transport=polling&t=OIBcq_Y&sid=6nijsDG_4JISt2s3AAA8 HTTP/1.1" 200 -
+INFO | 127.0.0.1 - - [18/Nov/2022 19:39:10] "GET /socket.io/?EIO=4&transport=polling&t=OIBcqrg.0&sid=x3rQ9zGsBjK6POA-AAA6 HTTP/1.1" 200 -
+INFO | 127.0.0.1 - - [18/Nov/2022 19:39:10] "[35m[1mPOST /socket.io/?EIO=4&transport=polling&t=OIBcq_a&sid=zFu0b81K_QSPYvM5AAA- HTTP/1.1[0m" 500 -
+ERROR | Error on request:
+Traceback (most recent call last):
+  File "D:\MyProject\microerp\env\lib\site-packages\werkzeug\serving.py", line 335, in run_wsgi
+    execute(self.server.app)
+  File "D:\MyProject\microerp\env\lib\site-packages\werkzeug\serving.py", line 322, in execute
+    application_iter = app(environ, start_response)
+  File "D:\MyProject\microerp\env\lib\site-packages\flask\app.py", line 2548, in __call__
+    return self.wsgi_app(environ, start_response)
+  File "D:\MyProject\microerp\env\lib\site-packages\flask_socketio\__init__.py", line 43, in __call__
+    return super(_SocketIOMiddleware, self).__call__(environ,
+  File "D:\MyProject\microerp\env\lib\site-packages\engineio\middleware.py", line 63, in __call__
+    return self.engineio_app.handle_request(environ, start_response)
+  File "D:\MyProject\microerp\env\lib\site-packages\socketio\server.py", line 605, in handle_request
+    return self.eio.handle_request(environ, start_response)
+  File "D:\MyProject\microerp\env\lib\site-packages\engineio\server.py", line 429, in handle_request
+    socket = self._get_socket(sid)
+  File "D:\MyProject\microerp\env\lib\site-packages\engineio\server.py", line 638, in _get_socket
+    raise KeyError('Session is disconnected')
+KeyError: 'Session is disconnected'
+INFO | 127.0.0.1 - - [18/Nov/2022 19:39:10] "[31m[1mGET /socket.io/?EIO=4&transport=polling&t=OIBcq_a.0&sid=zFu0b81K_QSPYvM5AAA- HTTP/1.1[0m" 400 -
+INFO | 127.0.0.1 - - [18/Nov/2022 19:39:10] "[35m[1mPOST /socket.io/?EIO=4&transport=polling&t=OIBcq_c&sid=VeLfausvhld6miaiAAA_ HTTP/1.1[0m" 500 -
+ERROR | Error on request:
+Traceback (most recent call last):
+  File "D:\MyProject\microerp\env\lib\site-packages\werkzeug\serving.py", line 335, in run_wsgi
+    execute(self.server.app)
+  File "D:\MyProject\microerp\env\lib\site-packages\werkzeug\serving.py", line 322, in execute
+    application_iter = app(environ, start_response)
+  File "D:\MyProject\microerp\env\lib\site-packages\flask\app.py", line 2548, in __call__
+    return self.wsgi_app(environ, start_response)
+  File "D:\MyProject\microerp\env\lib\site-packages\flask_socketio\__init__.py", line 43, in __call__
+    return super(_SocketIOMiddleware, self).__call__(environ,
+  File "D:\MyProject\microerp\env\lib\site-packages\engineio\middleware.py", line 63, in __call__
+    return self.engineio_app.handle_request(environ, start_response)
+  File "D:\MyProject\microerp\env\lib\site-packages\socketio\server.py", line 605, in handle_request
+    return self.eio.handle_request(environ, start_response)
+  File "D:\MyProject\microerp\env\lib\site-packages\engineio\server.py", line 429, in handle_request
+    socket = self._get_socket(sid)
+  File "D:\MyProject\microerp\env\lib\site-packages\engineio\server.py", line 638, in _get_socket
+    raise KeyError('Session is disconnected')
+KeyError: 'Session is disconnected'
+INFO | 127.0.0.1 - - [18/Nov/2022 19:39:10] "[31m[1mGET /socket.io/?EIO=4&transport=polling&t=OIBcq_d&sid=VeLfausvhld6miaiAAA_ HTTP/1.1[0m" 400 -
+INFO | 127.0.0.1 - - [18/Nov/2022 19:39:10] "POST /socket.io/?EIO=4&transport=polling&t=OIBcr4V&sid=_kmWxZ0SZp6lXGAyAAA2 HTTP/1.1" 200 -
+INFO | 127.0.0.1 - - [18/Nov/2022 19:39:10] "[35m[1mPOST /socket.io/?EIO=4&transport=polling&t=OIBcr4d&sid=YCR62sszp_J9s1rCAABB HTTP/1.1[0m" 500 -
+ERROR | Error on request:
+Traceback (most recent call last):
+  File "D:\MyProject\microerp\env\lib\site-packages\werkzeug\serving.py", line 335, in run_wsgi
+    execute(self.server.app)
+  File "D:\MyProject\microerp\env\lib\site-packages\werkzeug\serving.py", line 322, in execute
+    application_iter = app(environ, start_response)
+  File "D:\MyProject\microerp\env\lib\site-packages\flask\app.py", line 2548, in __call__
+    return self.wsgi_app(environ, start_response)
+  File "D:\MyProject\microerp\env\lib\site-packages\flask_socketio\__init__.py", line 43, in __call__
+    return super(_SocketIOMiddleware, self).__call__(environ,
+  File "D:\MyProject\microerp\env\lib\site-packages\engineio\middleware.py", line 63, in __call__
+    return self.engineio_app.handle_request(environ, start_response)
+  File "D:\MyProject\microerp\env\lib\site-packages\socketio\server.py", line 605, in handle_request
+    return self.eio.handle_request(environ, start_response)
+  File "D:\MyProject\microerp\env\lib\site-packages\engineio\server.py", line 429, in handle_request
+    socket = self._get_socket(sid)
+  File "D:\MyProject\microerp\env\lib\site-packages\engineio\server.py", line 638, in _get_socket
+    raise KeyError('Session is disconnected')
+KeyError: 'Session is disconnected'
+INFO | 127.0.0.1 - - [18/Nov/2022 19:39:10] "[31m[1mGET /socket.io/?EIO=4&transport=polling&t=OIBcr4d.0&sid=YCR62sszp_J9s1rCAABB HTTP/1.1[0m" 400 -
+INFO | 127.0.0.1 - - [18/Nov/2022 19:39:10] "[35m[1mGET /socket.io/?EIO=4&transport=polling&t=OIBcr4f&sid=jUbRo1Yhp9kM8HBtAABA HTTP/1.1[0m" 500 -
+INFO | 127.0.0.1 - - [18/Nov/2022 19:39:10] "[31m[1mPOST /socket.io/?EIO=4&transport=polling&t=OIBcr4e&sid=jUbRo1Yhp9kM8HBtAABA HTTP/1.1[0m" 400 -
+ERROR | Error on request:
+Traceback (most recent call last):
+  File "D:\MyProject\microerp\env\lib\site-packages\werkzeug\serving.py", line 335, in run_wsgi
+    execute(self.server.app)
+  File "D:\MyProject\microerp\env\lib\site-packages\werkzeug\serving.py", line 322, in execute
+    application_iter = app(environ, start_response)
+  File "D:\MyProject\microerp\env\lib\site-packages\flask\app.py", line 2548, in __call__
+    return self.wsgi_app(environ, start_response)
+  File "D:\MyProject\microerp\env\lib\site-packages\flask_socketio\__init__.py", line 43, in __call__
+    return super(_SocketIOMiddleware, self).__call__(environ,
+  File "D:\MyProject\microerp\env\lib\site-packages\engineio\middleware.py", line 63, in __call__
+    return self.engineio_app.handle_request(environ, start_response)
+  File "D:\MyProject\microerp\env\lib\site-packages\socketio\server.py", line 605, in handle_request
+    return self.eio.handle_request(environ, start_response)
+  File "D:\MyProject\microerp\env\lib\site-packages\engineio\server.py", line 409, in handle_request
+    socket = self._get_socket(sid)
+  File "D:\MyProject\microerp\env\lib\site-packages\engineio\server.py", line 638, in _get_socket
+    raise KeyError('Session is disconnected')
+KeyError: 'Session is disconnected'
+INFO | 127.0.0.1 - - [18/Nov/2022 19:39:11] "[35m[1mPOST /socket.io/?EIO=4&transport=polling&t=OIBcr9d&sid=wxnliUuw4lOsgm8wAABE HTTP/1.1[0m" 500 -
+ERROR | Error on request:
+Traceback (most recent call last):
+  File "D:\MyProject\microerp\env\lib\site-packages\werkzeug\serving.py", line 335, in run_wsgi
+    execute(self.server.app)
+  File "D:\MyProject\microerp\env\lib\site-packages\werkzeug\serving.py", line 322, in execute
+    application_iter = app(environ, start_response)
+  File "D:\MyProject\microerp\env\lib\site-packages\flask\app.py", line 2548, in __call__
+    return self.wsgi_app(environ, start_response)
+  File "D:\MyProject\microerp\env\lib\site-packages\flask_socketio\__init__.py", line 43, in __call__
+    return super(_SocketIOMiddleware, self).__call__(environ,
+  File "D:\MyProject\microerp\env\lib\site-packages\engineio\middleware.py", line 63, in __call__
+    return self.engineio_app.handle_request(environ, start_response)
+  File "D:\MyProject\microerp\env\lib\site-packages\socketio\server.py", line 605, in handle_request
+    return self.eio.handle_request(environ, start_response)
+  File "D:\MyProject\microerp\env\lib\site-packages\engineio\server.py", line 429, in handle_request
+    socket = self._get_socket(sid)
+  File "D:\MyProject\microerp\env\lib\site-packages\engineio\server.py", line 638, in _get_socket
+    raise KeyError('Session is disconnected')
+KeyError: 'Session is disconnected'
+INFO | 127.0.0.1 - - [18/Nov/2022 19:39:11] "[31m[1mGET /socket.io/?EIO=4&transport=polling&t=OIBcr9d.0&sid=wxnliUuw4lOsgm8wAABE HTTP/1.1[0m" 400 -
+INFO | 127.0.0.1 - - [18/Nov/2022 19:39:11] "[35m[1mPOST /socket.io/?EIO=4&transport=polling&t=OIBcr9e&sid=GeBxLf8LM--Xu9JRAABF HTTP/1.1[0m" 500 -
+ERROR | Error on request:
+Traceback (most recent call last):
+  File "D:\MyProject\microerp\env\lib\site-packages\werkzeug\serving.py", line 335, in run_wsgi
+    execute(self.server.app)
+  File "D:\MyProject\microerp\env\lib\site-packages\werkzeug\serving.py", line 322, in execute
+    application_iter = app(environ, start_response)
+  File "D:\MyProject\microerp\env\lib\site-packages\flask\app.py", line 2548, in __call__
+    return self.wsgi_app(environ, start_response)
+  File "D:\MyProject\microerp\env\lib\site-packages\flask_socketio\__init__.py", line 43, in __call__
+    return super(_SocketIOMiddleware, self).__call__(environ,
+  File "D:\MyProject\microerp\env\lib\site-packages\engineio\middleware.py", line 63, in __call__
+    return self.engineio_app.handle_request(environ, start_response)
+  File "D:\MyProject\microerp\env\lib\site-packages\socketio\server.py", line 605, in handle_request
+    return self.eio.handle_request(environ, start_response)
+  File "D:\MyProject\microerp\env\lib\site-packages\engineio\server.py", line 429, in handle_request
+    socket = self._get_socket(sid)
+  File "D:\MyProject\microerp\env\lib\site-packages\engineio\server.py", line 638, in _get_socket
+    raise KeyError('Session is disconnected')
+KeyError: 'Session is disconnected'
+INFO | 127.0.0.1 - - [18/Nov/2022 19:39:11] "[31m[1mGET /socket.io/?EIO=4&transport=polling&t=OIBcr9f&sid=GeBxLf8LM--Xu9JRAABF HTTP/1.1[0m" 400 -
+INFO | 127.0.0.1 - - [18/Nov/2022 19:39:11] "[35m[1mGET /socket.io/?EIO=4&transport=polling&t=OIBcrEV&sid=M5Nzs9GVVrNPA6c9AABY HTTP/1.1[0m" 500 -
+ERROR | Error on request:
+Traceback (most recent call last):
+  File "D:\MyProject\microerp\env\lib\site-packages\werkzeug\serving.py", line 335, in run_wsgi
+    execute(self.server.app)
+  File "D:\MyProject\microerp\env\lib\site-packages\werkzeug\serving.py", line 322, in execute
+    application_iter = app(environ, start_response)
+  File "D:\MyProject\microerp\env\lib\site-packages\flask\app.py", line 2548, in __call__
+    return self.wsgi_app(environ, start_response)
+  File "D:\MyProject\microerp\env\lib\site-packages\flask_socketio\__init__.py", line 43, in __call__
+    return super(_SocketIOMiddleware, self).__call__(environ,
+  File "D:\MyProject\microerp\env\lib\site-packages\engineio\middleware.py", line 63, in __call__
+    return self.engineio_app.handle_request(environ, start_response)
+  File "D:\MyProject\microerp\env\lib\site-packages\socketio\server.py", line 605, in handle_request
+    return self.eio.handle_request(environ, start_response)
+  File "D:\MyProject\microerp\env\lib\site-packages\engineio\server.py", line 409, in handle_request
+    socket = self._get_socket(sid)
+  File "D:\MyProject\microerp\env\lib\site-packages\engineio\server.py", line 638, in _get_socket
+    raise KeyError('Session is disconnected')
+KeyError: 'Session is disconnected'
+INFO | 127.0.0.1 - - [18/Nov/2022 19:39:11] "[31m[1mPOST /socket.io/?EIO=4&transport=polling&t=OIBcrEU&sid=M5Nzs9GVVrNPA6c9AABY HTTP/1.1[0m" 400 -
+INFO | 127.0.0.1 - - [18/Nov/2022 19:39:11] "[35m[1mGET /socket.io/?EIO=4&transport=polling&t=OIBcrEW&sid=-eRgUFZZxelcqAowAABZ HTTP/1.1[0m" 500 -
+ERROR | Error on request:
+Traceback (most recent call last):
+  File "D:\MyProject\microerp\env\lib\site-packages\werkzeug\serving.py", line 335, in run_wsgi
+    execute(self.server.app)
+  File "D:\MyProject\microerp\env\lib\site-packages\werkzeug\serving.py", line 322, in execute
+    application_iter = app(environ, start_response)
+  File "D:\MyProject\microerp\env\lib\site-packages\flask\app.py", line 2548, in __call__
+    return self.wsgi_app(environ, start_response)
+  File "D:\MyProject\microerp\env\lib\site-packages\flask_socketio\__init__.py", line 43, in __call__
+    return super(_SocketIOMiddleware, self).__call__(environ,
+  File "D:\MyProject\microerp\env\lib\site-packages\engineio\middleware.py", line 63, in __call__
+    return self.engineio_app.handle_request(environ, start_response)
+  File "D:\MyProject\microerp\env\lib\site-packages\socketio\server.py", line 605, in handle_request
+    return self.eio.handle_request(environ, start_response)
+  File "D:\MyProject\microerp\env\lib\site-packages\engineio\server.py", line 409, in handle_request
+    socket = self._get_socket(sid)
+  File "D:\MyProject\microerp\env\lib\site-packages\engineio\server.py", line 638, in _get_socket
+    raise KeyError('Session is disconnected')
+KeyError: 'Session is disconnected'
+INFO | 127.0.0.1 - - [18/Nov/2022 19:39:11] "[35m[1mPOST /socket.io/?EIO=4&transport=polling&t=OIBcrEf&sid=cxKu2yksZS9-AJ-oAABC HTTP/1.1[0m" 500 -
+ERROR | Error on request:
+Traceback (most recent call last):
+  File "D:\MyProject\microerp\env\lib\site-packages\werkzeug\serving.py", line 335, in run_wsgi
+    execute(self.server.app)
+  File "D:\MyProject\microerp\env\lib\site-packages\werkzeug\serving.py", line 322, in execute
+    application_iter = app(environ, start_response)
+  File "D:\MyProject\microerp\env\lib\site-packages\flask\app.py", line 2548, in __call__
+    return self.wsgi_app(environ, start_response)
+  File "D:\MyProject\microerp\env\lib\site-packages\flask_socketio\__init__.py", line 43, in __call__
+    return super(_SocketIOMiddleware, self).__call__(environ,
+  File "D:\MyProject\microerp\env\lib\site-packages\engineio\middleware.py", line 63, in __call__
+    return self.engineio_app.handle_request(environ, start_response)
+  File "D:\MyProject\microerp\env\lib\site-packages\socketio\server.py", line 605, in handle_request
+    return self.eio.handle_request(environ, start_response)
+  File "D:\MyProject\microerp\env\lib\site-packages\engineio\server.py", line 429, in handle_request
+    socket = self._get_socket(sid)
+  File "D:\MyProject\microerp\env\lib\site-packages\engineio\server.py", line 638, in _get_socket
+    raise KeyError('Session is disconnected')
+KeyError: 'Session is disconnected'
+INFO | 127.0.0.1 - - [18/Nov/2022 19:39:11] "[31m[1mGET /socket.io/?EIO=4&transport=polling&t=OIBcrEf.0&sid=cxKu2yksZS9-AJ-oAABC HTTP/1.1[0m" 400 -
+INFO | 127.0.0.1 - - [18/Nov/2022 19:39:12] "[35m[1mGET /socket.io/?EIO=4&transport=polling&t=OIBcrJX&sid=gS9aC_KRI5wi3qgEAABb HTTP/1.1[0m" 500 -
+INFO | 127.0.0.1 - - [18/Nov/2022 19:39:12] "[35m[1mGET /socket.io/?EIO=4&transport=polling&t=OIBcrEh&sid=sAfan21KvKY2atKtAABD HTTP/1.1[0m" 500 -
+ERROR | Error on request:
+Traceback (most recent call last):
+  File "D:\MyProject\microerp\env\lib\site-packages\werkzeug\serving.py", line 335, in run_wsgi
+    execute(self.server.app)
+  File "D:\MyProject\microerp\env\lib\site-packages\werkzeug\serving.py", line 322, in execute
+    application_iter = app(environ, start_response)
+  File "D:\MyProject\microerp\env\lib\site-packages\flask\app.py", line 2548, in __call__
+    return self.wsgi_app(environ, start_response)
+  File "D:\MyProject\microerp\env\lib\site-packages\flask_socketio\__init__.py", line 43, in __call__
+    return super(_SocketIOMiddleware, self).__call__(environ,
+  File "D:\MyProject\microerp\env\lib\site-packages\engineio\middleware.py", line 63, in __call__
+    return self.engineio_app.handle_request(environ, start_response)
+  File "D:\MyProject\microerp\env\lib\site-packages\socketio\server.py", line 605, in handle_request
+    return self.eio.handle_request(environ, start_response)
+  File "D:\MyProject\microerp\env\lib\site-packages\engineio\server.py", line 409, in handle_request
+    socket = self._get_socket(sid)
+  File "D:\MyProject\microerp\env\lib\site-packages\engineio\server.py", line 638, in _get_socket
+    raise KeyError('Session is disconnected')
+KeyError: 'Session is disconnected'
+ERROR | Error on request:
+Traceback (most recent call last):
+  File "D:\MyProject\microerp\env\lib\site-packages\werkzeug\serving.py", line 335, in run_wsgi
+    execute(self.server.app)
+  File "D:\MyProject\microerp\env\lib\site-packages\werkzeug\serving.py", line 322, in execute
+    application_iter = app(environ, start_response)
+  File "D:\MyProject\microerp\env\lib\site-packages\flask\app.py", line 2548, in __call__
+    return self.wsgi_app(environ, start_response)
+  File "D:\MyProject\microerp\env\lib\site-packages\flask_socketio\__init__.py", line 43, in __call__
+    return super(_SocketIOMiddleware, self).__call__(environ,
+  File "D:\MyProject\microerp\env\lib\site-packages\engineio\middleware.py", line 63, in __call__
+    return self.engineio_app.handle_request(environ, start_response)
+  File "D:\MyProject\microerp\env\lib\site-packages\socketio\server.py", line 605, in handle_request
+    return self.eio.handle_request(environ, start_response)
+  File "D:\MyProject\microerp\env\lib\site-packages\engineio\server.py", line 409, in handle_request
+    socket = self._get_socket(sid)
+  File "D:\MyProject\microerp\env\lib\site-packages\engineio\server.py", line 638, in _get_socket
+    raise KeyError('Session is disconnected')
+KeyError: 'Session is disconnected'
+INFO | 127.0.0.1 - - [18/Nov/2022 19:39:12] "[31m[1mPOST /socket.io/?EIO=4&transport=polling&t=OIBcrEg&sid=sAfan21KvKY2atKtAABD HTTP/1.1[0m" 400 -
+INFO | 127.0.0.1 - - [18/Nov/2022 19:39:12] "[35m[1mGET /socket.io/?EIO=4&transport=polling&t=OIBcrJc&sid=_Vw6627YZ3AMIhHqAABd HTTP/1.1[0m" 500 -
+INFO | 127.0.0.1 - - [18/Nov/2022 19:39:12] "[35m[1mGET /socket.io/?EIO=4&transport=polling&t=OIBcrJb&sid=7zP9AHdDx5PDCCsFAABc HTTP/1.1[0m" 500 -
+ERROR | Error on request:
+Traceback (most recent call last):
+  File "D:\MyProject\microerp\env\lib\site-packages\werkzeug\serving.py", line 335, in run_wsgi
+    execute(self.server.app)
+  File "D:\MyProject\microerp\env\lib\site-packages\werkzeug\serving.py", line 322, in execute
+    application_iter = app(environ, start_response)
+  File "D:\MyProject\microerp\env\lib\site-packages\flask\app.py", line 2548, in __call__
+    return self.wsgi_app(environ, start_response)
+  File "D:\MyProject\microerp\env\lib\site-packages\flask_socketio\__init__.py", line 43, in __call__
+    return super(_SocketIOMiddleware, self).__call__(environ,
+  File "D:\MyProject\microerp\env\lib\site-packages\engineio\middleware.py", line 63, in __call__
+    return self.engineio_app.handle_request(environ, start_response)
+  File "D:\MyProject\microerp\env\lib\site-packages\socketio\server.py", line 605, in handle_request
+    return self.eio.handle_request(environ, start_response)
+  File "D:\MyProject\microerp\env\lib\site-packages\engineio\server.py", line 409, in handle_request
+    socket = self._get_socket(sid)
+  File "D:\MyProject\microerp\env\lib\site-packages\engineio\server.py", line 638, in _get_socket
+    raise KeyError('Session is disconnected')
+KeyError: 'Session is disconnected'
+ERROR | Error on request:
+Traceback (most recent call last):
+  File "D:\MyProject\microerp\env\lib\site-packages\werkzeug\serving.py", line 335, in run_wsgi
+    execute(self.server.app)
+  File "D:\MyProject\microerp\env\lib\site-packages\werkzeug\serving.py", line 322, in execute
+    application_iter = app(environ, start_response)
+  File "D:\MyProject\microerp\env\lib\site-packages\flask\app.py", line 2548, in __call__
+    return self.wsgi_app(environ, start_response)
+  File "D:\MyProject\microerp\env\lib\site-packages\flask_socketio\__init__.py", line 43, in __call__
+    return super(_SocketIOMiddleware, self).__call__(environ,
+  File "D:\MyProject\microerp\env\lib\site-packages\engineio\middleware.py", line 63, in __call__
+    return self.engineio_app.handle_request(environ, start_response)
+  File "D:\MyProject\microerp\env\lib\site-packages\socketio\server.py", line 605, in handle_request
+    return self.eio.handle_request(environ, start_response)
+  File "D:\MyProject\microerp\env\lib\site-packages\engineio\server.py", line 409, in handle_request
+    socket = self._get_socket(sid)
+  File "D:\MyProject\microerp\env\lib\site-packages\engineio\server.py", line 638, in _get_socket
+    raise KeyError('Session is disconnected')
+KeyError: 'Session is disconnected'
+INFO | 127.0.0.1 - - [18/Nov/2022 19:39:12] "[31m[1mPOST /socket.io/?EIO=4&transport=polling&t=OIBcrJd&sid=_Vw6627YZ3AMIhHqAABd HTTP/1.1[0m" 400 -
+INFO | 127.0.0.1 - - [18/Nov/2022 19:39:12] "GET /socket.io/?EIO=4&transport=polling&t=OIBcrOd&sid=MGKCeqJ2S8-0qvMTAABk HTTP/1.1" 200 -
+INFO | 127.0.0.1 - - [18/Nov/2022 19:39:12] "POST /socket.io/?EIO=4&transport=polling&t=OIBcrOc&sid=MGKCeqJ2S8-0qvMTAABk HTTP/1.1" 200 -
+INFO | 127.0.0.1 - - [18/Nov/2022 19:39:12] "POST /socket.io/?EIO=4&transport=polling&t=OIBcrT_&sid=Q6tooJAp56ytJ9ifAABp HTTP/1.1" 200 -
+INFO | 127.0.0.1 - - [18/Nov/2022 19:39:13] "GET /socket.io/?EIO=4&transport=polling&t=OIBcrU0&sid=Q6tooJAp56ytJ9ifAABp HTTP/1.1" 200 -
+INFO | 127.0.0.1 - - [18/Nov/2022 19:39:13] "GET /socket.io/?EIO=4&transport=polling&t=OIBcrU2.0&sid=2hqnpAY-Hy8-sEYbAABo HTTP/1.1" 200 -
+INFO | 127.0.0.1 - - [18/Nov/2022 19:39:13] "POST /socket.io/?EIO=4&transport=polling&t=OIBcrU2&sid=2hqnpAY-Hy8-sEYbAABo HTTP/1.1" 200 -
+INFO | 127.0.0.1 - - [18/Nov/2022 19:39:13] "GET /socket.io/?EIO=4&transport=polling&t=OIBcrU4.0&sid=zJQ-Trrufh1cm-bIAABn HTTP/1.1" 200 -
+INFO | 127.0.0.1 - - [18/Nov/2022 19:39:13] "POST /socket.io/?EIO=4&transport=polling&t=OIBcrU4&sid=zJQ-Trrufh1cm-bIAABn HTTP/1.1" 200 -
+INFO | 127.0.0.1 - - [18/Nov/2022 19:39:13] "POST /socket.io/?EIO=4&transport=polling&t=OIBcrU5&sid=fpN_lYLfrw9CCujIAABm HTTP/1.1" 200 -
+INFO | 127.0.0.1 - - [18/Nov/2022 19:39:13] "GET /socket.io/?EIO=4&transport=polling&t=OIBcrU8&sid=p_LT9LBN7cRHTvtaAABl HTTP/1.1" 200 -
+INFO | 127.0.0.1 - - [18/Nov/2022 19:39:13] "GET /socket.io/?EIO=4&transport=polling&t=OIBcrU6&sid=fpN_lYLfrw9CCujIAABm HTTP/1.1" 200 -
+INFO | 127.0.0.1 - - [18/Nov/2022 19:39:13] "POST /socket.io/?EIO=4&transport=polling&t=OIBcrU7&sid=p_LT9LBN7cRHTvtaAABl HTTP/1.1" 200 -
+INFO | 127.0.0.1 - - [18/Nov/2022 19:39:14] "[31m[1mPOST /socket.io/?EIO=4&transport=polling&t=OIBcwHI&sid=gS9aC_KRI5wi3qgEAABb HTTP/1.1[0m" 400 -
+INFO | 127.0.0.1 - - [18/Nov/2022 19:39:14] "POST /socket.io/?EIO=4&transport=polling&t=OIBcw2A&sid=cni2K7CbOeoEwBhbAABT HTTP/1.1" 200 -
+INFO | 127.0.0.1 - - [18/Nov/2022 19:39:14] "[31m[1mPOST /socket.io/?EIO=4&transport=polling&t=OIBcwCE&sid=-eRgUFZZxelcqAowAABZ HTTP/1.1[0m" 400 -
+INFO | 127.0.0.1 - - [18/Nov/2022 19:39:14] "GET /socket.io/?EIO=4&transport=polling&t=OIBcwJi HTTP/1.1" 200 -
+INFO | 127.0.0.1 - - [18/Nov/2022 19:39:14] "[31m[1mPOST /socket.io/?EIO=4&transport=polling&t=OIBcwRO&sid=_Vw6627YZ3AMIhHqAABd HTTP/1.1[0m" 400 -
+INFO | 127.0.0.1 - - [18/Nov/2022 19:39:14] "[31m[1mPOST /socket.io/?EIO=4&transport=polling&t=OIBcwMM&sid=7zP9AHdDx5PDCCsFAABc HTTP/1.1[0m" 400 -
+INFO | 127.0.0.1 - - [18/Nov/2022 19:39:14] "GET /socket.io/?EIO=4&transport=polling&t=OIBcwWR HTTP/1.1" 200 -
+INFO | 127.0.0.1 - - [18/Nov/2022 19:39:14] "GET /socket.io/?EIO=4&transport=polling&t=OIBcwZp HTTP/1.1" 200 -
+INFO | 127.0.0.1 - - [18/Nov/2022 19:39:14] "GET /socket.io/?EIO=4&transport=polling&t=OIBcwbz HTTP/1.1" 200 -
+INFO | 127.0.0.1 - - [18/Nov/2022 19:39:15] "GET /socket.io/?EIO=4&transport=polling&t=OIBcwdA HTTP/1.1" 200 -
+INFO | 127.0.0.1 - - [18/Nov/2022 19:39:15] "POST /socket.io/?EIO=4&transport=polling&t=OIBcxgT&sid=-kPP0J4n9CY9SOTBAAA5 HTTP/1.1" 200 -
+INFO | 127.0.0.1 - - [18/Nov/2022 19:39:15] "POST /socket.io/?EIO=4&transport=polling&t=OIBcxgU&sid=esnSM4tokq95LH3KAAA3 HTTP/1.1" 200 -
+INFO | 127.0.0.1 - - [18/Nov/2022 19:39:15] "POST /socket.io/?EIO=4&transport=polling&t=OIBcxgW&sid=X0Mh-_oFqXMkk4c9AAA7 HTTP/1.1" 200 -
+INFO | 127.0.0.1 - - [18/Nov/2022 19:39:33] "GET /socket.io/?EIO=4&transport=polling&t=OIBcqri&sid=K9tG9QaflYW6a0HeAAAq HTTP/1.1" 200 -
+INFO | 127.0.0.1 - - [18/Nov/2022 19:39:33] "POST /socket.io/?EIO=4&transport=polling&t=OIBcxkv&sid=UQTLAIzlVHXeEFwYAAA4 HTTP/1.1" 200 -
+INFO | 127.0.0.1 - - [18/Nov/2022 19:39:35] "GET /socket.io/?EIO=4&transport=polling&t=OIBcq_Y.0&sid=6nijsDG_4JISt2s3AAA8 HTTP/1.1" 200 -
+INFO | 127.0.0.1 - - [18/Nov/2022 19:39:35] "[31m[1mPOST /socket.io/?EIO=4&transport=polling&t=OIBcxk_&sid=EdTeYnaWeSUN6XncAAA9 HTTP/1.1[0m" 400 -
+INFO | 127.0.0.1 - - [18/Nov/2022 19:39:35] "GET /socket.io/?EIO=4&transport=polling&t=OIBcr4V.0&sid=_kmWxZ0SZp6lXGAyAAA2 HTTP/1.1" 200 -
+INFO | 127.0.0.1 - - [18/Nov/2022 19:39:35] "POST /socket.io/?EIO=4&transport=polling&t=OIBcxpe&sid=x3rQ9zGsBjK6POA-AAA6 HTTP/1.1" 200 -
+INFO | 127.0.0.1 - - [18/Nov/2022 19:39:35] "[31m[1mPOST /socket.io/?EIO=4&transport=polling&t=OIBcxpu&sid=zFu0b81K_QSPYvM5AAA- HTTP/1.1[0m" 400 -
+INFO | 127.0.0.1 - - [18/Nov/2022 19:39:36] "[31m[1mPOST /socket.io/?EIO=4&transport=polling&t=OIBcxq1&sid=VeLfausvhld6miaiAAA_ HTTP/1.1[0m" 400 -
+INFO | 127.0.0.1 - - [18/Nov/2022 19:39:36] "[31m[1mPOST /socket.io/?EIO=4&transport=polling&t=OIBcxu-&sid=YCR62sszp_J9s1rCAABB HTTP/1.1[0m" 400 -
+INFO | 127.0.0.1 - - [18/Nov/2022 19:39:36] "[31m[1mPOST /socket.io/?EIO=4&transport=polling&t=OIBcxzo&sid=jUbRo1Yhp9kM8HBtAABA HTTP/1.1[0m" 400 -
+INFO | 127.0.0.1 - - [18/Nov/2022 19:39:37] "GET /socket.io/?EIO=4&transport=polling&t=OIBcx-M HTTP/1.1" 200 -
+INFO | 127.0.0.1 - - [18/Nov/2022 19:39:37] "GET /socket.io/?EIO=4&transport=polling&t=OIBcy1z HTTP/1.1" 200 -
+INFO | 127.0.0.1 - - [18/Nov/2022 19:39:37] "[31m[1mPOST /socket.io/?EIO=4&transport=polling&t=OIBcy2e&sid=wxnliUuw4lOsgm8wAABE HTTP/1.1[0m" 400 -
+INFO | 127.0.0.1 - - [18/Nov/2022 19:39:38] "[31m[1mPOST /socket.io/?EIO=4&transport=polling&t=OIBcy2q&sid=GeBxLf8LM--Xu9JRAABF HTTP/1.1[0m" 400 -
+INFO | 127.0.0.1 - - [18/Nov/2022 19:39:38] "[31m[1mPOST /socket.io/?EIO=4&transport=polling&t=OIBcy7g&sid=M5Nzs9GVVrNPA6c9AABY HTTP/1.1[0m" 400 -
+INFO | 127.0.0.1 - - [18/Nov/2022 19:39:38] "GET /socket.io/?EIO=4&transport=polling&t=OIBcy9u HTTP/1.1" 200 -
+INFO | 127.0.0.1 - - [18/Nov/2022 19:39:39] "GET /socket.io/?EIO=4&transport=polling&t=OIBcyA7 HTTP/1.1" 200 -
+INFO | 127.0.0.1 - - [18/Nov/2022 19:39:39] "[31m[1mPOST /socket.io/?EIO=4&transport=polling&t=OIBcyCZ&sid=cxKu2yksZS9-AJ-oAABC HTTP/1.1[0m" 400 -
+INFO | 127.0.0.1 - - [18/Nov/2022 19:39:39] "[31m[1mPOST /socket.io/?EIO=4&transport=polling&t=OIBcyHT&sid=sAfan21KvKY2atKtAABD HTTP/1.1[0m" 400 -
+INFO | 127.0.0.1 - - [18/Nov/2022 19:39:40] "GET /socket.io/?EIO=4&transport=polling&t=OIBcxgT.0&sid=-kPP0J4n9CY9SOTBAAA5 HTTP/1.1" 200 -
+INFO | 127.0.0.1 - - [18/Nov/2022 19:39:40] "GET /socket.io/?EIO=4&transport=polling&t=OIBcyII HTTP/1.1" 200 -
+INFO | 127.0.0.1 - - [18/Nov/2022 19:39:40] "GET /socket.io/?EIO=4&transport=polling&t=OIBcxgU.0&sid=esnSM4tokq95LH3KAAA3 HTTP/1.1" 200 -
+INFO | 127.0.0.1 - - [18/Nov/2022 19:39:40] "GET /socket.io/?EIO=4&transport=polling&t=OIBcyIJ HTTP/1.1" 200 -
+INFO | 127.0.0.1 - - [18/Nov/2022 19:39:40] "GET /socket.io/?EIO=4&transport=polling&t=OIBcyIK HTTP/1.1" 200 -
+INFO | 127.0.0.1 - - [18/Nov/2022 19:39:40] "GET /socket.io/?EIO=4&transport=polling&t=OIBcyO3 HTTP/1.1" 200 -
+INFO | 127.0.0.1 - - [18/Nov/2022 19:39:40] "GET /socket.io/?EIO=4&transport=polling&t=OIBcyLf HTTP/1.1" 200 -
+INFO | 127.0.0.1 - - [18/Nov/2022 19:39:40] "GET /socket.io/?EIO=4&transport=polling&t=OIBcxgW.0&sid=X0Mh-_oFqXMkk4c9AAA7 HTTP/1.1" 200 -
+INFO | 127.0.0.1 - - [18/Nov/2022 19:39:40] "[35m[1mGET /socket.io/?EIO=4&transport=polling&t=OIBcyRo&sid=MGKCeqJ2S8-0qvMTAABk HTTP/1.1[0m" 500 -
+ERROR | Error on request:
+Traceback (most recent call last):
+  File "D:\MyProject\microerp\env\lib\site-packages\werkzeug\serving.py", line 335, in run_wsgi
+    execute(self.server.app)
+  File "D:\MyProject\microerp\env\lib\site-packages\werkzeug\serving.py", line 322, in execute
+    application_iter = app(environ, start_response)
+  File "D:\MyProject\microerp\env\lib\site-packages\flask\app.py", line 2548, in __call__
+    return self.wsgi_app(environ, start_response)
+  File "D:\MyProject\microerp\env\lib\site-packages\flask_socketio\__init__.py", line 43, in __call__
+    return super(_SocketIOMiddleware, self).__call__(environ,
+  File "D:\MyProject\microerp\env\lib\site-packages\engineio\middleware.py", line 63, in __call__
+    return self.engineio_app.handle_request(environ, start_response)
+  File "D:\MyProject\microerp\env\lib\site-packages\socketio\server.py", line 605, in handle_request
+    return self.eio.handle_request(environ, start_response)
+  File "D:\MyProject\microerp\env\lib\site-packages\engineio\server.py", line 409, in handle_request
+    socket = self._get_socket(sid)
+  File "D:\MyProject\microerp\env\lib\site-packages\engineio\server.py", line 638, in _get_socket
+    raise KeyError('Session is disconnected')
+KeyError: 'Session is disconnected'
+INFO | 127.0.0.1 - - [18/Nov/2022 19:39:41] "GET /socket.io/?EIO=4&transport=polling&t=OIBcyV1 HTTP/1.1" 200 -
+INFO | 127.0.0.1 - - [18/Nov/2022 19:39:41] "[35m[1mPOST /socket.io/?EIO=4&transport=polling&t=OIBcyWt&sid=Q6tooJAp56ytJ9ifAABp HTTP/1.1[0m" 500 -
+INFO | 127.0.0.1 - - [18/Nov/2022 19:39:41] "[31m[1mPOST /socket.io/?EIO=4&transport=polling&t=OIBcyR-&sid=MGKCeqJ2S8-0qvMTAABk HTTP/1.1[0m" 400 -
+ERROR | Error on request:
+Traceback (most recent call last):
+  File "D:\MyProject\microerp\env\lib\site-packages\werkzeug\serving.py", line 335, in run_wsgi
+    execute(self.server.app)
+  File "D:\MyProject\microerp\env\lib\site-packages\werkzeug\serving.py", line 322, in execute
+    application_iter = app(environ, start_response)
+  File "D:\MyProject\microerp\env\lib\site-packages\flask\app.py", line 2548, in __call__
+    return self.wsgi_app(environ, start_response)
+  File "D:\MyProject\microerp\env\lib\site-packages\flask_socketio\__init__.py", line 43, in __call__
+    return super(_SocketIOMiddleware, self).__call__(environ,
+  File "D:\MyProject\microerp\env\lib\site-packages\engineio\middleware.py", line 63, in __call__
+    return self.engineio_app.handle_request(environ, start_response)
+  File "D:\MyProject\microerp\env\lib\site-packages\socketio\server.py", line 605, in handle_request
+    return self.eio.handle_request(environ, start_response)
+  File "D:\MyProject\microerp\env\lib\site-packages\engineio\server.py", line 429, in handle_request
+    socket = self._get_socket(sid)
+  File "D:\MyProject\microerp\env\lib\site-packages\engineio\server.py", line 638, in _get_socket
+    raise KeyError('Session is disconnected')
+KeyError: 'Session is disconnected'
+INFO | 127.0.0.1 - - [18/Nov/2022 19:39:41] "[31m[1mGET /socket.io/?EIO=4&transport=polling&t=OIBcyWt.0&sid=Q6tooJAp56ytJ9ifAABp HTTP/1.1[0m" 400 -
+INFO | 127.0.0.1 - - [18/Nov/2022 19:39:41] "[35m[1mGET /socket.io/?EIO=4&transport=polling&t=OIBcybv&sid=zJQ-Trrufh1cm-bIAABn HTTP/1.1[0m" 500 -
+INFO | 127.0.0.1 - - [18/Nov/2022 19:39:41] "[35m[1mGET /socket.io/?EIO=4&transport=polling&t=OIBcyWu&sid=2hqnpAY-Hy8-sEYbAABo HTTP/1.1[0m" 500 -
+INFO | 127.0.0.1 - - [18/Nov/2022 19:39:41] "[31m[1mPOST /socket.io/?EIO=4&transport=polling&t=OIBcyWy&sid=2hqnpAY-Hy8-sEYbAABo HTTP/1.1[0m" 400 -
+ERROR | Error on request:
+Traceback (most recent call last):
+  File "D:\MyProject\microerp\env\lib\site-packages\werkzeug\serving.py", line 335, in run_wsgi
+    execute(self.server.app)
+  File "D:\MyProject\microerp\env\lib\site-packages\werkzeug\serving.py", line 322, in execute
+    application_iter = app(environ, start_response)
+  File "D:\MyProject\microerp\env\lib\site-packages\flask\app.py", line 2548, in __call__
+    return self.wsgi_app(environ, start_response)
+  File "D:\MyProject\microerp\env\lib\site-packages\flask_socketio\__init__.py", line 43, in __call__
+    return super(_SocketIOMiddleware, self).__call__(environ,
+  File "D:\MyProject\microerp\env\lib\site-packages\engineio\middleware.py", line 63, in __call__
+    return self.engineio_app.handle_request(environ, start_response)
+  File "D:\MyProject\microerp\env\lib\site-packages\socketio\server.py", line 605, in handle_request
+    return self.eio.handle_request(environ, start_response)
+  File "D:\MyProject\microerp\env\lib\site-packages\engineio\server.py", line 409, in handle_request
+    socket = self._get_socket(sid)
+  File "D:\MyProject\microerp\env\lib\site-packages\engineio\server.py", line 638, in _get_socket
+    raise KeyError('Session is disconnected')
+KeyError: 'Session is disconnected'
+ERROR | Error on request:
+Traceback (most recent call last):
+  File "D:\MyProject\microerp\env\lib\site-packages\werkzeug\serving.py", line 335, in run_wsgi
+    execute(self.server.app)
+  File "D:\MyProject\microerp\env\lib\site-packages\werkzeug\serving.py", line 322, in execute
+    application_iter = app(environ, start_response)
+  File "D:\MyProject\microerp\env\lib\site-packages\flask\app.py", line 2548, in __call__
+    return self.wsgi_app(environ, start_response)
+  File "D:\MyProject\microerp\env\lib\site-packages\flask_socketio\__init__.py", line 43, in __call__
+    return super(_SocketIOMiddleware, self).__call__(environ,
+  File "D:\MyProject\microerp\env\lib\site-packages\engineio\middleware.py", line 63, in __call__
+    return self.engineio_app.handle_request(environ, start_response)
+  File "D:\MyProject\microerp\env\lib\site-packages\socketio\server.py", line 605, in handle_request
+    return self.eio.handle_request(environ, start_response)
+  File "D:\MyProject\microerp\env\lib\site-packages\engineio\server.py", line 409, in handle_request
+    socket = self._get_socket(sid)
+  File "D:\MyProject\microerp\env\lib\site-packages\engineio\server.py", line 638, in _get_socket
+    raise KeyError('Session is disconnected')
+KeyError: 'Session is disconnected'
+INFO | 127.0.0.1 - - [18/Nov/2022 19:39:41] "[31m[1mPOST /socket.io/?EIO=4&transport=polling&t=OIBcyc0&sid=zJQ-Trrufh1cm-bIAABn HTTP/1.1[0m" 400 -
+INFO | 127.0.0.1 - - [18/Nov/2022 19:39:41] "[35m[1mGET /socket.io/?EIO=4&transport=polling&t=OIBcyg_&sid=p_LT9LBN7cRHTvtaAABl HTTP/1.1[0m" 500 -
+INFO | 127.0.0.1 - - [18/Nov/2022 19:39:41] "[35m[1mGET /socket.io/?EIO=4&transport=polling&t=OIBcyg-&sid=fpN_lYLfrw9CCujIAABm HTTP/1.1[0m" 500 -
+ERROR | Error on request:
+Traceback (most recent call last):
+  File "D:\MyProject\microerp\env\lib\site-packages\werkzeug\serving.py", line 335, in run_wsgi
+    execute(self.server.app)
+  File "D:\MyProject\microerp\env\lib\site-packages\werkzeug\serving.py", line 322, in execute
+    application_iter = app(environ, start_response)
+  File "D:\MyProject\microerp\env\lib\site-packages\flask\app.py", line 2548, in __call__
+    return self.wsgi_app(environ, start_response)
+  File "D:\MyProject\microerp\env\lib\site-packages\flask_socketio\__init__.py", line 43, in __call__
+    return super(_SocketIOMiddleware, self).__call__(environ,
+  File "D:\MyProject\microerp\env\lib\site-packages\engineio\middleware.py", line 63, in __call__
+    return self.engineio_app.handle_request(environ, start_response)
+  File "D:\MyProject\microerp\env\lib\site-packages\socketio\server.py", line 605, in handle_request
+    return self.eio.handle_request(environ, start_response)
+  File "D:\MyProject\microerp\env\lib\site-packages\engineio\server.py", line 409, in handle_request
+    socket = self._get_socket(sid)
+  File "D:\MyProject\microerp\env\lib\site-packages\engineio\server.py", line 638, in _get_socket
+    raise KeyError('Session is disconnected')
+KeyError: 'Session is disconnected'
+ERROR | Error on request:
+Traceback (most recent call last):
+  File "D:\MyProject\microerp\env\lib\site-packages\werkzeug\serving.py", line 335, in run_wsgi
+    execute(self.server.app)
+  File "D:\MyProject\microerp\env\lib\site-packages\werkzeug\serving.py", line 322, in execute
+    application_iter = app(environ, start_response)
+  File "D:\MyProject\microerp\env\lib\site-packages\flask\app.py", line 2548, in __call__
+    return self.wsgi_app(environ, start_response)
+  File "D:\MyProject\microerp\env\lib\site-packages\flask_socketio\__init__.py", line 43, in __call__
+    return super(_SocketIOMiddleware, self).__call__(environ,
+  File "D:\MyProject\microerp\env\lib\site-packages\engineio\middleware.py", line 63, in __call__
+    return self.engineio_app.handle_request(environ, start_response)
+  File "D:\MyProject\microerp\env\lib\site-packages\socketio\server.py", line 605, in handle_request
+    return self.eio.handle_request(environ, start_response)
+  File "D:\MyProject\microerp\env\lib\site-packages\engineio\server.py", line 409, in handle_request
+    socket = self._get_socket(sid)
+  File "D:\MyProject\microerp\env\lib\site-packages\engineio\server.py", line 638, in _get_socket
+    raise KeyError('Session is disconnected')
+KeyError: 'Session is disconnected'
+INFO | 127.0.0.1 - - [18/Nov/2022 19:39:41] "[31m[1mPOST /socket.io/?EIO=4&transport=polling&t=OIBcygz&sid=fpN_lYLfrw9CCujIAABm HTTP/1.1[0m" 400 -
+INFO | 127.0.0.1 - - [18/Nov/2022 19:39:41] "[31m[1mPOST /socket.io/?EIO=4&transport=polling&t=OIBcyh3&sid=p_LT9LBN7cRHTvtaAABl HTTP/1.1[0m" 400 -
+INFO | 127.0.0.1 - - [18/Nov/2022 19:39:42] "GET /socket.io/?EIO=4&transport=polling&t=OIBcyr8&sid=oypEPuUPO17LgMBBAABw HTTP/1.1" 200 -
+INFO | 127.0.0.1 - - [18/Nov/2022 19:39:42] "POST /socket.io/?EIO=4&transport=polling&t=OIBcyr7&sid=oypEPuUPO17LgMBBAABw HTTP/1.1" 200 -
+INFO | 127.0.0.1 - - [18/Nov/2022 19:39:42] "POST /socket.io/?EIO=4&transport=polling&t=OIBcywR&sid=6MoD8--hVmcQqlS-AABx HTTP/1.1" 200 -
+INFO | 127.0.0.1 - - [18/Nov/2022 19:39:42] "GET /socket.io/?EIO=4&transport=polling&t=OIBcywS&sid=6MoD8--hVmcQqlS-AABx HTTP/1.1" 200 -
+INFO | 127.0.0.1 - - [18/Nov/2022 19:39:42] "GET /socket.io/?EIO=4&transport=polling&t=OIBcywV&sid=KJnoyTjvCIaV4KpcAABz HTTP/1.1" 200 -
+INFO | 127.0.0.1 - - [18/Nov/2022 19:39:42] "POST /socket.io/?EIO=4&transport=polling&t=OIBcywX&sid=YPLloU_0yF2RCi0PAABy HTTP/1.1" 200 -
+INFO | 127.0.0.1 - - [18/Nov/2022 19:39:42] "POST /socket.io/?EIO=4&transport=polling&t=OIBcywU&sid=KJnoyTjvCIaV4KpcAABz HTTP/1.1" 200 -
+INFO | 127.0.0.1 - - [18/Nov/2022 19:39:42] "GET /socket.io/?EIO=4&transport=polling&t=OIBcywY&sid=YPLloU_0yF2RCi0PAABy HTTP/1.1" 200 -
+INFO | 127.0.0.1 - - [18/Nov/2022 19:39:42] "GET /socket.io/?EIO=4&transport=polling&t=OIBcy_Q.0&sid=IVLKfVmRXKemiNftAAB0 HTTP/1.1" 200 -
+INFO | 127.0.0.1 - - [18/Nov/2022 19:39:42] "POST /socket.io/?EIO=4&transport=polling&t=OIBc_q-&sid=K9tG9QaflYW6a0HeAAAq HTTP/1.1" 200 -
+INFO | 127.0.0.1 - - [18/Nov/2022 19:39:42] "POST /socket.io/?EIO=4&transport=polling&t=OIBcy_Q&sid=IVLKfVmRXKemiNftAAB0 HTTP/1.1" 200 -
+INFO | 127.0.0.1 - - [18/Nov/2022 19:39:42] "POST /socket.io/?EIO=4&transport=polling&t=OIBc_-q&sid=6nijsDG_4JISt2s3AAA8 HTTP/1.1" 200 -
+INFO | 127.0.0.1 - - [18/Nov/2022 19:39:43] "POST /socket.io/?EIO=4&transport=polling&t=OIBd03t&sid=_kmWxZ0SZp6lXGAyAAA2 HTTP/1.1" 200 -
+INFO | 127.0.0.1 - - [18/Nov/2022 19:39:43] "GET /socket.io/?EIO=4&transport=polling&t=OIBd0Fe HTTP/1.1" 200 -
+INFO | 127.0.0.1 - - [18/Nov/2022 19:39:43] "GET /socket.io/?EIO=4&transport=polling&t=OIBd09u HTTP/1.1" 200 -
+INFO | 127.0.0.1 - - [18/Nov/2022 19:39:43] "GET /socket.io/?EIO=4&transport=polling&t=OIBd0Hp HTTP/1.1" 200 -
+INFO | 127.0.0.1 - - [18/Nov/2022 19:39:43] "GET /socket.io/?EIO=4&transport=polling&t=OIBd1QX HTTP/1.1" 200 -
+INFO | 127.0.0.1 - - [18/Nov/2022 19:39:43] "GET /socket.io/?EIO=4&transport=polling&t=OIBd1Os HTTP/1.1" 200 -
+INFO | 127.0.0.1 - - [18/Nov/2022 19:39:43] "GET /socket.io/?EIO=4&transport=polling&t=OIBd1MD HTTP/1.1" 200 -
+INFO | 127.0.0.1 - - [18/Nov/2022 19:39:43] "GET /socket.io/?EIO=4&transport=polling&t=OIBd1Si HTTP/1.1" 200 -
+INFO | 127.0.0.1 - - [18/Nov/2022 19:39:43] "GET /socket.io/?EIO=4&transport=polling&t=OIBd1Sx HTTP/1.1" 200 -
+INFO | 127.0.0.1 - - [18/Nov/2022 19:39:43] "GET /socket.io/?EIO=4&transport=polling&t=OIBd1Wn HTTP/1.1" 200 -
+INFO | 127.0.0.1 - - [18/Nov/2022 19:39:43] "GET /socket.io/?EIO=4&transport=polling&t=OIBd1cY HTTP/1.1" 200 -
+INFO | 127.0.0.1 - - [18/Nov/2022 19:39:43] "GET /socket.io/?EIO=4&transport=polling&t=OIBd1d1 HTTP/1.1" 200 -
+INFO | 127.0.0.1 - - [18/Nov/2022 19:39:44] "GET /socket.io/?EIO=4&transport=polling&t=OIBd1sB HTTP/1.1" 200 -
+INFO | 127.0.0.1 - - [18/Nov/2022 19:39:44] "GET /socket.io/?EIO=4&transport=polling&t=OIBd1zO HTTP/1.1" 200 -
+INFO | 127.0.0.1 - - [18/Nov/2022 19:39:44] "POST /socket.io/?EIO=4&transport=polling&t=OIBd36H&sid=-kPP0J4n9CY9SOTBAAA5 HTTP/1.1" 200 -
+INFO | 127.0.0.1 - - [18/Nov/2022 19:39:44] "POST /socket.io/?EIO=4&transport=polling&t=OIBd3BJ&sid=esnSM4tokq95LH3KAAA3 HTTP/1.1" 200 -
+INFO | 127.0.0.1 - - [18/Nov/2022 19:39:44] "POST /socket.io/?EIO=4&transport=polling&t=OIBd3GM&sid=X0Mh-_oFqXMkk4c9AAA7 HTTP/1.1" 200 -
+INFO | 127.0.0.1 - - [18/Nov/2022 19:39:46] "GET /socket.io/?EIO=4&transport=polling&t=OIBd4eQ HTTP/1.1" 200 -
+INFO | 127.0.0.1 - - [18/Nov/2022 19:39:46] "POST /socket.io/?EIO=4&transport=polling&t=OIBd4ed&sid=vX-CJbBN9dudnu8dAACR HTTP/1.1" 200 -
+INFO | 127.0.0.1 - - [18/Nov/2022 19:39:46] "GET /socket.io/?EIO=4&transport=polling&t=OIBd4ee&sid=vX-CJbBN9dudnu8dAACR HTTP/1.1" 200 -
+INFO | 127.0.0.1 - - [18/Nov/2022 19:39:46] "POST /location HTTP/1.1" 200 -
+INFO | 127.0.0.1 - - [18/Nov/2022 19:39:48] "GET /socket.io/?EIO=4&transport=polling&t=OIBd59k HTTP/1.1" 200 -
+INFO | 127.0.0.1 - - [18/Nov/2022 19:39:48] "POST /socket.io/?EIO=4&transport=polling&t=OIBd59u&sid=qMpCr_mOPeh7zERCAACT HTTP/1.1" 200 -
+INFO | 127.0.0.1 - - [18/Nov/2022 19:39:48] "GET /socket.io/?EIO=4&transport=polling&t=OIBd59v&sid=qMpCr_mOPeh7zERCAACT HTTP/1.1" 200 -
+INFO | 127.0.0.1 - - [18/Nov/2022 19:39:49] "GET /socket.io/?EIO=4&transport=polling&t=OIBd5Bz HTTP/1.1" 200 -
+INFO | 127.0.0.1 - - [18/Nov/2022 19:39:49] "GET /socket.io/?EIO=4&transport=polling&t=OIBd5F7 HTTP/1.1" 200 -
+INFO | 127.0.0.1 - - [18/Nov/2022 19:39:49] "POST /socket.io/?EIO=4&transport=polling&t=OIBd5Gw&sid=4l_Ij-u37Z9yBgQHAACV HTTP/1.1" 200 -
+INFO | 127.0.0.1 - - [18/Nov/2022 19:39:49] "GET /socket.io/?EIO=4&transport=polling&t=OIBd5Gx&sid=4l_Ij-u37Z9yBgQHAACV HTTP/1.1" 200 -
+INFO | 127.0.0.1 - - [18/Nov/2022 19:39:49] "POST /socket.io/?EIO=4&transport=polling&t=OIBd5KR&sid=9HfjGX9Olz5xvvgvAACW HTTP/1.1" 200 -
+INFO | 127.0.0.1 - - [18/Nov/2022 19:39:49] "GET /socket.io/?EIO=4&transport=polling&t=OIBd5KS&sid=9HfjGX9Olz5xvvgvAACW HTTP/1.1" 200 -
+INFO | 127.0.0.1 - - [18/Nov/2022 19:39:50] "GET /socket.io/?EIO=4&transport=polling&t=OIBd5Sk HTTP/1.1" 200 -
+INFO | 127.0.0.1 - - [18/Nov/2022 19:39:50] "POST /socket.io/?EIO=4&transport=polling&t=OIBd5Sj&sid=9HfjGX9Olz5xvvgvAACW HTTP/1.1" 200 -
+INFO | 127.0.0.1 - - [18/Nov/2022 19:39:50] "GET /socket.io/?EIO=4&transport=polling&t=OIBcxkw&sid=UQTLAIzlVHXeEFwYAAA4 HTTP/1.1" 200 -
+INFO | 127.0.0.1 - - [18/Nov/2022 19:39:50] "GET /socket.io/?EIO=4&transport=polling&t=OIBd5P-&sid=9HfjGX9Olz5xvvgvAACW HTTP/1.1" 200 -
+INFO | 127.0.0.1 - - [18/Nov/2022 19:39:50] "GET /socket.io/?EIO=4&transport=polling&t=OIBd3BJ.0&sid=esnSM4tokq95LH3KAAA3 HTTP/1.1" 200 -
+INFO | 127.0.0.1 - - [18/Nov/2022 19:39:50] "GET /socket.io/?EIO=4&transport=polling&t=OIBd36H.0&sid=-kPP0J4n9CY9SOTBAAA5 HTTP/1.1" 200 -
+INFO | 127.0.0.1 - - [18/Nov/2022 19:39:50] "GET /socket.io/?EIO=4&transport=polling&t=OIBd4fj&sid=vX-CJbBN9dudnu8dAACR HTTP/1.1" 200 -
+INFO | 127.0.0.1 - - [18/Nov/2022 19:39:50] "GET /socket.io/?EIO=4&transport=polling&t=OIBd5M4&sid=4l_Ij-u37Z9yBgQHAACV HTTP/1.1" 200 -
+INFO | 127.0.0.1 - - [18/Nov/2022 19:39:50] "GET /socket.io/?EIO=4&transport=polling&t=OIBd5FO&sid=qMpCr_mOPeh7zERCAACT HTTP/1.1" 200 -
+INFO | 127.0.0.1 - - [18/Nov/2022 19:39:50] "GET /socket.io/?EIO=4&transport=polling&t=OIBcxpf&sid=x3rQ9zGsBjK6POA-AAA6 HTTP/1.1" 200 -
+INFO | 127.0.0.1 - - [18/Nov/2022 19:39:50] "POST /socket.io/?EIO=4&transport=polling&t=OIBd5Xo&sid=WiZm1kICFUBXz3KtAACZ HTTP/1.1" 200 -
+INFO | 127.0.0.1 - - [18/Nov/2022 19:39:50] "GET /socket.io/?EIO=4&transport=polling&t=OIBd5Xp&sid=WiZm1kICFUBXz3KtAACZ HTTP/1.1" 200 -
+INFO | 127.0.0.1 - - [18/Nov/2022 19:39:50] "GET /socket.io/?EIO=4&transport=polling&t=OIBd5Y0 HTTP/1.1" 200 -
+INFO | 127.0.0.1 - - [18/Nov/2022 19:39:51] "POST /socket.io/?EIO=4&transport=polling&t=OIBd5hy&sid=K0Efj6WyvoDdtoH4AACb HTTP/1.1" 200 -
+INFO | 127.0.0.1 - - [18/Nov/2022 19:39:51] "GET /socket.io/?EIO=4&transport=polling&t=OIBd5hz&sid=K0Efj6WyvoDdtoH4AACb HTTP/1.1" 200 -
+INFO | 127.0.0.1 - - [18/Nov/2022 19:40:11] "GET /socket.io/?EIO=4&transport=polling&t=OIBd5X-&sid=vX-CJbBN9dudnu8dAACR HTTP/1.1" 200 -
+INFO | 127.0.0.1 - - [18/Nov/2022 19:40:11] "POST /socket.io/?EIO=4&transport=polling&t=OIBd6VD&sid=K0Efj6WyvoDdtoH4AACb HTTP/1.1" 200 -
+INFO | 127.0.0.1 - - [18/Nov/2022 19:40:11] "GET /socket.io/?EIO=4&transport=polling&t=OIBd5X_&sid=qMpCr_mOPeh7zERCAACT HTTP/1.1" 200 -
+INFO | 127.0.0.1 - - [18/Nov/2022 19:40:11] "GET /socket.io/?EIO=4&transport=polling&t=OIBd5Xw&sid=9HfjGX9Olz5xvvgvAACW HTTP/1.1" 200 -
+INFO | 127.0.0.1 - - [18/Nov/2022 19:40:11] "GET /socket.io/?EIO=4&transport=polling&t=OIBd5s8&sid=K0Efj6WyvoDdtoH4AACb HTTP/1.1" 200 -
+INFO | 127.0.0.1 - - [18/Nov/2022 19:40:11] "GET /socket.io/?EIO=4&transport=polling&t=OIBd5Xz&sid=4l_Ij-u37Z9yBgQHAACV HTTP/1.1" 200 -
+INFO | 127.0.0.1 - - [18/Nov/2022 19:40:11] "GET /socket.io/?EIO=4&transport=polling&t=OIBd5ct&sid=WiZm1kICFUBXz3KtAACZ HTTP/1.1" 200 -
+INFO | 127.0.0.1 - - [18/Nov/2022 19:40:12] "GET /socket.io/?EIO=4&transport=polling&t=OIBd7La HTTP/1.1" 200 -
+INFO | 127.0.0.1 - - [18/Nov/2022 19:40:12] "GET /socket.io/?EIO=4&transport=polling&t=OIBd7Go HTTP/1.1" 200 -
+INFO | 127.0.0.1 - - [18/Nov/2022 19:40:12] "GET /socket.io/?EIO=4&transport=polling&t=OIBd6zm HTTP/1.1" 200 -
+INFO | 127.0.0.1 - - [18/Nov/2022 19:40:12] "GET /socket.io/?EIO=4&transport=polling&t=OIBd7Je HTTP/1.1" 200 -
+INFO | 127.0.0.1 - - [18/Nov/2022 19:40:12] "GET /socket.io/?EIO=4&transport=polling&t=OIBd6VF HTTP/1.1" 200 -
+INFO | 127.0.0.1 - - [18/Nov/2022 19:40:12] "GET /socket.io/?EIO=4&transport=polling&t=OIBd7Zi HTTP/1.1" 200 -
+INFO | 127.0.0.1 - - [18/Nov/2022 19:40:12] "GET /socket.io/?EIO=4&transport=polling&t=OIBdAmF&sid=vX-CJbBN9dudnu8dAACR HTTP/1.1" 200 -
+INFO | 127.0.0.1 - - [18/Nov/2022 19:40:12] "POST /socket.io/?EIO=4&transport=polling&t=OIBdAmE&sid=vX-CJbBN9dudnu8dAACR HTTP/1.1" 200 -
+INFO | 127.0.0.1 - - [18/Nov/2022 19:40:12] "POST /socket.io/?EIO=4&transport=polling&t=OIBdAvc&sid=_3_5Advtr-iBV5bTAACh HTTP/1.1" 200 -
+INFO | 127.0.0.1 - - [18/Nov/2022 19:40:13] "GET /socket.io/?EIO=4&transport=polling&t=OIBdAvd&sid=_3_5Advtr-iBV5bTAACh HTTP/1.1" 200 -
+INFO | 127.0.0.1 - - [18/Nov/2022 19:40:13] "POST /socket.io/?EIO=4&transport=polling&t=OIBdAve&sid=vKjEAIEyPSR0SK9EAACe HTTP/1.1" 200 -
+INFO | 127.0.0.1 - - [18/Nov/2022 19:40:13] "GET /socket.io/?EIO=4&transport=polling&t=OIBdAqa&sid=qMpCr_mOPeh7zERCAACT HTTP/1.1" 200 -
+INFO | 127.0.0.1 - - [18/Nov/2022 19:40:13] "GET /socket.io/?EIO=4&transport=polling&t=OIBdAvf&sid=vKjEAIEyPSR0SK9EAACe HTTP/1.1" 200 -
+INFO | 127.0.0.1 - - [18/Nov/2022 19:40:13] "POST /socket.io/?EIO=4&transport=polling&t=OIBdAvg&sid=SFWO7vOlZKdKGDWkAACf HTTP/1.1" 200 -
+INFO | 127.0.0.1 - - [18/Nov/2022 19:40:14] "GET /socket.io/?EIO=4&transport=polling&t=OIBdAqY&sid=4l_Ij-u37Z9yBgQHAACV HTTP/1.1" 200 -
+INFO | 127.0.0.1 - - [18/Nov/2022 19:40:14] "GET /socket.io/?EIO=4&transport=polling&t=OIBdAvh&sid=SFWO7vOlZKdKGDWkAACf HTTP/1.1" 200 -
+INFO | 127.0.0.1 - - [18/Nov/2022 19:40:14] "POST /socket.io/?EIO=4&transport=polling&t=OIBdAvi&sid=WZzfRazmS7_sQhXiAACd HTTP/1.1" 200 -
+INFO | 127.0.0.1 - - [18/Nov/2022 19:40:14] "GET /socket.io/?EIO=4&transport=polling&t=OIBdAqb&sid=9HfjGX9Olz5xvvgvAACW HTTP/1.1" 200 -
+INFO | 127.0.0.1 - - [18/Nov/2022 19:40:14] "GET /socket.io/?EIO=4&transport=polling&t=OIBdAvj&sid=WZzfRazmS7_sQhXiAACd HTTP/1.1" 200 -
+INFO | 127.0.0.1 - - [18/Nov/2022 19:40:14] "POST /socket.io/?EIO=4&transport=polling&t=OIBdAvj.0&sid=KtvxeT90G12r-W5VAACg HTTP/1.1" 200 -
+INFO | 127.0.0.1 - - [18/Nov/2022 19:40:14] "GET /socket.io/?EIO=4&transport=polling&t=OIBdAvk&sid=KtvxeT90G12r-W5VAACg HTTP/1.1" 200 -
+INFO | 127.0.0.1 - - [18/Nov/2022 19:40:14] "POST /socket.io/?EIO=4&transport=polling&t=OIBdAvl&sid=trr96UmIZLoJEsVjAACi HTTP/1.1" 200 -
+INFO | 127.0.0.1 - - [18/Nov/2022 19:40:14] "GET /socket.io/?EIO=4&transport=polling&t=OIBdAvm&sid=trr96UmIZLoJEsVjAACi HTTP/1.1" 200 -
+INFO | 127.0.0.1 - - [18/Nov/2022 19:40:14] "GET /socket.io/?EIO=4&transport=polling&t=OIBdA-c HTTP/1.1" 200 -
+INFO | 127.0.0.1 - - [18/Nov/2022 19:40:15] "POST /socket.io/?EIO=4&transport=polling&t=OIBdB8s&sid=_3_5Advtr-iBV5bTAACh HTTP/1.1" 200 -
+INFO | 127.0.0.1 - - [18/Nov/2022 19:40:15] "GET /socket.io/?EIO=4&transport=polling&t=OIBdAqZ&sid=K0Efj6WyvoDdtoH4AACb HTTP/1.1" 200 -
+INFO | 127.0.0.1 - - [18/Nov/2022 19:40:15] "GET /socket.io/?EIO=4&transport=polling&t=OIBdA-a&sid=vX-CJbBN9dudnu8dAACR HTTP/1.1" 200 -
+INFO | 127.0.0.1 - - [18/Nov/2022 19:40:15] "GET /socket.io/?EIO=4&transport=polling&t=OIBdAqd&sid=WiZm1kICFUBXz3KtAACZ HTTP/1.1" 200 -
+INFO | 127.0.0.1 - - [18/Nov/2022 19:40:15] "GET /socket.io/?EIO=4&transport=polling&t=OIBdB8r&sid=_3_5Advtr-iBV5bTAACh HTTP/1.1" 200 -
+INFO | 127.0.0.1 - - [18/Nov/2022 19:40:15] "POST /socket.io/?EIO=4&transport=polling&t=OIBdBGX&sid=qMpCr_mOPeh7zERCAACT HTTP/1.1" 200 -
+INFO | 127.0.0.1 - - [18/Nov/2022 19:40:15] "GET /socket.io/?EIO=4&transport=polling&t=OIBdBNl&sid=SFWO7vOlZKdKGDWkAACf HTTP/1.1" 200 -
+INFO | 127.0.0.1 - - [18/Nov/2022 19:40:15] "GET /socket.io/?EIO=4&transport=polling&t=OIBdBGX.0&sid=qMpCr_mOPeh7zERCAACT HTTP/1.1" 200 -
+INFO | 127.0.0.1 - - [18/Nov/2022 19:40:15] "GET /socket.io/?EIO=4&transport=polling&t=OIBdBNm.0&sid=4l_Ij-u37Z9yBgQHAACV HTTP/1.1" 200 -
+INFO | 127.0.0.1 - - [18/Nov/2022 19:40:15] "GET /socket.io/?EIO=4&transport=polling&t=OIBdBIx&sid=vKjEAIEyPSR0SK9EAACe HTTP/1.1" 200 -
+INFO | 127.0.0.1 - - [18/Nov/2022 19:40:15] "POST /socket.io/?EIO=4&transport=polling&t=OIBdBNm&sid=4l_Ij-u37Z9yBgQHAACV HTTP/1.1" 200 -
+INFO | 127.0.0.1 - - [18/Nov/2022 19:40:15] "POST /socket.io/?EIO=4&transport=polling&t=OIBdBR4&sid=9HfjGX9Olz5xvvgvAACW HTTP/1.1" 200 -
+INFO | 127.0.0.1 - - [18/Nov/2022 19:40:15] "GET /socket.io/?EIO=4&transport=polling&t=OIBdBR5&sid=9HfjGX9Olz5xvvgvAACW HTTP/1.1" 200 -
+INFO | 127.0.0.1 - - [18/Nov/2022 19:40:15] "GET /socket.io/?EIO=4&transport=polling&t=OIBdBSq&sid=WZzfRazmS7_sQhXiAACd HTTP/1.1" 200 -
+INFO | 127.0.0.1 - - [18/Nov/2022 19:40:15] "GET /socket.io/?EIO=4&transport=polling&t=OIBdBVh&sid=KtvxeT90G12r-W5VAACg HTTP/1.1" 200 -
+INFO | 127.0.0.1 - - [18/Nov/2022 19:40:15] "GET /socket.io/?EIO=4&transport=polling&t=OIBdBXt&sid=trr96UmIZLoJEsVjAACi HTTP/1.1" 200 -
+INFO | 127.0.0.1 - - [18/Nov/2022 19:40:15] "POST /socket.io/?EIO=4&transport=polling&t=OIBdBVh.0&sid=KtvxeT90G12r-W5VAACg HTTP/1.1" 200 -
+INFO | 127.0.0.1 - - [18/Nov/2022 19:40:15] "POST /socket.io/?EIO=4&transport=polling&t=OIBdBb0&sid=HipDQZWkFODqKHNYAACp HTTP/1.1" 200 -
+INFO | 127.0.0.1 - - [18/Nov/2022 19:40:15] "GET /socket.io/?EIO=4&transport=polling&t=OIBdBb1&sid=HipDQZWkFODqKHNYAACp HTTP/1.1" 200 -
+INFO | 127.0.0.1 - - [18/Nov/2022 19:40:15] "GET /socket.io/?EIO=4&transport=polling&t=OIBdBd2&sid=vX-CJbBN9dudnu8dAACR HTTP/1.1" 200 -
+INFO | 127.0.0.1 - - [18/Nov/2022 19:40:15] "GET /socket.io/?EIO=4&transport=polling&t=OIBdBd4&sid=K0Efj6WyvoDdtoH4AACb HTTP/1.1" 200 -
+INFO | 127.0.0.1 - - [18/Nov/2022 19:40:15] "GET /socket.io/?EIO=4&transport=polling&t=OIBdBd5&sid=_3_5Advtr-iBV5bTAACh HTTP/1.1" 200 -
+INFO | 127.0.0.1 - - [18/Nov/2022 19:40:16] "GET /socket.io/?EIO=4&transport=polling&t=OIBdBd6 HTTP/1.1" 200 -
+INFO | 127.0.0.1 - - [18/Nov/2022 19:40:16] "GET /socket.io/?EIO=4&transport=polling&t=OIBdBd7&sid=WiZm1kICFUBXz3KtAACZ HTTP/1.1" 200 -
+INFO | 127.0.0.1 - - [18/Nov/2022 19:40:16] "GET /socket.io/?EIO=4&transport=polling&t=OIBdBh-&sid=SFWO7vOlZKdKGDWkAACf HTTP/1.1" 200 -
+INFO | 127.0.0.1 - - [18/Nov/2022 19:40:16] "GET /socket.io/?EIO=4&transport=polling&t=OIBdBi1&sid=vKjEAIEyPSR0SK9EAACe HTTP/1.1" 200 -
+INFO | 127.0.0.1 - - [18/Nov/2022 19:40:16] "GET /socket.io/?EIO=4&transport=polling&t=OIBdBi0&sid=4l_Ij-u37Z9yBgQHAACV HTTP/1.1" 200 -
+INFO | 127.0.0.1 - - [18/Nov/2022 19:40:16] "GET /socket.io/?EIO=4&transport=polling&t=OIBdBh_&sid=qMpCr_mOPeh7zERCAACT HTTP/1.1" 200 -
+INFO | 127.0.0.1 - - [18/Nov/2022 19:40:16] "GET /socket.io/?EIO=4&transport=polling&t=OIBdBn4&sid=9HfjGX9Olz5xvvgvAACW HTTP/1.1" 200 -
+INFO | 127.0.0.1 - - [18/Nov/2022 19:40:16] "GET /socket.io/?EIO=4&transport=polling&t=OIBdBn5&sid=KtvxeT90G12r-W5VAACg HTTP/1.1" 200 -
+INFO | 127.0.0.1 - - [18/Nov/2022 19:40:16] "GET /socket.io/?EIO=4&transport=polling&t=OIBdBn8&sid=trr96UmIZLoJEsVjAACi HTTP/1.1" 200 -
+INFO | 127.0.0.1 - - [18/Nov/2022 19:40:16] "GET /socket.io/?EIO=4&transport=polling&t=OIBdBn7&sid=WZzfRazmS7_sQhXiAACd HTTP/1.1" 200 -
+INFO | 127.0.0.1 - - [18/Nov/2022 19:40:16] "POST /socket.io/?EIO=4&transport=polling&t=OIBdBs7&sid=K0Efj6WyvoDdtoH4AACb HTTP/1.1" 200 -
+INFO | 127.0.0.1 - - [18/Nov/2022 19:40:16] "POST /socket.io/?EIO=4&transport=polling&t=OIBdBsB&sid=I9iLJ4BZoNVVlT9_AACr HTTP/1.1" 200 -
+INFO | 127.0.0.1 - - [18/Nov/2022 19:40:16] "GET /socket.io/?EIO=4&transport=polling&t=OIBdBsB.0&sid=I9iLJ4BZoNVVlT9_AACr HTTP/1.1" 200 -
+INFO | 127.0.0.1 - - [18/Nov/2022 19:40:17] "POST /socket.io/?EIO=4&transport=polling&t=OIBdBvT&sid=WiZm1kICFUBXz3KtAACZ HTTP/1.1" 200 -
+INFO | 127.0.0.1 - - [18/Nov/2022 19:40:37] "GET /socket.io/?EIO=4&transport=polling&t=OIBdBs9&sid=_3_5Advtr-iBV5bTAACh HTTP/1.1" 200 -
+INFO | 127.0.0.1 - - [18/Nov/2022 19:40:37] "GET /socket.io/?EIO=4&transport=polling&t=OIBdBs6&sid=vX-CJbBN9dudnu8dAACR HTTP/1.1" 200 -
+INFO | 127.0.0.1 - - [18/Nov/2022 19:40:37] "GET /socket.io/?EIO=4&transport=polling&t=OIBdBx7.0&sid=SFWO7vOlZKdKGDWkAACf HTTP/1.1" 200 -
+INFO | 127.0.0.1 - - [18/Nov/2022 19:40:37] "GET /socket.io/?EIO=4&transport=polling&t=OIBdBx8&sid=vKjEAIEyPSR0SK9EAACe HTTP/1.1" 200 -
+INFO | 127.0.0.1 - - [18/Nov/2022 19:40:39] "GET /socket.io/?EIO=4&transport=polling&t=OIBdBs4&sid=HipDQZWkFODqKHNYAACp HTTP/1.1" 200 -
+INFO | 127.0.0.1 - - [18/Nov/2022 19:40:40] "GET /socket.io/?EIO=4&transport=polling&t=OIBdB-S&sid=KtvxeT90G12r-W5VAACg HTTP/1.1" 200 -
+INFO | 127.0.0.1 - - [18/Nov/2022 19:40:40] "GET /socket.io/?EIO=4&transport=polling&t=OIBdBx7&sid=qMpCr_mOPeh7zERCAACT HTTP/1.1" 200 -
+INFO | 127.0.0.1 - - [18/Nov/2022 19:40:40] "GET /socket.io/?EIO=4&transport=polling&t=OIBdBxA&sid=4l_Ij-u37Z9yBgQHAACV HTTP/1.1" 200 -
+INFO | 127.0.0.1 - - [18/Nov/2022 19:40:40] "GET /socket.io/?EIO=4&transport=polling&t=OIBdC09&sid=trr96UmIZLoJEsVjAACi HTTP/1.1" 200 -
+INFO | 127.0.0.1 - - [18/Nov/2022 19:40:40] "GET /socket.io/?EIO=4&transport=polling&t=OIBdBxA.0&sid=9HfjGX9Olz5xvvgvAACW HTTP/1.1" 200 -
+INFO | 127.0.0.1 - - [18/Nov/2022 19:40:40] "GET /socket.io/?EIO=4&transport=polling&t=OIBdC0A&sid=WZzfRazmS7_sQhXiAACd HTTP/1.1" 200 -
+INFO | 127.0.0.1 - - [18/Nov/2022 19:40:40] "POST /socket.io/?EIO=4&transport=polling&t=OIBdH0s&sid=_3_5Advtr-iBV5bTAACh HTTP/1.1" 200 -
+INFO | 127.0.0.1 - - [18/Nov/2022 19:40:40] "POST /socket.io/?EIO=4&transport=polling&t=OIBdH5I&sid=vX-CJbBN9dudnu8dAACR HTTP/1.1" 200 -
+INFO | 127.0.0.1 - - [18/Nov/2022 19:40:41] "GET /socket.io/?EIO=4&transport=polling&t=OIBdC5H&sid=I9iLJ4BZoNVVlT9_AACr HTTP/1.1" 200 -
+INFO | 127.0.0.1 - - [18/Nov/2022 19:40:41] "POST /socket.io/?EIO=4&transport=polling&t=OIBdH5K&sid=SFWO7vOlZKdKGDWkAACf HTTP/1.1" 200 -
+INFO | 127.0.0.1 - - [18/Nov/2022 19:40:41] "POST /socket.io/?EIO=4&transport=polling&t=OIBdHAI&sid=vKjEAIEyPSR0SK9EAACe HTTP/1.1" 200 -
+INFO | 127.0.0.1 - - [18/Nov/2022 19:40:41] "GET /socket.io/?EIO=4&transport=polling&t=OIBdBs8&sid=K0Efj6WyvoDdtoH4AACb HTTP/1.1" 200 -
+INFO | 127.0.0.1 - - [18/Nov/2022 19:40:41] "POST /socket.io/?EIO=4&transport=polling&t=OIBdHha&sid=HipDQZWkFODqKHNYAACp HTTP/1.1" 200 -
+INFO | 127.0.0.1 - - [18/Nov/2022 19:40:42] "GET /socket.io/?EIO=4&transport=polling&t=OIBdBvU&sid=WiZm1kICFUBXz3KtAACZ HTTP/1.1" 200 -
+INFO | 127.0.0.1 - - [18/Nov/2022 19:40:42] "POST /socket.io/?EIO=4&transport=polling&t=OIBdHmV&sid=KtvxeT90G12r-W5VAACg HTTP/1.1" 200 -
+INFO | 127.0.0.1 - - [18/Nov/2022 19:41:05] "GET /socket.io/?EIO=4&transport=polling&t=OIBdH0t&sid=_3_5Advtr-iBV5bTAACh HTTP/1.1" 200 -
+INFO | 127.0.0.1 - - [18/Nov/2022 19:41:05] "GET /socket.io/?EIO=4&transport=polling&t=OIBdH5J&sid=vX-CJbBN9dudnu8dAACR HTTP/1.1" 200 -
+INFO | 127.0.0.1 - - [18/Nov/2022 19:41:06] "POST /socket.io/?EIO=4&transport=polling&t=OIBdHn5&sid=qMpCr_mOPeh7zERCAACT HTTP/1.1" 200 -
+INFO | 127.0.0.1 - - [18/Nov/2022 19:41:06] "GET /socket.io/?EIO=4&transport=polling&t=OIBdH5K.0&sid=SFWO7vOlZKdKGDWkAACf HTTP/1.1" 200 -
+INFO | 127.0.0.1 - - [18/Nov/2022 19:41:06] "POST /socket.io/?EIO=4&transport=polling&t=OIBdHoq&sid=4l_Ij-u37Z9yBgQHAACV HTTP/1.1" 200 -
+INFO | 127.0.0.1 - - [18/Nov/2022 19:41:06] "GET /socket.io/?EIO=4&transport=polling&t=OIBdHAI.0&sid=vKjEAIEyPSR0SK9EAACe HTTP/1.1" 200 -
+INFO | 127.0.0.1 - - [18/Nov/2022 19:41:06] "POST /socket.io/?EIO=4&transport=polling&t=OIBdHrU&sid=trr96UmIZLoJEsVjAACi HTTP/1.1" 200 -
+INFO | 127.0.0.1 - - [18/Nov/2022 19:41:07] "GET /socket.io/?EIO=4&transport=polling&t=OIBdHhc&sid=HipDQZWkFODqKHNYAACp HTTP/1.1" 200 -
+INFO | 127.0.0.1 - - [18/Nov/2022 19:41:07] "POST /socket.io/?EIO=4&transport=polling&t=OIBdHrz&sid=9HfjGX9Olz5xvvgvAACW HTTP/1.1" 200 -
+INFO | 127.0.0.1 - - [18/Nov/2022 19:41:07] "POST /socket.io/?EIO=4&transport=polling&t=OIBdHr-&sid=WZzfRazmS7_sQhXiAACd HTTP/1.1" 200 -
+INFO | 127.0.0.1 - - [18/Nov/2022 19:41:07] "GET /socket.io/?EIO=4&transport=polling&t=OIBdHmV.0&sid=KtvxeT90G12r-W5VAACg HTTP/1.1" 200 -
+INFO | 127.0.0.1 - - [18/Nov/2022 19:41:07] "POST /socket.io/?EIO=4&transport=polling&t=OIBdHz8&sid=I9iLJ4BZoNVVlT9_AACr HTTP/1.1" 200 -
+INFO | 127.0.0.1 - - [18/Nov/2022 19:41:31] "GET /socket.io/?EIO=4&transport=polling&t=OIBdHn8&sid=qMpCr_mOPeh7zERCAACT HTTP/1.1" 200 -
+INFO | 127.0.0.1 - - [18/Nov/2022 19:41:31] "GET /socket.io/?EIO=4&transport=polling&t=OIBdHoq.0&sid=4l_Ij-u37Z9yBgQHAACV HTTP/1.1" 200 -
+INFO | 127.0.0.1 - - [18/Nov/2022 19:41:31] "[35m[1mPOST /socket.io/?EIO=4&transport=polling&t=OIBdI7A&sid=K0Efj6WyvoDdtoH4AACb HTTP/1.1[0m" 500 -
+ERROR | Error on request:
+Traceback (most recent call last):
+  File "D:\MyProject\microerp\env\lib\site-packages\werkzeug\serving.py", line 335, in run_wsgi
+    execute(self.server.app)
+  File "D:\MyProject\microerp\env\lib\site-packages\werkzeug\serving.py", line 322, in execute
+    application_iter = app(environ, start_response)
+  File "D:\MyProject\microerp\env\lib\site-packages\flask\app.py", line 2548, in __call__
+    return self.wsgi_app(environ, start_response)
+  File "D:\MyProject\microerp\env\lib\site-packages\flask_socketio\__init__.py", line 43, in __call__
+    return super(_SocketIOMiddleware, self).__call__(environ,
+  File "D:\MyProject\microerp\env\lib\site-packages\engineio\middleware.py", line 63, in __call__
+    return self.engineio_app.handle_request(environ, start_response)
+  File "D:\MyProject\microerp\env\lib\site-packages\socketio\server.py", line 605, in handle_request
+    return self.eio.handle_request(environ, start_response)
+  File "D:\MyProject\microerp\env\lib\site-packages\engineio\server.py", line 429, in handle_request
+    socket = self._get_socket(sid)
+  File "D:\MyProject\microerp\env\lib\site-packages\engineio\server.py", line 638, in _get_socket
+    raise KeyError('Session is disconnected')
+KeyError: 'Session is disconnected'
+INFO | 127.0.0.1 - - [18/Nov/2022 19:41:31] "[31m[1mGET /socket.io/?EIO=4&transport=polling&t=OIBdI7B&sid=K0Efj6WyvoDdtoH4AACb HTTP/1.1[0m" 400 -
+INFO | 127.0.0.1 - - [18/Nov/2022 19:41:31] "[35m[1mPOST /socket.io/?EIO=4&transport=polling&t=OIBdIH8&sid=WiZm1kICFUBXz3KtAACZ HTTP/1.1[0m" 500 -
+ERROR | Error on request:
+Traceback (most recent call last):
+  File "D:\MyProject\microerp\env\lib\site-packages\werkzeug\serving.py", line 335, in run_wsgi
+    execute(self.server.app)
+  File "D:\MyProject\microerp\env\lib\site-packages\werkzeug\serving.py", line 322, in execute
+    application_iter = app(environ, start_response)
+  File "D:\MyProject\microerp\env\lib\site-packages\flask\app.py", line 2548, in __call__
+    return self.wsgi_app(environ, start_response)
+  File "D:\MyProject\microerp\env\lib\site-packages\flask_socketio\__init__.py", line 43, in __call__
+    return super(_SocketIOMiddleware, self).__call__(environ,
+  File "D:\MyProject\microerp\env\lib\site-packages\engineio\middleware.py", line 63, in __call__
+    return self.engineio_app.handle_request(environ, start_response)
+  File "D:\MyProject\microerp\env\lib\site-packages\socketio\server.py", line 605, in handle_request
+    return self.eio.handle_request(environ, start_response)
+  File "D:\MyProject\microerp\env\lib\site-packages\engineio\server.py", line 429, in handle_request
+    socket = self._get_socket(sid)
+  File "D:\MyProject\microerp\env\lib\site-packages\engineio\server.py", line 638, in _get_socket
+    raise KeyError('Session is disconnected')
+KeyError: 'Session is disconnected'
+INFO | 127.0.0.1 - - [18/Nov/2022 19:41:31] "GET /socket.io/?EIO=4&transport=polling&t=OIBdHrV&sid=trr96UmIZLoJEsVjAACi HTTP/1.1" 200 -
+INFO | 127.0.0.1 - - [18/Nov/2022 19:41:32] "[31m[1mGET /socket.io/?EIO=4&transport=polling&t=OIBdIH9&sid=WiZm1kICFUBXz3KtAACZ HTTP/1.1[0m" 400 -
+INFO | 127.0.0.1 - - [18/Nov/2022 19:41:32] "GET /socket.io/?EIO=4&transport=polling&t=OIBdJ7h HTTP/1.1" 200 -
+INFO | 127.0.0.1 - - [18/Nov/2022 19:41:32] "POST /socket.io/?EIO=4&transport=polling&t=OIBdJ7f&sid=HipDQZWkFODqKHNYAACp HTTP/1.1" 200 -
+INFO | 127.0.0.1 - - [18/Nov/2022 19:41:32] "GET /socket.io/?EIO=4&transport=polling&t=OIBdHzA&sid=I9iLJ4BZoNVVlT9_AACr HTTP/1.1" 200 -
+INFO | 127.0.0.1 - - [18/Nov/2022 19:41:32] "GET /socket.io/?EIO=4&transport=polling&t=OIBdHr_&sid=WZzfRazmS7_sQhXiAACd HTTP/1.1" 200 -
+INFO | 127.0.0.1 - - [18/Nov/2022 19:41:32] "GET /socket.io/?EIO=4&transport=polling&t=OIBdHrz.0&sid=9HfjGX9Olz5xvvgvAACW HTTP/1.1" 200 -
+INFO | 127.0.0.1 - - [18/Nov/2022 19:41:32] "GET /socket.io/?EIO=4&transport=polling&t=OIBdJ7j HTTP/1.1" 200 -
+INFO | 127.0.0.1 - - [18/Nov/2022 19:41:32] "GET /socket.io/?EIO=4&transport=polling&t=OIBdMYn HTTP/1.1" 200 -
+INFO | 127.0.0.1 - - [18/Nov/2022 19:41:32] "GET /socket.io/?EIO=4&transport=polling&t=OIBdMfi HTTP/1.1" 200 -
+INFO | 127.0.0.1 - - [18/Nov/2022 19:41:32] "GET /socket.io/?EIO=4&transport=polling&t=OIBdMhM HTTP/1.1" 200 -
+INFO | 127.0.0.1 - - [18/Nov/2022 19:41:32] "GET /socket.io/?EIO=4&transport=polling&t=OIBdMgt HTTP/1.1" 200 -
+INFO | 127.0.0.1 - - [18/Nov/2022 19:41:32] "GET /socket.io/?EIO=4&transport=polling&t=OIBdMgO HTTP/1.1" 200 -
+INFO | 127.0.0.1 - - [18/Nov/2022 19:41:32] "GET /socket.io/?EIO=4&transport=polling&t=OIBdMhr HTTP/1.1" 200 -
+INFO | 127.0.0.1 - - [18/Nov/2022 19:41:32] "GET /socket.io/?EIO=4&transport=polling&t=OIBdN5B HTTP/1.1" 200 -
+INFO | 127.0.0.1 - - [18/Nov/2022 19:41:32] "GET /socket.io/?EIO=4&transport=polling&t=OIBdNRp HTTP/1.1" 200 -
+INFO | 127.0.0.1 - - [18/Nov/2022 19:41:32] "GET /socket.io/?EIO=4&transport=polling&t=OIBdN7D HTTP/1.1" 200 -
+INFO | 127.0.0.1 - - [18/Nov/2022 19:41:32] "GET /socket.io/?EIO=4&transport=polling&t=OIBdN99 HTTP/1.1" 200 -
+INFO | 127.0.0.1 - - [18/Nov/2022 19:41:32] "[35m[1mPOST /socket.io/?EIO=4&transport=polling&t=OIBdO1T&sid=_3_5Advtr-iBV5bTAACh HTTP/1.1[0m" 500 -
+ERROR | Error on request:
+Traceback (most recent call last):
+  File "D:\MyProject\microerp\env\lib\site-packages\werkzeug\serving.py", line 335, in run_wsgi
+    execute(self.server.app)
+  File "D:\MyProject\microerp\env\lib\site-packages\werkzeug\serving.py", line 322, in execute
+    application_iter = app(environ, start_response)
+  File "D:\MyProject\microerp\env\lib\site-packages\flask\app.py", line 2548, in __call__
+    return self.wsgi_app(environ, start_response)
+  File "D:\MyProject\microerp\env\lib\site-packages\flask_socketio\__init__.py", line 43, in __call__
+    return super(_SocketIOMiddleware, self).__call__(environ,
+  File "D:\MyProject\microerp\env\lib\site-packages\engineio\middleware.py", line 63, in __call__
+    return self.engineio_app.handle_request(environ, start_response)
+  File "D:\MyProject\microerp\env\lib\site-packages\socketio\server.py", line 605, in handle_request
+    return self.eio.handle_request(environ, start_response)
+  File "D:\MyProject\microerp\env\lib\site-packages\engineio\server.py", line 429, in handle_request
+    socket = self._get_socket(sid)
+  File "D:\MyProject\microerp\env\lib\site-packages\engineio\server.py", line 638, in _get_socket
+    raise KeyError('Session is disconnected')
+KeyError: 'Session is disconnected'
+INFO | 127.0.0.1 - - [18/Nov/2022 19:41:33] "[31m[1mGET /socket.io/?EIO=4&transport=polling&t=OIBdO1U&sid=_3_5Advtr-iBV5bTAACh HTTP/1.1[0m" 400 -
+INFO | 127.0.0.1 - - [18/Nov/2022 19:41:33] "[35m[1mGET /socket.io/?EIO=4&transport=polling&t=OIBdO6_&sid=SFWO7vOlZKdKGDWkAACf HTTP/1.1[0m" 500 -
+INFO | 127.0.0.1 - - [18/Nov/2022 19:41:33] "[35m[1mGET /socket.io/?EIO=4&transport=polling&t=OIBdO1g&sid=vX-CJbBN9dudnu8dAACR HTTP/1.1[0m" 500 -
+INFO | 127.0.0.1 - - [18/Nov/2022 19:41:33] "[31m[1mPOST /socket.io/?EIO=4&transport=polling&t=OIBdO1f&sid=vX-CJbBN9dudnu8dAACR HTTP/1.1[0m" 400 -
+INFO | 127.0.0.1 - - [18/Nov/2022 19:41:33] "[31m[1mPOST /socket.io/?EIO=4&transport=polling&t=OIBdO6-&sid=SFWO7vOlZKdKGDWkAACf HTTP/1.1[0m" 400 -
+ERROR | Error on request:
+Traceback (most recent call last):
+  File "D:\MyProject\microerp\env\lib\site-packages\werkzeug\serving.py", line 335, in run_wsgi
+    execute(self.server.app)
+  File "D:\MyProject\microerp\env\lib\site-packages\werkzeug\serving.py", line 322, in execute
+    application_iter = app(environ, start_response)
+  File "D:\MyProject\microerp\env\lib\site-packages\flask\app.py", line 2548, in __call__
+    return self.wsgi_app(environ, start_response)
+  File "D:\MyProject\microerp\env\lib\site-packages\flask_socketio\__init__.py", line 43, in __call__
+    return super(_SocketIOMiddleware, self).__call__(environ,
+  File "D:\MyProject\microerp\env\lib\site-packages\engineio\middleware.py", line 63, in __call__
+    return self.engineio_app.handle_request(environ, start_response)
+  File "D:\MyProject\microerp\env\lib\site-packages\socketio\server.py", line 605, in handle_request
+    return self.eio.handle_request(environ, start_response)
+  File "D:\MyProject\microerp\env\lib\site-packages\engineio\server.py", line 409, in handle_request
+    socket = self._get_socket(sid)
+  File "D:\MyProject\microerp\env\lib\site-packages\engineio\server.py", line 638, in _get_socket
+    raise KeyError('Session is disconnected')
+KeyError: 'Session is disconnected'
+ERROR | Error on request:
+Traceback (most recent call last):
+  File "D:\MyProject\microerp\env\lib\site-packages\werkzeug\serving.py", line 335, in run_wsgi
+    execute(self.server.app)
+  File "D:\MyProject\microerp\env\lib\site-packages\werkzeug\serving.py", line 322, in execute
+    application_iter = app(environ, start_response)
+  File "D:\MyProject\microerp\env\lib\site-packages\flask\app.py", line 2548, in __call__
+    return self.wsgi_app(environ, start_response)
+  File "D:\MyProject\microerp\env\lib\site-packages\flask_socketio\__init__.py", line 43, in __call__
+    return super(_SocketIOMiddleware, self).__call__(environ,
+  File "D:\MyProject\microerp\env\lib\site-packages\engineio\middleware.py", line 63, in __call__
+    return self.engineio_app.handle_request(environ, start_response)
+  File "D:\MyProject\microerp\env\lib\site-packages\socketio\server.py", line 605, in handle_request
+    return self.eio.handle_request(environ, start_response)
+  File "D:\MyProject\microerp\env\lib\site-packages\engineio\server.py", line 409, in handle_request
+    socket = self._get_socket(sid)
+  File "D:\MyProject\microerp\env\lib\site-packages\engineio\server.py", line 638, in _get_socket
+    raise KeyError('Session is disconnected')
+KeyError: 'Session is disconnected'
+INFO | 127.0.0.1 - - [18/Nov/2022 19:41:33] "[35m[1mPOST /socket.io/?EIO=4&transport=polling&t=OIBdOCG&sid=vKjEAIEyPSR0SK9EAACe HTTP/1.1[0m" 500 -
+ERROR | Error on request:
+Traceback (most recent call last):
+  File "D:\MyProject\microerp\env\lib\site-packages\werkzeug\serving.py", line 335, in run_wsgi
+    execute(self.server.app)
+  File "D:\MyProject\microerp\env\lib\site-packages\werkzeug\serving.py", line 322, in execute
+    application_iter = app(environ, start_response)
+  File "D:\MyProject\microerp\env\lib\site-packages\flask\app.py", line 2548, in __call__
+    return self.wsgi_app(environ, start_response)
+  File "D:\MyProject\microerp\env\lib\site-packages\flask_socketio\__init__.py", line 43, in __call__
+    return super(_SocketIOMiddleware, self).__call__(environ,
+  File "D:\MyProject\microerp\env\lib\site-packages\engineio\middleware.py", line 63, in __call__
+    return self.engineio_app.handle_request(environ, start_response)
+  File "D:\MyProject\microerp\env\lib\site-packages\socketio\server.py", line 605, in handle_request
+    return self.eio.handle_request(environ, start_response)
+  File "D:\MyProject\microerp\env\lib\site-packages\engineio\server.py", line 429, in handle_request
+    socket = self._get_socket(sid)
+  File "D:\MyProject\microerp\env\lib\site-packages\engineio\server.py", line 638, in _get_socket
+    raise KeyError('Session is disconnected')
+KeyError: 'Session is disconnected'
+INFO | 127.0.0.1 - - [18/Nov/2022 19:41:33] "[31m[1mGET /socket.io/?EIO=4&transport=polling&t=OIBdOCH&sid=vKjEAIEyPSR0SK9EAACe HTTP/1.1[0m" 400 -
+INFO | 127.0.0.1 - - [18/Nov/2022 19:41:33] "[35m[1mGET /socket.io/?EIO=4&transport=polling&t=OIBdOJ6&sid=HipDQZWkFODqKHNYAACp HTTP/1.1[0m" 500 -
+INFO | 127.0.0.1 - - [18/Nov/2022 19:41:33] "GET /socket.io/?EIO=4&transport=polling&t=OIBdODr HTTP/1.1" 200 -
+INFO | 127.0.0.1 - - [18/Nov/2022 19:41:33] "GET /socket.io/?EIO=4&transport=polling&t=OIBdOJ7 HTTP/1.1" 200 -
+INFO | 127.0.0.1 - - [18/Nov/2022 19:41:33] "[35m[1mPOST /socket.io/?EIO=4&transport=polling&t=OIBdOTG&sid=KtvxeT90G12r-W5VAACg HTTP/1.1[0m" 500 -
+INFO | 127.0.0.1 - - [18/Nov/2022 19:41:33] "[31m[1mGET /socket.io/?EIO=4&transport=polling&t=OIBdOTH&sid=KtvxeT90G12r-W5VAACg HTTP/1.1[0m" 400 -
+ERROR | Error on request:
+Traceback (most recent call last):
+  File "D:\MyProject\microerp\env\lib\site-packages\werkzeug\serving.py", line 335, in run_wsgi
+    execute(self.server.app)
+  File "D:\MyProject\microerp\env\lib\site-packages\werkzeug\serving.py", line 322, in execute
+    application_iter = app(environ, start_response)
+  File "D:\MyProject\microerp\env\lib\site-packages\flask\app.py", line 2548, in __call__
+    return self.wsgi_app(environ, start_response)
+  File "D:\MyProject\microerp\env\lib\site-packages\flask_socketio\__init__.py", line 43, in __call__
+    return super(_SocketIOMiddleware, self).__call__(environ,
+  File "D:\MyProject\microerp\env\lib\site-packages\engineio\middleware.py", line 63, in __call__
+    return self.engineio_app.handle_request(environ, start_response)
+  File "D:\MyProject\microerp\env\lib\site-packages\socketio\server.py", line 605, in handle_request
+    return self.eio.handle_request(environ, start_response)
+  File "D:\MyProject\microerp\env\lib\site-packages\engineio\server.py", line 429, in handle_request
+    socket = self._get_socket(sid)
+  File "D:\MyProject\microerp\env\lib\site-packages\engineio\server.py", line 638, in _get_socket
+    raise KeyError('Session is disconnected')
+KeyError: 'Session is disconnected'
+ERROR | Error on request:
+Traceback (most recent call last):
+  File "D:\MyProject\microerp\env\lib\site-packages\werkzeug\serving.py", line 335, in run_wsgi
+    execute(self.server.app)
+  File "D:\MyProject\microerp\env\lib\site-packages\werkzeug\serving.py", line 322, in execute
+    application_iter = app(environ, start_response)
+  File "D:\MyProject\microerp\env\lib\site-packages\flask\app.py", line 2548, in __call__
+    return self.wsgi_app(environ, start_response)
+  File "D:\MyProject\microerp\env\lib\site-packages\flask_socketio\__init__.py", line 43, in __call__
+    return super(_SocketIOMiddleware, self).__call__(environ,
+  File "D:\MyProject\microerp\env\lib\site-packages\engineio\middleware.py", line 63, in __call__
+    return self.engineio_app.handle_request(environ, start_response)
+  File "D:\MyProject\microerp\env\lib\site-packages\socketio\server.py", line 605, in handle_request
+    return self.eio.handle_request(environ, start_response)
+  File "D:\MyProject\microerp\env\lib\site-packages\engineio\server.py", line 409, in handle_request
+    socket = self._get_socket(sid)
+  File "D:\MyProject\microerp\env\lib\site-packages\engineio\server.py", line 638, in _get_socket
+    raise KeyError('Session is disconnected')
+KeyError: 'Session is disconnected'
+INFO | 127.0.0.1 - - [18/Nov/2022 19:41:33] "GET /socket.io/?EIO=4&transport=polling&t=OIBdRvZ HTTP/1.1" 200 -
+INFO | 127.0.0.1 - - [18/Nov/2022 19:41:33] "GET /socket.io/?EIO=4&transport=polling&t=OIBdRfj HTTP/1.1" 200 -
+INFO | 127.0.0.1 - - [18/Nov/2022 19:41:33] "GET /socket.io/?EIO=4&transport=polling&t=OIBdRrj HTTP/1.1" 200 -
+INFO | 127.0.0.1 - - [18/Nov/2022 19:41:33] "GET /socket.io/?EIO=4&transport=polling&t=OIBdRoq HTTP/1.1" 200 -
+INFO | 127.0.0.1 - - [18/Nov/2022 19:41:33] "GET /socket.io/?EIO=4&transport=polling&t=OIBdRk_ HTTP/1.1" 200 -
+INFO | 127.0.0.1 - - [18/Nov/2022 19:41:33] "GET /socket.io/?EIO=4&transport=polling&t=OIBdRnt HTTP/1.1" 200 -
+INFO | 127.0.0.1 - - [18/Nov/2022 19:41:34] "GET /socket.io/?EIO=4&transport=polling&t=OIBdSDW HTTP/1.1" 200 -
+INFO | 127.0.0.1 - - [18/Nov/2022 19:41:34] "GET /socket.io/?EIO=4&transport=polling&t=OIBdSLh HTTP/1.1" 200 -
+INFO | 127.0.0.1 - - [18/Nov/2022 19:41:34] "GET /socket.io/?EIO=4&transport=polling&t=OIBdSUp HTTP/1.1" 200 -
+INFO | 127.0.0.1 - - [18/Nov/2022 19:41:34] "GET /socket.io/?EIO=4&transport=polling&t=OIBdSKj HTTP/1.1" 200 -
+INFO | 127.0.0.1 - - [18/Nov/2022 19:41:34] "POST /socket.io/?EIO=4&transport=polling&t=OIBdSmL&sid=qMpCr_mOPeh7zERCAACT HTTP/1.1" 200 -
+INFO | 127.0.0.1 - - [18/Nov/2022 19:41:34] "POST /socket.io/?EIO=4&transport=polling&t=OIBdSo1&sid=4l_Ij-u37Z9yBgQHAACV HTTP/1.1" 200 -
+INFO | 127.0.0.1 - - [18/Nov/2022 19:41:34] "GET /socket.io/?EIO=4&transport=polling&t=OIBdS-1 HTTP/1.1" 200 -
+INFO | 127.0.0.1 - - [18/Nov/2022 19:41:34] "GET /socket.io/?EIO=4&transport=polling&t=OIBdT0g HTTP/1.1" 200 -
+INFO | 127.0.0.1 - - [18/Nov/2022 19:41:34] "POST /socket.io/?EIO=4&transport=polling&t=OIBdSrB&sid=WZzfRazmS7_sQhXiAACd HTTP/1.1" 200 -
+INFO | 127.0.0.1 - - [18/Nov/2022 19:41:34] "POST /socket.io/?EIO=4&transport=polling&t=OIBdSyb&sid=I9iLJ4BZoNVVlT9_AACr HTTP/1.1" 200 -
+INFO | 127.0.0.1 - - [18/Nov/2022 19:41:34] "POST /socket.io/?EIO=4&transport=polling&t=OIBdSr8&sid=9HfjGX9Olz5xvvgvAACW HTTP/1.1" 200 -
+INFO | 127.0.0.1 - - [18/Nov/2022 19:41:34] "POST /socket.io/?EIO=4&transport=polling&t=OIBdSqg&sid=trr96UmIZLoJEsVjAACi HTTP/1.1" 200 -
+INFO | 127.0.0.1 - - [18/Nov/2022 19:41:34] "GET /socket.io/?EIO=4&transport=polling&t=OIBdT7e HTTP/1.1" 200 -
+INFO | 127.0.0.1 - - [18/Nov/2022 19:41:34] "GET /socket.io/?EIO=4&transport=polling&t=OIBdT34 HTTP/1.1" 200 -
+INFO | 127.0.0.1 - - [18/Nov/2022 19:41:34] "GET /socket.io/?EIO=4&transport=polling&t=OIBdTFZ HTTP/1.1" 200 -
+INFO | 127.0.0.1 - - [18/Nov/2022 19:41:34] "GET /socket.io/?EIO=4&transport=polling&t=OIBdT6C HTTP/1.1" 200 -
+INFO | 127.0.0.1 - - [18/Nov/2022 19:41:34] "[31m[1mPOST /socket.io/?EIO=4&transport=polling&t=OIBdTGW&sid=WiZm1kICFUBXz3KtAACZ HTTP/1.1[0m" 400 -
+INFO | 127.0.0.1 - - [18/Nov/2022 19:41:34] "[31m[1mPOST /socket.io/?EIO=4&transport=polling&t=OIBdT6R&sid=K0Efj6WyvoDdtoH4AACb HTTP/1.1[0m" 400 -
+INFO | 127.0.0.1 - - [18/Nov/2022 19:41:35] "GET /socket.io/?EIO=4&transport=polling&t=OIBdTHU HTTP/1.1" 200 -
+INFO | 127.0.0.1 - - [18/Nov/2022 19:41:35] "GET /socket.io/?EIO=4&transport=polling&t=OIBdTVf HTTP/1.1" 200 -
+INFO | 127.0.0.1 - - [18/Nov/2022 19:41:35] "GET /socket.io/?EIO=4&transport=polling&t=OIBdTn9 HTTP/1.1" 200 -
+INFO | 127.0.0.1 - - [18/Nov/2022 19:41:35] "GET /socket.io/?EIO=4&transport=polling&t=OIBdTkl HTTP/1.1" 200 -
+INFO | 127.0.0.1 - - [18/Nov/2022 19:41:35] "[31m[1mPOST /socket.io/?EIO=4&transport=polling&t=OIBdUST&sid=HipDQZWkFODqKHNYAACp HTTP/1.1[0m" 400 -
+INFO | 127.0.0.1 - - [18/Nov/2022 19:41:35] "[31m[1mPOST /socket.io/?EIO=4&transport=polling&t=OIBdUcU&sid=_3_5Advtr-iBV5bTAACh HTTP/1.1[0m" 400 -
+INFO | 127.0.0.1 - - [18/Nov/2022 19:41:35] "GET /socket.io/?EIO=4&transport=polling&t=OIBdUqV HTTP/1.1" 200 -
+INFO | 127.0.0.1 - - [18/Nov/2022 19:41:35] "[31m[1mPOST /socket.io/?EIO=4&transport=polling&t=OIBdUhQ&sid=vKjEAIEyPSR0SK9EAACe HTTP/1.1[0m" 400 -
+INFO | 127.0.0.1 - - [18/Nov/2022 19:41:35] "[31m[1mPOST /socket.io/?EIO=4&transport=polling&t=OIBdUhH&sid=SFWO7vOlZKdKGDWkAACf HTTP/1.1[0m" 400 -
+INFO | 127.0.0.1 - - [18/Nov/2022 19:41:35] "[31m[1mPOST /socket.io/?EIO=4&transport=polling&t=OIBdUmQ&sid=KtvxeT90G12r-W5VAACg HTTP/1.1[0m" 400 -
+INFO | 127.0.0.1 - - [18/Nov/2022 19:41:35] "[31m[1mPOST /socket.io/?EIO=4&transport=polling&t=OIBdUhK&sid=vX-CJbBN9dudnu8dAACR HTTP/1.1[0m" 400 -
+INFO | 127.0.0.1 - - [18/Nov/2022 19:41:35] "[31m[1mPOST /socket.io/?EIO=4&transport=polling&t=OIBdUmL&sid=HipDQZWkFODqKHNYAACp HTTP/1.1[0m" 400 -
+INFO | 127.0.0.1 - - [18/Nov/2022 19:41:35] "POST /socket.io/?EIO=4&transport=polling&t=OIBdUrS&sid=2b-wVuedhjSs1i6mAAC- HTTP/1.1" 200 -
+INFO | 127.0.0.1 - - [18/Nov/2022 19:41:35] "POST /socket.io/?EIO=4&transport=polling&t=OIBdUrU&sid=AejEZ3SeRhFwWf7rAADA HTTP/1.1" 200 -
+INFO | 127.0.0.1 - - [18/Nov/2022 19:41:35] "GET /socket.io/?EIO=4&transport=polling&t=OIBdUrT&sid=2b-wVuedhjSs1i6mAAC- HTTP/1.1" 200 -
+INFO | 127.0.0.1 - - [18/Nov/2022 19:41:35] "POST /socket.io/?EIO=4&transport=polling&t=OIBdUrR&sid=s2PdIF2D41iujqh0AAC7 HTTP/1.1" 200 -
+INFO | 127.0.0.1 - - [18/Nov/2022 19:41:35] "GET /socket.io/?EIO=4&transport=polling&t=OIBdUrR.0&sid=s2PdIF2D41iujqh0AAC7 HTTP/1.1" 200 -
+INFO | 127.0.0.1 - - [18/Nov/2022 19:41:35] "GET /socket.io/?EIO=4&transport=polling&t=OIBdUrU.0&sid=AejEZ3SeRhFwWf7rAADA HTTP/1.1" 200 -
+INFO | 127.0.0.1 - - [18/Nov/2022 19:41:36] "POST /socket.io/?EIO=4&transport=polling&t=OIBdUrZ&sid=fj1uNKiuiBEJRAdtAAC8 HTTP/1.1" 200 -
+INFO | 127.0.0.1 - - [18/Nov/2022 19:41:36] "POST /socket.io/?EIO=4&transport=polling&t=OIBdUrW&sid=LrKh0XPy_zvHlTyoAAC9 HTTP/1.1" 200 -
+INFO | 127.0.0.1 - - [18/Nov/2022 19:41:36] "GET /socket.io/?EIO=4&transport=polling&t=OIBdUra&sid=fj1uNKiuiBEJRAdtAAC8 HTTP/1.1" 200 -
+INFO | 127.0.0.1 - - [18/Nov/2022 19:41:36] "GET /socket.io/?EIO=4&transport=polling&t=OIBdUrW.0&sid=LrKh0XPy_zvHlTyoAAC9 HTTP/1.1" 200 -
+INFO | 127.0.0.1 - - [18/Nov/2022 19:41:36] "POST /socket.io/?EIO=4&transport=polling&t=OIBdUrY&sid=2E7PzcKznkcOHnAkAAC_ HTTP/1.1" 200 -
+INFO | 127.0.0.1 - - [18/Nov/2022 19:41:36] "GET /socket.io/?EIO=4&transport=polling&t=OIBdUrY.0&sid=2E7PzcKznkcOHnAkAAC_ HTTP/1.1" 200 -
+INFO | 127.0.0.1 - - [18/Nov/2022 19:41:36] "GET /socket.io/?EIO=4&transport=polling&t=OIBdUwX HTTP/1.1" 200 -
+INFO | 127.0.0.1 - - [18/Nov/2022 19:41:36] "POST /socket.io/?EIO=4&transport=polling&t=OIBdUwd&sid=XMVhcOuTbrHzQnGVAADB HTTP/1.1" 200 -
+INFO | 127.0.0.1 - - [18/Nov/2022 19:41:36] "POST /socket.io/?EIO=4&transport=polling&t=OIBdUwa&sid=kwluxNGgrE3LrfX-AADE HTTP/1.1" 200 -
+INFO | 127.0.0.1 - - [18/Nov/2022 19:41:36] "POST /socket.io/?EIO=4&transport=polling&t=OIBdUwY&sid=Pna9Lz3PLqLWicJOAADD HTTP/1.1" 200 -
+INFO | 127.0.0.1 - - [18/Nov/2022 19:41:36] "GET /socket.io/?EIO=4&transport=polling&t=OIBdUwZ&sid=Pna9Lz3PLqLWicJOAADD HTTP/1.1" 200 -
+INFO | 127.0.0.1 - - [18/Nov/2022 19:41:36] "GET /socket.io/?EIO=4&transport=polling&t=OIBdUwb&sid=kwluxNGgrE3LrfX-AADE HTTP/1.1" 200 -
+INFO | 127.0.0.1 - - [18/Nov/2022 19:41:36] "GET /socket.io/?EIO=4&transport=polling&t=OIBdUwe&sid=XMVhcOuTbrHzQnGVAADB HTTP/1.1" 200 -
+INFO | 127.0.0.1 - - [18/Nov/2022 19:41:36] "GET /socket.io/?EIO=4&transport=polling&t=OIBdUye HTTP/1.1" 200 -
+INFO | 127.0.0.1 - - [18/Nov/2022 19:41:36] "GET /socket.io/?EIO=4&transport=polling&t=OIBdU_2 HTTP/1.1" 200 -
+INFO | 127.0.0.1 - - [18/Nov/2022 19:41:36] "POST /socket.io/?EIO=4&transport=polling&t=OIBdU_S&sid=-DddpF7YbxXlBy6SAADG HTTP/1.1" 200 -
+INFO | 127.0.0.1 - - [18/Nov/2022 19:41:36] "POST /socket.io/?EIO=4&transport=polling&t=OIBdUwf&sid=5pFr9V5w8p4AKkSiAADC HTTP/1.1" 200 -
+INFO | 127.0.0.1 - - [18/Nov/2022 19:41:36] "GET /socket.io/?EIO=4&transport=polling&t=OIBdUwf.0&sid=5pFr9V5w8p4AKkSiAADC HTTP/1.1" 200 -
+INFO | 127.0.0.1 - - [18/Nov/2022 19:41:37] "GET /socket.io/?EIO=4&transport=polling&t=OIBdU_T&sid=-DddpF7YbxXlBy6SAADG HTTP/1.1" 200 -
+INFO | 127.0.0.1 - - [18/Nov/2022 19:41:37] "GET /socket.io/?EIO=4&transport=polling&t=OIBdV0- HTTP/1.1" 200 -
+INFO | 127.0.0.1 - - [18/Nov/2022 19:41:37] "GET /socket.io/?EIO=4&transport=polling&t=OIBdV1S HTTP/1.1" 200 -
+INFO | 127.0.0.1 - - [18/Nov/2022 19:41:37] "POST /socket.io/?EIO=4&transport=polling&t=OIBdV4a&sid=w_oB0fW76vGwb0guAADI HTTP/1.1" 200 -
+INFO | 127.0.0.1 - - [18/Nov/2022 19:41:37] "POST /socket.io/?EIO=4&transport=polling&t=OIBdU_U&sid=1Uwk1y773SkiyNHpAADF HTTP/1.1" 200 -
+INFO | 127.0.0.1 - - [18/Nov/2022 19:41:37] "GET /socket.io/?EIO=4&transport=polling&t=OIBdU_V&sid=1Uwk1y773SkiyNHpAADF HTTP/1.1" 200 -
+INFO | 127.0.0.1 - - [18/Nov/2022 19:41:37] "GET /socket.io/?EIO=4&transport=polling&t=OIBdV4b&sid=w_oB0fW76vGwb0guAADI HTTP/1.1" 200 -
+INFO | 127.0.0.1 - - [18/Nov/2022 19:41:37] "POST /socket.io/?EIO=4&transport=polling&t=OIBdV4d&sid=KxwrbwtpBHMZBDkcAADK HTTP/1.1" 200 -
+INFO | 127.0.0.1 - - [18/Nov/2022 19:41:37] "POST /socket.io/?EIO=4&transport=polling&t=OIBdV4g&sid=yBi6-NfVvE-3g2FPAADH HTTP/1.1" 200 -
+INFO | 127.0.0.1 - - [18/Nov/2022 19:41:37] "GET /socket.io/?EIO=4&transport=polling&t=OIBdV4e&sid=KxwrbwtpBHMZBDkcAADK HTTP/1.1" 200 -
+INFO | 127.0.0.1 - - [18/Nov/2022 19:41:37] "POST /socket.io/?EIO=4&transport=polling&t=OIBdV4i&sid=oxLhGzUk46PnAXYXAADJ HTTP/1.1" 200 -
+INFO | 127.0.0.1 - - [18/Nov/2022 19:41:37] "GET /socket.io/?EIO=4&transport=polling&t=OIBdV4g.0&sid=yBi6-NfVvE-3g2FPAADH HTTP/1.1" 200 -
+INFO | 127.0.0.1 - - [18/Nov/2022 19:41:37] "GET /socket.io/?EIO=4&transport=polling&t=OIBdV4j&sid=oxLhGzUk46PnAXYXAADJ HTTP/1.1" 200 -
+INFO | 127.0.0.1 - - [18/Nov/2022 19:41:37] "POST /socket.io/?EIO=4&transport=polling&t=OIBdV9z&sid=WfkcaPqOwsyX_Qx-AADM HTTP/1.1" 200 -
+INFO | 127.0.0.1 - - [18/Nov/2022 19:41:37] "POST /socket.io/?EIO=4&transport=polling&t=OIBdV9_&sid=3ypCJ4q_tn2qCrFBAADO HTTP/1.1" 200 -
+INFO | 127.0.0.1 - - [18/Nov/2022 19:41:37] "GET /socket.io/?EIO=4&transport=polling&t=OIBdV9z.0&sid=WfkcaPqOwsyX_Qx-AADM HTTP/1.1" 200 -
+INFO | 127.0.0.1 - - [18/Nov/2022 19:41:37] "POST /socket.io/?EIO=4&transport=polling&t=OIBdV9v&sid=CsxDlza-ANpMjAbMAADN HTTP/1.1" 200 -
+INFO | 127.0.0.1 - - [18/Nov/2022 19:41:37] "GET /socket.io/?EIO=4&transport=polling&t=OIBdV9x&sid=CsxDlza-ANpMjAbMAADN HTTP/1.1" 200 -
+INFO | 127.0.0.1 - - [18/Nov/2022 19:41:38] "GET /socket.io/?EIO=4&transport=polling&t=OIBdVA0&sid=3ypCJ4q_tn2qCrFBAADO HTTP/1.1" 200 -
+INFO | 127.0.0.1 - - [18/Nov/2022 19:41:38] "POST /socket.io/?EIO=4&transport=polling&t=OIBdVA1&sid=S2pStVwLHvhMvxW-AADL HTTP/1.1" 200 -
+INFO | 127.0.0.1 - - [18/Nov/2022 19:41:38] "POST /socket.io/?EIO=4&transport=polling&t=OIBdVEs&sid=2m-msbzZv_mL_VuNAADP HTTP/1.1" 200 -
+INFO | 127.0.0.1 - - [18/Nov/2022 19:41:38] "GET /socket.io/?EIO=4&transport=polling&t=OIBdVA1.0&sid=S2pStVwLHvhMvxW-AADL HTTP/1.1" 200 -
+INFO | 127.0.0.1 - - [18/Nov/2022 19:41:38] "GET /socket.io/?EIO=4&transport=polling&t=OIBdVEt&sid=2m-msbzZv_mL_VuNAADP HTTP/1.1" 200 -
+INFO | 127.0.0.1 - - [18/Nov/2022 19:41:58] "GET /socket.io/?EIO=4&transport=polling&t=OIBdVK0&sid=2b-wVuedhjSs1i6mAAC- HTTP/1.1" 200 -
+INFO | 127.0.0.1 - - [18/Nov/2022 19:41:58] "GET /socket.io/?EIO=4&transport=polling&t=OIBdVJ_&sid=AejEZ3SeRhFwWf7rAADA HTTP/1.1" 200 -
+INFO | 127.0.0.1 - - [18/Nov/2022 19:41:58] "GET /socket.io/?EIO=4&transport=polling&t=OIBdVPC&sid=LrKh0XPy_zvHlTyoAAC9 HTTP/1.1" 200 -
+INFO | 127.0.0.1 - - [18/Nov/2022 19:41:58] "GET /socket.io/?EIO=4&transport=polling&t=OIBdVPD&sid=2E7PzcKznkcOHnAkAAC_ HTTP/1.1" 200 -
+INFO | 127.0.0.1 - - [18/Nov/2022 19:41:58] "GET /socket.io/?EIO=4&transport=polling&t=OIBdVJz&sid=s2PdIF2D41iujqh0AAC7 HTTP/1.1" 200 -
+INFO | 127.0.0.1 - - [18/Nov/2022 19:41:58] "GET /socket.io/?EIO=4&transport=polling&t=OIBdVPC.0&sid=fj1uNKiuiBEJRAdtAAC8 HTTP/1.1" 200 -
+INFO | 127.0.0.1 - - [18/Nov/2022 19:41:59] "GET /socket.io/?EIO=4&transport=polling&t=OIBdVUZ&sid=Pna9Lz3PLqLWicJOAADD HTTP/1.1" 200 -
+INFO | 127.0.0.1 - - [18/Nov/2022 19:41:59] "GET /socket.io/?EIO=4&transport=polling&t=OIBdVUb&sid=kwluxNGgrE3LrfX-AADE HTTP/1.1" 200 -
+INFO | 127.0.0.1 - - [18/Nov/2022 19:41:59] "GET /socket.io/?EIO=4&transport=polling&t=OIBdVZR&sid=XMVhcOuTbrHzQnGVAADB HTTP/1.1" 200 -
+INFO | 127.0.0.1 - - [18/Nov/2022 19:41:59] "POST /socket.io/?EIO=4&transport=polling&t=OIBdVUR&sid=3GaCop_o2NRDbwLIAADW HTTP/1.1" 200 -
+INFO | 127.0.0.1 - - [18/Nov/2022 19:41:59] "GET /socket.io/?EIO=4&transport=polling&t=OIBdVUT&sid=3GaCop_o2NRDbwLIAADW HTTP/1.1" 200 -
+INFO | 127.0.0.1 - - [18/Nov/2022 19:41:59] "POST /socket.io/?EIO=4&transport=polling&t=OIBdVUc&sid=kwluxNGgrE3LrfX-AADE HTTP/1.1" 200 -
+INFO | 127.0.0.1 - - [18/Nov/2022 19:41:59] "GET /socket.io/?EIO=4&transport=polling&t=OIBdVZe&sid=5pFr9V5w8p4AKkSiAADC HTTP/1.1" 200 -
+INFO | 127.0.0.1 - - [18/Nov/2022 19:41:59] "GET /socket.io/?EIO=4&transport=polling&t=OIBdVea&sid=-DddpF7YbxXlBy6SAADG HTTP/1.1" 200 -
+INFO | 127.0.0.1 - - [18/Nov/2022 19:41:59] "POST /socket.io/?EIO=4&transport=polling&t=OIBdVZc&sid=eIGmbxaPJqoTxeppAADa HTTP/1.1" 200 -
+INFO | 127.0.0.1 - - [18/Nov/2022 19:41:59] "GET /socket.io/?EIO=4&transport=polling&t=OIBdVZd&sid=eIGmbxaPJqoTxeppAADa HTTP/1.1" 200 -
+INFO | 127.0.0.1 - - [18/Nov/2022 19:41:59] "POST /socket.io/?EIO=4&transport=polling&t=OIBdVZa&sid=EyyaW9syFyBF0TcZAADb HTTP/1.1" 200 -
+INFO | 127.0.0.1 - - [18/Nov/2022 19:41:59] "GET /socket.io/?EIO=4&transport=polling&t=OIBdVZb&sid=EyyaW9syFyBF0TcZAADb HTTP/1.1" 200 -
+INFO | 127.0.0.1 - - [18/Nov/2022 19:41:59] "GET /socket.io/?EIO=4&transport=polling&t=OIBdVef&sid=1Uwk1y773SkiyNHpAADF HTTP/1.1" 200 -
+INFO | 127.0.0.1 - - [18/Nov/2022 19:41:59] "GET /socket.io/?EIO=4&transport=polling&t=OIBdVjv&sid=w_oB0fW76vGwb0guAADI HTTP/1.1" 200 -
+INFO | 127.0.0.1 - - [18/Nov/2022 19:41:59] "POST /socket.io/?EIO=4&transport=polling&t=OIBdVeb&sid=hTTskl1L0XsOE760AADe HTTP/1.1" 200 -
+INFO | 127.0.0.1 - - [18/Nov/2022 19:41:59] "POST /socket.io/?EIO=4&transport=polling&t=OIBdVed&sid=zGkoctThewNo3AycAADf HTTP/1.1" 200 -
+INFO | 127.0.0.1 - - [18/Nov/2022 19:41:59] "GET /socket.io/?EIO=4&transport=polling&t=OIBdVec&sid=hTTskl1L0XsOE760AADe HTTP/1.1" 200 -
+INFO | 127.0.0.1 - - [18/Nov/2022 19:41:59] "GET /socket.io/?EIO=4&transport=polling&t=OIBdVee&sid=zGkoctThewNo3AycAADf HTTP/1.1" 200 -
+INFO | 127.0.0.1 - - [18/Nov/2022 19:42:00] "GET /socket.io/?EIO=4&transport=polling&t=OIBdVk1&sid=KxwrbwtpBHMZBDkcAADK HTTP/1.1" 200 -
+INFO | 127.0.0.1 - - [18/Nov/2022 19:42:00] "GET /socket.io/?EIO=4&transport=polling&t=OIBdVk4&sid=yBi6-NfVvE-3g2FPAADH HTTP/1.1" 200 -
+INFO | 127.0.0.1 - - [18/Nov/2022 19:42:00] "GET /socket.io/?EIO=4&transport=polling&t=OIBdVp0&sid=WfkcaPqOwsyX_Qx-AADM HTTP/1.1" 200 -
+INFO | 127.0.0.1 - - [18/Nov/2022 19:42:00] "GET /socket.io/?EIO=4&transport=polling&t=OIBdVou&sid=oxLhGzUk46PnAXYXAADJ HTTP/1.1" 200 -
+INFO | 127.0.0.1 - - [18/Nov/2022 19:42:00] "GET /socket.io/?EIO=4&transport=polling&t=OIBdVp1&sid=CsxDlza-ANpMjAbMAADN HTTP/1.1" 200 -
+INFO | 127.0.0.1 - - [18/Nov/2022 19:42:00] "GET /socket.io/?EIO=4&transport=polling&t=OIBdVt_&sid=3ypCJ4q_tn2qCrFBAADO HTTP/1.1" 200 -
+INFO | 127.0.0.1 - - [18/Nov/2022 19:42:00] "GET /socket.io/?EIO=4&transport=polling&t=OIBdVu5&sid=2m-msbzZv_mL_VuNAADP HTTP/1.1" 200 -
+INFO | 127.0.0.1 - - [18/Nov/2022 19:42:00] "GET /socket.io/?EIO=4&transport=polling&t=OIBdVu5.0&sid=S2pStVwLHvhMvxW-AADL HTTP/1.1" 200 -
+INFO | 127.0.0.1 - - [18/Nov/2022 19:42:00] "GET /socket.io/?EIO=4&transport=polling&t=OIBdayu&sid=2b-wVuedhjSs1i6mAAC- HTTP/1.1" 200 -
+INFO | 127.0.0.1 - - [18/Nov/2022 19:42:00] "GET /socket.io/?EIO=4&transport=polling&t=OIBdayv.0&sid=AejEZ3SeRhFwWf7rAADA HTTP/1.1" 200 -
+INFO | 127.0.0.1 - - [18/Nov/2022 19:42:00] "POST /socket.io/?EIO=4&transport=polling&t=OIBdayv&sid=AejEZ3SeRhFwWf7rAADA HTTP/1.1" 200 -
+INFO | 127.0.0.1 - - [18/Nov/2022 19:42:00] "POST /socket.io/?EIO=4&transport=polling&t=OIBdayt&sid=2b-wVuedhjSs1i6mAAC- HTTP/1.1" 200 -
+INFO | 127.0.0.1 - - [18/Nov/2022 19:42:00] "POST /socket.io/?EIO=4&transport=polling&t=OIBdayw&sid=LrKh0XPy_zvHlTyoAAC9 HTTP/1.1" 200 -
+INFO | 127.0.0.1 - - [18/Nov/2022 19:42:00] "GET /socket.io/?EIO=4&transport=polling&t=OIBdayx&sid=LrKh0XPy_zvHlTyoAAC9 HTTP/1.1" 200 -
+INFO | 127.0.0.1 - - [18/Nov/2022 19:42:00] "GET /socket.io/?EIO=4&transport=polling&t=OIBdayz&sid=fj1uNKiuiBEJRAdtAAC8 HTTP/1.1" 200 -
+INFO | 127.0.0.1 - - [18/Nov/2022 19:42:00] "GET /socket.io/?EIO=4&transport=polling&t=OIBday-.0&sid=s2PdIF2D41iujqh0AAC7 HTTP/1.1" 200 -
+INFO | 127.0.0.1 - - [18/Nov/2022 19:42:00] "POST /socket.io/?EIO=4&transport=polling&t=OIBdayy&sid=fj1uNKiuiBEJRAdtAAC8 HTTP/1.1" 200 -
+INFO | 127.0.0.1 - - [18/Nov/2022 19:42:00] "POST /socket.io/?EIO=4&transport=polling&t=OIBday-&sid=s2PdIF2D41iujqh0AAC7 HTTP/1.1" 200 -
+INFO | 127.0.0.1 - - [18/Nov/2022 19:42:01] "GET /socket.io/?EIO=4&transport=polling&t=OIBdaz0&sid=2E7PzcKznkcOHnAkAAC_ HTTP/1.1" 200 -
+INFO | 127.0.0.1 - - [18/Nov/2022 19:42:01] "GET /socket.io/?EIO=4&transport=polling&t=OIBdb1M&sid=Pna9Lz3PLqLWicJOAADD HTTP/1.1" 200 -
+INFO | 127.0.0.1 - - [18/Nov/2022 19:42:01] "GET /socket.io/?EIO=4&transport=polling&t=OIBdb1N&sid=kwluxNGgrE3LrfX-AADE HTTP/1.1" 200 -
+INFO | 127.0.0.1 - - [18/Nov/2022 19:42:01] "POST /socket.io/?EIO=4&transport=polling&t=OIBday_&sid=2E7PzcKznkcOHnAkAAC_ HTTP/1.1" 200 -
+INFO | 127.0.0.1 - - [18/Nov/2022 19:42:01] "POST /socket.io/?EIO=4&transport=polling&t=OIBdb1L&sid=Pna9Lz3PLqLWicJOAADD HTTP/1.1" 200 -
+INFO | 127.0.0.1 - - [18/Nov/2022 19:42:01] "POST /socket.io/?EIO=4&transport=polling&t=OIBdb1O&sid=XMVhcOuTbrHzQnGVAADB HTTP/1.1" 200 -
+INFO | 127.0.0.1 - - [18/Nov/2022 19:42:01] "GET /socket.io/?EIO=4&transport=polling&t=OIBdb1O.0&sid=XMVhcOuTbrHzQnGVAADB HTTP/1.1" 200 -
+INFO | 127.0.0.1 - - [18/Nov/2022 19:42:01] "GET /socket.io/?EIO=4&transport=polling&t=OIBdb1P&sid=3GaCop_o2NRDbwLIAADW HTTP/1.1" 200 -
+INFO | 127.0.0.1 - - [18/Nov/2022 19:42:01] "POST /socket.io/?EIO=4&transport=polling&t=OIBdb6X&sid=5pFr9V5w8p4AKkSiAADC HTTP/1.1" 200 -
+INFO | 127.0.0.1 - - [18/Nov/2022 19:42:01] "POST /socket.io/?EIO=4&transport=polling&t=OIBdb6a&sid=-DddpF7YbxXlBy6SAADG HTTP/1.1" 200 -
+INFO | 127.0.0.1 - - [18/Nov/2022 19:42:01] "POST /socket.io/?EIO=4&transport=polling&t=OIBdb1V&sid=kwluxNGgrE3LrfX-AADE HTTP/1.1" 200 -
+INFO | 127.0.0.1 - - [18/Nov/2022 19:42:01] "POST /socket.io/?EIO=4&transport=polling&t=OIBdbBd&sid=1Uwk1y773SkiyNHpAADF HTTP/1.1" 200 -
+INFO | 127.0.0.1 - - [18/Nov/2022 19:42:01] "GET /socket.io/?EIO=4&transport=polling&t=OIBdb6c&sid=eIGmbxaPJqoTxeppAADa HTTP/1.1" 200 -
+INFO | 127.0.0.1 - - [18/Nov/2022 19:42:01] "GET /socket.io/?EIO=4&transport=polling&t=OIBdb6e&sid=EyyaW9syFyBF0TcZAADb HTTP/1.1" 200 -
+INFO | 127.0.0.1 - - [18/Nov/2022 19:42:02] "POST /socket.io/?EIO=4&transport=polling&t=OIBdbBg&sid=w_oB0fW76vGwb0guAADI HTTP/1.1" 200 -
+INFO | 127.0.0.1 - - [18/Nov/2022 19:42:02] "GET /socket.io/?EIO=4&transport=polling&t=OIBdbBk&sid=zGkoctThewNo3AycAADf HTTP/1.1" 200 -
+INFO | 127.0.0.1 - - [18/Nov/2022 19:42:02] "GET /socket.io/?EIO=4&transport=polling&t=OIBdbBm&sid=hTTskl1L0XsOE760AADe HTTP/1.1" 200 -
+INFO | 127.0.0.1 - - [18/Nov/2022 19:42:02] "POST /socket.io/?EIO=4&transport=polling&t=OIBdbG-&sid=KxwrbwtpBHMZBDkcAADK HTTP/1.1" 200 -
+INFO | 127.0.0.1 - - [18/Nov/2022 19:42:02] "POST /socket.io/?EIO=4&transport=polling&t=OIBdbH1&sid=yBi6-NfVvE-3g2FPAADH HTTP/1.1" 200 -

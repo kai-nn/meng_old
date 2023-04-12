@@ -184,12 +184,14 @@ equipment_bd = [
         'data_added': None,
 
         'nodes': [2, 4, 8],
+        'parrent': None,
+
         'options': None,
 
         'relevance': True,
         'added_id': None,
         # 'collapsed': None,
-        'is_group': True,
+        # 'is_group': True,
     },
     {
         'name': 'Приспособление',
@@ -201,12 +203,14 @@ equipment_bd = [
         'data_added': None,
 
         'nodes': [3],
+        'parrent': 1,
+
         'options': None,
 
         'relevance': True,
         'added_id': None,
         # 'collapsed': None,
-        'is_group': True,
+        # 'is_group': True,
     },
     {
         'name': 'Планшайба токарная',
@@ -215,15 +219,17 @@ equipment_bd = [
         'code': '63030-100',
         'firm': 'цех 50',
         'path': 'equipment/prisp_1.png',
-        'data_added': '20.09.22',
+        'data_added': '20.09.2022',
 
         'nodes': [],
+        'parrent': 2,
+
         'options': {'detail': '11.4201.3080.00'},
 
         'relevance': True,
         'added_id': None,
         # 'collapsed': None,
-        'is_group': False,
+        # 'is_group': False,
     },
     {
         'name': 'Инструмент',
@@ -232,15 +238,17 @@ equipment_bd = [
         'code': None,
         'firm': None,
         'path': 'equipment/default_tool.png',
-        'data_added': '20.09.22',
+        'data_added': '20.09.2022',
 
         'nodes': [5, 6],
+        'parrent': 1,
+
         'options': None,
 
         'relevance': True,
         'added_id': None,
         # 'collapsed': None,
-        'is_group': True,
+        # 'is_group': True,
     },
     {
         'name': 'Резец',
@@ -249,15 +257,17 @@ equipment_bd = [
         'code': '61510-500',
         'firm': 'Цех 50',
         'path': 'equipment/tool_1.png',
-        'data_added': '20.01.90',
+        'data_added': '20.01.1990',
 
         'nodes': [],
+        'parrent': 4,
+
         'options': {'len': 200, 'b*h': '30*30'},
 
         'relevance': True,
         'added_id': None,
         # 'collapsed': None,
-        'is_group': False,
+        # 'is_group': False,
     },
     {
         'name': 'Сверло',
@@ -266,15 +276,17 @@ equipment_bd = [
         'code': None,
         'firm': None,
         'path': 'equipment/tool_2.png',
-        'data_added': '20.01.88',
+        'data_added': '20.01.1988',
 
         'nodes': [7],
+        'parrent': 4,
+
         'options': None,
 
         'relevance': True,
         'added_id': None,
         # 'collapsed': None,
-        'is_group': True,
+        # 'is_group': True,
     },
     {
         'name': 'Сверло спиральное',
@@ -283,15 +295,17 @@ equipment_bd = [
         'code': '61510-2000',
         'firm': 'Guring',
         'path': 'equipment/tool_3.png',
-        'data_added': '20.01.21',
+        'data_added': '20.01.2021',
 
         'nodes': [],
+        'parrent': 6,
+
         'options': {'len': 150, 'diam': 32},
 
         'relevance': True,
         'added_id': None,
         # 'collapsed': None,
-        'is_group': False,
+        # 'is_group': False,
     },
 
     {
@@ -301,15 +315,17 @@ equipment_bd = [
         'code': None,
         'firm': None,
         'path': 'equipment/default_control.png',
-        'data_added': '20.09.22',
+        'data_added': '20.09.2022',
 
         'nodes': [],
+        'parrent': 1,
+
         'options': {'detail': '11.4201.3080.00'},
 
         'relevance': True,
         'added_id': None,
         # 'collapsed': None,
-        'is_group': True,
+        # 'is_group': True,
     },
 ]
 # Настройки базы Equipment (оснащение)
@@ -327,12 +343,14 @@ if len(Equipment.query.all()) <= 0:
             data_added=equipment_bd[index]['data_added'],
 
             nodes=str(equipment_bd[index]['nodes']),
+            parrent=equipment_bd[index]['parrent'],
+
             options=str(equipment_bd[index]['options']),
 
             relevance=equipment_bd[index]['relevance'],
             user=user,
             # collapsed=equipment_bd[index]['collapsed'],
-            is_group=equipment_bd[index]['is_group'],
+            # is_group=equipment_bd[index]['is_group'],
         )
         index += 1
 

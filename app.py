@@ -2,7 +2,17 @@ from flask import Flask, request, jsonify, send_from_directory
 from datetime import datetime, timedelta, timezone
 from flask_marshmallow import pprint
 import os, base64, math
+import json
 
+
+import pandas as pd
+# pip install pandas openpyxl
+
+# from openpyxl import load_workbook
+# from openpyxl_image_loader import SheetImageLoader
+
+from flask_socketio import SocketIO
+# pip install flask-socketio
 
 
 
@@ -18,6 +28,7 @@ import os, base64, math
 app = Flask(__name__, static_folder="./front/build", static_url_path='/')
 # jwt = JWTManager(app)
 
+socketIo = SocketIO(app, cors_allowed_origins='*')
 
 # настройки подключения к базе, токены
 from configuration import *
@@ -44,24 +55,24 @@ from defs import *
 # ведение журналов
 # один печатает журналы (stdout), другой записывает журналы в файл:
 
-import logging
-import sys
-
-logger = logging.getLogger()
-logger.setLevel(logging.INFO)
-formatter = logging.Formatter('%(levelname)s | %(message)s')
-
-stdout_handler = logging.StreamHandler(sys.stdout)
-stdout_handler.setLevel(logging.DEBUG)
-stdout_handler.setFormatter(formatter)
-
-file_handler = logging.FileHandler('logs.log')
-file_handler.setLevel(logging.DEBUG)
-file_handler.setFormatter(formatter)
-
-
-logger.addHandler(file_handler)
-logger.addHandler(stdout_handler)
+# import logging
+# import sys
+#
+# logger = logging.getLogger()
+# logger.setLevel(logging.INFO)
+# formatter = logging.Formatter('%(levelname)s | %(message)s')
+#
+# stdout_handler = logging.StreamHandler(sys.stdout)
+# stdout_handler.setLevel(logging.DEBUG)
+# stdout_handler.setFormatter(formatter)
+#
+# file_handler = logging.FileHandler('logs.log')
+# file_handler.setLevel(logging.DEBUG)
+# file_handler.setFormatter(formatter)
+#
+#
+# logger.addHandler(file_handler)
+# logger.addHandler(stdout_handler)
 
 
 
@@ -190,11 +201,11 @@ def list_tech():
 @app.route('/location', methods=['POST'])
 def location():
     value = request.get_json()
-    # print(value)
+    print(value)
 
-    if len(value) == 0:
+    if value is None:
         print('Геоданные отсутствуют')
-        return jsonify({})
+        return jsonify([])
 
     lat = value['latitude']
     lon = value['longitude']
@@ -217,9 +228,9 @@ def img_store(name):
     return send_from_directory("static/images", name)
 
 
-
-@app.route('/equipment', methods=['GET', 'POST'])
+@app.route('/equipment', methods=['GET', 'POST', 'DELETE'])
 def equipment():
+
     if request.method == 'GET':
         eq = Equipment.query.all()
         equipment = []
@@ -235,23 +246,383 @@ def equipment():
                 'data_added': e.data_added,
 
                 'nodes': eval(e.nodes),
+                'parrent': e.parrent,
+
                 'options': eval(e.options),
 
                 'relevance': e.relevance,
                 'added_id': e.added_id,
-                'collapsed': True,
-                'is_group': e.is_group,
+                # 'collapsed': True,
+                # 'is_group': e.is_group,
             }]
-        # equipment_schema = EquipmentSchema(many=True)
-        # response = equipment_schema.dump(equipment)
-        # pprint(response)
         return equipment
 
+    if request.method == 'POST':
+        print('##############')
+        value = request.get_json()
+        # print('value: ', value)
+        selected = value['selected']
+        command = value['command']
+
+        if command == 'addElem':
+            # response = add_equipment_element(selected)
+            # socketIo.emit('equipmentСhange', response)
+
+            test()
+            return 'addElem OK'
+
+        if command == 'addSubElem':
+            response = add_equipment_sub_element(selected)
+            socketIo.emit('equipmentСhange', response)
+            return 'addSubElem OK'
+
+    if request.method == 'DELETE':
+        value = request.get_json()
+        print('value: ', value)
+        selected = value['selected']
+
+        response = del_elem(selected)
+        print(response)
+
+        socketIo.emit('equipmentСhange', response)
+        return 'deleteElem OK'
+
+
+
+
+def add_equipment_element(selected):
+    # print('selected', selected)
+
+    selected_elem = Equipment.query.get(selected)
+
+    parrent = Equipment.query.get(selected_elem.parrent)
+    print('id parrent: ', parrent.id)
+
+    equipment_count = Equipment.query.count()
+
+    newElem = Equipment(
+        type=None,
+        name='Новый ' + str(equipment_count + 1),
+        description=None,
+        code=None,
+        firm=None,
+        path=None,
+        data_added=datetime.now().date().strftime("%d.%m.%Y"),
+
+        nodes=str([]),
+        parrent=parrent.id,
+
+        options=str(None),
+
+        relevance=1,
+        added_id=None,
+    )
+    db.session.add(newElem)
+
+    parrent_nodes = eval(parrent.nodes)
+    # print('parrent_nodes: ', parrent_nodes)
+    position_in_list = parrent_nodes.index(int(selected))
+    # print('position in list: ', position_in_list)
+    print(f'{newElem.name} \n--------------')
+    # print('id_new_elem', newElem.id)
+    parrent_nodes.insert(position_in_list + 1, equipment_count + 1)
+    # print('new nodes list: ', parrent_nodes )
+    parrent.nodes = str(parrent_nodes)
+
+    db.session.commit()
+
+    equipment_schema = EquipmentSchema()
+    return {
+        'parrent': {**equipment_schema.dump(parrent), 'nodes': eval(parrent.nodes), 'options': eval(parrent.options)},
+        'newElem': {**equipment_schema.dump(newElem), 'nodes': eval(newElem.nodes), 'options': eval(newElem.options)},
+        'command': 'addElem',
+    }
+
+
+def add_equipment_element_1(selected):
+    print('selected', selected)
+    selected_elem = Equipment.query.get(selected)
+
+    parrent = Equipment.query.get(selected_elem.parrent)
+
+    newElem = Equipment(
+        type=None,
+        name='Новый',
+        description=None,
+        code=None,
+        firm=None,
+        path=None,
+        data_added=datetime.now().date().strftime("%d.%m.%Y"),
+
+        nodes=str([]),
+        parrent=parrent.id,
+
+        options=str(None),
+
+        relevance=1,
+        added_id=None,
+    )
+    db.session.add(newElem)
+    db.session.commit()
+
+    parrent_nodes = eval(parrent.nodes)
+    # print('parrent_nodes: ', parrent_nodes)
+    position_in_list = parrent_nodes.index(int(selected))
+    # print('position in list: ', position_in_list)
+    newElem = Equipment.query.all()[-1]
+    # newElem = db.session.query(Equipment)[-1]
+    print(f'{newElem.name} {newElem.id}')
+    newElem.name += f' {newElem.id}'
+    # print('id_new_elem', newElem.id)
+    parrent_nodes.insert(position_in_list + 1, newElem.id)
+    # print('new nodes list: ', parrent_nodes )
+    parrent.nodes = str(parrent_nodes)
+    db.session.commit()
+
+    equipment_schema = EquipmentSchema()
+    return {
+        'parrent': {**equipment_schema.dump(parrent), 'nodes': eval(parrent.nodes), 'options': eval(parrent.options)},
+        'newElem': {**equipment_schema.dump(newElem), 'nodes': eval(newElem.nodes), 'options': eval(newElem.options)},
+        'command': 'addElem',
+    }
 
 
 
 
 
+# add_equipment_element(8)
+
+def test():
+    num = Equipment.query.count()
+    n = num
+    while n < num+2:
+        print('last elem: ', n)
+        response = add_equipment_element(n)
+        socketIo.emit('equipmentСhange', response)
+        n += 1
+
+
+
+def add_equipment_sub_element(selected):
+
+    selected_elem = Equipment.query.get(selected)
+
+    parrent = selected_elem
+
+    newElem = Equipment(
+        type=None,
+        name='Новый',
+        description=None,
+        code=None,
+        firm=None,
+        path=None,
+        data_added=datetime.now().date().strftime("%d.%m.%Y"),
+
+        nodes=str([]),
+        parrent=parrent.id,
+
+        options=str(None),
+
+        relevance=1,
+        added_id=None,
+    )
+    db.session.add(newElem)
+    db.session.commit()
+
+    parrent_nodes = eval(parrent.nodes)
+    print('parrent_nodes: ', parrent_nodes)
+    newElem = db.session.query(Equipment)[-1]
+    newElem.name += f' {newElem.id}'
+    print('id_new_elem', newElem.id)
+    parrent_nodes.append(newElem.id)
+    print('new nodes list: ', parrent_nodes )
+    parrent.nodes = str(parrent_nodes)
+    db.session.commit()
+
+    equipment_schema = EquipmentSchema()
+    return {
+        'parrent': {**equipment_schema.dump(parrent), 'nodes': eval(parrent.nodes), 'options': eval(parrent.options)},
+        'newElem': {**equipment_schema.dump(newElem), 'nodes': eval(newElem.nodes), 'options': eval(newElem.options)},
+        'command': 'addSubElem',
+    }
+
+
+def del_elem(selected):
+    """ ID цепочки вложенных элементов """
+    deleted_nodes = [selected]
+    def chain(nodes):
+        for nod in nodes:
+            deleted_nodes.append(nod)
+            chain(eval(Equipment.query.get(nod).nodes))
+    chain(eval(Equipment.query.get(selected).nodes))
+
+    selected_elem = Equipment.query.get(selected)
+    parrent = Equipment.query.get(selected_elem.parrent)
+    temp_parrent_nodes = eval(parrent.nodes)
+    temp_parrent_nodes.remove(selected_elem.id)
+    parrent.nodes = str(temp_parrent_nodes)
+
+    # id_deleted_elem = del_elem(selected)
+    eq = db.session.query(Equipment).filter(Equipment.id.in_(deleted_nodes))
+    eq.delete()
+
+    db.session.commit()
+
+    equipment_schema = EquipmentSchema()
+    return {
+        'parrent': {**equipment_schema.dump(parrent), 'nodes': eval(parrent.nodes), 'options': eval(parrent.options)},
+        'deleted_nodes': deleted_nodes,
+        'command': 'delElem',
+    }
+
+
+# sel = input('selected ID: ')
+
+
+
+# nodes = [{'id': 1, 'name': 'el 1'}, {'id': 2, 'name': 'el 2'},]
+# print({**nodes[0], 'id': 2})
+
+
+# @socketIo.on('equipmentСhange')
+# def equipmentСhange(change):
+#     print('change', change)
+#
+#     eq = Equipment.query.get(change)
+#     equipment_schema = EquipmentSchema()
+#     response = equipment_schema.dump(eq)
+#
+#     send(response, broadcast=True)
+#     return None
+
+
+@app.route('/workplaces', methods=['GET', 'POST'])
+def workplaces():
+
+    if request.method == 'GET':
+        response = wp()
+        return jsonify(response)
+
+
+
+
+def wp():
+    df = pd.read_excel(
+        io='Подетальная загрузка оборудования БПЗМП 2023.xlsx',
+        header=3,
+    )
+
+    # удаление строк по критериям
+    df = df[df['Деталь'].str.contains('Ʃ трудоемкость|Авиация|Наземка|Коэффициент загрузки') == False]
+    df.dropna()  # удаление пустых строк
+    df.dropna(subset=['Кол-во'])  # удаление строк с NaN
+    df = df.reset_index(drop=True)  # сброс индексов после удаления строк
+    df = df.fillna('')  # замена NaN на '' во всех ячейках
+
+    # удаление неиспользуемых столбцов
+    columns = df.columns.values.tolist()
+    removed_columns = []
+    i = 0
+    while i < len(columns):
+        if not columns[i].find('Трудоемкость'):
+            removed_columns.append(columns[i])
+        i += 1
+    df.drop(columns=removed_columns, axis=1, inplace=True)
+    # print(df)
+
+    # список рабочих мест
+    columns = df.columns.values.tolist()
+    workplaces = []
+    i = 0
+    while i < len(columns):
+        if not columns[i] in ['Наименование', 'Деталь', 'Кол-во']:
+            workplaces.append(columns[i])
+        i += 1
+    # print(workplaces)
+
+    work = df.loc[0:3]
+
+    # print(work)
+
+    work = work.rename(columns={'Деталь': 'wp'})
+
+    # work = work.drop(labels=[0], axis=0)
+
+    # print(work)
+
+    work = work.set_index('wp').T
+    work = work.drop(labels=['Наименование', 'Кол-во'])
+    work = work.rename(columns={
+        # 'Деталь': 'wp',
+        'Кол-во станков': 'wp_quantity',
+        'Кисп': 'k_isp',
+        'Сменность': 'shift',
+        'Календарный фонд, ч': 'fond',
+    })
+    # print(work)
+    work = json.loads(
+        work.to_json(orient='index')
+    )
+
+
+    # Выборка технологий
+    df = df.iloc[6:]
+    # print(df)
+    tech_array = dict.fromkeys(workplaces)
+    for wp in workplaces:
+        # print(f'\n{wp}')
+        query = df[['Деталь', 'Наименование', 'Кол-во', wp]]
+        query = query.loc[(
+                (df[wp] != 0) &
+                (df[wp] != '') &
+                (df['Кол-во'] != 0)
+        )]
+        query = query.rename(columns={
+            'Деталь': 'drawing',
+            'Наименование': 'name',
+            'Кол-во': 'count',
+            wp: 'tm'
+        })
+        query = query.assign(tm_sum=query['count'] * query['tm'])
+        # print(query[0:5])
+
+        tech_array[wp] = json.loads(
+            query.to_json(orient='records')
+        )
+
+    # вставка изображений из ячеек
+    # wb = load_workbook('./Подетальная загрузка оборудования БПЗМП 2023.xlsx')
+    # sheet = wb['Загрузка']
+    # # print(sheet)
+    #
+    # image_loader = SheetImageLoader(sheet)
+    # image = image_loader.get('D5')
+    # # image.show()
+    #
+    # for row in sheet.iter_rows():
+    #     for cell in row:
+    #         if cell.value in workplaces:
+    #             cellAddr = 'D' + str(cell.column+1)
+    #             print(cell.value, cell.row, cell.column, cellAddr)
+    #             image = image_loader.get('D5')
+    #             image.show()
+
+    return {
+        'workplaces': work,
+        'tech_array': tech_array
+    }
+
+
+wp()
+
+
+
+
+
+
+
+# if __name__ == '__main__':
+#     app.run()
 
 if __name__ == '__main__':
-    app.run()
+    socketIo.run(app)

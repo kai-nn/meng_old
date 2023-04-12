@@ -10,6 +10,7 @@ const Data = () => {
     const dispatch = useDispatch()
     const selected = useSelector(state => state.equipment.selected)
     const data = useSelector(state => state.equipment.data)
+    // const elem = data?.forEach(el => console.log(el))
 
 
     return (
@@ -31,7 +32,7 @@ const Data = () => {
 
                         <div className={style.image}>
                             <img
-                                src={'./img_store/' + data[selected-1].path}
+                                // src={'./img_store/' + elem.path || []}
                                 alt={'Нет картинки'}
                             />
                         </div>
@@ -42,17 +43,17 @@ const Data = () => {
                             <TextField
                                 label="Наименование"
                                 size="small"
-                                value={data[selected-1].name}
+                                // value={elem.name || []}
                             />
                             <TextField
                                 label="Обозначение"
                                 size="small"
-                                value={data[selected-1].code ? data[selected-1].code : ''}
+                                // value={data[selected-1]?.code ? data[selected-1].code : ''}
                             />
                             <TextField
                                 label="Описание"
                                 size="small"
-                                value={data[selected-1].description ? data[selected-1].description : ''}
+                                // value={data[selected-1]?.description ? data[selected-1].description : ''}
                             />
                         </div>
 

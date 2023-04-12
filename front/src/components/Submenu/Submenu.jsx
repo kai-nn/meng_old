@@ -9,57 +9,15 @@ import {ReactComponent as AddSubElem} from "./icon/addSubElem.svg";
 import {ReactComponent as DelElem} from "./icon/delElem.svg";
 import {ReactComponent as Filter} from "./icon/filter.svg";
 import {useDispatch, useSelector} from "react-redux";
-import {changeData, setSelected} from "../../store/equipment/equipmentSlice";
+import {changeData, createElem, deleteElem, setSelected} from "../../store/equipment/equipmentSlice";
+import io from "socket.io-client";
 
-
-// const arr = [
-//     {id: 1, nodes: [2, 4]},
-//     {id: 2, nodes: [5]},
-//     {id: 3, nodes: []},
-//     {id: 4, nodes: []},
-//     {id: 5, nodes: []},
-// ]
-// console.log('arr', arr)
-//
-//
-// let re = []
-// const reaction = (obj) => {
-//     obj.nodes.map(n => {
-//         re.push(n)
-//         reaction(arr[n - 1])
-//     })
-//     return re
-// }
-// console.log('Удаляемые элементы', reaction(arr[0]))
-//
-// let tempArr = arr.filter(el => !re.includes(el.id) )
-// console.log('tempArr', tempArr)
+let endPoint = "http://localhost:5000"
+let socket = io.connect(`${endPoint}`)
 
 
 const Submenu = () => {
 
-    const newElem = {
-        id: null,
-        type: null,
-        name: 'Новый',
-        description: null,
-        code: null,
-        firm: null,
-        path: null,
-        data_added: null,
-
-        nodes: [],
-        options: null,
-
-        relevance: null,
-        added_id: null,
-
-        collapsed: true,
-        is_group: false,
-
-        nesting: null,
-        parrent: null,
-    }
     const buttonState = {
         addElem: false,
         addSubElem: false,
@@ -86,6 +44,68 @@ const Submenu = () => {
     const dispatch = useDispatch()
     const [buttonActivation, setButtonActivation] = useState(buttonState)
 
+
+    // server message
+    socket.on("equipmentСhange", response => {
+        // console.log('server message', response)
+        let parrent = response.parrent
+
+        if(response.command === 'addElem' || response.command === 'addSubElem') {
+            let newElem = response.newElem
+
+            parrent = {
+                ...parrent,
+                collapsed: false,
+                is_group: true,
+                nesting: null,
+            }
+
+            newElem = {
+                ...newElem,
+                collapsed: true,
+                is_group: false,
+                nesting: null,
+            }
+            console.log('data', data)
+            if (data !== null) {
+                let tempData = [...data]
+                tempData[parrent.id - 1] = {...parrent}
+                tempData[newElem.id - 1] = {...newElem}
+
+                dispatch(changeData(tempData))
+                // dispatch(setSelected(newElem.id))
+            }
+        }
+
+        if(response.command === 'delElem'){
+            if (data !== null) {
+                // const old_parrent = data.find(el => !!el && el.id === parrent.id)
+                const collapsed = !parrent.nodes.length
+                // console.log('collapsed', collapsed)
+                // console.log('delElem', '\nparrent', parrent, 'old_parrent', old_parrent)
+                parrent = {
+                    ...parrent,
+                    collapsed: collapsed,
+                    is_group: !collapsed,
+                    nesting: null,
+                }
+
+                let tempData = [...data]
+                tempData[parrent.id - 1] = {...parrent}
+                dispatch(changeData(tempData))
+
+                let autoSelect = parrent.id
+                autoSelect = autoSelect === 1 && parrent.nodes[0]
+                    ? parrent.nodes[0]
+                    : autoSelect
+                // console.log('selected', selected, autoSelect)
+                dispatch(setSelected(autoSelect))
+            }
+        }
+
+    })
+
+
     useEffect(() => {
         if (selected === 1){
             buttonState.allDisable()
@@ -99,134 +119,80 @@ const Submenu = () => {
     }, [selected])
 
 
-
     const addElem = () => {
         console.log(selected)
+        dispatch(createElem({command: 'addElem', selected: selected}))
 
-        // buttonState.allDisable()
-        // setButtonActivation(buttonState)
-
-        // зарегистрировать в API id нового элемента и записать его в newElem!
-
-        let parrent = data.find(el => el.nodes.includes(selected) )
-        // console.log('parrent.nodes', parrent.nodes)
-
-        newElem.id = data.length + 1
-        // console.log('newElem', newElem)
-        const offsetNodes = parrent.nodes.indexOf(selected)
-        // console.log('offsetNodes', offsetNodes)
-
-        const tempParrentNodes = [
-            ...parrent.nodes.slice(0, offsetNodes+1),
-            newElem.id,
-            ...parrent.nodes.slice(offsetNodes+1, parrent.nodes.length)
-        ]
-        // console.log(tempParrentNodes)
-        parrent = {
-            ...parrent,
-            nodes: [...tempParrentNodes]
-        }
-        // console.log('parrent', parrent)
-
-        let tempData = [...data]
-        tempData[parrent.id-1] = {...parrent}
-        // console.log('tempData[parrent.id]', tempData[parrent.id])
-        tempData = [...tempData, newElem]
-        // console.log('tempData', tempData)
-
-        dispatch(setSelected(newElem.id))
-        dispatch(changeData(tempData))
+        // // добавление элемента локально
+        // let parrent = data.find(el => el.nodes.includes(selected) )
+        // newElem.id = data.length + 1
+        // const offsetNodes = parrent.nodes.indexOf(selected)
+        // const tempParrentNodes = [
+        //     ...parrent.nodes.slice(0, offsetNodes+1),
+        //     newElem.id,
+        //     ...parrent.nodes.slice(offsetNodes+1, parrent.nodes.length)
+        // ]
+        // parrent = {
+        //     ...parrent,
+        //     nodes: [...tempParrentNodes]
+        // }
+        // let tempData = [...data]
+        // tempData[parrent.id-1] = {...parrent}
+        // tempData = [...tempData, newElem]
     }
+
 
     const addSubElem = () => {
-        // console.log(selected)
+        console.log(selected)
+        dispatch(createElem({command: 'addSubElem', selected: selected}))
 
-        // buttonState.allDisable()
-        // setButtonActivation(buttonState)
-
-        newElem.id = data.length + 1
-        // console.log('newElem', newElem)
-
-        let parrent = data[selected - 1]
-        parrent = {
-            ...parrent,
-            collapsed: false,
-            is_group: true,
-            nodes: [...parrent.nodes, newElem.id ]
-        }
-        // console.log('parrent', parrent)
-
-        let tempData = [...data]
-        tempData[parrent.id-1] = {...parrent}
-        // console.log('tempData[parrent.id]', tempData[parrent.id])
-        tempData = [...tempData, newElem]
-        // console.log('tempData', tempData)
-
-        dispatch(setSelected(newElem.id))
-        dispatch(changeData(tempData))
+        // // добавление вложенного элемента локально
+        // newElem.id = data.length + 1
+        // let parrent = data[selected - 1]
+        // parrent = {
+        //     ...parrent,
+        //     collapsed: false,
+        //     is_group: true,
+        //     nodes: [...parrent.nodes, newElem.id ]
+        // }
+        // let tempData = [...data]
+        // tempData[parrent.id-1] = {...parrent}
+        // tempData = [...tempData, newElem]
+        // dispatch(setSelected(newElem.id))
+        // dispatch(changeData(tempData))
     }
+
 
     const delElem = () => {
-        console.log(selected)
+        console.log('delete', selected)
+        dispatch(deleteElem(selected))
 
-        let elementsToRemove = [selected]
-        const chainReaction = (obj) => {
-            obj.nodes.map(n => {
-                elementsToRemove.push(n)
-                chainReaction(data[n - 1])
-            })
-            return elementsToRemove
-        }
-        elementsToRemove = chainReaction(data[selected-1])
-        // console.log('Удаляемые элементы', elementsToRemove)
-        const haveChildren = !data[selected-1].nodes.length
-        const deletion = haveChildren || window.confirm(`Элемент имеет вложенные элементы: ${elementsToRemove.length} Удалить?`)
-
-        if (!deletion) return
-
-        let parrent = data.find(el => el.nodes.includes(selected) )
-        // console.log('parrent.nodes', parrent.nodes)
-
-        // const offsetNodes = parrent.nodes.indexOf(selected)
-        // console.log('offsetNodes', offsetNodes)
-
-        const tempParrentNodes = [...parrent.nodes.filter(el => el !== selected)]
-        // console.log('tempParrentNodes', tempParrentNodes)
-
-        parrent = {
-            ...parrent,
-            is_group: !!tempParrentNodes.length,
-            nodes: [...tempParrentNodes]
-        }
-        // console.log('parrent', parrent)
-
-        // console.log('Удаляем...')
-        const tempData = [...data]
-        // elementsToRemove.forEach(el => delete tempData[el-1])
-        // const tempData = data.filter(el => !elementsToRemove.includes(el.id) )
-        // let tempData = [...data.filter(el => el.id !== selected)]
-        tempData[parrent.id-1] = {...parrent}
-        // console.log('tempData', tempData)
-
-        let autoSelect = parrent.id
-        autoSelect = autoSelect === 1 && parrent.nodes[0]
-            ? parrent.nodes[0]
-            : autoSelect
-
-        dispatch(setSelected(autoSelect))
-        dispatch(changeData(tempData))
-
+        // локальая проверка вложенности элементов для предупреждения
+        // let elementsToRemove = [selected]
+        // const chainReaction = (obj) => {
+        //     obj.nodes.map(n => {
+        //         elementsToRemove.push(n)
+        //         chainReaction(data[n - 1])
+        //     })
+        //     return elementsToRemove
+        // }
+        // elementsToRemove = chainReaction(data[selected-1])
+        // const haveChildren = !data[selected-1].nodes.length
+        // const deletion = haveChildren || window.confirm(`Элемент имеет вложенные элементы: ${elementsToRemove.length} Удалить?`)
+        // if (!deletion) return
     }
+
 
     const cancel = () => {
         buttonState.allActivate()
         setButtonActivation(buttonState)
     }
 
-    const done = (id) => {
-        console.log(id)
+
+    const done = () => {
         buttonState.allActivate()
         setButtonActivation(buttonState)
+
     }
 
 

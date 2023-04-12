@@ -3,8 +3,7 @@ import style from './List.module.scss'
 import ExpandLessIcon from '@mui/icons-material/ExpandLess';
 import ExpandMoreIcon from '@mui/icons-material/ExpandMore';
 import {useDispatch, useSelector} from "react-redux";
-import {setSelected, changeData} from "../../../../../store/equipment/equipmentSlice";
-
+import {setSelected, changeData, collapsEl} from "../../../../../store/equipment/equipmentSlice";
 
 
 const List = () => {
@@ -17,19 +16,19 @@ const List = () => {
     function createList(object) {
         let res = [object]
         let nesting = -1
-        const chainReaction = (object, parrent = 1) => {
+        const chainReaction = (object) => {
             nesting++
             object.nodes.map(n => {
-                // console.log(n)
-                // console.log('parrent', object,`children ${n - 1}`, data[n - 1])
-                const { id, collapsed } = data[n - 1]
-                const tempDataElem = { ...data[n - 1] }
+                // console.log('data[n]', data[n])
+                const elem = data.find(el => !!el && el.id === n)
+                // console.log('elem', elem)
+                const { id, collapsed } = elem
+                const tempDataElem = { ...elem }
                 tempDataElem.nesting = nesting
-                tempDataElem.parrent = parrent
                 res.push( tempDataElem  )
                 if (collapsed) return
 
-                chainReaction(tempDataElem, id)
+                chainReaction(tempDataElem)
             })
             nesting--
             return res
@@ -39,19 +38,15 @@ const List = () => {
 
 
     const activate = (id) => {
-        console.log('List.selected', id)
+        console.log('activate.id', id)
         dispatch(setSelected(id))
     }
 
 
     const collaps = (id) => {
-        const tempData = [...data]
-        tempData[id-1] = {
-            ...tempData[id-1],
-            collapsed: !tempData[id-1].collapsed
-        }
-        dispatch(changeData( tempData ))
+        dispatch(collapsEl(id))
     }
+
 
 
     return (

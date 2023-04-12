@@ -1,17 +1,30 @@
 import { createSlice, createAsyncThunk } from '@reduxjs/toolkit'
 import axios from "axios";
+import io from "socket.io-client";
 
 
 const initialState = {
     data: null,
-    selected: 2,
+    selected: 1,
 }
+
+// let endPoint = "http://localhost:5000"
+// let socket = io.connect(`${endPoint}`)
+// socket.on("equipmentСhange", response => {
+//     console.log(response)
+//     // sock(response)
+// })
+// const chenel = () => {
+//     return store => {
+//
+//     }
+// }
 
 
 export const getEquipment = createAsyncThunk(
     'equipment/getEquipment',
     async (_, {rejectedWithValue, dispatch}) => {
-        const response = await axios.get('equipment', {filter: '', page: 1, page_len: 10})
+        const response = await axios.get('equipment')
         const data = response.data
 
         // добавляем служебные поля
@@ -21,7 +34,6 @@ export const getEquipment = createAsyncThunk(
                 collapsed: true,
                 is_group: !!el.nodes.length,
                 nesting: null,
-                parrent: null,
             }
         })
 
@@ -35,10 +47,32 @@ export const getEquipment = createAsyncThunk(
     }
 )
 
+
+
 export const createElem = createAsyncThunk(
     'equipment/createElem',
-    async (_, {rejectedWithValue, dispatch}) => {
-        const response = await axios.post('equipment', {name: 'new elem'})
+    async (payload, {rejectedWithValue, dispatch}) => {
+        // console.log('payload', payload)
+        const response = await axios.post('equipment', {command: payload.command, selected: payload.selected})
+        // console.log('response', response)
+        return response.data
+    }
+)
+
+export const deleteElem = createAsyncThunk(
+    'equipment/delElem',
+    async (payload, {rejectedWithValue, dispatch}) => {
+        // console.log('payload', payload)
+        const response = await axios.delete('equipment', {
+            // headers: {
+            //     Authorization: authorizationToken
+            // },
+            data: {
+                command: 'delElem',
+                selected: payload
+            }
+        })
+        console.log('response', response)
         return response.data
     }
 )
@@ -47,16 +81,20 @@ export const equipmentSlice = createSlice({
     name: 'equipment',
     initialState,
 
-
     reducers: {
         changeData: (state, action) => {
             state.data = action.payload
         },
         setSelected: (state, action) => {
             state.selected = action.payload
-        }
-    },
+        },
+        collapsEl: (state, action) => {
+            const id = action.payload
+            const elem = state.data.find(el => el.id === id)
+            elem.collapsed = !elem.collapsed
+        },
 
+    },
 
     extraReducers: {
 
@@ -79,7 +117,7 @@ export const equipmentSlice = createSlice({
         [createElem.fulfilled]: (state, action) => {
             console.log('createElem.fulfilled')
             // console.log('getEquipment.state', action)
-            state.data = action.payload
+            // state.data = action.payload
         },
         [createElem.rejected]: (state, action) => {
             // console.log('getEquipment.rejected')
@@ -91,5 +129,5 @@ export const equipmentSlice = createSlice({
 })
 
 
-export const {setSelected, changeData} = equipmentSlice.actions
+export const {setSelected, changeData, collapsEl} = equipmentSlice.actions
 export default equipmentSlice.reducer

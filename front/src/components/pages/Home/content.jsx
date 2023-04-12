@@ -219,7 +219,7 @@ export const content = [
 
 
     {
-        elementMenu: 'Об авторе',
+        elementMenu: 'История изменений',
         body:
             <div style={{textAlign: 'justify'}}>
                 <h3>Изменения</h3>

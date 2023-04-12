@@ -182,11 +182,13 @@ class Equipment(db.Model):                                      # оснащен
     data_added = db.Column(db.String(10))                       # дата добавления
 
     nodes = db.Column(db.Text)                                  # ID потомков
+    parrent = db.Column(db.Integer)                             # ID родителя
+
     options = db.Column(db.Text)                                # дополнительные характеристики
 
     relevance = db.Column(db.Boolean)                           # True - актуально, False - аннулировано
     added_id = db.Column(db.Integer, db.ForeignKey('user.id'))  # ID user добавившего
-    is_group = db.Column(db.Boolean)                            # True - группа, False - элемент
+    # is_group = db.Column(db.Boolean)                            # True - группа, False - элемент
 
 
 
