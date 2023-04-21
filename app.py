@@ -26,6 +26,7 @@ from flask_socketio import SocketIO
 #     JWTManager
 
 app = Flask(__name__, static_folder="./front/build", static_url_path='/')
+app.app_context().push()
 # jwt = JWTManager(app)
 
 socketIo = SocketIO(app, cors_allowed_origins='*')
